@@ -377,6 +377,19 @@ def run(date: str | None = None) -> list[dict]:
         print(f"       model={eff['model']} max_tokens={eff['max_tokens']}")
         for i, item in enumerate(plan["plan"], 1):
             item["_idx"] = i
+            # 同日幂等：已经成稿过的 lead_id 不重复生成。
+            # 配合 dedupe 的"只对往日去重"，保证一天跑两次时：
+            # 晚班只写新增的，早班写过的直接跳过（不浪费 LLM 调用）。
+            lead = (item.get("lead_id") or "")[:8]
+            if lead and out_dir.exists() and any(
+                    lead in p.name for p in out_dir.glob("*.html")):
+                print(f"\n  [{i}] 已存在成稿，跳过 {item.get('title','')[:50]}")
+                results.append({"ok": True, "skipped": True,
+                                "title": item.get("title", ""),
+                                "score": item.get("score", 0),
+                                "type": item.get("type", ""),
+                                "stats": {}})
+                continue
             material = build_material(date, item)
             print(f"\n  [{i}] {item.get('type')} | {item.get('score')}分")
             print(f"      {item.get('title','')[:60]}")
@@ -390,7 +403,9 @@ def run(date: str | None = None) -> list[dict]:
     asyncio.run(_all())
 
     ok = sum(1 for r in results if r.get("ok"))
-    print(f"\n=== 完成 {ok}/{len(results)} 篇 ===")
+    new = sum(1 for r in results if r.get("ok") and not r.get("skipped"))
+    print(f"\n=== 完成 {ok}/{len(results)} 篇"
+          f"（新生成 {new}，跳过已存在 {ok - new}）===")
     for r in results:
         mark = "✅" if r.get("ok") else "❌"
         st = r.get("stats") or {}

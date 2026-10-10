@@ -96,11 +96,27 @@ def dedupe(items: list[RawItem], threshold: int = 82) -> list[RawItem]:
     return kept
 
 
-def filter_history(items: list[RawItem], days: int = 30) -> list[RawItem]:
-    """过滤掉 seen.json 里已报道过的（跨天去重）"""
-    seen = read_json(SEEN_FILE, {"ids": [], "titles": []})
-    seen_ids = set(seen.get("ids", []))
-    seen_titles = [normalize_title(t) for t in seen.get("titles", [])]
+def filter_history(items: list[RawItem], today: str | None = None,
+                   days: int = 30) -> list[RawItem]:
+    """
+    跨天去重：只丢弃"往日"已报道过的条目。
+
+    ⚠️ 关键设计（实测踩坑）：
+    seen.json 早期不带日期，导致同一天的重跑会把当天所有新闻当成"已报道"。
+    工作流每天跑两次（08:00/20:00），于是晚班永远产出 0 篇。
+    实测：139 条被丢了 110 条，只剩 2 条，最终 0 篇成稿。
+
+    所以条目必须带日期，且只对 date < today 的条目做过滤。
+    同日重跑不去重，交由 pick/compose 保证幂等（同 lead_id 不重复成稿）。
+    """
+    today = today or today_cst()
+    data = read_json(SEEN_FILE, {})
+    entries = _load_entries(data)
+
+    # 只取往日条目
+    old = [e for e in entries if e.get("date", "") < today]
+    seen_ids = {e["id"] for e in old if e.get("id")}
+    seen_titles = [normalize_title(e["title"]) for e in old if e.get("title")]
 
     out, dropped = [], 0
     for it in items:
@@ -116,18 +132,44 @@ def filter_history(items: list[RawItem], days: int = 30) -> list[RawItem]:
         out.append(it)
 
     if dropped:
-        print(f"  历史去重：丢弃 {dropped} 条已报道")
+        print(f"  历史去重：丢弃 {dropped} 条（往日已报道 {len(old)} 条为基准）")
+    else:
+        print(f"  历史去重：基准 {len(old)} 条往日条目，本轮无丢弃")
     return out
 
 
-def update_seen(items: list[RawItem], cap: int = 3000) -> None:
-    seen = read_json(SEEN_FILE, {"ids": [], "titles": []})
-    ids = list(seen.get("ids", []))
-    titles = list(seen.get("titles", []))
+def _load_entries(data: dict) -> list[dict]:
+    """
+    读 seen 条目，兼容两种格式：
+      v2: {"entries": [{"id","title","date"}]}
+      v1: {"ids": [...], "titles": [...]}   ← 无日期，无法安全用于跨天判断
+    v1 直接丢弃：它没有日期，若当成往日条目会重现"当天全被过滤"的 bug。
+    """
+    if not isinstance(data, dict):
+        return []
+    if "entries" in data:
+        return [e for e in data["entries"] if isinstance(e, dict)]
+    if data.get("ids") or data.get("titles"):
+        print("  [seen] 检测到 v1 无日期格式，已丢弃（避免误判为往日条目）")
+    return []
+
+
+def update_seen(items: list[RawItem], today: str | None = None,
+                cap: int = 3000) -> None:
+    today = today or today_cst()
+    data = read_json(SEEN_FILE, {})
+    entries = _load_entries(data)
+
+    seen_ids = {e.get("id") for e in entries}
     for it in items:
-        ids.append(it.id)
-        titles.append(it.title)
-    write_json(SEEN_FILE, {"ids": ids[-cap:], "titles": titles[-cap:]})
+        if it.id in seen_ids:
+            continue
+        entries.append({"id": it.id, "title": it.title, "date": today})
+        seen_ids.add(it.id)
+
+    # 只保留最近 60 天的条目
+    entries = entries[-cap:]
+    write_json(SEEN_FILE, {"version": 2, "entries": entries})
 
 
 def run(date: str | None = None) -> list[RawItem]:
@@ -143,12 +185,12 @@ def run(date: str | None = None) -> list[RawItem]:
     items = [RawItem.from_dict(d) for d in raw]
     print(f"[dedupe] 输入 {len(items)} 条")
 
-    items = filter_history(items)
+    items = filter_history(items, today=date)
     before = len(items)
     items = dedupe(items, threshold=thr)
     print(f"[dedupe] 去重后 {len(items)} 条（合并 {before - len(items)} 条）")
 
-    update_seen(items)
+    update_seen(items, today=date)
     write_json(RAW_DIR / f"{date}.deduped.json", [i.to_dict() for i in items])
     return items
 
