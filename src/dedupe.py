@@ -96,24 +96,30 @@ def dedupe(items: list[RawItem], threshold: int = 82) -> list[RawItem]:
     return kept
 
 
-def filter_history(items: list[RawItem], today: str | None = None,
-                   days: int = 30) -> list[RawItem]:
+def filter_history(items: list[RawItem], today: str | None = None) -> list[RawItem]:
     """
-    跨天去重：只丢弃"往日"已报道过的条目。
+    跨天去重：只丢弃"已经写成稿"的条目。
 
-    ⚠️ 关键设计（实测踩坑）：
-    seen.json 早期不带日期，导致同一天的重跑会把当天所有新闻当成"已报道"。
-    工作流每天跑两次，于是第二次永远产出 0 篇。
-    实测：139 条被丢了 110 条，只剩 2 条，最终 0 篇成稿。
+    ⚠️ 两个踩过的坑，都在这里：
 
-    所以条目必须带日期，且只对 date < today 的条目做过滤。
-    同日重跑不去重，交由 pick/compose 保证幂等（同 lead_id 不重复成稿）。
+    【坑一】seen.json 早期不带日期，导致同一天的重跑把当天所有新闻
+    都当成"已报道"。工作流每天跑两次，第二次永远产出 0 篇。
+    实测：139 条被丢 110 条，只剩 2 条，最终 0 篇成稿。
+    修法：条目带日期。
+
+    【坑二】更隐蔽——去重基准用的是"抓过的"而不是"写过的"。
+    一天抓 100+ 条但只写 2-3 篇，剩下 97 条明明没写过，
+    却被永久标记为"已报道"。次日它们仍在源站首页，直接被过滤，
+    于是天天产出 0 篇。
+    实测：次日采集 143 条 → 丢弃 105 条 → 只剩 8 条 → 选题 0 篇。
+    修法：seen.json 只记录【已发表】的选题（见 record_published），
+    其余条目每次照常进入评分，让没入选的高分条目有机会第二天补上。
     """
     today = today or today_cst()
     data = read_json(SEEN_FILE, {})
     entries = _load_entries(data)
 
-    # 只取往日条目
+    # 已发表选题：不过滤同日的（同日重跑靠 compose 的文件幂等兜住）
     old = [e for e in entries if e.get("date", "") < today]
     seen_ids = {e["id"] for e in old if e.get("id")}
     seen_titles = [normalize_title(e["title"]) for e in old if e.get("title")]
@@ -132,44 +138,68 @@ def filter_history(items: list[RawItem], today: str | None = None,
         out.append(it)
 
     if dropped:
-        print(f"  历史去重：丢弃 {dropped} 条（往日已报道 {len(old)} 条为基准）")
+        print(f"  历史去重：丢弃 {dropped} 条（往日已发表 {len(old)} 篇为基准）")
     else:
-        print(f"  历史去重：基准 {len(old)} 条往日条目，本轮无丢弃")
+        print(f"  历史去重：基准 {len(old)} 篇往日已发表，本轮无丢弃")
     return out
 
 
 def _load_entries(data: dict) -> list[dict]:
     """
-    读 seen 条目，兼容两种格式：
-      v2: {"entries": [{"id","title","date"}]}
-      v1: {"ids": [...], "titles": [...]}   ← 无日期，无法安全用于跨天判断
-    v1 直接丢弃：它没有日期，若当成往日条目会重现"当天全被过滤"的 bug。
+    读 seen 条目。只接受 v3。
+
+    版本历史（每次都是因为语义或格式错了才升版）：
+      v1  {"ids":[], "titles":[]}
+          无日期。同日重跑会把当天所有新闻当成"已报道"。
+      v2  {"entries":[{id,title,date}]}
+          有日期了，但记录的是【抓取到的全部条目】，
+          导致没写过的高分条目被永久埋掉。
+      v3  {"entries":[{id,title,date}]}
+          记录【已发表选题】。格式与 v2 相同，语义不同，
+          所以按 version 字段严格区分。
+
+    旧版一律丢弃：宁可让最近一轮多评几条，也不能让错误的基准
+    继续把好条目挡在外面。
     """
     if not isinstance(data, dict):
         return []
-    if "entries" in data:
-        return [e for e in data["entries"] if isinstance(e, dict)]
-    if data.get("ids") or data.get("titles"):
-        print("  [seen] 检测到 v1 无日期格式，已丢弃（避免误判为往日条目）")
+    ver = data.get("version")
+    if ver == 3:
+        return [e for e in data.get("entries", []) if isinstance(e, dict)]
+    if data.get("entries") or data.get("ids") or data.get("titles"):
+        print(f"  [seen] 检测到旧版格式 v{ver}，已丢弃"
+              f"（语义已变更：只记录已发表选题）")
     return []
 
 
-def update_seen(items: list[RawItem], today: str | None = None,
-                cap: int = 3000) -> None:
+def record_published(topics: list[dict], today: str | None = None,
+                     cap: int = 2000) -> None:
+    """
+    记录【已发表】的选题，作为跨天去重的基准。
+
+    ⚠️ 只记录真正写成稿的，不要记录抓取到的全部条目。
+    记录全部会把"没写过的高分条目"永久埋掉——见 filter_history 的坑二。
+
+    topics: [{"lead_id":..., "title":...}, ...]
+    """
     today = today or today_cst()
     data = read_json(SEEN_FILE, {})
     entries = _load_entries(data)
 
-    seen_ids = {e.get("id") for e in entries}
-    for it in items:
-        if it.id in seen_ids:
+    known = {e.get("id") for e in entries}
+    added = 0
+    for t in topics:
+        tid = t.get("lead_id") or t.get("id")
+        title = t.get("title") or ""
+        if not tid or tid in known:
             continue
-        entries.append({"id": it.id, "title": it.title, "date": today})
-        seen_ids.add(it.id)
+        entries.append({"id": tid, "title": title, "date": today})
+        known.add(tid)
+        added += 1
 
-    # 只保留最近 60 天的条目
     entries = entries[-cap:]
-    write_json(SEEN_FILE, {"version": 2, "entries": entries})
+    write_json(SEEN_FILE, {"version": 3, "entries": entries})
+    print(f"  [seen] 记录已发表 {added} 篇（库中共 {len(entries)} 篇）")
 
 
 def run(date: str | None = None) -> list[RawItem]:
@@ -190,7 +220,8 @@ def run(date: str | None = None) -> list[RawItem]:
     items = dedupe(items, threshold=thr)
     print(f"[dedupe] 去重后 {len(items)} 条（合并 {before - len(items)} 条）")
 
-    update_seen(items, today=date)
+    # 注意：这里不写 seen.json。
+    # seen 记录的是【已发表】选题，由 compose 成功后调用 record_published。
     write_json(RAW_DIR / f"{date}.deduped.json", [i.to_dict() for i in items])
     return items
 

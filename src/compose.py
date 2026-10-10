@@ -474,6 +474,20 @@ def run(date: str | None = None) -> list[dict]:
         if not r.get("ok"):
             print(f"      {r.get('error','')[:140]}")
 
+    # 把【已发表】的选题写进 seen.json，作为跨天去重基准。
+    # 只记写成的，不记抓到的——否则没入选的高分条目会被永久埋掉。
+    published = [
+        {"lead_id": it.get("lead_id"), "title": it.get("title", "")}
+        for it, r in zip(plan["plan"], results)
+        if r.get("ok")
+    ]
+    if published:
+        try:
+            from dedupe import record_published
+            record_published(published, today=date)
+        except Exception as e:
+            print(f"  [seen] 记录失败（不影响成稿）: {type(e).__name__}")
+
     write_json(DATA_DIR / f"compose_{date}.json", results)
     return results
 
