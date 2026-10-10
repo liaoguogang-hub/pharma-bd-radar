@@ -8,11 +8,15 @@
 """
 from __future__ import annotations
 
+import base64
+import hashlib
+import hmac
 import html as _html
 import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 import httpx
@@ -159,6 +163,21 @@ def build_site(date: str | None = None) -> Path:
 # ============================================================
 # 通知
 # ============================================================
+def _feishu_sign(timestamp: str, secret: str) -> str:
+    """
+    飞书自定义机器人的签名。
+
+    ⚠️ 算法与常见 HMAC 用法相反，别想当然：
+    飞书把 "{timestamp}\\n{secret}" 当作【密钥】，
+    消息体是【空】。即 hmac.new(key=string_to_sign, msg=b"")，
+    不是 hmac.new(key=secret, msg=timestamp)。写反了会一直被拒。
+    """
+    string_to_sign = f"{timestamp}\n{secret}"
+    digest = hmac.new(string_to_sign.encode("utf-8"),
+                      digestmod=hashlib.sha256).digest()
+    return base64.b64encode(digest).decode("utf-8")
+
+
 def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
     """飞书交互卡片"""
     lines = []
@@ -197,6 +216,19 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
 def notify_feishu(posts: list[dict], date: str,
                   webhook: str | None = None,
                   base_url: str = "") -> bool:
+    """
+    推送到飞书群自定义机器人。
+
+    环境变量：
+      FEISHU_WEBHOOK  机器人 Webhook 地址（必填）
+      FEISHU_SECRET   签名密钥（开启了"签名校验"时必填）
+
+    安全模式说明：
+      关键词模式   —— 消息里含你设的关键词即可。
+                     本卡片标题含"医药 BD 雷达"，可把关键词设为 医药 / BD / 雷达
+      签名模式     —— 需要 FEISHU_SECRET，见 _feishu_sign
+      IP 白名单    —— GitHub Actions 出口 IP 不固定，无法使用
+    """
     url = webhook or os.getenv("FEISHU_WEBHOOK")
     if not url:
         print("[notify] 未配置 FEISHU_WEBHOOK，跳过")
@@ -204,15 +236,46 @@ def notify_feishu(posts: list[dict], date: str,
     if not posts:
         print("[notify] 无稿件，不推送")
         return False
+
     payload = build_card(posts, date, base_url)
+
+    # 签名校验模式
+    secret = os.getenv("FEISHU_SECRET")
+    if secret:
+        ts = str(int(time.time()))
+        payload["timestamp"] = ts
+        payload["sign"] = _feishu_sign(ts, secret)
+
     try:
         r = httpx.post(url, json=payload, timeout=20)
-        ok = r.status_code == 200 and '"code":0' in r.text.replace(" ", "")
-        print(f"[notify] 飞书 {'成功' if ok else '失败'} ({r.status_code})")
-        return ok
     except Exception as e:
-        print(f"[notify] 飞书异常: {type(e).__name__}")
+        print(f"[notify] 飞书请求异常: {type(e).__name__}: {str(e)[:100]}")
         return False
+
+    # 飞书成功返回 {"code":0,"msg":"success"}
+    try:
+        d = r.json()
+        code = d.get("code")
+        if code == 0:
+            print(f"[notify] 飞书推送成功（{len(posts)} 篇）")
+            return True
+        # 常见错误给出可操作的提示
+        hint = {
+            19021: "sign 校验失败：检查 FEISHU_SECRET 是否正确",
+            9499: "消息内容为空或被安全策略拦截",
+            19024: "关键词不匹配：机器人设了自定义关键词，"
+                   "但消息里没有该词",
+            19022: "IP 不在白名单：GitHub Actions 出口 IP 不固定，"
+                   "请改用关键词或签名模式",
+        }.get(code, "")
+        print(f"[notify] 飞书推送失败 code={code} msg={d.get('msg')}"
+              + (f"  → {hint}" if hint else ""))
+        return False
+    except Exception:
+        ok = r.status_code == 200 and '"code":0' in r.text.replace(" ", "")
+        print(f"[notify] 飞书返回无法解析 (HTTP {r.status_code}): "
+              f"{r.text[:160]}")
+        return ok
 
 
 def run(date: str | None = None, do_notify: bool = True) -> None:

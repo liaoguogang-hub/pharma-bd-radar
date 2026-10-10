@@ -85,6 +85,7 @@ jobs:
         working-directory: src
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
           SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
         run: python publish.py ${{ inputs.date }}
 
