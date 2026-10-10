@@ -88,6 +88,15 @@ IPO、定增、Series A/B 不是 BD，直接给 0 分。
 若一天内同靶点/同领域有多笔交易，标记 cluster_key 相同的条目，
 score 略降但保留——这类应该合并成一篇 landscape_review 综述。
 
+**⑦ 时效性（重要，容易踩坑）**
+每条都带 `published` 和 `age_days` 字段：
+- `age_days` 超过 7 天：这不是新闻，降外溢影响分，并在 reasoning 中说明"非近日"
+- `age_days` 超过 14 天：直接降 2 分以上
+- `age_days` 为「未知」：**不要假设它是新闻，也不要假设它旧**。
+  按内容本身评分，但在 reasoning 中标注"发布日期未知"
+- ⚠️ 媒体转载旧闻是常见现象。一篇讲「去年那笔交易」的文章，
+  讲的是历史，不是今天发生的事。不要把旧交易当成新交易打分。
+
 # 输出格式（严格 JSON，不要任何解释文字）
 
 ⚠️ **只输出一个 JSON 数组**。不要输出思考过程、不要解释、不要 markdown 代码块包裹。
@@ -186,7 +195,9 @@ def _build_items(items: list[RawItem]) -> list[dict[str, Any]]:
             "source": it.source,
             "lang": it.lang,
             "url": it.url,
-            "age_hours": round(it.age_hours, 1),
+            "published": it.published or "未知",
+            "age_days": (round(it.age_hours / 24, 1)
+                         if it.age_hours >= 0 else "未知"),
             "access": it.access,
             "summary": (it.summary or it.content)[:600],
             "multi_source": [t for t in it.topics if t.startswith("also:")],

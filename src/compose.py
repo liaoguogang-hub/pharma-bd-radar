@@ -75,6 +75,25 @@ def build_material(date: str, plan_item: dict) -> str:
                     blocks.append(f"· {vv}")
         blocks.append("")
 
+    # 结构化交易库：只作【历史对比参照】，不要当成今日新闻。
+    deals = read_json(DATA_DIR / "tracker_deals.json", [])
+    if deals:
+        dated = sorted([d for d in deals if d.get("published")],
+                       key=lambda x: x["published"], reverse=True)
+        if dated:
+            lo = dated[-1]["published"][:7]
+            hi = dated[0]["published"][:7]
+            blocks.append("--- 中国对外授权交易库（历史参照）---")
+            blocks.append(f"数据区间：{lo} ~ {hi}，共 {len(deals)} 笔")
+            blocks.append("⚠️ 这是历史数据库，不是今日新闻。"
+                          "只能用作对比参照，不要在文中说成今天发生的事。")
+            for d in dated[:12]:
+                # content 里已经是结构化的 授权方/受让方/首付/总额/领域/阶段
+                blocks.append(f"· [{d['published'][:7]}] " +
+                              " / ".join(
+                                  (d.get("content") or "").split("\n")[:6]))
+            blocks.append("")
+
     return "\n".join(blocks)
 
 

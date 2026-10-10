@@ -59,13 +59,24 @@ class RawItem:
 
     @property
     def age_hours(self) -> float:
+        """
+        距抓取时刻的小时数。
+        日期未知时返回 -1（哨兵值，表示"未知"，不是"很旧"）。
+
+        ⚠️ 早期实现有两种误导：
+        - 列表页条目一律填抓取时刻 → 几个月前的旧文看起来像刚发布
+        - 未知时返回 999 → 未知被当成"非常旧"而误杀
+        未知就是未知，要能被上层识别并区别对待。
+        """
+        if not self.published:
+            return -1.0
         try:
             dt = datetime.fromisoformat(self.published)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return (datetime.now(timezone.utc) - dt).total_seconds() / 3600
         except Exception:
-            return 999.0
+            return -1.0
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

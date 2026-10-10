@@ -129,6 +129,91 @@ LEADING_DATE = re.compile(
 )
 
 
+# ============ 真实发布日期提取 ============
+#
+# 为什么需要：
+# 列表页（尤其 BioPharma Dive 的 /topic/deals/ 这类"专题归档页"）
+# 会把几个月前的旧文一直挂在上面。早期版本给所有 HTML 条目
+# 一律填 now_iso()，于是旧文被当成当天新闻——实测把一篇
+# 2026-08-18 发的 Leo Pharma 稿当成 2026-10-11 的新闻写了出来。
+#
+# 解决办法：去文章页取真实日期。优先级：
+#   1. JSON-LD 的 datePublished / dateCreated（最可靠）
+#   2. <time datetime="...">
+#   3. 正文里的 "Published Aug. 18, 2026"
+#   4. URL 里的 /2026/08/18/ 路径
+RE_JSONLD_DATE = re.compile(
+    r'"(?:datePublished|dateCreated|uploadDate)"\s*:\s*"([^"]+)"', re.I)
+RE_TIME_TAG = re.compile(
+    r'<time[^>]+datetime="([^"]+)"', re.I)
+RE_PUBLISHED_TEXT = re.compile(
+    r"(?:Published|Posted|Updated|发布|发表于|发布于|发布时间)\s*[:：]?\s*"
+    r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+"
+    r"\d{1,2},\s*\d{4}|\d{4}[-/年]\d{1,2}[-/月]\d{1,2}日?)", re.I)
+# 中文页面常见 "发布于" 之间夹字，单独给一条宽松规则
+RE_PUBLISHED_CN = re.compile(
+    r"(?:发布|发表于?|更新)[^0-9]{0,6}(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})")
+RE_URL_DATE = re.compile(r"/(20\d{2})/(\d{1,2})/(\d{1,2})/")
+
+
+def _norm_date(s: str) -> str:
+    """把各种日期写法归一成 ISO8601（UTC）。失败返回空串。"""
+    if not s:
+        return ""
+    s = s.strip()
+    # 2026-08-18T10:38:00 / 2026-08-18
+    m = re.match(r"(20\d{2})-(\d{1,2})-(\d{1,2})", s)
+    if m:
+        y, mo, d = (int(x) for x in m.groups())
+    else:
+        # Aug. 18, 2026
+        m2 = re.match(
+            r"([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(20\d{2})", s)
+        if m2:
+            mon = m2.group(1)[:3].lower()
+            months = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5,
+                      "jun": 6, "jul": 7, "aug": 8, "sep": 9, "oct": 10,
+                      "nov": 11, "dec": 12}
+            if mon not in months:
+                return ""
+            y, mo, d = int(m2.group(3)), months[mon], int(m2.group(2))
+        else:
+            # 2026年8月18日
+            m3 = re.match(r"(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})", s)
+            if not m3:
+                return ""
+            y, mo, d = (int(x) for x in m3.groups())
+    try:
+        return datetime(y, mo, d, tzinfo=timezone.utc).isoformat()
+    except ValueError:
+        return ""
+
+
+def extract_pub_date(html: str, url: str = "") -> str:
+    """从文章页提取真实发布日期。取不到返回空串（表示未知，不等于今天）。"""
+    for rx in (RE_JSONLD_DATE, RE_TIME_TAG):
+        for m in rx.finditer(html):
+            iso = _norm_date(m.group(1))
+            if iso:
+                return iso
+    for m in RE_PUBLISHED_TEXT.finditer(html):
+        iso = _norm_date(m.group(1))
+        if iso:
+            return iso
+    m = RE_PUBLISHED_CN.search(html)
+    if m:
+        iso = _norm_date("-".join(m.groups()))
+        if iso:
+            return iso
+    if url:
+        m = RE_URL_DATE.search(url)
+        if m:
+            iso = _norm_date("-".join(m.groups()))
+            if iso:
+                return iso
+    return ""
+
+
 def clean_title(t: str) -> str:
     """去掉标题开头的日期，并压缩空白"""
     s = re.sub(r"\s+", " ", t or "").strip()
@@ -183,7 +268,11 @@ async def fetch_html(client: httpx.AsyncClient, src: dict) -> list[RawItem]:
             continue
         out.append(RawItem(
             id=make_id(title, url), source=src["id"], lang=src["lang"],
-            title=title, url=url, published=now_iso(),
+            title=title, url=url,
+            # ⚠️ 不填 now_iso()。列表页没有日期，填抓取时刻会把
+            # 几个月前的旧文伪装成当天新闻。留空表示"日期未知"，
+            # 由后续的日期补全步骤去文章页取真值。
+            published="",
             access=src.get("access", "headline"), mode="html",
             weight=src.get("weight", 1.0),
             topics=src.get("topics", []), fetch_time=now_iso(),
@@ -199,6 +288,11 @@ async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
     if not r:
         item.access = "headline"          # 降级
         return item
+    # 顺手取真实发布日期（列表页拿不到，文章页才有）
+    if not item.published:
+        d = extract_pub_date(r.text, item.url)
+        if d:
+            item.published = d
     tree = HTMLParser(r.text)
     # 正文容器候选
     best, best_len = "", 0
@@ -213,6 +307,51 @@ async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
     else:
         item.access = "headline"
     return item
+
+
+# ============ 日期补全 / 陈旧过滤 ============
+# 日期补全要逐篇请求，并发太高会被源站限流。
+_PROBE_SEM = asyncio.Semaphore(8)
+
+
+async def _probe_date(client: httpx.AsyncClient, item: RawItem) -> bool:
+    """取单条文章的真实发布日期。成功返回 True。"""
+    async with _PROBE_SEM:
+        r = await _get(client, item.url)
+    if not r:
+        return False
+    d = extract_pub_date(r.text, item.url)
+    if d:
+        item.published = d
+        return True
+    return False
+
+
+def _drop_stale(items: list[RawItem], max_age_days: int) -> tuple[list, int]:
+    """
+    丢弃发布日期过旧的条目。
+
+    ⚠️ 只丢【已知日期且过旧】的。日期未知的保留——
+    未知不等于过旧（早期实现把未知当 999 小时，误杀大量条目）。
+    """
+    from datetime import datetime as _dt, timezone as _tz
+    now = _dt.now(_tz.utc)
+    kept, dropped = [], 0
+    for it in items:
+        if not it.published:
+            kept.append(it)
+            continue
+        try:
+            dt = _dt.fromisoformat(it.published)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=_tz.utc)
+            if (now - dt).days > max_age_days:
+                dropped += 1
+                continue
+        except Exception:
+            pass
+        kept.append(it)
+    return kept, dropped
 
 
 # ============ 主流程 ============
@@ -286,22 +425,59 @@ async def run(date: str | None = None) -> list[RawItem]:
                     i.access = "headline"
             print(f"  正文成功 {ok}/{len(full_items)}")
 
-    # ---- 结构化追踪数据库（BioPharma Dive 中国授权交易库）----
-    # 追踪数据库（必须在同一 client 上跑，走 async）
+        # ---- 日期补全 ----
+        # 列表页拿不到发布日期，必须去文章页取。不补的话，
+        # BioPharma Dive 的专题归档页会把几个月前的旧文
+        # 当成今天的新闻（实测把一篇 2026-08-18 的稿写成 10-11 的头条）。
+        need_date = [i for i in items if not i.published
+                     and i.mode == "html" and i.url]
+        limit = cfg.get("fetch", {}).get("date_probe_limit", 120)
+        if need_date:
+            probe = need_date[:limit]
+            print(f"\n=== 补全发布日期 {len(probe)} 条"
+                  f"（共 {len(need_date)} 条缺日期）===")
+            got = await asyncio.gather(
+                *[_probe_date(client, i) for i in probe],
+                return_exceptions=True)
+            n_ok = sum(1 for g in got if g is True)
+            print(f"  取得日期 {n_ok}/{len(probe)}")
+
+        # ---- 陈旧内容过滤 ----
+        max_age = cfg.get("fetch", {}).get("max_age_days", 21)
+        if max_age:
+            before = len(items)
+            items, stale = _drop_stale(items, max_age)
+            if stale:
+                print(f"\n=== 陈旧过滤：丢弃 {stale} 条"
+                      f"（发布日期超过 {max_age} 天）"
+                      f"，{before} -> {len(items)} 条 ===")
+            else:
+                print(f"\n=== 陈旧过滤：无超过 {max_age} 天的条目 ===")
+
+        # ---- 结构化追踪数据库（BioPharma Dive 中国授权交易库）----
+        #
+        # ⚠️ 关键设计：这张表是【参考数据库】，不是新闻。
+        # 实测它的数据覆盖 2025-01 ~ 2025-08，最新一笔是 2025-08-11，
+        # 是一份 2025 年的快照。早期版本把它当成普通条目扔进选题池，
+        # 于是几年前的旧交易被写成当天的头条。
+        #
+        # 现在的处理：
+        #   1. 用数据库里的真实交易日期（不填抓取时刻）
+        #   2. 单独存成 tracker_deals.json，供成稿时做对比参照
+        #   3. 不进入评分/选题池——历史数据不该和今日新闻抢位置
         try:
             from trackers import run_all as tracker_run
             titems, insights = await tracker_run()
             if titems:
                 print(f"\n=== 追踪数据库 {len(titems)} 笔结构化交易 ===")
-                have = {i.title[:60].lower() for i in items}
-                added = 0
-                for t in titems:
-                    k = t.title[:60].lower()
-                    if k not in have:
-                        items.append(t)
-                        have.add(k)
-                        added += 1
-                print(f"  新增 {added} 笔（去重后）")
+                dated = [t for t in titems if t.published]
+                if dated:
+                    lo = min(t.published for t in dated)[:10]
+                    hi = max(t.published for t in dated)[:10]
+                    print(f"  交易日期范围 {lo} ~ {hi}")
+                write_json(DATA_DIR / "tracker_deals.json",
+                           [t.to_dict() for t in titems])
+                print(f"  存入 data/tracker_deals.json（不进入选题池）")
                 if insights:
                     tracker_insights.clear()
                     tracker_insights.update(insights)

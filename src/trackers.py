@@ -106,13 +106,17 @@ async def fetch_tracker(client: httpx.AsyncClient,
         title = self._title_from_row(row) or text[:90]
         if len(title) < 10:
             continue
-        amt = AMOUNT_RE.search(text)
+        # 用数据库里的交易日期，不要填抓取时刻。
+        # 这张表覆盖 2025-2026 两年，填抓取时刻会让两年前的旧交易
+        # 看起来像当天新闻（实测 10-10 那批选题全是这个来源）。
+        deal_date = _parse_deal_date(
+            row.get("Date of deal") or row.get("Date") or "")
         items.append(RawItem(
             id=make_id(title, text[:120]),
             source=key, lang="en",
             title=title,
             url=spec["url"],
-            published=now_iso(),
+            published=deal_date,
             access="full", mode="tracker",
             content=text[:2500],          # 表格行本身就是结构化内容
             summary=text[:600],
@@ -200,6 +204,36 @@ def _parse_amount_m(v: str) -> float | None:
         return float(m.group(1)) if m else None
 
 
+def _parse_deal_date(v: str) -> str:
+    """
+    解析 Datawrapper 的 "Date of deal" 列。
+
+    实测格式混杂：8/11/25（月/日/两位年）、2026-08-18、8/11/2025。
+    取不到返回空串（未知），**不要**回落到今天。
+    """
+    if not v:
+        return ""
+    s = str(v).strip()
+    if not s:
+        return ""
+    y = mo = d = None
+    m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{2,4})$", s)      # 8/11/25
+    if m:
+        mo, d, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    else:
+        m = re.match(r"^(20\d{2})-(\d{1,2})-(\d{1,2})", s)    # 2026-08-18
+        if m:
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if not (y and mo and d):
+        return ""
+    if y < 100:                    # 两位年
+        y += 2000
+    try:
+        return datetime(y, mo, d, tzinfo=timezone.utc).isoformat()
+    except ValueError:
+        return ""
+
+
 def _fmt_amount_m(v) -> str:
     """百万美元转可读文本"""
     if v is None:
@@ -264,7 +298,11 @@ def row_to_item(row: dict, source: str, url: str) -> RawItem | None:
         source=source, lang="en",
         title=title[:180],
         url=link or url,
-        published=now_iso(),
+        # ⚠️ 用数据库里的交易日期，不要填抓取时刻。
+        # 这张表覆盖 2025-2026 两年；填抓取时刻会让两年前的旧交易
+        # 看起来像当天新闻（实测 10-10 那批选题全部来自这里，
+        # 包括一笔 2025 年的交易）。
+        published=_parse_deal_date(date),
         access="full", mode="tracker",
         content=content[:2500],
         summary=content[:400],
