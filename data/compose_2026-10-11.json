@@ -1,10 +1,56 @@
 [
   {
     "ok": true,
-    "skipped": true,
-    "title": "Pharmaceutical Executive Daily: Merck Acquires SPR2015 in $2.13 Billion Licensing Deal",
-    "score": 7.5,
-    "type": "event_report",
-    "stats": {}
+    "file": "01-landscape_review-80d1c556.html",
+    "stats": {
+      "body_chars": 2631,
+      "sections": 7,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "html_len": 9641,
+    "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
+    "score": 6.5,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "file": "02-event_report-d91d0dc6.html",
+    "stats": {
+      "body_chars": 2370,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "html_len": 7662,
+    "title": "Viatris to make $1.65B Pacira acquisition, adding to momentum in pain",
+    "score": 7.2,
+    "type": "event_report"
+  },
+  {
+    "ok": true,
+    "file": "03-event_report-5b29b709.html",
+    "stats": {
+      "body_chars": 2383,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 7854,
+    "title": "长效减重新选择，全球首个双周给药GLP‑1R/GIPR双受体激动剂临床三期成功",
+    "score": 6.5,
+    "type": "event_report"
   }
 ]

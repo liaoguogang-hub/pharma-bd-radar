@@ -13,11 +13,28 @@ from __future__ import annotations
 import sys
 from collections import defaultdict
 
-from common import (SCORED_DIR, load_yaml, read_json, write_json, today_cst)
+from common import (ROOT, SCORED_DIR, load_yaml, read_json, write_json,
+                    today_cst)
+
+POSTS_DIR = ROOT / "posts"
 
 
 def _has_body(s: dict) -> bool:
     return len(s.get("content") or "") > 500
+
+
+def _published_leads(date: str) -> set[str]:
+    """今天已经成稿的 lead_id 前 8 位（compose 的文件名里带）"""
+    import re
+    d = POSTS_DIR / date[:4] / date[5:7] / date[8:10]
+    if not d.exists():
+        return set()
+    out = set()
+    for p in d.glob("*.html"):
+        m = re.search(r"-([0-9a-f]{8})\.html$", p.name)
+        if m:
+            out.add(m.group(1))
+    return out
 
 
 def _evidence(s: dict) -> int:
@@ -50,6 +67,18 @@ def run(date: str | None = None) -> dict:
     pool = [s for s in scored
             if s.get("score", 0) >= keep_thr
             and s.get("confidence", 0) >= min_conf]
+
+    # 排除【今天已经成稿】的条目。
+    # 否则它们会白占 daily_max 的名额：compose 会跳过（文件已存在），
+    # 结果本该出 3 篇的一天只出 2 篇。daily_max 的含义是"3 篇新稿"，
+    # 不是"3 个名额（含重复）"。
+    posted = _published_leads(date)
+    if posted:
+        before = len(pool)
+        pool = [s for s in pool if s.get("id", "")[:8] not in posted]
+        if before != len(pool):
+            print(f"[select] 剔除今日已成稿 {before - len(pool)} 条")
+
     print(f"[select] 候选池 {len(pool)} 条（>= {keep_thr} 分且置信度 >= {min_conf}）")
 
     must = [s for s in pool if s.get("score", 0) >= pub_thr]
