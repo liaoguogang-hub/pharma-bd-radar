@@ -1,5 +1,75 @@
 {
   "date": "2026-10-10",
-  "count": 0,
-  "plan": []
+  "count": 3,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "33c38b6c66ca4f76",
+      "title": "Pfizer 从3SBio（$6.05B）",
+      "score": 8.5,
+      "member_ids": [
+        "33c38b6c66ca4f76"
+      ],
+      "members": [
+        {
+          "title": "Pfizer 从3SBio（$6.05B）",
+          "url": "https://www.biopharmadive.com/news/pfizer-3sbio-pd1-vegf-cancer-licensing-deal/748559/",
+          "score": 8.5,
+          "reasoning": "首付12.5亿美元、Phase 2、PD-1/VEGF双抗、肿瘤领域、辉瑞(MNC)主导；是本批最大首付交易之一，改变肿瘤免疫竞争格局。"
+        }
+      ],
+      "reasoning": "首付12.5亿美元、Phase 2、PD-1/VEGF双抗、肿瘤领域、辉瑞(MNC)主导；是本批最大首付交易之一，改变肿瘤免疫竞争格局。",
+      "verify_todo": [
+        "是否为全球首个PD-1/VEGF双抗；靶点具体机制"
+      ],
+      "flags": []
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "251049f86a634f6c",
+      "title": "GSK 从Hengrui Pharma（$12.50B）",
+      "score": 8.2,
+      "member_ids": [
+        "251049f86a634f6c"
+      ],
+      "members": [
+        {
+          "title": "GSK 从Hengrui Pharma（$12.50B）",
+          "url": "https://www.biopharmadive.com/news/gsk-hengrui-collaboration-copd-immunology-cancer-drugs/754161/",
+          "score": 8.2,
+          "reasoning": "首付5亿美元、本批最高首付、Phase 1、多适应症(PD-1/免疫/肿瘤)、GSK(MNC)主导；金额量级最高，GSK引进多个分子改变竞争格局。"
+        }
+      ],
+      "reasoning": "首付5亿美元、本批最高首付、Phase 1、多适应症(PD-1/免疫/肿瘤)、GSK(MNC)主导；金额量级最高，GSK引进多个分子改变竞争格局。",
+      "verify_todo": [
+        "具体是几个分子的合作；靶点详情"
+      ],
+      "flags": []
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "f865b023901bad9f",
+      "title": "Novo Nordisk 从The United Laboratories International Holdings（$2.00B）",
+      "score": 8.1,
+      "member_ids": [
+        "f865b023901bad9f"
+      ],
+      "members": [
+        {
+          "title": "Novo Nordisk 从The United Laboratories International Holdings（$2.00B）",
+          "url": "https://www.biopharmadive.com/news/novo-obesity-triple-agonist-united-laboratories-UBT251/743291/",
+          "score": 8.1,
+          "reasoning": "首付200M美元、Phase 2、Triple agonist减重、诺和诺德亲自收购竞品、代谢领域改变格局；诺和诺德主导体现MNC战略防御。"
+        }
+      ],
+      "reasoning": "首付200M美元、Phase 2、Triple agonist减重、诺和诺德亲自收购竞品、代谢领域改变格局；诺和诺德主导体现MNC战略防御。",
+      "verify_todo": [
+        "靶点机制是否为GLP-1/GIP/Glucagon三靶点"
+      ],
+      "flags": []
+    }
+  ]
 }
