@@ -1,4 +1,38 @@
 {
+  "china_deals_aggregate": {
+    "summary": [
+      "【by_modality】",
+      "  Bispecific or trispecific: 2025=16, 2026=11",
+      "  Small molecule: 2025=17, 2026=12",
+      "  Conventional mAb: 2025=7, 2026=3",
+      "  Antibody-drug conjugate: 2025=10, 2026=4",
+      "  Peptide: 2025=4, 2026=6",
+      "  Nucleic acid: 2025=3, 2026=5",
+      "  Cell or gene therapy: 2025=2, 2026=2",
+      "  Other or undisclosed: 2025=5, 2026=5",
+      "【by_therapeutic_area】",
+      "  Cancer: 2025=24, 2026=19",
+      "  Immune disease: 2025=18, 2026=11",
+      "  Metabolic disease: 2025=6, 2026=6",
+      "  Multiple: 2025=3, 2026=5",
+      "  CNS disorders: 2026=1",
+      "  Other: 2025=8, 2026=4",
+      "  Undisclosed: 2025=4, 2026=3",
+      "【by_phase】",
+      "  Preclinical: 2025=21, 2026=20",
+      "  Phase 1: 2025=24, 2026=6",
+      "  Phase 2: 2025=8, 2026=7",
+      "  Phase 3: 2025=7, 2026=5",
+      "  Marketed: 2025=1, 2026=3",
+      "  Undisclosed: 2025=2, 2026=8",
+      "【overview_metrics】",
+      "  Number of deals: 2025=63.00, 2026=49.00",
+      "  Mean upfront payment (millions): 2025=143.41, 2026=216.73",
+      "  Median upfront payment (millions): 2025=75.00, 2026=110.00",
+      "  Mean overall deal value (millions): 2025=1,805.14, 2026=2,877.00",
+      "  Median overall deal value (millions): 2025=1,088.00, 2026=1,530.00"
+    ]
+  },
   "biopharmadive_china_deals": {
     "jefferies": "Fully one-third of the industry’s licensing spending in 2025 involved drugs sourced from China, per the investment bank Jefferies.",
     "chart_findings": [

@@ -28,6 +28,58 @@ except ImportError:  # pragma: no cover
 
 from common import RawItem, clean_text, make_id, now_iso
 
+# ============================================================
+# Datawrapper 图表清单
+# ============================================================
+#
+# ⚠️ 版本号千万不要写死。
+# Datawrapper 每次更新都会把版本号 +1，旧版本永久保留。
+# 早期版本硬编码了 ("ZTFPS", "1")，于是长期读的是**第一个版本**：
+#   v1  41 行，最新交易 2025-08-11
+#   v27 112 行，最新交易 2026-09-29
+# 差了 2 个月的数据和一个量级的覆盖度。
+#
+# 基址 https://datawrapper.dwcdn.net/{id}/ 会返回 302 到最新版，
+# 用它来发现版本号（见 resolve_latest_version）。
+DW_CHARTS = {
+    # 逐笔交易明细表 —— 主数据源
+    "ZTFPS": "deals",
+    # 以下 4 个是聚合统计图（2025 vs 2026 对比），不是明细
+    "EaTzb": "by_modality",
+    "A9co6": "by_therapeutic_area",
+    "gyy25": "by_phase",
+    "r57W5": "overview_metrics",
+}
+
+# 明细表所需的列
+DEAL_COLUMNS = ("Licensee", "Licensor", "Date of deal")
+
+# 表格里的金额列识别
+AMOUNT_RE = re.compile(
+    r"\$\s?\d[\d.,]*\s*(?:billion|bn|million|m\b)?|"
+    r"[\d.]+\s*(?:亿|万)\s*(?:美元|元)?", re.I)
+
+
+async def resolve_latest_version(client: httpx.AsyncClient,
+                                 chart_id: str) -> str:
+    """
+    发现图表的最新版本号。
+
+    基址返回一段带跳转的小 HTML：
+        <script>window.location.href='.../ZTFPS/27/'...</script>
+    从中取版本号。取不到就回落到 v1（宁可拿到旧数据，也不要空手）。
+    """
+    try:
+        r = await client.get(f"https://datawrapper.dwcdn.net/{chart_id}/",
+                             headers=HEADERS, timeout=20,
+                             follow_redirects=False)
+        m = re.search(rf"/{chart_id}/(\d+)/", r.text or "")
+        if m:
+            return m.group(1)
+    except Exception:
+        pass
+    return "1"
+
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                         "AppleWebKit/537.36 (KHTML, like Gecko) "
                         "Chrome/120.0 Safari/537.36"}
@@ -179,14 +231,9 @@ def _title_from_row(row: dict) -> str:
     return " - ".join(vals[:3])[:90] if vals else ""
 
 
-# BioPharma Dive 的数据库用 Datawrapper 托管，公开数据端点：
-#   https://datawrapper.dwcdn.net/{chart_id}/{version}/dataset.csv
-# ⚠️ 必须带版本号，去掉会 404。
+# 见文件顶部 DW_CHARTS。版本号由 resolve_latest_version 动态发现。
 DATAWRAPPER_IDS = {
-    "biopharmadive_china_deals": [
-        ("EaTzb", "7"), ("A9co6", "7"), ("gyy25", "5"),
-        ("r57W5", "4"), ("ZTFPS", "1"),
-    ],
+    "biopharmadive_china_deals": "ZTFPS",
 }
 
 
@@ -314,7 +361,19 @@ def row_to_item(row: dict, source: str, url: str) -> RawItem | None:
 
 async def fetch_datawrapper(client: httpx.AsyncClient, source: str,
                             chart_id: str, version: str) -> list[RawItem]:
-    """从 Datawrapper 拉 CSV 并解析"""
+    """从 Datawrapper 拉逐笔交易明细并解析成条目"""
+    rows = await _fetch_csv(client, chart_id, version)
+    out = []
+    for row in rows:
+        it = row_to_item(row, source,
+                         f"https://datawrapper.dwcdn.net/{chart_id}/{version}/")
+        if it:
+            out.append(it)
+    return out
+
+
+async def _fetch_csv(client: httpx.AsyncClient, chart_id: str,
+                     version: str) -> list[dict]:
     import csv as _csv
     import io as _io
     url = f"https://datawrapper.dwcdn.net/{chart_id}/{version}/dataset.csv"
@@ -326,14 +385,40 @@ async def fetch_datawrapper(client: httpx.AsyncClient, source: str,
     if r.status_code != 200 or len(r.text) < 100:
         return []
     try:
-        rows = list(_csv.DictReader(_io.StringIO(r.text)))
+        return list(_csv.DictReader(_io.StringIO(r.text)))
     except Exception:
         return []
-    out = []
-    for row in rows:
-        it = row_to_item(row, source, url)
-        if it:
-            out.append(it)
+
+
+async def fetch_aggregate_insights(client: httpx.AsyncClient,
+                                   chart_id: str, label: str,
+                                   version: str) -> list[str]:
+    """
+    聚合图不是逐笔明细，而是「2025 vs 2026」的对比统计。
+    没有 Licensee/Licensor 列，row_to_item 会全部返回 None。
+    所以单独解析成文字洞察，供成稿做行业背景。
+    """
+    rows = await _fetch_csv(client, chart_id, version)
+    if not rows:
+        return []
+    cols = list(rows[0].keys())
+    # 找出年份列（2025 / 2026*）
+    year_cols = [c for c in cols if re.match(r"20\d\d", str(c).strip())]
+    key_col = cols[0] if cols else ""
+    if not year_cols:
+        return []
+    out = [f"【{label}】"]
+    for r in rows[:12]:
+        k = (r.get(key_col) or "").strip()
+        if not k:
+            continue
+        vals = []
+        for yc in year_cols:
+            v = (r.get(yc) or "").strip()
+            if v:
+                vals.append(f"{yc.replace('*','')}={v}")
+        if vals:
+            out.append(f"  {k}: " + ", ".join(vals))
     return out
 
 
@@ -346,17 +431,26 @@ async def run_all(max_rows: int = 200,
     own = client is None
     c = client or httpx.AsyncClient(timeout=30, http2=False)
     try:
-        # 1) 结构化数据库
-        for source, charts in DATAWRAPPER_IDS.items():
-            got = 0
-            for cid, ver in charts:
-                items = await fetch_datawrapper(c, source, cid, ver)
-                if items:
-                    out.extend(items)
-                    got += len(items)
-            print(f"  [dw] {source}: {got} 条")
+        # 1) 逐笔交易明细（版本号动态发现，见文件顶部说明）
+        for source, chart_id in DATAWRAPPER_IDS.items():
+            ver = await resolve_latest_version(c, chart_id)
+            items = await fetch_datawrapper(c, source, chart_id, ver)
+            print(f"  [dw] {source}: {len(items)} 条（{chart_id} v{ver}）")
+            out.extend(items)
 
-        # 2) 页面洞察
+        # 2) 聚合图 → 文字洞察
+        agg: list[str] = []
+        for chart_id, label in DW_CHARTS.items():
+            if label == "deals":
+                continue
+            ver = await resolve_latest_version(c, chart_id)
+            got = await fetch_aggregate_insights(c, chart_id, label, ver)
+            if got:
+                agg.extend(got)
+        if agg:
+            insights["china_deals_aggregate"] = {"summary": agg}
+
+        # 3) 页面洞察
         for key, spec in TRACKERS.items():
             _, ins = await fetch_tracker(c, key, spec)
             if ins:
