@@ -72,7 +72,9 @@ gh workflow run radar.yml
 gh workflow run radar.yml -f skip_llm=true
 ```
 
-之后每天 08:00 / 20:00（北京时间）自动运行。
+之后每天 **06:00 / 18:00（北京时间）** 自动运行。
+
+> cron 用 UTC：`0 22 * * *` = 北京时间次日 06:00；`0 10 * * *` = 北京时间 18:00。
 
 ---
 
