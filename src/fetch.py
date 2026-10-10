@@ -87,12 +87,8 @@ LIST_PATTERNS = {
                        "item": "a[href*='/news/']"},
     "bioworld_deals":      {"base": "https://www.bioworld.com",
                        "item": "a[href*='/articles/']"},
-    "bioworld_china":      {"base": "https://www.bioworld.com",
-                       "item": "a[href*='/articles/']"},
     "bioworld_asia":       {"base": "https://www.bioworld.com",
                        "item": "a[href*='/articles/']"},
-    "pharmexec_partnership": {"base": "https://www.pharmexec.com",
-                       "item": "a[href*='/']"},
     "stat_biotech":        {"base": "https://www.statnews.com",
                        "item": "a[href*='/2026/']"},
     "stat_pharma":         {"base": "https://www.statnews.com",
@@ -104,20 +100,47 @@ LIST_PATTERNS = {
     "stcn_medicine":       {"base": "https://stcn.com",
                        "item": "a[href*='/article/detail/']"},
     "cnstock_health":      {"base": "https://www.cnstock.com",
-                       "item": "a[href*='commonDetail/'], a[href*='/detail/']"},
+                       "item": "a[href*='commonDetail/']"},
     "nbdd_cn":             {"base": "https://www.nbd.com.cn",
                        "item": "a[href*='/articles/']"},
     "pharmcube":           {"base": "https://bydrug.pharmcube.com",
                        "item": "a[href*='/news/detail/']"},
+    # ⚠️ PharmExec 的文章路径是 /view/<slug>，不是 /news/。
+    # 曾误写成 /news/ 导致判定为"数据中心 IP 被拦"，实际是选择器错误。
     "pharmexec_partnership": {"base": "https://www.pharmexec.com",
-                       "item": "a[href*='/news/']"},
+                       "item": "a[href*='/view/']"},
     "pharmexec_irlp":      {"base": "https://www.pharmexec.com",
-                       "item": "a[href*='/news/']"},
+                       "item": "a[href*='/view/']"},
 }
 
-# 标题必须包含的关键词（过滤掉导航、公告等噪声）
-# 注意：中文源要覆盖"引进/授权/对外授权/合作"等说法，
-# 实测漏掉"引进"会导致大量中文 BD 报道被过滤
+# 标题里粘连的日期前缀（PharmExec 这类站点的列表页常见：
+# "October 5th 2026Roundup: CSL & Alentis..."）。
+# 不清理会污染标题、影响去重相似度。
+LEADING_DATE = re.compile(
+    r"^\s*(?:"
+    r"(?:January|February|March|April|May|June|July|August|September|"
+    r"October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|"
+    r"Oct|Nov|Dec)\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+\d{4}"
+    r"|\d{1,2}\s+(?:January|February|March|April|May|June|July|August|"
+    r"September|October|November|December)\s+\d{4}"
+    r"|\d{4}[-/年]\d{1,2}[-/月]\d{1,2}日?"
+    r")\s*[·\-—|:：]?\s*",
+    re.I,
+)
+
+
+def clean_title(t: str) -> str:
+    """去掉标题开头的日期，并压缩空白"""
+    s = re.sub(r"\s+", " ", t or "").strip()
+    # 最多剥两层（有些标题连写两个日期）
+    for _ in range(2):
+        new = LEADING_DATE.sub("", s)
+        if new == s:
+            break
+        s = new.strip()
+    return s or t
+
+
 RELEVANT = re.compile(
     r"\b(deal|licens|deal(?:s|ing)?|acqui|merger|partner|collaborat|option|"
     r"upfront|milestone|trial|phase [123]|approv|FDA|NMPA|royalt|pipeline|"
@@ -150,7 +173,7 @@ async def fetch_html(client: httpx.AsyncClient, src: dict) -> list[RawItem]:
         if not href or href.startswith("#") or href.startswith("javascript"):
             continue
         url = urljoin(base, href)
-        title = clean_text(n.text())
+        title = clean_title(clean_text(n.text()))
         if len(title) < 12:
             continue
         if url in seen:
@@ -194,8 +217,10 @@ async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
 
 # ============ 主流程 ============
 async def _run_one(client: httpx.AsyncClient, src: dict) -> list[RawItem]:
-    if src.get("access") == "blocked":
-        print(f"  [skip] {src['id']} (blocked)")
+    # blocked：站点确认封爬（Cloudflare 403 等）
+    # disabled：源无有效产出（地址失效/内容不对口），停用以免浪费请求
+    if src.get("access") in ("blocked", "disabled"):
+        print(f"  [skip] {src['id']} ({src['access']})")
         return []
     # search 模式依赖外部检索，本环境无法直接抓，留钩子给 Actions 侧实现
     if src.get("mode") == "search" or not src.get("url"):

@@ -27,27 +27,27 @@ sources:
     weight: 0.8
     selector: 'a[href*="/news/"]'
 
-  # ⚠️ BioWorld：访问不稳定（首次实测 200，后续 403），疑似 Cloudflare 限流。
-  # 保留但降权；连续失败会自动跳过，不拖慢整体流程。
+  # ⚠️ BioWorld：2026-10-10 在本地与 GitHub runner 双向实测均 HTTP 403
+# （Cloudflare，返回 5510 字节挑战页）。确认无法抓取，标记 disabled。
+# 保留配置仅作记录，不再发起请求。
   - id: bioworld_deals
     name: BioWorld - Deals & M&A
     lang: en
     url: https://www.bioworld.com/
     mode: html
-    access: headline
-    weight: 0.4
+    access: blocked
+    weight: 0.0
     topics: [deals, mergers]
-    flaky: true
-    note: 访问不稳定，可能 403；失败即跳过
+    note: 实测 403（双环境确认），已停用
 
   - id: bioworld_asia
     name: BioWorld Asia
     lang: en
     url: https://www.bioworld.com/
     mode: html
-    access: headline
-    weight: 0.4
-    flaky: true
+    access: blocked
+    weight: 0.0
+    note: 实测 403（双环境确认），已停用
 
   - id: pharmexec_partnership
     name: Pharmaceutical Executive - Partnerships
@@ -57,6 +57,10 @@ sources:
     access: full
     weight: 0.7
     topics: [deals, partnering]
+    note: |
+      文章路径是 /view/<slug>，不是 /news/。
+      2026-10-10 实测：本站 200，203 个链接，其中 /view/ 为文章页。
+      曾因选择器写成 /news/ 导致误判为"数据中心 IP 被拦"。
 
   - id: pharmexec_irlp
     name: PharmExec - IR Licensing & Partnerships
@@ -66,6 +70,7 @@ sources:
     access: full
     weight: 0.8
     topics: [deals, licensing]
+    note: 同上，文章路径为 /view/<slug>
 
   - id: stat_biotech
     name: STAT - Biotech
@@ -161,8 +166,14 @@ sources:
     lang: cn
     url: https://www.cnstock.com/
     mode: html
-    access: full
-    weight: 1.0
+    access: disabled
+    weight: 0.0
+    note: |
+      2026-10-10 实测：HTTP 200，命中 38 个 commonDetail 链接，
+      但内容全是综合财经（新质生产力/公募基金/社会招聘/保险举牌），
+      无医药内容，RELEVANT 过滤后保留 0 条。
+      尝试过 /list/yy 频道，内容与首页相同，不是医药频道。
+      该报为综合财经媒体，找不到稳定医药入口，故停用。
 
   - id: nbdd_cn
     name: 每日经济新闻 - 医药
