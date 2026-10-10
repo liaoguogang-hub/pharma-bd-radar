@@ -171,6 +171,55 @@ def build_prompt(plan_item: dict, material: str, style_cfg: dict) -> tuple[str, 
 # ============================================================
 # 内容层校验
 # ============================================================
+# 中文金额："5亿美元" "50亿" "1.25亿美元"
+MONEY_CN = re.compile(r"(\d+(?:\.\d+)?)\s*亿(?:美元|美金|元)?")
+# 金额限定词
+MONEY_QUAL = ("首付款", "首付", "总对价", "总额", "里程碑")
+
+
+def _title_money_pairs(text: str) -> list[tuple[str, str]]:
+    """提取「金额 + 限定词」组合。限定词取金额后 8 字内出现的那个。"""
+    out = []
+    for m in MONEY_CN.finditer(text):
+        tail = text[m.end():m.end() + 8]
+        qual = next((q for q in MONEY_QUAL if q in tail), "")
+        out.append((m.group(1), qual))
+    return out
+
+
+def _check_title_numbers(doc: dict, body: str) -> list[str]:
+    """
+    标题里的金额与正文是否自洽。
+    只检查带限定词的金额——不带限定词的（如"60亿押注"）噪声太大，
+    误报成本高于收益，不做强制。
+    """
+    errs: list[str] = []
+    title = doc.get("title", "")
+    if not title:
+        return errs
+
+    body_pairs = _title_money_pairs(body)
+    body_nums = {n for n, _ in body_pairs}
+    body_qual_nums = {(q, n) for n, q in body_pairs if q}
+
+    for num, qual in _title_money_pairs(title):
+        if not qual:
+            continue
+        # 正文里必须有同限定词同数字的组合（限定的就近匹配）
+        if (qual, num) in body_qual_nums:
+            continue
+        # 该限定词在正文中出现的所有数字
+        same_qual = sorted({n for q, n in body_qual_nums
+                            if q == qual or q.startswith(qual[:2])})
+        if same_qual:
+            errs.append(
+                f"标题金额与正文不符：标题称 {num}亿{qual}，"
+                f"正文中{qual}为 {'/'.join(same_qual)}亿")
+        elif num not in body_nums:
+            errs.append(f"标题金额 {num}亿{qual} 未在正文出现")
+    return errs
+
+
 def validate_content(doc: dict, text: str, style_cfg: dict) -> list[str]:
     """校验结构化内容（不涉及 HTML，因为 HTML 由代码保证）"""
     errs: list[str] = []
@@ -212,6 +261,17 @@ def validate_content(doc: dict, text: str, style_cfg: dict) -> list[str]:
     for p in style_cfg.get("banned_patterns", []):
         if re.search(p, body):
             errs.append(f"AI味句式: {p}")
+
+    # 4. 标题金额 vs 正文金额（实测抓到的真错误）
+    #
+    # 案例：CI 生成的稿件标题写「GSK豪掷50亿美元首付」，
+    # 正文却写「GSK向恒瑞支付了5亿美元首付」——差 10 倍。
+    # 正文是对的，标题错了。而标题是读者第一眼看到的数字，必须拦。
+    #
+    # 规则：标题里「数字+限定词」（首付/总额/里程碑）的组合，
+    #       必须在正文中找到同一组合。限定词不去管的话，
+    #       「50亿」会误配到表格里康方的「50亿美元总额」而放行。
+    errs.extend(_check_title_numbers(doc, body))
 
     # 4. 表格列数一致
     for sec in doc.get("sections") or []:
