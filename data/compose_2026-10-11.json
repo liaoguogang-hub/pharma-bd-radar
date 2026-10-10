@@ -1,56 +1,10 @@
 [
   {
     "ok": true,
-    "file": "01-event_report-0cf3886e.html",
-    "stats": {
-      "body_chars": 2936,
-      "sections": 7,
-      "tables": 2,
-      "boxes": 2,
-      "footnotes": 4,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "html_len": 9957,
-    "title": "Lilly adds to immune drug pipeline with $2.9B Merida buyout",
-    "score": 8.5,
-    "type": "event_report"
-  },
-  {
-    "ok": true,
-    "file": "02-event_report-b3c1105b.html",
-    "stats": {
-      "body_chars": 2729,
-      "sections": 7,
-      "tables": 2,
-      "boxes": 2,
-      "footnotes": 3,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "html_len": 8966,
+    "skipped": true,
     "title": "Pharmaceutical Executive Daily: Merck Acquires SPR2015 in $2.13 Billion Licensing Deal",
-    "score": 8.2,
-    "type": "event_report"
-  },
-  {
-    "ok": true,
-    "file": "03-event_report-ea757adf.html",
-    "stats": {
-      "body_chars": 3156,
-      "sections": 6,
-      "tables": 2,
-      "boxes": 0,
-      "footnotes": 4,
-      "has_hook": true,
-      "has_end": false,
-      "has_title": true
-    },
-    "html_len": 8884,
-    "title": "Leo Pharma buys rare skin disease drug in $435M deal",
     "score": 7.5,
-    "type": "event_report"
+    "type": "event_report",
+    "stats": {}
   }
 ]
