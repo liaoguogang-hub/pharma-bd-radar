@@ -1,0 +1,197 @@
+# 源清单
+# access_level 说明（实测结论）：
+#   full     — 全文可读，正文可直接用于写作
+#   headline — 仅标题/摘要可读，正文需订阅，用于时间线与定性
+#   rss      — 首页被 CloudFront 403，但 RSS 可用，取摘要
+#   blocked  — 完全不可达，仅通过其他源间接确认
+
+version: 1
+
+sources:
+  # ============ 英文 ============
+  - id: biopharmadive_deals
+    name: BioPharma Dive - Deals
+    lang: en
+    url: https://www.biopharmadive.com/topic/deals/
+    mode: html
+    access: full
+    weight: 1.0
+    topics: [deals, licensing, mergers]
+
+  - id: biopharmadive_home
+    name: BioPharma Dive - Home
+    lang: en
+    url: https://www.biopharmadive.com/
+    mode: html
+    access: full
+    weight: 0.8
+    selector: 'a[href*="/news/"]'
+
+  # ⚠️ BioWorld：访问不稳定（首次实测 200，后续 403），疑似 Cloudflare 限流。
+  # 保留但降权；连续失败会自动跳过，不拖慢整体流程。
+  - id: bioworld_deals
+    name: BioWorld - Deals & M&A
+    lang: en
+    url: https://www.bioworld.com/
+    mode: html
+    access: headline
+    weight: 0.4
+    topics: [deals, mergers]
+    flaky: true
+    note: 访问不稳定，可能 403；失败即跳过
+
+  - id: bioworld_asia
+    name: BioWorld Asia
+    lang: en
+    url: https://www.bioworld.com/
+    mode: html
+    access: headline
+    weight: 0.4
+    flaky: true
+
+  - id: pharmexec_partnership
+    name: Pharmaceutical Executive - Partnerships
+    lang: en
+    url: https://www.pharmexec.com/topic/partnerships
+    mode: html
+    access: full
+    weight: 0.7
+    topics: [deals, partnering]
+
+  - id: pharmexec_irlp
+    name: PharmExec - IR Licensing & Partnerships
+    lang: en
+    url: https://www.pharmexec.com/topic/ir-licensing-partnerships
+    mode: html
+    access: full
+    weight: 0.8
+    topics: [deals, licensing]
+
+  - id: stat_biotech
+    name: STAT - Biotech
+    lang: en
+    url: https://www.statnews.com/category/biotech/
+    mode: html
+    access: headline
+    weight: 1.0
+
+  - id: stat_pharma
+    name: STAT - Pharma
+    lang: en
+    url: https://www.statnews.com/category/pharma/
+    mode: html
+    access: headline
+    weight: 0.9
+
+  - id: fierce_rss_legacy
+    name: Fierce Biotech (legacy RSS, 403)
+    lang: en
+    url: https://www.fiercebiotech.com/rss/xml
+    mode: rss
+    access: blocked
+    weight: 0.0
+    note: 已确认全站 CloudFront 403，RSS 同样被封；保留配置仅作记录
+
+  # ⚠️ Fierce 系列：站点全站 CloudFront 403，RSS 同样被封。
+  # 实测 6 种 feed URL 全部 403，无法直接抓取。
+  # 替代方案：走 search_fallback（web_search 兜底），见 src/fallback.py
+  - id: fierce_pharma_search
+    name: Fierce Pharma (search fallback)
+    lang: en
+    url: ""
+    mode: search
+    access: headline
+    weight: 0.9
+    query: "site:fiercepharma.com licensing OR deal OR acquisition"
+
+  - id: fierce_biotech_search
+    name: Fierce Biotech (search fallback)
+    lang: en
+    url: ""
+    mode: search
+    access: headline
+    weight: 0.9
+    query: "site:fiercebiotech.com licensing deal acquisition"
+
+  - id: endpoints_rss
+    name: Endpoints News (RSS)
+    lang: en
+    url: https://endpts.com/feed
+    mode: rss
+    access: rss
+    weight: 1.3
+
+  - id: biopharmaintelligence
+    name: BioPharma Intelligence
+    lang: en
+    url: https://www.biopharmaintelligence.informer.com
+    mode: html
+    access: blocked
+    weight: 0.8
+
+  # ============ 中文 ============
+  - id: phirda_industry
+    name: 中国医药创新促进会 - 产业资讯
+    lang: cn
+    url: https://www.phirda.com/
+    mode: html
+    access: full
+    weight: 1.2
+    topics: [china, policy, deals]
+
+  - id: pharnexcloud
+    name: 摩熵医药
+    lang: cn
+    url: https://www.pharnexcloud.com/zixun/
+    mode: html
+    access: full
+    weight: 1.1
+    topics: [china, deals, clinical]
+
+  - id: stcn_medicine
+    name: 证券时报 - 医药
+    lang: cn
+    url: https://stcn.com/
+    mode: html
+    access: full
+    weight: 1.0
+
+  - id: cnstock_health
+    name: 上海证券报 - 医药
+    lang: cn
+    url: https://www.cnstock.com/
+    mode: html
+    access: full
+    weight: 1.0
+
+  - id: nbdd_cn
+    name: 每日经济新闻 - 医药
+    lang: cn
+    url: https://www.nbd.com.cn/
+    mode: html
+    access: full
+    weight: 0.9
+
+  - id: pharmcube
+    name: 医药魔方 ByDrug
+    lang: cn
+    url: https://bydrug.pharmcube.com/news
+    mode: html
+    access: full
+    weight: 1.1
+
+# ============ 一手来源（交易所/公司）============
+# 这些在 GitHub Actions 内可下 PDF，产出权威原文
+primary_sources:
+  hkex:
+    name: 香港交易所披露易
+    base: https://www1.hkexnews.hk
+    enabled: false   # 需配 stock code 列表后启用
+  sse:
+    name: 上海证券交易所
+    base: https://www.sse.com.cn
+    enabled: false
+  szse:
+    name: 深圳证券交易所
+    base: https://www.szse.cn
+    enabled: false

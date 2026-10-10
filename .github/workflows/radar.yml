@@ -1,0 +1,117 @@
+name: Pharma BD Radar
+
+on:
+  schedule:
+    # 北京时间 08:00（覆盖前一晚欧美盘后新闻）
+    - cron: '0 0 * * *'
+    # 北京时间 20:00（覆盖当日欧美早间）
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '补抓指定日期 (YYYY-MM-DD)，留空为今天'
+        required: false
+        default: ''
+      skip_compose:
+        description: '只跑采集+评分，不生成文章'
+        type: boolean
+        default: false
+
+concurrency:
+  group: radar-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 采集
+        working-directory: src
+        env:
+          SEARCH_BACKEND: ${{ vars.SEARCH_BACKEND }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+        run: python fetch.py ${{ inputs.date }}
+
+      - name: 去重
+        working-directory: src
+        run: python dedupe.py ${{ inputs.date }}
+
+      - name: LLM 评分
+        working-directory: src
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python score.py ${{ inputs.date }}
+
+      - name: 选题
+        working-directory: src
+        run: python pick.py ${{ inputs.date }}
+
+      - name: 生成文章
+        if: ${{ inputs.skip_compose != true }}
+        working-directory: src
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python compose.py ${{ inputs.date }}
+
+      - name: 发布站点
+        if: ${{ inputs.skip_compose != true }}
+        working-directory: src
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+        run: python publish.py ${{ inputs.date }}
+
+      - name: 提交产出
+        run: |
+          git config user.name  "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data posts site
+          if git diff --staged --quiet; then
+            echo "无变更"
+          else
+            git commit -m "chore(radar): $(date -u +%Y-%m-%d) 采集/评分/成稿"
+            git push
+          fi
+
+      - name: 上传 Pages 产物
+        if: ${{ inputs.skip_compose != true }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: 部署 Pages
+        if: ${{ inputs.skip_compose != true }}
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 失败时保留调试产物
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-${{ github.run_id }}
+          path: |
+            data/debug/
+            data/compose_*.json
+          retention-days: 14
+          if-no-files-found: ignore
