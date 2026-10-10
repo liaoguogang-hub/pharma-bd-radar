@@ -16,6 +16,10 @@ on:
         description: '只跑采集+评分，不生成文章'
         type: boolean
         default: false
+      skip_llm:
+        description: '冒烟测试：跳过所有 LLM 步骤（不需要 API key）'
+        type: boolean
+        default: false
 
 concurrency:
   group: radar-${{ github.ref }}
@@ -58,17 +62,19 @@ jobs:
         run: python dedupe.py ${{ inputs.date }}
 
       - name: LLM 评分
+        if: ${{ inputs.skip_llm != true }}
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
         run: python score.py ${{ inputs.date }}
 
       - name: 选题
+        if: ${{ inputs.skip_llm != true }}
         working-directory: src
         run: python pick.py ${{ inputs.date }}
 
       - name: 生成文章
-        if: ${{ inputs.skip_compose != true }}
+        if: ${{ inputs.skip_llm != true && inputs.skip_compose != true }}
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
