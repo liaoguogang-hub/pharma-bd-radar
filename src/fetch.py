@@ -309,6 +309,74 @@ async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
     return item
 
 
+def _edgar_eligible(title: str) -> bool:
+    """
+    判断这条值不值得去 SEC EDGAR 查。
+
+    名额有限，查不到的要提前排除，否则白白占掉请求额度：
+      - 必须是并购/授权类（IPO、融资轮、股价评论在 SEC 没有对应 8-K）
+      - 主体得可能是美国注册公司（中文 A股/新三板 主体查不到）
+    """
+    t = title or ""
+    # 融资类排除（本来也不算 BD）
+    if re.search(r"\bIPO\b|prices?\s+\$[\d.]+\s*[MB]\b|financing|Series\s+[A-D]\b"
+                 r"|上市募资|定增|融资轮|种子轮|A轮|B轮|C轮", t, re.I):
+        return False
+    # 必须像并购/授权
+    if not re.search(r"acqui|merger|buyout|takeover|licens|option|"
+                     r"collaborat|收购|并购|授权|引进", t, re.I):
+        return False
+    # 主体判断：标题里得有拉丁字母公司名（EDGAR 只收美国注册主体）
+    if not re.search(r"[A-Za-z]{3,}", t):
+        return False
+    # 纯 A股/新三板 语境排除
+    if re.search(r"A股|新三板|科创板|创业板|北交所|ST公司", t) and \
+       not re.search(r"NASDAQ|NYSE|Nasdaq|NYSE", t):
+        return False
+    return True
+
+
+def _enrich_priority(it: RawItem) -> tuple:
+    """
+    一手材料补全的优先级（越小越先补）。
+
+    名额有限（SEC 限速），必须补最值得补的。
+    实测教训：早先按列表顺序取前 12 条，结果 Viatris 那条排在
+    12 名之外没补到——而它恰恰是当天唯一有 SEC 备案可查的大额并购。
+    优先级排错，等于白做。
+
+    排序依据：
+      1. 整体收购 > 资产交易 > 授权（8-K 对整体收购最完整）
+      2. 金额越大越优先（大额交易才有备案）
+      3. 正文越少越优先（缺得越多越需要补）
+    """
+    t = it.title or ""
+    score = 0.0
+    if re.search(r"\b(?:acqui|merger|buyout|takeover)\w*\b", t, re.I):
+        score += 6.0
+    elif re.search(r"收购|并购|买下", t):
+        score += 6.0
+    if re.search(r"\b(?:licens|option|collaborat|deal)\w*\b", t, re.I):
+        score += 2.5
+    if re.search(r"授权|引进|合作|许可", t):
+        score += 2.5
+    # 金额量级
+    m = re.search(r"\$\s?([\d.]+)\s*(billion|bn|million|m)\b", t, re.I)
+    if m:
+        v = float(m.group(1))
+        score += 4.0 if m.group(2).lower() in ("billion", "bn") else 2.0
+        score += min(v, 20) / 20.0
+    if re.search(r"[\d.]+\s*亿\s*(?:美元|美金)", t):
+        score += 3.0
+    # 缺得越多越优先
+    gap = 1.0 - min(len(it.content or ""), 500) / 500.0
+    score += gap
+    # 综述类不补（单份备案代表不了多笔交易）
+    if re.search(r"\broundup\b|综述|一周|daily:", t, re.I):
+        score -= 8.0
+    return (-score,)
+
+
 # ============ 日期补全 / 陈旧过滤 ============
 # 日期补全要逐篇请求，并发太高会被源站限流。
 _PROBE_SEM = asyncio.Semaphore(8)
@@ -460,11 +528,21 @@ async def run(date: str | None = None) -> list[RawItem]:
         # "Viatris 收购 Pacira" 的稿子写完了都不知道每股收购价是
         # $36.50、也不知道公告日是 10-08——读者根本看不出这是新闻。
         # 一手材料就在 SEC 8-K 的 Exhibit 99.1 里，全文免费公开。
+        #
+        # ⚠️ 补全名额有限（SEC 限速），必须按重要性排序。
+        # 实测教训：早先取列表前 12 条，结果 Viatris 那条排在 12 名之外
+        # 没被补到——而它恰恰是当天最需要补的。优先级排错了，
+        # 等于白做。
         ed_limit = cfg.get("fetch", {}).get("edgar_limit", 12)
-        thin = [i for i in items
-                if len(i.content or "") < 500 and i.url][:ed_limit]
+        thin_all = [i for i in items
+                    if len(i.content or "") < 500 and i.url
+                    and _edgar_eligible(i.title)]
+        thin = sorted(thin_all, key=_enrich_priority)[:ed_limit]
         if thin:
-            print(f"\n=== 补一手材料（SEC EDGAR）{len(thin)} 条 ===")
+            print(f"\n=== 补一手材料（SEC EDGAR）"
+                  f"候选 {len(thin_all)} 条，取前 {len(thin)} 条 ===")
+            for i in thin[:4]:
+                print(f"    优先: {i.title[:60]}")
             try:
                 from edgar import enrich_with_filing
                 got = 0
