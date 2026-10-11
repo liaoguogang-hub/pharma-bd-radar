@@ -121,12 +121,18 @@ def filter_history(items: list[RawItem], today: str | None = None) -> list[RawIt
 
     # 已发表选题：不过滤同日的（同日重跑靠 compose 的文件幂等兜住）
     old = [e for e in entries if e.get("date", "") < today]
-    seen_ids = {e["id"] for e in old if e.get("id")}
+    # ⚠️ 按 8 位前缀比对，不按全量 id。
+    # seen.json 里的 id 有两种来源：
+    #   - compose 写入的是完整 hash（16 位）
+    #   - 从 posts 文件名反查重建时只能拿到 8 位前缀
+    # 早先按全量比对，导致 8 位的历史条目永远匹配不上，
+    # 同一笔交易在 10-10 和 10-11 各发了一遍（诺诚健华×礼来）。
+    seen_ids = {str(e["id"])[:8] for e in old if e.get("id")}
     seen_titles = [normalize_title(e["title"]) for e in old if e.get("title")]
 
     out, dropped = [], 0
     for it in items:
-        if it.id in seen_ids:
+        if it.id[:8] in seen_ids:
             dropped += 1
             continue
         if seen_titles:

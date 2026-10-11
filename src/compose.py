@@ -138,7 +138,23 @@ FN 2. 来源说明
 # 内容规范
 
 - **正文 2800-3200 字**（不含表格和脚注）。这是硬指标，宁可写满
-- 开头 HOOK 必须给出反常识数字或矛盾对比
+- **HOOK 第一句必须交代交易时间**（年-月-日，如"2026年9月24日"或
+  "Oct. 8, 2026"）。读者第一眼就要知道这是什么时候的事——
+  没有时间的稿子读起来不像新闻。同时给出反常识数字或矛盾对比。
+
+  反例（实测被用户指出）：
+    "礼来2026年单笔首付均值已达2.17亿美元，而这一次它只掏出1亿美元
+     '零头'，就绑定了诺诚健华最多5个创新靶点的研发管线。"
+    —— 通篇没有交易日期，读者无从判断时效性。
+
+  正例：
+    "2026年9月24日，礼来只掏出1亿美元首付，就锁定了诺诚健华
+     最多5个创新靶点的研发管线。"
+
+  如果素材里查不到确切日期，写"未找到公开数据"并说明，
+  但**不要略过不提**。
+- **并购与授权同等对待**：两者都是 BD 交易，都要写。
+  不要因为"并购没有每股价格可写"就回避并购类选题。
 - **金额必须分层**：首付 / 里程碑上限 / 总额，三者不可混为一谈。
   如果只披露了合并口径，要写明"首付款与近期里程碑合计"，不能简写成"首付"
 - 查不到的数据写"未找到公开数据"，**绝对禁止编造**
@@ -351,6 +367,32 @@ def validate_content(doc: dict, text: str, style_cfg: dict,
             errs.append(
                 "并购类稿件缺少【交易/公告日期】——读者据此判断是不是新闻")
 
+    # 2.6 HOOK 必须交代交易时间
+    #
+    # 实测被用户指出：那篇「礼来1亿美元首付"敲门"」的开头写
+    #   "礼来2026年单笔首付均值已达2.17亿美元，而这一次它只掏出
+    #    1亿美元'零头'，就绑定了诺诚健华最多5个创新靶点的研发管线。"
+    # 通篇没有交易日期，读者无从判断时效性——不像新闻。
+    #
+    # ⚠️ 只看 HOOK 段落，不查全文：日期写在文末或表格里，
+    # 读者第一眼看不到，等于没写。
+    hook = doc.get("hook", "") or ""
+    if hook:
+        DATE_RE = (
+            r"20\d\d\s*年\s*\d{1,2}\s*月(?:\s*\d{1,2}\s*日)?|"
+            r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
+            r"[a-z]*\.?\s+\d{1,2},?\s+20\d\d|"
+            r"\d{1,2}\s+(?:January|February|March|April|May|June|July|"
+            r"August|September|October|November|December)\s+20\d\d|"
+            r"20\d\d-\d{1,2}-\d{1,2}"
+        )
+        if not re.search(DATE_RE, hook, re.I):
+            errs.append(
+                "HOOK 里没有交易时间。读者第一眼就要知道这是什么时候的事"
+                "——请在开头写明具体年月日（如「2026年9月24日」或"
+                "「Oct. 8, 2026」）。查不到就写「未找到公开数据」，"
+                "但不要略过不提。")
+
     # 3. AI 味（分档）
     body = content_text(doc)
     tolerate = gen.get("ai_word_tolerate", 2)
@@ -546,13 +588,17 @@ def run(date: str | None = None) -> list[dict]:
         print(f"       model={eff['model']} max_tokens={eff['max_tokens']}")
         for i, item in enumerate(plan["plan"], 1):
             item["_idx"] = i
-            # 同日幂等：已经成稿过的 lead_id 不重复生成。
-            # 配合 dedupe 的"只对往日去重"，保证一天跑两次时：
-            # 晚班只写新增的，早班写过的直接跳过（不浪费 LLM 调用）。
+            # 幂等：同一 lead_id 只要【任何日期】成过稿就不再生成。
+            # ⚠️ 早先只查今天的目录，导致同一笔交易跨天重复发布
+            # （诺诚健华×礼来在 10-10 和 10-11 各发了一遍）。
+            # 根因是 seen.json 里存了 8 位短 id、比对时按 16 位全量比，
+            # 历史去重没拦住；这里再加一道跨日期检查兜底。
             lead = (item.get("lead_id") or "")[:8]
-            if lead and out_dir.exists() and any(
-                    lead in p.name for p in out_dir.glob("*.html")):
-                print(f"\n  [{i}] 已存在成稿，跳过 {item.get('title','')[:50]}")
+            if lead and POSTS_DIR.exists() and any(
+                    lead in p.name
+                    for p in POSTS_DIR.rglob("*.html")):
+                print(f"\n  [{i}] 已存在成稿（任意日期），跳过 "
+                      f"{item.get('title','')[:50]}")
                 results.append({"ok": True, "skipped": True,
                                 "title": item.get("title", ""),
                                 "score": item.get("score", 0),
