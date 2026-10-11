@@ -39,16 +39,32 @@ pip install -r requirements.txt
 
 ### 2. 配置密钥
 
-需要三个 GitHub Secrets：
-
 ```bash
 # LLM API Key（必填）——支持 DeepSeek / MiniMax / 任意 OpenAI 兼容端点
 gh secret set LLM_API_KEY
+
+# 搜索 API（选填但强烈建议）——配任意一个即可自动启用一手材料检索
+gh secret set SERPER_API_KEY     # 推荐：每月 2500 次免费
+# gh secret set TAVILY_API_KEY   # 备选：每月 1000 次免费
+# gh secret set BRAVE_API_KEY    # 备选：每月 2000 次免费
 
 # 飞书群自定义机器人（选填，不配则不推送，不影响其他步骤）
 gh secret set FEISHU_WEBHOOK
 gh secret set FEISHU_SECRET    # 仅当机器人开了「签名校验」
 ```
+
+**为什么需要搜索 API**：新闻源的 RSS 摘要常常只有 200 字符。
+实测一篇「Viatris 收购 Pacira」的稿子，素材只有一句话，
+写出来既没有每股收购价（实际 $36.50/股），也没有交易日期——
+读者根本看不出这是新闻。
+
+配了搜索 key 后，`deepen.py` 会自动去找公司新闻室、
+交易所公告等一手材料。
+
+> 实测过 8 个免费通道（DuckDuckGo / Bing / Mojeek / Startpage /
+> Searx / Brave HTML），**没有一个可用**：
+> 或连接被拒，或像 Bing 那样强制跳转区域站并忽略查询词。
+> 所以这一步确实需要注册。
 
 再配一个 Variable（用于飞书卡片里的文章链接）：
 

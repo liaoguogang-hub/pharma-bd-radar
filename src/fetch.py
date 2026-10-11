@@ -514,7 +514,13 @@ async def run(date: str | None = None) -> list[RawItem]:
             print(f"  追踪数据库跳过: {type(e).__name__}: {e}")
 
     # ---- 第二轮：给"重要但没正文"的条目搜一手材料 ----
-    if os.getenv("SEARCH_BACKEND"):
+    #
+    # 只要配了任意一个搜索 key 就自动启用，不必再单独设 SEARCH_BACKEND
+    # （少配一个变量，少一处出错的地方）。
+    search_keys = ("SERPER_API_KEY", "TAVILY_API_KEY", "BRAVE_API_KEY")
+    has_search = bool(os.getenv("SEARCH_BACKEND")) or \
+        any(os.getenv(k) for k in search_keys)
+    if has_search:
         print("\n=== 深度检索一手材料 ===")
         try:
             from deepen import run as deepen_run
@@ -525,8 +531,9 @@ async def run(date: str | None = None) -> list[RawItem]:
         cands = [i for i in items
                  if len(i.content or "") <= 800
                  and looks_important(i.title)[0]]
-        print(f"\n[提示] {len(cands)} 条无正文但信号强，"
-              f"配置 SEARCH_BACKEND 后可自动搜一手材料")
+        print(f"\n[提示] {len(cands)} 条无正文但信号强。"
+              f"配置 SERPER_API_KEY / TAVILY_API_KEY / BRAVE_API_KEY "
+              f"任一即可自动搜一手材料")
 
     write_json(RAW_DIR / f"{date}.json", [i.to_dict() for i in items])
     print(f"\n共 {len(items)} 条 -> data/raw/{date}.json")

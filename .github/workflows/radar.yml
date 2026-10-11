@@ -58,7 +58,6 @@ jobs:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: python fetch.py ${{ inputs.date }}
-
       - name: 去重
         working-directory: src
         run: python dedupe.py ${{ inputs.date }}
