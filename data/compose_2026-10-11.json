@@ -1,55 +1,54 @@
 [
   {
     "ok": true,
-    "file": "01-landscape_review-9304f33a.html",
+    "file": "01-event_report-bd721ad6.html",
     "stats": {
-      "body_chars": 3056,
-      "sections": 7,
-      "tables": 2,
+      "body_chars": 2584,
+      "sections": 5,
+      "tables": 1,
       "boxes": 0,
-      "footnotes": 4,
+      "footnotes": 5,
       "has_hook": true,
       "has_end": true,
       "has_title": true
     },
-    "html_len": 8942,
-    "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
-    "score": 7.5,
-    "type": "landscape_review"
-  },
-  {
-    "ok": true,
-    "file": "02-event_report-28f24524.html",
-    "stats": {
-      "body_chars": 2393,
-      "sections": 6,
-      "tables": 3,
-      "boxes": 0,
-      "footnotes": 3,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "html_len": 8188,
-    "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
+    "html_len": 7172,
+    "title": "两大巨头完成收购，将如何搅动医学影像市场？",
     "score": 7.8,
     "type": "event_report"
   },
   {
     "ok": true,
-    "file": "03-event_report-b4985179.html",
+    "file": "02-event_report-28f24524.html",
     "stats": {
-      "body_chars": 2272,
-      "sections": 5,
-      "tables": 1,
-      "boxes": 0,
-      "footnotes": 3,
+      "body_chars": 2817,
+      "sections": 7,
+      "tables": 0,
+      "boxes": 1,
+      "footnotes": 4,
       "has_hook": true,
-      "has_end": false,
+      "has_end": true,
       "has_title": true
     },
-    "html_len": 7151,
-    "title": "诺诚健华牵手礼来达成33.5亿美元创新药合作，自有平台输出至多5项前沿靶点，国际化战略落地里程碑",
+    "html_len": 8356,
+    "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
+    "score": 7.6,
+    "type": "event_report"
+  },
+  {
+    "ok": false,
+    "error": "- 表格「交易要素 / 已知信息 / 备注」有 4/8 行为「未找到公开数据」，属空壳表——说明素材不足或不是交易。请重写：去掉套模板的表格，只写素材真正支撑的内容\n- 表格「2026年部分高额授权交易（已知金额） / 交易日期 / 买方 / 总额（亿美元」有 4/7 行为「未找到公开数据」，属空壳表——说明素材不足或不是交易。请重写：去掉套模板的表格，只写素材真正支撑的内容",
+    "stats": {
+      "body_chars": 3020,
+      "sections": 7,
+      "tables": 2,
+      "boxes": 3,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "title": "Pharmaceutical Executive Daily: Merck Acquires SPR2015 in $2.13 Billion Licensing Deal",
     "score": 6.8,
     "type": "event_report"
   }

@@ -3,37 +3,35 @@
   "count": 3,
   "plan": [
     {
-      "type": "landscape_review",
-      "cluster_key": "roche-defand",
-      "lead_id": "9304f33ad5b5b51d",
-      "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
-      "score": 7.5,
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "bd721ad6322d164d",
+      "title": "两大巨头完成收购，将如何搅动医学影像市场？",
+      "score": 7.8,
       "member_ids": [
-        "9304f33ad5b5b51d",
-        "e5b7d8292aa63d74"
+        "bd721ad6322d164d"
       ],
       "members": [
         {
-          "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
-          "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/",
-          "score": 7.5,
-          "reasoning": "STAT报道Roche与Defand合作超出版权许可范畴——联合研发模式。同一交易cluster，与80d1c556702b6298合并。"
-        },
-        {
-          "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
-          "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
-          "score": 7.5,
-          "reasoning": "STAT深度报道聚焦分子胶药物发现，与80d1c556702b6298为同一交易，合并评分。"
+          "title": "两大巨头完成收购，将如何搅动医学影像市场？",
+          "url": "https://bydrug.pharmcube.com/news/detail/cab3c683191cced0a97c8b5b24006283",
+          "score": 7.8,
+          "reasoning": "美的完成对百胜医疗100%控股收购，属已完成M&A交易，改变全球高端医学影像竞争格局，家电巨头跨界医疗的里程碑事件"
         }
       ],
-      "reasoning": "STAT报道Roche与Defand合作超出版权许可范畴——联合研发模式。同一交易cluster，与80d1c556702b6298合并。"
+      "reasoning": "美的完成对百胜医疗100%控股收购，属已完成M&A交易，改变全球高端医学影像竞争格局，家电巨头跨界医疗的里程碑事件",
+      "verify_todo": [
+        "需查实际收购金额和股权比例",
+        "确认是否构成重大关联交易"
+      ],
+      "flags": []
     },
     {
       "type": "event_report",
       "cluster_key": null,
       "lead_id": "28f2452425cefa27",
       "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
-      "score": 7.8,
+      "score": 7.6,
       "member_ids": [
         "28f2452425cefa27"
       ],
@@ -41,38 +39,41 @@
         {
           "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
           "url": "https://www.pharnexcloud.com/zixun/sx_379209",
-          "score": 7.8,
-          "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，潜在总额26亿美元；MNC×大药企，首个中国药企多靶点减重药出海；首付金额未披露"
+          "score": 7.6,
+          "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，总额约26亿美元，恒瑞为国内大药企，改变GLP-1双靶点竞争格局"
         }
       ],
-      "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，潜在总额26亿美元；MNC×大药企，首个中国药企多靶点减重药出海；首付金额未披露",
+      "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，总额约26亿美元，恒瑞为国内大药企，改变GLP-1双靶点竞争格局",
       "verify_todo": [
-        "需查双方公告确认首付金额",
-        "需确认临床阶段是否II期数据"
+        "需查首付金额及付款节点",
+        "确认HRS-1596具体靶点组合和给药方式",
+        "需核实诺和诺德此前是否已有类似口服双靶点布局"
       ],
-      "flags": [
-        "chinese_bd"
-      ]
+      "flags": []
     },
     {
       "type": "event_report",
       "cluster_key": null,
-      "lead_id": "b498517982cba24b",
-      "title": "诺诚健华牵手礼来达成33.5亿美元创新药合作，自有平台输出至多5项前沿靶点，国际化战略落地里程碑",
+      "lead_id": "b3c1105b68fab850",
+      "title": "Pharmaceutical Executive Daily: Merck Acquires SPR2015 in $2.13 Billion Licensing Deal",
       "score": 6.8,
       "member_ids": [
-        "b498517982cba24b"
+        "b3c1105b68fab850"
       ],
       "members": [
         {
-          "title": "诺诚健华牵手礼来达成33.5亿美元创新药合作，自有平台输出至多5项前沿靶点，国际化战略落地里程碑",
-          "url": "https://www.pharnexcloud.com/zixun/sx_381805",
+          "title": "Pharmaceutical Executive Daily: Merck Acquires SPR2015 in $2.13 Billion Licensing Deal",
+          "url": "https://www.pharmexec.com/view/daily-merck-acquires-spr2015-2-billion-licensing-deal",
           "score": 6.8,
-          "reasoning": "礼来支付1亿美元首付+近期里程碑，潜在总额33.5亿美元，与诺诚健华建立5靶点创新药研发平台合作。中国 biotech大规模out-license。"
+          "reasoning": "默克以21.3亿美元授权交易收购SPR2015，MNC大药企主导，大金额改变肾脏疾病赛道竞争格局"
         }
       ],
-      "reasoning": "礼来支付1亿美元首付+近期里程碑，潜在总额33.5亿美元，与诺诚健华建立5靶点创新药研发平台合作。中国 biotech大规模out-license。",
-      "verify_todo": [],
+      "reasoning": "默克以21.3亿美元授权交易收购SPR2015，MNC大药企主导，大金额改变肾脏疾病赛道竞争格局",
+      "verify_todo": [
+        "需查首付金额",
+        "确认SPR2015具体机制和适应症",
+        "正文素材缺失"
+      ],
       "flags": []
     }
   ]
