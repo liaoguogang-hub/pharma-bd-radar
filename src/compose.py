@@ -257,13 +257,15 @@ def _check_title_numbers(doc: dict, body: str) -> list[str]:
 
 
 def validate_content(doc: dict, text: str, style_cfg: dict,
-                     src_title: str = "") -> list[str]:
+                     src_title: str = "", material: str = "") -> list[str]:
     """
     校验结构化内容（不涉及 HTML，因为 HTML 由代码保证）。
 
     src_title: 源新闻标题。判断"这是不是并购类"必须用它，不能用生成的文章标题
     ——文章标题可能写成"18亿美元买一个止痛贴"，不含"收购"二字；
     而正文的对比表格里又可能出现别的公司的"收购"，用正文判断会误报。
+
+    material:  可用素材。用来判断"该事实是否适用且可得"。
     """
     errs: list[str] = []
     gen = style_cfg.get("generation", {})
@@ -321,16 +323,24 @@ def validate_content(doc: dict, text: str, style_cfg: dict,
     # 判据用源标题（见函数说明），不用正文——正文对比表里常有
     # 别家公司的"收购"字样，会误报。
     subj = src_title or doc.get("title", "")
+    facts = doc.get("title", "") + " " + content_text(doc)
     if re.search(r"收购|并购|买下|acqui|buyout|takeover|merger", subj, re.I):
-        # 事实内容在正文里找
-        facts = doc.get("title", "") + " " + content_text(doc)
-        if not re.search(
+        # 每股收购价只对【上市公司整体收购】适用。
+        # 判据：素材或标题里出现交易所代码，如 (Nasdaq: PCRX)。
+        # 反例："Merck Acquires SPR2015" 是资产收购（SPR2015 是药物代号），
+        # 根本没有"每股价格"这个概念，强制要求会把好稿误拦。
+        is_listed = bool(re.search(
+            r"\((?:NASDAQ|NYSE|Nasdaq|NYSE|HKEX|SEHK)[:：]\s*[A-Z0-9]{2,6}",
+            (material or "") + " " + subj))
+        if is_listed and not re.search(
                 r"(?:每股|per\s+share)[^。；]{0,24}[\d$]|"
                 r"\$\s?\d[\d.,]*\s*(?:per\s+share|/\s*股)|"
                 r"[\d.]+\s*美元\s*/\s*股", facts, re.I):
             errs.append(
-                "并购类稿件缺少【每股收购价】——这是估值锚点，"
-                "必须写明（可从 SEC 8-K / 公司公告取）")
+                "上市公司整体收购，稿件缺少【每股收购价】——"
+                "这是估值锚点，能看出溢价多少。"
+                "可从 SEC 8-K / 公司公告取。")
+        # 交易日期对所有并购类都适用
         if not re.search(
                 r"20\d\d\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日|"
                 r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+"
@@ -482,8 +492,10 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
 
         doc = parse_content(txt)
         last_doc = doc
-        errs = validate_content(doc, txt, style_cfg,
-                                src_title=plan_item.get('title', ''))
+        errs = validate_content(
+                doc, txt, style_cfg,
+                src_title=plan_item.get('title', ''),
+                material=material)
         st = structure_report(doc)
 
         print(f"    尝试{attempt+1}: 正文{st['body_chars']}字 "
