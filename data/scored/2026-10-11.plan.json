@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "count": 1,
+  "count": 3,
   "plan": [
     {
       "type": "landscape_review",
-      "cluster_key": "roche-defand-degrader",
+      "cluster_key": "roche-defand",
       "lead_id": "9304f33ad5b5b51d",
       "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
-      "score": 7.0,
+      "score": 7.5,
       "member_ids": [
         "9304f33ad5b5b51d",
         "e5b7d8292aa63d74"
@@ -16,17 +16,64 @@
         {
           "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
           "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/",
-          "score": 7.0,
-          "reasoning": "同Roche-Defand deal的STAT报道，仅标题无正文，与endpoint条目属于同一交易"
+          "score": 7.5,
+          "reasoning": "STAT报道Roche与Defand合作超出版权许可范畴——联合研发模式。同一交易cluster，与80d1c556702b6298合并。"
         },
         {
           "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
           "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
-          "score": 7.0,
-          "reasoning": "同Roche-Defand molecular glue deal，仅标题无正文，与其他来源构成cluster"
+          "score": 7.5,
+          "reasoning": "STAT深度报道聚焦分子胶药物发现，与80d1c556702b6298为同一交易，合并评分。"
         }
       ],
-      "reasoning": "同Roche-Defand deal的STAT报道，仅标题无正文，与endpoint条目属于同一交易"
+      "reasoning": "STAT报道Roche与Defand合作超出版权许可范畴——联合研发模式。同一交易cluster，与80d1c556702b6298合并。"
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "28f2452425cefa27",
+      "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
+      "score": 7.8,
+      "member_ids": [
+        "28f2452425cefa27"
+      ],
+      "members": [
+        {
+          "title": "26亿美元交易落地！恒瑞医药口服GLP-1/GIP双激动剂HRS-1596海外独家权益授权诺和诺德",
+          "url": "https://www.pharnexcloud.com/zixun/sx_379209",
+          "score": 7.8,
+          "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，潜在总额26亿美元；MNC×大药企，首个中国药企多靶点减重药出海；首付金额未披露"
+        }
+      ],
+      "reasoning": "恒瑞口服GLP-1/GIP双激动剂HRS-1596海外权益授权诺和诺德，潜在总额26亿美元；MNC×大药企，首个中国药企多靶点减重药出海；首付金额未披露",
+      "verify_todo": [
+        "需查双方公告确认首付金额",
+        "需确认临床阶段是否II期数据"
+      ],
+      "flags": [
+        "chinese_bd"
+      ]
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "b498517982cba24b",
+      "title": "诺诚健华牵手礼来达成33.5亿美元创新药合作，自有平台输出至多5项前沿靶点，国际化战略落地里程碑",
+      "score": 6.8,
+      "member_ids": [
+        "b498517982cba24b"
+      ],
+      "members": [
+        {
+          "title": "诺诚健华牵手礼来达成33.5亿美元创新药合作，自有平台输出至多5项前沿靶点，国际化战略落地里程碑",
+          "url": "https://www.pharnexcloud.com/zixun/sx_381805",
+          "score": 6.8,
+          "reasoning": "礼来支付1亿美元首付+近期里程碑，潜在总额33.5亿美元，与诺诚健华建立5靶点创新药研发平台合作。中国 biotech大规模out-license。"
+        }
+      ],
+      "reasoning": "礼来支付1亿美元首付+近期里程碑，潜在总额33.5亿美元，与诺诚健华建立5靶点创新药研发平台合作。中国 biotech大规模out-license。",
+      "verify_todo": [],
+      "flags": []
     }
   ]
 }
