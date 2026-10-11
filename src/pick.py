@@ -68,6 +68,16 @@ def run(date: str | None = None) -> dict:
             if s.get("score", 0) >= keep_thr
             and s.get("confidence", 0) >= min_conf]
 
+    # 排除"非交易"条目（评分层已判过，这里再拦一道）。
+    # 这是 BD 雷达，临床数据读出/监管获批/股价波动都不是 BD 新闻。
+    # 放进去会生成一篇"交易要素"全是"未找到公开数据"的空壳文章。
+    not_bd = [s for s in pool if "not_bd" in (s.get("flags") or [])]
+    if not_bd:
+        pool = [s for s in pool if "not_bd" not in (s.get("flags") or [])]
+        print(f"[select] 剔除非交易条目 {len(not_bd)} 条")
+        for s in not_bd[:3]:
+            print(f"         · {s.get('title','')[:56]}")
+
     # 排除【今天已经成稿】的条目。
     # 否则它们会白占 daily_max 的名额：compose 会跳过（文件已存在），
     # 结果本该出 3 篇的一天只出 2 篇。daily_max 的含义是"3 篇新稿"，

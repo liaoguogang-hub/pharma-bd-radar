@@ -1,17 +1,7 @@
 {
   "date": "2026-10-11",
-  "count": 4,
+  "count": 3,
   "posts": [
-    {
-      "rel": "2026/10/11/03-event_report-5b29b709.html",
-      "date": "2026-10-11",
-      "title": "全球首个双周GLP-1/GIP双靶点减重药临床成功，值多少钱？",
-      "kicker": "Event Report｜创新药授权",
-      "sub": "给药频率砍半、减重疗效对标替尔泊肽，这款中国资产凭什么让跨国药企出手",
-      "hook": "现在减重药市场，诺和诺德的司美格鲁肽一周一针已经是\"短效\"了。一款双周给药的GLP-1R/GIPR双受体激动剂III期临床成功，成为全球首个长效双靶点减重疗法。这意味着患者每年只需注射26次而非52次，依从性差异可能直接影响数十亿美元的市场格局。",
-      "chars": 2784,
-      "site_rel": "posts/2026/10/11/03-event_report-5b29b709.html"
-    },
     {
       "rel": "2026/10/11/02-event_report-d91d0dc6.html",
       "date": "2026-10-11",
@@ -43,5 +33,5 @@
       "site_rel": "posts/2026/10/11/01-landscape_review-80d1c556.html"
     }
   ],
-  "all_count": 5
+  "all_count": 4
 }

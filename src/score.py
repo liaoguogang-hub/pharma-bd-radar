@@ -27,6 +27,14 @@ from openai import OpenAI
 from common import (RawItem, SCORED_DIR, RAW_DIR, load_yaml, read_json,
                     write_json, today_cst)
 
+# 交易信号（用于给 LLM 一个显式提示，不做硬性拦截——
+# 正则会有漏判，例如 "Ono pays Biohaven $80M for..." 没有 license 字样
+# 但确实是交易。所以只作为参考字段交给 LLM 判断）
+DEAL_SIGNAL = re.compile(
+    r"\b(?:licens|acqui|merger|partner|collaborat|option|buyout|takeover|"
+    r"stake|deal|upfront|asset\s+purchase|pays?|purchase)\w*\b"
+    r"|授权|引进|收购|并购|合作|许可|首付|权益|对外授权|共同开发", re.I)
+
 
 SYSTEM_PROMPT = """你是医药 BD（商务拓展/授权交易）领域的资深分析师。
 你的任务是给新闻条目打分，识别出真正值得深度报道的 BD 热点。
@@ -96,6 +104,31 @@ score 略降但保留——这类应该合并成一篇 landscape_review 综述�
   按内容本身评分，但在 reasoning 中标注"发布日期未知"
 - ⚠️ 媒体转载旧闻是常见现象。一篇讲「去年那笔交易」的文章，
   讲的是历史，不是今天发生的事。不要把旧交易当成新交易打分。
+
+**⑧ 必须是"交易"才算 BD 新闻（最高优先级）**
+这是 BD 雷达，不是临床进展雷达。判断条目是不是一笔交易：
+
+- **是交易**：存在授权/收购/合作/选择权关系，有买方卖方（或授权方受让方），
+  有 license / acquire / option / collaboration / 授权 / 引进 / 收购 / 合作 等关系词
+- **不是交易**：单纯的临床数据读出、监管获批、学术发表、股价波动、
+  人事变动、行业综述。这类**没有交易对手方**。
+
+⚠️ 遇到"不是交易"的条目：
+- `score` **必须 ≤ 3.0**，并在 flags 中加 `"not_bd"`
+- 即使它有 III 期成功、全球首个、大公司背书——都不改变它不是交易这个事实
+- reasoning 里写明"非交易条目"
+
+反例（实测踩过的坑）：
+  "全球首个双周给药 GLP-1R/GIPR 双受体激动剂临床三期成功"
+  → 只有临床数据，没有任何交易双方，不是 BD 新闻。
+  当时给了 6.5 分并成稿，结果文章的"交易要素"表全是"未找到公开数据"，
+  副标题还编出了"凭什么让跨国药企出手"这种素材里不存在的情节。
+
+**⑨ 素材量不足要标注**
+`material_chars` 是可用正文字数：
+- 为 0 或很小（只有标题）：说明没有正文素材。
+  这类即使分数够，也要在 `verify_todo` 里写明"仅有标题，无正文素材，
+  成稿前需补一手材料"，并把 `confidence` 压到 0.5 以下。
 
 # 输出格式（严格 JSON，不要任何解释文字）
 
@@ -199,6 +232,10 @@ def _build_items(items: list[RawItem]) -> list[dict[str, Any]]:
             "age_days": (round(it.age_hours / 24, 1)
                          if it.age_hours >= 0 else "未知"),
             "access": it.access,
+            # 素材量：为 0 表示只有标题、没有正文，写作时极易脑补
+            "material_chars": len(it.content or it.summary or ""),
+            # 交易信号：仅作提示，最终由你判断
+            "deal_signal": bool(DEAL_SIGNAL.search(it.title)),
             "summary": (it.summary or it.content)[:600],
             "multi_source": [t for t in it.topics if t.startswith("also:")],
         })

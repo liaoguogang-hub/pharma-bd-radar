@@ -1,83 +1,32 @@
 {
   "date": "2026-10-11",
-  "count": 3,
+  "count": 1,
   "plan": [
     {
       "type": "landscape_review",
       "cluster_key": "roche-defand-degrader",
-      "lead_id": "80d1c556702b6298",
-      "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
-      "score": 6.5,
+      "lead_id": "9304f33ad5b5b51d",
+      "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
+      "score": 7.0,
       "member_ids": [
-        "80d1c556702b6298",
         "9304f33ad5b5b51d",
         "e5b7d8292aa63d74"
       ],
       "members": [
         {
-          "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
-          "url": "https://endpoints.news/roche-does-fourth-china-deal-since-august-teaming-with-defand-on-degraders/",
-          "score": 6.5,
-          "reasoning": "Roche与杭州Defand Therapeutics达成分子胶降解剂合作，潜在总额近10亿美元，Roche自8月以来第四笔中国交易"
-        },
-        {
           "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
           "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/",
-          "score": 6.5,
-          "reasoning": "STAT报道Roche与Defand合作超出传统license范畴，同一交易"
+          "score": 7.0,
+          "reasoning": "同Roche-Defand deal的STAT报道，仅标题无正文，与endpoint条目属于同一交易"
         },
         {
           "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
           "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
-          "score": 6.5,
-          "reasoning": "STAT报道Roche与Defand分子胶药物发现合作，同一交易"
+          "score": 7.0,
+          "reasoning": "同Roche-Defand molecular glue deal，仅标题无正文，与其他来源构成cluster"
         }
       ],
-      "reasoning": "Roche与杭州Defand Therapeutics达成分子胶降解剂合作，潜在总额近10亿美元，Roche自8月以来第四笔中国交易"
-    },
-    {
-      "type": "event_report",
-      "cluster_key": null,
-      "lead_id": "d91d0dc6302af3d9",
-      "title": "Viatris to make $1.65B Pacira acquisition, adding to momentum in pain",
-      "score": 7.2,
-      "member_ids": [
-        "d91d0dc6302af3d9"
-      ],
-      "members": [
-        {
-          "title": "Viatris to make $1.65B Pacira acquisition, adding to momentum in pain",
-          "url": "https://endpoints.news/viatris-to-make-1-65b-pacira-acquisition-adding-to-momentum-in-pain/",
-          "score": 7.2,
-          "reasoning": "Viatris以18亿美元全现金收购商业阶段Pacira，进军非阿片类疼痛管理领域，MNC收购 biotech 改变赛道格局"
-        }
-      ],
-      "reasoning": "Viatris以18亿美元全现金收购商业阶段Pacira，进军非阿片类疼痛管理领域，MNC收购 biotech 改变赛道格局",
-      "verify_todo": [],
-      "flags": []
-    },
-    {
-      "type": "event_report",
-      "cluster_key": null,
-      "lead_id": "5b29b7090d7096c8",
-      "title": "长效减重新选择，全球首个双周给药GLP‑1R/GIPR双受体激动剂临床三期成功",
-      "score": 6.5,
-      "member_ids": [
-        "5b29b7090d7096c8"
-      ],
-      "members": [
-        {
-          "title": "长效减重新选择，全球首个双周给药GLP‑1R/GIPR双受体激动剂临床三期成功",
-          "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_382934",
-          "score": 6.5,
-          "reasoning": "全球首个双周给药GLP-1R/GIPR双受体激动剂III期临床成功，首个长效双靶点减重疗法"
-        }
-      ],
-      "reasoning": "全球首个双周给药GLP-1R/GIPR双受体激动剂III期临床成功，首个长效双靶点减重疗法",
-      "verify_todo": [
-        "需确认公司名称及是否寻求partner"
-      ],
-      "flags": []
+      "reasoning": "同Roche-Defand deal的STAT报道，仅标题无正文，与endpoint条目属于同一交易"
     }
   ]
 }
