@@ -454,6 +454,35 @@ async def run(date: str | None = None) -> list[RawItem]:
             else:
                 print(f"\n=== 陈旧过滤：无超过 {max_age} 天的条目 ===")
 
+        # ---- 一手材料补全（SEC EDGAR，免费无需 API key）----
+        #
+        # 为什么必须做：RSS 摘要只有 200 字符。实测一篇
+        # "Viatris 收购 Pacira" 的稿子写完了都不知道每股收购价是
+        # $36.50、也不知道公告日是 10-08——读者根本看不出这是新闻。
+        # 一手材料就在 SEC 8-K 的 Exhibit 99.1 里，全文免费公开。
+        ed_limit = cfg.get("fetch", {}).get("edgar_limit", 12)
+        thin = [i for i in items
+                if len(i.content or "") < 500 and i.url][:ed_limit]
+        if thin:
+            print(f"\n=== 补一手材料（SEC EDGAR）{len(thin)} 条 ===")
+            try:
+                from edgar import enrich_with_filing
+                got = 0
+                for it in thin:
+                    try:
+                        body, note = await enrich_with_filing(client, it.title)
+                    except Exception:
+                        continue
+                    if body and len(body) > 500:
+                        it.content = body
+                        it.access = "full"
+                        it.topics = list(set(it.topics + ["primary:sec-edgar"]))
+                        got += 1
+                        print(f"  ✓ {it.title[:44]} <- {note[:60]}")
+                print(f"  取得一手材料 {got}/{len(thin)}")
+            except Exception as e:
+                print(f"  EDGAR 补全跳过: {type(e).__name__}: {e}")
+
         # ---- 结构化追踪数据库（BioPharma Dive 中国授权交易库）----
         #
         # ⚠️ 关键设计：这张表是【参考数据库】，不是新闻。

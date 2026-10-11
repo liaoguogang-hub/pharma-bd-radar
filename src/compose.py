@@ -256,8 +256,15 @@ def _check_title_numbers(doc: dict, body: str) -> list[str]:
     return errs
 
 
-def validate_content(doc: dict, text: str, style_cfg: dict) -> list[str]:
-    """校验结构化内容（不涉及 HTML，因为 HTML 由代码保证）"""
+def validate_content(doc: dict, text: str, style_cfg: dict,
+                     src_title: str = "") -> list[str]:
+    """
+    校验结构化内容（不涉及 HTML，因为 HTML 由代码保证）。
+
+    src_title: 源新闻标题。判断"这是不是并购类"必须用它，不能用生成的文章标题
+    ——文章标题可能写成"18亿美元买一个止痛贴"，不含"收购"二字；
+    而正文的对比表格里又可能出现别的公司的"收购"，用正文判断会误报。
+    """
     errs: list[str] = []
     gen = style_cfg.get("generation", {})
     target = gen.get("target_words", 3000)
@@ -302,6 +309,37 @@ def validate_content(doc: dict, text: str, style_cfg: dict) -> list[str]:
                     f"「未找到公开数据」，属空壳表——"
                     f"说明素材不足或不是交易。请重写：去掉套模板的表格，"
                     f"只写素材真正支撑的内容")
+
+    # 2.7 并购类稿件的关键事实
+    #
+    # 实测案例：一篇"Viatris 18亿美元收购 Pacira"的稿子里
+    # 既没有每股收购价（实际 $36.50/股），也没有交易日期。
+    # 只写总额的并购报道，读者看不出这是新闻，也判断不了贵不贵
+    # ——每股价格才是估值锚点（对比市价能看出多少溢价）。
+    #
+    # 只对并购类做要求；授权类交易没有"每股价格"这个概念。
+    # 判据用源标题（见函数说明），不用正文——正文对比表里常有
+    # 别家公司的"收购"字样，会误报。
+    subj = src_title or doc.get("title", "")
+    if re.search(r"收购|并购|买下|acqui|buyout|takeover|merger", subj, re.I):
+        # 事实内容在正文里找
+        facts = doc.get("title", "") + " " + content_text(doc)
+        if not re.search(
+                r"(?:每股|per\s+share)[^。；]{0,24}[\d$]|"
+                r"\$\s?\d[\d.,]*\s*(?:per\s+share|/\s*股)|"
+                r"[\d.]+\s*美元\s*/\s*股", facts, re.I):
+            errs.append(
+                "并购类稿件缺少【每股收购价】——这是估值锚点，"
+                "必须写明（可从 SEC 8-K / 公司公告取）")
+        if not re.search(
+                r"20\d\d\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日|"
+                r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+"
+                r"\d{1,2},?\s+20\d\d|"
+                r"\d{1,2}\s+(?:January|February|March|April|May|June|July|"
+                r"August|September|October|November|December)\s+20\d\d",
+                facts, re.I):
+            errs.append(
+                "并购类稿件缺少【交易/公告日期】——读者据此判断是不是新闻")
 
     # 3. AI 味（分档）
     body = content_text(doc)
@@ -444,7 +482,8 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
 
         doc = parse_content(txt)
         last_doc = doc
-        errs = validate_content(doc, txt, style_cfg)
+        errs = validate_content(doc, txt, style_cfg,
+                                src_title=plan_item.get('title', ''))
         st = structure_report(doc)
 
         print(f"    尝试{attempt+1}: 正文{st['body_chars']}字 "
