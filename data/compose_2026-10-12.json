@@ -1,0 +1,56 @@
+[
+  {
+    "ok": true,
+    "file": "01-landscape_review-80d1c556.html",
+    "stats": {
+      "body_chars": 3357,
+      "sections": 8,
+      "tables": 2,
+      "boxes": 4,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 9913,
+    "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
+    "score": 8.2,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "file": "02-event_report-e94143c9.html",
+    "stats": {
+      "body_chars": 3083,
+      "sections": 9,
+      "tables": 4,
+      "boxes": 0,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 10711,
+    "title": "Ono pays Biohaven $80M for protein degrader; UK pulls Valneva's chikungunya shot",
+    "score": 7.8,
+    "type": "event_report"
+  },
+  {
+    "ok": true,
+    "file": "03-event_report-465ff58d.html",
+    "stats": {
+      "body_chars": 2458,
+      "sections": 7,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 9314,
+    "title": "Chai Discovery signs GSK deal to make biologics with AI",
+    "score": 6.5,
+    "type": "event_report"
+  }
+]

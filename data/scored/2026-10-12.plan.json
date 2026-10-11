@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-12",
+  "count": 3,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "roche-defand-degrader",
+      "lead_id": "80d1c556702b6298",
+      "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
+      "score": 8.2,
+      "member_ids": [
+        "80d1c556702b6298",
+        "9304f33ad5b5b51d",
+        "e5b7d8292aa63d74"
+      ],
+      "members": [
+        {
+          "title": "Roche does fourth China deal since August, teaming with Defand on degraders",
+          "url": "https://endpoints.news/roche-does-fourth-china-deal-since-august-teaming-with-defand-on-degraders/",
+          "score": 8.2,
+          "reasoning": "Roche与中国杭州初创Defand Therapeutics签署近10亿美元合作（source透露条款），聚焦分子胶降解药物；Roche是MNC，这是4个月来Roche第4个中国BD交易；首付未披露但近10亿总量级较高。"
+        },
+        {
+          "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
+          "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/",
+          "score": 7.5,
+          "reasoning": "STAT Plus报道Roche与中国biotech的超越许可的合作，聚焦分子胶药物；与id 80d1c556702b6298为同一交易，deal_signal=true；no_material(0字符)。"
+        },
+        {
+          "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
+          "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
+          "score": 7.5,
+          "reasoning": "STAT Plus报道Roche与Defand分子胶药物发现合作，与前两条为同一交易；deal_signal=true但material_chars=0。"
+        }
+      ],
+      "reasoning": "Roche与中国杭州初创Defand Therapeutics签署近10亿美元合作（source透露条款），聚焦分子胶降解药物；Roche是MNC，这是4个月来Roche第4个中国BD交易；首付未披露但近10亿总量级较高。"
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "e94143c9353f3f55",
+      "title": "Ono pays Biohaven $80M for protein degrader; UK pulls Valneva's chikungunya shot",
+      "score": 7.8,
+      "member_ids": [
+        "e94143c9353f3f55"
+      ],
+      "members": [
+        {
+          "title": "Ono pays Biohaven $80M for protein degrader; UK pulls Valneva's chikungunya shot",
+          "url": "https://endpoints.news/ono-pays-biohaven-80m-for-protein-degrader-uk-pulls-valnevas-chikungunya-shot/",
+          "score": 7.8,
+          "reasoning": "Ono支付Biohaven 8000万美元首付授权蛋白降解剂，deal_signal为true；首付8000万美元量级较高，日本大药企Ono获得pan-IgG降解剂权益，首付明确。"
+        }
+      ],
+      "reasoning": "Ono支付Biohaven 8000万美元首付授权蛋白降解剂，deal_signal为true；首付8000万美元量级较高，日本大药企Ono获得pan-IgG降解剂权益，首付明确。",
+      "verify_todo": [],
+      "flags": []
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "465ff58d359809da",
+      "title": "Chai Discovery signs GSK deal to make biologics with AI",
+      "score": 6.5,
+      "member_ids": [
+        "465ff58d359809da"
+      ],
+      "members": [
+        {
+          "title": "Chai Discovery signs GSK deal to make biologics with AI",
+          "url": "https://endpoints.news/chai-discovery-signs-gsk-deal-to-make-biologics-with-ai/",
+          "score": 6.5,
+          "reasoning": "Chai Discovery与GSK签署AI驱动的生物制品开发合作，deal_signal为true；GSK为MNC，但首付金额未披露，summary提及Eli Lilly合作，金额待查。"
+        }
+      ],
+      "reasoning": "Chai Discovery与GSK签署AI驱动的生物制品开发合作，deal_signal为true；GSK为MNC，但首付金额未披露，summary提及Eli Lilly合作，金额待查。",
+      "verify_todo": [
+        "需查GSK公告确认首付金额及合作范围"
+      ],
+      "flags": []
+    }
+  ]
+}
