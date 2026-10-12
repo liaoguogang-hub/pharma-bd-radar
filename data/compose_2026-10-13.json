@@ -1,0 +1,20 @@
+[
+  {
+    "ok": true,
+    "file": "01-event_report-03ff8a5d.html",
+    "stats": {
+      "body_chars": 2379,
+      "sections": 6,
+      "tables": 1,
+      "boxes": 3,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 7933,
+    "title": "超9.7亿美元，盟科药业与瑞士ClearideBio达成两项ADC合作",
+    "score": 7.8,
+    "type": "event_report"
+  }
+]

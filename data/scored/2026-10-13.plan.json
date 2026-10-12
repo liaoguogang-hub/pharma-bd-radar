@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "03ff8a5d3716c927",
+      "title": "超9.7亿美元，盟科药业与瑞士ClearideBio达成两项ADC合作",
+      "score": 7.8,
+      "member_ids": [
+        "03ff8a5d3716c927"
+      ],
+      "members": [
+        {
+          "title": "超9.7亿美元，盟科药业与瑞士ClearideBio达成两项ADC合作",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_383598",
+          "score": 7.8,
+          "reasoning": "首付未知、里程碑超9.7亿美元；两项ADC合作；盟科药业为中型 biotech；ADC赛道高热度"
+        }
+      ],
+      "reasoning": "首付未知、里程碑超9.7亿美元；两项ADC合作；盟科药业为中型 biotech；ADC赛道高热度",
+      "verify_todo": [
+        "需查港交所或盟科公告确认首付金额",
+        "确认两项ADC具体靶点和适应症",
+        "判断是否具备首创性"
+      ],
+      "flags": []
+    }
+  ]
+}
