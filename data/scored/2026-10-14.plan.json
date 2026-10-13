@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-14",
+  "count": 3,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "roche-rona-alk7",
+      "lead_id": "e930a82851cfcbaf",
+      "title": "Roche's seventh China deal this year is a $1.2B obesity pact with Rona Therapeutics",
+      "score": 7.7,
+      "member_ids": [
+        "e930a82851cfcbaf",
+        "0d8cc521706137b0",
+        "56b40065de1d1c5d"
+      ],
+      "members": [
+        {
+          "title": "Roche's seventh China deal this year is a $1.2B obesity pact with Rona Therapeutics",
+          "url": "https://endpoints.news/roches-seventh-china-deal-this-year-is-a-1-2b-obesity-pact-with-rona-therapeutics/",
+          "score": 7.7,
+          "reasoning": "首付1亿美元（总里程碑12亿美元）、ALK7为全球首个RNAi肥胖靶点、罗氏亲自下场、改变GLP-1赛道竞争格局；两篇英文报道均有料但中文标题\"超11亿美元\"信息增量有限"
+        },
+        {
+          "title": "Roche extends China deal streak with $1B pact for RNAi obesity drug",
+          "url": "https://www.biopharmadive.com/news/roche-rona-china-deal-rnai-obesity-drug-alk7/832845/",
+          "score": 7.7,
+          "reasoning": "首付1亿美元、ALK7为全球首个RNAi肥胖靶点（首创性高）、罗氏MNC背书、改变代谢赛道格局；全文有料（5488字符），英文首发报道"
+        },
+        {
+          "title": "超 11 亿美元！国产 siRNA 授权罗氏",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_384062",
+          "score": 7.7,
+          "reasoning": "国产siRNA授权罗氏、超11亿美元，与e930a82851cfcbaf/0d8cc521706137b0为同一交易；但无正文素材（material_chars=0），属中文转载"
+        }
+      ],
+      "reasoning": "首付1亿美元（总里程碑12亿美元）、ALK7为全球首个RNAi肥胖靶点、罗氏亲自下场、改变GLP-1赛道竞争格局；两篇英文报道均有料但中文标题\"超11亿美元\"信息增量有限"
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": "roche-china-2026",
+      "lead_id": "9304f33ad5b5b51d",
+      "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
+      "score": 7.5,
+      "member_ids": [
+        "9304f33ad5b5b51d",
+        "e5b7d8292aa63d74"
+      ],
+      "members": [
+        {
+          "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
+          "url": "https://www.statnews.com/2026/10/08/biotech-news-roche-goes-beyond-licensing-in-deal-with-chinese-biotech/",
+          "score": 7.5,
+          "reasoning": "Roche与中国biotech的突破性交易（超出标准许可范畴）；Roche为MNC Tier1；STAT+头条关注度高；涉及中国biotech出海大趋势；材料chars=0无法确认首付金额，预估较高"
+        },
+        {
+          "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
+          "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
+          "score": 7.0,
+          "reasoning": "Roche与同一家或另一中国biotech分子胶发现合作；分子胶为全球前沿领域，首个大型MNC系统性布局；与上条可能相关（同一Roche中国交易）；access=headline"
+        }
+      ],
+      "reasoning": "Roche与中国biotech的突破性交易（超出标准许可范畴）；Roche为MNC Tier1；STAT+头条关注度高；涉及中国biotech出海大趋势；材料chars=0无法确认首付金额，预估较高"
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": null,
+      "lead_id": "9b0ab751073a0a53",
+      "title": "Roundup: Novartis & Abogen Enter Licensing and Option Agreement, AstraZeneca and Daiichi Sankyo Enter Clinical Collaboration with Summit Therapeutics",
+      "score": 7.5,
+      "member_ids": [
+        "9b0ab751073a0a53"
+      ],
+      "members": [
+        {
+          "title": "Roundup: Novartis & Abogen Enter Licensing and Option Agreement, AstraZeneca and Daiichi Sankyo Enter Clinical Collaboration with Summit Therapeutics",
+          "url": "https://www.pharmexec.com/view/novartis-abogen-licensing-astrazeneca-daiichi-sankyo-collaboration-summit-therapeutics",
+          "score": 7.5,
+          "reasoning": "Novartis-Abogen许可+选项权协议（Abogen为国内RNA企业，mRNA热门赛道）+AZ/Daiichi-Sankyo与Summit扩大合作；两笔重磅；age_days=12偏旧，外溢影响略降"
+        }
+      ],
+      "reasoning": "Novartis-Abogen许可+选项权协议（Abogen为国内RNA企业，mRNA热门赛道）+AZ/Daiichi-Sankyo与Summit扩大合作；两笔重磅；age_days=12偏旧，外溢影响略降",
+      "verify_todo": [
+        "需查原始公告确认首付金额及选项费"
+      ],
+      "flags": []
+    }
+  ]
+}

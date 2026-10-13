@@ -1,0 +1,55 @@
+[
+  {
+    "ok": false,
+    "error": "- 正文字数 2143 超出范围（目标 2250-3900）\n- 表格列数不一致：表头 1 列，有一行 4 列\n- 表格列数不一致：表头 1 列，有一行 4 列",
+    "stats": {
+      "body_chars": 2143,
+      "sections": 8,
+      "tables": 3,
+      "boxes": 1,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "title": "Roche's seventh China deal this year is a $1.2B obesity pact with Rona Therapeutics",
+    "score": 7.7,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "file": "02-landscape_review-9304f33a.html",
+    "stats": {
+      "body_chars": 3212,
+      "sections": 7,
+      "tables": 4,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 11327,
+    "title": "STAT Plus: Roche goes beyond licensing in deal with Chinese biotech",
+    "score": 7.5,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "file": "03-landscape_review-9b0ab751.html",
+    "stats": {
+      "body_chars": 2283,
+      "sections": 7,
+      "tables": 5,
+      "boxes": 3,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 9422,
+    "title": "Roundup: Novartis & Abogen Enter Licensing and Option Agreement, AstraZeneca and Daiichi Sankyo Enter Clinical Collaboration with Summit Therapeutics",
+    "score": 7.5,
+    "type": "landscape_review"
+  }
+]

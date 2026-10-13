@@ -2,35 +2,35 @@
   "china_deals_aggregate": {
     "summary": [
       "【by_modality】",
-      "  Bispecific or trispecific: 2025=16, 2026=11",
-      "  Small molecule: 2025=17, 2026=12",
+      "  Bispecific or trispecific: 2025=16, 2026=12",
+      "  Small molecule: 2025=17, 2026=13",
       "  Conventional mAb: 2025=7, 2026=3",
-      "  Antibody-drug conjugate: 2025=10, 2026=4",
+      "  Antibody-drug conjugate: 2025=10, 2026=5",
       "  Peptide: 2025=4, 2026=6",
-      "  Nucleic acid: 2025=3, 2026=5",
+      "  Nucleic acid: 2025=3, 2026=6",
       "  Cell or gene therapy: 2025=2, 2026=2",
-      "  Other or undisclosed: 2025=5, 2026=5",
+      "  Other or undisclosed: 2025=5, 2026=6",
       "【by_therapeutic_area】",
-      "  Cancer: 2025=24, 2026=19",
-      "  Immune disease: 2025=18, 2026=11",
-      "  Metabolic disease: 2025=6, 2026=6",
-      "  Multiple: 2025=3, 2026=5",
-      "  CNS disorders: 2026=1",
+      "  Cancer: 2025=24, 2026=21",
+      "  Immune disease: 2025=18, 2026=12",
+      "  Metabolic disease: 2025=6, 2026=7",
+      "  Multiple: 2025=3, 2026=6",
+      "  CNS disorders: 2026=2",
       "  Other: 2025=8, 2026=4",
       "  Undisclosed: 2025=4, 2026=3",
       "【by_phase】",
       "  Preclinical: 2025=21, 2026=20",
-      "  Phase 1: 2025=24, 2026=6",
+      "  Phase 1: 2025=24, 2026=7",
       "  Phase 2: 2025=8, 2026=7",
       "  Phase 3: 2025=7, 2026=5",
       "  Marketed: 2025=1, 2026=3",
-      "  Undisclosed: 2025=2, 2026=8",
+      "  Undisclosed: 2025=2, 2026=13",
       "【overview_metrics】",
-      "  Number of deals: 2025=63.00, 2026=49.00",
-      "  Mean upfront payment (millions): 2025=143.41, 2026=216.73",
-      "  Median upfront payment (millions): 2025=75.00, 2026=110.00",
-      "  Mean overall deal value (millions): 2025=1,805.14, 2026=2,877.00",
-      "  Median overall deal value (millions): 2025=1,088.00, 2026=1,530.00"
+      "  Number of deals: 2025=63.00, 2026=55.00",
+      "  Mean upfront payment (millions): 2025=143.41, 2026=209.28",
+      "  Median upfront payment (millions): 2025=75.00, 2026=102.50",
+      "  Mean overall deal value (millions): 2025=1,805.14, 2026=2,823.24",
+      "  Median overall deal value (millions): 2025=1,088.00, 2026=1,515.00"
     ]
   },
   "biopharmadive_china_deals": {
@@ -43,7 +43,7 @@
       "Licensing deals involving China-developed drugs"
     ],
     "published": "Aug. 25, 2025",
-    "updated": "Sept. 29, 2026"
+    "updated": ""
   },
   "biopharmadive_ma_tracker": {
     "published": "",
