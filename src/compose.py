@@ -30,6 +30,28 @@ POSTS_DIR = ROOT / "posts"
 # ============================================================
 # 素材组装
 # ============================================================
+def _needs_registry_lookup(title: str) -> bool:
+    """
+    判断这条素材是否需要查注册库。
+
+    ⚠️ 规则来源：用户指出"凡涉及具体药物/试验的数据，
+    先查 ClinicalTrials.gov 和公司公告，查不到再写'未披露'"。
+    实测教训：一篇 solengepras 稿子通篇写"数据未披露"，
+    而完整数据（p 值、样本量、主要终点）早已公开。
+
+    反过来的坑也真实存在：solengepras 在注册库搜不到任何条目，
+    但它的数据在公司公告和 MDS 大会披露里。
+    所以注册库是【补充】通道，不是唯一通道。
+    """
+    t = title or ""
+    if re.search(
+            r"\b(?:NCT\d{8}|\d+\s*(?:期|phase)|试验|临床|III|II\b|trial|"
+            r"数据读出|终点|疗效|适应症|给药|剂量|患者|入组)\w*",
+            t, re.I):
+        return True
+    return bool(re.search(r"[A-Z][a-z]{3,}[a-z]+\b", t))   # 疑似药名
+
+
 def build_material(date: str, plan_item: dict) -> str:
     scored = read_json(SCORED_DIR / f"{date}.json", [])
     raw = read_json(RAW_DIR / f"{date}.json", [])
@@ -95,6 +117,34 @@ def build_material(date: str, plan_item: dict) -> str:
             blocks.append("")
 
     return "\n".join(blocks)
+
+
+async def build_material_async(date: str, plan_item: dict) -> str:
+    """
+    素材组装 + 临床试验注册库补查。
+
+    规则来源：用户要求"凡涉及具体药物/试验的数据，
+    先查 ClinicalTrials.gov 和公司公告，查不到再写'未披露'"。
+    这里自动执行前半句——把查到的注册库条目喂给模型，
+    让它手上真的有数据，而不是靠猜或者写"未披露"。
+    """
+    base = build_material(date, plan_item)
+    title = plan_item.get("title", "")
+    if not _needs_registry_lookup(title):
+        return base
+    try:
+        from ctgov import enrich_from_trial_registry
+        import httpx as _httpx
+        async with _httpx.AsyncClient(timeout=30) as cl:
+            txt, _srcs = await enrich_from_trial_registry(cl, title)
+        if txt:
+            return base + (
+                "\n--- 临床试验注册库（查证补充）---\n"
+                "⚠️ 查不到不等于不存在：注册库可能尚未登记，"
+                "数据仍在公司公告或学术会议里。\n" + txt)
+    except Exception:
+        pass
+    return base
 
 
 # ============================================================
@@ -180,6 +230,24 @@ FN 2. 来源说明
    不要用推测填满 2800 字。
 4. 如果素材根本不含交易（纯临床数据/监管获批），
    写"本条为临床进展，非 BD 交易"并聚焦数据本身，**不要套交易结构表**。
+
+## 查证规则（写"未披露"之前必须做）
+
+**5. 涉及具体药物/试验的数据，先查注册库和公司公告。**
+- 素材区若给了「临床试验注册库（查证补充）」，一律以它为准
+- 它给了什么就写什么：NCT 编号、期别、样本量、起始时间、主要终点
+- ⚠️ **查不到 ≠ 不存在**。注册库可能尚未登记，数据仍在公司公告或学术会议里。
+  实测 Cerevance solengepras：ClinicalTrials.gov 搜不到任何条目，
+  但3期 ARISE 数据（OFF 时间减少 0.61 小时、p=0.0350、n=341）
+  已在公司公告和 MDS 2026 大会完整披露。
+  **所以绝不能因为"注册库没有"就写"数据未披露"。**
+- 只有公告和注册库都查不到，才写"未找到公开数据"
+
+**6. 出处只能写真实的一手来源。**
+- ❌ 不写"用户提供""用户提供材料""据用户提供的文章"
+- ✅ 写实际查到的：公司公告 / SEC 备案 / 交易所披露 / 注册库 /
+  学术会议 / 媒体转述
+- 素材来自转述时，出处写你查到的那一家
 
 # 文风（大白话，去 AI 味）
 - 短句。不要长定语堆叠
@@ -611,8 +679,10 @@ def run(date: str | None = None) -> list[dict]:
                                 "type": item.get("type", ""),
                                 "stats": {}})
                 continue
-            material = build_material(date, item)
+            material = await build_material_async(date, item)
             print(f"\n  [{i}] {item.get('type')} | {item.get('score')}分")
+            if "临床试验注册库" in material:
+                print(f"      已补充注册库查证素材")
             print(f"      {item.get('title','')[:60]}")
             r = await generate_one(client, eff, item, material,
                                     style_cfg, out_dir)
