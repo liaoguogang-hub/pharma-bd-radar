@@ -1,27 +1,17 @@
 {
-  "date": "2026-10-14",
-  "count": 2,
+  "date": "2026-10-15",
+  "count": 1,
   "posts": [
     {
-      "rel": "2026/10/14/03-landscape_review-9b0ab751.html",
-      "date": "2026-10-14",
-      "title": "中国mRNA企业首次牵手跨国药企：2026年License-out全景图",
-      "kicker": "赛道综述｜中国创新药对外授权",
-      "sub": "诺华+Abogen、礼来+InnoCare、GSK+Hutchmed——中国创新药的\"身价\"一年涨近50%",
-      "hook": "Oct. 8, 2026，全球药企License-in中国资产的战场上，又多了一个新纪录：当月披露的55笔授权交易中，首付款均值已达2.09亿美元——而在2025年，这个数字还只有1.43亿美元。短短一年，中国创新药的\"身价\"涨了近50%。Jefferies数据显示，2025年全球药企授权支出中，有三分之一流向了来自中国的管线。这不是短期热度，而是结构性迁移。",
-      "chars": 2732,
-      "site_rel": "posts/2026/10/14/03-landscape_review-9b0ab751.html"
-    },
-    {
-      "rel": "2026/10/14/02-landscape_review-9304f33a.html",
-      "date": "2026-10-14",
-      "title": "Roche十天内连下两城：中国biotech正从\"卖靶点\"升级到\"共同开发\"",
-      "kicker": "Deal Watch | 跨国药企入华",
-      "sub": "2026年10月，Roche与中国公司的两笔交易打破了传统license-out边界——这不是采购，而是深度绑定",
-      "hook": "2026年10月8日，Roche宣布与一家中国biotech达成交易，STAT+在标题里特意用了\"goes beyond licensing\"——这笔交易不只是授权，而是延伸到药物发现阶段，涉及分子胶（molecular glue）等前沿技术领域。十天后，Roche又牵手另一家中国企业。一个月内两笔交易，跨国药企Tier 1正在用行动投票：中国创新不再只是\"卖靶点\"的原料供应商，而是全球药物研发链条上的深度参与者。",
-      "chars": 3641,
-      "site_rel": "posts/2026/10/14/02-landscape_review-9304f33a.html"
+      "rel": "2026/10/15/01-event_report-0d8cc521.html",
+      "date": "2026-10-15",
+      "title": "Roche 一掷亿美元入局 RNAi 减重：ALK7 靶点凭什么让跨国药企豪赌？",
+      "kicker": "Deal Report | 减重赛道",
+      "sub": "首付 1 亿美元、总额逾 10 亿美元，Roche 押注中国 RNA 干扰技术，剑指诺和诺德与礼来尚未覆盖的内脏脂肪机制",
+      "hook": "2026年10月13日，Roche 宣布与上海初创公司 Rona Therapeutics 达成一笔总额逾 10 亿美元的合作，主力是尚未进入临床的 RNAi 候选药——靶点 ALK7。这笔交易的首付就高达 1 亿美元，是 2026 年全球减重领域 MNC 与中国 biotech 授权中单笔首付最高纪录，而该药此时还停留在临床前阶段。",
+      "chars": 3263,
+      "site_rel": "posts/2026/10/15/01-event_report-0d8cc521.html"
     }
   ],
-  "all_count": 11
+  "all_count": 12
 }
