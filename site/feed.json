@@ -1,17 +1,27 @@
 {
-  "date": "2026-10-15",
-  "count": 1,
+  "date": "2026-10-16",
+  "count": 2,
   "posts": [
     {
-      "rel": "2026/10/15/01-event_report-0d8cc521.html",
-      "date": "2026-10-15",
-      "title": "Roche 一掷亿美元入局 RNAi 减重：ALK7 靶点凭什么让跨国药企豪赌？",
-      "kicker": "Deal Report | 减重赛道",
-      "sub": "首付 1 亿美元、总额逾 10 亿美元，Roche 押注中国 RNA 干扰技术，剑指诺和诺德与礼来尚未覆盖的内脏脂肪机制",
-      "hook": "2026年10月13日，Roche 宣布与上海初创公司 Rona Therapeutics 达成一笔总额逾 10 亿美元的合作，主力是尚未进入临床的 RNAi 候选药——靶点 ALK7。这笔交易的首付就高达 1 亿美元，是 2026 年全球减重领域 MNC 与中国 biotech 授权中单笔首付最高纪录，而该药此时还停留在临床前阶段。",
-      "chars": 3263,
-      "site_rel": "posts/2026/10/15/01-event_report-0d8cc521.html"
+      "rel": "2026/10/16/02-event_report-e5b7d829.html",
+      "date": "2026-10-16",
+      "title": "Roche押注中国分子胶：一场没有公布价格的豪赌",
+      "kicker": "Event Report｜MNC与中国Biotech合作",
+      "sub": "全球首个MNC系统性布局分子胶机制，中国Biotech凭什么拿到这张入场券",
+      "hook": "2026年10月8日，Roche宣布与中国Biotech Defand Therapeutics达成分子胶药物发现合作协议。这是跨国药企首次系统性押注中国分子胶平台——但外界连首付金额都无从得知。Roche葫芦里卖的什么药？",
+      "chars": 3072,
+      "site_rel": "posts/2026/10/16/02-event_report-e5b7d829.html"
+    },
+    {
+      "rel": "2026/10/16/01-event_report-08cc6ff3.html",
+      "date": "2026-10-16",
+      "title": "罗氏11.6亿美元重金引进大睿生物ALK7 RNAi，同步押注非GLP-1减重与RAS G12V肿瘤双赛道",
+      "kicker": "Event Report｜创新药授权",
+      "sub": "一款中国小核酸资产凭什么撬动跨国药企砸出年内第五笔中国BD交易",
+      "hook": "2026年10月13日，罗氏与本土Biotech大睿生物达成全球独家许可协议，以最高1亿美元首付及近期里程碑付款、加上最高10.6亿美元的开发及商业化里程碑，拿下一款靶向ALK7的RNAi减重候选药。对比行业数据，2026年单笔授权交易的平均首付已达2.09亿美元、首付款中位数也突破1亿美元——罗氏这笔首付实际低于行业均值，却锁定了全球首个进入临床阶段的减重RNAi靶点。这笔账，划算吗？",
+      "chars": 3132,
+      "site_rel": "posts/2026/10/16/01-event_report-08cc6ff3.html"
     }
   ],
-  "all_count": 12
+  "all_count": 14
 }

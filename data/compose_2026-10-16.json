@@ -1,0 +1,38 @@
+[
+  {
+    "ok": true,
+    "file": "01-event_report-08cc6ff3.html",
+    "stats": {
+      "body_chars": 2684,
+      "sections": 7,
+      "tables": 2,
+      "boxes": 3,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 8878,
+    "title": "罗氏11.6亿美元重金引进大睿生物ALK7 RNAi，同步押注非GLP-1减重与RAS G12V肿瘤双赛道",
+    "score": 7.4,
+    "type": "event_report"
+  },
+  {
+    "ok": true,
+    "file": "02-event_report-e5b7d829.html",
+    "stats": {
+      "body_chars": 2627,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 9208,
+    "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
+    "score": 6.5,
+    "type": "event_report"
+  }
+]

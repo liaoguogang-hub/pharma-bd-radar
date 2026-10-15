@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-16",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "08cc6ff387509a05",
+      "title": "罗氏11.6亿美元重金引进大睿生物ALK7 RNAi，同步押注非GLP-1减重与RAS G12V肿瘤双赛道",
+      "score": 7.4,
+      "member_ids": [
+        "08cc6ff387509a05"
+      ],
+      "members": [
+        {
+          "title": "罗氏11.6亿美元重金引进大睿生物ALK7 RNAi，同步押注非GLP-1减重与RAS G12V肿瘤双赛道",
+          "url": "https://www.pharnexcloud.com/zixun/sx_384119",
+          "score": 7.4,
+          "reasoning": "罗氏引进大睿生物ALK7 RNAi最高$11.6亿，非GLP-1减重靶点+RAS G12V肿瘤双赛道布局，ALK7为全球首个减重RNAi靶点潜力大，首付未明确披露需核实"
+        }
+      ],
+      "reasoning": "罗氏引进大睿生物ALK7 RNAi最高$11.6亿，非GLP-1减重靶点+RAS G12V肿瘤双赛道布局，ALK7为全球首个减重RNAi靶点潜力大，首付未明确披露需核实",
+      "verify_todo": [
+        "需查港交所公告确认首付到账金额及研发阶段"
+      ],
+      "flags": []
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "e5b7d8292aa63d74",
+      "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
+      "score": 6.5,
+      "member_ids": [
+        "e5b7d8292aa63d74"
+      ],
+      "members": [
+        {
+          "title": "STAT Plus: Roche inks drug discovery deal with Chinese biotech, focused on molecular glue medicines",
+          "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
+          "score": 6.5,
+          "reasoning": "Roche与中国biotech Defand分子胶药物发现合作，全球首个分子胶机制合作之一，MNC亲自下场；但金额未披露"
+        }
+      ],
+      "reasoning": "Roche与中国biotech Defand分子胶药物发现合作，全球首个分子胶机制合作之一，MNC亲自下场；但金额未披露",
+      "verify_todo": [
+        "需查具体首付金额和靶点信息"
+      ],
+      "flags": []
+    }
+  ]
+}
