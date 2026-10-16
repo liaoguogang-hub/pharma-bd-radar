@@ -1,27 +1,17 @@
 {
-  "date": "2026-10-16",
-  "count": 2,
+  "date": "2026-10-17",
+  "count": 1,
   "posts": [
     {
-      "rel": "2026/10/16/02-event_report-e5b7d829.html",
-      "date": "2026-10-16",
-      "title": "Roche押注中国分子胶：一场没有公布价格的豪赌",
-      "kicker": "Event Report｜MNC与中国Biotech合作",
-      "sub": "全球首个MNC系统性布局分子胶机制，中国Biotech凭什么拿到这张入场券",
-      "hook": "2026年10月8日，Roche宣布与中国Biotech Defand Therapeutics达成分子胶药物发现合作协议。这是跨国药企首次系统性押注中国分子胶平台——但外界连首付金额都无从得知。Roche葫芦里卖的什么药？",
-      "chars": 3072,
-      "site_rel": "posts/2026/10/16/02-event_report-e5b7d829.html"
-    },
-    {
-      "rel": "2026/10/16/01-event_report-08cc6ff3.html",
-      "date": "2026-10-16",
-      "title": "罗氏11.6亿美元重金引进大睿生物ALK7 RNAi，同步押注非GLP-1减重与RAS G12V肿瘤双赛道",
-      "kicker": "Event Report｜创新药授权",
-      "sub": "一款中国小核酸资产凭什么撬动跨国药企砸出年内第五笔中国BD交易",
-      "hook": "2026年10月13日，罗氏与本土Biotech大睿生物达成全球独家许可协议，以最高1亿美元首付及近期里程碑付款、加上最高10.6亿美元的开发及商业化里程碑，拿下一款靶向ALK7的RNAi减重候选药。对比行业数据，2026年单笔授权交易的平均首付已达2.09亿美元、首付款中位数也突破1亿美元——罗氏这笔首付实际低于行业均值，却锁定了全球首个进入临床阶段的减重RNAi靶点。这笔账，划算吗？",
-      "chars": 3132,
-      "site_rel": "posts/2026/10/16/01-event_report-08cc6ff3.html"
+      "rel": "2026/10/17/01-landscape_review-bde2a1a9.html",
+      "date": "2026-10-17",
+      "title": "AZ牵手insitro：4000万美元首付背后的AI肝病棋局",
+      "kicker": "Event Report｜AI药物发现",
+      "sub": "当MNC开始用AI平台赌未来，小biotech的生存逻辑正在改写",
+      "hook": "2026年10月，阿斯利康向加州AI biotech公司insitro支付4000万美元首付，获得后者AI驱动药物发现平台的MASH适应症开发权益。这笔交易潜在总价值最高达15亿美元，但首付占比仅2.7%——这意味着什么？MNC正在用小额首付测试AI平台的成色，而 biotech 则在用自己的算法积累换取大药企的全球商业化网络。",
+      "chars": 2771,
+      "site_rel": "posts/2026/10/17/01-landscape_review-bde2a1a9.html"
     }
   ],
-  "all_count": 14
+  "all_count": 15
 }

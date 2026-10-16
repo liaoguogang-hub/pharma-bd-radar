@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-17",
+  "count": 1,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "az-insitro-mash",
+      "lead_id": "bde2a1a9540db9e6",
+      "title": "AstraZeneca does AI deal with insitro; inVIOs' Phase 1 success in solid tumors",
+      "score": 6.5,
+      "member_ids": [
+        "bde2a1a9540db9e6",
+        "1db359b4127c612e"
+      ],
+      "members": [
+        {
+          "title": "AstraZeneca does AI deal with insitro; inVIOs' Phase 1 success in solid tumors",
+          "url": "https://endpoints.news/astrazeneca-does-ai-deal-with-insitro-invios-phase-1-success-in-solid-tumors/",
+          "score": 6.5,
+          "reasoning": "AZ与insitro的AI药物发现合作，首付4000万美元，聚焦MASH适应症，MNC对AI biotech合作具示范效应"
+        },
+        {
+          "title": "2AstraZeneca Taps insitro AI for MASH in Deal Worth Up to $1.5 Billion",
+          "url": "https://www.pharmexec.com/view/astrazeneca-insitro-ai-mash-billion",
+          "score": 6.5,
+          "reasoning": "与bde2a1a9540db9e6同一交易，首付4000万美元AI药物发现合作，AZ与insitro联手"
+        }
+      ],
+      "reasoning": "AZ与insitro的AI药物发现合作，首付4000万美元，聚焦MASH适应症，MNC对AI biotech合作具示范效应"
+    }
+  ]
+}

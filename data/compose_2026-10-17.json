@@ -1,0 +1,20 @@
+[
+  {
+    "ok": true,
+    "file": "01-landscape_review-bde2a1a9.html",
+    "stats": {
+      "body_chars": 2334,
+      "sections": 7,
+      "tables": 3,
+      "boxes": 2,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 10270,
+    "title": "AstraZeneca does AI deal with insitro; inVIOs' Phase 1 success in solid tumors",
+    "score": 6.5,
+    "type": "landscape_review"
+  }
+]
