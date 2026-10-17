@@ -24,7 +24,8 @@ except ImportError:                 # 旧版回退
     from selectolax.parser import HTMLParser
 
 from common import (RawItem, clean_text, ensure_dirs, load_yaml, make_id,
-                    now_iso, RAW_DIR, DATA_DIR, write_json, today_cst)
+                    now_iso, split_entity_tags, RAW_DIR, DATA_DIR, write_json,
+                    today_cst)
 from noise import filter_items
 from deepen import looks_important
 from search_backend import get_search_fn
@@ -303,7 +304,13 @@ async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
             if len(t) > best_len:
                 best, best_len = t, len(t)
     if best_len > 200:
-        item.content = best[:12000]
+        raw = best[:12000]
+        # ⚠️ 新闻站常把自动实体标签塞在正文最前面（见 common.split_entity_tags）。
+        #    留着它，成稿模型会把标签里的靶点/公司当成交易内容——实测出过事故
+        #    （postmortem_b4985179）。这里剥离，标签单独存。
+        body, tags = split_entity_tags(raw)
+        item.entity_tags = tags
+        item.content = body
     else:
         item.access = "headline"
     return item

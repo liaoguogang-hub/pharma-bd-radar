@@ -27,7 +27,7 @@ try:
 except ImportError:  # pragma: no cover
     from selectolax.parser import HTMLParser
 
-from common import (RawItem, clean_text, now_iso, make_id)
+from common import (RawItem, clean_text, now_iso, make_id, split_entity_tags)
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
@@ -319,9 +319,12 @@ async def enrich(item: RawItem, search_fn) -> RawItem:
         for u, t in found[:3]:
             body, host = await fetch_primary(c, u)
             if body:
-                item.content = body
+                # 一手页面同样可能带新闻站实体标签行，一并剥离（见 common）
+                body2, etags = split_entity_tags(body)
+                item.entity_tags = list(set(item.entity_tags + etags))
+                item.content = body2
                 item.topics = list(set(item.topics + [f"primary:{host}"]))
-                print(f"    ✓ 一手材料: {host} ({len(body)} 字)")
+                print(f"    ✓ 一手材料: {host} ({len(body2)} 字)")
                 return item
             print(f"    ✗ 无法抓取: {u[:60]}")
 

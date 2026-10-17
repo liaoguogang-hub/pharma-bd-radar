@@ -136,6 +136,19 @@ jobs:
           SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
         run: python publish.py ${{ inputs.date }}
 
+      # ⚠️ 放在"提交产出"之前：报告要一起进 git，否则下次运行就丢了。
+      #    不加 continue-on-error 会让审计失败把整条流水线标红；
+      #    但审计失败本身要有人看见，所以用 continue-on-error + 日志。
+      - name: 可信度核查（每日报告 + 飞书）
+        if: ${{ inputs.skip_llm != true && inputs.skip_compose != true }}
+        continue-on-error: true
+        working-directory: src
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+        run: python audit.py ${{ inputs.date }}
+
       - name: 提交产出
         run: |
           git config user.name  "radar-bot"

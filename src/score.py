@@ -139,6 +139,23 @@ score 略降但保留——这类应该合并成一篇 landscape_review 综述�
   这类即使分数够，也要在 `verify_todo` 里写明"仅有标题，无正文素材，
   成稿前需补一手材料"，并把 `confidence` 压到 0.5 以下。
 
+**⑩ reasoning 只写"为什么值得报道"，不写事实结论（重要）**
+`reasoning` 会被原样喂给成稿阶段当"选题理由"。如果你在这里下了
+一个事实判断（例如"自有 TYK2 平台授权"），成稿会把它当既成事实继续扩写，
+下游所有环节都在错误前提上加法——**评分只是选材，不是定稿**。
+
+- ❌ "中国 biotech 自有 TYK2 平台授权给 MNC 礼来"（把某靶点说成交易标的）
+- ❌ "礼来首次布局 BTK"（素材没说的动机/历史）
+- ✅ "诺诚健华与礼来达成多靶点研发授权，首付+近期里程碑最高 1 亿美元，
+     潜在总额 33.5 亿美元，属中等量级平台型交易"
+- 若你怀疑某细节（如具体靶点、对手方、临床阶段）但素材没写清，
+  **放进 `verify_todo`，不要在 reasoning 里替它下结论**。
+
+反例（实测事故 postmortem_b4985179）：
+  公告只说"依托专有药物发现平台…至多5项创新靶点"，新闻站自动实体标签里
+  带着 "TYK2"。评分 reasoning 写成"自有 TYK2 平台授权"，
+  成稿据此把整篇写成"TYK2 平台"，还捏造了一个公告里没有的分子代号。
+
 # 输出格式（严格 JSON，不要任何解释文字）
 
 ⚠️ **只输出一个 JSON 数组**。不要输出思考过程、不要解释、不要 markdown 代码块包裹。
@@ -402,6 +419,7 @@ def run(date: str | None = None) -> list[dict]:
             s["sources"] = [src.source] + [
                 t.split(":", 1)[1] for t in src.topics if t.startswith("also:")]
             s["content"] = src.content
+            s["entity_tags"] = list(src.entity_tags)
             s["lang"] = src.lang
             s["scored_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 

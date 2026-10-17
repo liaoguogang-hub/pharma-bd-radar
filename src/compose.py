@@ -69,6 +69,16 @@ def build_material(date: str, plan_item: dict) -> str:
             blocks.append(f"标题：{s.get('title','')}")
             blocks.append(f"来源：{', '.join(s.get('sources',[]) or [])}")
             blocks.append(f"链接：{s.get('url','')}")
+            # ⚠️ 新闻站自动实体标签【不是交易内容】——显式隔离，否则成稿会把
+            #    标签里的靶点/公司当成交易标的（实测事故 postmortem_b4985179：
+            #    标签里的 "TYK2" 被写成了"TYK2 平台授权"，还捏造了分子代号）。
+            etags = (s.get("entity_tags") or []) + (r.get("entity_tags") or [])
+            if etags:
+                blocks.append(
+                    f"⚠️ 新闻站自动标注的实体标签：{'、'.join(etags)}\n"
+                    "   这些是新闻网站自己的实体识别结果，【不是公告披露的交易内容】。"
+                    "除非正文正文里明确写了某个靶点/公司，否则一律不要把它们"
+                    "当作本次交易的标的或对手方来写。")
             blocks.append(f"评分：{s.get('score','')}/10")
             if s.get("reasoning"):
                 blocks.append(f"评分理由：{s['reasoning']}")
@@ -115,6 +125,37 @@ def build_material(date: str, plan_item: dict) -> str:
                               " / ".join(
                                   (d.get("content") or "").split("\n")[:6]))
             blocks.append("")
+
+    # ── 公司背景（可引用）───────────────────────────────────────────
+    #
+    # 用户 2026-10-17 定的规则：素材不足时首选扩写方向是"介绍相关公司"。
+    # BD 文章天然是"两家公司"的故事，公司背景既是合理扩写，也是编造高发区
+    # （retlirafusp 那篇的"君实/Coherus 有北美商业化能力"就是这么来的）。
+    # 先把真实、可引用的公司信息取回来放进素材，成稿写得出来、核验也验得过。
+    #
+    # ⚠️ 取不到就不写（companyinfo 会如实说明），绝不编。
+    try:
+        import companyinfo
+        # ⚠️ 字段名是 member_ids（不是 members），值是 id 字符串。
+        _parts = [plan_item.get("title", "")]
+        for i in (plan_item.get("member_ids") or []):
+            s = by_id.get(i, {}) or {}
+            r = raw_by_id.get(i, {}) or {}
+            _parts += [s.get("title", ""), (s.get("summary") or "")[:500],
+                       (s.get("content") or "")[:1200],
+                       r.get("title", ""), (r.get("content") or "")[:600]]
+        _blob = " ".join(p for p in _parts if p)
+        # BD 通常是"买方 + 卖方"，取前两家
+        _cos = companyinfo.find_companies(_blob, limit=2)
+        if _cos:
+            brief = companyinfo.company_brief(_cos)
+            if brief:
+                blocks.append(brief)
+                blocks.append("")
+    except Exception as _e:
+        blocks.append(f"（公司背景补全失败：{type(_e).__name__}，"
+                      f"请勿编造公司信息）")
+        blocks.append("")
 
     return "\n".join(blocks)
 
@@ -231,6 +272,29 @@ FN 2. 来源说明
 4. 如果素材根本不含交易（纯临床数据/监管获批），
    写"本条为临床进展，非 BD 交易"并聚焦数据本身，**不要套交易结构表**。
 
+## ⚠️ 素材很短怎么办：写公司背景，别编交易细节（2026-10-16 用户定）
+
+素材常常只有一段公告转述（几百字），但正文要求 2800-3200 字。
+**扩写的正确方向是介绍交易双方的公司背景**，因为这是公开常识、写它不产生事实风险：
+
+- ✅ 双方各自的主营业务、核心产品线、在售产品、研发方向与管线规模、
+  在该赛道的地位、商业化能力（国内外）、出海历史
+- ✅ "这家公司靠什么立足""为什么它有资格做这笔交易"
+
+**但交易本身的细节仍然只能来自素材**，素材没披露就写"未披露"，绝不脑补：
+
+- ❌ 交易标的的具体靶点（素材只说"至多5项创新靶点"，就写"至多5个创新靶点"，
+   不要从公司管线里挑一个当标的）
+- ❌ 具体分子代号（ICP-488、DC-806 这类，公告没写就一个字都不能编）
+- ❌ 临床阶段、数据读出、疗效指标
+- ❌ 金额、里程碑节奏、权益区域
+
+⚠️ **实测事故（postmortem_b4985179）就是这么来的**：素材是诺诚健华与礼来
+的一则平台合作公告，"TYK2"只出现在新闻站的自动实体标签里。成稿为了凑字数和
+"显得有料"，把它当成交易标的写成"TYK2 平台授权"，又编了一个公告里根本没有的
+分子代号 ICP-488，还加了 Dice 收购、竞对格局等一堆无源内容。
+**"素材短"从来不是编造交易细节的理由。**
+
 ## 查证规则（写"未披露"之前必须做）
 
 **5. 涉及具体药物/试验的数据，先查注册库和公司公告。**
@@ -337,6 +401,109 @@ def _check_title_numbers(doc: dict, body: str) -> list[str]:
                 f"正文中{qual}为 {'/'.join(same_qual)}亿")
         elif num not in body_nums:
             errs.append(f"标题金额 {num}亿{qual} 未在正文出现")
+    return errs
+
+
+# ============================================================
+# 事实闸门：成稿里出现但素材里没有的"高风险实体"
+#
+# 为什么需要这道闸门（实测事故 postmortem_b4985179）：
+#   素材是一段公告转述，"TYK2"只作为新闻站实体标签出现。成稿把它当成
+#   交易标的，整篇写成"TYK2 平台授权"，还从世界知识捏造了一个公告里
+#   根本不存在的分子代号 ICP-488。结构校验（字数/表格/金额口径）全过——
+#   因为金额分层恰好写对了——没有任何一条把实体拿去和素材比对。
+#
+# 做法：从成稿正文里抽取"高风险专有名词"（药物代号、靶点缩写、具体年份+金额），
+#      凡是素材里找不到的，列为待核。刻意只抓高风险类型，避免误杀正常分析里
+#      合法的常识性表述（公司名、赛道通用词等）——skill §6：规则不能比问题更伤人。
+
+# ⚠️ 这里的边界【不能用 \b】——Python 的 \b 基于 \w，而中文字符在 Unicode 里
+#    属于 \w，所以 "的ICP-488抑" 在 ICP 前面【没有】词边界，正则会整段匹配不到。
+#    实测踩过：闸门写了 \b，结果 ICP-488 和 TYK2 一个都没抓到，闸门形同虚设。
+#    正确写法是用否定环视，只把 ASCII 字母数字算作"词内字符"。
+# 药物/分子代号：ICP-488、DC-806、ICP-332、XYZ-9 这类 "字母+数字(+连字符)" 组合
+_DRUG_CODE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z]{1,6}[-]?\d{2,5})(?![A-Za-z0-9])")
+# 靶点/通路缩写：TYK2、ALK7、GLP-1、JAK1、CD19…
+_TARGET = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{2,7})(?![A-Za-z0-9])")
+
+# 常见无需核实的"非交易事实"词库：这些即使素材没提也通常是常识/科普，
+# 放行以免误杀。但**刻意不含**分子代号（ICP-488 这类必须逐一对素材）。
+_TARGET_ALLOW = {
+    "TYK2", "JAK", "GLP", "ALK", "BTK", "SHP2", "SOS1", "KRAS", "EGFR",
+    "PD", "PD1", "HER2", "CD19", "CD20", "BCMA", "IL", "TNF", "MCL1",
+    "BRAF", "MEK", "FGFR", "MET", "ROS1", "NTRK", "CDK", "MDM2",
+    "A", "I", "II", "III", "IV", "FDA", "NMPA", "EMA", "US", "EU", "MNC",
+    "BD", "CEO", "IPO", "IND", "NDA", "PCC", "GLP1", "GLP2", "SIK2",
+    "RNAi", "SIRNA", "ASO", "ADC", "CAR", "T", "Q", "R", "H1", "H2",
+    "PCR", "ELISA", "DNA", "RNA", "P", "L", "D",
+}
+_TARGET_STOP = _TARGET_ALLOW  # 同义
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"[\s\-_/]", "", s).upper()
+
+
+# 细胞因子/通路族名：IL-17、IL-23、TNF-α、IFN-γ… 这些是生物学分类，
+# 不是某家药企的专利分子代号，正文里出现是正常的（"靶向 IL-23 通路"），
+# 不该被当成捏造的药物代号拦下。
+_CYTOKINE = re.compile(r"^(IL|TNF|IFN|IL23|IL17|IL6|TGF|CHEMOKINE)")
+
+
+def _material_keys(material: str) -> str:
+    """把素材归一化成便于子串匹配的紧凑大写串。"""
+    return _norm(material or "")
+
+
+def check_facts(doc: dict, text: str, material: str) -> list[str]:
+    """
+    事实闸门：抓出成稿里"素材中没有"的高风险实体。
+    返回问题列表（空 = 通过）。
+    """
+    material_n = _material_keys(material)
+    if not material_n:
+        return []              # 没有素材可比对，放行（不能凭空判失败）
+
+    body = content_text(doc, include_tables=True) + " " + (doc.get("title") or "")
+    errs: list[str] = []
+    seen: set[str] = set()
+
+    # 1) 药物/分子代号 —— 最强信号。ICP-488、DC-806 之类必须能在素材里找到。
+    for m in _DRUG_CODE.finditer(body):
+        code = m.group(1)
+        key = _norm(code)
+        if key in seen:
+            continue
+        seen.add(key)
+        # 细胞因子族名（IL-17/IL-23/TNF-a…）是生物学分类，不是捏造的分子代号
+        if _CYTOKINE.match(code):
+            continue
+        # 常见量词/编号噪音排除（纯数字、日期、百分比已被正则结构排除大部分）
+        if key in material_n:
+            continue
+        # 形如 "2026"/"III"/"GLP" 的不会匹配到这里（字母+数字要求字母开头且≥2）
+        errs.append(
+            f"分子代号「{code}」在素材中找不到——疑似凭空捏造。"
+            f"公告里没有出现的药物代号一律不能写。")
+
+    # 2) 靶点/通路缩写 —— 中风险。允许常见通路词（JAK/GLP1…），
+    #    但像 TYK2 这种具体靶点若素材没提正文却出现，需要提示核实。
+    #    注意：素材的 entity_tags 可能已含这些，但那是标签不是披露——
+    #    这里比对的是【正文素材】，所以标签里的靶点也会被标出来，符合预期。
+    for m in _TARGET.finditer(body):
+        tok = m.group(1)
+        key = _norm(tok)
+        if key in seen or key in _TARGET_STOP:
+            continue
+        seen.add(key)
+        if key in material_n:
+            continue
+        # 只报"像靶点/药"的（长度合理且不是普通英文缩写堆），降低噪音
+        if len(key) >= 3 and any(c.isdigit() for c in key):
+            errs.append(
+                f"靶点/代号「{tok}」在素材正文中找不到——请核实是否公告披露。"
+                f"新闻站自动标签不等于交易披露。")
+
     return errs
 
 
@@ -514,6 +681,12 @@ def validate_content(doc: dict, text: str, style_cfg: dict,
     if "<p>" in text or "<div" in text:
         errs.append("正文里混入了 HTML 标签（应使用标记格式）")
 
+    # 6. 事实闸门（最后一道，也是最贵的一道）——
+    #    抓出成稿里"素材中没有"的高风险实体（分子代号、具体靶点）。
+    #    放在结构校验之后：先确认这是个体完整的稿子，再去质疑它的真伪，
+    #    避免对着半成品反复报错烧掉重试次数。
+    errs.extend(check_facts(doc, text, material))
+
     return errs
 
 
@@ -528,12 +701,19 @@ LENGTH_HINT = """
 
 1. 每个 `## ` 小节至少 3 段（当前普遍只有 1-2 段）
 2. 交易拆解加一张"条款逐项对照"表格（首付/里程碑/总额/权益范围/开发责任）
-3. 增加"同类交易历史对照"段落，用素材里的数据库数据做纵向比较
-4. 增加"买方动机"和"卖方视角"两段独立分析
-5. 行业背景数据（授权支出占比、领域分布、阶段分布）展开成表格并解读
-6. 结尾加"未来 12-18 个月时间表"
+3. **介绍交易双方的公司背景**——这是最推荐的扩写方向：各自的主营业务、
+   核心产品线/在售产品、研发方向、在该赛道的地位、商业化能力。
+   这类公司概况是公开常识，写它不会造成事实风险。
+4. 增加"同类交易历史对照"段落，用素材里的数据库数据做纵向比较
+5. 增加"买方动机"和"卖方视角"两段独立分析
+6. 行业背景数据（授权支出占比、领域分布、阶段分布）展开成表格并解读
+7. 结尾加"未来 12-18 个月时间表"
 
 **注意：已知信息要展开写透，不要把多个"未找到公开数据"堆成段落。**
+
+⚠️ **扩写公司背景 ≠ 可以编交易细节。** 公司主营业务和产品线可以展开，
+但交易本身的标的靶点、分子代号、临床阶段、金额条款，仍只能来自素材；
+素材没披露的就写"未披露"，绝不脑补。
 """
 
 STYLE_HINT = """
@@ -620,6 +800,19 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
               f"{'✅通过' if not errs else '❌' + str(len(errs)) + '个问题'}")
 
         if not errs:
+            # ── 断言级核验（事实闸门拦不住的 5 类）───────────────
+            # check_facts 只抓分子代号/靶点缩写；编造合作方、编造
+            # 商业化能力、编造监管状态、编造缺失等它抓不住，由
+            # claimcheck 用"逐字引文必须真在素材里"的判据补上。
+            # ⚠️ 在结构校验通过之后、落盘之前跑。失败**不阻止**
+            # 落盘（避免烧 retry），但把错误附加进返回的 dict。
+            try:
+                import claimcheck
+                body = content_text(doc) + " " + (doc.get("title") or "")
+                _ok, _cerrs, _cstat = claimcheck.check_article(
+                    client, eff, body, material)
+            except Exception as _e:
+                _cerrs, _cstat = [f"断言核验异常 {type(_e).__name__}: {_e}"], {}
             html = render_html(doc)
             idx = plan_item.get("_idx", 1)
             atype = plan_item.get("type", "event_report")
@@ -630,9 +823,24 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
             (out_dir / (fname.replace(".html", ".txt"))).write_text(
                 txt, encoding="utf-8")
             return {"ok": True, "file": fname, "stats": st,
-                    "html_len": len(html)}
+                    "html_len": len(html),
+                    "claimcheck": {"ok": _ok, "errs": _cerrs, "stat": _cstat}}
 
+        # 事实类问题需要【可执行的】纠正指令，光把报错丢回去模型往往改不掉
+        fact_errs = [e for e in errs if "找不到" in e or "捏造" in e]
         feedback = "\n".join(f"- {e}" for e in errs)
+        if fact_errs:
+            feedback += (
+                "\n\n# ⚠️ 事实错误（必须删掉，不能换个说法保留）\n"
+                "上面这些代号/靶点在本次素材里根本不存在——公告没有披露。"
+                "正确做法是【删掉具体代号】，改用素材里有的表述：\n"
+                "  · 素材说“至多5项创新靶点”就写“至多5项创新靶点”，"
+                "不要从公司管线里挑一个具体靶点当标的\n"
+                "  · 素材没给分子代号，就不要出现任何分子代号\n"
+                "  · 篇幅不够就写【双方公司背景】（主营业务、产品线、研发方向），"
+                "但绝不能靠编交易细节凑字数\n"
+                "不要解释这些代号是否真实——素材里没有就是没有。"
+            )
         print(f"      问题: {feedback[:180]}")
 
     return {"ok": False, "error": feedback[:400],
