@@ -800,31 +800,48 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
               f"{'✅通过' if not errs else '❌' + str(len(errs)) + '个问题'}")
 
         if not errs:
-            # ── 断言级核验（事实闸门拦不住的 5 类）───────────────
-            # check_facts 只抓分子代号/靶点缩写；编造合作方、编造
-            # 商业化能力、编造监管状态、编造缺失等它抓不住，由
-            # claimcheck 用"逐字引文必须真在素材里"的判据补上。
-            # ⚠️ 在结构校验通过之后、落盘之前跑。失败**不阻止**
-            # 落盘（避免烧 retry），但把错误附加进返回的 dict。
+            # ── 断言级核验（事实闸门拦不住的那几类）───────────────
+            # check_facts 只抓分子代号/靶点缩写；编造合作方、编造商业化能力、
+            # 编造监管状态、编造缺失等它抓不住，由 claimcheck 用
+            # "逐字引文必须真在素材里"的判据补上。
+            #
+            # ⚠️ 判据是 claimcheck.should_block()，**不是"有错就拦"**：
+            #    2026-10-19 临床雷达按"有错就拦"接线，跨语种素材的误报
+            #    把 3 篇稿子全拦掉、重试 12 次产出归零。只拦强信号。
             try:
                 import claimcheck
                 body = content_text(doc) + " " + (doc.get("title") or "")
                 _ok, _cerrs, _cstat = claimcheck.check_article(
                     client, eff, body, material)
+                _block, _why = claimcheck.should_block(_cstat, _cerrs)
             except Exception as _e:
-                _cerrs, _cstat = [f"断言核验异常 {type(_e).__name__}: {_e}"], {}
-            html = render_html(doc)
-            idx = plan_item.get("_idx", 1)
-            atype = plan_item.get("type", "event_report")
-            fname = f"{idx:02d}-{atype}-{plan_item.get('lead_id','')[:8]}.html"
-            out_dir.mkdir(parents=True, exist_ok=True)
-            (out_dir / fname).write_text(html, encoding="utf-8")
-            # 同时存一份标记原文，便于人工比对
-            (out_dir / (fname.replace(".html", ".txt"))).write_text(
-                txt, encoding="utf-8")
-            return {"ok": True, "file": fname, "stats": st,
-                    "html_len": len(html),
-                    "claimcheck": {"ok": _ok, "errs": _cerrs, "stat": _cstat}}
+                _cerrs = [f"断言核验异常 {type(_e).__name__}: {_e}"]
+                _cstat, _block, _why = {}, True, "断言核验异常（不能当通过）"
+            print(f"      → 断言 {_cstat.get('ok', 0)}/{_cstat.get('total', 0)} 有出处"
+                  + (f"  ❌拦：{_why}" if _block else "  ✅放行"))
+            if not _block:
+                html = render_html(doc)
+                idx = plan_item.get("_idx", 1)
+                atype = plan_item.get("type", "event_report")
+                fname = f"{idx:02d}-{atype}-{plan_item.get('lead_id','')[:8]}.html"
+                out_dir.mkdir(parents=True, exist_ok=True)
+                (out_dir / fname).write_text(html, encoding="utf-8")
+                # 同时存一份标记原文，便于人工比对
+                (out_dir / (fname.replace(".html", ".txt"))).write_text(
+                    txt, encoding="utf-8")
+                return {"ok": True, "file": fname, "stats": st,
+                        "html_len": len(html),
+                        "claimcheck": {"ok": not _cerrs, "why": _why,
+                                       "errs": _cerrs, "stat": _cstat}}
+            # ── 被拦：先把草稿存下来，否则"为什么被拦"事后无据可查 ──
+            dbg = DATA_DIR / "debug"
+            dbg.mkdir(parents=True, exist_ok=True)
+            (dbg / f"rejected_{plan_item.get('lead_id','')[:8]}"
+                   f"_{attempt+1}.txt").write_text(
+                f"# 拦因：{_why}\n# 统计：{_cstat}\n# 问题：\n"
+                + "\n".join(f"- {e}" for e in _cerrs[:40])
+                + f"\n\n{txt}", encoding="utf-8")
+            errs = _cerrs
 
         # 事实类问题需要【可执行的】纠正指令，光把报错丢回去模型往往改不掉
         fact_errs = [e for e in errs if "找不到" in e or "捏造" in e]
