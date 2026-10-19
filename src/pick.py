@@ -24,13 +24,24 @@ def _has_body(s: dict) -> bool:
 
 
 def _published_leads(date: str) -> set[str]:
-    """今天已经成稿的 lead_id 前 8 位（compose 的文件名里带）"""
+    """
+    已经成稿过的 lead_id 前 8 位——**扫全部日期**，不只是当天。
+
+    ⚠️ 2026-10-19 修正：原来只扫 `posts/<date>/`，于是同一件事隔天再被抓到
+    （raw id 相同）时拦不住，会白占名额。实测 10-19 又把 10-17 那笔
+    AZ-insitro 交易选进候选（只是分数 5.5 没过阈值才没发）。
+    跨天扫描是必要的兜底。
+
+    ⚠️ 但它只能拦"同一个 raw id"，拦不住"同一件事来自不同源"——
+    后者 id 和标题都不同（10-17 发的中文标题 vs 10-19 的英文原标题），
+    跨语种模糊匹配也失效。那种重复要靠 compose 的
+    `any(lead in p.name ...)` 之外的手段，暂未实现。
+    """
     import re
-    d = POSTS_DIR / date[:4] / date[5:7] / date[8:10]
-    if not d.exists():
-        return set()
-    out = set()
-    for p in d.glob("*.html"):
+    out: set[str] = set()
+    if not POSTS_DIR.exists():
+        return out
+    for p in POSTS_DIR.rglob("*.html"):
         m = re.search(r"-([0-9a-f]{8})\.html$", p.name)
         if m:
             out.add(m.group(1))
@@ -87,7 +98,7 @@ def run(date: str | None = None) -> dict:
         before = len(pool)
         pool = [s for s in pool if s.get("id", "")[:8] not in posted]
         if before != len(pool):
-            print(f"[select] 剔除今日已成稿 {before - len(pool)} 条")
+            print(f"[select] 剔除已成稿（含历史日期）{before - len(pool)} 条")
 
     print(f"[select] 候选池 {len(pool)} 条（>= {keep_thr} 分且置信度 >= {min_conf}）")
 
@@ -167,6 +178,22 @@ def run(date: str | None = None) -> dict:
                              "score": alt.get("score")}],
                 "reasoning": alt.get("reasoning", ""),
             })
+
+    # 4) 关于 daily_min：**故意不实现"降阈值保底"**（2026-10-19 结论）
+    #
+    # 配置里 `daily_min: 2` 一直没被代码读取，看似是漏实现，但实测证明
+    # 直接降阈值凑数会引入垃圾：
+    #   10-19 扣掉「非BD / 已发表 / 简报栏目」后只剩 4 条，
+    #   唯一 ≥5.5 的是 `AstraZeneca Taps insitro AI for MASH...` ——
+    #   而 10-17 已经发过同一笔交易（lead_id 不同，所以没被 _published_leads
+    #   拦住）。补出来的另一条是 `STAT Plus: Pharmalittle...`，
+    #   属于每日新闻摘要栏目，不是单笔 BD 交易。
+    #   当天真正的新交易最高只有 2.4 分，是反向并购/CRO 简报级别的低价值条目。
+    #
+    # 结论：**BD 雷达某天 0 篇是合法结果**，不是故障。要提产出只能靠
+    #   ① 改善输入（源里真没有新交易，抓取改善也变不出来）
+    #   ② 补跨天交易级去重（见下），让"重复"不再占用名额
+    #   绝不能用"降分凑数"。所以这里保留原始行为：不到 keep 分就不选。
 
     plan = plan[:dmax]
 
