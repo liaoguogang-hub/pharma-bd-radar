@@ -1,0 +1,32 @@
+[
+  {
+    "ok": true,
+    "file": "01-event_report-acdbf964.html",
+    "stats": {
+      "body_chars": 2494,
+      "sections": 7,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 8471,
+    "claimcheck": {
+      "ok": true,
+      "why": "",
+      "errs": [],
+      "stat": {
+        "total": 23,
+        "ok": 23,
+        "no_evidence": 0,
+        "fake_evidence": 0,
+        "cross_lang": 0
+      }
+    },
+    "title": "Roche does $400M upfront, $15B deal with China's Hansoh",
+    "score": 8.6,
+    "type": "event_report"
+  }
+]

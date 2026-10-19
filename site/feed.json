@@ -1,6 +1,17 @@
 {
   "date": "2026-10-19",
-  "count": 0,
-  "posts": [],
-  "all_count": 15
+  "count": 1,
+  "posts": [
+    {
+      "rel": "2026/10/19/01-event_report-acdbf964.html",
+      "date": "2026-10-19",
+      "title": "4亿美元首付，150亿美元天花板：Roche 豪赌中国创新管线",
+      "kicker": "Event Report｜跨境 BD",
+      "sub": "这笔交易刷新了2026年中美药企授权纪录，而 Hansoh 的家底远不止一个靶点",
+      "hook": "2026年10月8日，Roche 与中国翰森制药（Hansoh）签署战略合作，总金额最高可达150亿美元，其中首付部分一次性掏出4亿美元。这个数字是什么概念？2026年全球跨境 BD 交易的首付中位数只有1.025亿美元，Roche 这一笔相当于这个中位数的近4倍。这不是买一个药，而是买一整条管线的可能性。",
+      "chars": 2887,
+      "site_rel": "posts/2026/10/19/01-event_report-acdbf964.html"
+    }
+  ],
+  "all_count": 16
 }

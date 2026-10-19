@@ -1,5 +1,33 @@
 {
   "date": "2026-10-19",
-  "count": 0,
-  "plan": []
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "acdbf964605b4768",
+      "title": "Roche does $400M upfront, $15B deal with China's Hansoh",
+      "score": 8.6,
+      "member_ids": [
+        "acdbf964605b4768"
+      ],
+      "deal_keys": [
+        "hansoh|roche|multi-asset"
+      ],
+      "members": [
+        {
+          "title": "Roche does $400M upfront, $15B deal with China's Hansoh",
+          "url": "https://endpoints.news/roche-does-400m-upfront-15b-deal-with-chinas-hansoh/",
+          "score": 8.6,
+          "reasoning": "Roche 以 4 亿美元首付、最高 150 亿美元里程碑引进 Hansoh 多款创新药，属年内最大跨境 BD 交易之一，Hansoh 为国内头部药企，Roche 借力中国创新管线布局，首付款量级罕见"
+        }
+      ],
+      "reasoning": "Roche 以 4 亿美元首付、最高 150 亿美元里程碑引进 Hansoh 多款创新药，属年内最大跨境 BD 交易之一，Hansoh 为国内头部药企，Roche 借力中国创新管线布局，首付款量级罕见",
+      "verify_todo": [
+        "需确认具体引进资产名称及适应症",
+        "需确认里程碑付款触发条件结构"
+      ],
+      "flags": []
+    }
+  ]
 }
