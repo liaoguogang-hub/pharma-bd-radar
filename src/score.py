@@ -506,6 +506,17 @@ def run(date: str | None = None) -> list[dict]:
             s["lang"] = src.lang
             s["scored_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
+            # 只有标题/摘要极短的条目，模型仍可能给高置信度
+            # （2026-10-20：默克/siRNA 正文 0 字，置信度 0.7，
+            #   最终写出 29 条无依据）。置信度必须由素材量兜底。
+            mat_chars = len((src.content or src.summary or "").strip())
+            if mat_chars < 200:
+                s["confidence"] = min(float(s.get("confidence") or 0), 0.4)
+                flags = list(s.get("flags") or [])
+                if "thin_material" not in flags:
+                    flags.append("thin_material")
+                s["flags"] = flags
+
     scored.sort(key=lambda x: x.get("score", 0), reverse=True)
     write_json(SCORED_DIR / f"{date}.json", scored)
 

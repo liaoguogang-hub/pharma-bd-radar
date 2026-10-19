@@ -188,6 +188,31 @@ async def build_material_async(date: str, plan_item: dict) -> str:
     return base
 
 
+def material_too_thin(date: str, plan_item: dict,
+                      min_chars: int = 200) -> tuple[bool, str]:
+    """
+    素材太薄就不成稿（2026-10-20 事故）。
+
+    默克/siRNA 那条正文 0 字、只有标题，成稿却凭世界知识写满 3400 字，
+    可信度核查报 29 条无依据。临床雷达早就有这道闸，BD 之前漏了。
+
+    判据：所有 member 的正文字数、摘要字数都 < min_chars。
+    正文为 0 但摘要有几百字时仍然可写，所以两者取"任一达标即可"。
+    """
+    ids = set(plan_item.get("member_ids") or [plan_item.get("lead_id")])
+    scored = read_json(SCORED_DIR / f"{date}.json", [])
+    raw = read_json(RAW_DIR / f"{date}.json", [])
+    s_by = {s.get("id"): s for s in scored}
+    r_by = {r.get("id"): r for r in raw}
+    body = sum(len((s_by.get(i, {}).get("content") or
+                    r_by.get(i, {}).get("content") or "")) for i in ids)
+    summ = sum(len((s_by.get(i, {}).get("summary") or
+                    r_by.get(i, {}).get("summary") or "")) for i in ids)
+    if body < min_chars and summ < min_chars:
+        return True, f"正文 {body} 字 / 摘要 {summ} 字（均 < {min_chars}）"
+    return False, ""
+
+
 # ============================================================
 # Prompt —— 只要求轻量标记，不要求 HTML
 # ============================================================
@@ -902,6 +927,17 @@ def run(date: str | None = None) -> list[dict]:
                 print(f"\n  [{i}] 已存在成稿（任意日期），跳过 "
                       f"{item.get('title','')[:50]}")
                 results.append({"ok": True, "skipped": True,
+                                "title": item.get("title", ""),
+                                "score": item.get("score", 0),
+                                "type": item.get("type", ""),
+                                "stats": {}})
+                continue
+            thin, why = material_too_thin(date, item)
+            if thin:
+                print(f"\n  [{i}] ⏭ 素材太薄，跳过：{why}")
+                print(f"      {item.get('title','')[:60]}")
+                results.append({"ok": False, "skipped": True,
+                                "reason": f"素材太薄：{why}",
                                 "title": item.get("title", ""),
                                 "score": item.get("score", 0),
                                 "type": item.get("type", ""),
