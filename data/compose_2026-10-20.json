@@ -1,0 +1,42 @@
+[
+  {
+    "ok": true,
+    "file": "01-event_report-5ea8c614.html",
+    "stats": {
+      "body_chars": 3405,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 6,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "html_len": 10117,
+    "claimcheck": {
+      "ok": false,
+      "why": "",
+      "errs": [
+        "[number] 断言「125%的股权溢价意味着默克支付的价格是标的在公开市场估值基础上的2.25倍」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[company] 断言「默克需要为其核心产品Keytruda寻找专利到期后的接续管线」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[company] 断言「默克业务版图横跨肿瘤、免疫、感染、疫苗等多个治疗领域」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[attribution] 断言「诺华曾通过收购Medicines Company获得Leqvio（inclisiran）」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[mechanism] 断言「Leqvio是一款降脂siRNA药物」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[number] 断言「诺华收购The Medicines Company（2019年）总价约97亿美元」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[number] 断言「诺和诺德收购Dicerna Pharmaceuticals（2021年）总价约33亿美元」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[number] 断言「再生元与Alnylam合作，再生元累计支付的首付款和里程碑付款已超过10亿美元」在素材里找不到出处。把它删掉，或改成素材支持的表述。",
+        "[company] 断言「Alnylam、Ionis、Arrowhead、Dicerna等老牌玩家在siRNA领域深耕多年」在素材里找不到出处。把它删掉，或改成素材支持的表述。"
+      ],
+      "stat": {
+        "total": 24,
+        "ok": 15,
+        "no_evidence": 9,
+        "fake_evidence": 0,
+        "cross_lang": 0
+      }
+    },
+    "title": "飙涨125%！默克13亿美元收购一家siRNA疗法公司",
+    "score": 6.7,
+    "type": "event_report"
+  }
+]

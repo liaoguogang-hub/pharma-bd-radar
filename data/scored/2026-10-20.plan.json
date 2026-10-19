@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-20",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "5ea8c61453c0e21e",
+      "title": "飙涨125%！默克13亿美元收购一家siRNA疗法公司",
+      "score": 6.7,
+      "member_ids": [
+        "5ea8c61453c0e21e"
+      ],
+      "deal_keys": [
+        "merck|sirna-target|acquisition"
+      ],
+      "members": [
+        {
+          "title": "飙涨125%！默克13亿美元收购一家siRNA疗法公司",
+          "url": "https://bydrug.pharmcube.com/news/detail/261e7cd9f6c32971e3606e02ad7033f0",
+          "score": 6.7,
+          "reasoning": "默克（Merck）以13亿美元收购一家siRNA疗法公司，标题标注「飙涨125%」表明存在股权溢价，属重大M&A交易；siRNA为热门递送技术赛道，MNC全资收购改变竞争格局；发布日期未知，素材仅标题无正文，confidence降低。"
+        }
+      ],
+      "reasoning": "默克（Merck）以13亿美元收购一家siRNA疗法公司，标题标注「飙涨125%」表明存在股权溢价，属重大M&A交易；siRNA为热门递送技术赛道，MNC全资收购改变竞争格局；发布日期未知，素材仅标题无正文，confidence降低。",
+      "verify_todo": [
+        "需确认收购标的名称及具体siRNA在研管线",
+        "需查Merck英文公告核实交易结构及首付金额",
+        "发布日期未知"
+      ],
+      "flags": []
+    }
+  ]
+}

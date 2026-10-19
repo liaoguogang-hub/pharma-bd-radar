@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/10/19/01-event_report-acdbf964.html",
-      "date": "2026-10-19",
-      "title": "4亿美元首付，150亿美元天花板：Roche 豪赌中国创新管线",
-      "kicker": "Event Report｜跨境 BD",
-      "sub": "这笔交易刷新了2026年中美药企授权纪录，而 Hansoh 的家底远不止一个靶点",
-      "hook": "2026年10月8日，Roche 与中国翰森制药（Hansoh）签署战略合作，总金额最高可达150亿美元，其中首付部分一次性掏出4亿美元。这个数字是什么概念？2026年全球跨境 BD 交易的首付中位数只有1.025亿美元，Roche 这一笔相当于这个中位数的近4倍。这不是买一个药，而是买一整条管线的可能性。",
-      "chars": 2887,
-      "site_rel": "posts/2026/10/19/01-event_report-acdbf964.html"
+      "rel": "2026/10/20/01-event_report-5ea8c614.html",
+      "date": "2026-10-20",
+      "title": "默克13亿美元押注siRNA：一个溢价125%的豪赌",
+      "kicker": "M&amp;A 深度解读 | siRNA 赛道",
+      "sub": "全球最大药企以全现金方式收购一家未具名siRNA公司，siRNA赛道何以让MNC集体出手？",
+      "hook": "2026年10月19日，默克宣布以13亿美元全现金收购一家专注siRNA疗法的生物技术公司，股权溢价达到125%。这笔交易刷新了2026年siRNA领域并购纪录，也让一个长期被Alnylam、Ionis等老牌玩家主导的赛道迎来新变局。",
+      "chars": 3930,
+      "site_rel": "posts/2026/10/20/01-event_report-5ea8c614.html"
     }
   ],
-  "all_count": 16
+  "all_count": 17
 }
