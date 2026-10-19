@@ -936,14 +936,17 @@ def run(date: str | None = None) -> list[dict]:
     # 把【已发表】的选题写进 seen.json，作为跨天去重基准。
     # 只记写成的，不记抓到的——否则没入选的高分条目会被永久埋掉。
     published = [
-        {"lead_id": it.get("lead_id"), "title": it.get("title", "")}
+        {"lead_id": it.get("lead_id"), "title": it.get("title", ""),
+         "deal_keys": it.get("deal_keys") or (
+             [it["deal_key"]] if it.get("deal_key") else [])}
         for it, r in zip(plan["plan"], results)
         if r.get("ok")
     ]
     if published:
         try:
-            from dedupe import record_published
+            from dedupe import record_published, record_published_deals
             record_published(published, today=date)
+            record_published_deals(published, today=date)
         except Exception as e:
             print(f"  [seen] 记录失败（不影响成稿）: {type(e).__name__}")
 

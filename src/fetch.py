@@ -129,6 +129,10 @@ LEADING_DATE = re.compile(
     re.I,
 )
 
+# 列表页序号粘连："2AstraZeneca..." / "4AstraZeneca..."。
+# 只剥 1-2 位数字紧跟大写字母的情况，避免误伤 "52周" "7家药企"。
+LEADING_INDEX = re.compile(r"^\d{1,2}(?=[A-Z])")
+
 
 # ============ 真实发布日期提取 ============
 #
@@ -224,6 +228,7 @@ def clean_title(t: str) -> str:
         if new == s:
             break
         s = new.strip()
+    s = LEADING_INDEX.sub("", s).strip()
     return s or t
 
 

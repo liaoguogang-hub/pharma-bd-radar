@@ -21,7 +21,7 @@ from pathlib import Path
 
 import httpx
 
-from common import (ROOT, DATA_DIR, SCORED_DIR, load_yaml, read_json,
+from common import (ROOT, DATA_DIR, RAW_DIR, SCORED_DIR, load_yaml, read_json,
                     write_json, today_cst)
 from render import CSS, body_chars
 
@@ -157,6 +157,10 @@ def build_site(date: str | None = None) -> Path:
     })
 
     print(f"[publish] 站点 -> {SITE_DIR}（{len(posts)} 篇，今日 {len(today)} 篇）")
+    if not today:
+        st = _run_stats(date)
+        print(f"[publish] 今日 0 篇：采集 {st['raw']} 条，评分 {st['scored']} 条，"
+              f"最高 {st['top']:.1f} 分（门槛 6.5）")
     return SITE_DIR
 
 
@@ -178,6 +182,14 @@ def _feishu_sign(timestamp: str, secret: str) -> str:
     return base64.b64encode(digest).decode("utf-8")
 
 
+def _run_stats(date: str) -> dict:
+    """当天采集/评分计数，用于 0 篇时说明"跑过了，只是没有合格交易"。"""
+    raw = read_json(RAW_DIR / f"{date}.json", []) or []
+    scored = read_json(SCORED_DIR / f"{date}.json", []) or []
+    top = max((float(s.get("score") or 0) for s in scored), default=0)
+    return {"raw": len(raw), "scored": len(scored), "top": top}
+
+
 def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
     """飞书交互卡片"""
     lines = []
@@ -190,7 +202,13 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
         if p["sub"]:
             lines.append(p["sub"][:90])
         lines.append("")
-    body = "\n".join(lines) or "今日无稿件。"
+    if lines:
+        body = "\n".join(lines)
+    else:
+        st = _run_stats(date)
+        body = (f"今日无合格交易。\n"
+                f"采集 {st['raw']} 条 · 评分 {st['scored']} 条 · "
+                f"最高 {st['top']:.1f} 分（入选门槛 6.5）")
 
     return {
         "msg_type": "interactive",

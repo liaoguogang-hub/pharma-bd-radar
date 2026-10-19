@@ -7,6 +7,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import unicodedata
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -238,6 +239,25 @@ def now_iso() -> str:
 
 def today_cst() -> str:
     return datetime.now(CST).strftime("%Y-%m-%d")
+
+
+def normalize_deal_key(key: str) -> str:
+    """
+    统一 deal_key 的写法，便于跨天/跨来源比对。
+
+    小写、去重音、非字母数字转 '-'、前两段（交易双方）按字母排序。
+    例："Roche|Hansoh|ALK7 RNAi" -> "hansoh|roche|alk7-rnai"
+    """
+    s = unicodedata.normalize("NFKD", str(key or "")).encode(
+        "ascii", "ignore").decode("ascii")
+    parts = []
+    for p in s.split("|"):
+        p = re.sub(r"[^a-z0-9]+", "-", p.lower()).strip("-")
+        if p:
+            parts.append(p)
+    if len(parts) >= 2:
+        parts = sorted(parts[:2]) + parts[2:]
+    return "|".join(parts)
 
 
 def write_json(path: Path, data: Any) -> None:

@@ -19,8 +19,11 @@ from pathlib import Path
 from rapidfuzz import fuzz
 from rapidfuzz import process
 
-from common import (RawItem, RAW_DIR, SCORED_DIR, SEEN_FILE, load_yaml,
-                    read_json, write_json, today_cst)
+from common import (DATA_DIR, RawItem, RAW_DIR, SCORED_DIR, SEEN_FILE,
+                    load_yaml, normalize_deal_key, read_json, write_json,
+                    today_cst)
+
+DEALS_FILE = DATA_DIR / "published_deals.json"
 
 
 def normalize_title(t: str) -> str:
@@ -206,6 +209,85 @@ def record_published(topics: list[dict], today: str | None = None,
     entries = entries[-cap:]
     write_json(SEEN_FILE, {"version": 3, "entries": entries})
     print(f"  [seen] 记录已发表 {added} 篇（库中共 {len(entries)} 篇）")
+
+
+# ============================================================
+# 交易级去重
+#
+# seen.json 按 raw id 记，同一笔交易换个来源/语言就是新 id，
+# 拦不住。2026-10-19 实测：10-17 已发 AZ-insitro，10-19 又从
+# 另一个来源抓进来，拿到 7.2 分，差点再发一遍。
+#
+# 这里用评分阶段产出的 deal_key（买卖双方 + 资产，双方按字母排序）
+# 做指纹，发布成功后写入独立台账。
+# ============================================================
+def load_published_deals() -> list[dict]:
+    data = read_json(DEALS_FILE, {})
+    if isinstance(data, dict):
+        return list(data.get("entries") or [])
+    if isinstance(data, list):
+        return data
+    return []
+
+
+def same_deal(a: str, b: str) -> bool:
+    """两个 deal_key 是否指向同一笔交易。"""
+    na, nb = normalize_deal_key(a), normalize_deal_key(b)
+    if not na or not nb:
+        return False
+    if na == nb:
+        return True
+    pa, pb = na.split("|"), nb.split("|")
+    if len(pa) >= 2 and len(pb) >= 2 and pa[:2] == pb[:2]:
+        # 交易双方相同；资产一侧缺失或 token 有交集就算同一笔
+        ta = {t for t in re.split(r"-", "|".join(pa[2:])) if t}
+        tb = {t for t in re.split(r"-", "|".join(pb[2:])) if t}
+        # 资产未披露（unknown-asset）时按"双方相同即同一笔"处理
+        if not ta or not tb or "unknown" in ta or "unknown" in tb:
+            return True
+        return bool(ta & tb)
+    return False
+
+
+def record_published_deals(topics: list[dict], today: str | None = None,
+                           cap: int = 5000) -> None:
+    """
+    topics: [{"lead_id":..., "title":..., "deal_keys": [...]}, ...]
+    """
+    today = today or today_cst()
+    entries = load_published_deals()
+    by_key = {normalize_deal_key(e.get("deal_key", "")): e
+              for e in entries}
+    added = 0
+    for t in topics:
+        keys = t.get("deal_keys") or (
+            [t["deal_key"]] if t.get("deal_key") else [])
+        for k in keys:
+            nk = normalize_deal_key(k)
+            if not nk:
+                continue
+            item = {
+                "date": today,
+                "deal_key": nk,
+                "lead_id": t.get("lead_id") or t.get("id") or "",
+                "title": (t.get("title") or "")[:160],
+            }
+            hit = by_key.get(nk) or next(
+                (e for k, e in by_key.items() if same_deal(nk, k)), None)
+            if hit is not None:
+                # 同一笔交易再次发表：刷新日期，保证 60 天窗口从最近一次算起
+                old = normalize_deal_key(hit.get("deal_key", ""))
+                hit.update(item)
+                by_key.pop(old, None)
+                by_key[nk] = hit
+            else:
+                entries.append(item)
+                by_key[nk] = item
+                added += 1
+    entries = entries[-cap:]
+    write_json(DEALS_FILE, {"version": 1, "entries": entries})
+    print(f"  [deals] 记录已发表交易 {added} 笔"
+          f"（库中共 {len(entries)} 笔）")
 
 
 def run(date: str | None = None) -> list[RawItem]:

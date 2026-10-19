@@ -37,6 +37,16 @@ score:
   keep: 6.5              # >= 进备选池，< 丢弃
   min_confidence: 0.5    # 置信度过低的不采用
 
+  # 大额交易保底：总分不到 keep 也放行。
+  # 例：2026-10-19 Roche/Hansoh 首付 4 亿美元、总额 150 亿美元，
+  # 因处于早期且非首创只拿 6.3 分，被 6.5 硬门槛挡掉。
+  # 判据要求 deal_key 非空（有明确买卖双方），且置信度达标。
+  big_deal_upfront_usd: 300000000     # 首付 >= 3 亿美元
+  big_deal_total_usd: 5000000000      # 或潜在总额 >= 50 亿美元
+
+  # 同一笔交易在多少天内不重复写（跨天/跨来源/跨语种）
+  deal_lookback_days: 60
+
   # 每日篇数
   daily_max: 3
   daily_min: 2

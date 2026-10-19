@@ -12,15 +12,54 @@ from __future__ import annotations
 
 import sys
 from collections import defaultdict
+from datetime import date as _date
 
 from common import (ROOT, SCORED_DIR, load_yaml, read_json, write_json,
                     today_cst)
+from dedupe import load_published_deals, same_deal
 
 POSTS_DIR = ROOT / "posts"
 
 
 def _has_body(s: dict) -> bool:
     return len(s.get("content") or "") > 500
+
+
+def _big_deal(s: dict, cfg: dict, min_conf: float) -> bool:
+    """
+    大额交易保底：总分不到 keep 也放行。
+
+    例：2026-10-19 Roche/Hansoh 首付 4 亿美元、总额 150 亿美元，
+    因处于早期且非首创只拿 6.3 分，被 6.5 硬门槛挡掉。这种交易不该漏。
+    要求 deal_key 非空（有明确买卖双方），避免把"未披露金额的传闻"放进来。
+    """
+    if "not_bd" in (s.get("flags") or []):
+        return False
+    if not s.get("deal_key"):
+        return False
+    if s.get("confidence", 0) < min_conf:
+        return False
+    up = float(s.get("upfront_usd") or 0)
+    total = float(s.get("total_usd") or 0)
+    return (up >= cfg.get("big_deal_upfront_usd", 300_000_000)
+            or total >= cfg.get("big_deal_total_usd", 5_000_000_000))
+
+
+def _published_deal_keys(date: str, days: int) -> list[str]:
+    """最近 N 天已发表交易的 deal_key，用于跨来源/跨语种去重。"""
+    out: list[str] = []
+    try:
+        today = _date.fromisoformat(date)
+    except ValueError:
+        return out
+    for e in load_published_deals():
+        try:
+            d = _date.fromisoformat(str(e.get("date") or ""))
+        except ValueError:
+            continue
+        if abs((today - d).days) <= days and e.get("deal_key"):
+            out.append(e["deal_key"])
+    return out
 
 
 def _published_leads(date: str) -> set[str]:
@@ -76,8 +115,18 @@ def run(date: str | None = None) -> dict:
     cluster_max = cfg.get("same_target_cluster_max", 3)
 
     pool = [s for s in scored
-            if s.get("score", 0) >= keep_thr
-            and s.get("confidence", 0) >= min_conf]
+            if (s.get("score", 0) >= keep_thr
+                and s.get("confidence", 0) >= min_conf)
+            or _big_deal(s, cfg, min_conf)]
+    big = [s for s in pool
+           if not (s.get("score", 0) >= keep_thr
+                   and s.get("confidence", 0) >= min_conf)]
+    if big:
+        print(f"[select] 大额交易保底放行 {len(big)} 条")
+        for s in big[:3]:
+            print(f"         · {s.get('score')} 分  "
+                  f"首付 {int(s.get('upfront_usd') or 0)/1e8:.2f} 亿美元  "
+                  f"{s.get('title','')[:52]}")
 
     # 排除"非交易"条目（评分层已判过，这里再拦一道）。
     # 这是 BD 雷达，临床数据读出/监管获批/股价波动都不是 BD 新闻。
@@ -100,7 +149,20 @@ def run(date: str | None = None) -> dict:
         if before != len(pool):
             print(f"[select] 剔除已成稿（含历史日期）{before - len(pool)} 条")
 
-    print(f"[select] 候选池 {len(pool)} 条（>= {keep_thr} 分且置信度 >= {min_conf}）")
+    # 交易级去重：同一笔交易换个来源/标题/语言就是新 raw id，
+    # 上面按 id 的检查拦不住。2026-10-19 实测 AZ-insitro 重复进池。
+    deal_keys = _published_deal_keys(
+        date, cfg.get("deal_lookback_days", 60))
+    if deal_keys:
+        before = len(pool)
+        pool = [s for s in pool
+                if not any(same_deal(s.get("deal_key", ""), k)
+                           for k in deal_keys)]
+        if before != len(pool):
+            print(f"[select] 剔除已发表过的交易 {before - len(pool)} 条")
+
+    print(f"[select] 候选池 {len(pool)} 条（>= {keep_thr} 分且置信度 >= {min_conf}，"
+          f"另有 {len(big)} 条大额保底）")
 
     must = [s for s in pool if s.get("score", 0) >= pub_thr]
 
@@ -129,6 +191,8 @@ def run(date: str | None = None) -> dict:
                 "title": lead.get("title", ""),
                 "score": lead.get("score", 0),
                 "member_ids": [g["id"] for g in group[:cluster_max]],
+                "deal_keys": [g["deal_key"] for g in group[:cluster_max]
+                              if g.get("deal_key")],
                 "members": [
                     {"title": g.get("title"), "url": g.get("url"),
                      "score": g.get("score"), "reasoning": g.get("reasoning")}
@@ -154,6 +218,7 @@ def run(date: str | None = None) -> dict:
             "title": s.get("title", ""),
             "score": s.get("score", 0),
             "member_ids": [s["id"]],
+            "deal_keys": [s["deal_key"]] if s.get("deal_key") else [],
             "members": [{"title": s.get("title"), "url": s.get("url"),
                          "score": s.get("score"), "reasoning": s.get("reasoning")}],
             "reasoning": s.get("reasoning", ""),
@@ -174,6 +239,7 @@ def run(date: str | None = None) -> dict:
                 "title": alt.get("title", ""),
                 "score": alt.get("score", 0),
                 "member_ids": [alt["id"]],
+                "deal_keys": [alt["deal_key"]] if alt.get("deal_key") else [],
                 "members": [{"title": alt.get("title"), "url": alt.get("url"),
                              "score": alt.get("score")}],
                 "reasoning": alt.get("reasoning", ""),

@@ -25,7 +25,7 @@ from typing import Any
 from openai import OpenAI
 
 from common import (RawItem, SCORED_DIR, RAW_DIR, load_yaml, read_json,
-                    write_json, today_cst)
+                    write_json, today_cst, normalize_deal_key)
 
 # 交易信号（用于给 LLM 一个显式提示，不做硬性拦截——
 # 正则会有漏判，例如 "Ono pays Biohaven $80M for..." 没有 license 字样
@@ -156,6 +156,27 @@ score 略降但保留——这类应该合并成一篇 landscape_review 综述�
   带着 "TYK2"。评分 reasoning 写成"自有 TYK2 平台授权"，
   成稿据此把整篇写成"TYK2 平台"，还捏造了一个公告里没有的分子代号。
 
+# 交易要素抽取（代码会用这些字段算金额分、做跨天去重）
+
+除打分外，每条还要输出三个结构化字段：
+
+- `deal_key`：这笔交易的稳定指纹，格式 `"<party_a>|<party_b>|<asset>"`。
+  全小写；公司用英文常用名；asset 用靶点/分子/技术平台的英文短横线写法。
+  **两个交易方按字母顺序排列**，避免同一笔交易因书写顺序不同而指纹不一致。
+  不是交易（not_bd）的条目输出空字符串。
+  例：AstraZeneca 授权 insitro 做 AI+MASH
+      → "astrazeneca|insitro|ai-mash"
+      Roche 引进 Rona Therapeutics 的 ALK7 RNAi
+      → "roche|rona|alk7-rnai"
+
+- `upfront_usd`：首付款，美元整数。**未披露填 0**。
+  只填首付/预付款；"up to $1.5B"、"总额最高15亿美元" 是潜在总额，不是首付。
+
+- `total_usd`：潜在总额（含里程碑），美元整数。未披露填 0。
+
+金额只从素材里原样抄，不要估算，不要用未披露的数字凑。
+如果素材只给人民币/欧元，按素材里的数字换算成美元并在 reasoning 里注明汇率来源。
+
 # 输出格式（严格 JSON，不要任何解释文字）
 
 ⚠️ **只输出一个 JSON 数组**。不要输出思考过程、不要解释、不要 markdown 代码块包裹。
@@ -168,7 +189,10 @@ score 略降但保留——这类应该合并成一篇 landscape_review 综述�
   "flags": ["related_party"],
   "cluster_key": "b7h3-adc",
   "confidence": 0.85,
-  "reasoning": "首付12亿美元、全球首个口服GLP-1、诺和诺德亲自下场，60字以内",
+  "deal_key": "hengrui|novo|glp-1",
+  "upfront_usd": 200000000,
+  "total_usd": 3350000000,
+  "reasoning": "首付2亿美元、全球首个口服GLP-1、诺和诺德亲自下场，60字以内",
   "article_type": "event_report",
   "verify_todo": ["需查港交所公告确认首付到账金额"]
 }]
@@ -314,6 +338,62 @@ def _parse(text: str) -> list[dict]:
     return objs
 
 
+def _amount_dim(upfront: float, total: float) -> float:
+    """按 rubric 把首付映射成金额分；首付未披露但有总额时给 0.5。"""
+    if upfront >= 500_000_000:
+        return 2.5
+    if upfront >= 100_000_000:
+        return 2.0
+    if upfront >= 10_000_000:
+        return 1.2
+    if upfront > 0:
+        return 0.3
+    if total > 0:
+        return 0.5
+    return 0.0
+
+
+def _to_float(v: Any) -> float:
+    if isinstance(v, str):
+        v = re.sub(r"[^0-9.\-]", "", v)
+    try:
+        return max(0.0, float(v))
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _dim_value(v: Any) -> float:
+    """维度分允许为负（例如 stale 条目的 impact 会被扣分）。"""
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _apply_deal_fields(s: dict) -> None:
+    """
+    用代码覆盖两个最不稳定的字段：
+    - amount 维度：模型经常把 "up to $1.5B" 当成首付，同一篇稿子三天
+      给出 3.0 / 5.5 / 7.2。金额分必须由 upfront_usd 决定。
+    - score：始终等于五个维度之和，避免模型自报分数与维度不一致。
+    """
+    dims = s.get("dims") or {}
+    upfront = _to_float(s.get("upfront_usd"))
+    total = _to_float(s.get("total_usd"))
+
+    if upfront > 0 or total > 0:
+        dims["amount"] = _amount_dim(upfront, total)
+
+    s["deal_key"] = normalize_deal_key(s.get("deal_key") or "")
+    s["upfront_usd"] = int(upfront)
+    s["total_usd"] = int(total)
+
+    keys = ("amount", "stage", "first_mover", "tier", "impact")
+    if all(k in dims for k in keys):
+        s["dims"] = dims
+        s["score"] = round(sum(_dim_value(dims[k]) for k in keys), 2)
+
+
 def _prefilter(items: list[RawItem], cfg: dict) -> list[RawItem]:
     """规则层预筛：纯融资直接丢弃，过期的降权"""
     excl = cfg.get("exclude_keywords", {}) or {}
@@ -384,6 +464,9 @@ def score_items(items: list[RawItem], cfg: dict, client: OpenAI,
         try:
             txt = _call_llm(client, eff, SYSTEM_PROMPT, user, retries)
             parsed = _parse(txt)
+            for s in parsed:
+                if isinstance(s, dict) and "id" in s:
+                    _apply_deal_fields(s)
             results.extend(parsed)
             print(f"  [batch {i//batch + 1}] 返回 {len(txt)} 字符，"
                   f"解析 {len(parsed)}/{len(chunk)}")

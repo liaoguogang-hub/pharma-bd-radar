@@ -44,7 +44,7 @@ except Exception:
 import claimcheck  # noqa: E402
 import compose  # noqa: E402
 import score  # noqa: E402
-from common import SCORED_DIR, load_yaml  # noqa: E402
+from common import SCORED_DIR, load_yaml, today_cst  # noqa: E402
 from compose import POSTS_DIR  # noqa: E402
 from render import parse_content, content_text  # noqa: E402
 
@@ -262,7 +262,9 @@ def _notify(res: dict) -> bool:
 
 
 if __name__ == "__main__":
-    date = sys.argv[1] if len(sys.argv) > 1 else time.strftime("%Y-%m-%d")
+    # ⚠️ 必须用北京日期。GitHub runner 是 UTC，06:50 北京 = 前一天 22:50 UTC，
+    # 用 time.strftime 会去核查"昨天"的稿件，而当天稿件一条都没审到。
+    date = sys.argv[1] if len(sys.argv) > 1 else today_cst()
     no_notify = "--no-notify" in sys.argv
     report_only = "--report-only" in sys.argv
     audit(date, do_notify=not no_notify, report_only=report_only)
