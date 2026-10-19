@@ -818,6 +818,9 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
                 _cerrs = [f"断言核验异常 {type(_e).__name__}: {_e}"]
                 _cstat, _block, _why = {}, True, "断言核验异常（不能当通过）"
             print(f"      → 断言 {_cstat.get('ok', 0)}/{_cstat.get('total', 0)} 有出处"
+                  f"（无出处 {_cstat.get('no_evidence', 0)}，"
+                  f"编造出处 {_cstat.get('fake_evidence', 0)}，"
+                  f"跨语种无法判定 {_cstat.get('cross_lang', 0)}）"
                   + (f"  ❌拦：{_why}" if _block else "  ✅放行"))
             if not _block:
                 html = render_html(doc)

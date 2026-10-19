@@ -224,17 +224,35 @@ def extract_claims(client, eff: dict, article_text: str,
     return out
 
 
+def _cjk_ratio(s: str) -> float:
+    """中文汉字占字母类的比例，用来判断引文/素材是否同一书写系统。"""
+    if not s:
+        return 0.0
+    cjk = sum(1 for ch in s if "\u4e00" <= ch <= "\u9fff")
+    letters = sum(1 for ch in s if ch.isalpha())
+    return cjk / letters if letters else 0.0
+
+
 def verify_claims(claims: list[dict], material: str) -> tuple[list[str], dict]:
     """
     程序化核验。返回 (问题列表, 统计)。
 
-    两类问题：
-      1. 需要出处却没给出处
-      2. **给出了处，但那段引文根本不在素材里** —— 编造出处（最严重）
+    一类问题 + 一类"无法判定"：
+      1. 需要出处却没给出处            → no_evidence
+      2. 给出了处但引文不在素材里       → fake_evidence（编造出处）
+      3. 引文与素材**书写系统不同**     → cross_lang（无法判定，不罚）
+
+    ⚠️ 第 3 类必须单独算（2026-10-19 临床雷达事故根因）：
+       素材是英文（公告/CT.gov），成稿是中文；核查模型被要求"逐字引文"时
+       常给中文译文 → 与英文素材子串重合 ≈0 → 被判**编造出处** →
+       闸门把整天的稿子全拦掉，产出归零。
+       跨语种时子串比对没有意义：既不能证明有出处，也不能证明编造。
     """
     mat_n = _norm(material)
+    mat_cjk = _cjk_ratio(material)
     errs: list[str] = []
-    stat = {"total": 0, "ok": 0, "no_evidence": 0, "fake_evidence": 0}
+    stat = {"total": 0, "ok": 0, "no_evidence": 0,
+            "fake_evidence": 0, "cross_lang": 0}
 
     for c in claims:
         kind = c.get("kind", "general")
@@ -246,6 +264,11 @@ def verify_claims(claims: list[dict], material: str) -> tuple[list[str], dict]:
             stat["no_evidence"] += 1
             errs.append(f"[{kind}] 断言「{c['text'][:60]}」在素材里找不到出处。"
                         f"把它删掉，或改成素材支持的表述。")
+            continue
+        # 跨语种：一边倒中文 / 一边倒英文 → 无法用子串判定
+        ev_cjk = _cjk_ratio(ev)
+        if (ev_cjk > 0.5 and mat_cjk < 0.1) or (ev_cjk < 0.1 and mat_cjk > 0.5):
+            stat["cross_lang"] += 1
             continue
         ev_n = _norm(ev)
         run = _longest_common_run(ev_n, mat_n)
@@ -270,8 +293,8 @@ def check_article(client, eff: dict, article_text: str,
     return (not errs), errs, stat
 
 
-# 无出处断言占比超过这个比例，判"整篇靠世界知识写"
-NO_EVIDENCE_BLOCK_RATIO = 0.5
+# 无出处断言**不**作为拦截依据（2026-10-19 事后修正，见 should_block）
+NO_EVIDENCE_BLOCK_RATIO = None
 
 
 def should_block(stat: dict, errs: list[str]) -> tuple[bool, str]:
@@ -280,31 +303,28 @@ def should_block(stat: dict, errs: list[str]) -> tuple[bool, str]:
 
     ⚠️ 与临床雷达 `clinical-data-radar/src/claimcheck.py` 同实现（两份镜像）。
 
-    为什么不是"有错就拦"（2026-10-19 事故）：跨语种素材（英文公告 + 中文成稿）
-    下核查模型常把 evidence 写成中文、与英文素材匹配不上，**真断言**被判无出处；
-    按"有错就拦"接线后临床雷达当天选出 3 篇、重试 12 次全被拦、产出归零，
-    而下游只看到"run 成功但无产出"，静默报成 0 篇。
+    演进（前两版都不对）：
+      v1「有错就拦」→ 2026-10-19 临床雷达 3 篇 × 4 次重试全被拦，产出归零。
+         根因：跨语种素材（英文公告 + 中文成稿）下核查模型把 evidence 写成
+         中文，与英文素材匹配不上，**真断言**被判无出处。
+      v2「无出处占比 > 50% 才拦」→ 仍然拦得住，因为跨语种下占比轻易过半。
+      v3（现在）**无出处一律不拦**，只有"编造出处"硬拦。
 
-    只对**强信号**硬拦，弱信号放行交给 `audit.py`：
-      · 编造出处（引文不在素材里）→ 硬拦
-      · 未返回统计 / 未拆出断言   → 硬拦
-      · 无出处占比 > NO_EVIDENCE_BLOCK_RATIO → 硬拦
-      · 少量无出处               → 放行 + 记录
+    理由：`fake_evidence` 是核查模型自己编造引文，无歧义；`no_evidence`
+    是"没找到出处"，跨语种下大量是误报，不能用来决定今天能不能发稿。
+    真相交给 `audit.py` 事后报告 + 人工复核。
+
+    仍硬拦：未返回统计 / 未拆出断言（核验没生效）、fake_evidence > 0。
     """
     total = int((stat or {}).get("total", 0) or 0)
     fake = int((stat or {}).get("fake_evidence", 0) or 0)
-    noev = int((stat or {}).get("no_evidence", 0) or 0)
 
     if not stat:
         return True, "断言核验未返回统计（核验未生效）"
-    if fake > 0:
-        return True, f"{fake} 条断言的出处是编造的（引文不在素材里）"
     if total == 0:
         return True, "未能拆出任何断言（核验未生效）"
-    if noev / total > NO_EVIDENCE_BLOCK_RATIO:
-        return True, (f"无出处断言 {noev}/{total}（{noev / total:.0%}）"
-                      f"超过 {NO_EVIDENCE_BLOCK_RATIO:.0%}，"
-                      f"整篇疑似靠世界知识写成")
+    if fake > 0:
+        return True, f"{fake} 条断言的出处是编造的（引文不在素材里）"
     return False, ""
 
 
