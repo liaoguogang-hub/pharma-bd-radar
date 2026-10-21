@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "42dc886200608c6a",
+      "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
+      "score": 4.8,
+      "member_ids": [
+        "42dc886200608c6a"
+      ],
+      "deal_keys": [
+        "alcon|neurotech|neurotech-pharmaceuticals"
+      ],
+      "members": [
+        {
+          "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
+          "url": "https://endpoints.news/alcon-and-openai-make-acquisitions-tezspires-latest-phase-3-win/",
+          "score": 4.8,
+          "reasoning": "5.5亿美元首付收购已获批资产，可深挖眼科产品整合逻辑"
+        }
+      ],
+      "reasoning": "5.5亿美元首付收购已获批资产，可深挖眼科产品整合逻辑",
+      "verify_todo": [
+        "核查追加里程碑金额、资产组合及交易完成条件",
+        "正文应拆分同文中的其他收购及临床事件"
+      ],
+      "flags": []
+    }
+  ]
+}
