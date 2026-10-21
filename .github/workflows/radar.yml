@@ -29,6 +29,10 @@ on:
         description: '冒烟测试：跳过所有 LLM 步骤（不需要 API key）'
         type: boolean
         default: false
+      force:
+        description: '强制重跑（忽略"今天已跑过"检查）。补跑历史日期时必须加 -f force=true'
+        type: boolean
+        default: false
 
 concurrency:
   group: radar-${{ github.ref }}
@@ -49,8 +53,21 @@ jobs:
   # 判据用 data/scored/<date>.json：它由评分步骤产出、由"提交产出"提交，
   # 是"今天确实跑完过"的可靠信号（data/raw/ 被 gitignore 了，不能用）。
   #
-  # ⚠️ 只对 schedule 触发做这个判断。手动触发一律执行，
-  #    否则 skip_llm 冒烟测试会因为"今天跑过了"而被拦掉。
+  # ⚠️ 2026-10-22 修正：以前【只对 schedule 触发做这个判断】，
+  #    workflow_dispatch 一律放行。但本机的兜底计划任务
+  #    （Radar-*-Fallback）用的就是 workflow_dispatch！
+  #    结果 2026-10-21 BD 雷达一天跑了两次：
+  #      08:40  GitHub 的 cron（晚了 2 小时多）跑完，提交了
+  #             data/scored/2026-10-21.json
+  #      09:07  兜底任务补跑（机器 06:41 关机、08:58 开机）又触发一次
+  #    → 整条流水线重跑：重新采集、重新评分（62 条覆盖成 41 条）、
+  #      再烧一轮 LLM、再推一次飞书。
+  #    注释里一直写着"重复触发由下面的 guard job 拦掉"，
+  #    但代码只拦 schedule —— 文档和实现对不上，这就是重复的根因。
+  #
+  # 现在 schedule 和 workflow_dispatch 都拦，例外两种：
+  #    · force=true     → 补跑历史日期时人工指定，强行执行
+  #    · skip_llm=true  → 冒烟测试，无副作用（只写 data/raw/，已 gitignore）
   # ============================================================
   guard:
     runs-on: ubuntu-latest
@@ -68,13 +85,22 @@ jobs:
             DATE=$(TZ=Asia/Shanghai date +%F)
           fi
           echo "北京日期：$DATE"
-          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "data/scored/$DATE.json" ]; then
+          EVENT="${{ github.event_name }}"
+          FORCE="${{ inputs.force }}"
+          SKIP_LLM="${{ inputs.skip_llm }}"
+          NEED_CHECK=0
+          if [ "$EVENT" = "schedule" ]; then
+            NEED_CHECK=1
+          elif [ "$EVENT" = "workflow_dispatch" ] && [ "$FORCE" != "true" ] && [ "$SKIP_LLM" != "true" ]; then
+            NEED_CHECK=1
+          fi
+          if [ "$NEED_CHECK" = "1" ] && [ -f "data/scored/$DATE.json" ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "⏭  今天已经跑过（data/scored/$DATE.json 存在），本次跳过。"
-            echo "   触发来源：${{ github.event_name }}"
+            echo "⏭  $DATE 已经跑过（data/scored/$DATE.json 存在），本次跳过。"
+            echo "   触发来源：$EVENT  force=$FORCE"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
-            echo "▶  今天还没跑过，继续执行。"
+            echo "▶  $DATE 还没跑过，继续执行（触发来源：$EVENT force=$FORCE）。"
           fi
 
   radar:
