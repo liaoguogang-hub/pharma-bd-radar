@@ -230,22 +230,125 @@ def load_published_deals() -> list[dict]:
     return []
 
 
+# ============================================================
+# 交易级去重的比对工具（2026-10-21）
+#
+# deal_key 是模型自由写的，槽位里的写法千差万别：
+#   merck-kgaa / merck / merck-&-co    —— 同一个公司的不同写法
+#   sirna-target / sirna-pipeline      —— 同一个资产的不同写法
+# 而且模型偶尔把"资产"写进"乙方"槽（10-20 的
+# `merck|sirna-target|acquisition` 就是这样）。
+# 所以比对必须落到【token】层，不能逐字比整段。
+# ============================================================
+
+# 公司法律形式/通用词：比对公司名时去掉
+_CORP_NOISE = {
+    "kgaa", "inc", "incorporated", "corp", "corporation", "co", "company",
+    "ltd", "limited", "plc", "gmbh", "ag", "sa", "nv", "llc", "lp", "the",
+    "and", "of", "de", "la", "group", "holding", "holdings",
+}
+
+
+def _slot_tokens(slot: str) -> set[str]:
+    """槽位字符串 → token 集合（只按非字母数字切分，不做语义处理）。"""
+    return {t for t in re.split(r"[^a-z0-9]+", (slot or "").lower()) if t}
+
+
+def _party_tokens(slot: str) -> set[str]:
+    """
+    公司名槽位 → token 集合（去掉法律形式后缀）。
+
+    merck-kgaa → {merck}，于是能和 `merck` 对上。
+    ⚠️ 只去**法律形式/通用词**，不去 pharma/bio/therapeutics 这类
+    品牌词（"Silence Therapeutics" 和 "Silence" 是一家公司，
+    但 "OncoBio" 和 "Onco" 未必是，去掉 brand 词容易误合并）。
+    """
+    toks = _slot_tokens(slot)
+    stripped = {t for t in toks if t not in _CORP_NOISE}
+    return stripped or toks
+
+
+def _parties_match(pa: list[set[str]], pb: list[set[str]]) -> bool:
+    """
+    交易双方是否对得上。
+
+    槽位 0/1 是模型写的"甲方/乙方"，但 normalize_deal_key 会把前两段
+    按字母排序——两边如果用了不同的名字，排序结果可能对调，
+    所以两种配对都试。
+    """
+    a0, a1 = pa
+    b0, b1 = pb
+    return bool((a0 & b0 and a1 & b1) or (a0 & b1 and a1 & b0))
+
+
+def _asset_match(ta: set[str], tb: set[str]) -> bool:
+    """
+    资产是否对得上。
+
+    资产未披露（空 / unknown）时按"双方相同即同一笔"处理——
+    这跟旧实现一致：拿不到资产信息时不该因为资产对不上而放行重复。
+    """
+    if not ta or not tb:
+        return True
+    if "unknown" in ta or "unknown" in tb:
+        return True
+    return bool(ta & tb)
+
+
 def same_deal(a: str, b: str) -> bool:
-    """两个 deal_key 是否指向同一笔交易。"""
+    """
+    两个 deal_key 是否指向同一笔交易。
+
+    deal_key 形如 `<甲方>|<乙方>|<资产>`（前两段按字母排序）。
+    ⚠️ 这个判断跨天跨源跨语种，键里的写法千差万别：
+      - 公司名带法律形式后缀：merck-kgaa / merck / merck-&-co
+      - 同一个东西被模型放进了不同的槽位：10-20 的
+        `merck|sirna-target|acquisition`（资产被塞进了"乙方"槽）
+        vs 10-21 的 `merck-kgaa|silence-therapeutics|sirna-pipeline`
+      - 资产名本身不同：sirna-target vs sirna-pipeline
+
+    2026-10-21 实测事故：上面这两个键就是同一笔交易
+    （默克 13 亿美元收购 siRNA 公司），但旧实现判成"不是同一笔"
+    ——因为旧实现要求前两段【逐字相等】，merck ≠ merck-kgaa 直接出局。
+    结果 10-21 把 10-20 已经发过的稿子又选了一遍，
+    白烧 4 次 LLM 调用（约 10 分钟）差点重复发布。
+
+    现在按【槽位 token】比对，两条规则：
+
+    规则 1（同槽）：交易双方 token 对得上（允许法律形式后缀差异，
+      且允许双方顺序互换），且资产 token 有交集（或一侧资产未披露）。
+    规则 2（角色交叉）：同一个 token 在一个键里是"乙方"、在另一个键里
+      是"资产"——这是模型把资产写错槽位造成的，必须能认出来。
+      同时要求买方 token 对得上，避免"同资产不同交易"被误合并。
+    """
     na, nb = normalize_deal_key(a), normalize_deal_key(b)
     if not na or not nb:
         return False
     if na == nb:
         return True
-    pa, pb = na.split("|"), nb.split("|")
-    if len(pa) >= 2 and len(pb) >= 2 and pa[:2] == pb[:2]:
-        # 交易双方相同；资产一侧缺失或 token 有交集就算同一笔
-        ta = {t for t in re.split(r"-", "|".join(pa[2:])) if t}
-        tb = {t for t in re.split(r"-", "|".join(pb[2:])) if t}
-        # 资产未披露（unknown-asset）时按"双方相同即同一笔"处理
-        if not ta or not tb or "unknown" in ta or "unknown" in tb:
-            return True
-        return bool(ta & tb)
+
+    sa, sb = na.split("|"), nb.split("|")
+    if len(sa) < 2 or len(sb) < 2:
+        return False
+
+    # 槽位 → token 集合（去掉公司法律形式后缀）
+    pa = [_party_tokens(sa[0]), _party_tokens(sa[1])]
+    pb = [_party_tokens(sb[0]), _party_tokens(sb[1])]
+    ta = _slot_tokens("|".join(sa[2:]))
+    tb = _slot_tokens("|".join(sb[2:]))
+
+    # ---- 规则 1：交易双方相同（同 token，允许顺序互换）----
+    if _parties_match(pa, pb) and _asset_match(ta, tb):
+        return True
+
+    # ---- 规则 2：资产写错了槽位（同一个 token 在一边是"乙方"、
+    #      在另一边是"资产"），且买方对得上 ----
+    any_party_hit = bool(
+        (pa[0] & pb[0]) or (pa[0] & pb[1]) or (pa[1] & pb[0]) or (pa[1] & pb[1]))
+    crossing = bool((pa[1] & tb) or (pb[1] & ta))
+    if any_party_hit and crossing:
+        return True
+
     return False
 
 

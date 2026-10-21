@@ -502,6 +502,15 @@ def run(date: str | None = None) -> list[dict]:
             s["sources"] = [src.source] + [
                 t.split(":", 1)[1] for t in src.topics if t.startswith("also:")]
             s["content"] = src.content
+            # ⚠️ summary / access 必须落盘（2026-10-21 修正）：
+            #    之前只存 content，于是"有摘要、没正文"的条目
+            #    （付费墙/只给 RSS 描述）在 scored.json 里看起来像"零素材"，
+            #    事后复盘分不清它到底有没有料、素材太薄那道闸为什么放行——
+            #    2026-10-21 那笔重复交易就是这样白烧了 4 次 LLM 调用。
+            #    access 同样要落：pick._evidence() 用它做同分 tie-break
+            #    （full 加 1 分），不落盘等于这个 tie-break 一直是失效的。
+            s["summary"] = src.summary
+            s["access"] = src.access
             s["entity_tags"] = list(src.entity_tags)
             s["lang"] = src.lang
             s["scored_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())

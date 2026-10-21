@@ -196,20 +196,38 @@ def material_too_thin(date: str, plan_item: dict,
     默克/siRNA 那条正文 0 字、只有标题，成稿却凭世界知识写满 3400 字，
     可信度核查报 29 条无依据。临床雷达早就有这道闸，BD 之前漏了。
 
-    判据：所有 member 的正文字数、摘要字数都 < min_chars。
-    正文为 0 但摘要有几百字时仍然可写，所以两者取"任一达标即可"。
+    ⚠️ 判据口径与临床雷达对齐（2026-10-21）：
+      临床那边量的是【模型真正拿到的那份素材】（material_is_thin：
+      剥离模板行后 ≥200 字），BD 之前量的是"正文字数"和"摘要字数"
+      两栏分别求和——**量错了对象**：
+
+        旧口径的洞：一条 content=150 / summary=100 的素材，
+        两栏分别求和是 150 和 100，都 <200 → 判薄（对）；
+        但两个 member 各 150+100 时，两栏求和变成 300/200 →
+        判"不薄"，可模型实际收到的是两个 100 字的摘要（共 200 字）。
+        也就是说旧口径会放过"模型其实没拿到什么"的簇。
+
+      新口径跟 build_material 完全一致：正文 >200 字才用正文，
+      否则用摘要。量到的就是模型看到的那份素材。
+      （BD 的 material_too_thin 和临床的 material_is_thin 是两份拷贝，
+      改动时两个项目要同步改。）
     """
     ids = set(plan_item.get("member_ids") or [plan_item.get("lead_id")])
     scored = read_json(SCORED_DIR / f"{date}.json", [])
     raw = read_json(RAW_DIR / f"{date}.json", [])
     s_by = {s.get("id"): s for s in scored}
     r_by = {r.get("id"): r for r in raw}
-    body = sum(len((s_by.get(i, {}).get("content") or
-                    r_by.get(i, {}).get("content") or "")) for i in ids)
-    summ = sum(len((s_by.get(i, {}).get("summary") or
-                    r_by.get(i, {}).get("summary") or "")) for i in ids)
-    if body < min_chars and summ < min_chars:
-        return True, f"正文 {body} 字 / 摘要 {summ} 字（均 < {min_chars}）"
+    usable = 0
+    for i in ids:
+        s = s_by.get(i, {}) or {}
+        r = r_by.get(i, {}) or {}
+        content = s.get("content") or r.get("content") or ""
+        summ = s.get("summary") or r.get("summary") or ""
+        # 与 build_material 的取值口径一致：正文够长才用正文，否则用摘要
+        usable += len((content if len(content) > 200 else summ).strip())
+    if usable < min_chars:
+        return True, (f"模型可用素材仅 {usable} 字（< {min_chars}），"
+                      f"相当于只有标题")
     return False, ""
 
 
