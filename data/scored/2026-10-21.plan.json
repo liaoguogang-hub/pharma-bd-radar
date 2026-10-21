@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-21",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "345e194d29615b08",
+      "title": "Merck KGaA to buy Silence Therapeutics and its siRNA pipeline for $1.3B",
+      "score": 6.5,
+      "member_ids": [
+        "345e194d29615b08"
+      ],
+      "deal_keys": [
+        "merck-kgaa|silence-therapeutics|sirna-pipeline"
+      ],
+      "members": [
+        {
+          "title": "Merck KGaA to buy Silence Therapeutics and its siRNA pipeline for $1.3B",
+          "url": "https://endpoints.news/merck-kgaa-will-buy-silence-therapeutics-and-its-sirna-pipeline-for-1-3b/",
+          "score": 6.5,
+          "reasoning": "Merck KGaA全资收购Silence Therapeutics，13亿美元总价，siRNA领域重要整合，divesiran等管线已进入临床，Rare/Specialty疾病领域布局深化，MNC主导改变siRNA赛道格局"
+        }
+      ],
+      "reasoning": "Merck KGaA全资收购Silence Therapeutics，13亿美元总价，siRNA领域重要整合，divesiran等管线已进入临床，Rare/Specialty疾病领域布局深化，MNC主导改变siRNA赛道格局",
+      "verify_todo": [
+        "确认首付金额（13亿美元是否含溢价估算）",
+        "确认divesiran临床阶段",
+        "收购溢价比例"
+      ],
+      "flags": []
+    }
+  ]
+}
