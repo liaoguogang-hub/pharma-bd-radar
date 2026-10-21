@@ -1,26 +1,25 @@
 [
   {
     "id": "345e194d29615b08",
-    "score": 6.5,
+    "score": 6.8,
     "dims": {
-      "amount": 0.5,
-      "stage": 2.0,
-      "first_mover": 0.8,
+      "amount": 2.5,
+      "stage": 0.8,
+      "first_mover": 0.4,
       "tier": 1.5,
-      "impact": 1.7
+      "impact": 1.6
     },
     "flags": [],
-    "cluster_key": "sirna-company-mna",
+    "cluster_key": "merck-kgaa-silence-sirna",
     "confidence": 0.9,
-    "deal_key": "merck-kgaa|silence-therapeutics|sirna-pipeline",
-    "upfront_usd": 0,
+    "deal_key": "merck-kgaa|silence-therapeutics|sirna-platform",
+    "upfront_usd": 1300000000,
     "total_usd": 1300000000,
-    "reasoning": "Merck KGaA全资收购Silence Therapeutics，13亿美元总价，siRNA领域重要整合，divesiran等管线已进入临床，Rare/Specialty疾病领域布局深化，MNC主导改变siRNA赛道格局",
+    "reasoning": "Merck KGaA全资收购Silence Therapeutics、总价13亿美元，属大型药企收购 biotech 的中高量级交易；siRNA赛道竞争格局生变——Merck KGaA借此补强罕见病/专科疾病遗传药物管线，超越Alnylam/Arrowhead等纯siRNA公司战略意图明确。需确认首付比例与是否含里程碑。",
     "article_type": "event_report",
     "verify_todo": [
-      "确认首付金额（13亿美元是否含溢价估算）",
-      "确认divesiran临床阶段",
-      "收购溢价比例"
+      "需核实收购价中首付/或有结构比例",
+      "确认divesiran当前临床阶段"
     ],
     "title": "Merck KGaA to buy Silence Therapeutics and its siRNA pipeline for $1.3B",
     "url": "https://endpoints.news/merck-kgaa-will-buy-silence-therapeutics-and-its-sirna-pipeline-for-1-3b/",
@@ -30,64 +29,32 @@
     "content": "",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "f4274c1892bd94b3",
-    "score": 5.9,
-    "dims": {
-      "amount": 1.2,
-      "stage": 0.8,
-      "first_mover": 1.2,
-      "tier": 1.5,
-      "impact": 1.2
-    },
-    "flags": [],
-    "cluster_key": "ai-miniproteins",
-    "confidence": 0.7,
-    "deal_key": "astellas|chris-bahl-startup|ai-miniproteins",
-    "upfront_usd": 13000000,
-    "total_usd": 400000000,
-    "reasoning": "Astellas与波士顿AI设计miniprotein新锐首笔合作，中等量级首付，AI+微型蛋白平台具有首创性潜力，Astellas为MNC，金额属平台型合作",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需确认首付确切金额及里程碑结构",
-      "需确认新锐公司正式名称",
-      "确认合作靶点/适应症范围"
-    ],
-    "title": "Exclusive: Astellas partners with Boston ‘miniproteins’ startup",
-    "url": "https://endpoints.news/exclusive-astellas-partners-with-boston-miniproteins-startup/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "b67bc9360669a46f",
-    "score": 5.0,
+    "score": 5.7,
     "dims": {
       "amount": 0.5,
       "stage": 0.5,
       "first_mover": 1.2,
       "tier": 1.5,
-      "impact": 1.3
+      "impact": 2.0
     },
     "flags": [
+      "age_unknown_source",
       "thin_material"
     ],
-    "cluster_key": "",
+    "cluster_key": "azd-insitro-ai-mash",
     "confidence": 0.4,
     "deal_key": "astrazeneca|insitro|ai-mash",
     "upfront_usd": 0,
     "total_usd": 1500000000,
-    "reasoning": "阿斯利康与Insitro达成AI+MASH药物发现合作，潜在总额15亿美元，属MNC对AI平台公司的重要授权交易，AI+MASH为新兴热门领域",
+    "reasoning": "AstraZeneca联手insitro AI平台开发MASH药物，潜在总额15亿美元属大额平台型交易；AI+肝脏疾病改变赛道竞争格局；MNC与明星AI biotech强强联合。注：来源仅有标题无正文，首付金额待查",
     "article_type": "event_report",
     "verify_todo": [
-      "首付金额未披露，需核实公告原文确认预付款规模",
-      "确认合作具体靶点与适应症范围"
+      "查insitro公告确认首付金额及近期里程碑",
+      "确认AI平台具体靶点或分子归属"
     ],
     "title": "AstraZeneca Taps insitro AI for MASH in Deal Worth Up to $1.5 Billion",
     "url": "https://www.pharmexec.com/view/astrazeneca-insitro-ai-mash-billion",
@@ -97,29 +64,59 @@
     "content": "",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "f4274c1892bd94b3",
+    "score": 4.9,
+    "dims": {
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 1.6,
+      "tier": 1.2,
+      "impact": 1.3
+    },
+    "flags": [],
+    "cluster_key": "astellas-miniproteins",
+    "confidence": 0.7,
+    "deal_key": "astellas|charm-bio|ai-miniproteins",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "安斯泰来与波士顿AI miniprotein startup达成合作，首付款未披露，AI设计微型蛋白属全球首个新机制；平台型交易代表MNC对AI+蛋白工程领域的战略布局。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需获取公告确认首付金额与具体靶点范围"
+    ],
+    "title": "Exclusive: Astellas partners with Boston ‘miniproteins’ startup",
+    "url": "https://endpoints.news/exclusive-astellas-partners-with-boston-miniproteins-startup/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "14f12f6d070e659d",
-    "score": 4.6,
+    "score": 3.8,
     "dims": {
-      "amount": 0.5,
-      "stage": 0.8,
-      "first_mover": 0.5,
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 1.2,
       "tier": 1.2,
-      "impact": 1.6
+      "impact": 0.6
     },
     "flags": [],
-    "cluster_key": "rna-platform-partnerships",
-    "confidence": 0.65,
+    "cluster_key": "sanofi-scionxbio-rna",
+    "confidence": 0.6,
     "deal_key": "sanofi|scionxbio|long-acting-rna",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "Sanofi与新拆分Startup ScionxBio合作长释RNA，平台型合作首笔交易，金额未披露，ScionxBio从Eleven Therapeutics分拆不久",
+    "reasoning": "Sanofi与新拆分出的ScionsBio合作，利用其长效RNA技术筛选mRNA候选分子；deal_signal=false但实际构成BD授权/合作，金额未披露属小型平台合作。",
     "article_type": "event_report",
     "verify_todo": [
-      "确认财务条款（首付/里程碑）",
-      "确认合作靶点范围"
+      "需查公告确认合作范围与财务条款"
     ],
     "title": "Sanofi taps new startup ScionxBio for long-acting RNA",
     "url": "https://endpoints.news/sanofi-taps-new-startup-scionxbio-for-long-acting-rna/",
@@ -129,239 +126,64 @@
     "content": "",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "43df88341f572ded",
-    "score": 4.6,
-    "dims": {
-      "amount": 0.5,
-      "stage": 0.8,
-      "first_mover": 1.2,
-      "tier": 1.0,
-      "impact": 1.1
-    },
-    "flags": [
-      "material_absent",
-      "thin_material"
-    ],
-    "cluster_key": "long-read-genomics-ai",
-    "confidence": 0.4,
-    "deal_key": "pacbio|verily|long-read-genomics-ai",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "PacBio与Verily多年战略合作，长读长基因组学+AI在生物医学领域应用，金额未披露，平台型合作，长读长测序在AI时代外溢价值高",
-    "article_type": "event_report",
-    "verify_todo": [
-      "确认财务条款",
-      "确认合作具体范围及排他性"
-    ],
-    "title": "PacBio与Verily Health达成多年战略合作，推动长读长基因组学在生物医学AI中的应用【AI生成】",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_385711",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "d0f82379bb05dde9",
-    "score": 4.3,
-    "dims": {
-      "amount": 0.3,
-      "stage": 0.5,
-      "first_mover": 0.5,
-      "tier": 1.2,
-      "impact": 1.8
-    },
-    "flags": [
-      "material_absent",
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 0.5,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Lilly中国药物递送deal提及但正文极短，EyePoint Phase3失败为主内容，整体非BD主导",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需单独查找Lilly中国药物递送合作详情",
-      "Lilly中国deal金额/靶点待确认"
-    ],
-    "title": "EyePoint's Phase 3 failure; Lilly's China drug delivery deal",
-    "url": "https://endpoints.news/eyepoints-phase-3-failure-lillys-china-drug-delivery-deal/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ab7bcc054d39eace",
-    "score": 4.0,
-    "dims": {
-      "amount": 0,
-      "stage": 1.5,
-      "first_mover": 0.4,
-      "tier": 0.7,
-      "impact": 1.4
-    },
-    "flags": [],
-    "cluster_key": "",
-    "confidence": 0.75,
-    "deal_key": "paragon-labs|velaris-therapeutics|reverse-merger",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Paragon Labs孵化企业Velaris通过反向并购上市，为Paragon第9家借壳上市公司，Paragon此前已有1家以110亿美元出售，反向并购是biotech上市重要路径",
-    "article_type": "event_report",
-    "verify_todo": [
-      "反向收购交易对价未在文中披露，需核实SEC文件确认Velaris估值",
-      "确认并购具体条款和时间表"
-    ],
-    "title": "Another Paragon spinout goes public through reverse merger",
-    "url": "https://www.biopharmadive.com/news/velaris-alaunos-paragon-reverse-merger-acquisition-fairmount/832869/",
-    "sources": [
-      "biopharmadive_deals",
-      "biopharmadive_home"
-    ],
-    "content": "An article from Another Paragon spinout goes public through reverse merger Including the deal announced Tuesday, Paragon has now formed and taken eight startups public through reverse mergers. The ninth sold for $11 billion. Published Oct. 13, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Velaris Therapeutics is the latest in a series of biotech startups Paragon Labs has formed and subsequently taken public. Getty Images Paragon Labs, the biotechnology incubator behind more than half a dozen startups, watched another of its companies go public Tuesday through an increasingly popular type of deal. Velaris Therapeutics is the ninth and newest spinout from Paragon, with research directed at diseases of the heart and lungs. It’s just been acquired by Alaunos Therapeutics, a former cell therapy developer that abandoned its programs in 2023 and has since been looking for a lifeline in a strategic deal. Alaunos has struggled financially over the past few years and at least twice risked losing its Nasdaq listing. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); While branded an acquisition, the deal’s terms are more aligned with a “reverse merger,” where a private company slots into a public “shell” and takes control of the operations. The combined business will focus on Velaris’ drug programs, and four of its five board directors will be either from or picked by Fairmount Funds, the Philadelphia-based investment firm that founded Paragon in 2021. Alongside the deal, Fairmount led a private stock offering that raised around $350 million to support Velaris’ research and keep the new company operational into 2029. Several other big-name investors participated in the round, including Venrock Healthcare Capital Partners, Wellington Management, Janus Henderson Investors, Perceptive Advisors and certain accounts advised by T. Rowe Price Investment Management. “We believe this transaction and the concurrent private placement provide a strong financial foundation for us to advance an exciting pipeline and offer our stockholders a compelling opportunity to realize value,” Holger Weis, CEO and board chairman at Alaunos, said in a statement. Until recently, many healthcare investors viewed reverse mergers as unsavory deals between a washed-out public company and a private drugmaker whose assets weren’t interesting enough to drive an initial public offering. But that image has changed drastically over the last couple years. That’s largely because of Fairmount, which showed these deals, when backed by tight groups of credible investors, can offer promising private developers a fast track to the public markets. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); More than two dozen biotech reverse mergers have been announced this year — a marked increase from the 10 seen across all of 2025 — according to a database compiled by life sciences advisory firm JB Strategy Partners. That figure roughly matches the total number of IPOs so far in 2026. In addition to Velaris, this new class has two other Paragon-forged companies: the migraine specialist Mentari Therapeutics and the brain drug developer Korsana Biosciences. Each came with private stock offerings worth hundreds of millions of dollars. Mentari’s deal is set to close before the end of the year. If it does, eight of Paragon’s nine disclosed spinouts will have gone public through reverse mergers. The lone exception is Apogee Therapeutics, an immunology-focused biotech that raised $300 million through an IPO in 2023. Apogee then sold to AbbVie in a nearly $11 billion deal that closed last month. Branden Berns, a partner at the law firm Gibson Dunn who helped advise Velaris, explained to BioPharma Dive that, generally, private companies exploring reverse mergers have the bandwidth to evaluate around two to five public vehicles. That was the case with Velaris. The companies also did a speedier, often harder-to-pull-off version known as a simultaneous sign and close. At least two other Paragon biotechs, Spyre Therapeutics and Damora Therapeutics, used the same approach. \"The Fairmount team is very capable at identifying appropriate counterparties and executing transactions quickly,” Berns said. The combined company said that, along with Velaris' pipeline, it does intend to keep working on an obesity and metabolic disorders drug that Alaunos pivoted to after stepping back from cancer cell therapies. Recommended Reading A booming business on Wall Street would love more biotechs to quietly die By Jacob Bell • Sept. 10, 2026 In the hunt for reverse merger targets, Caribou could be prized game By Jacob Bell • Oct. 8, 2026 Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech, Deals",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "4282fb11115f477d",
+    "id": "f0d0aa9e9fd63cec",
     "score": 3.8,
     "dims": {
       "amount": 0.3,
       "stage": 0.5,
-      "first_mover": 0.5,
-      "tier": 1.2,
-      "impact": 1.3
-    },
-    "flags": [
-      "material_absent",
-      "thin_material"
-    ],
-    "cluster_key": "az-ai-platform",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "STAT Plus日报汇总，包含AstraZeneca AI平台交易线索但仅是标题提及，无正文内容，material_chars=0",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需单独查找AstraZeneca AI deal原始报道"
-    ],
-    "title": "STAT Plus: Pharmalittle: We’re reading about drug launch prices, an AstraZeneca AI deal, and more",
-    "url": "https://www.statnews.com/pharmalot/2026/10/20/drug-launch-prices-rose-astrazeneca-ai-deal/",
-    "sources": [
-      "stat_pharma",
-      "stat_pharma"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "2f3bf47b722b3aa1",
-    "score": 3.5,
-    "dims": {
-      "amount": 0.3,
-      "stage": 0.5,
-      "first_mover": 0.5,
-      "tier": 1.0,
-      "impact": 1.2
-    },
-    "flags": [
-      "not_bd",
-      "material_absent",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "MFN定价政策分析文章，无具体交易，仅access=full但material_chars=0，无实质内容",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需获取全文内容"
-    ],
-    "title": "How MFN Deals May Impact Future Decisions",
-    "url": "https://www.pharmexec.com/view/how-mfn-deals-may-impact-future-decisions",
-    "sources": [
-      "pharmexec_partnership",
-      "pharmexec_irlp"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "f0d0aa9e9fd63cec",
-    "score": 3.2,
-    "dims": {
-      "amount": 0.3,
-      "stage": 0.5,
-      "first_mover": 0.8,
-      "tier": 0.5,
+      "first_mover": 1.2,
+      "tier": 0.7,
       "impact": 1.1
     },
     "flags": [],
-    "cluster_key": "",
-    "confidence": 0.75,
+    "cluster_key": "yuheng-tlk2",
+    "confidence": 0.85,
     "deal_key": "capital-medical-university|yuheng-pharma|tlk2-gene-therapy",
-    "upfront_usd": 156000,
-    "total_usd": 156000,
-    "reasoning": "誉衡药业1115万元（约15.6万美元）受让首都医科大学TLK2基因治疗专利，中小量级技术转让，首个青光眼神经保护基因治疗概念",
+    "upfront_usd": 1570000,
+    "total_usd": 1570000,
+    "reasoning": "誉衡药业以1115万元受让首都医科大学TLK2靶向基因治疗专利，属国内高校技术转让的小型交易；该靶点为青光眼神经保护新路径，国内市场超2100万患者，首仿/新技术布局意义超出金额量级。",
     "article_type": "event_report",
     "verify_todo": [
-      "确认TLK2与青光眼机制关联性",
-      "确认是否为独占许可"
+      "需确认合同生效时间与付款安排"
     ],
     "title": "誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径",
     "url": "https://www.pharnexcloud.com/zixun/sx_385013",
     "sources": [
       "pharnexcloud"
     ],
-    "content": "首页 资讯 摩熵原创 时讯 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 李明轩 · 医药投融资分析师 李 李明轩 医药投融资分析师 审核：孙浩 · 特许金融分析师（CFA） 聚焦创新药投融资、小核酸药物与代谢疾病赛道；长期跟踪国内 Biotech 融资动态与管线进展。累计发布原创分析 200+ 篇。 昨天 15:57 1919 原发性开角型青光眼 青光眼 北京同仁医院 开角型青光眼 首都医科大学 10月16日，哈尔滨誉衡药业发布公告，公司与首都医科大学签署专利权转让合同，以1115万元受让发明专利 “一种钙超载介导神经元死亡的标志物及应用”（专利号：ZL202210351580.3）。图源：誉衡药业企业公告本次交易瞄准青光眼神经保护赛道，基于该专利技术，誉衡药业计划开发靶向 TLK2 的基因治疗疗法，为青光眼治疗开辟独立于降眼压之外的全新研发方向。一、青光眼治疗：瞄准神经保护新路径青光眼被称作 “视力小偷”，是全球首位不可逆性致盲眼病。根据《中国青光眼指南（2020 年）》数据，2020年国内青光眼患者约2100万人，致盲人数高达567万人；随着人口老龄化，我国青光眼的患病率将逐年增加。当前临床主流治疗方案，核心思路集中于降低眼压。但临床痛点十分突出：部分患者即便眼压控制达标，视神经损伤依旧会持续恶化。视网膜神经节细胞（RGC）进行性凋亡，才是青光眼视功能不可逆丧失的核心病理根源。誉衡本次收购专利，正是瞄准这一临床痛点。专利围绕钙超载介导神经元死亡机制，计划开发TLK2靶向基因疗法，探索不依赖降眼压、直接保护视网膜神经节细胞的治疗路径。从作用机制来看，该项目和现有多数神经保护研发路线存在明显差异，具备机制创新潜力。但需要客观说明：技术仍处于早期阶段，疗效、安全性以及商业化价值，仍有待漫长的研发进程验证。二、1115 万元分期支付，后续研发仍待推进按照转让合同约定：首都医科大学需要在合同生效后30个工作日内，向誉衡药业完整移交技术秘密、专利使用资料、技术背景文件与可行性研究报告等全套技术材料；誉衡药业则在同期完成专利权转让登记手续。1115万元转让款并非一次性支付，将按照研发里程碑节点分期拨付。高校基础成果向临床药物转化，本身充满不确定性。本次专利交易落地，只是项目的起点。后续候选疗法的开发、临床前验证、临床试验推进，才是决定这项专利价值能否兑现的关键。三、青光眼基因治疗赛道升温，国内外多条路线同台竞速不止TLK2靶点技术，青光眼基因治疗领域早已进入多点布局阶段，研发方向分化为致病基因编辑、房水流出调控、视神经保护三大主线。·国内管线本导基因BD113：针对MYOC突变型青光眼，采用基因编辑敲除致病变异基因，已于北京同仁医院完成2例患者给药。艾威药业GVB-2001：抑制Rho通路改善房水外流，面向原发性开角型青光眼，摩熵医药数据库显示，该药在2025年7月进入Ⅱ期临床阶段。图源：摩熵医药-全球药物研发数据库极目生物ARVN601：基于微小RNA的神经保护基因疗法，目前处于临床前研发阶段。·海外管线Life Biosciences ER-100：表观遗传重编程技术，AAV载体递送山中因子，布局开角型青光眼与缺血性视神经病变，2026年完成Ⅰ期临床首例给药。安斯泰来ASP2767：聚焦青光眼视神经损伤修复，采用单次玻璃体腔注射给药方案。不难看出，青光眼研发范式正在迭代：从单纯降眼压的对症治疗，转向深层致病机制干预、视神经保护的对因治疗。誉衡药业1115万元拿下TLK2相关专利，是企业布局眼科创新赛道的重要动作。这项具备差异化机制的技术，后续研发推进值得行业持续关注。参考来源：[1] 企业公告/官方披露[2] 《中国青光眼指南（2020年）》[3] 摩熵医药（原药融云）数据库扩展阅读：1. 青光眼首仿药争夺战打响：盐酸卡替洛尔滴眼液或降价50%，惠及2000万患者！ 青光眼相关推荐 相关靶点： EGFR Tau HTT VEGF AGT GLP-1R ALB IL-17 c-Kit IL-6 相关药品： 胰岛素 紫杉醇 贝伐珠单抗 雷珠单抗 阿柏西普 米非司酮 乙酰唑胺 双氯芬酸 buntanetap 溴莫尼定 相关企业： 江苏恒瑞医药股份有限公司 Novo Nordisk A/S Genentech Inc Johnson & Johnson 安进 清华大学 复旦大学 沈阳药科大学 Arrowhead Pharmaceuticals Inc 中国科学院生物物理研究所 誉衡药业*点击下方数字查看更多企业相关数据 全球药物研发信息 16条 中国药品审评信息 920条 中国药品批文 - 药品招投标 484条 全球临床试验 3条 中国临床试验 21条 一致性评价 - 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 罕见病基因治疗进入收获期：FDA半年放行多款CGT新药意味着什么 细胞基因研究圈 2026-10-16 超3亿元！上海一聚焦基因治疗等创新药企完成A轮融资 细胞与基因治疗领域 2026-10-16 基因治疗帮助耳聋患者恢复听力、AI预测免疫疗效：8项临床研究正在改变诊疗 解螺旋 2026-10-15 全球首款，耀海护航！诺思兰德塞多明基注射液（华索灵®）全国首批产品正式上市，耀海生物以商业化产能强势赋能基因治疗里程碑落地！ 江苏耀海生物制药有限公司 2026-10-14 中国帕金森病细胞治疗迎新突破：国际MDS大会公布Ⅰ+Ⅱ期临床结果及进展 细胞与基因治疗领域 2026-10-10 士泽生物通用细胞治疗帕金森病亮相 MDS 国际大会：临床 I 期突破进展+盲法 II 期全部入组 丁香园 Insight 数据库 2026-10-10 基因治疗竞速，资本加码：中吉智药斩获A+轮融资 江北生命健康 2026-10-08 首都医科大学王蕾联合北京同仁医院郭彩霞教授揭示短链脂肪酸抑制破骨样巨噬细胞分化、改善心梗后心脏修复的新机制 丁香学术 2026-10-03 V来脑暴圈 | 从影像到功能：IDH 突变型脑胶质瘤靶向干预预后评价体系的建立 良医汇肿瘤资讯 2026-09-30 宣武医院贾建平教授团队揭示病理负担与认知韧性共同塑造阿尔茨海默病风险 首都医科大学 2026-09-29 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 小而美CXO : 澎立生物IPO，拟募资超6亿！ 药融圈 2023-04-14 国产首款CDK4/6抑制剂新药——达尔西利，恒瑞医药正式开卖！价格出炉 药融圈 2022-04-06 正式开卖！最强ADC药物，德曲妥珠单抗中国售价披露（8860元）！ 药融圈 2023-06-25 一项CAR-T细胞疗法临床项目被停止，股价下跌近 40%！ 细胞基因治疗前沿 2022-12-23 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "content": "首页 资讯 摩熵原创 时讯 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 李明轩 · 医药投融资分析师 李 李明轩 医药投融资分析师 审核：孙浩 · 特许金融分析师（CFA） 聚焦创新药投融资、小核酸药物与代谢疾病赛道；长期跟踪国内 Biotech 融资动态与管线进展。累计发布原创分析 200+ 篇。 昨天 15:57 1938 原发性开角型青光眼 青光眼 北京同仁医院 开角型青光眼 首都医科大学 10月16日，哈尔滨誉衡药业发布公告，公司与首都医科大学签署专利权转让合同，以1115万元受让发明专利 “一种钙超载介导神经元死亡的标志物及应用”（专利号：ZL202210351580.3）。图源：誉衡药业企业公告本次交易瞄准青光眼神经保护赛道，基于该专利技术，誉衡药业计划开发靶向 TLK2 的基因治疗疗法，为青光眼治疗开辟独立于降眼压之外的全新研发方向。一、青光眼治疗：瞄准神经保护新路径青光眼被称作 “视力小偷”，是全球首位不可逆性致盲眼病。根据《中国青光眼指南（2020 年）》数据，2020年国内青光眼患者约2100万人，致盲人数高达567万人；随着人口老龄化，我国青光眼的患病率将逐年增加。当前临床主流治疗方案，核心思路集中于降低眼压。但临床痛点十分突出：部分患者即便眼压控制达标，视神经损伤依旧会持续恶化。视网膜神经节细胞（RGC）进行性凋亡，才是青光眼视功能不可逆丧失的核心病理根源。誉衡本次收购专利，正是瞄准这一临床痛点。专利围绕钙超载介导神经元死亡机制，计划开发TLK2靶向基因疗法，探索不依赖降眼压、直接保护视网膜神经节细胞的治疗路径。从作用机制来看，该项目和现有多数神经保护研发路线存在明显差异，具备机制创新潜力。但需要客观说明：技术仍处于早期阶段，疗效、安全性以及商业化价值，仍有待漫长的研发进程验证。二、1115 万元分期支付，后续研发仍待推进按照转让合同约定：首都医科大学需要在合同生效后30个工作日内，向誉衡药业完整移交技术秘密、专利使用资料、技术背景文件与可行性研究报告等全套技术材料；誉衡药业则在同期完成专利权转让登记手续。1115万元转让款并非一次性支付，将按照研发里程碑节点分期拨付。高校基础成果向临床药物转化，本身充满不确定性。本次专利交易落地，只是项目的起点。后续候选疗法的开发、临床前验证、临床试验推进，才是决定这项专利价值能否兑现的关键。三、青光眼基因治疗赛道升温，国内外多条路线同台竞速不止TLK2靶点技术，青光眼基因治疗领域早已进入多点布局阶段，研发方向分化为致病基因编辑、房水流出调控、视神经保护三大主线。·国内管线本导基因BD113：针对MYOC突变型青光眼，采用基因编辑敲除致病变异基因，已于北京同仁医院完成2例患者给药。艾威药业GVB-2001：抑制Rho通路改善房水外流，面向原发性开角型青光眼，摩熵医药数据库显示，该药在2025年7月进入Ⅱ期临床阶段。图源：摩熵医药-全球药物研发数据库极目生物ARVN601：基于微小RNA的神经保护基因疗法，目前处于临床前研发阶段。·海外管线Life Biosciences ER-100：表观遗传重编程技术，AAV载体递送山中因子，布局开角型青光眼与缺血性视神经病变，2026年完成Ⅰ期临床首例给药。安斯泰来ASP2767：聚焦青光眼视神经损伤修复，采用单次玻璃体腔注射给药方案。不难看出，青光眼研发范式正在迭代：从单纯降眼压的对症治疗，转向深层致病机制干预、视神经保护的对因治疗。誉衡药业1115万元拿下TLK2相关专利，是企业布局眼科创新赛道的重要动作。这项具备差异化机制的技术，后续研发推进值得行业持续关注。参考来源：[1] 企业公告/官方披露[2] 《中国青光眼指南（2020年）》[3] 摩熵医药（原药融云）数据库扩展阅读：1. 青光眼首仿药争夺战打响：盐酸卡替洛尔滴眼液或降价50%，惠及2000万患者！ 青光眼相关推荐 相关靶点： EGFR Tau HTT VEGF AGT GLP-1R ALB IL-17 c-Kit IL-6 相关药品： 胰岛素 紫杉醇 贝伐珠单抗 雷珠单抗 阿柏西普 米非司酮 乙酰唑胺 双氯芬酸 buntanetap 溴莫尼定 相关企业： 江苏恒瑞医药股份有限公司 Novo Nordisk A/S Genentech Inc Johnson & Johnson 安进 清华大学 复旦大学 沈阳药科大学 Arrowhead Pharmaceuticals Inc 中国科学院生物物理研究所 誉衡药业*点击下方数字查看更多企业相关数据 全球药物研发信息 16条 中国药品审评信息 920条 中国药品批文 - 药品招投标 484条 全球临床试验 3条 中国临床试验 21条 一致性评价 - 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 罕见病基因治疗进入收获期：FDA半年放行多款CGT新药意味着什么 细胞基因研究圈 2026-10-16 超3亿元！上海一聚焦基因治疗等创新药企完成A轮融资 细胞与基因治疗领域 2026-10-16 基因治疗帮助耳聋患者恢复听力、AI预测免疫疗效：8项临床研究正在改变诊疗 解螺旋 2026-10-15 全球首款，耀海护航！诺思兰德塞多明基注射液（华索灵®）全国首批产品正式上市，耀海生物以商业化产能强势赋能基因治疗里程碑落地！ 江苏耀海生物制药有限公司 2026-10-14 中国帕金森病细胞治疗迎新突破：国际MDS大会公布Ⅰ+Ⅱ期临床结果及进展 细胞与基因治疗领域 2026-10-10 士泽生物通用细胞治疗帕金森病亮相 MDS 国际大会：临床 I 期突破进展+盲法 II 期全部入组 丁香园 Insight 数据库 2026-10-10 基因治疗竞速，资本加码：中吉智药斩获A+轮融资 江北生命健康 2026-10-08 首都医科大学王蕾联合北京同仁医院郭彩霞教授揭示短链脂肪酸抑制破骨样巨噬细胞分化、改善心梗后心脏修复的新机制 丁香学术 2026-10-03 V来脑暴圈 | 从影像到功能：IDH 突变型脑胶质瘤靶向干预预后评价体系的建立 良医汇肿瘤资讯 2026-09-30 宣武医院贾建平教授团队揭示病理负担与认知韧性共同塑造阿尔茨海默病风险 首都医科大学 2026-09-29 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 1.1类国产乙肝治疗新药贺普拉肽顺利进入II/III期临床 小药丸 2019-07-31 First in Class！贺普拉肽治疗慢性乙肝，II期临床试验完成入组！ 药融圈 2023-05-30 全球艾滋病报告出炉 向治愈艾滋病出发 药明康德 2019-07-22 第七批耗材国采提上日程！锚点价、多轮复活，集采重塑行业新格局 摩熵医械 2026-02-13 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "ba74d55898f59a69",
-    "score": 2.5,
+    "score": 3.7,
     "dims": {
-      "amount": 0,
+      "amount": 0.3,
       "stage": 0.5,
       "first_mover": 0.4,
-      "tier": 0.8,
-      "impact": 0.8
+      "tier": 1.5,
+      "impact": 1.0
     },
     "flags": [
-      "landscape_review",
-      "age_old",
+      "age_16days",
+      "terms_not_disclosed",
+      "material_insufficient",
       "thin_material"
     ],
-    "cluster_key": "csl-alentis-nhwa-somnivera-1025",
+    "cluster_key": "csl-alentis-nhwa",
     "confidence": 0.4,
-    "deal_key": "alentis|csl|cleserlin",
+    "deal_key": "jiangsu-nhwa|somnivera|sleep-disorders",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "CSL与Alentis全球合作、Jiangsu Nhwa与Somnivera授权交易，属多笔BD交易汇总，但文章已发布16天且无正文素材，价值有限",
+    "reasoning": "汇总中含两条真实BD交易：CSL与Alentis全球 partnership（大公司间合作）及江苏豪森与Somnivera licensing deal；但金额阶段均未披露；16天前非近日",
     "article_type": "landscape_review",
     "verify_todo": [
-      "首付金额未披露，需核实两笔交易的公告原文",
-      "发布已超两周，时效性较弱"
+      "查CSL-Alentis及豪森-Somnivera完整公告确认deal terms"
     ],
     "title": "Roundup: CSL & Alentis Enter Global Partnership, Jiangsu Nhwa Enters Global Licensing Deal with Somnivera",
     "url": "https://www.pharmexec.com/view/roundup-csl-alentis-global-partnership-jiangsu-nhwa-licensing-somnivera",
@@ -372,32 +194,169 @@
     "content": "",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "f82b876a3f525594",
-    "score": 2.0,
+    "id": "43df88341f572ded",
+    "score": 3.5,
+    "dims": {
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 1.2,
+      "tier": 1.2,
+      "impact": 0.3
+    },
+    "flags": [
+      "thin_material"
+    ],
+    "cluster_key": "pacbio-verily-genomics-ai",
+    "confidence": 0.4,
+    "deal_key": "pacbio|verily|long-read-genomics-ai",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "PacBio与Verily Health达成多年战略合作，推动长读长基因组学在生物医学AI中的应用；两大美国生命科学与数字健康平台级合作，deal_signal=true但金额未披露、素材chars=0，需补全一手信息。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需获取公告确认合作框架与财务安排",
+      "素材chars=0，纯AI生成标题，需补全正文"
+    ],
+    "title": "PacBio与Verily Health达成多年战略合作，推动长读长基因组学在生物医学AI中的应用【AI生成】",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_385711",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "ab7bcc054d39eace",
+    "score": 3.2,
+    "dims": {
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.3
+    },
+    "flags": [
+      "age_8days",
+      "terms_not_disclosed"
+    ],
+    "cluster_key": "",
+    "confidence": 0.7,
+    "deal_key": "paragon-labs|velaris|reverse-merger",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Paragon Labs孵化器再分拆一家biotech通过反向并购上市，是近期活跃的资本化路径；正文7501字符含丰富交易背景；但具体估值或融资规模未披露；8天前非近日",
+    "article_type": "event_report",
+    "verify_todo": [
+      "查Velaris Therapeutics反向并购具体条款和估值"
+    ],
+    "title": "Another Paragon spinout goes public through reverse merger",
+    "url": "https://www.biopharmadive.com/news/velaris-alaunos-paragon-reverse-merger-acquisition-fairmount/832869/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from Another Paragon spinout goes public through reverse merger Including the deal announced Tuesday, Paragon has now formed and taken eight startups public through reverse mergers. The ninth sold for $11 billion. Published Oct. 13, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Velaris Therapeutics is the latest in a series of biotech startups Paragon Labs has formed and subsequently taken public. Getty Images Paragon Labs, the biotechnology incubator behind more than half a dozen startups, watched another of its companies go public Tuesday through an increasingly popular type of deal. Velaris Therapeutics is the ninth and newest spinout from Paragon, with research directed at diseases of the heart and lungs. It’s just been acquired by Alaunos Therapeutics, a former cell therapy developer that abandoned its programs in 2023 and has since been looking for a lifeline in a strategic deal. Alaunos has struggled financially over the past few years and at least twice risked losing its Nasdaq listing. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); While branded an acquisition, the deal’s terms are more aligned with a “reverse merger,” where a private company slots into a public “shell” and takes control of the operations. The combined business will focus on Velaris’ drug programs, and four of its five board directors will be either from or picked by Fairmount Funds, the Philadelphia-based investment firm that founded Paragon in 2021. Alongside the deal, Fairmount led a private stock offering that raised around $350 million to support Velaris’ research and keep the new company operational into 2029. Several other big-name investors participated in the round, including Venrock Healthcare Capital Partners, Wellington Management, Janus Henderson Investors, Perceptive Advisors and certain accounts advised by T. Rowe Price Investment Management. “We believe this transaction and the concurrent private placement provide a strong financial foundation for us to advance an exciting pipeline and offer our stockholders a compelling opportunity to realize value,” Holger Weis, CEO and board chairman at Alaunos, said in a statement. Until recently, many healthcare investors viewed reverse mergers as unsavory deals between a washed-out public company and a private drugmaker whose assets weren’t interesting enough to drive an initial public offering. But that image has changed drastically over the last couple years. That’s largely because of Fairmount, which showed these deals, when backed by tight groups of credible investors, can offer promising private developers a fast track to the public markets. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); More than two dozen biotech reverse mergers have been announced this year — a marked increase from the 10 seen across all of 2025 — according to a database compiled by life sciences advisory firm JB Strategy Partners. That figure roughly matches the total number of IPOs so far in 2026. In addition to Velaris, this new class has two other Paragon-forged companies: the migraine specialist Mentari Therapeutics and the brain drug developer Korsana Biosciences. Each came with private stock offerings worth hundreds of millions of dollars. Mentari’s deal is set to close before the end of the year. If it does, eight of Paragon’s nine disclosed spinouts will have gone public through reverse mergers. The lone exception is Apogee Therapeutics, an immunology-focused biotech that raised $300 million through an IPO in 2023. Apogee then sold to AbbVie in a nearly $11 billion deal that closed last month. Branden Berns, a partner at the law firm Gibson Dunn who helped advise Velaris, explained to BioPharma Dive that, generally, private companies exploring reverse mergers have the bandwidth to evaluate around two to five public vehicles. That was the case with Velaris. The companies also did a speedier, often harder-to-pull-off version known as a simultaneous sign and close. At least two other Paragon biotechs, Spyre Therapeutics and Damora Therapeutics, used the same approach. \"The Fairmount team is very capable at identifying appropriate counterparties and executing transactions quickly,” Berns said. The combined company said that, along with Velaris' pipeline, it does intend to keep working on an obesity and metabolic disorders drug that Alaunos pivoted to after stepping back from cancer cell therapies. Recommended Reading A booming business on Wall Street would love more biotechs to quietly die By Jacob Bell • Sept. 10, 2026 In the hunt for reverse merger targets, Caribou could be prized game By Jacob Bell • Oct. 8, 2026 Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech, Deals",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "79e4bccc99abe57c",
+    "score": 0.6,
     "dims": {
       "amount": 0,
       "stage": 0,
       "first_mover": 0,
       "tier": 0,
-      "impact": 2.0
+      "impact": 0.6
     },
     "flags": [
       "not_bd",
-      "analytical_article"
+      "regulatory_policy",
+      "material_insufficient",
+      "age_4days",
+      "thin_material"
     ],
     "cluster_key": "",
-    "confidence": 0.5,
+    "confidence": 0.4,
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "分析文章探讨Caribou作为反向并购目标的可行性，属行业战略分析，非已发生的BD交易",
-    "article_type": "analytical",
-    "verify_todo": [
-      "文章仅讨论潜在可能性，未发生实际并购"
+    "reasoning": "中国商务部限制部分生物技术平台出口政策解读，虽涉及授权限制但非具体交易公告",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "China pursues export ban on some biotech platforms",
+    "url": "https://endpoints.news/china-pursues-export-ban-on-some-biotech-platforms/",
+    "sources": [
+      "endpoints_rss"
     ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "67ba7f7638c4da7d",
+    "score": 0.4,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "q_and_a",
+      "material_insufficient",
+      "age_4days"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "赛诺菲研发主管访谈，涉及AI和交易策略讨论但非公告类交易；正文210字符不足以提炼BD要素",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Q&A: Sanofi's new research chief on AI, R&D failure rates and dealmaking",
+    "url": "https://endpoints.news/qa-sanofis-new-research-chief-on-ai-rd-failure-rates-and-dealmaking/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "f82b876a3f525594",
+    "score": 0.4,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "exploratory",
+      "age_13days"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Caribou探讨反向并购可能性，属于战略探索阶段，非已宣布交易；正文8784字符含丰富分析但无具体交易条款",
+    "article_type": "event_report",
+    "verify_todo": [],
     "title": "In the hunt for reverse merger targets, Caribou could be prized game",
     "url": "https://www.biopharmadive.com/news/caribou-reverse-merger-prospects-cell-therapy-private-public/832494/",
     "sources": [
@@ -407,1014 +366,7 @@
     "content": "An article from Emerging biotech In the hunt for reverse merger targets, Caribou could be prized game The struggling cell therapy developer is exploring strategic alternatives, which, among other characteristics, make it a likely candidate to receive reverse merger interest. Published Oct. 8, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Getty Images On Wall Street, a major search is underway to find struggling public companies that can serve as the raw materials for a niche but booming business. A promising candidate may have just emerged. This business revolves around “reverse mergers,” a type of deal where a private company combines with a public counterpart, often as a quick way to access the broad and deep-pocketed array of investors found on marketplaces like the Nasdaq. While previously disparaged, reverse mergers have recently become so popular that some deal experts question whether there are enough quality “shell” companies to meet the demand. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Shell hunters could have another option following a Tuesday announcement from Caribou Biosciences, the once high-flying biotechnology startup co-founded by CRISPR gene editing pioneer Jennifer Doudna. In a statement, Caribou CEO Rachel Haurwitz said the current financing environment has made it “increasingly challenging” to secure the money needed to advance the company’s two main research programs, which focus on a hard-to-make form of medicine known as “off-the-shelf” cell therapy. As such, Caribou has made the “difficult decision” not to further develop its programs and to “evaluate strategic alternatives” — common corporate lingo for opening itself up to various deals. Caribou’s board of directors has already cleared management to start evaluating a potential merger, acquisition, business combination or other transactions. The company has also tapped Wedbush Securities to serve as its exclusive financial advisor in this process. To Daina Graybosch, an analyst at Leerink Partners who covers Caribou, the natural end for the company now is either a reverse merger or an acquisition by Tang Capital, a San Diego-based investment firm that made a name for itself by buying up cash-rich biotechs and returning much of their value to shareholders. Caribou ended the second quarter with $114 million worth of cash, cash equivalents and marketable securities. “I think Rachel and the team really do believe in their assets, but it's a real struggle,” Graybosch said. “And when you finally do raise [capital], it just gets more and more dilutive. To pull the trigger now and give money back is what everybody likes to see” and “creates so much positive trust” with investors. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Caribou checks some of the boxes that, according to deal experts, make for a good reverse merger candidate. It trades on the Nasdaq, for example, which is more attractive to private drug developers than lower-tier, over-the-counter markets. A researcher works in Caribou's labs, where the company was designing cell therapies for blood malignancies. Permission granted by Caribou Biosciences Caribou may also have a subzero enterprise value, which, in broad strokes, means that after accounting for its cash pile, the market is attributing nothing — or, really, less than nothing — to the company’s core operating business. That can actually be a plus to private developers, as it signals they might not have to pay a big premium to snag the public vehicle. Using its June 30 financials and closing share price Wednesday, Caribou would have a negative enterprise value of roughly $20 million. (Notably, that’s at the low end of a range from Leerink, which estimates the figure could be as much as $30 million depending on how much cash Caribou spent in the third quarter.) “I would definitely say a reverse merger is on the table here,” said Emmett Sweeney, a vice president on the healthcare investment banking team at Raymond James. Perhaps what makes Caribou such an obvious reverse merger prospect is it publicly stating that it’s exploring strategic alternatives. When companies do that, they become “low-hanging fruit” for reverse merger deals, according to David Kellman, a managing director and head of life sciences and biopharma investment banking at Citizens. They’re “basically running auction processes” with private companies, Kellman said in an interview earlier this month. “Those are the most obvious candidates, regardless of other criteria.” Caribou’s statement, including the mention of Wedbush being its strategic advisor, is a sign that company leaders are “serious” and “mean business,” Sweeney said. Clearly, “they want to move quickly. That's another aspect of Caribou that makes it an attractive merger partner.” Sweeney and others anticipate that Caribou, if not already, will soon be inundated with inbounds from private companies interested in merging. With roughly two dozen biotech reverse mergers announced this year, “the question for many companies is no longer whether the structure works, but whether they can find the right shell and execute the transaction on attractive terms,” Raymond James analysts wrote in a note to clients Wednesday. One lingering question is whether Caribou’s now-discontinued drugs will find a new home. Graybosch doesn’t have high hopes — in part because of rival programs advancing at other cell therapy developers like Fate Therapeutics and AvenCell Therapeutics, both of which are backed by major life sciences investors and large pharmaceutical firms. “Very rarely do these assets show up [again],” she said. “If I'm an investor thinking, ‘Do I wrap a new company around this asset, or do I go invest in AvenCell or Fate,’ I probably choose AvenCell or Fate at this point.” Recommended Reading A booming business on Wall Street would love more biotechs to quietly die By Jacob Bell • Sept. 10, 2026 Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Deals",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "4c16868e3600ded4",
-    "score": 2.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 2.0
-    },
-    "flags": [
-      "not_bd",
-      "regulatory_approval",
-      "first_mover_claim"
-    ],
-    "cluster_key": "",
-    "confidence": 0.6,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "GSK Bepirovirsen获FDA批准，为全球首个慢性乙肝功能性治愈疗法，属重大监管里程碑，但非BD交易",
-    "article_type": "regulatory_approval",
-    "verify_todo": [
-      "确认该批准是否涉及任何商业化授权或合作条款"
-    ],
-    "title": "刚刚！全球首创乙肝功能性治愈疗法获 FDA 批准上市",
-    "url": "https://bydrug.pharmcube.com/news/detail/1580f7b51d7b19ea8b6e1877c93c8cd6",
-    "sources": [
-      "pharmcube"
-    ],
-    "content": "当地时间 10 月 20 日，GSK 宣布，其下反义寡核苷酸 （ASO） 创新药 Bepirovirsen （ 贝 普若韦生） 已获得美国 FDA 正式批准上市， 与核苷（酸）类似物逆转录酶抑制剂 （NrtI） 联合用于治疗慢性乙型肝炎 （CHB） 病毒感染。 根据 Insight 数据库，该药此前已在日本获批，是 全球首个获批的慢性乙肝 功能性治愈疗法 。 乙肝功能性治愈是指患者停用所有治疗药物后，连续 24 周以上血液中无法检测出乙肝病毒 DNA 与乙肝表面抗原 （HBsAg） 。",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ad085ec11f40ccf7",
-    "score": 2.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 2.0
-    },
-    "flags": [
-      "not_bd",
-      "no_content",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "FDA批准新闻，无任何交易要素（无买方卖方、无授权/收购关系），不属于BD条目。material_chars=0，无正文素材，发布时间未知。",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需确认发布日期；需确认是否有配套BD交易（如 GSK 授权合作）可关联报道"
-    ],
-    "title": "慢性乙型肝炎：GSK 反义寡核苷酸获 FDA 批准，19% 停药后仍维持功能性治愈",
-    "url": "https://bydrug.pharmcube.com/news/detail/243010f2ad72e6e186f181b1ca9a83d4",
-    "sources": [
-      "pharmcube"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ae34433b681bf6b6",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Endpoints周刊合集，摘要仅201字，提及Arrowhead但无具体交易动态，非BD新闻",
-    "article_type": "landscape_review",
-    "verify_todo": [
-      "仅有RSS摘要，需核实全文是否有实际交易"
-    ],
-    "title": "A search for ‘the statin of Alzheimer’s’; Arrowhead injectable lowers tau; and more",
-    "url": "https://endpoints.news/a-search-for-the-statin-of-alzheimers-arrowhead-injectable-lowers-tau-and-more/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "7826615394292a0a",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "诺华Fabhalta狼疮肾炎二期临床终止，属临床战略决策，无交易对手方",
-    "article_type": "clinical_update",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "诺华：CFB抑制剂终止狼疮肾炎二期临床",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_385339",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "87242deb6e6abdf3",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "泽安生物实体瘤MCE启动一期临床，属公司内部临床进展，无BD交易",
-    "article_type": "clinical_update",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "泽安生物医药：实体瘤MCE启动一期临床",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_385340",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "67ba7f7638c4da7d",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "赛诺菲新研发负责人访谈，讨论AI与研发策略，属高管视角文章，非交易报道",
-    "article_type": "executive_interview",
-    "verify_todo": [
-      "仅有RSS摘要210字，核实全文是否有交易相关内容"
-    ],
-    "title": "Q&A: Sanofi's new research chief on AI, R&D failure rates and dealmaking",
-    "url": "https://endpoints.news/qa-sanofis-new-research-chief-on-ai-rd-failure-rates-and-dealmaking/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "621a6dba17c60a44",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "诺华终止Fabhalta狼疮肾炎二期试验，属临床管 线调整，无交易行为",
-    "article_type": "clinical_update",
-    "verify_todo": [
-      "仅有248字RSS摘要"
-    ],
-    "title": "Novartis scraps Fabhalta study in lupus nephritis",
-    "url": "https://endpoints.news/novartis-scraps-fabhalta-study-in-lupus-nephritis/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "79e4bccc99abe57c",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "中国商务部限制特定生物技术平台出口政策讨论，属监管政策分析，非具体BD交易",
-    "article_type": "regulatory_analysis",
-    "verify_todo": [
-      "仅有198字摘要"
-    ],
-    "title": "China pursues export ban on some biotech platforms",
-    "url": "https://endpoints.news/china-pursues-export-ban-on-some-biotech-platforms/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ccf031c3a93d48ad",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "FDA多肽复方政策及Enspryng标签扩展，属监管动态，无交易要素",
-    "article_type": "regulatory_update",
-    "verify_todo": [
-      "仅有240字摘要"
-    ],
-    "title": "FDA considers interim access for compounded peptides; Enspryng's label expansion",
-    "url": "https://endpoints.news/fda-considers-interim-access-for-compounded-peptides-enspryngs-label-expansion/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "9c417e6eb11b8d2d",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "正大天晴NTQ5082获突破性治疗品种认定，属监管里程碑，无BD交易",
-    "article_type": "regulatory_milestone",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "正大天晴1类新药NTQ5082拟纳入突破性治疗品种，口服CFB抑制剂抢滩原发性IgA肾病，多款新药报产",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_383621",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ccdd91eeab895219",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "齐鲁制药QLS2318获CDE临床默示许可，属IND批准，无BD交易",
-    "article_type": "regulatory_approval",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "齐鲁制药QLS2312获CDE临床默示许可，双抗双靶点剑指IgA肾病新治疗路径",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_383348",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "17d6818ee577ab4a",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "一品红APH04935获FDA临床许可，属IND批准，无BD交易",
-    "article_type": "regulatory_approval",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "一品红APH04935片获FDA临床许可，口服GLP-1减重药实现中美双线推进",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_383347",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "70975b3899fa256b",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "九典制药盐酸乙哌立松片仿制药获批，属仿制药上市，无BD交易",
-    "article_type": "regulatory_approval",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "九典制药再添重磅品种！盐酸乙哌立松片获批上市，正式切入6亿级中枢性肌松剂赛道",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_382092",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "e66ef968a1bc3163",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "date_unknown",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "长风药业ICF004完成I期首例给药，属临床进展，无BD交易",
-    "article_type": "clinical_update",
-    "verify_todo": [
-      "发布日期未知，仅有标题无正文"
-    ],
-    "title": "长风速递 | 长风药业全球首创吸入新药ICF004顺利完成I期临床首例健康志愿者入组给药，产学研协同创新，加速本土原研突破",
-    "url": "https://www.phirda.com/artilce_43967.html?module=trackingCodeGenerator",
-    "sources": [
-      "phirda_industry"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "d6f7d16ed1dd6250",
-    "score": 1.0,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "date_unknown",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "正大天晴新药报产、贝达药业恩沙替尼欧盟上市申请，属NDA申报动态，无BD交易",
-    "article_type": "regulatory_filing",
-    "verify_todo": [
-      "发布日期未知，仅有标题无正文"
-    ],
-    "title": "正大天晴两款1类新药申报上市|贝达药业盐酸恩沙替尼欧盟上市申请获得积极意见",
-    "url": "https://www.phirda.com/artilce_43907.html?module=trackingCodeGenerator",
-    "sources": [
-      "phirda_industry"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "a40621ad68bc6e76",
-    "score": 1.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 1.0
-    },
-    "flags": [
-      "not_bd",
-      "no_content",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "纯临床研究结果报道，无任何交易要素，不属于BD条目。material_chars=0，无正文素材，发布时间未知。",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需确认发布日期"
-    ],
-    "title": "临床研究显示疏通颈动脉狭窄，也无法逆转认知衰退",
-    "url": "https://bydrug.pharmcube.com/news/detail/d71b8debf1a9b330fd286b8959aa9ac6",
-    "sources": [
-      "pharmcube"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "2d76c24eaca4c9c3",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "高管访谈文章，内容涉及事前授权流程优化，无任何交易要素",
-    "article_type": "analytical",
-    "verify_todo": [
-      "仅有标题无正文，无法核实内容"
-    ],
-    "title": "Abarca Health高管访谈：围绕患者重新设计事前授权流程【AI生成】",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/ytsd_385716",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "5e87ebc4819c6901",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "landscape_review",
-      "thin_material"
-    ],
-    "cluster_key": "global-rd-week40-41",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "第40-41周全球创新药研发概览汇总，属周报综述，无具体BD交易",
-    "article_type": "landscape_review",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "2026年第40-41周09.28-10.11全球创新药研发概览",
-    "url": "https://www.pharnexcloud.com/zixun/bg_384988",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "b5db55ded6b2d1dd",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "landscape_review",
-      "thin_material"
-    ],
-    "cluster_key": "cn-rd-week40-41",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "第40-41周国内创新药申请/获批临床数据汇总，属监管数据整理，无BD交易",
-    "article_type": "landscape_review",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "2026年第40-41周09.28-10.11国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析",
-    "url": "https://www.pharnexcloud.com/zixun/bg_384983",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "eac22d343bd84d11",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "DIA放射性药物研发培训课程，非BD新闻",
-    "article_type": "educational",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "DIA【来问讲者】放射性药物研发进阶：如何应对创新与临床转化中的关键挑战？",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/qy_385028",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "16f6b79278e4d361",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "FDA罕见病药物评审框架新计划，属监管政策动态，非BD交易",
-    "article_type": "regulatory_policy",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "FDA ‘reset’ continues with new plan for reviewing rare disease drugs",
-    "url": "https://www.biopharmadive.com/news/fda-rare-disease-framework-initiative-drug-development/833080/",
-    "sources": [
-      "biopharmadive_home"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "5831c0db6a26d9e1",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "STAT Plus报道FDA顾问委员会成员与药企关联，属利益冲突调查，非BD交易",
-    "article_type": "investigative",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "STAT Plus: FDA adcomm members’ ties to industry under scrutiny",
-    "url": "https://www.statnews.com/2026/10/14/biotech-news-fda-adcomm-member-ties-to-industry-under-scrutiny/",
-    "sources": [
-      "stat_biotech",
-      "stat_pharma"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "d3b9fac12bcc2b5a",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "STAT Plus分析FDA顾问委员会患者/消费者代表与药企资助团体的关联，属利益冲突调查，非BD交易",
-    "article_type": "investigative",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "STAT Plus: Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
-    "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
-    "sources": [
-      "stat_pharma"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "d6993190c0e1bddf",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "STAT专栏评论Grail多癌种早筛检测，属监管意见文章，非BD交易",
-    "article_type": "opinion",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "Why the FDA should not approve an ineffective multicancer screening test",
-    "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
-    "sources": [
-      "stat_biotech"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "9c0bdbab42c5e349",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "STAT Plus分析癌症疫苗临床试验结果分歧，属临床解读，非BD交易",
-    "article_type": "clinical_analysis",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
-    "title": "STAT Plus: Divergent trial results on cancer vaccines have the field grappling with hard questions",
-    "url": "https://www.statnews.com/2026/10/05/cancer-vaccines-mrna-clinical-trials/",
-    "sources": [
-      "stat_biotech"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "46185d4c61aabb7e",
-    "score": 0.5,
-    "dims": {
-      "amount": 0,
-      "stage": 0,
-      "first_mover": 0,
-      "tier": 0,
-      "impact": 0.5
-    },
-    "flags": [
-      "not_bd",
-      "material_insufficient",
-      "date_unknown",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.3,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "曹雪涛关于中国创新药高地的政策观点文章，属行业政策分析，非BD交易",
-    "article_type": "policy_article",
-    "verify_todo": [
-      "发布日期未知，无法判断时效性",
-      "仅有标题无正文"
-    ],
-    "title": "曹雪涛：多方协同攻坚，共筑中国创新药新高地",
-    "url": "https://www.phirda.com/artilce_40564.html?module=trackingCodeGenerator",
-    "sources": [
-      "phirda_industry"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "46348ea63c0a2053",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "ICER报告分析药价趋势，无交易双方，非BD条目",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "New ICER report suggests drug launch prices are outpacing their worth",
-    "url": "https://endpoints.news/new-icer-report-suggests-drug-launch-prices-are-outpacing-their-worth/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "c90e73468a84f8fd",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Epic推出处方药比价市场平台，属科技/医疗IT产品动态，无药企BD交易",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "An EHR giant backs consumer healthcare",
-    "url": "https://endpoints.news/an-ehr-giant-backs-consumer-healthcare/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "fc4207685204e734",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Biopharma Sentiment Index行业情绪调查，非BD交易",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Biopharma Sentiment Index | Q3 2026 survey results",
-    "url": "https://endpoints.news/biopharma-sentiment-index-q3-2026-survey-results/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "2f3233dce5c2aad0",
@@ -1434,7 +386,7 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "齐鲁QLS2401三抗IND获批，系regulatory approval，无交易双方，非BD条目",
+    "reasoning": "齐鲁制药QLS2401获IND默示许可，属内部自主研发资产获批临床，非授权/收购/合作类交易。",
     "article_type": "event_report",
     "verify_todo": [],
     "title": "齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗",
@@ -1442,325 +394,10 @@
     "sources": [
       "pharnexcloud"
     ],
-    "content": "首页 资讯 摩熵原创 注册审批 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 21小时前 1246 齐鲁制药 TCE 生物药 1类创新药 QLS2401 前列腺癌 10月14日，摩熵医药中国药品审评数据库显示，齐鲁制药自主研发的1类创新生物药QLS2401注射液获得国家药品监督管理局药品审评中心（CDE）临床试验默示许可，拟用于治疗转移性去势抵抗性前列腺癌（mCRPC）。图源：摩熵医药-中国药品审评数据库QLS2401是一款同时靶向PSMA、STEAP1和CD3的三特异性T细胞衔接器（TCE）。其通过双肿瘤抗原识别与T细胞募集相结合的设计，探索前列腺癌免疫治疗的新路径。此次获准开展临床试验，意味着QLS2401进入临床开发阶段。其双靶点设计能否在肿瘤抗原表达异质性等情况下展现优势，还有待后续临床研究验证。一、三靶点设计，探索前列腺癌免疫治疗新路径转移性去势抵抗性前列腺癌是前列腺癌治疗中的重要挑战之一，患者仍存在未被满足的治疗需求。QLS2401采用三特异性T细胞衔接器设计，同时识别肿瘤相关抗原PSMA、STEAP1，并结合T细胞表面的CD3，旨在将T细胞募集至肿瘤细胞附近，激活T细胞介导的肿瘤杀伤作用。图源：摩熵医药-全球药物研发数据库与仅针对单一肿瘤抗原的策略相比，PSMA与STEAP1双靶点设计有望提高对不同抗原表达状态肿瘤细胞的识别能力，并降低单一抗原表达下降所导致的免疫逃逸风险。此外，QLS2401还通过优化CD3亲和力及肿瘤抗原结合设计，尝试在增强抗肿瘤活性的同时优化分子特性。不过，这些设计能否转化为更好的疗效和安全性，仍需临床数据进一步验证。二、临床前研究显示潜力，低抗原表达模型值得关注根据现有临床前研究数据，QLS2401在不同抗原表达水平的肿瘤模型中展现出一定的抗肿瘤活性。在PSMA或STEAP1中等、低表达的细胞模型中，QLS2401的杀伤活性优于同类对照分子。在细胞系来源异种移植（CDX）和患者来源异种移植（PDX）肿瘤模型中，该药也表现出抗肿瘤活性，尤其在低抗原表达模型中显示出相对优势。这些结果为QLS2401的双靶点设计提供了临床前依据，也使其在肿瘤抗原表达异质性方面的潜在价值受到关注。但需要指出，临床前模型的结果不能直接预测人体中的疗效。QLS2401能否在患者中实现有效的肿瘤控制，以及其安全性、耐受性和适用人群如何，仍有待临床试验回答。三、今年19款生物药获批临床，齐鲁制药持续拓展创新管线QLS2401的临床获批，也是齐鲁制药今年生物药研发进展的一部分。据相关统计，2026年以来，齐鲁制药已有25余款1类新药获批临床，其中19款为生物药1类新药。上述19款生物药中，13款为首次获批临床的新品，覆盖双靶点融合蛋白、双抗及多抗、抗体偶联药物（ADC）等多个研发方向。 齐鲁制药有限公司全球新药研发阶段分布 可直接点击跳转到数据库免费查看最新数据详细信息 齐鲁制药有限公司过评汇总分布 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-中国药品审评数据库除新增临床项目外，齐鲁制药部分生物药管线也已进入中后期临床开发阶段。其中，B7-H3 ADC项目QLC5508正在开展Ⅲ期临床试验；BCMA/GPRC5D/CD3三特异性抗体QLS4131、CCR8单抗QLP2117等项目也已进入Ⅱ期临床阶段。从前列腺癌领域的三特异性T细胞衔接器，到ADC、双抗及其他创新生物药，齐鲁制药正持续拓展不同靶点和技术路线的研发布局。对于QLS2401而言，获得临床试验默示许可只是研发的起点。其双靶点识别策略能否转化为临床优势，尤其是在肿瘤抗原低表达或表达异质性患者中的表现，将是后续开发值得关注的重点。 【齐鲁制药有限公司】2025年指数排名 当前排名 第6名 93.61分 摩熵指数 31个 新获批上市药物 26个 新申报上市药物 14个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：摩熵医药（原药融云）数据库扩展阅读：1. 齐鲁制药QLS2312获CDE临床默示许可，双抗双靶点剑指IgA肾病新治疗路径2. 齐鲁制药糠酸氟替卡松鼻用喷雾剂国内首仿获批！过敏性鼻炎治疗再添新一代鼻用糖皮质激素3. 国产首款AKT抑制剂报产！齐鲁制药盐酸阿氟色替片上市申请获CDE受理，剑指HR+/HER2-乳腺癌 齐鲁制药*点击下方数字查看更多企业相关数据 全球药物研发信息 151条 中国药品审评信息 2068条 中国药品批文 604条 药品招投标 65910条 全球临床试验 219条 中国临床试验 577条 一致性评价 363条 美国FDA批准药品 83条 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 兼顾疗效与心血管安全，达罗他胺在合并CVD晚期前列腺癌中的优选之路 良医汇肿瘤资讯 2026-10-16 TCE 进入实体瘤，临床前评价这一关该怎么过？ 药康生物GemPharmatech 2026-10-16 齐鲁制药三抗1类新药获批临床，针对前列腺癌丨产业新闻 医药观澜 2026-10-15 ESMO 2026 | Predicine六项液体活检研究亮相马德里，助力全球新药研发 慧渡医学 2026-10-15 百济神州：B细胞清除三抗TCE申报临床 医药笔记 2026-10-15 18.75亿美元！吉利德押注实体瘤TCE Medaverse 2026-10-14 90M美元首付，VIR合作吉利德开发3款实体瘤双遮蔽TCE Best in Class 2026-10-14 【APEX CHINA 2026】医脉相承，精准破局，叶雄俊教授谈中国前列腺癌诊疗的守正与创新 良医汇肿瘤资讯 2026-10-14 前腺风云荟丨前列腺癌合并心血管风险：从治疗决策到全程管理的临床思考 良医汇肿瘤资讯 2026-10-13 聚焦2026 CSCO前列腺癌指南，深度解读达罗他胺驱动下的治疗格局重构 良医汇肿瘤资讯 2026-10-13 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 礼来GLP-1R/GIPR双重激动剂「替尔泊肽」国内第5项适应症获批，全球版图与后续布局全解析 摩熵医药 2026-02-13 华北制药他克莫司胶囊获批上市并视同过评！第7家入局，逐鹿超50亿免疫抑制剂市场 摩熵医药 2026-01-27 东阳光药业富马酸伏诺拉生片获批上市！专利悬崖倒计时，35家药企抢滩超8亿P-CAB市场 摩熵医药 2026-02-03 年销15亿抗痛风药市场变局：天地恒一抢滩多替诺雷首仿，URAT1领域竞争白热化 摩熵医药 2026-01-04 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "content": "首页 资讯 摩熵原创 注册审批 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 22小时前 1268 齐鲁制药 TCE 生物药 1类创新药 QLS2401 前列腺癌 10月14日，摩熵医药中国药品审评数据库显示，齐鲁制药自主研发的1类创新生物药QLS2401注射液获得国家药品监督管理局药品审评中心（CDE）临床试验默示许可，拟用于治疗转移性去势抵抗性前列腺癌（mCRPC）。图源：摩熵医药-中国药品审评数据库QLS2401是一款同时靶向PSMA、STEAP1和CD3的三特异性T细胞衔接器（TCE）。其通过双肿瘤抗原识别与T细胞募集相结合的设计，探索前列腺癌免疫治疗的新路径。此次获准开展临床试验，意味着QLS2401进入临床开发阶段。其双靶点设计能否在肿瘤抗原表达异质性等情况下展现优势，还有待后续临床研究验证。一、三靶点设计，探索前列腺癌免疫治疗新路径转移性去势抵抗性前列腺癌是前列腺癌治疗中的重要挑战之一，患者仍存在未被满足的治疗需求。QLS2401采用三特异性T细胞衔接器设计，同时识别肿瘤相关抗原PSMA、STEAP1，并结合T细胞表面的CD3，旨在将T细胞募集至肿瘤细胞附近，激活T细胞介导的肿瘤杀伤作用。图源：摩熵医药-全球药物研发数据库与仅针对单一肿瘤抗原的策略相比，PSMA与STEAP1双靶点设计有望提高对不同抗原表达状态肿瘤细胞的识别能力，并降低单一抗原表达下降所导致的免疫逃逸风险。此外，QLS2401还通过优化CD3亲和力及肿瘤抗原结合设计，尝试在增强抗肿瘤活性的同时优化分子特性。不过，这些设计能否转化为更好的疗效和安全性，仍需临床数据进一步验证。二、临床前研究显示潜力，低抗原表达模型值得关注根据现有临床前研究数据，QLS2401在不同抗原表达水平的肿瘤模型中展现出一定的抗肿瘤活性。在PSMA或STEAP1中等、低表达的细胞模型中，QLS2401的杀伤活性优于同类对照分子。在细胞系来源异种移植（CDX）和患者来源异种移植（PDX）肿瘤模型中，该药也表现出抗肿瘤活性，尤其在低抗原表达模型中显示出相对优势。这些结果为QLS2401的双靶点设计提供了临床前依据，也使其在肿瘤抗原表达异质性方面的潜在价值受到关注。但需要指出，临床前模型的结果不能直接预测人体中的疗效。QLS2401能否在患者中实现有效的肿瘤控制，以及其安全性、耐受性和适用人群如何，仍有待临床试验回答。三、今年19款生物药获批临床，齐鲁制药持续拓展创新管线QLS2401的临床获批，也是齐鲁制药今年生物药研发进展的一部分。据相关统计，2026年以来，齐鲁制药已有25余款1类新药获批临床，其中19款为生物药1类新药。上述19款生物药中，13款为首次获批临床的新品，覆盖双靶点融合蛋白、双抗及多抗、抗体偶联药物（ADC）等多个研发方向。 齐鲁制药有限公司全球新药研发阶段分布 可直接点击跳转到数据库免费查看最新数据详细信息 齐鲁制药有限公司过评汇总分布 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-中国药品审评数据库除新增临床项目外，齐鲁制药部分生物药管线也已进入中后期临床开发阶段。其中，B7-H3 ADC项目QLC5508正在开展Ⅲ期临床试验；BCMA/GPRC5D/CD3三特异性抗体QLS4131、CCR8单抗QLP2117等项目也已进入Ⅱ期临床阶段。从前列腺癌领域的三特异性T细胞衔接器，到ADC、双抗及其他创新生物药，齐鲁制药正持续拓展不同靶点和技术路线的研发布局。对于QLS2401而言，获得临床试验默示许可只是研发的起点。其双靶点识别策略能否转化为临床优势，尤其是在肿瘤抗原低表达或表达异质性患者中的表现，将是后续开发值得关注的重点。 【齐鲁制药有限公司】2025年指数排名 当前排名 第6名 93.61分 摩熵指数 31个 新获批上市药物 26个 新申报上市药物 14个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：摩熵医药（原药融云）数据库扩展阅读：1. 齐鲁制药QLS2312获CDE临床默示许可，双抗双靶点剑指IgA肾病新治疗路径2. 齐鲁制药糠酸氟替卡松鼻用喷雾剂国内首仿获批！过敏性鼻炎治疗再添新一代鼻用糖皮质激素3. 国产首款AKT抑制剂报产！齐鲁制药盐酸阿氟色替片上市申请获CDE受理，剑指HR+/HER2-乳腺癌 齐鲁制药*点击下方数字查看更多企业相关数据 全球药物研发信息 151条 中国药品审评信息 2068条 中国药品批文 604条 药品招投标 65910条 全球临床试验 219条 中国临床试验 577条 一致性评价 363条 美国FDA批准药品 83条 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 兼顾疗效与心血管安全，达罗他胺在合并CVD晚期前列腺癌中的优选之路 良医汇肿瘤资讯 2026-10-16 TCE 进入实体瘤，临床前评价这一关该怎么过？ 药康生物GemPharmatech 2026-10-16 齐鲁制药三抗1类新药获批临床，针对前列腺癌丨产业新闻 医药观澜 2026-10-15 ESMO 2026 | Predicine六项液体活检研究亮相马德里，助力全球新药研发 慧渡医学 2026-10-15 百济神州：B细胞清除三抗TCE申报临床 医药笔记 2026-10-15 18.75亿美元！吉利德押注实体瘤TCE Medaverse 2026-10-14 90M美元首付，VIR合作吉利德开发3款实体瘤双遮蔽TCE Best in Class 2026-10-14 【APEX CHINA 2026】医脉相承，精准破局，叶雄俊教授谈中国前列腺癌诊疗的守正与创新 良医汇肿瘤资讯 2026-10-14 前腺风云荟丨前列腺癌合并心血管风险：从治疗决策到全程管理的临床思考 良医汇肿瘤资讯 2026-10-13 聚焦2026 CSCO前列腺癌指南，深度解读达罗他胺驱动下的治疗格局重构 良医汇肿瘤资讯 2026-10-13 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 礼来GLP-1R/GIPR双重激动剂「替尔泊肽」国内第5项适应症获批，全球版图与后续布局全解析 摩熵医药 2026-02-13 人福药业进军OAB领域！米拉贝隆缓释片仿制申请获受理，泌尿仿制药赛道再掀热潮 摩熵医药 2026-02-10 华润三九火力全开！热门仿制药阿达帕林凝胶获批上市并过评，经典名方桃核承气汤颗粒国内首获批 摩熵医药 2026-03-04 东阳光药业富马酸伏诺拉生片获批上市！专利悬崖倒计时，35家药企抢滩超8亿P-CAB市场 摩熵医药 2026-02-03 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "46f6c05cdd1af3c1",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "学术侵权诉讼赔偿判决，非BD交易",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Former MIT professor David Sabatini awarded $6M in defamation case",
-    "url": "https://endpoints.news/former-mit-professor-david-sabatini-awarded-6m-in-defamation-case/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "6659d4a387a66580",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "DOD政府贷款给Antheia用于原料药本土化，非药企间BD授权/并购",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Antheia gets $80M conditional DOD loan to onshore to the US",
-    "url": "https://endpoints.news/antheia-gets-80m-conditional-dod-loan-to-onshore-to-the-us/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "f7a9a1ce85741914",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "ESMO会议摘要汇编，临床数据发布，无BD交易",
-    "article_type": "landscape_review",
-    "verify_todo": [],
-    "title": "#ESMO26 regular abstracts featuring Zai Lab, GSK, Merck and more",
-    "url": "https://endpoints.news/esmo26-regular-abstracts-featuring-zai-lab-gsk-merck-and-more/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "5bd6b2aeef9995cb",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Gilead口服α4β7抑制剂Phase 2数据读出，临床数据无交易，非BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Gilead’s pill posts stronger colitis remission rates than Entyvio",
-    "url": "https://endpoints.news/gileads-pill-posts-stronger-colitis-remission-rates-than-entyvio/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "c1884e4d61e932a5",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "AbbVie Skyrizi组合疗法治疗克罗恩病II期数据，非BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "AbbVie’s Skyrizi combo beats Skyrizi alone in mid-stage Crohn’s trial",
-    "url": "https://endpoints.news/abbvies-skyrizi-combo-beats-skyrizi-alone-in-mid-stage-crohns-trial/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "13d1c0039f92077f",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Disc Medicine罕见病药物Phase 3阳性数据，非BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Disc Medicine reports 'sun allergy' drug hits Phase 3 home run",
-    "url": "https://endpoints.news/disc-medicine-reports-sun-allergy-drug-hits-home-run-in-phase-3/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "ebaba363b1300d97",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "TriGemX通过SPAC上市，属融资/上市机制，不属于授权/并购类BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "TriGemX Bio is going public through SPAC to get its migraine prospect to market",
-    "url": "https://endpoints.news/trigemx-bio-will-go-public-through-spac-to-get-its-migraine-prospect-to-market/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "5fcecccc97619f43",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "Veradermics口服minoxidil改良制剂III期成功，临床数据无交易，非BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Veradermics' oral Rogaine wins again at growing hair in late-stage trial",
-    "url": "https://endpoints.news/veradermics-oral-rogaine-wins-again-at-growing-hair-in-late-stage-trial/",
-    "sources": [
-      "endpoints_rss"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "9255a643f26baac4",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd",
-      "material_absent",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "读者问答汇编，包含Gilead TCE等多话题，material_chars=0，无实质内容，非BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "Your Questions Answered: Foundayo’s EU Panel Backing, Enspryng for TED, Gilead’s Masked TCE Bet, FDA’s Rare Disease Overhaul, and More",
-    "url": "https://www.pharmexec.com/view/your-questions-answered-foundayo-eu-panel-backing-enspryng-ted-gilead-masked-tce-bet-fda-rare-disease-overhaul-and-more",
-    "sources": [
-      "pharmexec_partnership"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "18bd8f6ed4fa4a76",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd",
-      "material_absent",
-      "thin_material"
-    ],
-    "cluster_key": "",
-    "confidence": 0.4,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "FDA批准Jemperli新适应症，属监管批准，无交易双方",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "FDA Grants Accelerated Approval to Jemperli for MSI-H/dMMR Locally Advanced Rectal Cancer",
-    "url": "https://www.pharmexec.com/view/fda-approves-jemperli-dostarlimab-msi-h-dmmr-locally-advanced-rectal-cancer",
-    "sources": [
-      "pharmexec_partnership",
-      "pharmexec_irlp"
-    ],
-    "content": "",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "49187ab507da405d",
@@ -1780,7 +417,7 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "石药SYS6088三抗及SYS6062 ADC获批IND，系regulatory approval，无BD交易",
+    "reasoning": "石药集团SYS6088三抗与SYS6062 ADC同日获IND许可，均属内部管线进展，非对外授权或引进交易。",
     "article_type": "event_report",
     "verify_todo": [],
     "title": "石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速",
@@ -1788,41 +425,10 @@
     "sources": [
       "pharnexcloud"
     ],
-    "content": "首页 资讯 摩熵原创 注册审批 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 15:36 1997 CTLA4 PD-1 VEGFA 晚期实体瘤 石药集团有限公司 10月15日，石药集团宣布，集团开发的SYS6088注射液和SYS6062均获NMPA批准开展临床试验，拟用于晚期实体瘤。图源：企业公告其中，SYS6088是石药集团布局的首个三特异性抗体（以下简称“三抗”），靶向PD-1、VEGFA和CTLA-4。随着这一产品获批临床，石药集团正式进入三抗研发赛道。一、首个三抗获批临床，聚焦三靶点协同SYS6088是一款PD-1/VEGFA/CTLA-4三特异性抗体，本次获批临床拟单药用于晚期/转移性实体瘤。摩熵医药数据库显示，该品种在2026年9月首次申请临床，10月15日，石药集团宣布获批临床。图源：摩熵医药-全球药物研发数据库从作用机制来看，该产品试图通过同时作用于三个靶点，协同调节肿瘤免疫微环境。其中，PD-1和CTLA-4均与T细胞免疫调控有关，VEGFA则参与肿瘤血管生成及肿瘤微环境调节。通过整合上述靶点，SYS6088旨在兼顾解除免疫抑制、促进T细胞活化与扩增，以及抑制肿瘤血管生成等作用。此外，该产品还对Fc端进行了改造，以降低潜在毒性风险并延长药物半衰期。据披露，临床前研究显示，SYS6088在多种恶性肿瘤模型中表现出抗肿瘤活性。至于其多靶点设计能否转化为临床疗效优势，以及安全性是否能够得到验证，仍有待后续临床研究回答。二、三抗与ADC同步推进，石药集团丰富肿瘤管线截至目前，石药集团已有70余款1类新药处于获批临床及以上阶段。除SYS6088外，石药集团另一款新药SYS6062也于同日获NMPA批准在中国开展临床试验，拟用于晚期实体瘤。图源：摩熵医药-中国药品审评数据库SYS6062是一款抗体偶联药物（ADC），通过抗体识别肿瘤细胞相关靶点，将细胞毒性载荷递送至细胞内，以发挥抗肿瘤作用。临床前研究显示，该产品在多种癌症模型中表现出抗肿瘤活性。从三抗到ADC，两款新药采用了不同的抗肿瘤策略。其中，SYS6088聚焦多靶点免疫调节，SYS6062则通过抗体实现细胞毒性载荷的靶向递送。 【石药控股集团有限公司】2025年指数排名 当前排名 第5名 95.68分 摩熵指数 12个 新获批上市药物 27个 新申报上市药物 14个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 石药集团连发三条研发重磅进展！mRNA肿瘤疫苗、带状疱疹疫苗FDA临床许可、减重单抗Ib期同步落地2. 石药集团SYS6010拟纳入突破性治疗品种，EGFR ADC第4项BTD落地，剑指驱动基因阴性非鳞状NSCLC3. 石药集团RSV疫苗SYS6057获FDA批准临床，EGFR ADC新药III期PFS终点达标，创新转型迎来关键节点 CTLA4相关推荐 相关适应症： 皮肤病 转移性非小细胞肺癌 狼疮肾炎 胶质母细胞瘤 结肠癌 晚期实体瘤 免疫系统疾病 鳞状细胞癌 银屑病 小细胞肺癌 相关药品： 卡度尼利单抗 伊匹木单抗 癌症疫苗 botensilimab 伊匹木单抗N01 艾帕洛利单抗 + 托沃瑞利单抗 阿巴西普 mitazalimab BT-001 volrustomig 相关企业： 百济神州（北京）生物科技有限公司 齐鲁制药有限公司 中山康方生物医药有限公司 安进 Johnson & Johnson 百奥赛图（北京）医药科技股份有限公司 江苏恒瑞医药股份有限公司 上海君实生物医药科技股份有限公司 Merck & Co Inc Legend Biotech Corp 石药集团*点击下方数字查看更多企业相关数据 全球药物研发信息 140条 中国药品审评信息 2374条 中国药品批文 934条 药品招投标 54632条 全球临床试验 301条 中国临床试验 592条 一致性评价 257条 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 按公司 综合 石药集团连发三条研发重磅进展！mRNA肿瘤疫苗、带状疱疹疫苗FDA临床许可、减重单抗Ib期同步落地 摩熵医药 2026-09-30 石药集团SYS6010拟纳入突破性治疗品种，EGFR ADC第4项BTD落地，剑指驱动基因阴性非鳞状NSCLC 摩熵医药 2026-09-08 2026年第34周08.17-08.23全球创新药研发概览 摩熵医药 2026-08-27 石药集团RSV疫苗SYS6057获FDA批准临床，EGFR ADC新药III期PFS终点达标，创新转型迎来关键节点 摩熵医药 2026-08-27 2026年第32周08.03-08.09全球创新药研发概览 摩熵医药 2026-08-12 7月全球在研新药月报：国内251款新药冲进临床，石药集团HER2双抗再获突破性认定，多笔BD交易达成 摩熵医药 2026-08-10 石药集团牵手阿斯利康共建生物制剂生产基地：51:49股权布局，270亿美元合作再升级 摩熵医药 2026-08-06 石药集团1类新药SYS6090注射液启动Ib/II期临床，PD-1/IL-15双功能融合蛋白剑指晚期结直肠癌治疗 摩熵医药 2026-08-05 石药集团2026上半年净利预增超130%！8.4亿美元阿斯利康首付款到账，阿姆西汀III期临床成功 摩熵医药 2026-07-29 2026上半年中国创新药对外授权破1100亿美元！石药集团185亿、信达生物105亿等大额交易刷新行业纪录 药市场透视 2026-07-20 一天两款新药获批临床！石药集团首个三抗亮相 摩熵医药 2026-10-16 2026年9月227款新药获批临床！52款纳入特殊审评，5笔重磅BD交易达成 摩熵医药 2026-10-13 能否干掉药王？辉瑞三抗首次公布临床数据 药渡 2026-10-12 辉瑞：IL-4/IL-13/TSLP三抗启动4项三期临床 医药笔记 2026-10-10 青峰医药KR25102片获批临床！化药1类新药切入中重度急性疼痛，剑指千亿神经系统市场 摩熵医药 2026-10-08 扬子江药业中药1.1类新药ZYY-757颗粒获批临床，瞄准慢性心力衰竭中医适应症 摩熵医药 2026-09-20 华兰疫苗新型流感病毒mRNA疫苗临床获批，国内流感疫苗正式进入mRNA技术赛道 摩熵医药 2026-09-10 海思科HSK60002片哮喘适应症获临床默示许可！1类新药再下一城，超40款管线加码430亿呼吸赛道 摩熵医药 2026-09-09 全球首个大分子可溶微针CPX301获FDA临床许可，中国生物制药泰德制药开辟GLP-1减重新赛道 摩熵医药 2026-08-25 从三抗研发，谈边际效应（下篇） 研发客 2026-08-21 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 齐鲁制药QLC5508突破性疗法双认定！B7-H3 ADC赛道国内领跑，难治食管癌与前列腺癌迎希望 摩熵医药 2026-02-10 恒瑞医药HER2 ADC新药瑞康曲妥珠单抗获批上市，定价7800元瞄准肺癌适应症 药融圈 2025-06-23 石药集团创新药大突破：降糖新复方、减重双靶点、降压新策略齐获临床批件 摩熵医药 2025-12-31 福森药业：临床“硬通货”复合磷酸氢钾注射液获批上市！药物市场持续扩容，竞争与机遇并存 摩熵医药 2025-12-30 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 CTLA4 当前排名 第45名 29.94分 摩熵指数 0个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "content": "首页 资讯 摩熵原创 注册审批 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 15:36 2015 CTLA4 PD-1 VEGFA 晚期实体瘤 石药集团有限公司 10月15日，石药集团宣布，集团开发的SYS6088注射液和SYS6062均获NMPA批准开展临床试验，拟用于晚期实体瘤。图源：企业公告其中，SYS6088是石药集团布局的首个三特异性抗体（以下简称“三抗”），靶向PD-1、VEGFA和CTLA-4。随着这一产品获批临床，石药集团正式进入三抗研发赛道。一、首个三抗获批临床，聚焦三靶点协同SYS6088是一款PD-1/VEGFA/CTLA-4三特异性抗体，本次获批临床拟单药用于晚期/转移性实体瘤。摩熵医药数据库显示，该品种在2026年9月首次申请临床，10月15日，石药集团宣布获批临床。图源：摩熵医药-全球药物研发数据库从作用机制来看，该产品试图通过同时作用于三个靶点，协同调节肿瘤免疫微环境。其中，PD-1和CTLA-4均与T细胞免疫调控有关，VEGFA则参与肿瘤血管生成及肿瘤微环境调节。通过整合上述靶点，SYS6088旨在兼顾解除免疫抑制、促进T细胞活化与扩增，以及抑制肿瘤血管生成等作用。此外，该产品还对Fc端进行了改造，以降低潜在毒性风险并延长药物半衰期。据披露，临床前研究显示，SYS6088在多种恶性肿瘤模型中表现出抗肿瘤活性。至于其多靶点设计能否转化为临床疗效优势，以及安全性是否能够得到验证，仍有待后续临床研究回答。二、三抗与ADC同步推进，石药集团丰富肿瘤管线截至目前，石药集团已有70余款1类新药处于获批临床及以上阶段。除SYS6088外，石药集团另一款新药SYS6062也于同日获NMPA批准在中国开展临床试验，拟用于晚期实体瘤。图源：摩熵医药-中国药品审评数据库SYS6062是一款抗体偶联药物（ADC），通过抗体识别肿瘤细胞相关靶点，将细胞毒性载荷递送至细胞内，以发挥抗肿瘤作用。临床前研究显示，该产品在多种癌症模型中表现出抗肿瘤活性。从三抗到ADC，两款新药采用了不同的抗肿瘤策略。其中，SYS6088聚焦多靶点免疫调节，SYS6062则通过抗体实现细胞毒性载荷的靶向递送。 【石药控股集团有限公司】2025年指数排名 当前排名 第5名 95.68分 摩熵指数 12个 新获批上市药物 27个 新申报上市药物 14个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 石药集团连发三条研发重磅进展！mRNA肿瘤疫苗、带状疱疹疫苗FDA临床许可、减重单抗Ib期同步落地2. 石药集团SYS6010拟纳入突破性治疗品种，EGFR ADC第4项BTD落地，剑指驱动基因阴性非鳞状NSCLC3. 石药集团RSV疫苗SYS6057获FDA批准临床，EGFR ADC新药III期PFS终点达标，创新转型迎来关键节点 CTLA4相关推荐 相关适应症： 皮肤病 转移性非小细胞肺癌 狼疮肾炎 胶质母细胞瘤 结肠癌 晚期实体瘤 免疫系统疾病 鳞状细胞癌 银屑病 小细胞肺癌 相关药品： 卡度尼利单抗 伊匹木单抗 癌症疫苗 botensilimab 伊匹木单抗N01 艾帕洛利单抗 + 托沃瑞利单抗 阿巴西普 mitazalimab BT-001 volrustomig 相关企业： 百济神州（北京）生物科技有限公司 齐鲁制药有限公司 中山康方生物医药有限公司 安进 Johnson & Johnson 百奥赛图（北京）医药科技股份有限公司 江苏恒瑞医药股份有限公司 上海君实生物医药科技股份有限公司 Merck & Co Inc Legend Biotech Corp 石药集团*点击下方数字查看更多企业相关数据 全球药物研发信息 140条 中国药品审评信息 2374条 中国药品批文 934条 药品招投标 54632条 全球临床试验 301条 中国临床试验 592条 一致性评价 257条 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 按公司 综合 石药集团连发三条研发重磅进展！mRNA肿瘤疫苗、带状疱疹疫苗FDA临床许可、减重单抗Ib期同步落地 摩熵医药 2026-09-30 石药集团SYS6010拟纳入突破性治疗品种，EGFR ADC第4项BTD落地，剑指驱动基因阴性非鳞状NSCLC 摩熵医药 2026-09-08 2026年第34周08.17-08.23全球创新药研发概览 摩熵医药 2026-08-27 石药集团RSV疫苗SYS6057获FDA批准临床，EGFR ADC新药III期PFS终点达标，创新转型迎来关键节点 摩熵医药 2026-08-27 2026年第32周08.03-08.09全球创新药研发概览 摩熵医药 2026-08-12 7月全球在研新药月报：国内251款新药冲进临床，石药集团HER2双抗再获突破性认定，多笔BD交易达成 摩熵医药 2026-08-10 石药集团牵手阿斯利康共建生物制剂生产基地：51:49股权布局，270亿美元合作再升级 摩熵医药 2026-08-06 石药集团1类新药SYS6090注射液启动Ib/II期临床，PD-1/IL-15双功能融合蛋白剑指晚期结直肠癌治疗 摩熵医药 2026-08-05 石药集团2026上半年净利预增超130%！8.4亿美元阿斯利康首付款到账，阿姆西汀III期临床成功 摩熵医药 2026-07-29 2026上半年中国创新药对外授权破1100亿美元！石药集团185亿、信达生物105亿等大额交易刷新行业纪录 药市场透视 2026-07-20 一天两款新药获批临床！石药集团首个三抗亮相 摩熵医药 2026-10-16 2026年9月227款新药获批临床！52款纳入特殊审评，5笔重磅BD交易达成 摩熵医药 2026-10-13 能否干掉药王？辉瑞三抗首次公布临床数据 药渡 2026-10-12 辉瑞：IL-4/IL-13/TSLP三抗启动4项三期临床 医药笔记 2026-10-10 青峰医药KR25102片获批临床！化药1类新药切入中重度急性疼痛，剑指千亿神经系统市场 摩熵医药 2026-10-08 扬子江药业中药1.1类新药ZYY-757颗粒获批临床，瞄准慢性心力衰竭中医适应症 摩熵医药 2026-09-20 华兰疫苗新型流感病毒mRNA疫苗临床获批，国内流感疫苗正式进入mRNA技术赛道 摩熵医药 2026-09-10 海思科HSK60002片哮喘适应症获临床默示许可！1类新药再下一城，超40款管线加码430亿呼吸赛道 摩熵医药 2026-09-09 全球首个大分子可溶微针CPX301获FDA临床许可，中国生物制药泰德制药开辟GLP-1减重新赛道 摩熵医药 2026-08-25 从三抗研发，谈边际效应（下篇） 研发客 2026-08-21 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 石药集团创新药大突破：降糖新复方、减重双靶点、降压新策略齐获临床批件 摩熵医药 2025-12-31 21亿级脑卒中重磅新药「依达拉奉右莰醇注射用浓溶液」首仿争夺白热化，江苏联环药业等多家药企入局 摩熵医药 2026-01-06 首仿之争打响！远大医药、科伦制药角逐重磅抗心衰药“盐酸伊伐布雷定口服溶液”市场 摩熵医药 2026-01-15 东阳光药业富马酸伏诺拉生片获批上市！专利悬崖倒计时，35家药企抢滩超8亿P-CAB市场 摩熵医药 2026-02-03 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 CTLA4 当前排名 第45名 29.94分 摩熵指数 0个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
-  },
-  {
-    "id": "78cd5c912da8bbdb",
-    "score": 0.0,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
-    },
-    "flags": [
-      "not_bd"
-    ],
-    "cluster_key": "",
-    "confidence": 1.0,
-    "deal_key": "",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "南京正大天晴左卡尼汀咀嚼片首仿获批，属仿制药注册批准，无BD",
-    "article_type": "event_report",
-    "verify_todo": [],
-    "title": "南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_385005",
-    "sources": [
-      "pharnexcloud"
-    ],
-    "content": "首页 资讯 摩熵原创 注册审批 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 15:00 1964 左卡尼汀 氨甲环酸 CFB 失眠 国药一心制药有限公司 10月15日，NMPA官网显示，南京正大天晴制药申报的左卡尼汀咀嚼片获批上市，成为该剂型国内首仿。摩熵医药数据库显示，2026年上半年，左卡尼汀相关剂型在全终端销售额超过6亿元。在这一市场规模下，咀嚼片剂型迎来首家国内企业获批，南京正大天晴进一步丰富了其仿制药产品矩阵。图源：NMPA官网一、超6亿元市场，咀嚼片剂型迎来首仿左卡尼汀是一种参与人体能量代谢的药物，主要作用是促进长链脂肪酸进入线粒体进行β-氧化，为心肌、骨骼肌等组织提供能量。其原研企业为意大利阿尔法西格玛公司，左卡尼汀于1990年获得美国FDA批准上市，左卡尼汀注射液原研产品于1999年在国内上市。摩熵医药数据库显示，左卡尼汀注射液、片剂、口服溶液等相关剂型，2026年上半年全终端销售额超过6亿元，已形成一定的市场规模。 左卡尼汀销售数据 【左卡尼汀】全国药店零售额-年度趋势 销售额(亿元) 增长率(%) 【左卡尼汀】全国医院(全终端)销售额-年度趋势 销售额(亿元) 增长率(%) 【左卡尼汀】全国医院(全终端)销售额-企业分析TOP10 MAH/生产企业 销售额(亿元) 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-全终端销售数据库从国内获批情况来看，左卡尼汀已布局多种剂型。其中，注射液市场竞争较为充分，国内已有35家企业（含原研企业）持有生产批文。 左卡尼汀同品种项目国内申报进度 企业名称 申报临床 批准临床 申请上市 批准上市 一致性评价 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-中国药品批文数据库与成熟剂型相比，左卡尼汀咀嚼片此前尚无国内企业获批上市。 南京正大天晴此次获批，填补了该剂型的国内上市空白，成为国内首仿企业，并成为该剂型首家通过一致性评价的企业。二、超60款仿制药获批，今年拿下3款首仿品种摩熵医药数据库显示，截至目前，南京正大天晴已有超过60款仿制药获批上市并视同通过一致性评价，其中18款为首家过评品种。图源：摩熵医药-过评药品汇总数据库今年以来，南京正大天晴已有8款仿制药陆续获批，包括瑞舒伐他汀依折麦布片（Ⅰ）、苯磺酸美洛加巴林片、碘佛醇注射液、甲磺酸沙非胺片、佩玛贝特片等。其中，除此次获批的左卡尼汀咀嚼片外，苯磺酸美洛加巴林片、佩玛贝特片也属于国内首仿品种（含同日获批）。在已获批产品之外，南京正大天晴仍有多个仿制药上市申请处于审评阶段。摩熵医药数据库显示，公司目前有24个新产品报产在审。其中，亚甲蓝肠溶缓释片、西达本胺片、雷美替胺片、甲苯磺酸尼拉帕利胶囊均仅有南京正大天晴提交仿制上市申请。图源：摩熵医药-中国药品审评数据库从左卡尼汀咀嚼片获批，到多个仿制药品种陆续申报上市，南京正大天晴正持续丰富仿制药产品矩阵。随着在审品种后续进展推进，其产品布局也将迎来更多变化。 南京正大天晴制药有限公司全球新药研发阶段分布 可直接点击跳转到数据库免费查看最新数据详细信息 南京正大天晴制药有限公司过评汇总分布 可直接点击跳转到数据库免费查看最新数据详细信息 参考来源：[1] NMPA官网[2] 摩熵医药（原药融云）数据库扩展阅读：1. 正大天晴1类新药NTQ5082拟纳入突破性治疗品种，口服CFB抑制剂抢滩原发性IgA肾病，多款新药报产2. 南京正大天晴冲击“武田神药”雷美替胺首仿，多家企业布局改良剂型，失眠新药市场潜力待掘3. 石家庄四药一日双批！左卡尼汀口服溶液与氨甲环酸注射液同日获批上市4. 国药一心制药左卡尼汀注射液上市申请获受理，年销超12亿市场再添强将 正大天晴*点击下方数字查看更多企业相关数据 全球药物研发信息 195条 中国药品审评信息 2249条 中国药品批文 324条 药品招投标 36587条 全球临床试验 446条 中国临床试验 744条 一致性评价 211条 美国FDA批准药品 3条 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 左卡尼汀*点击下方数字查看更多药品相关数据 全球药物研发信息 6条 中国药品审评信息 378条 中国药品批文 112条 药品招投标 8906条 全球临床试验 30条 中国临床试验 22条 一致性评价 67条 美国FDA批准药品 18条 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 一周新药动态：15款新药获批上市！ 药智数据 2026-10-13 83款新药获批上市 药智数据 2026-10-12 九典制药再添重磅品种！盐酸乙哌立松片获批上市，正式切入6亿级中枢性肌松剂赛道 摩熵医药 2026-10-09 金赛药业亮丙瑞林注射乳剂获NMPA批准上市，6个月长效制剂开启晚期前列腺癌ADT「半年一针」时代 摩熵医药 2026-10-09 新一代高甘油三酯血症治疗药佩玛贝特片国产首仿获批，正大天晴和倍特药业领跑降脂新赛道 摩熵医药 2026-09-29 一周新药动态：14款新药获批上市！ 药智数据 2026-09-07 2款1类新药，国内获批上市 摩熵医药 2026-09-03 两款仿制药同日获批！万高药业氟比洛芬凝胶贴膏获批上市，儿童短缺药维生素K₁滴剂同步落地 摩熵医药 2026-08-31 恒瑞医药重磅1类新药富马酸立康可泮胶囊获批上市！国产首款口服CFB抑制剂填补PNH治疗空白 摩熵医药 2026-08-20 本市今年第5款1类创新药获批上市，详见→ 上海科技 2026-08-20 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 阿达帕林过氧苯甲酰凝胶：三大厂家竞逐首仿，痤疮治疗新格局将启 摩熵医药 2025-05-27 再鼎医药精神分裂症新药KarXT中国获批上市：临床数据亮眼却股价膝斩，License-in模式遇挑战 摩熵医药 2025-12-26 石药集团创新药大突破：降糖新复方、减重双靶点、降压新策略齐获临床批件 摩熵医药 2025-12-31 华海药业或成「阿达帕林凝胶」国内第3家过评，热门痤疮药市场迎变局 摩熵医药 2026-01-14 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 CFB 当前排名 第47名 28.11分 摩熵指数 0个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "ddd1fd676898c75d",
@@ -1842,7 +448,7 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "艾伯维乌帕替尼获批重度斑秃新适应症，属监管批准，无交易双方",
+    "reasoning": "艾伯维乌帕替尼获NMPA新适应症批准，属已上市药品的适应症扩展，非BD交易。",
     "article_type": "event_report",
     "verify_todo": [],
     "title": "艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容",
@@ -1850,13 +456,13 @@
     "sources": [
       "pharnexcloud"
     ],
-    "content": "首页 资讯 摩熵原创 注册审批 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 14:39 1931 AbbVie Inc JAK1 乌帕替尼 凌科药业（杭州）有限公司 江苏先声医药科技有限公司 10月15日，NMPA官网显示，艾伯维的乌帕替尼缓释片获批新适应症，用于治疗成人及12岁及以上青少年重度斑秃患者。摩熵医药数据库显示，这是该药在国内获批的第9项适应症。图源：NMPA官网乌帕替尼是一款选择性JAK1抑制剂，也是艾伯维免疫领域的核心产品。2025年，该药全球销售额达83.04亿美元；2026年上半年销售额达46.44亿美元。艾伯维预计，其2027年销售额有望超过110亿美元。一、适应症扩至9项，三项新适应症申请在审乌帕替尼于2019年首次在美国获批上市，商品名为Rinvoq。2022年2月，该药首次在中国获批，此后逐步拓展适应症。图源：摩熵医药-全球药物研发数据库截至目前，乌帕替尼在国内已获批9项适应症，涵盖特应性皮炎、类风湿关节炎、银屑病关节炎、溃疡性结肠炎、克罗恩病、强直性脊柱炎、放射学阴性中轴型脊柱关节炎、巨细胞动脉炎及重度斑秃。图源：摩熵医药-全球药物研发数据库此外，乌帕替尼用于幼年型银屑病关节炎、多关节性幼年特发性关节炎及非节段型白癜风的上市申请，均已进入CDE审评审批阶段。剂型方面，艾伯维还开发了面向儿童患者的乌帕替尼口服溶液，其上市申请已于2026年8月25日获CDE受理。二、III期研究显示，重度斑秃患者毛发覆盖率改善乌帕替尼重度斑秃适应症本次获批，基于III期Up-AA研究（NCT06012240/CTR20233956）的积极结果。该研究由研究1、研究2两项关键性研究组成，均为随机、双盲、安慰剂对照设计。该适应症已于2026年7月在欧盟获批。图源：摩熵医药-全球药物研发数据库2025年7月，艾伯维公布研究2的积极结果。第24周时，乌帕替尼15 mg组和30 mg组分别有44.6%和54.3%的患者达到SALT评分≤20，即头皮毛发覆盖率达到80%及以上；安慰剂组这一比例为3.4%。在头皮毛发覆盖率达到90%及以上（SALT评分≤10）方面，两剂量组的达标率分别为36.0%和47.1%，安慰剂组为1.4%。2025年8月公布的研究1结果同样积极。第24周时，15 mg组和30 mg组达到SALT评分≤20的患者比例分别为45.2%和55.0%，安慰剂组为1.5%；达到SALT评分≤10的患者比例分别为35.2%和45.8%，安慰剂组为0.7%。两项研究均达到主要终点，并达到包括眉毛、睫毛改善及头皮毛发完全覆盖在内的其他关键次要终点。安全性方面，两种剂量的总体安全性特征与乌帕替尼既往已获批适应症中的观察结果一致。三、JAK1赛道竞争升温，国产药加速追赶据摩熵医药数据库显示，目前全球有22款JAK1单靶点抑制剂进入临床开发阶段，其中13款由中国企业开发，国内企业占比超过半数。图源：摩熵医药-全球药物研发数据库在国内已获批的JAK1抑制剂中，乌帕替尼凭借9项适应症形成较广泛的疾病覆盖。其他产品则各有布局：迪哲医药的戈利昔替尼主要布局淋巴瘤领域；辉瑞的阿布昔替尼目前获批1项适应症；恒瑞医药的艾玛昔替尼于2025年3月获批，目前已覆盖5项适应症。此外，凌科药业与先声药业合作开发的泽普昔替尼已在国内申报上市，另有6个项目处于III期临床阶段。随着乌帕替尼在国内获批第9项适应症，以及国产JAK1抑制剂持续推进临床开发和适应症拓展，国内JAK1抑制剂市场的竞争将进一步加剧。对于相关企业而言，适应症布局、临床证据及差异化定位，将成为后续竞争的重要因素。参考来源：[1] NMPA官网[2] 摩熵医药（原药融云）数据库扩展阅读：1. 艾伯维乌帕替尼缓释片及口服溶液双剂型申报pJIA/PsA，国内首款JAK抑制剂儿童液体制剂来了2. 艾伯维乌帕替尼缓释片新适应症获受理，优先审评开启白癜风治疗新篇！3. 60亿美金大单品乌帕替尼：专利“破局”，35+家药企竞逐首仿，石家庄四药新入场 JAK1相关推荐 相关适应症： 心脏衰竭 溃疡性结肠炎 转移性非小细胞肺癌 缺血性卒中 肌萎缩侧索硬化 晚期实体瘤 肝脏疾病 多发性硬化 鳞状细胞癌 肥胖 相关药品： 阿布昔替尼 乌帕替尼 戈利昔替尼 芦可替尼 替恩戈替尼 巴瑞替尼 托法替布 罗伐昔替尼 硫酸艾玛昔替尼 相关企业： Johnson & Johnson 齐鲁制药有限公司 Genentech Inc 江苏恒瑞医药股份有限公司 Biogen Inc 珠海联邦制药股份有限公司 Insilico Medicine Inc 中国药科大学 迪哲（江苏）医药股份有限公司 南开大学 乌帕替尼*点击下方数字查看更多药品相关数据 全球药物研发信息 2条 中国药品审评信息 171条 中国药品批文 11条 药品招投标 66条 全球临床试验 115条 中国临床试验 138条 一致性评价 8条 美国FDA批准药品 9条 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 扩版图、拓纵深：乌帕替尼斑秃新适应症获批力助艾伯维改写IMSD治疗格局 MedTrend医趋势 2026-10-16 艾伯维：乌帕替尼获批重度斑秃适应症 蒲公英资讯 2026-10-15 艾伯维重磅药再获批！国内适应症增至9项 摩熵医药 2026-10-15 重度斑秃治疗迎来“完全再生”：瑞福®新适应症在华获批 新浪医药 2026-10-15 瑞福®（乌帕替尼缓释片）斑秃新适应症在华获批，用于治疗成人和青少年重度斑秃 艾伯维abbvie 2026-10-15 艾伯维乌帕替尼缓释片，第9项适应症来了！这次是斑秃！ 医药云端工作室 2026-10-15 第 9 项适应症落地！乌帕替尼获批成人及青少年重度斑秃 MIMS医药资讯 2026-10-15 艾伯维自免重磅炸弹在中国获批新适应症 丁香园 Insight 数据库 2026-10-15 艾伯维IL-23抑制剂Skyrizi皮下诱导AFFIRM研究再传积极数据，克罗恩病内镜改善再突破 摩熵医药 2026-10-15 年销175亿美元！艾伯维重磅药物III期再传积极数据 摩熵医药 2026-10-14 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 金赛药业改良新药GenSci141软膏获批临床，儿童小阴茎治疗迎全球首创新药曙光！ 药通社 2026-02-25 恒瑞医药HER2 ADC新药瑞康曲妥珠单抗获批上市，定价7800元瞄准肺癌适应症 药融圈 2025-06-23 再鼎医药精神分裂症新药KarXT中国获批上市：临床数据亮眼却股价膝斩，License-in模式遇挑战 摩熵医药 2025-12-26 年销15亿抗痛风药市场变局：天地恒一抢滩多替诺雷首仿，URAT1领域竞争白热化 摩熵医药 2026-01-04 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 JAK1 当前排名 第13名 51.15分 摩熵指数 3个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "content": "首页 资讯 摩熵原创 注册审批 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 14:39 1951 AbbVie Inc JAK1 乌帕替尼 凌科药业（杭州）有限公司 江苏先声医药科技有限公司 10月15日，NMPA官网显示，艾伯维的乌帕替尼缓释片获批新适应症，用于治疗成人及12岁及以上青少年重度斑秃患者。摩熵医药数据库显示，这是该药在国内获批的第9项适应症。图源：NMPA官网乌帕替尼是一款选择性JAK1抑制剂，也是艾伯维免疫领域的核心产品。2025年，该药全球销售额达83.04亿美元；2026年上半年销售额达46.44亿美元。艾伯维预计，其2027年销售额有望超过110亿美元。一、适应症扩至9项，三项新适应症申请在审乌帕替尼于2019年首次在美国获批上市，商品名为Rinvoq。2022年2月，该药首次在中国获批，此后逐步拓展适应症。图源：摩熵医药-全球药物研发数据库截至目前，乌帕替尼在国内已获批9项适应症，涵盖特应性皮炎、类风湿关节炎、银屑病关节炎、溃疡性结肠炎、克罗恩病、强直性脊柱炎、放射学阴性中轴型脊柱关节炎、巨细胞动脉炎及重度斑秃。图源：摩熵医药-全球药物研发数据库此外，乌帕替尼用于幼年型银屑病关节炎、多关节性幼年特发性关节炎及非节段型白癜风的上市申请，均已进入CDE审评审批阶段。剂型方面，艾伯维还开发了面向儿童患者的乌帕替尼口服溶液，其上市申请已于2026年8月25日获CDE受理。二、III期研究显示，重度斑秃患者毛发覆盖率改善乌帕替尼重度斑秃适应症本次获批，基于III期Up-AA研究（NCT06012240/CTR20233956）的积极结果。该研究由研究1、研究2两项关键性研究组成，均为随机、双盲、安慰剂对照设计。该适应症已于2026年7月在欧盟获批。图源：摩熵医药-全球药物研发数据库2025年7月，艾伯维公布研究2的积极结果。第24周时，乌帕替尼15 mg组和30 mg组分别有44.6%和54.3%的患者达到SALT评分≤20，即头皮毛发覆盖率达到80%及以上；安慰剂组这一比例为3.4%。在头皮毛发覆盖率达到90%及以上（SALT评分≤10）方面，两剂量组的达标率分别为36.0%和47.1%，安慰剂组为1.4%。2025年8月公布的研究1结果同样积极。第24周时，15 mg组和30 mg组达到SALT评分≤20的患者比例分别为45.2%和55.0%，安慰剂组为1.5%；达到SALT评分≤10的患者比例分别为35.2%和45.8%，安慰剂组为0.7%。两项研究均达到主要终点，并达到包括眉毛、睫毛改善及头皮毛发完全覆盖在内的其他关键次要终点。安全性方面，两种剂量的总体安全性特征与乌帕替尼既往已获批适应症中的观察结果一致。三、JAK1赛道竞争升温，国产药加速追赶据摩熵医药数据库显示，目前全球有22款JAK1单靶点抑制剂进入临床开发阶段，其中13款由中国企业开发，国内企业占比超过半数。图源：摩熵医药-全球药物研发数据库在国内已获批的JAK1抑制剂中，乌帕替尼凭借9项适应症形成较广泛的疾病覆盖。其他产品则各有布局：迪哲医药的戈利昔替尼主要布局淋巴瘤领域；辉瑞的阿布昔替尼目前获批1项适应症；恒瑞医药的艾玛昔替尼于2025年3月获批，目前已覆盖5项适应症。此外，凌科药业与先声药业合作开发的泽普昔替尼已在国内申报上市，另有6个项目处于III期临床阶段。随着乌帕替尼在国内获批第9项适应症，以及国产JAK1抑制剂持续推进临床开发和适应症拓展，国内JAK1抑制剂市场的竞争将进一步加剧。对于相关企业而言，适应症布局、临床证据及差异化定位，将成为后续竞争的重要因素。参考来源：[1] NMPA官网[2] 摩熵医药（原药融云）数据库扩展阅读：1. 艾伯维乌帕替尼缓释片及口服溶液双剂型申报pJIA/PsA，国内首款JAK抑制剂儿童液体制剂来了2. 艾伯维乌帕替尼缓释片新适应症获受理，优先审评开启白癜风治疗新篇！3. 60亿美金大单品乌帕替尼：专利“破局”，35+家药企竞逐首仿，石家庄四药新入场 JAK1相关推荐 相关适应症： 心脏衰竭 溃疡性结肠炎 转移性非小细胞肺癌 缺血性卒中 肌萎缩侧索硬化 晚期实体瘤 肝脏疾病 多发性硬化 鳞状细胞癌 肥胖 相关药品： 阿布昔替尼 乌帕替尼 戈利昔替尼 芦可替尼 替恩戈替尼 巴瑞替尼 托法替布 罗伐昔替尼 硫酸艾玛昔替尼 相关企业： Johnson & Johnson 齐鲁制药有限公司 Genentech Inc 江苏恒瑞医药股份有限公司 Biogen Inc 珠海联邦制药股份有限公司 Insilico Medicine Inc 中国药科大学 迪哲（江苏）医药股份有限公司 南开大学 乌帕替尼*点击下方数字查看更多药品相关数据 全球药物研发信息 2条 中国药品审评信息 171条 中国药品批文 11条 药品招投标 66条 全球临床试验 115条 中国临床试验 138条 一致性评价 8条 美国FDA批准药品 9条 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 扩版图、拓纵深：乌帕替尼斑秃新适应症获批力助艾伯维改写IMSD治疗格局 MedTrend医趋势 2026-10-16 艾伯维：乌帕替尼获批重度斑秃适应症 蒲公英资讯 2026-10-15 艾伯维重磅药再获批！国内适应症增至9项 摩熵医药 2026-10-15 重度斑秃治疗迎来“完全再生”：瑞福®新适应症在华获批 新浪医药 2026-10-15 瑞福®（乌帕替尼缓释片）斑秃新适应症在华获批，用于治疗成人和青少年重度斑秃 艾伯维abbvie 2026-10-15 艾伯维乌帕替尼缓释片，第9项适应症来了！这次是斑秃！ 医药云端工作室 2026-10-15 第 9 项适应症落地！乌帕替尼获批成人及青少年重度斑秃 MIMS医药资讯 2026-10-15 艾伯维自免重磅炸弹在中国获批新适应症 丁香园 Insight 数据库 2026-10-15 艾伯维IL-23抑制剂Skyrizi皮下诱导AFFIRM研究再传积极数据，克罗恩病内镜改善再突破 摩熵医药 2026-10-15 年销175亿美元！艾伯维重磅药物III期再传积极数据 摩熵医药 2026-10-14 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 礼来GLP-1R/GIPR双重激动剂「替尔泊肽」国内第5项适应症获批，全球版图与后续布局全解析 摩熵医药 2026-02-13 齐鲁制药QLC5508突破性疗法双认定！B7-H3 ADC赛道国内领跑，难治食管癌与前列腺癌迎希望 摩熵医药 2026-02-10 石药集团创新药大突破：降糖新复方、减重双靶点、降压新策略齐获临床批件 摩熵医药 2025-12-31 年销15亿抗痛风药市场变局：天地恒一抢滩多替诺雷首仿，URAT1领域竞争白热化 摩熵医药 2026-01-04 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 JAK1 当前排名 第13名 51.15分 摩熵指数 3个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "700afa2754576743",
+    "id": "5bd6b2aeef9995cb",
     "score": 0.0,
     "dims": {
       "amount": 0.0,
@@ -1873,21 +479,21 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "VQW-765社交焦虑障碍III期失败，属临床试验结果，无BD交易",
+    "reasoning": "Gilead口服α4β7抑制剂在溃疡性结肠炎Phase 2数据，读出优于Entyvio，属临床数据读出，非交易类新闻。",
     "article_type": "event_report",
     "verify_todo": [],
-    "title": "VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达",
-    "url": "https://www.pharnexcloud.com/zixun/sx_385000",
+    "title": "Gilead’s pill posts stronger colitis remission rates than Entyvio",
+    "url": "https://endpoints.news/gileads-pill-posts-stronger-colitis-remission-rates-than-entyvio/",
     "sources": [
-      "pharnexcloud"
+      "endpoints_rss"
     ],
-    "content": "首页 资讯 摩熵原创 时讯 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 14:14 2104 Novartis AG Vistagen Therapeutics Inc Vanda Pharmaceuticals Inc 10月14日，万达生物制药（Vanda Pharmaceuticals）发布公告，旗下新型小分子药物VQW-765用于成人社交焦虑障碍急性发作按需治疗的III期临床研究（3201研究）未达到主要终点，公司决定暂停该项目的进一步研发，待完整数据分析后再作评估。截图来源：万达生物制药企业公告该研究评估了受试者单次口服VQW-765或安慰剂后，在特里尔社会压力测试（TSST）中的焦虑反应。结果显示，在女性意向治疗（ITT）人群中，VQW-765组表现期主观痛苦程度量表（SUDS）均分为65.6，安慰剂组为66.0，差异无统计学意义（p=0.8899），未达到主要终点。关键次要终点同样未达标。在总体男女人群中，VQW-765组SUDS均分为64.7，安慰剂组为63.8，差异无统计学意义（p=0.6605）。尽管疗效终点未达预期，VQW-765在研究中表现出良好的安全性和耐受性，与此前研究结果一致。VQW-765（曾用名AQW-051）是一种新型小分子α7烟碱型乙酰胆碱受体（α7-nAChR）部分激动剂，最初由诺华研发。图源：摩熵医药-全球药物研发数据库2014年12月，万达生物制药与诺华就抗精神病药物Fanapt的许可仲裁达成和解。根据协议，诺华向万达转让Fanapt在美国和加拿大市场的全部权益，并授予万达AQW-051的全球独家许可权，同时对万达进行2500万美元股权投资。此次III期研究失败后，该药后续研发能否继续推进，仍有待公司对完整数据的进一步评估。参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 抛“毒丸计划”，Vanda Pharmaceuticals摆脱了一项恶意收购2. VistaGen：用于社交焦虑障碍的鼻腔喷雾剂III期试验失败！ Vanda Pharmaceuticals Inc相关推荐 相关靶点： HDAC SNCA JAK2 DRD2 PDGFR S1PR1 CFTR 相关适应症： 多发性硬化 自身免疫疾病 高血压 骨髓发育异常综合征 血液疾病 真性红细胞增多症 特应性皮炎 银屑病 溃疡性结肠炎 化脓性汗腺炎 Vanda Pharmaceuticals*点击下方数字查看更多企业相关数据 全球药物研发信息 19条 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 83条 中国临床试验 - 一致性评价 - 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 VQW-765*点击下方数字查看更多药品相关数据 全球药物研发信息 1条 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 2条 中国临床试验 - 一致性评价 - 美国FDA批准药品 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 90%的临床失败是因为患者没匹配对 机车宝贝Claudisiran 2026-10-16 Kodiak股价暴涨177.96%！III期DAYBREAK临床成功，Zenkuda与tabirafusp-ted同步击败非劣终点 摩熵医药 2026-10-08 临床失败，股价暴跌37% 细胞基因研究圈 2026-09-30 IgA肾病新药最新消息：罗氏sefaxersen登顶III期主要终点，皮下月制剂型+补体B因子靶向双管齐下 摩熵医药 2026-09-28 翰森制药HS-10374的III期临床研究成功！国产TYK2变构抑制剂冲刺银屑病上市 药圈头条 2026-09-21 人福医药重磅进展！注射用罗哌卡因缓释微球完成III期临床，长效局部镇痛管线向上市冲刺 摩熵医药 2026-09-16 君实生物首个双抗挺进III期！CD20/CD3双抗JS203登记DLBCL关键临床，头对头对比利妥昔单抗方案 摩熵医药 2026-09-07 Alumis口服TYK2抑制剂SLE II期临床失败股价暴跌56%，IFNGS高表达亚组成后续开发核心锚点 摩熵医药 2026-09-03 股价暴跌56%！临床失败后，Alumis却执意进Ⅲ期 药时代 2026-09-02 康方生物依沃西再破局：胆道癌III期全终点达标，继NSCLC全线布局后拿下消化道肿瘤关键里程碑 摩熵医药 2026-08-27 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 1.1类国产乙肝治疗新药贺普拉肽顺利进入II/III期临床 小药丸 2019-07-31 正式开卖！最强ADC药物，德曲妥珠单抗中国售价披露（8860元）！ 药融圈 2023-06-25 一项CAR-T细胞疗法临床项目被停止，股价下跌近 40%！ 细胞基因治疗前沿 2022-12-23 第七批耗材国采提上日程！锚点价、多轮复活，集采重塑行业新格局 摩熵医械 2026-02-13 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,632亿元 2026年Q2总销售额 6.14%(2026Q2) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 2026-10-19 医疗器械MNC集体换帅，中国市场战略地位提升！ 2026-10-17 生物类似药国际化机遇、监管挑战与市场竞争策略研究报告（2026-2030年） 2026-10-16 2026年肝素药物市场表现洞察报告 摩熵咨询 35 78 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 66 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 45 国家药监局综合司公开征求 意见 颁布机构：国家药品监督管理局 2026-10-19 市场监管总局等八部门关于印发 的通知 颁布机构：国家市场监督管理总局 2026-10-16 市场监管总局关于发布 等3个文件的公告 颁布机构：国家市场监督管理总局 2026-09-30 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 齐鲁制药1类创新生物药QLS2401获批临床，靶向三靶点布局前列腺癌免疫治疗 聚焦AI落地实战！第四届DATA+AI医药营销新常态研讨会将亮相第93届全国药交会 誉衡药业1115万元受让首都医科大学专利，加码TLK2靶向基因治疗，开辟青光眼视神经保护新路径 石药集团首款三抗SYS6088与ADC新药SYS6062同日获批临床，晚期实体瘤布局双线加速 南京正大天晴左卡尼汀咀嚼片获批上市！斩获国内首仿+首家过评，撬动超6亿元市场 艾伯维乌帕替尼获批重度斑秃治疗！国内适应症增至9项，全球年销83亿美元的JAK1抑制剂再扩容 VQW-765 III期临床折戟！万达生物制药宣布暂停研发，社交焦虑障碍按需治疗主要终点未达 悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "content": "",
     "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "f8be611aa5c64d1f",
+    "id": "d0f82379bb05dde9",
     "score": 0.0,
     "dims": {
       "amount": 0.0,
@@ -1897,43 +503,42 @@
       "impact": 0.0
     },
     "flags": [
-      "not_bd",
-      "material_absent",
-      "thin_material"
+      "not_bd"
     ],
     "cluster_key": "",
-    "confidence": 0.3,
+    "confidence": 0.5,
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "material_chars=0，仅标题：悦康YKYY036 INHBE靶点siRNA减重中美获批临床，无正文",
-    "article_type": "event_report",
+    "reasoning": "文章主体为EyePoint Phase 3失败，Lilly中国药物递送deal仅在摘要中一笔带过；deal_signal=true但正文未提供任何交易要素，属新闻摘要/速报，非独立BD报道。",
+    "article_type": "landscape_review",
     "verify_todo": [
-      "需获取全文确认是否为BD交易"
+      "需独立获取Lilly中国药物递送deal公告全文"
     ],
-    "title": "悦康药业YKYY036注射液中美双临床获批，靶向INHBE的GalNAc-siRNA减重新药冲刺肥胖/超重适应症",
-    "url": "https://www.pharnexcloud.com/zixun/zcsp_384999",
+    "title": "EyePoint's Phase 3 failure; Lilly's China drug delivery deal",
+    "url": "https://endpoints.news/eyepoints-phase-3-failure-lillys-china-drug-delivery-deal/",
     "sources": [
-      "pharnexcloud"
+      "endpoints_rss"
     ],
     "content": "",
     "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "579991d1c2c60f03",
+    "id": "2d76c24eaca4c9c3",
     "score": 0.0,
     "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
     },
     "flags": [
       "not_bd",
-      "material_absent",
+      "no_content",
+      "age_2days",
       "thin_material"
     ],
     "cluster_key": "",
@@ -1941,32 +546,67 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "诺华暂停Fabhalta狼疮性肾炎临床，material_chars=0，临床试验调整，无BD",
+    "reasoning": "AI生成高管访谈，谈事前授权流程优化，无任何授权/收购/合作要素",
     "article_type": "event_report",
     "verify_todo": [],
-    "title": "诺华暂停Fabhalta治疗狼疮性肾炎的中期临床试验【AI生成】",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/yfzczc_385697",
+    "title": "Abarca Health高管访谈：围绕患者重新设计事前授权流程【AI生成】",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/ytsd_385716",
     "sources": [
       "pharnexcloud"
     ],
     "content": "",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "4ae16482178ec51a",
+    "id": "ae34433b681bf6b6",
     "score": 0.0,
     "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
     },
     "flags": [
       "not_bd",
-      "material_absent",
+      "newsletter",
+      "age_4days"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Endpoints周报汇编，非单笔BD新闻",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "A search for ‘the statin of Alzheimer’s’; Arrowhead injectable lowers tau; and more",
+    "url": "https://endpoints.news/a-search-for-the-statin-of-alzheimers-arrowhead-injectable-lowers-tau-and-more/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "7826615394292a0a",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_termination",
+      "no_content",
+      "age_4days",
       "thin_material"
     ],
     "cluster_key": "",
@@ -1974,32 +614,34 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "BioCardia FDA De Novo预提交受理，监管里程碑，material_chars=0，无BD交易",
+    "reasoning": "诺华CFB抑制剂终止狼疮肾炎二期，纯临床事件，无交易要素",
     "article_type": "event_report",
     "verify_todo": [],
-    "title": "BioCardia宣布FDA受理Helix导管De Novo预提交包以推进上市许可【AI生成】",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/yfzczc_385700",
+    "title": "诺华：CFB抑制剂终止狼疮肾炎二期临床",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_385339",
     "sources": [
       "pharnexcloud"
     ],
     "content": "",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
-    "id": "5dde57d6b06d2fa8",
+    "id": "87242deb6e6abdf3",
     "score": 0.0,
     "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.0,
-      "tier": 0.0,
-      "impact": 0.0
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
     },
     "flags": [
       "not_bd",
-      "material_absent",
+      "clinical_phase1",
+      "no_content",
+      "age_4days",
       "thin_material"
     ],
     "cluster_key": "",
@@ -2007,18 +649,295 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "礼来Omvoh儿童溃疡性结肠炎III期阳性，material_chars=0，临床数据无BD",
+    "reasoning": "泽安生物实体瘤MCE启动一期临床，纯临床事件，无交易对手方",
     "article_type": "event_report",
     "verify_todo": [],
-    "title": "礼来Omvoh在儿童溃疡性结肠炎III期试验中获胜，推动儿科适应症扩展【AI生成】",
-    "url": "https://www.pharnexcloud.com/zixun/shiye/yfzczc_385679",
+    "title": "泽安生物医药：实体瘤MCE启动一期临床",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_385340",
     "sources": [
       "pharnexcloud"
     ],
     "content": "",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "621a6dba17c60a44",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_termination",
+      "age_4days"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "诺华Fabhalta狼疮肾炎二期终止，临床决策新闻，无BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Novartis scraps Fabhalta study in lupus nephritis",
+    "url": "https://endpoints.news/novartis-scraps-fabhalta-study-in-lupus-nephritis/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "ccf031c3a93d48ad",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_news",
+      "age_4days"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "FDA多肽政策及Enspryng标签扩展，均为监管新闻非BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "FDA considers interim access for compounded peptides; Enspryng's label expansion",
+    "url": "https://endpoints.news/fda-considers-interim-access-for-compounded-peptides-enspryngs-label-expansion/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "5e87ebc4819c6901",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "weekly_digest",
+      "no_content",
+      "age_5days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "全球创新药研发双周概览，综述性质无单笔交易",
+    "article_type": "landscape_review",
+    "verify_todo": [],
+    "title": "2026年第40-41周09.28-10.11全球创新药研发概览",
+    "url": "https://www.pharnexcloud.com/zixun/bg_384988",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "b5db55ded6b2d1dd",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "data_analysis",
+      "no_content",
+      "age_5days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "国内创新药/改良型新药申请及获批数据分析，综述性质非BD交易",
+    "article_type": "landscape_review",
+    "verify_todo": [],
+    "title": "2026年第40-41周09.28-10.11国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析",
+    "url": "https://www.pharnexcloud.com/zixun/bg_384983",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "eac22d343bd84d11",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "webinar",
+      "no_content",
+      "age_5days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "DIA放射性药物研发在线研讨，纯教育内容无交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "DIA【来问讲者】放射性药物研发进阶：如何应对创新与临床转化中的关键挑战？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/qy_385028",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "16f6b79278e4d361",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_framework",
+      "no_content",
+      "age_6days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "FDA罕见病药物评审框架更新，监管政策新闻无具体交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "FDA ‘reset’ continues with new plan for reviewing rare disease drugs",
+    "url": "https://www.biopharmadive.com/news/fda-rare-disease-framework-initiative-drug-development/833080/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "5831c0db6a26d9e1",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "analysis",
+      "headline_only",
+      "age_7days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "STAT Plus分析FDA顾问委员会成员利益冲突，非BD新闻",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: FDA adcomm members’ ties to industry under scrutiny",
+    "url": "https://www.statnews.com/2026/10/14/biotech-news-fda-adcomm-member-ties-to-industry-under-scrutiny/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "d3b9fac12bcc2b5a",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "analysis",
+      "headline_only",
+      "age_8days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "STAT Plus分析FDA顾问委员会患者代表与药企资金关联，非BD新闻",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
+    "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "e9ae1248bbfab6b1",
@@ -2032,8 +951,9 @@
     },
     "flags": [
       "not_bd",
-      "pure_financing",
-      "material_insufficient",
+      "series_a",
+      "no_content",
+      "age_8days",
       "thin_material"
     ],
     "cluster_key": "",
@@ -2041,11 +961,9 @@
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "福沃药业A轮或后续融资，属纯股权融资，不涉及授权/并购等BD交易",
-    "article_type": "financing",
-    "verify_todo": [
-      "仅有标题无正文"
-    ],
+    "reasoning": "福沃药业融资，Series A轮不属于BD授权/并购交易",
+    "article_type": "event_report",
+    "verify_todo": [],
     "title": "福沃药业完成新一轮融资！核心产品FWD1802冲刺Ⅲ期注册临床，口服SERD突围ER+/HER2-乳腺癌",
     "url": "https://www.pharnexcloud.com/zixun/trz_383619",
     "sources": [
@@ -2054,7 +972,322 @@
     "content": "",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "9c417e6eb11b8d2d",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_btd",
+      "no_content",
+      "age_8days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "正大天晴1类新药纳入突破性治疗品种，监管里程碑非交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "正大天晴1类新药NTQ5082拟纳入突破性治疗品种，口服CFB抑制剂抢滩原发性IgA肾病，多款新药报产",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_383621",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "ccdd91eeab895219",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_ind",
+      "no_content",
+      "age_9days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "齐鲁制药双抗获临床默示许可，IND批准非交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "齐鲁制药QLS2312获CDE临床默示许可，双抗双靶点剑指IgA肾病新治疗路径",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_383348",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "17d6818ee577ab4a",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_ind",
+      "no_content",
+      "age_9days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "一品红口服GLP-1获FDA临床许可，监管进展非BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "一品红APH04935片获FDA临床许可，口服GLP-1减重药实现中美双线推进",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_383347",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "70975b3899fa256b",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "market_approval",
+      "no_content",
+      "age_12days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "九典制药盐酸乙哌立松片获批上市，上市批准非BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "九典制药再添重磅品种！盐酸乙哌立松片获批上市，正式切入6亿级中枢性肌松剂赛道",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_382092",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "d6993190c0e1bddf",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "opinion",
+      "headline_only",
+      "age_15days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "观点文章评析FDA不应批准无效多癌早筛，非BD新闻",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Why the FDA should not approve an ineffective multicancer screening test",
+    "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "9c0bdbab42c5e349",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_analysis",
+      "headline_only",
+      "age_16days",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "STAT Plus分析癌症疫苗临床结果差异，纯科研综述非BD",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: Divergent trial results on cancer vaccines have the field grappling with hard questions",
+    "url": "https://www.statnews.com/2026/10/05/cancer-vaccines-mrna-clinical-trials/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "46185d4c61aabb7e",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "interview",
+      "headline_only",
+      "age_unknown",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "曹雪涛访谈谈中国创新药协同，政策/行业观点无具体交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "曹雪涛：多方协同攻坚，共筑中国创新药新高地",
+    "url": "https://www.phirda.com/artilce_40564.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "e66ef968a1bc3163",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "clinical_phase1",
+      "headline_only",
+      "age_unknown",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "长风药业吸入新药ICF004完成I期首例给药，纯临床事件无交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "长风速递 | 长风药业全球首创吸入新药ICF004顺利完成I期临床首例健康志愿者入组给药，产学研协同创新，加速本土原研突破",
+    "url": "https://www.phirda.com/artilce_43967.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "d6f7d16ed1dd6250",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_approval",
+      "headline_only",
+      "age_unknown",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "正大天晴新药申报上市及贝达药业欧盟积极意见，监管新闻非BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "正大天晴两款1类新药申报上市|贝达药业盐酸恩沙替尼欧盟上市申请获得积极意见",
+    "url": "https://www.phirda.com/artilce_43907.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
   },
   {
     "id": "f6926043eb714c1e",
@@ -2068,15 +1301,16 @@
     },
     "flags": [
       "not_bd",
-      "pure_financing"
+      "series_a",
+      "age_unknown"
     ],
     "cluster_key": "",
-    "confidence": 0.5,
+    "confidence": 0.3,
     "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "瑞初医药数亿元A轮融资，属纯股权融资，虽有临床进展但无授权/并购等BD交易",
-    "article_type": "financing",
+    "reasoning": "瑞初医药A轮数亿元融资，属股权融资非授权/并购类BD交易",
+    "article_type": "event_report",
     "verify_todo": [],
     "title": "【首发】瑞初医药获数亿元A轮融资，加速推进全球首创抗衰老新药临床转化",
     "url": "https://bydrug.pharmcube.com/news/detail/769df72c0fe3ce42f713867ba39d2ff4",
@@ -2086,6 +1320,71 @@
     "content": "动脉网独家获悉，2026年10月21日，南京瑞初医药有限公司（以下简称“瑞初医药”）宣布完成数亿元超额认购A轮融资，由凯辉基金、复健资本、倚锋资本和华泰金斯瑞联合投资。所融资金将用于加速推进公司已在临床阶段的创新药管线，并进一步扩展核心技术平台的管线布局，持续夯实从衰老机制研究、药物研发到临床转化的完整创新体系。瑞初医药是国内首家靶向衰老生物学、专注开发“Senotherapeutics”（衰老治疗药物）的创新企业。越来越多的科学证据表明，衰老是众多退行性疾病发生的核心诱因。基于这一前瞻性认知，公司将“衰老本身”作为药物干预的直接靶标。依托“清除、激活、重编程衰老细胞”三大研发平台，构建起覆盖多个疾病领域的差异化管线，深入解析衰老底层机制并据此发现新的治疗策略。2026年3月，公司2条核心管线同步获得中国国家药品监督管理局（NMPA）与美国食品药品监督管理局（FDA）的新药临床试验（IND）批准，成为中国首个获FDA许可进入临床阶段的抗衰老创新药, 正式开启了中国干预衰老新药研发的临床元年。这两款药物分别聚焦呼吸系统与眼科疾病，目前正在高效推进I期临床研究。放眼全球，靶向衰老细胞已获批并进入临床研究的候选药物屈指可数，瑞初医药独占两席，在这一沿赛道上构筑起显著的先发优势与技术壁垒。当前，全球老龄化趋势正在加速演进，衰老相关退行性疾病的发病率持续攀升，给各国医疗体系带来沉重的负担。在这一宏观背景下，抗衰老从“可选消费”逐步转变为“健康刚需”。伴随新一轮融资的完成，瑞初医药将持续领跑全球抗衰老新药研发赛道，为广大患者提供延长健康寿命的全新解决方案。 瑞初医药创始人季银博士表示：“我们非常荣幸能够获得众多投资机构的认可和支持，也非常感谢团队的创新和执行能力，在今年把科学积累推进到‘First-in- human’阶段。本轮融资不仅是对前期研发成果的肯定，更是迈向下一阶段的重要推力。在抗衰老这一极具挑战但也充满无限可能的赛道上，瑞初秉持“提升人类健康寿命”初心，始终用科学严谨的临床数据说话，全力以赴地将衰老干预从科学设想转变为临床实践，为叩问人类终极问题贡献力量。”凯辉基金董事总经理黄滔博士表示：“从初次接触瑞初医药起，团队扎实的基础科研能力就给凯辉留下了深刻印象。在持续跟踪公司发展的过程中，我们进一步看到了团队将科学发现转化为创新药物的能力和高效严谨的研发执行能力。凯辉持续关注衰老相关疾病的创新治疗方向，近年来基础研究不断加深对细胞衰老、细胞稳态失衡与疾病发生发展之间关系的认识，为针对这些机制开发创新药物提供了更明确的科学依据。瑞初围绕关键过程开展药物研发，将对衰老生物学的理解与具体疾病的临床需求相结合，成为我们看好公司的重要原因。我们看重团队持续提出并验证科学假设，以及推动管线开发的能力。本轮融资将支持核心管线的后续临床开发，并加速其他早期项目研究。凯辉期待与团队携手，推动这些科学探索转化为具有临床价值的创新疗法。”复健资本投资执行总经理林冠宇博士表示：“我们始终认为人口老龄化与创新消费医疗是驱动中国生物医药产业长期高质量发展的两条黄金赛道。围绕延长人类健康寿命、改善生存质量的产业布局，兼具了深刻的社会价值与广阔的商业化前景，是未来医药创新的发展方向之一。瑞初医药核心团队深耕药物机制研究与创新药开发领域多年，具备扎实的底层技术积累与成熟的产业化思维。公司精准锚定临床未被满足的衰老相关疾病需求，聚焦高价值、高壁垒赛道，展现出行业领先的高效执行力与精细化的资金使用效率。我们非常看好抗衰老创新药的长期发展潜力，也十分荣幸能够携手瑞初这支兼具丰富产业经验、前沿创新视野与极致创业热忱的优质团队。未来复健资本将持续助力企业推进管线临床转化，共同挖掘长寿健康产业的全新增长机遇。”倚锋资本合伙人王开峰表示：“在生物医药调整期，瑞初医药是我们看到的一个‘少数派’——临床需求清晰，产品驱动，不盲目追求概念。我们不赌赛道热度，赌的是产品最终能不能批、能不能解决真问题。瑞初团队具有这种潜质：拿下FDA首个中国抗衰老创新药临床批件，一个月内又获得第二个中美临床批件，这些都是实打实的里程碑，不是讲故事。生物医药投资需要耐心，我们愿意在这个阶段进场，陪伴瑞初一步步地兑现临床价值。”华泰金斯瑞表示：“瑞初医药在创新药研发上的专注，与华泰金斯瑞聚焦医疗健康、生命科学技术的定位高度契合。瑞初以‘衰老本身’为核心干预靶点，从机制源头探索差异化的研发路径，正是我们希望在成长期捕捉的标的类型。我们非常看好瑞初管线的临床价值和团队的研发执行力，愿意以资本为纽带，协同释放我司在生命科学全产业链的资源积淀，陪伴瑞初将科学假设转化为临床价值，共同推动真正有临床意义的创新成果落地见效。” >>>>关于凯辉基金凯辉基金创立于2006年，目前累计管理规模达70亿欧元，已在四大洲投资超300家企业，先后投资并挖掘了拼多多、Chime、Glovo、Momenta、元气森林、京东物流、美年大健康、嘉必优、港通医疗等极具影响力的优秀项目。近五年来，凯辉基金在全球范围内投资并陪伴了超30家明星独角兽公司，支持他们成长为各行业领军企业。在全球，凯辉拥有超过150名专业投资团队成员，以多元文化和全球视野，通过独特的商业模式、增值战略及扎根本土的网络资源，为投资人和被投企业服务，挖掘和陪伴了一代又一代世界级企业成长。>>>>关于复健资本复健资本成立于2019年，由复星医药作为基石股东发起设立，是以产业驱动的大健康领域专业投资平台，在管基金规模近120亿元。复健资本立足中国、链接全球，坚守长期价值投资理念，秉持「投资+产业」双轮驱动战略，致力于成为全球医疗创新的长期战略伙伴，让产业跨越国界，让价值穿越周期。依托复星医药完整产业生态，复健资本聚焦生物医药、医疗器械与生命科学三大战略赛道，着力发掘兼具临床价值与商业潜力的创新企业，陪伴被投企业从早期研发走向商业化落地。>>>>关于倚锋资本倚锋资本是一家成立于中国深圳的生物医药专业投资基金，专注原创药和高端医疗器械赛道，主要投资早期、成长期初创企业。倚锋资本是国内为数不多的深度聚焦生物医药领域的专业投资团队，集聚众多知名科学家顾问、产业专家，以及生物学、化学、临床医学等各学科专业人才，较为完整地构建起生物医药领域投资赋能生态。>>>>华泰金斯瑞华泰金斯瑞基金由华泰紫金和金斯瑞共同组建。华泰紫金是华泰证券（601688.SH）旗下从事私募股权投资业务的全资子公司，依托华泰证券全业务链优势，为合作伙伴提供全方位的资本服务。公司管理规模超600亿元，旗下拥有PE、M&A、FOF、产业等多支基金。金斯瑞生物科技（HK.1548）是全球领先的生命科学研发与生产服务商。植根于坚实的DNA合成技术，金斯瑞现已建立四大主要业务单元：生命科学服务及产品业务、生物制剂合约开发及生产（CDMO）业务、工业合成产品业务及细胞疗法业务。金斯瑞携手合作伙伴，加速推动科学发现与疗法突破，业务运营范围已覆盖全球100多个国家和地区，为20余万客户提供优质服务和产品。 >>>>关于瑞初医药瑞初医药成立于2021年6月，是国内首家聚焦“靶向衰老机制”的创新药研发企业，汇聚了来自哈佛大学、东京大学、香港中文大学、北京大学、清华大学等全球顶尖高校的科学家和资深创新药研发人才。公司系统开发靶向衰老机制的First-in-class药物，致力于成为全球干预衰老领域的领导者。",
     "entity_tags": [],
     "lang": "cn",
-    "scored_at": "2026-10-21T00:45:24Z"
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "4c16868e3600ded4",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_approval",
+      "age_unknown"
+    ],
+    "cluster_key": "",
+    "confidence": 0.3,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "GSK贝普若韦生获FDA批准，监管获批新闻非BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "刚刚！全球首创乙肝功能性治愈疗法获 FDA 批准上市",
+    "url": "https://bydrug.pharmcube.com/news/detail/1580f7b51d7b19ea8b6e1877c93c8cd6",
+    "sources": [
+      "pharmcube"
+    ],
+    "content": "当地时间 10 月 20 日，GSK 宣布，其下反义寡核苷酸 （ASO） 创新药 Bepirovirsen （ 贝 普若韦生） 已获得美国 FDA 正式批准上市， 与核苷（酸）类似物逆转录酶抑制剂 （NrtI） 联合用于治疗慢性乙型肝炎 （CHB） 病毒感染。 根据 Insight 数据库，该药此前已在日本获批，是 全球首个获批的慢性乙肝 功能性治愈疗法 。 乙肝功能性治愈是指患者停用所有治疗药物后，连续 24 周以上血液中无法检测出乙肝病毒 DNA 与乙肝表面抗原 （HBsAg） 。",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
+  },
+  {
+    "id": "ad085ec11f40ccf7",
+    "score": 0.0,
+    "dims": {
+      "amount": 0,
+      "stage": 0,
+      "first_mover": 0,
+      "tier": 0,
+      "impact": 0
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.0,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为 GSK 慢乙肝反义寡核苷酸获 FDA 批准的监管新闻，无任何授权/收购/合作等交易要素，仅有药物临床数据及获批进展",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "慢性乙型肝炎：GSK 反义寡核苷酸获 FDA 批准，19% 停药后仍维持功能性治愈",
+    "url": "https://bydrug.pharmcube.com/news/detail/243010f2ad72e6e186f181b1ca9a83d4",
+    "sources": [
+      "pharmcube"
+    ],
+    "content": "",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-10-21T01:21:28Z"
   }
 ]
