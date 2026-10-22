@@ -33,6 +33,10 @@ on:
         description: '强制重跑（忽略"今天已跑过"检查）。补跑历史日期时必须加 -f force=true'
         type: boolean
         default: false
+      publish_only:
+        description: '只重建站点+推飞书+部署 Pages，不重新采集/评分/成稿。补推历史文章（稿子已在仓库里）时用'
+        type: boolean
+        default: false
 
 concurrency:
   group: radar-${{ github.ref }}
@@ -88,10 +92,11 @@ jobs:
           EVENT="${{ github.event_name }}"
           FORCE="${{ inputs.force }}"
           SKIP_LLM="${{ inputs.skip_llm }}"
+          PUBLISH_ONLY="${{ inputs.publish_only }}"
           NEED_CHECK=0
           if [ "$EVENT" = "schedule" ]; then
             NEED_CHECK=1
-          elif [ "$EVENT" = "workflow_dispatch" ] && [ "$FORCE" != "true" ] && [ "$SKIP_LLM" != "true" ]; then
+          elif [ "$EVENT" = "workflow_dispatch" ] && [ "$FORCE" != "true" ] && [ "$SKIP_LLM" != "true" ] && [ "$PUBLISH_ONLY" != "true" ]; then
             NEED_CHECK=1
           fi
           if [ "$NEED_CHECK" = "1" ] && [ -f "data/scored/$DATE.json" ]; then
@@ -123,6 +128,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 采集
+        if: ${{ inputs.publish_only != true }}
         working-directory: src
         env:
           SEARCH_BACKEND: ${{ vars.SEARCH_BACKEND }}
@@ -131,23 +137,24 @@ jobs:
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: python fetch.py ${{ inputs.date }}
       - name: 去重
+        if: ${{ inputs.publish_only != true }}
         working-directory: src
         run: python dedupe.py ${{ inputs.date }}
 
       - name: LLM 评分
-        if: ${{ inputs.skip_llm != true }}
+        if: ${{ inputs.publish_only != true && inputs.skip_llm != true }}
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
         run: python score.py ${{ inputs.date }}
 
       - name: 选题
-        if: ${{ inputs.skip_llm != true }}
+        if: ${{ inputs.publish_only != true && inputs.skip_llm != true }}
         working-directory: src
         run: python pick.py ${{ inputs.date }}
 
       - name: 生成文章
-        if: ${{ inputs.skip_llm != true && inputs.skip_compose != true }}
+        if: ${{ inputs.publish_only != true && inputs.skip_llm != true && inputs.skip_compose != true }}
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
