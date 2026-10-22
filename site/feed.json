@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/10/22/01-event_report-42dc8862.html",
-      "date": "2026-10-22",
-      "title": "5.5亿美元首付，Alcon买下一项已获批资产：Neurotech交易难在后续整合",
-      "kicker": "Event Report｜创新药并购",
-      "sub": "临床风险已经前置消化，Alcon仍需回答产品定位、商业放量与追加付款能否兑现",
-      "hook": "截至2026年10月19日，Alcon收购Neurotech Pharmaceuticals的签约或完成日期未找到公开数据；能确认的是，Alcon先支付5.5亿美元，拿下一项已获FDA批准的资产，后续付款又与未披露的里程碑挂钩。已获批通常意味着临床风险较低，但这笔交易最不透明的部分，恰恰是追加金额、资产名称和商业价值能否兑现。",
-      "chars": 3217,
-      "site_rel": "posts/2026/10/22/01-event_report-42dc8862.html"
+      "rel": "2026/10/23/01-event_report-ab7bcc05.html",
+      "date": "2026-10-23",
+      "title": "Paragon第九家孵化公司上市：110亿美元其实属于另一笔交易",
+      "kicker": "Event Report｜反向并购",
+      "sub": "Velaris借Alaunos登陆资本市场，3.5亿美元融资与近110亿美元收购并非同一笔账",
+      "hook": "2026年10月13日，一笔被称作“收购”、却未披露现金首付的反向并购，把Paragon第九家孵化公司Velaris Therapeutics送向纳斯达克；同一场交易叙事里最抢眼的近110亿美元，实际属于此前Apogee被艾伯维收购的金额。Velaris同步获得约3.5亿美元私募融资，可这不等于并购对价，更没有把交易估值抬到110亿美元。",
+      "chars": 4345,
+      "site_rel": "posts/2026/10/23/01-event_report-ab7bcc05.html"
     }
   ],
-  "all_count": 18
+  "all_count": 19
 }

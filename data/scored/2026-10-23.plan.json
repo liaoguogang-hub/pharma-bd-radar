@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "ab7bcc054d39eace",
+      "title": "Another Paragon spinout goes public through reverse merger",
+      "score": 3.3,
+      "member_ids": [
+        "ab7bcc054d39eace"
+      ],
+      "deal_keys": [
+        "alaunos|velaris|reverse-merger"
+      ],
+      "members": [
+        {
+          "title": "Another Paragon spinout goes public through reverse merger",
+          "url": "https://www.biopharmadive.com/news/velaris-alaunos-paragon-reverse-merger-acquisition-fairmount/832869/",
+          "score": 3.3,
+          "reasoning": "反向并购推动Paragon第九家孵化公司上市；总规模110亿美元但首付未披露，且距今9.9天"
+        }
+      ],
+      "reasoning": "反向并购推动Paragon第九家孵化公司上市；总规模110亿美元但首付未披露，且距今9.9天",
+      "verify_todo": [
+        "需核实110亿美元是否指本次交易对价及股权价值口径",
+        "需查交易公告确认首付、换股比例和或有对价",
+        "需确认Velaris与Alaunos在合并后的权利义务关系"
+      ],
+      "flags": [
+        "older_than_7d"
+      ]
+    }
+  ]
+}
