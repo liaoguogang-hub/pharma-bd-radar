@@ -1,0 +1,19 @@
+[
+  {
+    "ok": false,
+    "error": "- 小节太少（1 个，至少 3 个）\n- 缺少 FN 来源脚注\n- 正文字数 184 超出范围（目标 2250-3900）\n- 表格列数不一致：表头 3 列，有一行 1 列",
+    "stats": {
+      "body_chars": 184,
+      "sections": 1,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 0,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "title": "Gilead strikes $1.3B upfront China deal for oral IL-23 drug",
+    "score": 7.2,
+    "type": "event_report"
+  }
+]
