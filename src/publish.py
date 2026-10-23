@@ -46,6 +46,19 @@ def _iter_posts() -> list[dict]:
         hook = re.search(r'(?is)<div class="hook">(.*?)</div>', body)
         cn = len(re.findall(r"[\u4e00-\u9fff]",
                             re.sub(r"(?is)<(style|script)[^>]*>.*?</\1>", " ", body)))
+        # 「先产出、后核查」：compose 未通过全部质检但已落盘的稿子，
+        # 会在旁边留一个 .review.txt。飞书必须显式标出来，否则
+        # 这种稿子和干净稿长得一模一样，人工会误当合格稿处理。
+        rv = p.with_suffix(".review.txt")
+        problems = []
+        if rv.exists():
+            try:
+                for ln in rv.read_text(encoding="utf-8").splitlines():
+                    ln = ln.strip()
+                    if ln.startswith("- "):
+                        problems.append(ln[2:])
+            except Exception:
+                problems = ["（review 文件读取失败）"]
         out.append({
             "path": p,
             "rel": str(p.relative_to(POSTS_DIR)).replace("\\", "/"),
@@ -56,6 +69,8 @@ def _iter_posts() -> list[dict]:
             "hook": _strip_tags(hook.group(1)) if hook else "",
             "chars": cn,
             "site_rel": str(p.relative_to(POSTS_DIR.parent)).replace("\\", "/"),
+            "needs_review": rv.exists(),
+            "problems": problems,
         })
     return out
 
@@ -192,15 +207,24 @@ def _run_stats(date: str) -> dict:
 
 def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
     """飞书交互卡片"""
+    review = [p for p in posts if p.get("needs_review")]
     lines = []
+    if review:
+        lines.append(f"**⚠️ 今日 {len(review)} 篇未通过全部质检，"
+                     f"需人工核查后再推草稿箱**")
+        lines.append("")
     for p in posts:
         t = _html.escape(p["title"][:60])
+        flag = "⚠️ " if p.get("needs_review") else ""
         if base_url:
-            lines.append(f"**[{t}]({base_url}/{p['rel']})**")
+            lines.append(f"{flag}**[{t}]({base_url}/{p['rel']})**")
         else:
-            lines.append(f"**{t}**")
+            lines.append(f"{flag}**{t}**")
         if p["sub"]:
             lines.append(p["sub"][:90])
+        if p.get("needs_review") and p.get("problems"):
+            for pr in p["problems"][:5]:
+                lines.append(f"　· {_html.escape(pr[:110])}")
         lines.append("")
     if lines:
         body = "\n".join(lines)
@@ -216,15 +240,19 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
             "config": {"wide_screen_mode": True},
             "header": {
                 "title": {"tag": "plain_text",
-                          "content": f"医药 BD 雷达 · {date}"},
-                "template": "red",
+                          "content": (f"医药 BD 雷达 · {date}"
+                                      + (f" · {len(review)} 篇待核查" if review else ""))},
+                # 有待核查稿 → 橙色提醒；全干净 → 红（保持原样）
+                "template": "orange" if review else "red",
             },
             "elements": [
                 {"tag": "div", "text": {"tag": "lark_md", "content": body}},
                 {"tag": "hr"},
                 {"tag": "note", "elements": [
                     {"tag": "plain_text",
-                     "content": f"共 {len(posts)} 篇 · 自动生成"},
+                     "content": (f"共 {len(posts)} 篇 · 自动生成"
+                                 + (f" · 其中 {len(review)} 篇需人工核查"
+                                    if review else ""))},
                 ]},
             ],
         },

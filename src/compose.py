@@ -798,6 +798,49 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
     feedback = ""
     last_doc = None
 
+    # ── 「先跑出来，再人工核查」（2026-10-24 加）─────────────────
+    # 背景：10-24 那篇 Gilead 交易，尝试2 已经 3168 字/6小节/4脚注，
+    # 只差 1 个问题（标题金额与正文不符）。但重试循环把 last_doc 一路覆盖，
+    # 最后落盘的是尝试4 的 184 字，稿子白丢，还触发「产出丢失」告警。
+    #
+    # 现在的策略：
+    #   · 每轮记录【问题数最少】的那一版
+    #   · 全部轮次都没完全通过时，只要这一版过了【最低可用线】就照样写出去，
+    #     并把剩余问题写进 <name>.review.txt，由飞书提示「需核查」
+    #   · 过了最低线才写，是为了不把 184 字那种残稿推给人看
+    # 事实性错误（金额对不上等）由本地核查+改稿环节收口，不在这一步硬拦。
+    best = None          # {"nerr","errs","doc","txt","st"}
+    MIN_BODY = 1200      # 低于这字数不值得给人看
+    MIN_SECTIONS = 2     # 至少两个小节
+
+    def _floor_ok(st_: dict) -> bool:
+        return (st_.get("body_chars", 0) >= MIN_BODY
+                and st_.get("sections", 0) >= MIN_SECTIONS)
+
+    def _write_out(doc_, txt_, st_, review_notes: list[str] | None,
+                   claim_block: bool = False):
+        """写 HTML + 标记原文；needs_review 时同时写 .review.txt"""
+        html = render_html(doc_)
+        idx = plan_item.get("_idx", 1)
+        atype = plan_item.get("type", "event_report")
+        fname = f"{idx:02d}-{atype}-{plan_item.get('lead_id','')[:8]}.html"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / fname).write_text(html, encoding="utf-8")
+        (out_dir / (fname.replace(".html", ".txt"))).write_text(
+            txt_, encoding="utf-8")
+        if review_notes:
+            if claim_block:
+                head = ("⚠️ 事实断言存疑：断言核验这一步判定「有断言在素材里找不到出处」。\n"
+                        "这篇【不能直接发布】，必须逐条核对下面列出的断言，"
+                        "删掉或改写成素材支持的表述。\n\n")
+            else:
+                head = ("此稿自动生成时未通过全部质检，已按「先产出、后核查」策略落盘。\n"
+                        "下面是要人工确认的问题：\n\n")
+            (out_dir / (fname.replace(".html", ".review.txt"))).write_text(
+                head + "\n".join(f"- {e}" for e in review_notes) + "\n",
+                encoding="utf-8")
+        return fname
+
     for attempt in range(retries + 1):
         msg = user
         if feedback:
@@ -842,6 +885,14 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
               f"框{st['boxes']} 注{st['footnotes']} "
               f"{'✅通过' if not errs else '❌' + str(len(errs)) + '个问题'}")
 
+        # 记录问题最少的那一版（同问题数取更长的，避免留下短残稿）
+        if errs and (best is None
+                     or len(errs) < best["nerr"]
+                     or (len(errs) == best["nerr"]
+                         and st["body_chars"] > best["st"].get("body_chars", 0))):
+            best = {"nerr": len(errs), "errs": list(errs), "doc": doc,
+                    "txt": txt, "st": st}
+
         if not errs:
             # ── 断言级核验（事实闸门拦不住的那几类）───────────────
             # check_facts 只抓分子代号/靶点缩写；编造合作方、编造商业化能力、
@@ -866,17 +917,9 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
                   f"跨语种无法判定 {_cstat.get('cross_lang', 0)}）"
                   + (f"  ❌拦：{_why}" if _block else "  ✅放行"))
             if not _block:
-                html = render_html(doc)
-                idx = plan_item.get("_idx", 1)
-                atype = plan_item.get("type", "event_report")
-                fname = f"{idx:02d}-{atype}-{plan_item.get('lead_id','')[:8]}.html"
-                out_dir.mkdir(parents=True, exist_ok=True)
-                (out_dir / fname).write_text(html, encoding="utf-8")
-                # 同时存一份标记原文，便于人工比对
-                (out_dir / (fname.replace(".html", ".txt"))).write_text(
-                    txt, encoding="utf-8")
+                fname = _write_out(doc, txt, st, None)
                 return {"ok": True, "file": fname, "stats": st,
-                        "html_len": len(html),
+                        "html_len": len(render_html(doc)),
                         "claimcheck": {"ok": not _cerrs, "why": _why,
                                        "errs": _cerrs, "stat": _cstat}}
             # ── 被拦：先把草稿存下来，否则"为什么被拦"事后无据可查 ──
@@ -888,6 +931,11 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
                 + "\n".join(f"- {e}" for e in _cerrs[:40])
                 + f"\n\n{txt}", encoding="utf-8")
             errs = _cerrs
+            # 断言被拦的稿子也是"候选最优"，只是问题更多。
+            # 标记 claim_block：这类是【事实存疑】，落盘时要用更重的警告措辞。
+            if best is None or len(errs) < best["nerr"]:
+                best = {"nerr": len(errs), "errs": list(errs), "doc": doc,
+                        "txt": txt, "st": st, "claim_block": True}
 
         # 事实类问题需要【可执行的】纠正指令，光把报错丢回去模型往往改不掉
         fact_errs = [e for e in errs if "找不到" in e or "捏造" in e]
@@ -906,6 +954,29 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
             )
         print(f"      问题: {feedback[:180]}")
 
+    # ── 全部轮次都没通过：退而求其次，把【最好的那一版】写出去 ────────
+    # 这是「先跑出来、后人工核查」策略的落点。不写的话，
+    # 一篇 3000 字的成稿会因为一个金额口径问题被整篇丢弃（2026-10-24 事故）。
+    if best and _floor_ok(best["st"]):
+        _cb = bool(best.get("claim_block"))
+        fname = _write_out(best["doc"], best["txt"], best["st"], best["errs"],
+                           claim_block=_cb)
+        print(f"    ⚠ 未通过全部质检，已按最优版本落盘（{fname}）"
+              f"，剩余 {best['nerr']} 个问题待人工核查：")
+        for e in best["errs"][:6]:
+            print(f"       · {e[:110]}")
+        return {"ok": True, "needs_review": True, "claim_block": _cb,
+                "file": fname, "stats": best["st"], "problems": best["errs"],
+                "html_len": len(render_html(best["doc"])),
+                "note": ("事实断言存疑，禁止直接发布，必须逐条核对"
+                         if _cb else
+                         "未通过全部质检，已按最优版本落盘，需人工核查")}
+
+    if best:
+        print(f"    ✗ 最好的一版也没过最低可用线"
+              f"（正文{best['st'].get('body_chars',0)}字/"
+              f"小节{best['st'].get('sections',0)}个，"
+              f"要求≥{MIN_BODY}字/≥{MIN_SECTIONS}节）→ 不落盘")
     return {"ok": False, "error": feedback[:400],
             "stats": structure_report(last_doc) if last_doc else {}}
 
@@ -977,14 +1048,20 @@ def run(date: str | None = None) -> list[dict]:
 
     ok = sum(1 for r in results if r.get("ok"))
     new = sum(1 for r in results if r.get("ok") and not r.get("skipped"))
+    review = sum(1 for r in results if r.get("needs_review"))
     print(f"\n=== 完成 {ok}/{len(results)} 篇"
-          f"（新生成 {new}，跳过已存在 {ok - new}）===")
+          f"（新生成 {new}，跳过已存在 {ok - new}，需人工核查 {review}）===")
     for r in results:
-        mark = "✅" if r.get("ok") else "❌"
+        mark = "⚠" if r.get("needs_review") else ("✅" if r.get("ok") else "❌")
         st = r.get("stats") or {}
         print(f"  {mark} {r.get('type','')[:16]:16} "
               f"{st.get('body_chars',0):>5}字  {r.get('title','')[:36]}")
-        if not r.get("ok"):
+        if r.get("needs_review"):
+            if r.get("claim_block"):
+                print(f"      ‼️ 事实断言存疑：禁止直接发布，需逐条核对")
+            for e in (r.get("problems") or [])[:4]:
+                print(f"      · 待核查：{e[:120]}")
+        elif not r.get("ok"):
             print(f"      {r.get('error','')[:140]}")
 
     # 把【已发表】的选题写进 seen.json，作为跨天去重基准。
