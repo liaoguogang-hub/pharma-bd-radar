@@ -19,14 +19,15 @@
           "title": "Gilead strikes $1.3B upfront China deal for oral IL-23 drug",
           "url": "https://endpoints.news/gilead-strikes-1-3b-upfront-china-deal-for-oral-il-23-drug/",
           "score": 7.2,
-          "reasoning": "首付12.8亿美元、I期口服IL-23资产；金额突出，但首创性与总额待核"
+          "reasoning": "首付12.8亿美元引进中国权益，金额突出但资产仅I期，需核查开发责任。"
         }
       ],
-      "reasoning": "首付12.8亿美元、I期口服IL-23资产；金额突出，但首创性与总额待核",
+      "reasoning": "首付12.8亿美元引进中国权益，金额突出但资产仅I期，需核查开发责任。",
       "verify_todo": [
-        "核实交易地域、独家权利及资产具体分子",
-        "确认首付之外是否另有里程碑或销售提成",
-        "核实首创性和竞争格局"
+        "核查12.8亿美元首付的准确金额、币种及付款安排",
+        "核查授权区域、独占权范围和开发商业化责任",
+        "核查是否存在销售分成、里程碑及后续融资安排",
+        "核查双方是否存在股权关系"
       ],
       "flags": []
     }
