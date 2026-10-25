@@ -897,6 +897,12 @@ async def generate_one(client, eff: dict, plan_item: dict, material: str,
     def _write_out(doc_, txt_, st_, review_notes: list[str] | None,
                    claim_block: bool = False):
         """写 HTML + 标记原文；needs_review 时同时写 .review.txt"""
+        # ⚠️ 评分不达标的稿件：把标记带进 doc，render 时挂到 kicker 上
+        #    （2026-10-25 用户要求"提示评分不达标"）。标记随稿件走，
+        #    本机 publisher 从 HTML 就能读到，不用对齐 plan.json。
+        if plan_item.get("below_threshold"):
+            doc_ = dict(doc_)
+            doc_["below_threshold"] = True
         html = render_html(doc_)
         idx = plan_item.get("_idx", 1)
         atype = plan_item.get("type", "event_report")

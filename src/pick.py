@@ -99,6 +99,60 @@ def _evidence(s: dict) -> int:
     return n
 
 
+# 保底选取时要排除的 flags（2026-10-25 用户要求"评分不达标也推 1-2 篇最高分"，
+# 但 10-19 教训证明不能无条件降分——必须排掉写不出/是栏目摘要/是过期的）
+#
+# ⚠️ `insufficient_material` / `thin_material` **不在排除名单里**：
+#    它们只说明"素材不够厚"，不等于"没有素材"。只要 content 非空
+#    （>500 字有正文，或带 NCT 号），成稿阶段就能写；真正的空素材
+#    由下面的 `_has_body` 判据拦掉。
+_FALLBACK_EXCLUDE_FLAGS = {
+    "not_bd",              # 不是 BD 交易
+    "news_roundup",        # 每日新闻摘要栏目（10-19 实测补出来过）
+    "headline_only",       # 只有标题没正文 → 写不出稿
+    "pure_financing",      # 纯融资，不是授权交易
+    "stale",               # 过期
+    "stale_news",
+    "no_content",
+    "unknown_date",
+}
+
+
+def _fallback_candidates(scored: list[dict], keep_thr: float,
+                          min_conf: float, posted: set[str],
+                          deal_keys: list[str]) -> list[dict]:
+    """评分不达标时的受限保底候选（2026-10-25 用户要求）。
+
+    只从"写得出来、没发过、不是栏目摘要"的候选里挑，按分数降序。
+    刻意**不降 min_confidence**：置信度低说明素材本身可疑，
+    那种稿子推出去是给用户添麻烦，不是帮忙。
+    """
+    out: list[dict] = []
+    for s in scored:
+        flags = set(s.get("flags") or [])
+        if flags & _FALLBACK_EXCLUDE_FLAGS:
+            continue
+        if float(s.get("score") or 0) <= 0:
+            continue
+        if float(s.get("confidence") or 0) < min_conf:
+            continue
+        # 必须有实质素材，否则成稿阶段必然写不出来
+        if not _has_body(s) and not s.get("registry_nct"):
+            continue
+        # 三重去重：lead_id（跨天）/ deal_key 台账（跨源跨语种）/ cluster_key
+        if s.get("id", "")[:8] in posted:
+            continue
+        if s.get("deal_key") and any(
+                same_deal(s["deal_key"], k) for k in deal_keys):
+            continue
+        if s.get("cluster_key") and s["cluster_key"] in posted:
+            continue
+        out.append(s)
+    out.sort(key=lambda x: (float(x.get("score") or 0), _evidence(x)),
+              reverse=True)
+    return out
+
+
 def run(date: str | None = None) -> dict:
     date = date or today_cst()
     cfg = load_yaml("scoring.yaml")["score"]
@@ -245,25 +299,91 @@ def run(date: str | None = None) -> dict:
                 "reasoning": alt.get("reasoning", ""),
             })
 
-    # 4) 关于 daily_min：**故意不实现"降阈值保底"**（2026-10-19 结论）
+    # 4) 关于 daily_min：**降阈值保底改为"受限保底"**（2026-10-25 用户要求）
     #
-    # 配置里 `daily_min: 2` 一直没被代码读取，看似是漏实现，但实测证明
-    # 直接降阈值凑数会引入垃圾：
-    #   10-19 扣掉「非BD / 已发表 / 简报栏目」后只剩 4 条，
-    #   唯一 ≥5.5 的是 `AstraZeneca Taps insitro AI for MASH...` ——
-    #   而 10-17 已经发过同一笔交易（lead_id 不同，所以没被 _published_leads
-    #   拦住）。补出来的另一条是 `STAT Plus: Pharmalittle...`，
-    #   属于每日新闻摘要栏目，不是单笔 BD 交易。
-    #   当天真正的新交易最高只有 2.4 分，是反向并购/CRO 简报级别的低价值条目。
+    # ⚠️ 背景：10-19 曾做过一版"放宽到 keep-1.0 分补够 2 篇"，实测补出来的是
+    #    ① 10-17 已发过的同一笔 AZ-insitro 交易（跨源重复，lead_id 不同没被拦住）
+    #    ② `STAT Plus: Pharmalittle...` 每日新闻摘要栏目，不是单笔交易
+    #    所以"降分凑数"被撤回。
     #
-    # 结论：**BD 雷达某天 0 篇是合法结果**，不是故障。要提产出只能靠
-    #   ① 改善输入（源里真没有新交易，抓取改善也变不出来）
-    #   ② 补跨天交易级去重（见下），让"重复"不再占用名额
-    #   绝不能用"降分凑数"。所以这里保留原始行为：不到 keep 分就不选。
+    # ⚠️ 但用户 2026-10-25 明确要求：**评分不达标时仍推送 1-2 篇分数最高的，
+    #    并在飞书提示"评分不达标"**。这不是"把低分内容当高分混进去"，
+    #    而是"照常成稿、照常核查、照常推草稿箱，但明确标注评分未达标"，
+    #    由人工复核决定要不要发。
+    #
+    # 因此保底必须**严格过滤**，只从"写得出、没发过、不是栏目摘要"里挑：
+    #   · 有实质素材（正文 >500 字或带 NCT 号）——否则成稿会写不出来
+    #   · 排除 headline_only / thin_material / insufficient_material
+    #   · 排除 news_roundup（每日摘要栏目，不是单笔交易）
+    #   · 排除 not_bd（非交易）、pure_financing（纯融资）
+    #   · 排除 stale / stale_news（过期）
+    #   · 排除已发表：lead_id + deal_key 台账 + cluster_key 三重
+    #   · 排除 no_content
+    #
+    # 保底篇数上限 2 篇，标记 below_threshold 让下游显示"评分不达标"。
+
+    if not plan:
+        fb = _fallback_candidates(scored, keep_thr, min_conf, posted, deal_keys)
+        for s in fb[:2]:
+            plan.append({
+                "type": s.get("article_type", "event_report"),
+                "cluster_key": s.get("cluster_key") or None,
+                "lead_id": s["id"],
+                "title": s.get("title", ""),
+                "score": s.get("score", 0),
+                "member_ids": [s["id"]],
+                "deal_keys": [s["deal_key"]] if s.get("deal_key") else [],
+                "members": [{"title": s.get("title"), "url": s.get("url"),
+                             "score": s.get("score"),
+                             "reasoning": s.get("reasoning")}],
+                "reasoning": s.get("reasoning", ""),
+                "verify_todo": s.get("verify_todo", []),
+                "flags": s.get("flags", []),
+                # ↓ 评分不达标标记：下游（飞书/草稿箱）据此提示
+                "below_threshold": True,
+                "keep_threshold": keep_thr,
+            })
+        if plan:
+            print(f"[select] ⚠️ 无达标选题 → 受限保底 {len(plan)} 篇"
+                  f"（最高 {plan[0]['score']} 分 < 门槛 {keep_thr}）")
+            for p in plan:
+                print(f"         · {p['score']}分  {p['title'][:52]}")
+                print(f"           flags: {', '.join(p.get('flags') or []) or '无'}")
+        else:
+            # ⚠️ 保底池空 = **采集侧空素材**，不是"今天没交易"（2026-10-25 实测）。
+            #   那天 67 条候选 content 全是空串——正文没抓回来。
+            #   这种情况下任何保底都会让模型拿世界知识编，所以必须报清楚根因，
+            #   而不是笼统说"0 篇"。
+            empty = sum(1 for s in scored
+                        if not (s.get("content") or "").strip())
+            empty_pct = 100.0 * empty / len(scored) if scored else 0
+            print(f"[select] 无达标选题，且无可保底候选（写不出/重复/摘要栏目）")
+            print(f"         ⚠️ 空素材 {empty}/{len(scored)} 条（{empty_pct:.0f}%）"
+                  f" —— 若占比很高，是【采集侧正文抓取】失效，"
+                  f"不是当天没有交易。查 fetch.py 的选择器/源状态。")
+            print(f"         最高分候选："
+                  + (f"{max((float(s.get('score') or 0) for s in scored), default=0):.1f} 分"
+                     f"（门槛 {keep_thr}）" if scored else "无数据"))
 
     plan = plan[:dmax]
 
     out = {"date": date, "count": len(plan), "plan": plan}
+    # 诊断信息：本地 stage 读它来向用户解释"0 篇"的真实原因
+    if not plan:
+        empty = sum(1 for s in scored if not (s.get("content") or "").strip())
+        top = max((float(s.get("score") or 0) for s in scored), default=0)
+        out["diagnosis"] = {
+            "keep_threshold": keep_thr,
+            "candidates": len(scored),
+            "empty_material": empty,
+            "empty_material_pct": (100.0 * empty / len(scored)
+                                   if scored else 0),
+            "top_score": top,
+            "reason": ("no_fallback_candidate" if empty else "below_threshold"),
+        }
+    elif plan and all(p.get("below_threshold") for p in plan):
+        out["below_threshold"] = True
+        out["keep_threshold"] = keep_thr
     write_json(SCORED_DIR / f"{date}.plan.json", out)
 
     print(f"\n[select] 选定 {len(plan)} 篇")

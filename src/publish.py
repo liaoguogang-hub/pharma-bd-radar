@@ -334,12 +334,30 @@ def notify_feishu(posts: list[dict], date: str,
 
 
 def run(date: str | None = None, do_notify: bool = True) -> None:
+    """
+    建站点 + （可选）飞书通知。
+
+    ⚠️ 2026-10-25 架构调整（用户要求）：
+      **云端雷达不发飞书。** 职责重新划清：
+        云端雷达：采集 → 评分 → 选题 → 成稿 → 提交仓库 → 部署 Pages
+        本机 publisher：拉取 → 核查可信度 → 去 AI 味改稿 → 推草稿箱 → 发飞书
+      理由：草稿箱推送和最终可信度核查都在本机（要 Playwright + 微信登录态），
+      云端先发一遍"今日产出"卡片，本机再发一遍"已进草稿箱"卡片，
+      用户收到两套口径，0 产出时更是分不清是故障还是没得写。
+      现在只有本机在推完草稿箱后发一次飞书，是唯一口径。
+
+      所以这里默认**不发**。需要云端也发时显式设环境变量 RADAR_FEISHU_NOTIFY=1。
+    """
     date = date or today_cst()
     build_site(date)
     posts = [p for p in _iter_posts() if p["date"] == date]
-    if do_notify:
+    if do_notify and os.getenv("RADAR_FEISHU_NOTIFY", "").lower() in ("1", "true", "yes"):
         notify_feishu(posts, date,
                       base_url=os.getenv("SITE_BASE_URL", ""))
+    else:
+        print("[publish] 飞书通知已跳过（云端雷达不发飞书；"
+              "由本机 publisher 推完草稿箱后统一回报）。"
+              "需要云端也发请设 RADAR_FEISHU_NOTIFY=1")
 
 
 if __name__ == "__main__":

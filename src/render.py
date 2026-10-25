@@ -237,7 +237,13 @@ def render_html(doc: dict, lang: str = "zh-CN") -> str:
     body: list[str] = ['<article class="wrap">']
 
     if doc.get("kicker"):
-        body.append(f'<div class="kicker">{_inline(doc["kicker"])}</div>')
+        kicker = doc["kicker"]
+        # ⚠️ 评分不达标的稿件：在 kicker 后挂标记（2026-10-25 用户要求）。
+        #    这样标记与稿件同源——站点页面肉眼可见，本机 publisher 从 HTML
+        #    的 kicker 文本就能读到并写进飞书卡片，不会出现"标记和稿件对不上"。
+        if doc.get("below_threshold"):
+            kicker = f"{kicker} · 评分不达标"
+        body.append(f'<div class="kicker">{_inline(kicker)}</div>')
     body.append(f'<h1>{_inline(doc.get("title", ""))}</h1>')
     if doc.get("sub"):
         body.append(f'<p class="sub">{_inline(doc["sub"])}</p>')
