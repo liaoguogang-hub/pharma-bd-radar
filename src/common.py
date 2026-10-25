@@ -58,6 +58,10 @@ class RawItem:
     weight: float = 1.0
     topics: list[str] = field(default_factory=list)
     fetch_time: str = ""
+    # ⚠️ 源配了 fetch_body: true → 即使 access=headline 或走 RSS，
+    #    也要去抓正文（2026-10-25）。实测 10-25 有 88% 的候选 content 为空，
+    #    根因就是 headline 源被硬性排除在正文抓取之外。
+    fetch_body: bool = False
 
     @property
     def age_hours(self) -> float:

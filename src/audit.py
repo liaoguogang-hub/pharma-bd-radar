@@ -202,13 +202,12 @@ def _write_report(res: dict) -> Path:
 def _notify(res: dict) -> bool:
     """推飞书卡片。复用 publish 的签名实现。
 
-    ⚠️ 2026-10-25 架构调整：云端默认**不发**飞书。
-    可信度核查与改稿的最终口径在本机 publisher（推草稿箱前逐篇核验），
-    云端再发一张核查卡会出现两套口径。需要时设 RADAR_FEISHU_NOTIFY=1 打开。
+    ⚠️ 2026-10-25 用户澄清：云端雷达要发飞书（"做的稿件要发飞书"），
+    核查报告卡属于"做的稿件"的配套信息，一并发出。
+    临时关掉：RADAR_FEISHU_NOTIFY=0。
     """
-    if os.getenv("RADAR_FEISHU_NOTIFY", "").lower() not in ("1", "true", "yes"):
-        print("[audit] 飞书推送已跳过（云端雷达不发飞书；"
-              "核查口径由本机 publisher 统一回报）")
+    if os.getenv("RADAR_FEISHU_NOTIFY", "1").lower() in ("0", "false", "no"):
+        print("[audit] 飞书推送已跳过（RADAR_FEISHU_NOTIFY=0）")
         return False
     url = os.getenv("FEISHU_WEBHOOK")
     if not url:

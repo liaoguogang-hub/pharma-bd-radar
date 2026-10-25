@@ -75,6 +75,9 @@ async def fetch_rss(client: httpx.AsyncClient, src: dict) -> list[RawItem]:
             weight=src.get("weight", 1.0),
             topics=src.get("topics", []),
             fetch_time=now_iso(),
+            # ⚠️ RSS 源的 summary 大面积为空（实测 ESMO 14/20 空）。
+            #    配了 fetch_body 的源要去文章页抓正文（2026-10-25）。
+            fetch_body=bool(src.get("fetch_body")),
         ))
     return out
 
@@ -282,13 +285,29 @@ async def fetch_html(client: httpx.AsyncClient, src: dict) -> list[RawItem]:
             access=src.get("access", "headline"), mode="html",
             weight=src.get("weight", 1.0),
             topics=src.get("topics", []), fetch_time=now_iso(),
+            # ⚠️ headline 级的源（stat_pharma / fierce_*_search）URL 是完整
+            #    文章页，只是默认不抓。配了 fetch_body 就抓（2026-10-25）。
+            fetch_body=bool(src.get("fetch_body")),
         ))
     return out
 
 
-# ============ 正文抓取（仅 access: full）===========
+# ============ 正文抓取（access: full，或配了 fetch_body 的源）===========
 async def fetch_article(client: httpx.AsyncClient, item: RawItem) -> RawItem:
-    if item.access != "full" or item.mode != "html":
+    """
+    抓文章正文，顺手取发布日期。
+
+    ⚠️ 2026-10-25 修正：原来这里第一行就 `if item.access != "full" or
+    item.mode != "html": return item` —— 于是
+      · headline 级源（stat_pharma / fierce_*_search）**永远拿不到正文**
+      · RSS 源（endpoints_rss）即使配了 fetch_body 也进不来
+    实测后果：10-25 的 67 条候选里 59 条 content 是空串（88%），
+    选题层因此判定"没有可写的"，而真正的原因是**正文没抓回来**。
+
+    现在改成：源配了 `fetch_body: true` 就允许抓（哪怕它 access=headline
+    或走 RSS）——它们的 URL 是完整的文章页，抓得到正文。
+    """
+    if item.mode != "html" and not getattr(item, "fetch_body", False):
         return item
     r = await _get(client, item.url)
     if not r:
@@ -481,29 +500,52 @@ async def run(date: str | None = None) -> list[RawItem]:
               f"（丢弃 {len(dropped)}）===")
 
         # 抓正文：按源配额，保证中文源也有素材
-        quota = {"biopharmadive_deals": 6, "pharnexcloud": 6,
-                 "phirda_industry": 4, "stcn_medicine": 3,
-                 "nbdd_cn": 2, "pharmcube": 2}
-        full_items: list[RawItem] = []
-        for sid, n in quota.items():
-            full_items.extend(
-                [i for i in items if i.access == "full"
-                 and i.source == sid][:n])
-
-        if full_items:
-            print(f"\n=== 抓正文 {len(full_items)} 篇 ===")
+        #
+        # ⚠️ 2026-10-25 修正：原来是**硬编码**的 6 源 21 篇配额
+        #   {"biopharmadive_deals":6, "pharnexcloud":6, ...}，
+        #   结果 9 个 full 源里有 3 个（biopharmadive_home / pharmexec_*）
+        #   **完全没有额度**，headline 源更是一篇都抓不到。
+        #   实测 10-25：67 条候选里 59 条 content 为空（88%），
+        #   选题层因此判"没得写"——而根因是正文没抓回来，不是没有交易。
+        #
+        # 现在：配额从 config 读（article_quota，缺省 8），
+        # 且允许抓 access=headline 但配了 fetch_body 的源。
+        # ⚠️ 抓取顺序按【重要性】排（_enrich_priority），不按列表顺序——
+        #    名额有限时必须先抓最该写的那几条（Viatris 那次的教训）。
+        quota = (cfg.get("fetch", {}) or {}).get("article_quota", {}) or {}
+        body_srcs = {s["id"] for s in cfg["sources"] if s.get("fetch_body")}
+        need = [i for i in items
+                if (i.access == "full" and i.mode == "html")
+                or i.source in body_srcs]
+        need.sort(key=_enrich_priority)
+        by_src: dict[str, int] = {}
+        picked = []
+        for it in need:
+            cap = quota.get(it.source, 8)
+            if by_src.get(it.source, 0) >= cap:
+                continue
+            by_src[it.source] = by_src.get(it.source, 0) + 1
+            picked.append(it)
+        if picked:
+            print(f"\n=== 抓正文 {len(picked)} 篇（{len(need)} 条可抓）===")
+            for it in picked[:5]:
+                print(f"    优先: {it.title[:58]}")
             enriched = await asyncio.gather(
-                *[fetch_article(client, i) for i in full_items],
+                *[fetch_article(client, i) for i in picked],
                 return_exceptions=True
             )
             ok = 0
-            for i, e in zip(full_items, enriched):
+            for i, e in zip(picked, enriched):
                 if isinstance(e, RawItem) and e.content:
                     i.content = e.content
+                    i.access = "full"
                     ok += 1
-                else:
+                elif not i.summary:
                     i.access = "headline"
-            print(f"  正文成功 {ok}/{len(full_items)}")
+            print(f"  正文成功 {ok}/{len(picked)}")
+            if ok < len(picked) * 0.6:
+                print(f"  ⚠️ 成功率偏低（{ok}/{len(picked)}），"
+                      f"多半是源站改版或选择器失效——查 fetch_article 的正文容器候选")
 
         # ---- 日期补全 ----
         # 列表页拿不到发布日期，必须去文章页取。不补的话，

@@ -71,6 +71,9 @@ def _iter_posts() -> list[dict]:
             "site_rel": str(p.relative_to(POSTS_DIR.parent)).replace("\\", "/"),
             "needs_review": rv.exists(),
             "problems": problems,
+            # ⚠️ 评分不达标（2026-10-25 用户要求）：保底稿的 kicker 带
+            #    「· 评分不达标」标记，云端产出卡片要显式标出来。
+            "below_threshold": "评分不达标" in (kicker.group(1) if kicker else ""),
         })
     return out
 
@@ -205,23 +208,44 @@ def _run_stats(date: str) -> dict:
     return {"raw": len(raw), "scored": len(scored), "top": top}
 
 
+def _plan_diagnosis(date: str) -> dict | None:
+    """读 plan.json 的 diagnosis 字段（0 篇时说明根因）。
+
+    2026-10-25 新增：pick.py 在 0 篇时会把根因写进 plan.json：
+      · no_fallback_candidate → 采集侧空素材（**不是"当天没交易"**）
+      · below_threshold       → 有交易但都低于门槛
+    """
+    plan = read_json(SCORED_DIR / f"{date}.plan.json", {}) or {}
+    diag = plan.get("diagnosis")
+    return diag if isinstance(diag, dict) else None
+
+
 def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
     """飞书交互卡片"""
     review = [p for p in posts if p.get("needs_review")]
+    low = [p for p in posts if p.get("below_threshold")]
     lines = []
     if review:
         lines.append(f"**⚠️ 今日 {len(review)} 篇未通过全部质检，"
                      f"需人工核查后再推草稿箱**")
         lines.append("")
+    if low:
+        lines.append(f"**⚠️ 今日 {len(low)} 篇评分未达标入选门槛**"
+                     f"（保底选取，稿件已照常成稿，请重点复核）")
+        lines.append("")
     for p in posts:
         t = _html.escape(p["title"][:60])
         flag = "⚠️ " if p.get("needs_review") else ""
+        if p.get("below_threshold"):
+            flag += "🔸 "      # 评分不达标
         if base_url:
             lines.append(f"{flag}**[{t}]({base_url}/{p['rel']})**")
         else:
             lines.append(f"{flag}**{t}**")
         if p["sub"]:
             lines.append(p["sub"][:90])
+        if p.get("below_threshold"):
+            lines.append("　🔸 评分不达标（保底选取）")
         if p.get("needs_review") and p.get("problems"):
             for pr in p["problems"][:5]:
                 lines.append(f"　· {_html.escape(pr[:110])}")
@@ -230,14 +254,39 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
         body = "\n".join(lines)
     else:
         st = _run_stats(date)
-        # raw 在云端 run 不回传仓库（本地常缺）——读不到时只报评分数，
-        # 免得"采集 0 条"被误读成 fetch 没跑
-        stats = (f"评分 {st['scored']} 条 · 最高 {st['top']:.1f} 分"
-                 f"（入选门槛 6.5）")
-        if st["raw"]:
-            stats = f"采集 {st['raw']} 条 · {stats}"
+        # ⚠️ 0 篇要说清根因（2026-10-25 用户要求）：区分
+        #    "当天没有够格的交易"和"采集侧正文抓取失效"。
         body = (f"**✓ 雷达正常运行，今日 0 篇** —— 跑了采集和评分，"
-                f"但没有交易过入选门槛。不是故障。\n\n{stats}")
+                f"但没有交易过入选门槛。不是故障。\n\n")
+        diag = _plan_diagnosis(date)
+        if diag:
+            thr = diag.get("keep_threshold")
+            cand = diag.get("candidates")
+            empty = diag.get("empty_material")
+            pct = diag.get("empty_material_pct")
+            top = diag.get("top_score")
+            if diag.get("reason") == "no_fallback_candidate" and empty:
+                body += (f"**根因：采集侧正文抓取失效**\n"
+                         f"候选 {cand} 条中 {empty} 条（{pct:.0f}%）抓不到正文，"
+                         f"写不出稿也不能保底。\n"
+                         f"最高分候选 {top} 分（门槛 {thr}）。"
+                         f"这不是「当天没有交易」，是采集侧出了问题。")
+            elif diag.get("reason") == "below_threshold":
+                body += (f"候选 {cand} 条全部低于入选门槛 {thr} 分"
+                         f"（最高 {top} 分），且没有可保底的候选。")
+        else:
+            body += (f"评分 {st['scored']} 条 · 最高 {st['top']:.1f} 分"
+                     f"（入选门槛 6.5）")
+
+    # 0 篇=grey（跑过、没得写）；有待核查=orange；有评分不达标=yellow；正常=red
+    if not posts:
+        template = "grey"
+    elif review:
+        template = "orange"
+    elif low:
+        template = "yellow"
+    else:
+        template = "red"
 
     return {
         "msg_type": "interactive",
@@ -247,10 +296,9 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
                 "title": {"tag": "plain_text",
                           "content": (f"医药 BD 雷达 · {date}"
                                       + (f" · {len(review)} 篇待核查" if review else
-                                         (" · 0 篇" if not posts else "")))},
-                # 0 篇=grey（跑过、没得写）；待核查=orange；正常产出=red
-                "template": ("grey" if not posts
-                             else "orange" if review else "red"),
+                                         (f" · {len(low)} 篇评分不达标" if low else
+                                          (" · 0 篇" if not posts else ""))))},
+                "template": template,
             },
             "elements": [
                 {"tag": "div", "text": {"tag": "lark_md", "content": body}},
@@ -259,7 +307,9 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
                     {"tag": "plain_text",
                      "content": (f"共 {len(posts)} 篇 · 自动生成"
                                  + (f" · 其中 {len(review)} 篇需人工核查"
-                                    if review else ""))},
+                                    if review else "")
+                                 + (f" · {len(low)} 篇评分不达标"
+                                    if low else ""))},
                 ]},
             ],
         },
@@ -335,29 +385,25 @@ def notify_feishu(posts: list[dict], date: str,
 
 def run(date: str | None = None, do_notify: bool = True) -> None:
     """
-    建站点 + （可选）飞书通知。
+    建站点 + 飞书通知。
 
-    ⚠️ 2026-10-25 架构调整（用户要求）：
-      **云端雷达不发飞书。** 职责重新划清：
-        云端雷达：采集 → 评分 → 选题 → 成稿 → 提交仓库 → 部署 Pages
-        本机 publisher：拉取 → 核查可信度 → 去 AI 味改稿 → 推草稿箱 → 发飞书
-      理由：草稿箱推送和最终可信度核查都在本机（要 Playwright + 微信登录态），
-      云端先发一遍"今日产出"卡片，本机再发一遍"已进草稿箱"卡片，
-      用户收到两套口径，0 产出时更是分不清是故障还是没得写。
-      现在只有本机在推完草稿箱后发一次飞书，是唯一口径。
-
-      所以这里默认**不发**。需要云端也发时显式设环境变量 RADAR_FEISHU_NOTIFY=1。
+    ⚠️ 职责边界（2026-10-25 用户澄清）：
+      **云端雷达要发飞书**——"做的稿件要发飞书"是用户明确要求。
+      云端负责"今天产出了什么"（含 0 篇的说明），
+      本机 publisher 负责"进了草稿箱没有"（推草稿箱后的回报）。
+      两者是**不同的问题**，不是重复：
+        · 云端卡片 = 产出播报（今天有几篇、评分达不达标、为什么 0 篇）
+        · 本机卡片 = 推送播报（核验改稿结果、进了草稿箱哪些、哪些没推）
+      需要临时关掉云端通知时设 RADAR_FEISHU_NOTIFY=0。
     """
     date = date or today_cst()
     build_site(date)
     posts = [p for p in _iter_posts() if p["date"] == date]
-    if do_notify and os.getenv("RADAR_FEISHU_NOTIFY", "").lower() in ("1", "true", "yes"):
+    if do_notify and os.getenv("RADAR_FEISHU_NOTIFY", "1").lower() not in ("0", "false", "no"):
         notify_feishu(posts, date,
                       base_url=os.getenv("SITE_BASE_URL", ""))
     else:
-        print("[publish] 飞书通知已跳过（云端雷达不发飞书；"
-              "由本机 publisher 推完草稿箱后统一回报）。"
-              "需要云端也发请设 RADAR_FEISHU_NOTIFY=1")
+        print("[publish] 飞书通知已跳过（RADAR_FEISHU_NOTIFY=0）")
 
 
 if __name__ == "__main__":
