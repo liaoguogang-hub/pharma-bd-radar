@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "trispecific-tce",
+      "lead_id": "17104022a6865fcf",
+      "title": "Roche taps Zymeworks in up to $813M deal for preclinical T cell engager",
+      "score": 5.3,
+      "member_ids": [
+        "17104022a6865fcf"
+      ],
+      "deal_keys": [
+        "roche|zymeworks|trispecific-tce"
+      ],
+      "members": [
+        {
+          "title": "Roche taps Zymeworks in up to $813M deal for preclinical T cell engager",
+          "url": "https://endpoints.news/roche-taps-zymeworks-in-up-to-813m-deal-for-preclinical-t-cell-engager/",
+          "score": 5.3,
+          "reasoning": "首付5500万美元、总额上限8.13亿美元，Roche引进临床前三特异性TCE"
+        }
+      ],
+      "reasoning": "首付5500万美元、总额上限8.13亿美元，Roche引进临床前三特异性TCE",
+      "verify_todo": [
+        "核查8.13亿美元总额的里程碑构成及开发销售分成",
+        "确认项目具体分子名称、全球权益范围及适应症",
+        "核查双方是否存在股权或共同股东关系"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": "ai-drug-discovery",
+      "lead_id": "d5d7e5a101f25a5c",
+      "title": "Arcus kidney cancer data impresses analysts; TriGemX inks a SPAC deal",
+      "score": 4.9,
+      "member_ids": [
+        "d5d7e5a101f25a5c"
+      ],
+      "deal_keys": [],
+      "members": [
+        {
+          "title": "Arcus kidney cancer data impresses analysts; TriGemX inks a SPAC deal",
+          "url": "https://www.biopharmadive.com/news/arcus-casdatifan-trigemx-lilly-metis-astrazeneca/833430/",
+          "score": 4.9,
+          "reasoning": "汇总Arcus数据、SPAC及药企合作，适合作为多交易线索而非单笔深挖"
+        }
+      ],
+      "reasoning": "汇总Arcus数据、SPAC及药企合作，适合作为多交易线索而非单笔深挖",
+      "verify_todo": [
+        "分别核实礼来与阿斯利康合作的交易对手、资产及金额",
+        "拆分SPAC交易与授权合作，避免混合统计"
+      ],
+      "flags": [
+        "multi_deal_roundup"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
