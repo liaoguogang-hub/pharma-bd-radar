@@ -164,9 +164,12 @@ jobs:
         if: ${{ inputs.skip_compose != true }}
         working-directory: src
         env:
-          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
-          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
           SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+          # ⚠️ 2026-10-25 架构调整：云端雷达【不发飞书】。
+          #    职责：云端 = 采集→评分→成稿→提交→部署 Pages；
+          #    本机 publisher = 核查可信度→去 AI 味→推草稿箱→发飞书。
+          #    所以这里不再注入飞书凭据。需要云端也发时设 RADAR_FEISHU_NOTIFY=1
+          #    并把 FEISHU_WEBHOOK / FEISHU_SECRET 加回本 step。
         run: python publish.py ${{ inputs.date }}
 
       - name: 提交产出
