@@ -230,9 +230,14 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
         body = "\n".join(lines)
     else:
         st = _run_stats(date)
-        body = (f"今日无合格交易。\n"
-                f"采集 {st['raw']} 条 · 评分 {st['scored']} 条 · "
-                f"最高 {st['top']:.1f} 分（入选门槛 6.5）")
+        # raw 在云端 run 不回传仓库（本地常缺）——读不到时只报评分数，
+        # 免得"采集 0 条"被误读成 fetch 没跑
+        stats = (f"评分 {st['scored']} 条 · 最高 {st['top']:.1f} 分"
+                 f"（入选门槛 6.5）")
+        if st["raw"]:
+            stats = f"采集 {st['raw']} 条 · {stats}"
+        body = (f"**✓ 雷达正常运行，今日 0 篇** —— 跑了采集和评分，"
+                f"但没有交易过入选门槛。不是故障。\n\n{stats}")
 
     return {
         "msg_type": "interactive",
@@ -241,9 +246,11 @@ def build_card(posts: list[dict], date: str, base_url: str = "") -> dict:
             "header": {
                 "title": {"tag": "plain_text",
                           "content": (f"医药 BD 雷达 · {date}"
-                                      + (f" · {len(review)} 篇待核查" if review else ""))},
-                # 有待核查稿 → 橙色提醒；全干净 → 红（保持原样）
-                "template": "orange" if review else "red",
+                                      + (f" · {len(review)} 篇待核查" if review else
+                                         (" · 0 篇" if not posts else "")))},
+                # 0 篇=grey（跑过、没得写）；待核查=orange；正常产出=red
+                "template": ("grey" if not posts
+                             else "orange" if review else "red"),
             },
             "elements": [
                 {"tag": "div", "text": {"tag": "lark_md", "content": body}},
@@ -279,9 +286,11 @@ def notify_feishu(posts: list[dict], date: str,
     if not url:
         print("[notify] 未配置 FEISHU_WEBHOOK，跳过")
         return False
+    # 0 篇也推送（2026-10-25 用户要求）：雷达正常跑过但当天无合格交易时，
+    # 必须让用户在飞书里看到"跑了、0 篇"的明确信号——否则无法区分
+    # "真没有值得写的"和"故障没跑"。统计卡片由 build_card 的空列表分支生成。
     if not posts:
-        print("[notify] 无稿件，不推送")
-        return False
+        print("[notify] 今日 0 篇 —— 推送 0 产出统计卡片")
 
     payload = build_card(posts, date, base_url)
 
