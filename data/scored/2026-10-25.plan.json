@@ -1,5 +1,66 @@
 {
   "date": "2026-10-25",
-  "count": 0,
-  "plan": []
+  "count": 2,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": null,
+      "lead_id": "ba74d55898f59a69",
+      "title": "Roundup: CSL & Alentis Enter Global Partnership, Jiangsu Nhwa Enters Global Licensing Deal with Somnivera",
+      "score": 6.2,
+      "member_ids": [
+        "ba74d55898f59a69"
+      ],
+      "deal_keys": [
+        "alentis|csl|claudin-1-lixudebart"
+      ],
+      "members": [
+        {
+          "title": "Roundup: CSL & Alentis Enter Global Partnership, Jiangsu Nhwa Enters Global Licensing Deal with Somnivera",
+          "url": "https://www.pharmexec.com/view/roundup-csl-alentis-global-partnership-jiangsu-nhwa-licensing-somnivera",
+          "score": 6.2,
+          "reasoning": "首付3.55亿美元、里程碑上限12亿美元，MNC参与的Claudin-1授权；但已发布20天，非近日"
+        }
+      ],
+      "reasoning": "首付3.55亿美元、里程碑上限12亿美元，MNC参与的Claudin-1授权；但已发布20天，非近日",
+      "verify_todo": [
+        "核对双方公告，确认355百万美元是否为全部现金首付",
+        "确认12亿美元里程碑是否另含销售提成或特许权使用费",
+        "补充Jiangsu Nhwa与Somnivera交易的金额、资产和开发阶段"
+      ],
+      "flags": [
+        "stale",
+        "multi_deal_roundup"
+      ]
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "f78b5b72e414d23d",
+      "title": "EQT以108亿欧元收购分子诊断专家Qiagen【AI生成】",
+      "score": 3.7,
+      "member_ids": [
+        "f78b5b72e414d23d"
+      ],
+      "deal_keys": [
+        "eqt|qiagen|molecular-diagnostics"
+      ],
+      "members": [
+        {
+          "title": "EQT以108亿欧元收购分子诊断专家Qiagen【AI生成】",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_386035",
+          "score": 3.7,
+          "reasoning": "EV10.8亿欧元，按ECB 1.17折算约126亿美元，大型诊断资产私有化值得深挖"
+        }
+      ],
+      "reasoning": "EV10.8亿欧元，按ECB 1.17折算约126亿美元，大型诊断资产私有化值得深挖",
+      "verify_todo": [
+        "核查EQT及Qiagen官方公告、交易完成条件和股东批准状态",
+        "核对欧元兑美元汇率及EV中净债务口径"
+      ],
+      "flags": [
+        "ai_generated"
+      ]
+    }
+  ]
 }

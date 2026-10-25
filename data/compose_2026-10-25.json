@@ -1,0 +1,51 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-landscape_review-ba74d558.html",
+    "stats": {
+      "body_chars": 3520,
+      "sections": 8,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（这意味着）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 11062,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Roundup: CSL & Alentis Enter Global Partnership, Jiangsu Nhwa Enters Global Licensing Deal with Somnivera",
+    "score": 6.2,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-event_report-f78b5b72.html",
+    "stats": {
+      "body_chars": 2579,
+      "sections": 7,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 3 处（不是…而是, 更重要的是）——必须改掉，不是换词而是拆句重写",
+      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
+    ],
+    "html_len": 7716,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "EQT以108亿欧元收购分子诊断专家Qiagen【AI生成】",
+    "score": 3.7,
+    "type": "event_report"
+  }
+]
