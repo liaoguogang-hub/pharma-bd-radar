@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-27",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "e37f4301fb176b8c",
+      "title": "吉利德收购瀚辰星泰口服IL-23R抑制剂HCXT-2001，I期国产大环肽创新药实现重磅出海",
+      "score": 7.8,
+      "member_ids": [
+        "e37f4301fb176b8c"
+      ],
+      "deal_keys": [
+        "gilead|pepstar|hcxt-2001"
+      ],
+      "members": [
+        {
+          "title": "吉利德收购瀚辰星泰口服IL-23R抑制剂HCXT-2001，I期国产大环肽创新药实现重磅出海",
+          "url": "https://www.pharnexcloud.com/zixun/sx_386076",
+          "score": 7.8,
+          "reasoning": "首付12.75亿美元收购I期口服IL-23R资产，MNC重金押注早期差异化管线"
+        }
+      ],
+      "reasoning": "首付12.75亿美元收购I期口服IL-23R资产，MNC重金押注早期差异化管线",
+      "verify_todo": [
+        "核查吉利德公告中的首付定义、里程碑上限及其他对价",
+        "确认HCXT-2001临床阶段及交易后开发权益",
+        "核查是否已有英文媒体跟进"
+      ],
+      "flags": []
+    }
+  ]
+}
