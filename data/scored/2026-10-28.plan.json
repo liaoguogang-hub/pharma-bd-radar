@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-28",
+  "count": 2,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "q3-2026-biopharma-deals",
+      "lead_id": "240859086991e29d",
+      "title": "Roundup: Teva Acquires BXCL501 for $57.5 Million Upfront, Rumi Therapeutics Enters Option Agreement for Fragile X PDE2 Inhibitor From Enthorin",
+      "score": 6.1,
+      "member_ids": [
+        "240859086991e29d"
+      ],
+      "deal_keys": [
+        "bioxcel|teva|bxcl501"
+      ],
+      "members": [
+        {
+          "title": "Roundup: Teva Acquires BXCL501 for $57.5 Million Upfront, Rumi Therapeutics Enters Option Agreement for Fragile X PDE2 Inhibitor From Enthorin",
+          "url": "https://www.pharmexec.com/view/teva-acquires-bxcl501-bioxcel-rumi-therapeutics-option-enthorin-fragile-x-pde2-inhibitor",
+          "score": 6.1,
+          "reasoning": "Teva以5750万美元首付收购BXCL501，另含一项Fragile X期权交易"
+        }
+      ],
+      "reasoning": "Teva以5750万美元首付收购BXCL501，另含一项Fragile X期权交易",
+      "verify_todo": [
+        "需拆分Teva收购BioXcel的里程碑上限和总对价",
+        "需单独抽取Rumi获得Enthorin PDE2抑制剂选择权的经济条款"
+      ],
+      "flags": [
+        "multi_deal_roundup"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "ivf-fertility-platform",
+      "lead_id": "807a5931bb998429",
+      "title": "Ferring to acquire ovary-in-a-dish startup Gameto for up to $1.38B",
+      "score": 3.9,
+      "member_ids": [
+        "807a5931bb998429"
+      ],
+      "deal_keys": [
+        "ferring|gameto|ivf-fertility-platform"
+      ],
+      "members": [
+        {
+          "title": "Ferring to acquire ovary-in-a-dish startup Gameto for up to $1.38B",
+          "url": "https://endpoints.news/ferring-to-acquire-ovary-in-a-dish-startup-gameto-for-up-to-1-38b/",
+          "score": 3.9,
+          "reasoning": "总额上限13.825亿美元，但首付未披露，收购平台型生育技术公司"
+        }
+      ],
+      "reasoning": "总额上限13.825亿美元，但首付未披露，收购平台型生育技术公司",
+      "verify_todo": [
+        "需核对首付款、对价支付结构及或有对价条件",
+        "需确认交易是否已经签约并完成交割"
+      ],
+      "flags": [
+        "undisclosed_upfront"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}

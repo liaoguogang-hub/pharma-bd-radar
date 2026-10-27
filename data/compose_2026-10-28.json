@@ -1,0 +1,51 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-landscape_review-24085908.html",
+    "stats": {
+      "body_chars": 3558,
+      "sections": 7,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 6,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 2 处（这意味着）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 11150,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Roundup: Teva Acquires BXCL501 for $57.5 Million Upfront, Rumi Therapeutics Enters Option Agreement for Fragile X PDE2 Inhibitor From Enthorin",
+    "score": 6.1,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-event_report-807a5931.html",
+    "stats": {
+      "body_chars": 2693,
+      "sections": 7,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 6,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 6 处（不是…而是, 也就是说, 换句话说, 深耕, 这意味着）——必须改掉，不是换词而是拆句重写",
+      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
+    ],
+    "html_len": 9662,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Ferring to acquire ovary-in-a-dish startup Gameto for up to $1.38B",
+    "score": 3.9,
+    "type": "event_report"
+  }
+]
