@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "5fb115a593740f10",
+      "title": "Another autoimmune CAR-T death; Treasury zeroes in on China deals",
+      "score": 7.6,
+      "member_ids": [
+        "5fb115a593740f10"
+      ],
+      "deal_keys": [
+        "gilead|pepgen|masked-tce"
+      ],
+      "members": [
+        {
+          "title": "Another autoimmune CAR-T death; Treasury zeroes in on China deals",
+          "url": "https://www.biopharmadive.com/news/autoimmune-bristol-death-treasury-china-gilead-pepstar-zymeworks/833901/",
+          "score": 7.6,
+          "reasoning": "近13亿美元收购线索具量级，但对手方、资产及付款结构需核实"
+        }
+      ],
+      "reasoning": "近13亿美元收购线索具量级，但对手方、资产及付款结构需核实",
+      "verify_todo": [
+        "需查交易公告确认Gilead的收购对手、标的资产及Zymeworks所处角色",
+        "需核实近13亿美元属于首付、收购对价还是潜在总额",
+        "需核实相关候选药物的临床阶段及首创性"
+      ],
+      "flags": [
+        "roundup"
+      ]
+    }
+  ]
+}

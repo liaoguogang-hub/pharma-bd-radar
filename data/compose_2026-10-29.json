@@ -1,0 +1,26 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-event_report-5fb115a5.html",
+    "stats": {
+      "body_chars": 3143,
+      "sections": 6,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 8886,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Another autoimmune CAR-T death; Treasury zeroes in on China deals",
+    "score": 7.6,
+    "type": "event_report"
+  }
+]
