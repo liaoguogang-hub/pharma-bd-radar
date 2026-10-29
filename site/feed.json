@@ -1,22 +1,22 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/10/29/01-event_report-5fb115a5.html",
-      "date": "2026-10-29",
-      "title": "13亿美元买下一个1期资产，吉利德押注口服多肽的下一轮竞争",
-      "kicker": "Event Report｜跨境收购",
-      "sub": "PepStar的HCXT-2001刚进入1期，吉利德已用近13亿美元现金买下收购权，挑战强生等对手的银屑病口服药市场",
-      "hook": "2026年10月22日，吉利德同意以近13亿美元现金收购上海PepStar Therapeutics一款刚进入1期的口服免疫疾病药物，资产代号HCXT-2001。13亿美元买一个1期项目，听上去像典型的跨国药企豪赌，但真正反常识的地方在定价逻辑：靶点IL-23R已被强生的Skyrizi、Tremfya和获批不久的Icotyde验证，成熟市场与拥挤管线同时摆在卖方面前。吉利德押的是一个能效仿小分子给药便利性、同时提供较长半衰期的大环肽分子。",
-      "chars": 3566,
-      "site_rel": "posts/2026/10/29/01-event_report-5fb115a5.html",
+      "rel": "2026/10/30/02-landscape_review-f25ab3c8.html",
+      "date": "2026-10-30",
+      "title": "13.4亿美元押注临床前资产，阿斯特拉捷利与EVERSANA交易呈现BD两极分化",
+      "kicker": "Landscape Review｜创新药授权与医疗商业服务 · 评分不达标",
+      "sub": "一边是以里程碑为主的高风险创新药选择权，一边是金额未披露的HEOR服务整合。",
+      "hook": "2026年10月27日，阿斯特拉捷利为一项尚未进入人体试验的IL-12融合蛋白，接受了最高13.4亿美元的开发与商业化承诺；其中2.85亿美元来自首付款与选择权行权付款的合计，真正的首付金额未找到公开数据。同一周，EVERSANA收购伦敦健康经济学公司Estima Scientific，交易金额同样未披露。两笔交易一端押注新药能否进入临床，另一端整合支付方价值评估工具。",
+      "chars": 4867,
+      "site_rel": "posts/2026/10/30/02-landscape_review-f25ab3c8.html",
       "needs_review": true,
       "problems": [
-        "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写"
+        "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
       ],
-      "below_threshold": false
+      "below_threshold": true
     }
   ],
-  "all_count": 28
+  "all_count": 29
 }

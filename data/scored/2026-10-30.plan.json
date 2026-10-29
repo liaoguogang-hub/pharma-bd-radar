@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-30",
+  "count": 2,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "biopharma-specialty-deals",
+      "lead_id": "2cb589341669a2ce",
+      "title": "Roundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 Billion",
+      "score": 4.9,
+      "member_ids": [
+        "2cb589341669a2ce"
+      ],
+      "deal_keys": [
+        "biomarin|unconfirmed-licensor|hm15421-gc1134a"
+      ],
+      "members": [
+        {
+          "title": "Roundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 Billion",
+          "url": "https://www.pharmexec.com/view/biomarin-license-hm15421-gc1134a-fabry-ferring-to-acquire-gameto",
+          "score": 4.9,
+          "reasoning": "BioMarin许可交易首付7000万美元，同文另有总额最高13.8亿美元收购，值得拆分核查"
+        }
+      ],
+      "reasoning": "BioMarin许可交易首付7000万美元，同文另有总额最高13.8亿美元收购，值得拆分核查",
+      "verify_todo": [
+        "需查原文确认BioMarin许可交易的授权方、独家权利范围及总交易金额",
+        "需拆分确认Ferring收购Gameto的首付、里程碑上限与潜在总金额"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": "il12-immuno-oncology",
+      "lead_id": "f25ab3c849f0081d",
+      "title": "Roundup: Astellas Licenses IL-12 Fusion Protein From Audax in Deal Worth Up to $1.34 Billion, EVERSANA Acquires Health Economics Firm Estima Scientific",
+      "score": 4.5,
+      "member_ids": [
+        "f25ab3c849f0081d"
+      ],
+      "deal_keys": [
+        "astellas|audax-biosciences|dax-044"
+      ],
+      "members": [
+        {
+          "title": "Roundup: Astellas Licenses IL-12 Fusion Protein From Audax in Deal Worth Up to $1.34 Billion, EVERSANA Acquires Health Economics Firm Estima Scientific",
+          "url": "https://www.pharmexec.com/view/astellas-audax-biosciences-option-eversana-estima-scientific",
+          "score": 4.5,
+          "reasoning": "阿斯特拉捷利临床前IL-12选择权总额最高13.4亿美元，同文另有咨询服务公司收购"
+        }
+      ],
+      "reasoning": "阿斯特拉捷利临床前IL-12选择权总额最高13.4亿美元，同文另有咨询服务公司收购",
+      "verify_todo": [
+        "需查协议确认首付金额，不以2.85亿美元合计款替代首付",
+        "需拆分EVERSANA收购Estima Scientific的金额、支付结构及战略影响"
+      ],
+      "flags": [
+        "upfront_not_disclosed",
+        "multi_deal_roundup"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
