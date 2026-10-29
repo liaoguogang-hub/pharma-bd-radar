@@ -18,7 +18,16 @@
 命令行：
     python check_ai_flavor.py <file.html> [more.html ...]
     python check_ai_flavor.py --text "要检查的正文"
+    python check_ai_flavor.py --scope in-place <file.html>
+    python check_ai_flavor.py --feedback <file.html>
     退出码 0 = 通过，1 = 有硬闸门未过
+
+编辑范围（--scope）：
+    structural  可删、并、重排（默认）
+    bounded     不删整句、不并句、不重排；只句内清理
+    in-place    不删句、不并句、不重排；只句内替换或删修饰
+    → 受限 scope 下，需要重排/拆句的建议降级为「需授权」提示，
+      但检出照常报告（句式命中和 P0 虚假归因在任何 scope 下都仍是硬闸门）。
 
 作为库：
     from check_ai_flavor import scan_html, scan_text
@@ -119,6 +128,52 @@ AI_WORDS_TIER2: tuple[str, ...] = (
     "本身", "恰恰", "往往", "其实", "某种程度上",
 )
 
+# Tier 3：humanizer 第 12 条词表的中文对应（blader/humanizer v3.0.0）
+#
+# 背景：humanizer 的 25 条模式里，只有第 12 条是【纯词表】（约 30 个英文高频词）：
+#   actually / additionally / crucial / delve / enhance / fostering /
+#   pivotal / robust(比喻义) / showcase / tapestry / testament /
+#   underscore / vibrant
+# 这些词的共同特征是——**AI 味主要来自词本身，而不是句式**。
+# 它们正好补上「0 句式命中」这个闸门覆盖不到的盲区：
+# 一段话可以句式全干净，但满篇「深入探讨 / 至关重要 / 彰显」。
+#
+# ⚠️ 为什么单独成 Tier 3 而不是并入 Tier 1：
+#   humanizer 明确说「词表之外的正式用词单独出现不算问题」，
+#   反过来说，词表内的词**单独出现也未必是问题**——
+#   「至关重要」在报道一个临床终点时就是准确的。
+#   所以这批词按【密度】判定，不按次数硬拦。
+#   （Tier 1 是"见到就标记但可豁免 2 次"，Tier 3 是"密度超标才提示"，
+#   两者的宽松度不同，不能混。）
+#
+# 对照表（英文 → 中文）：
+#   delve → 深入探讨 / 深入剖析    crucial → 至关重要 / 关键性
+#   pivotal → 关键性的 / 举足轻重  enhance → 增强 / 赋能
+#   fostering → 培育 / 促进        showcase → 展示 / 呈现
+#   tapestry → 错综复杂 / 多元     testament → 印证 / 见证
+#   underscore → 凸显 / 强调      vibrant → 充满活力的 / 蓬勃
+#   additionally → 此外 / 另外     actually → 实际上 / 其实
+AI_WORDS_TIER3: tuple[str, ...] = (
+    # delve
+    "深入探讨", "深入剖析", "深度剖析", "深入分析",
+    # crucial / pivotal
+    "至关重要", "举足轻重", "关键性的",
+    # enhance
+    "赋能", "增强了", "极大提升了",
+    # fostering
+    "培育了", "培育出", "促进了", "助推了",
+    # showcase
+    "展示出", "展示了", "呈现了",
+    # tapestry
+    "错综复杂", "多元",
+    # testament / underscore
+    "印证了", "见证了", "凸显了", "凸显出",
+    # vibrant
+    "充满活力的", "蓬勃", "活力四射",
+    # additionally / actually
+    "此外还", "实际上也", "值得一提的是", "值得一提的是",
+)
+
 # 缓冲词（avoid-ai-writing-zh #20c）——全文密度上限
 BUFFER_WORDS: tuple[str, ...] = (
     "这件事", "这个事情", "本身", "没有那么", "并没有那么",
@@ -169,6 +224,10 @@ THRESHOLDS = {
     "firstly_max": 0,         # 「首先其次最后」全文上限（#8）
     "fake_attribution_max": 0,  # 虚假归因（P0）
     "tier2_per_para_max": 2,  # Tier 2 词单段聚集上限（#18）
+    # Tier 3（humanizer §12 中文词表）密度上限，单位：每 1000 字。
+    # 比 Tier 2 宽，因为单个词可能完全正当（"至关重要"描述临床终点）。
+    # 5/千字 ≈ 300 字里出现 1.5 个，意思是「通篇都在用这类渲染词」。
+    "tier3_per_1k_max": 5,
     "bold_max": 5,            # 加粗处数上限（#21）
     "bullets_max": 4,         # 列表组数上限（#22）
     "metaphor_per_500_max": 2,  # 比喻密度（#33）
@@ -224,7 +283,67 @@ def plain_to_prose(text: str) -> str:
 
 
 # --------------------------------------------------------------------------
-# 4. 指标计算
+# 4. 编辑范围（scope）
+# --------------------------------------------------------------------------
+#
+# 来源：MrGeDiao/shuorenhua 的三档编辑范围模型。
+#
+# 为什么扫描器必须知道 scope：
+# 「去 AI 味」这个请求本身是**歧义**的——用户可能只想清掉套话，
+# 也可能允许你重排段落。如果用户只授权句内修改（in-place），
+# 扫描器却要求"段落中位数 ≤90 字"（需要拆段），那条建议就超出了授权范围。
+# 反过来，用户授权了 structural 却不拆段，就是漏掉了本可以做的工作。
+#
+# 三档：
+#   structural —— 可删、并、重排。全部建议都提。
+#   bounded    —— 不删整句、不并句、不重排；只句内清理。
+#                 需要拆段/拆句的建议降级为提示，不进软闸门。
+#   in-place   —— 不删句、不并句、不重排；只句内替换或删修饰。
+#                 结构性建议全部降级为提示。
+#
+# ⚠️ 注意：scope 只影响【建议的分级】，不影响【检出本身】。
+#    命中还是要报出来（否则用户不知道有这些问题），只是不再当作必须改的项。
+#    唯一例外：P0 虚假归因在任何 scope 下都是硬闸门——
+#    它是可信度问题，不是风格问题，跟编辑范围无关。
+
+SCOPES = ("structural", "bounded", "in-place")
+DEFAULT_SCOPE = "structural"
+
+# 需要改动句/段结构的建议 → 在受限 scope 下降级
+_STRUCTURAL_ADVISORY_MARKERS = ("段落长度中位数", "长句占比")
+
+
+def apply_scope(res: dict, scope: str) -> dict:
+    """按编辑范围给结果重新分级。
+
+    - 把需要结构性改动的软提示，在 bounded/in-place 下移出软提示，
+      改放进 scope_notes（单独一栏，明确说明"这些要改，但需要额外授权"）。
+    - P0 虚假归因、句式命中**不受 scope 影响**。
+    """
+    if scope not in SCOPES:
+        raise ValueError(f"scope must be one of {SCOPES}, got {scope!r}")
+    res["scope"] = scope
+    if scope == "structural":
+        res.setdefault("scope_notes", [])
+        return res
+
+    kept: list[str] = []
+    notes: list[str] = []
+    for r in res.get("soft_reasons", []):
+        if any(m in r for m in _STRUCTURAL_ADVISORY_MARKERS):
+            notes.append(
+                f"[需授权] {r}\n"
+                f"  当前 scope={scope}，需要重排/拆句才能改。\n"
+                f"  改法：用户说「可以重写」或切到 structural 后再处理。")
+        else:
+            kept.append(r)
+    res["soft_reasons"] = kept
+    res["scope_notes"] = notes
+    return res
+
+
+# --------------------------------------------------------------------------
+# 5. 指标计算
 # --------------------------------------------------------------------------
 
 _SENT_SPLIT = re.compile(r"[。！？!?]+")
@@ -307,6 +426,7 @@ def compute_metrics(prose: str) -> dict:
     fake_n = _count(FAKE_ATTRIBUTION)
     notbut_n = len(re.findall(AI_PATTERNS["不是…而是"], prose))
     firstly_n = _firstly_clusters(prose)
+    tier3_n = _count(AI_WORDS_TIER3)
 
     # Tier 2 词单段聚集
     tier2_clusters = 0
@@ -333,6 +453,8 @@ def compute_metrics(prose: str) -> dict:
         "notbut_total": notbut_n,
         "firstly_total": firstly_n,
         "tier2_clusters": tier2_clusters,
+        "tier3_total": tier3_n,
+        "tier3_per_1k": round(tier3_n / per_1k, 2),
         "density_reliable": density_reliable,
     }
 
@@ -379,6 +501,24 @@ def find_word_hits(prose: str) -> list[dict]:
                 "name": "Tier2聚集: " + "、".join(found),
                 "tier": 2,
                 "text": p[:90].replace("\n", " "),
+            })
+    return hits
+
+
+def find_tier3_hits(prose: str) -> list[dict]:
+    """Tier 3（humanizer §12 中文词表）：逐处标出位置，但由密度决定是否报。
+
+    为什么要单独一个函数而不是复用 find_word_hits：
+    Tier 1 是"见到就标"，豁免次数 2 次；Tier 3 是"密度超标才提示"，
+    判定逻辑不同。分开写可以避免以后有人把两者的宽松度搞混。
+    """
+    hits: list[dict] = []
+    for w in AI_WORDS_TIER3:
+        for m in re.finditer(re.escape(w), prose):
+            hits.append({
+                "name": w,
+                "tier": 3,
+                "text": prose[max(0, m.start() - 25): m.end() + 25].replace("\n", " "),
             })
     return hits
 
@@ -447,18 +587,30 @@ def find_density_hits(prose: str, metrics: dict) -> list[dict]:
             "severity": "P2",
             "text": "破折号用多了像 AI。改用逗号、句号或拆成两句。",
         })
+    if metrics["tier3_per_1k"] > t["tier3_per_1k_max"]:
+        out.append({
+            "name": f"渲染词密度 {metrics['tier3_per_1k']}/千字"
+                    f"（上限 {t['tier3_per_1k_max']}，共 {metrics['tier3_total']} 处）",
+            "severity": "P2",
+            "text": "「至关重要 / 深入探讨 / 赋能 / 凸显」这类渲染词密度过高。"
+                    "换成平实说法，或直接删掉修饰只留事实。",
+        })
     return out
 
 
 # --------------------------------------------------------------------------
-# 5. 对外接口
+# 6. 对外接口
 # --------------------------------------------------------------------------
 
-def scan_text(prose: str) -> dict:
-    """对纯文本正文做扫描。prose 应按段落用 \\n 分隔。"""
+def scan_text(prose: str, scope: str = DEFAULT_SCOPE) -> dict:
+    """对纯文本正文做扫描。prose 应按段落用 \\n 分隔。
+
+    scope: 编辑范围，见 apply_scope()。
+    """
     metrics = compute_metrics(prose)
     pat_hits = find_pattern_hits(prose)
     word_hits = find_word_hits(prose)
+    tier3_hits = find_tier3_hits(prose)
     density_hits = find_density_hits(prose, metrics)
     advisory_hits = find_advisory_hits(prose)
 
@@ -509,16 +661,19 @@ def scan_text(prose: str) -> dict:
         "passed": not hard,
         "reasons": hard,
         "soft_reasons": soft,
+        "scope_notes": [],
         "metrics": metrics,
         "pattern_hits": pat_hits,
         "word_hits": word_hits,
+        "tier3_hits": tier3_hits,
         "density_hits": density_hits,
         "advisory_hits": advisory_hits,
     }
 
 
-def scan_html(html: str) -> dict:
-    return scan_text(html_to_prose(html))
+def scan_html(html: str, scope: str = DEFAULT_SCOPE) -> dict:
+    res = scan_text(html_to_prose(html), scope=scope)
+    return apply_scope(res, scope)
 
 
 def feedback_lines(res: dict) -> list[str]:
@@ -536,34 +691,45 @@ def feedback_lines(res: dict) -> list[str]:
             f"「这意味着/也就是说」→ 直接给下一句事实。")
     for h in res.get("word_hits", []):
         out.append(f"- 删掉 AI 味词「{h['name']}」：…{h['text']}…")
+    for h in res.get("tier3_hits", []):
+        out.append(
+            f"- 换掉渲染词「{h['name']}」：…{h['text']}…\n"
+            f"  改法：换平实说法，或删掉修饰只留事实。"
+            f"（humanizer §12 词表的中文对应）")
     for h in res.get("density_hits", []):
         out.append(f"- {h['name']}：{h['text']}")
     for r in res.get("soft_reasons", []):
         out.append(f"- {r}\n"
                    f"  改法：把长句用句号断开，超过 45 字的句子拆成两句；"
                    f"一段只说一件事，控制在 90 字内。")
+    for r in res.get("scope_notes", []):
+        out.append(f"- {r}")
     return out
 
 
-def scan_file(path: str | Path) -> dict:
+def scan_file(path: str | Path, scope: str = DEFAULT_SCOPE) -> dict:
     p = Path(path)
     raw = p.read_text(encoding="utf-8", errors="replace")
     if p.suffix.lower() in (".html", ".htm"):
-        return scan_html(raw)
-    return scan_text(plain_to_prose(raw))
+        return scan_html(raw, scope=scope)
+    res = scan_text(plain_to_prose(raw))
+    return apply_scope(res, scope)
 
 
 def format_report(path: str, res: dict) -> str:
     m = res["metrics"]
+    scope = res.get("scope", DEFAULT_SCOPE)
     lines = [
         f"=== {path} ===",
-        f"  结论：{'✅ 通过' if res['passed'] else '❌ 未通过'}",
+        f"  结论：{'✅ 通过' if res['passed'] else '❌ 未通过'}"
+        f"｜编辑范围 {scope}",
         f"  正文字数 {m['chars']}｜段落 {m['para_count']}"
         f"（中位 {m['para_median']}，最长 {m['para_max']}）",
         f"  句子 {m['sent_count']}｜短句 {m['short_ratio']:.1%}（{m['short_count']}）"
         f"｜长句 {m['long_ratio']:.1%}（{m['long_count']}）",
         f"  密度：破折号 {m['dash_per_1k']}/千字｜缓冲词 {m['buffer_per_1k']}/千字"
-        f"｜物理动词 {m['physical_per_1k']}/千字｜「不是…而是」{m['notbut_total']} 处",
+        f"｜物理动词 {m['physical_per_1k']}/千字｜渲染词 {m.get('tier3_per_1k', 0)}/千字"
+        f"｜「不是…而是」{m['notbut_total']} 处",
     ]
     if res["pattern_hits"]:
         lines.append(f"  AI 句式 {len(res['pattern_hits'])} 处：")
@@ -572,6 +738,10 @@ def format_report(path: str, res: dict) -> str:
     if res["word_hits"]:
         lines.append(f"  AI 味词 {len(res['word_hits'])} 处：")
         for h in res["word_hits"]:
+            lines.append(f"    · [{h['name']}] …{h['text']}…")
+    if res.get("tier3_hits"):
+        lines.append(f"  渲染词（humanizer §12 中译）{len(res['tier3_hits'])} 处：")
+        for h in res["tier3_hits"]:
             lines.append(f"    · [{h['name']}] …{h['text']}…")
     if res.get("density_hits"):
         lines.append(f"  密度超标 {len(res['density_hits'])} 项：")
@@ -585,6 +755,8 @@ def format_report(path: str, res: dict) -> str:
         lines.append(f"  !! {r}")
     for r in res.get("soft_reasons", []):
         lines.append(f"  ~  {r}")
+    for r in res.get("scope_notes", []):
+        lines.append(f"  ?  {r}")
     return "\n".join(lines)
 
 
@@ -598,20 +770,68 @@ def _main(argv: list[str]) -> int:
         print(__doc__)
         return 0
 
-    if argv[0] == "--text":
-        res = scan_text(plain_to_prose(" ".join(argv[1:])))
-        print(format_report("(text)", res))
+    # ── 解析全局参数 ──────────────────────────────────────────
+    scope = DEFAULT_SCOPE
+    feedback = False
+    files: list[str] = []
+    text_mode = False
+
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--scope":
+            if i + 1 >= len(argv):
+                print(f"!! --scope 需要一个参数，取值：{' / '.join(SCOPES)}")
+                return 2
+            scope = argv[i + 1]
+            if scope not in SCOPES:
+                print(f"!! 未知 scope：{scope!r}，取值：{' / '.join(SCOPES)}")
+                return 2
+            i += 2
+            continue
+        if a == "--feedback":
+            feedback = True
+            i += 1
+            continue
+        if a == "--text":
+            text_mode = True
+            i += 1
+            continue
+        files.append(a)
+        i += 1
+
+    if text_mode:
+        body = " ".join(files)
+        if not body.strip():
+            print(__doc__)
+            return 0
+        res = scan_text(plain_to_prose(body))
+        res = apply_scope(res, scope)
+        if feedback:
+            for line in feedback_lines(res):
+                print(line)
+        else:
+            print(format_report("(text)", res))
         return 0 if res["passed"] else 1
 
+    if not files:
+        print(__doc__)
+        return 0
+
     all_passed = True
-    for path in argv:
+    for path in files:
         try:
-            res = scan_file(path)
+            res = scan_file(path, scope=scope)
         except Exception as e:
             print(f"=== {path} ===\n  !! 读取失败：{type(e).__name__}: {e}")
             all_passed = False
             continue
-        print(format_report(path, res))
+        if feedback:
+            print(f"=== {path} ===")
+            for line in feedback_lines(res):
+                print(line)
+        else:
+            print(format_report(path, res))
         print()
         all_passed = all_passed and res["passed"]
     return 0 if all_passed else 1
