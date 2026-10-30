@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-31",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "2cb589341669a2ce",
+      "title": "Roundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 Billion",
+      "score": 5.6,
+      "member_ids": [
+        "2cb589341669a2ce"
+      ],
+      "deal_keys": [
+        "biomarin|partner-unconfirmed|fabry-enzyme-therapy"
+      ],
+      "members": [
+        {
+          "title": "Roundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 Billion",
+          "url": "https://www.pharmexec.com/view/biomarin-license-hm15421-gc1134a-fabry-ferring-to-acquire-gameto",
+          "score": 5.6,
+          "reasoning": "BioMarin许可首付7000万美元；另有Ferring收购Gameto总额13.8亿美元，首付未披露"
+        }
+      ],
+      "reasoning": "BioMarin许可首付7000万美元；另有Ferring收购Gameto总额13.8亿美元，首付未披露",
+      "verify_todo": [
+        "需核实BioMarin许可方、研发阶段及总额口径",
+        "需核实Ferring收购Gameto的首付支付结构；标题所列13.8亿美元为总额"
+      ],
+      "flags": [
+        "multi_deal"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": "biopharma-deal-roundup-2026-10-28",
+      "lead_id": "cb4881796edd7c50",
+      "title": "Lilly shuffles business structure; Novartis writes off part of Avidity deal",
+      "score": 2.5,
+      "member_ids": [
+        "cb4881796edd7c50"
+      ],
+      "deal_keys": [
+        "astellas|undisclosed|oncology-immunotherapy"
+      ],
+      "members": [
+        {
+          "title": "Lilly shuffles business structure; Novartis writes off part of Avidity deal",
+          "url": "https://www.biopharmadive.com/news/lilly-global-markets-novartis-avidity-astellas-talzenna-prana/872857/",
+          "score": 2.5,
+          "reasoning": "Astellas肿瘤免疫交易或具竞争影响，但对手、资产及金额均未披露"
+        }
+      ],
+      "reasoning": "Astellas肿瘤免疫交易或具竞争影响，但对手、资产及金额均未披露",
+      "verify_todo": [
+        "需查原文确认Astellas交易对手及标的",
+        "需核实首付、里程碑上限和总额口径",
+        "需拆分Avidity等其他交易并建立独立deal_key"
+      ],
+      "flags": [
+        "mixed_roundup",
+        "deal_details_missing"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
