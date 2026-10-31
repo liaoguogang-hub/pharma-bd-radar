@@ -5,9 +5,9 @@
   "diagnosis": {
     "keep_threshold": 6.5,
     "candidates": 74,
-    "empty_material": 51,
-    "empty_material_pct": 68.91891891891892,
-    "top_score": 5.7,
+    "empty_material": 52,
+    "empty_material_pct": 70.27027027027027,
+    "top_score": 4.2,
     "reason": "no_fallback_candidate"
   }
 }
