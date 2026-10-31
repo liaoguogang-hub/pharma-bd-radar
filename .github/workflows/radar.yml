@@ -146,6 +146,9 @@ jobs:
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          # 2026-11-01：MiniMax 额度耗尽后切 DeepSeek Flash；
+          # 配置里 provider=deepseek_flash 优先读 DEEPSEEK_API_KEY。
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python score.py ${{ inputs.date }}
 
       - name: 选题
@@ -158,6 +161,9 @@ jobs:
         working-directory: src
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          # 2026-11-01：MiniMax 额度耗尽后切 DeepSeek Flash；
+          # 配置里 provider=deepseek_flash 优先读 DEEPSEEK_API_KEY。
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python compose.py ${{ inputs.date }}
 
       - name: 发布站点

@@ -79,20 +79,28 @@ exclude_keywords:
 #   也可分别用 DEEPSEEK_API_KEY / MINIMAX_API_KEY
 
 llm:
-  provider: minimax_domestic    # deepseek | minimax | minimax_domestic
-  model: MiniMax-M3.1-Flash-Preview
-  base_url: https://api.minimaxi.com/v1
+  provider: deepseek_flash    # 2026-11-01 MiniMax 额度耗尽，切 DeepSeek Flash
+  model: deepseek-flash
+  base_url: https://api.deepseek.com/v1
   temperature: 0.3
   # ⚠️ MiniMax 的 max_tokens 含思考 token，设太小会返回空 content
   max_tokens: 16000
   # JSON 模式：DeepSeek 支持；MiniMax 文档未声明支持，
   # 设为 false 时靠 prompt 约束 + 鲁棒解析器兜底
-  json_mode: false
+  json_mode: true      # DeepSeek 支持 response_format；失败自动降级
   batch_size: 30
   max_retries: 2
 
 # 备选 provider 配置（改 llm.provider 后自动切换）
 providers:
+  # 2026-11-01 新增：MiniMax 的 M Plan 额度耗尽（429 已达到 Token Plan 用量上限），
+  # 切到 DeepSeek Flash。key 走 DEEPSEEK_API_KEY（GitHub secret 同名）。
+  deepseek_flash:
+    base_url: https://api.deepseek.com/v1
+    model: deepseek-flash
+    max_tokens: 16000
+    json_mode: true          # DeepSeek 支持 response_format；不支持时会自动降级
+    env_key: DEEPSEEK_API_KEY
   deepseek:
     base_url: https://api.deepseek.com/v1
     model: deepseek-chat
@@ -128,9 +136,9 @@ providers:
 #   此前 M2.7 表现差，是因为它要同时写 HTML+CSS（格式负担）；
 #   把标签和样式交给代码后，推理模型的优势就体现出来了。
 gen_llm:
-  provider: minimax_domestic
-  model: MiniMax-M2.7
-  base_url: https://api.minimaxi.com/v1
+  provider: deepseek_flash
+  model: deepseek-flash
+  base_url: https://api.deepseek.com/v1
   # M2.7 的 max_tokens 含思考 token；纯内容输出约 4500 token，
   # 32000 有充足余量（写 HTML 时代需要这么多，现在其实用不满）
   max_tokens: 32000
