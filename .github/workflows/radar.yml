@@ -99,11 +99,25 @@ jobs:
           elif [ "$EVENT" = "workflow_dispatch" ] && [ "$FORCE" != "true" ] && [ "$SKIP_LLM" != "true" ] && [ "$PUBLISH_ONLY" != "true" ]; then
             NEED_CHECK=1
           fi
-          if [ "$NEED_CHECK" = "1" ] && [ -f "data/scored/$DATE.json" ]; then
+          # ⚠️ 2026-11-01 修 guard 毒点：scored 文件【存在但内容为空数组】
+          #    不算"跑过"——那是评分失败的残留（MiniMax 429 那天就是这样），
+          #    旧逻辑会因此把当天后续所有重试都跳过，只能 force=true 才能跑。
+          SCORED_EMPTY=0
+          if [ -f "data/scored/$DATE.json" ]; then
+            N=$(python3 -c "import json,sys;d=json.load(open('data/scored/$DATE.json'));print(len(d) if isinstance(d,list) else -1)" 2>/dev/null || echo -1)
+            if [ "$N" = "0" ]; then
+              SCORED_EMPTY=1
+            fi
+            echo "scored 条目数：$N"
+          fi
+          if [ "$NEED_CHECK" = "1" ] && [ -f "data/scored/$DATE.json" ] && [ "$SCORED_EMPTY" != "1" ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
-            echo "⏭  $DATE 已经跑过（data/scored/$DATE.json 存在），本次跳过。"
+            echo "⏭  $DATE 已经跑过（data/scored/$DATE.json 存在且非空），本次跳过。"
             echo "   触发来源：$EVENT  force=$FORCE"
           else
+            if [ "$SCORED_EMPTY" = "1" ]; then
+              echo "⚠️  $DATE 的 scored 文件是空数组（上次评分失败留下的），本次重跑。"
+            fi
             echo "skip=false" >> "$GITHUB_OUTPUT"
             echo "▶  $DATE 还没跑过，继续执行（触发来源：$EVENT force=$FORCE）。"
           fi
