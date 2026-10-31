@@ -195,16 +195,32 @@ def extract_claims(client, eff: dict, article_text: str,
             f"现在按 JSON 数组输出。")
     data: list[dict] = []
     last = ""
+    # 2026-11-01：走 provider 降级链（MiniMax 主用、DeepSeek 备用）。
+    # 主用 429/鉴权失败时不要直接判"核验失败"，切备用再试。
+    chain = [(client, eff)] + list(eff.get("_fallback_chain") or [])
     for _ in range(_EXTRACT_ATTEMPTS):
-        r = client.chat.completions.create(
-            model=eff["model"],
-            messages=[{"role": "system", "content": CLAIM_SYS},
-                      {"role": "user", "content": user}],
-            temperature=0,
-            max_tokens=eff.get("max_tokens", 4000),
-        )
-        last = (r.choices[0].message.content or "").strip()
-        data = claims_from_raw(last)
+        for _ci, (_c, _e) in enumerate(chain):
+            try:
+                r = _c.chat.completions.create(
+                    model=_e["model"],
+                    messages=[{"role": "system", "content": CLAIM_SYS},
+                              {"role": "user", "content": user}],
+                    temperature=0,
+                    max_tokens=_e.get("max_tokens", 4000),
+                )
+            except Exception as _ex:
+                if _ci + 1 < len(chain):
+                    print(f"[claimcheck] {_e.get('provider')} 调用失败"
+                          f"（{type(_ex).__name__}: {str(_ex)[:80]}）→ 切备用")
+                else:
+                    print(f"[claimcheck] {_e.get('provider')} 调用失败"
+                          f"（{type(_ex).__name__}: {str(_ex)[:80]}）")
+                last = ""
+                continue
+            last = (r.choices[0].message.content or "").strip()
+            data = claims_from_raw(last)
+            if data:
+                break
         if data:
             break
     if not data:

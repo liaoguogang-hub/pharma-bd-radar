@@ -207,15 +207,8 @@ score <7.5 的条目也要返回，但会被 select 阶段丢弃——
 """
 
 
-def _client(cfg: dict, all_providers: dict) -> tuple[OpenAI, dict]:
-    """
-    按配置创建客户端，自动选择 provider。
-    all_providers 来自 scoring.yaml 顶层的 providers 表。
-    返回 (client, 生效参数)，生效参数可能被 providers 表覆盖。
-    """
-    name = cfg.get("provider", "deepseek")
-    provs = all_providers or {}
-
+def _provider_eff(cfg: dict, provs: dict, name: str):
+    """构造某个 provider 的 (client, eff)。取不到 key 直接抛。"""
     p = provs.get(name)
     if p:
         base_url = p.get("base_url")
@@ -223,13 +216,16 @@ def _client(cfg: dict, all_providers: dict) -> tuple[OpenAI, dict]:
         max_tokens = p.get("max_tokens", cfg.get("max_tokens", 8000))
         json_mode = p.get("json_mode", False)
         env_names = [p.get("env_key", ""), "LLM_API_KEY", "OPENAI_API_KEY"]
-    else:
+    elif name == cfg.get("provider"):
+        # 没有 providers 表时的老路径（cfg 里直填 base_url/model）
         base_url = cfg.get("base_url")
         model = cfg.get("model")
         max_tokens = cfg.get("max_tokens", 8000)
         json_mode = cfg.get("json_mode", False)
         env_names = ["LLM_API_KEY", "DEEPSEEK_API_KEY", "MINIMAX_API_KEY",
                      "OPENAI_API_KEY"]
+    else:
+        raise RuntimeError(f"未配置的 provider: {name}（providers 表里没有）")
 
     api_key = None
     for env in env_names:
@@ -237,17 +233,49 @@ def _client(cfg: dict, all_providers: dict) -> tuple[OpenAI, dict]:
             api_key = os.getenv(env)
             break
     if not api_key:
-        raise RuntimeError(
-            f"缺少 API key。请设置 LLM_API_KEY（provider={name}）")
+        raise RuntimeError(f"缺少 API key（provider={name}）")
 
     eff = {"model": model, "max_tokens": max_tokens, "json_mode": json_mode,
            "temperature": cfg.get("temperature", 0.3),
            "base_url": base_url, "provider": name}
-
-    print(f"[llm] provider={name} model={model}")
-    print(f"     base_url={base_url} json_mode={json_mode}")
     return OpenAI(api_key=api_key, base_url=base_url,
                   timeout=180.0, max_retries=2), eff
+
+
+def _client(cfg: dict, all_providers: dict) -> tuple[OpenAI, dict]:
+    """
+    按配置创建客户端，支持【provider 降级链】。
+
+    cfg.provider 主用；cfg.fallback_providers 按顺序备用。
+
+    ⚠️ 2026-11-01 加。当天 MiniMax 的 M Plan 额度耗尽（文本 429、图片 429），
+    两个雷达 + 公众号 publisher 全断，只能人工改配置切 DeepSeek。
+    现在的口径是：**MiniMax 主用、DeepSeek Flash 备用**，主用挂掉时自动切，
+    不要再等人来改配置。
+    """
+    provs = all_providers or {}
+    names = [cfg.get("provider", "deepseek")]
+    for n in (cfg.get("fallback_providers") or []):
+        if n and n not in names:
+            names.append(n)
+
+    chain, errs = [], []
+    for name in names:
+        try:
+            c, e = _provider_eff(cfg, provs, name)
+            chain.append((c, e))
+        except Exception as ex:
+            errs.append(f"{name}: {type(ex).__name__}: {str(ex)[:80]}")
+            print(f"[llm] provider={name} 不可用（{type(ex).__name__}: {str(ex)[:60]}），跳过")
+    if not chain:
+        raise RuntimeError("所有 provider 都不可用：" + "；".join(errs))
+
+    client, eff = chain[0]
+    print(f"[llm] provider={eff['provider']} model={eff['model']}")
+    print(f"     base_url={eff['base_url']} json_mode={eff['json_mode']}"
+          + (f" | 备用: {[e['provider'] for _, e in chain[1:]]}" if len(chain) > 1 else ""))
+    eff["_fallback_chain"] = chain[1:]
+    return client, eff
 
 
 def _strip_think(text: str) -> str:
@@ -407,9 +435,19 @@ def _prefilter(items: list[RawItem], cfg: dict) -> list[RawItem]:
     return out
 
 
-def _call_llm(client: OpenAI, eff: dict, system: str, user: str,
-              retries: int = 2) -> str:
-    """统一调用入口，自动处理 json_mode 降级和 think 标签"""
+_NO_RETRY_HINTS = ("用量上限", "token plan", "insufficient", "balance",
+                   "429", "401", "invalid api key", "authentication")
+
+
+def _no_retry(msg: str) -> bool:
+    """额度用尽 / 鉴权失败：原地重试没有意义，立刻交给降级链。"""
+    m = (msg or "").lower()
+    return any(k in m for k in _NO_RETRY_HINTS)
+
+
+def _one_provider_call(client: OpenAI, eff: dict, system: str, user: str,
+                       retries: int = 2) -> str:
+    """单个 provider 内的调用：json_mode 不支持时自动降级。"""
     kwargs = {
         "model": eff["model"],
         "messages": [{"role": "system", "content": system},
@@ -420,12 +458,11 @@ def _call_llm(client: OpenAI, eff: dict, system: str, user: str,
     if eff.get("json_mode"):
         kwargs["response_format"] = {"type": "json_object"}
 
-    last_err = None
-    for attempt in range(retries + 1):
+    attempt = 0
+    while True:
         try:
             r = client.chat.completions.create(**kwargs)
             content = r.choices[0].message.content or ""
-            # 若 json_mode 生效但内容被 think 污染，退回普通模式
             if not content.strip() and eff.get("json_mode"):
                 kwargs.pop("response_format", None)
                 eff["json_mode"] = False
@@ -433,18 +470,36 @@ def _call_llm(client: OpenAI, eff: dict, system: str, user: str,
             return _strip_think(content)
         except Exception as e:
             msg = str(e)
-            # 不支持 response_format 就降级
             if "response_format" in msg or "json_object" in msg.lower():
                 kwargs.pop("response_format", None)
                 eff["json_mode"] = False
-                last_err = e
                 continue
-            last_err = e
-            if attempt < retries:
-                time.sleep(2 ** attempt)
-    if last_err:
-        raise last_err
-    return ""
+            if _no_retry(msg) or attempt >= retries:
+                raise
+            attempt += 1
+            time.sleep(2 ** (attempt - 1))
+
+
+def _call_llm(client: OpenAI, eff: dict, system: str, user: str,
+              retries: int = 2) -> str:
+    """
+    统一调用入口：provider 降级链 + json_mode 降级 + think 剥离。
+
+    主 provider 失败（含额度用尽）→ 立刻切 fallback_providers 里的下一个；
+    全部失败才抛错。
+    """
+    chain = [(client, eff)] + list(eff.get("_fallback_chain") or [])
+    last = None
+    for i, (c, e) in enumerate(chain):
+        try:
+            return _one_provider_call(c, e, system, user, retries=retries)
+        except Exception as ex:
+            last = ex
+            if i + 1 < len(chain):
+                nxt = chain[i + 1][1]
+                print(f"[llm] {e['provider']} 调用失败（{type(ex).__name__}: "
+                      f"{str(ex)[:90]}）→ 切备用 provider={nxt['provider']}")
+    raise last
 
 
 def score_items(items: list[RawItem], cfg: dict, client: OpenAI,
