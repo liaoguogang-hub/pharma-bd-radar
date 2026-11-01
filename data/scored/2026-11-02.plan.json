@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-02",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "anthropic-coefficient-bio",
+      "lead_id": "aaeccbfd0d83e861",
+      "title": "Anthropic’s one-person biotech buy; Jake Van Naarden’s dealmaking strategy; and more",
+      "score": 4.0,
+      "member_ids": [
+        "aaeccbfd0d83e861"
+      ],
+      "deal_keys": [
+        "anthropic|coefficient-bio|ai-drug-discovery"
+      ],
+      "members": [
+        {
+          "title": "Anthropic’s one-person biotech buy; Jake Van Naarden’s dealmaking strategy; and more",
+          "url": "https://endpoints.news/anthropics-one-person-biotech-buy-jake-van-naardens-dealmaking-strategy-and-more/",
+          "score": 4.0,
+          "reasoning": "AI企业收购微型biotech的轻资产模式具反差，但周报素材稀少、金额与阶段未披露"
+        }
+      ],
+      "reasoning": "AI企业收购微型biotech的轻资产模式具反差，但周报素材稀少、金额与阶段未披露",
+      "verify_todo": [
+        "核实交易公告、收购金额、标的资产及交割时间",
+        "区分本次交易与文章回顾的其他BD事件"
+      ],
+      "flags": [
+        "weekly_roundup",
+        "thin_material"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}

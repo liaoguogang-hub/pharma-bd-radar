@@ -1,6 +1,20 @@
 {
-  "date": "2026-11-01",
-  "count": 0,
-  "posts": [],
-  "all_count": 31
+  "date": "2026-11-02",
+  "count": 1,
+  "posts": [
+    {
+      "rel": "2026/11/02/01-event_report-aaeccbfd.html",
+      "date": "2026-11-02",
+      "title": "Anthropic买下“一人生物科技公司”，交易细节为何几乎为零",
+      "kicker": "Event Report｜跨界并购 · 评分不达标",
+      "sub": "一桩带有AI与生科反差色彩的收购，暴露了新型并购中最难核验的问题：外界不知道买方究竟买走了什么",
+      "hook": "2026年10月31日，Endpoints News周报把Anthropic收购一家“一人生物科技公司”列入头条。公开摘录没有交易金额、标的资产、研发阶段、交割时间，也没有披露卖方名称。对照同期授权交易，2026年首付款均值已升至2.1394亿美元，中位数为1.05亿美元；这桩收购却连一个数字都没有留下。反差足够大，可确认的事实也很少。",
+      "chars": 3706,
+      "site_rel": "posts/2026/11/02/01-event_report-aaeccbfd.html",
+      "needs_review": false,
+      "problems": [],
+      "below_threshold": true
+    }
+  ],
+  "all_count": 32
 }
