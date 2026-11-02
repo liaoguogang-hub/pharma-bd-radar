@@ -1,0 +1,27 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-event_report-a23f7e81.html",
+    "stats": {
+      "body_chars": 3577,
+      "sections": 6,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写",
+      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
+    ],
+    "html_len": 10219,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "AbbVie, Brise disclose deal for two preclinical migraine meds",
+    "score": 3.2,
+    "type": "event_report"
+  }
+]

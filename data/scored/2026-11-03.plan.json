@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-03",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "migraine-preclinical",
+      "lead_id": "a23f7e8142eb4851",
+      "title": "AbbVie, Brise disclose deal for two preclinical migraine meds",
+      "score": 3.2,
+      "member_ids": [
+        "a23f7e8142eb4851"
+      ],
+      "deal_keys": [
+        "abbvie|brise|preclinical-migraine-programs"
+      ],
+      "members": [
+        {
+          "title": "AbbVie, Brise disclose deal for two preclinical migraine meds",
+          "url": "https://endpoints.news/abbvie-brise-disclose-deal-for-two-preclinical-migraine-meds/",
+          "score": 3.2,
+          "reasoning": "临床前阶段MNC合作，首付、里程碑及总额均未披露；协议实际源于2024年，当前并非近日新交易。"
+        }
+      ],
+      "reasoning": "临床前阶段MNC合作，首付、里程碑及总额均未披露；协议实际源于2024年，当前并非近日新交易。",
+      "verify_todo": [
+        "核对双方2024年签署日期及本次披露日期",
+        "查证首付、里程碑、地域和项目范围",
+        "确认双方是否存在股权或共同股东关系"
+      ],
+      "flags": [
+        "stale_transaction"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}

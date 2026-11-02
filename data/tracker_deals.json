@@ -1,10 +1,94 @@
 [
   {
+    "id": "04aaa1e7e5376f75",
+    "source": "biopharmadive_china_deals",
+    "lang": "en",
+    "title": "AbbVie 从Brise Pharmaceuticals",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
+    "published": "2026-11-02T00:00:00+00:00",
+    "access": "full",
+    "mode": "tracker",
+    "content": "授权方(中国)：Brise Pharmaceuticals\n受让方：AbbVie\n日期：11/2/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：CNS disorders\n模态：Undisclosed\n阶段：Preclinical\n报道链接：",
+    "entity_tags": [],
+    "summary": "授权方(中国)：Brise Pharmaceuticals\n受让方：AbbVie\n日期：11/2/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：CNS disorders\n模态：Undisclosed\n阶段：Preclinical\n报道链接：",
+    "weight": 1.5,
+    "topics": [
+      "tracker",
+      "china_deals",
+      "structured"
+    ],
+    "fetch_time": "2026-11-02T22:15:48.394705+00:00",
+    "fetch_body": false
+  },
+  {
+    "id": "b16d3bbe843d472c",
+    "source": "biopharmadive_china_deals",
+    "lang": "en",
+    "title": "Gilead Sciences 从PepStar Therapeutics",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
+    "published": "2026-10-22T00:00:00+00:00",
+    "access": "full",
+    "mode": "tracker",
+    "content": "授权方(中国)：PepStar Therapeutics\n受让方：Gilead Sciences\n日期：10/22/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Immune diseases\n模态：Peptide\n阶段：Phase 1\n报道链接：",
+    "entity_tags": [],
+    "summary": "授权方(中国)：PepStar Therapeutics\n受让方：Gilead Sciences\n日期：10/22/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Immune diseases\n模态：Peptide\n阶段：Phase 1\n报道链接：",
+    "weight": 1.5,
+    "topics": [
+      "tracker",
+      "china_deals",
+      "structured"
+    ],
+    "fetch_time": "2026-11-02T22:15:48.394741+00:00",
+    "fetch_body": false
+  },
+  {
+    "id": "bd3eb3ee8fce5e19",
+    "source": "biopharmadive_china_deals",
+    "lang": "en",
+    "title": "Roche 从Hansoh Pharma",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
+    "published": "2026-10-19T00:00:00+00:00",
+    "access": "full",
+    "mode": "tracker",
+    "content": "授权方(中国)：Hansoh Pharma\n受让方：Roche\n日期：10/19/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Undisclosed\n模态：Biologics\n阶段：Preclinical\n报道链接：",
+    "entity_tags": [],
+    "summary": "授权方(中国)：Hansoh Pharma\n受让方：Roche\n日期：10/19/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Undisclosed\n模态：Biologics\n阶段：Preclinical\n报道链接：",
+    "weight": 1.5,
+    "topics": [
+      "tracker",
+      "china_deals",
+      "structured"
+    ],
+    "fetch_time": "2026-11-02T22:15:48.394761+00:00",
+    "fetch_body": false
+  },
+  {
+    "id": "410839fb9e844f22",
+    "source": "biopharmadive_china_deals",
+    "lang": "en",
+    "title": "Visara 从Wuhan Hitech Biological Pharma",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
+    "published": "2026-10-13T00:00:00+00:00",
+    "access": "full",
+    "mode": "tracker",
+    "content": "授权方(中国)：Wuhan Hitech Biological Pharma\n受让方：Visara\n日期：10/13/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Other\n模态：Biologics\n阶段：Phase 1\n报道链接：",
+    "entity_tags": [],
+    "summary": "授权方(中国)：Wuhan Hitech Biological Pharma\n受让方：Visara\n日期：10/13/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Other\n模态：Biologics\n阶段：Phase 1\n报道链接：",
+    "weight": 1.5,
+    "topics": [
+      "tracker",
+      "china_deals",
+      "structured"
+    ],
+    "fetch_time": "2026-11-02T22:15:48.394781+00:00",
+    "fetch_body": false
+  },
+  {
     "id": "8a3611bb1f5193c3",
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Rona Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-10-13T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -17,7 +101,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432080+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394799+00:00",
     "fetch_body": false
   },
   {
@@ -25,20 +109,20 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Defand Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-10-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
-    "content": "授权方(中国)：Defand Therapeutics\n受让方：Roche\n日期：10/8/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Cancer, Immune diseases\n模态：Small molecule\n阶段：Undisclosed\n报道链接：",
+    "content": "授权方(中国)：Defand Therapeutics\n受让方：Roche\n日期：10/8/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Multiple\n模态：Small molecule\n阶段：Undisclosed\n报道链接：",
     "entity_tags": [],
-    "summary": "授权方(中国)：Defand Therapeutics\n受让方：Roche\n日期：10/8/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Cancer, Immune diseases\n模态：Small molecule\n阶段：Undisclosed\n报道链接：",
+    "summary": "授权方(中国)：Defand Therapeutics\n受让方：Roche\n日期：10/8/26\n首付款：未披露\n总额：未披露\n药物/靶点： / \n治疗领域：Multiple\n模态：Small molecule\n阶段：Undisclosed\n报道链接：",
     "weight": 1.5,
     "topics": [
       "tracker",
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432130+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394817+00:00",
     "fetch_body": false
   },
   {
@@ -46,7 +130,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Novartis 从Abogen Biosciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-10-02T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -59,7 +143,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432167+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394834+00:00",
     "fetch_body": false
   },
   {
@@ -67,7 +151,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Somnivera 从Jiangsu Nhwa Pharmaceutical Co.",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-30T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -80,7 +164,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432203+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394859+00:00",
     "fetch_body": false
   },
   {
@@ -88,7 +172,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Novo Nordisk 从Hengrui Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-29T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -101,7 +185,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432235+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394879+00:00",
     "fetch_body": false
   },
   {
@@ -109,7 +193,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Merck & Co. 从SciBrunch Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-28T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -122,7 +206,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432267+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394897+00:00",
     "fetch_body": false
   },
   {
@@ -130,7 +214,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Earendil Labs",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-24T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -143,7 +227,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432299+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394914+00:00",
     "fetch_body": false
   },
   {
@@ -151,7 +235,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Eli Lilly 从InnoCare Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-24T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -164,7 +248,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432338+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394931+00:00",
     "fetch_body": false
   },
   {
@@ -172,7 +256,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Novartis 从Boomray Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-22T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -185,7 +269,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432372+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394948+00:00",
     "fetch_body": false
   },
   {
@@ -193,7 +277,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "GSK 从Chimagen Biosciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-15T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -206,7 +290,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432403+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394965+00:00",
     "fetch_body": false
   },
   {
@@ -214,7 +298,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "GSK 从Hutchmed",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -227,7 +311,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432434+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394983+00:00",
     "fetch_body": false
   },
   {
@@ -235,7 +319,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Simcere Pharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-09-01T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -248,7 +332,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432465+00:00",
+    "fetch_time": "2026-11-02T22:15:48.394999+00:00",
     "fetch_body": false
   },
   {
@@ -256,7 +340,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从DualityBio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-08-28T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -269,7 +353,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432494+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395015+00:00",
     "fetch_body": false
   },
   {
@@ -277,7 +361,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sentivera 从Haisco Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-08-25T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -290,7 +374,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432524+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395032+00:00",
     "fetch_body": false
   },
   {
@@ -298,7 +382,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Menarini Group 从Gan & Lee Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-08-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -311,7 +395,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432553+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395051+00:00",
     "fetch_body": false
   },
   {
@@ -319,7 +403,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Pathos AI 从Jiangsu Alphamab Biopharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-08-04T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -332,7 +416,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432605+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395068+00:00",
     "fetch_body": false
   },
   {
@@ -340,7 +424,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AstraZeneca 从Dizal",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-14T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -353,7 +437,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432636+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395088+00:00",
     "fetch_body": false
   },
   {
@@ -361,7 +445,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Avere Therapeutics 从Hansoh Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-14T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -374,7 +458,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432666+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395105+00:00",
     "fetch_body": false
   },
   {
@@ -382,7 +466,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Spero Therapeutics 从Innovent Biologics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-14T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -395,7 +479,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432696+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395122+00:00",
     "fetch_body": false
   },
   {
@@ -403,7 +487,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AstraZeneca 从Sino Biopharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -416,7 +500,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432726+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395139+00:00",
     "fetch_body": false
   },
   {
@@ -424,7 +508,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Whitehawk Therapeutics 从Biocytogen",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-07T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -437,7 +521,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432754+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395156+00:00",
     "fetch_body": false
   },
   {
@@ -445,7 +529,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AstraZeneca 从CSPC Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-07-02T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -458,7 +542,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432783+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395172+00:00",
     "fetch_body": false
   },
   {
@@ -466,7 +550,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "BioAuraGen 从Hebei Taihe Chunyu Biotechnology",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-26T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -479,7 +563,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432813+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395190+00:00",
     "fetch_body": false
   },
   {
@@ -487,7 +571,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Serapha Bio 从YolTech Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-23T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -500,7 +584,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432843+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395205+00:00",
     "fetch_body": false
   },
   {
@@ -508,7 +592,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Nuvectis Pharma 从Haisco Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-23T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -521,7 +605,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432874+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395221+00:00",
     "fetch_body": false
   },
   {
@@ -529,7 +613,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "K2 Therapeutics 从Antengene",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-21T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -542,7 +626,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432905+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395237+00:00",
     "fetch_body": false
   },
   {
@@ -550,7 +634,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Travere Therapeutics 从Everest Medicines",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-02T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -563,7 +647,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432937+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395253+00:00",
     "fetch_body": false
   },
   {
@@ -571,7 +655,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Eli Lilly 从Haisco Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-06-01T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -584,7 +668,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432968+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395269+00:00",
     "fetch_body": false
   },
   {
@@ -605,7 +689,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.432998+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395284+00:00",
     "fetch_body": false
   },
   {
@@ -626,7 +710,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433028+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395302+00:00",
     "fetch_body": false
   },
   {
@@ -634,7 +718,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "GSK 从SiranBio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-05-06T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -647,7 +731,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433057+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395318+00:00",
     "fetch_body": false
   },
   {
@@ -655,7 +739,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Cue Biopharma 从Ascendant Health Sciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-05-01T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -668,7 +752,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433086+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395334+00:00",
     "fetch_body": false
   },
   {
@@ -676,7 +760,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "BeOne Medicines 从Huahui Health",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-04-30T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -689,7 +773,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433116+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395350+00:00",
     "fetch_body": false
   },
   {
@@ -710,7 +794,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433147+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395365+00:00",
     "fetch_body": false
   },
   {
@@ -718,7 +802,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "K2 Therapeutics 从Adcoris",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-04-16T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -731,7 +815,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433178+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395381+00:00",
     "fetch_body": false
   },
   {
@@ -752,7 +836,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433208+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395397+00:00",
     "fetch_body": false
   },
   {
@@ -760,7 +844,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sanofi 从Sino Biopharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-03-04T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -773,7 +857,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433238+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395413+00:00",
     "fetch_body": false
   },
   {
@@ -781,7 +865,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "UCB 从Antengene",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-03-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -794,7 +878,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433267+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395429+00:00",
     "fetch_body": false
   },
   {
@@ -802,7 +886,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Pfizer 从Sciwind Biosciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-24T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -815,7 +899,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433297+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395454+00:00",
     "fetch_body": false
   },
   {
@@ -823,7 +907,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "GSK 从Frontier Biotechnologies",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-24T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -836,7 +920,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433325+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395470+00:00",
     "fetch_body": false
   },
   {
@@ -844,7 +928,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Solstice Oncology 从Harbour BioMed",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-23T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -857,7 +941,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433355+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395486+00:00",
     "fetch_body": false
   },
   {
@@ -865,7 +949,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Gilead Sciences 从Genhouse Bio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-13T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -878,7 +962,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433384+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395502+00:00",
     "fetch_body": false
   },
   {
@@ -899,7 +983,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433414+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395519+00:00",
     "fetch_body": false
   },
   {
@@ -907,7 +991,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Eli Lilly 从Innovent Biologics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-09T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -920,7 +1004,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433447+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395534+00:00",
     "fetch_body": false
   },
   {
@@ -928,7 +1012,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从SanegeneBio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-02-02T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -941,7 +1025,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433479+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395550+00:00",
     "fetch_body": false
   },
   {
@@ -962,7 +1046,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433510+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395567+00:00",
     "fetch_body": false
   },
   {
@@ -970,7 +1054,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Formation Bio 从Chia Tai Feng Hai Pharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-29T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -983,7 +1067,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433540+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395582+00:00",
     "fetch_body": false
   },
   {
@@ -991,7 +1075,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Boehringer Ingelheim 从Simcere Pharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-27T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1004,7 +1088,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433587+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395598+00:00",
     "fetch_body": false
   },
   {
@@ -1012,7 +1096,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Ellipses Pharma 从Innolake Biopharm",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-19T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1025,7 +1109,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433620+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395614+00:00",
     "fetch_body": false
   },
   {
@@ -1033,7 +1117,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Mosaica Medicines 从ABM Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-14T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1046,7 +1130,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433649+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395630+00:00",
     "fetch_body": false
   },
   {
@@ -1054,7 +1138,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AbbVie 从Remegen",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-12T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1067,7 +1151,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433678+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395645+00:00",
     "fetch_body": false
   },
   {
@@ -1075,7 +1159,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Novartis 从Zonsen PepLib Biotech",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-12T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1088,7 +1172,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433707+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395661+00:00",
     "fetch_body": false
   },
   {
@@ -1096,7 +1180,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AirNexis Therapeutics 从Haisco Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1109,7 +1193,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433736+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395677+00:00",
     "fetch_body": false
   },
   {
@@ -1117,7 +1201,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从MediLink Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1130,7 +1214,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433765+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395692+00:00",
     "fetch_body": false
   },
   {
@@ -1138,7 +1222,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sanofi 从Earendil Labs",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2026-01-05T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1151,7 +1235,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433794+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395708+00:00",
     "fetch_body": false
   },
   {
@@ -1159,7 +1243,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AbbVie 从Zellgen Biopharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-31T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1172,7 +1256,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433823+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395723+00:00",
     "fetch_body": false
   },
   {
@@ -1180,7 +1264,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Ipsen 从Simcere Zaiming",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-22T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1193,7 +1277,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433851+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395739+00:00",
     "fetch_body": false
   },
   {
@@ -1201,7 +1285,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "MultiValent Biotherapies 从Tongyi Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-22T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1214,7 +1298,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433882+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395756+00:00",
     "fetch_body": false
   },
   {
@@ -1222,7 +1306,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Windward Bio 从Qyuns Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-21T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1235,7 +1319,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433915+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395772+00:00",
     "fetch_body": false
   },
   {
@@ -1243,7 +1327,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "AstraZeneca 从Jacobio Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-21T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1256,7 +1340,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433946+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395788+00:00",
     "fetch_body": false
   },
   {
@@ -1264,7 +1348,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Bristol Myers Squibb 从Harbour BioMed",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-16T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1277,7 +1361,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.433975+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395804+00:00",
     "fetch_body": false
   },
   {
@@ -1285,7 +1369,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Formation Bio 从Lynk Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1298,7 +1382,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434004+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395820+00:00",
     "fetch_body": false
   },
   {
@@ -1319,7 +1403,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434033+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395836+00:00",
     "fetch_body": false
   },
   {
@@ -1327,7 +1411,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Crescent Biopharma 从Kelun Biotech",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-12-04T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1340,7 +1424,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434062+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395852+00:00",
     "fetch_body": false
   },
   {
@@ -1348,7 +1432,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Lyell Immunopharma 从Innovative Cellular Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-11-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1361,7 +1445,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434091+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395868+00:00",
     "fetch_body": false
   },
   {
@@ -1369,7 +1453,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Neurocrine Biosciences 从TransThera",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-11-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1382,7 +1466,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434121+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395883+00:00",
     "fetch_body": false
   },
   {
@@ -1390,7 +1474,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sidera Bio 从Shanghai Minwei Biotechnology",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-10-31T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1403,7 +1487,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434150+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395899+00:00",
     "fetch_body": false
   },
   {
@@ -1411,7 +1495,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Qyuns Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-10-28T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1424,7 +1508,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434178+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395916+00:00",
     "fetch_body": false
   },
   {
@@ -1445,7 +1529,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434206+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395934+00:00",
     "fetch_body": false
   },
   {
@@ -1453,7 +1537,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Hansoh Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-10-17T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1466,7 +1550,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434235+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395949+00:00",
     "fetch_body": false
   },
   {
@@ -1474,7 +1558,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Dianthus Therapeutics 从Leads Biolabs",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-10-16T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1487,7 +1571,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434267+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395965+00:00",
     "fetch_body": false
   },
   {
@@ -1508,7 +1592,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434297+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395981+00:00",
     "fetch_body": false
   },
   {
@@ -1516,7 +1600,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Kalexo Bio 从Mabwell (Shanghai) Bioscience",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-09-17T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1529,7 +1613,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434326+00:00",
+    "fetch_time": "2026-11-02T22:15:48.395997+00:00",
     "fetch_body": false
   },
   {
@@ -1550,7 +1634,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434355+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396013+00:00",
     "fetch_body": false
   },
   {
@@ -1558,7 +1642,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Radiance Biopharma 从Novatim Immune Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-09-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1571,7 +1655,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434384+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396029+00:00",
     "fetch_body": false
   },
   {
@@ -1579,7 +1663,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Novartis 从Argo Biopharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-09-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1592,7 +1676,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434413+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396044+00:00",
     "fetch_body": false
   },
   {
@@ -1600,7 +1684,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sitala 从Fosun Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-08-27T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1613,7 +1697,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434442+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396059+00:00",
     "fetch_body": false
   },
   {
@@ -1634,7 +1718,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434472+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396075+00:00",
     "fetch_body": false
   },
   {
@@ -1655,7 +1739,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434501+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396091+00:00",
     "fetch_body": false
   },
   {
@@ -1676,7 +1760,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434530+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396107+00:00",
     "fetch_body": false
   },
   {
@@ -1684,7 +1768,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Erigen 从Keyi Pharmaceutical",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-07-22T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1697,7 +1781,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434559+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396123+00:00",
     "fetch_body": false
   },
   {
@@ -1705,7 +1789,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "BeOne Medicines 从Biocytogen Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-07-09T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1718,7 +1802,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434605+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396139+00:00",
     "fetch_body": false
   },
   {
@@ -1726,7 +1810,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Istuto Gentili 从CStone Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-07-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1739,7 +1823,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434639+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396154+00:00",
     "fetch_body": false
   },
   {
@@ -1747,7 +1831,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Adagene 从ConjugateBio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-07-08T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1760,7 +1844,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434668+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396170+00:00",
     "fetch_body": false
   },
   {
@@ -1768,7 +1852,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Calico Life Sciences 从Mabwell (Shanghai) Bioscience",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-06-26T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1781,7 +1865,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434697+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396186+00:00",
     "fetch_body": false
   },
   {
@@ -1802,7 +1886,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434725+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396201+00:00",
     "fetch_body": false
   },
   {
@@ -1810,7 +1894,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Otsuka Pharmaceutical 从Harbour BioMed",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-06-22T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1823,7 +1907,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434754+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396217+00:00",
     "fetch_body": false
   },
   {
@@ -1831,7 +1915,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "NextCure 从Simcere Zaiming",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-06-16T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1844,7 +1928,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434782+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396233+00:00",
     "fetch_body": false
   },
   {
@@ -1852,7 +1936,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Cullinan Therapeutics 从Genrix Bio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-06-04T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1865,7 +1949,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434810+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396249+00:00",
     "fetch_body": false
   },
   {
@@ -1873,7 +1957,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Transpire Bio 从Intragrand Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-06-03T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1886,7 +1970,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434838+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396265+00:00",
     "fetch_body": false
   },
   {
@@ -1907,7 +1991,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434867+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396281+00:00",
     "fetch_body": false
   },
   {
@@ -1928,7 +2012,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434895+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396298+00:00",
     "fetch_body": false
   },
   {
@@ -1936,7 +2020,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Juri Biosciences 从EpimAb Biotherapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-05-27T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1949,7 +2033,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434924+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396313+00:00",
     "fetch_body": false
   },
   {
@@ -1957,7 +2041,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Servier 从BioNova Pharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-05-23T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -1970,7 +2054,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434953+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396329+00:00",
     "fetch_body": false
   },
   {
@@ -1991,7 +2075,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.434982+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396345+00:00",
     "fetch_body": false
   },
   {
@@ -2012,7 +2096,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435023+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396361+00:00",
     "fetch_body": false
   },
   {
@@ -2020,7 +2104,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Caldera Therapeutics 从Qyuns Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-04-23T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2033,7 +2117,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435052+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396377+00:00",
     "fetch_body": false
   },
   {
@@ -2041,7 +2125,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Ollin Biosciences 从VelaVigo Bio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-04-17T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2054,7 +2138,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435080+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396393+00:00",
     "fetch_body": false
   },
   {
@@ -2075,7 +2159,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435108+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396409+00:00",
     "fetch_body": false
   },
   {
@@ -2083,7 +2167,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Merck KGaA 从Hengrui Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-04-07T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2096,7 +2180,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435136+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396424+00:00",
     "fetch_body": false
   },
   {
@@ -2104,7 +2188,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Bayer 从Puhe BioPharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-03-26T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2117,7 +2201,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435164+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396448+00:00",
     "fetch_body": false
   },
   {
@@ -2138,7 +2222,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435193+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396464+00:00",
     "fetch_body": false
   },
   {
@@ -2159,7 +2243,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435222+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396480+00:00",
     "fetch_body": false
   },
   {
@@ -2167,7 +2251,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Photys Therapeutics 从Hangzhou Polymed Biopharmaceuticals",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-02-20T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2180,7 +2264,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435251+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396496+00:00",
     "fetch_body": false
   },
   {
@@ -2188,7 +2272,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Radiance Biopharma 从CSPC Pharmaceutical Group",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-02-19T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2201,7 +2285,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435300+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396512+00:00",
     "fetch_body": false
   },
   {
@@ -2209,7 +2293,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "ArriVent BioPharma 从Lepu Biopharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-21T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2222,7 +2306,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435332+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396528+00:00",
     "fetch_body": false
   },
   {
@@ -2230,7 +2314,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Prolium Bioscience 从KeyMed Biosciences, InnoCare Pharma",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-20T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2243,7 +2327,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435362+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396544+00:00",
     "fetch_body": false
   },
   {
@@ -2251,7 +2335,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Abbvie 从Simcere Zaiming",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-13T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2264,7 +2348,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435390+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396560+00:00",
     "fetch_body": false
   },
   {
@@ -2272,7 +2356,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Windward Bio 从Harbour BioMed, Kelun Biotech",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2285,7 +2369,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435419+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396576+00:00",
     "fetch_body": false
   },
   {
@@ -2306,7 +2390,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435448+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396607+00:00",
     "fetch_body": false
   },
   {
@@ -2314,7 +2398,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Johnson & Johnson 从Hangzhou HealZen Therapeutics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2327,7 +2411,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435477+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396623+00:00",
     "fetch_body": false
   },
   {
@@ -2335,7 +2419,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Ouro Medicines 从Keymed Biosciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-10T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2348,7 +2432,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435505+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396640+00:00",
     "fetch_body": false
   },
   {
@@ -2356,7 +2440,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Timberlyne Therapeutics 从Keymed Biosciences",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-09T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2369,7 +2453,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435533+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396655+00:00",
     "fetch_body": false
   },
   {
@@ -2377,7 +2461,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Sotio Biotech 从Biocytogen",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-09T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2390,7 +2474,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435562+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396671+00:00",
     "fetch_body": false
   },
   {
@@ -2398,7 +2482,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Climb Bio 从Beijing Mabworks Biotech",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-09T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2411,7 +2495,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435608+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396687+00:00",
     "fetch_body": false
   },
   {
@@ -2419,7 +2503,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Avenzo Therapeutics 从DualityBio",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-07T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2432,7 +2516,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435637+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396702+00:00",
     "fetch_body": false
   },
   {
@@ -2440,7 +2524,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Candid Therapeutics 从WuXi Biologics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-06T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2453,7 +2537,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435665+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396718+00:00",
     "fetch_body": false
   },
   {
@@ -2461,7 +2545,7 @@
     "source": "biopharmadive_china_deals",
     "lang": "en",
     "title": "Roche 从Innovent Biologics",
-    "url": "https://datawrapper.dwcdn.net/ZTFPS/28/",
+    "url": "https://datawrapper.dwcdn.net/ZTFPS/29/",
     "published": "2025-01-01T00:00:00+00:00",
     "access": "full",
     "mode": "tracker",
@@ -2474,7 +2558,7 @@
       "china_deals",
       "structured"
     ],
-    "fetch_time": "2026-11-01T22:15:59.435693+00:00",
+    "fetch_time": "2026-11-02T22:15:48.396734+00:00",
     "fetch_body": false
   }
 ]
