@@ -1,0 +1,43 @@
+[
+  {
+    "ok": false,
+    "error": "- 小节太少（1 个，至少 3 个）\n- 缺少 FN 来源脚注\n- 正文字数 328 超出范围（目标 2250-3900）\n- [P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。\n- 表格列数不一致：表头 4 列，有一行 1 列\n\n# ⚠️ AI 味句式（逐句改写，位置已标出）\n- 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。",
+    "stats": {
+      "body_chars": 328,
+      "sections": 1,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 0,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "score": 5.4,
+    "type": "historical_compare"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-historical_compare-47b3b677.html",
+    "stats": {
+      "body_chars": 3569,
+      "sections": 6,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
+    ],
+    "html_len": 9462,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "一项近8亿美元的合作被终止",
+    "score": 5.4,
+    "type": "historical_compare"
+  }
+]

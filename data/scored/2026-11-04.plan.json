@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-04",
+  "count": 2,
+  "plan": [
+    {
+      "type": "historical_compare",
+      "cluster_key": "braintransporter",
+      "lead_id": "c13ca2e32782eccc",
+      "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+      "score": 5.4,
+      "member_ids": [
+        "c13ca2e32782eccc"
+      ],
+      "deal_keys": [
+        "bioarctic|novartis|braintransporter"
+      ],
+      "members": [
+        {
+          "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+          "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+          "score": 5.4,
+          "reasoning": "高潜在总额合作上线14个月即终止，适合复盘MNC合作筛选和退出风险"
+        }
+      ],
+      "reasoning": "高潜在总额合作上线14个月即终止，适合复盘MNC合作筛选和退出风险",
+      "verify_todo": [
+        "用双方公告确认首付、里程碑上限及已付款项处理",
+        "核实终止原因仅来自组合决策的表述"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "historical_compare",
+      "cluster_key": "braintransporter",
+      "lead_id": "47b3b6770e73b640",
+      "title": "一项近8亿美元的合作被终止",
+      "score": 5.4,
+      "member_ids": [
+        "47b3b6770e73b640"
+      ],
+      "deal_keys": [
+        "bioarctic|novartis|braintransporter"
+      ],
+      "members": [
+        {
+          "title": "一项近8亿美元的合作被终止",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_387924",
+          "score": 5.4,
+          "reasoning": "首付3000万美元、潜在总额8.02亿美元的合作快速终止，值得拆解退出风险"
+        }
+      ],
+      "reasoning": "首付3000万美元、潜在总额8.02亿美元的合作快速终止，值得拆解退出风险",
+      "verify_todo": [
+        "确认7.72亿美元为里程碑上限而非已支付金额",
+        "核实3000万美元首付是否由诺华保留"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
