@@ -1,22 +1,20 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/11/04/02-historical_compare-47b3b677.html",
-      "date": "2026-11-04",
-      "title": "8亿美元的合作只撑了14个月：BrainTransporter交易终止给平台授权什么提醒",
-      "kicker": "Event Report｜创新药授权 · 评分不达标",
-      "sub": "诺华终止与BioArctic的脑递送合作，首付款仍被诺华保留，行业开始重新审视早期平台交易的风险定价",
-      "hook": "2025年8月，诺华与BioArctic签下一笔潜在总额8.02亿美元的合作。约14个月后，诺华按下终止键。3000万美元首付款没有回到BioArctic手中，后续最高7.72亿美元里程碑也失去兑现机会。BrainTransporter的技术方向仍获礼来、BMS等公司关注，但一笔大额合作提前结束，已经把平台型授权的风险摆到台面上。",
-      "chars": 4196,
-      "site_rel": "posts/2026/11/04/02-historical_compare-47b3b677.html",
-      "needs_review": true,
-      "problems": [
-        "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
-      ],
-      "below_threshold": true
+      "rel": "2026/11/05/01-event_report-4704ba8f.html",
+      "date": "2026-11-05",
+      "title": "3.58亿美元首付撬动超70亿美元，勃林格这次押注中国肿瘤管线",
+      "kicker": "Event Report｜创新药授权",
+      "sub": "ADC与TCE项目获得跨国药企加码，但开发阶段、权益边界和里程碑仍待披露",
+      "hook": "2026年11月4日，勃林格殷格翰以3.58亿美元首付，拿下一笔潜在总额超过70亿美元的中国肿瘤药授权。按70亿美元粗算，首付款只占总价值的约5.1%，超过95%的价值都押在后续开发、监管和商业化节点上。金额很大，真正待解的却是三个空白：具体分子、临床阶段，以及中国之外的权益怎么分。",
+      "chars": 3666,
+      "site_rel": "posts/2026/11/05/01-event_report-4704ba8f.html",
+      "needs_review": false,
+      "problems": [],
+      "below_threshold": false
     }
   ],
-  "all_count": 34
+  "all_count": 35
 }

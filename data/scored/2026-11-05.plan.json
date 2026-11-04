@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "4704ba8f20bcd116",
+      "title": "Boehringer Ingelheim strikes $7B backloaded ADC, TCE cancer deal with China's Sino",
+      "score": 5.7,
+      "member_ids": [
+        "4704ba8f20bcd116"
+      ],
+      "deal_keys": [
+        "boehringer-ingelheim|sino-biopharmaceutical|tce-adc"
+      ],
+      "members": [
+        {
+          "title": "Boehringer Ingelheim strikes $7B backloaded ADC, TCE cancer deal with China's Sino",
+          "url": "https://endpoints.news/boehringer-ingelheim-strikes-7b-backloaded-adc-tce-cancer-deal-with-chinas-sino/",
+          "score": 5.7,
+          "reasoning": "首付3.58亿美元、潜在总额超70亿美元，MNC加码中国肿瘤管线，值得深挖"
+        }
+      ],
+      "reasoning": "首付3.58亿美元、潜在总额超70亿美元，MNC加码中国肿瘤管线，值得深挖",
+      "verify_todo": [
+        "核实ADC资产的具体分子名称、靶点及开发阶段",
+        "确认3.58亿美元的首付构成及7亿美元以上总额的里程碑口径",
+        "核实双方区域权利安排、共同开发责任及销售分成"
+      ],
+      "flags": [
+        "upfront_disclosed",
+        "backloaded_total",
+        "stage_unconfirmed"
+      ]
+    }
+  ]
+}
