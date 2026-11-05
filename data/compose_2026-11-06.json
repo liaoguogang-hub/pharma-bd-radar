@@ -1,0 +1,52 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-historical_compare-f7be4c6e.html",
+    "stats": {
+      "body_chars": 2921,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "[P1] Tier2 词单段聚集 1 段（上限 2 个/段）：同一段出现 2 个以上缓冲/填充类词，就是 AI 在回避表态。",
+      "标题金额与正文不符：标题称 15.5亿首付，正文中首付为 15.5/2.3715亿"
+    ],
+    "html_len": 8641,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Servier's $1.5B bet on Edgewise drug fails five months in",
+    "score": 7.7,
+    "type": "historical_compare"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-event_report-4d7b1b84.html",
+    "stats": {
+      "body_chars": 2689,
+      "sections": 7,
+      "tables": 4,
+      "boxes": 0,
+      "footnotes": 3,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写",
+      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
+    ],
+    "html_len": 9241,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "China biotech Minghui does thyroid eye disease deal for $110M upfront",
+    "score": 6.9,
+    "type": "event_report"
+  }
+]
