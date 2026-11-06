@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-07",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "glp-1-telehealth",
+      "lead_id": "4d81a33d493cb621",
+      "title": "Lilly, Hims reach GLP-1 deal; Alnylam sales chief to step down",
+      "score": 4.7,
+      "member_ids": [
+        "4d81a33d493cb621"
+      ],
+      "deal_keys": [
+        "eli-lilly|hims|glp-1"
+      ],
+      "members": [
+        {
+          "title": "Lilly, Hims reach GLP-1 deal; Alnylam sales chief to step down",
+          "url": "https://www.biopharmadive.com/news/lilly-hims-alnylam-boehringer-ultragenyx-sevasemten-ani-egetis/873843/",
+          "score": 4.7,
+          "reasoning": "MNC与远程医疗平台建立GLP-1合作，金额未披露且为综合新闻"
+        }
+      ],
+      "reasoning": "MNC与远程医疗平台建立GLP-1合作，金额未披露且为综合新闻",
+      "verify_todo": [
+        "核实双方协议性质、产品范围及商业化安排",
+        "核实是否存在首付、里程碑或收入分成"
+      ],
+      "flags": [
+        "roundup",
+        "undisclosed_terms"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "1d536fda330d0791",
+      "title": "Karyopharm Enters Chapter 11 in Planned Merger With Ayrmid",
+      "score": 3.5,
+      "member_ids": [
+        "1d536fda330d0791"
+      ],
+      "deal_keys": [
+        "ayrmid|karyopharm|gamida-cell"
+      ],
+      "members": [
+        {
+          "title": "Karyopharm Enters Chapter 11 in Planned Merger With Ayrmid",
+          "url": "https://www.pharmexec.com/view/karyopharm-enters-chapter-11-planned-merger-ayrmid",
+          "score": 3.5,
+          "reasoning": "Chapter 11框架合并兼具M&A与重组属性，值得核查竞购、债权转换及资产承接"
+        }
+      ],
+      "reasoning": "Chapter 11框架合并兼具M&A与重组属性，值得核查竞购、债权转换及资产承接",
+      "verify_todo": [
+        "确认约2.76亿美元属于债务及股权转换规模还是完整交易对价",
+        "核查竞购机制、债权清偿比例、资产承接范围及预计交割条件"
+      ],
+      "flags": [
+        "bankruptcy_merger",
+        "terms_undisclosed"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
