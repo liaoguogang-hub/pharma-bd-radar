@@ -1,37 +1,6 @@
 {
-  "date": "2026-11-07",
-  "count": 2,
-  "posts": [
-    {
-      "rel": "2026/11/07/02-event_report-1d536fda.html",
-      "date": "2026-11-07",
-      "title": "Karyopharm破产重组背后：一笔没有现金分给原股东的“全股权交易”",
-      "kicker": "Event Report｜破产保护合并 · 评分不达标",
-      "sub": "Ayrmid拟以债权转股承接Karyopharm，2.76亿美元债务将换来合并公司55%股权。",
-      "hook": "2026年11月2日，Karyopharm申请Chapter 11保护，但Ayrmid给出的方案没有向原股东支付一分钱。约2.76亿美元有资金债务也不会被现金买断，而是转换成合并公司55%的普通股。旧股则直接注销。更有意思的是，竞购者若想改写结果，交割时净收益至少要达到3.35亿美元，比现有债务规模高出5900万美元。",
-      "chars": 3629,
-      "site_rel": "posts/2026/11/07/02-event_report-1d536fda.html",
-      "needs_review": false,
-      "problems": [],
-      "below_threshold": true
-    },
-    {
-      "rel": "2026/11/07/01-event_report-4d81a33d.html",
-      "date": "2026-11-07",
-      "title": "礼来把减重药搬上Hims：149美元与299美元背后，渠道生意怎么算",
-      "kicker": "Event Report｜GLP-1商业合作 · 评分不达标",
-      "sub": "一项未披露金额的渠道合作，把药企与远程医疗平台的直接连接摆到台前。",
-      "hook": "2026年11月6日，礼来与Hims & Hers宣布一项金额完全未披露的GLP-1合作，而双方抛出的价差很直接：Foundayo起价每月149美元，Zepbound起价每月299美元，后者的公开起价整整高一倍。这不是一笔用高额首付买创新资产的授权交易，更像一场围绕减重药定价、触达和处方转化展开的渠道实验；公开信息尚不足以判断礼来要付多少钱，也没有证据显示双方约定了里程碑付款或销售分成。",
-      "chars": 4144,
-      "site_rel": "posts/2026/11/07/01-event_report-4d81a33d.html",
-      "needs_review": true,
-      "problems": [
-        "缺少 FN 来源脚注",
-        "正文字数 1880 超出范围（目标 2250-3900）",
-        "表格列数不一致：表头 3 列，有一行 1 列"
-      ],
-      "below_threshold": true
-    }
-  ],
+  "date": "2026-11-08",
+  "count": 0,
+  "posts": [],
   "all_count": 39
 }
