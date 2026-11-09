@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-10",
+  "count": 1,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "macrocyclic-peptide-platform",
+      "lead_id": "7754a98972fa777a",
+      "title": "Argenx to acquire Unnatural Products in deal worth up to $1.15B",
+      "score": 6.2,
+      "member_ids": [
+        "7754a98972fa777a",
+        "68c1fd694764dc8a"
+      ],
+      "deal_keys": [
+        "argenx|unnatural-products|macrocyclic-peptide-platform",
+        "argenx|unnatural-products|macrocyclic-peptide-platform"
+      ],
+      "members": [
+        {
+          "title": "Argenx to acquire Unnatural Products in deal worth up to $1.15B",
+          "url": "https://endpoints.news/argenx-to-acquire-unnatural-products-in-deal-worth-up-to-1-15b/",
+          "score": 6.2,
+          "reasoning": "首付5.5亿美元、总额11.45亿美元，收购宏环肽平台，属高额并购"
+        },
+        {
+          "title": "Argenx to buy peptide platform in potentially billion-dollar deal",
+          "url": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+          "score": 5.9,
+          "reasoning": "与同日报道同一收购；首付5.5亿美元、总额11.45亿美元"
+        }
+      ],
+      "reasoning": "首付5.5亿美元、总额11.45亿美元，收购宏环肽平台，属高额并购"
+    }
+  ]
+}

@@ -1,6 +1,20 @@
 {
-  "date": "2026-11-09",
-  "count": 0,
-  "posts": [],
-  "all_count": 39
+  "date": "2026-11-10",
+  "count": 1,
+  "posts": [
+    {
+      "rel": "2026/11/10/01-landscape_review-7754a989.html",
+      "date": "2026-11-10",
+      "title": "Argenx以5.5亿美元现金收购宏环肽平台：近一半对价先行支付",
+      "kicker": "Landscape Review｜抗体与多肽平台并购",
+      "sub": "这笔最高11.45亿美元的收购，把口服长效免疫药的平台押注与Argenx的商业化能力绑到了一起。",
+      "hook": "2026年11月9日，Argenx宣布以5.5亿美元现金收购Unnatural Products，交易总额最高11.45亿美元。近一半对价在交割时支付，目标却是一家尚无具体临床项目信息公开的平台型公司；Argenx买下的是宏环肽发现能力以及一支早期研发团队。",
+      "chars": 3278,
+      "site_rel": "posts/2026/11/10/01-landscape_review-7754a989.html",
+      "needs_review": false,
+      "problems": [],
+      "below_threshold": false
+    }
+  ],
+  "all_count": 40
 }
