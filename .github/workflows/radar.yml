@@ -141,6 +141,15 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
+      # 2026-11-10：象信 AI 前置闸门的可选依赖。
+      # ⚠️ 故意【不】写进 requirements.txt：闸门当前 llm.xiangxin_gate.enabled=false，
+      #    若把它当必需依赖，一旦 PyPI 抖动/装不上就会连带整条评分链路失败。
+      #    这里单独装并 continue-on-error：装不上就退回旁路，雷达照常跑。
+      #    确认要长期启用闸门后，可以把这行并进 requirements.txt。
+      - name: 安装象信可选依赖
+        continue-on-error: true
+        run: pip install "xiangxin-sdk>=0.3.2"
+
       - name: 采集
         if: ${{ inputs.publish_only != true }}
         working-directory: src

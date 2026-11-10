@@ -20,14 +20,6 @@ rapidfuzz>=3.9.4          # 模糊去重，比 difflib 快一个数量级
 # --- LLM 调用（DeepSeek / OpenAI 兼容）---
 openai>=1.40.0           # OpenAI 兼容客户端，DeepSeek 直接换 base_url
 
-# --- 象信 AI 前置闸门（可选依赖）---
-# 2026-11-10 新增。用于 src/xiangxin_gate.py：在 LLM 打分前拦掉明确不是
-# BD 交易的条目，减少 LLM 调用量。
-# ⚠️ 这个包只被闸门用；没装或没配 XIANGXIN_API_KEY 时闸门自动旁路，
-#    不影响 score.py 的原有行为。所以它必须【可选】——不要改成必需依赖，
-#    否则依赖装不上时整条评分链路会挂。
-xiangxin-sdk>=0.3.2
-
 # --- 输出 ---
 jinja2>=3.1.4            # 模板（后续 P3 用）
 python-dateutil>=2.9.0
