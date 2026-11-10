@@ -1,20 +1,23 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/11/10/01-landscape_review-7754a989.html",
-      "date": "2026-11-10",
-      "title": "Argenx以5.5亿美元现金收购宏环肽平台：近一半对价先行支付",
-      "kicker": "Landscape Review｜抗体与多肽平台并购",
-      "sub": "这笔最高11.45亿美元的收购，把口服长效免疫药的平台押注与Argenx的商业化能力绑到了一起。",
-      "hook": "2026年11月9日，Argenx宣布以5.5亿美元现金收购Unnatural Products，交易总额最高11.45亿美元。近一半对价在交割时支付，目标却是一家尚无具体临床项目信息公开的平台型公司；Argenx买下的是宏环肽发现能力以及一支早期研发团队。",
-      "chars": 3278,
-      "site_rel": "posts/2026/11/10/01-landscape_review-7754a989.html",
-      "needs_review": false,
-      "problems": [],
+      "rel": "2026/11/11/01-event_report-e33a9cc1.html",
+      "date": "2026-11-11",
+      "title": "Oura豪掷6.25亿美元买下Counsel Health，智能戒指开始抢医生入口",
+      "kicker": "Event Report｜医疗AI并购",
+      "sub": "一笔没有里程碑、没有管线阶段、也没有药物资产的现金收购，把消费级穿戴设备与医疗AI服务的边界推到了台前。",
+      "hook": "2026年11月10日，Oura宣布以6.25亿美元现金收购AI初级保健服务商Counsel Health。6.25亿美元相当于2026年授权交易首付款中位数1.075亿美元的约5.8倍，但这笔钱买的不是一款药，甚至不是一个临床阶段明确的产品，而是一项医疗AI服务。交易反差恰恰在这里：传统授权交易把药企最关心的临床数据、专利和上市权益拆成多段付款，Oura这次却直接用现金买下公司。",
+      "chars": 4297,
+      "site_rel": "posts/2026/11/11/01-event_report-e33a9cc1.html",
+      "needs_review": true,
+      "problems": [
+        "表格「未来12至18个月观察项 / 需要出现的信息 / 目前状态」6 行全部是「未找到公开数据」，是一张没有任何信息的空壳表。请删掉它——没有内容支撑的表格不如不写。",
+        "AI味句式 4 处（不是…而是, 换句话说）——必须改掉，不是换词而是拆句重写"
+      ],
       "below_threshold": false
     }
   ],
-  "all_count": 40
+  "all_count": 41
 }

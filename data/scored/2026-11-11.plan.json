@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-11",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "e33a9cc16abdc5e8",
+      "title": "Oura to buy AI care startup Counsel Health for $625M",
+      "score": 3.9,
+      "member_ids": [
+        "e33a9cc16abdc5e8"
+      ],
+      "deal_keys": [
+        "counsel-health|oura|ai-primary-care"
+      ],
+      "members": [
+        {
+          "title": "Oura to buy AI care startup Counsel Health for $625M",
+          "url": "https://endpoints.news/oura-to-buy-ai-care-startup-counsel-health-for-625m/",
+          "score": 3.9,
+          "reasoning": "现金收购价6.25亿美元，但属医疗AI服务并购，非药物资产交易"
+        }
+      ],
+      "reasoning": "现金收购价6.25亿美元，但属医疗AI服务并购，非药物资产交易",
+      "verify_todo": [
+        "需核实交易是否已完成及现金对价支付安排",
+        "需核实双方是否承担附带付款或业绩条件"
+      ],
+      "flags": []
+    }
+  ]
+}
