@@ -205,8 +205,33 @@ llm:
 | `src/xiangxin_gate.py` | 闸门模块（新增） |
 | `src/score.py` | 接入点 |
 | `config/scoring.yaml` | `llm.xiangxin_gate.enabled` 开关 |
-| `src/score.py.bak-before-xiangxin-gate` | 改动前备份 |
+| `.github/workflows/radar.yml` | 注入 `XIANGXIN_API_KEY` + 非致命安装 SDK |
+| `src/score.py.bak-before-xiangxin-gate` | 改动前备份（本地，未提交） |
+
+### 关于 CI 依赖（重要）
+
+`xiangxin-sdk` **没有**写进 `requirements.txt`，而是在 workflow 里单独安装：
+
+```yaml
+- name: 安装象信可选依赖
+  continue-on-error: true
+  run: pip install "xiangxin-sdk>=0.3.2"
+```
+
+原因：闸门默认关闭，若把它当必需依赖，一旦 PyPI 抖动装不上，
+会连带整条评分链路失败——为一个关闭的功能引入致命风险不划算。
+装不上时闸门退回旁路，雷达照常跑。
+
+确认要长期启用闸门后，可以把这行并进 `requirements.txt`。
+
+### CI 上的密钥
+
+`XIANGXIN_API_KEY` 已写入 GitHub Secrets（2026-11-10）。
+`radar.yml` 的「LLM 评分」步骤已注入该环境变量。
+
+注意：GitHub Actions 的 workflow 只有 `schedule` 和 `workflow_dispatch` 两种触发，
+**没有 push 触发**，所以提交代码不会立刻跑生产。
 
 实验脚本与数据在 `C:\Users\guoga\Documents\DSH\xiangxin-demo\`：
 `verify_gate_misses.py`、`verify_gate_misses_fixed.py`、`test_integration.py`、
-`test_e2e.py`、`measure_upfront_full.py`，数据在 `comparison/`。
+`test_e2e.py`、`test_ci_simulation.py`、`measure_upfront_full.py`，数据在 `comparison/`。
