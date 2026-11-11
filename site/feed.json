@@ -1,23 +1,33 @@
 {
-  "date": "2026-11-11",
-  "count": 1,
+  "date": "2026-11-12",
+  "count": 2,
   "posts": [
     {
-      "rel": "2026/11/11/01-event_report-e33a9cc1.html",
-      "date": "2026-11-11",
-      "title": "Oura豪掷6.25亿美元买下Counsel Health，智能戒指开始抢医生入口",
-      "kicker": "Event Report｜医疗AI并购",
-      "sub": "一笔没有里程碑、没有管线阶段、也没有药物资产的现金收购，把消费级穿戴设备与医疗AI服务的边界推到了台前。",
-      "hook": "2026年11月10日，Oura宣布以6.25亿美元现金收购AI初级保健服务商Counsel Health。6.25亿美元相当于2026年授权交易首付款中位数1.075亿美元的约5.8倍，但这笔钱买的不是一款药，甚至不是一个临床阶段明确的产品，而是一项医疗AI服务。交易反差恰恰在这里：传统授权交易把药企最关心的临床数据、专利和上市权益拆成多段付款，Oura这次却直接用现金买下公司。",
-      "chars": 4297,
-      "site_rel": "posts/2026/11/11/01-event_report-e33a9cc1.html",
-      "needs_review": true,
-      "problems": [
-        "表格「未来12至18个月观察项 / 需要出现的信息 / 目前状态」6 行全部是「未找到公开数据」，是一张没有任何信息的空壳表。请删掉它——没有内容支撑的表格不如不写。",
-        "AI味句式 4 处（不是…而是, 换句话说）——必须改掉，不是换词而是拆句重写"
-      ],
-      "below_threshold": false
+      "rel": "2026/11/12/02-event_report-42cf099f.html",
+      "date": "2026-11-12",
+      "title": "阿斯利康收购Omniose：一项尚无价格、也尚无临床资产的钱怎么花",
+      "kicker": "Event Report｜疫苗平台并购 · 评分不达标",
+      "sub": "三年研究合作最终换来全资并购，交易价值押注在生物偶联平台能否把实验室工艺变成可复制的疫苗产品。",
+      "hook": "2026年11月10日，阿斯利康以未披露对价收购Omniose，交易没有首付款、里程碑金额，也没有明确交割条件，买来的核心仍以临床前平台和团队为主。矛盾在于，Omniose的生物偶联技术已经借GSK和强生项目走到临床后期，但进入阿斯利康感染性疾病部门、接受阿斯利康资源打磨的疫苗项目仍处于临床前阶段。这笔交易眼下更像一次对制造工艺和组织能力的提前买入。",
+      "chars": 4068,
+      "site_rel": "posts/2026/11/12/02-event_report-42cf099f.html",
+      "needs_review": false,
+      "problems": [],
+      "below_threshold": true
+    },
+    {
+      "rel": "2026/11/12/01-event_report-90c35a86.html",
+      "date": "2026-11-12",
+      "title": "1.45亿美元首付背后，CorMedix买到了什么？",
+      "kicker": "Event Report｜商业化资产交易 · 评分不达标",
+      "sub": "Heron卖出一组商业化资产，完整交易边界仍未公开",
+      "hook": "2026年11月9日，CorMedix以1.45亿美元首付款收购Heron的一组商业化资产；同一天，End Points标题又并列提到Faeth股价下挫。首付款已明确，资产名称、权益地域、总交易价值却未在现有公开摘录中完整披露，资本动作跑在了信息披露前面。",
+      "chars": 3245,
+      "site_rel": "posts/2026/11/12/01-event_report-90c35a86.html",
+      "needs_review": false,
+      "problems": [],
+      "below_threshold": true
     }
   ],
-  "all_count": 41
+  "all_count": 43
 }

@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-12",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "heron-cormedix-assets",
+      "lead_id": "90c35a86594282b4",
+      "title": "Heron sells assets to CorMedix for $145M upfront; Faeth's stock tumbles",
+      "score": 6.4,
+      "member_ids": [
+        "90c35a86594282b4"
+      ],
+      "deal_keys": [
+        "cormedix|heron-therapeutics|heron-portfolio"
+      ],
+      "members": [
+        {
+          "title": "Heron sells assets to CorMedix for $145M upfront; Faeth's stock tumbles",
+          "url": "https://endpoints.news/heron-sells-assets-to-cormedix-for-145m-upfront-faeths-stock-tumbles/",
+          "score": 6.4,
+          "reasoning": "首付1.45亿美元收购商业化资产组合，属于近期可量化的中型资产交易"
+        }
+      ],
+      "reasoning": "首付1.45亿美元收购商业化资产组合，属于近期可量化的中型资产交易",
+      "verify_todo": [
+        "核实所购资产名称、已获批产品及开发项目范围",
+        "确认首付之外是否另有里程碑、版税或或有对价",
+        "核查双方是否存在股权关系或共同大股东"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "vaccine-bioconjugation",
+      "lead_id": "42cf099f8a840eec",
+      "title": "AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine Pipeline",
+      "score": 3.7,
+      "member_ids": [
+        "42cf099f8a840eec"
+      ],
+      "deal_keys": [
+        "astrazeneca|omniose|bioconjugation-vaccine-platform"
+      ],
+      "members": [
+        {
+          "title": "AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine Pipeline",
+          "url": "https://www.pharmexec.com/view/astrazeneca-acquires-omniose-bioconjugation-platform",
+          "score": 3.7,
+          "reasoning": "MNC收购临床前生物偶联平台，金额未披露，价值取决于平台成熟度及整合路径"
+        }
+      ],
+      "reasoning": "MNC收购临床前生物偶联平台，金额未披露，价值取决于平台成熟度及整合路径",
+      "verify_todo": [
+        "核实收购对价、股权或资产范围及交割条件",
+        "确认相关疫苗项目是否均处于临床前阶段",
+        "核查Omniose与阿斯利康是否存在既有股权或共同股东关系"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}

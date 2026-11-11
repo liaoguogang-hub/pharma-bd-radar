@@ -1,0 +1,312 @@
+[
+  {
+    "id": "90c35a86594282b4",
+    "published": "2026-11-09T16:13:22+00:00",
+    "age_days": 2.3,
+    "score": 6.4,
+    "dims": {
+      "amount": 2.0,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.3
+    },
+    "flags": [],
+    "cluster_key": "heron-cormedix-assets",
+    "confidence": 0.78,
+    "deal_key": "cormedix|heron-therapeutics|heron-portfolio",
+    "upfront_usd": 145000000,
+    "total_usd": 0,
+    "reasoning": "首付1.45亿美元收购商业化资产组合，属于近期可量化的中型资产交易",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实所购资产名称、已获批产品及开发项目范围",
+      "确认首付之外是否另有里程碑、版税或或有对价",
+      "核查双方是否存在股权关系或共同大股东"
+    ],
+    "title": "Heron sells assets to CorMedix for $145M upfront; Faeth's stock tumbles",
+    "url": "https://endpoints.news/heron-sells-assets-to-cormedix-for-145m-upfront-faeths-stock-tumbles/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 9, 2026 11:13 AM ESTUpdated 02:43 PM News Briefing Heron sells as­sets to CorMedix for $145M up­front; Faeth's stock tum­bles ENDPOINTS Plus, news about Im­muno­vant, Abeona Ther­a­peu­tics, El­lo­di Phar­ma­ceu­ti­cals, Spruce Bio­sciences, Adrenyx Bio­sciences, Edesa Biotech, Ky­orin Phar­ma­ceu­ti­cal, Charles Riv­er Lab­o­ra­to­ries, Frontage, Com­pass Path­ways, John­son & John­son … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Plus, news about Immunovant, Abeona Therapeutics, Ellodi Pharmaceuticals, Spruce Biosciences, Adrenyx Biosciences, Edesa Biotech, Kyorin Pharmaceutical, Charles River Laboratories, Frontage, Compass Pathways, Johnson & Johnson, Veradermics and Valneva. CorMedix acquires Heron portfolio: CorMedix",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "68c1fd694764dc8a",
+    "published": "2026-11-09T00:00:00+00:00",
+    "age_days": 2.9,
+    "score": 6.4,
+    "dims": {
+      "amount": 2.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 1.8
+    },
+    "flags": [],
+    "cluster_key": "macrocyclic-peptide-platform",
+    "confidence": 0.89,
+    "deal_key": "argenx|unnatural-products|macrocyclic-peptide-platform",
+    "upfront_usd": 550000000,
+    "total_usd": 0,
+    "reasoning": "首付5.5亿美元收购宏环肽平台，或改变口服免疫药的技术与竞争格局",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实潜在总对价的准确金额及里程碑构成",
+      "确认相关候选药物的临床阶段和首创性证据",
+      "核查双方是否存在股权关系或共同大股东"
+    ],
+    "title": "Argenx to buy peptide platform in potentially billion-dollar deal",
+    "url": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from Dive Brief Argenx to buy peptide platform in potentially billion-dollar deal For $550 million up front, Argenx will take control of Unnatural Products’ “macrocyclic peptide” technology and direct it to develop oral, durable medicines for serious immune-mediated diseases. Published Nov. 9, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Argenx agreed to acquire Unnatural Products, a maker of \"macrocyclic peptides,\" on Nov. 9, 2026. deliormanli via Getty Images Dive Brief: Argenx, a Netherlands-based biotechnology company focused on antibody drugs, on Monday said it has agreed to acquire a protein specialist in a potentially billion-dollar-plus deal. Unnatural Products has a platform that pairs machine learning, screening and other techniques to engineer “macrocyclic peptides.” These peptides are larger and more complex than typical small molecules, which allows them to more effectively bind to tricky proteins and address some challenging diseases. Yet, they’re still tiny enough that they can be swallowed. Argenx plans to use the platform to develop oral, durable medicines for serious immune-mediated diseases. The acquisition carries a $550 million upfront cash payment. Unnatural Products could receive up to $595 million more if specific milestones are hit. The companies expect their deal to close before the end of the year. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Dive Insight: Unnatural Products claims macrocyclic peptides hold the potential to unlock targets once thought to be “undruggable.” That premise, along with the California company’s technology platform, proved enticing to both venture capitalists and big-name pharmaceutical firms like Merck & Co. and Novartis. Argenx was drawn in as well, having already taken a minority stake in Unnatural Products before pursuing a full buyout. In a statement, Argenx CEO Karen Massey said these macrocyclic peptide capabilities are “highly complementary” to her own company’s antibody engineering. “After working together for more than two years, we also know there is a strong fit in how we work: science first, entrepreneurial and focused on patients,” Massey added. “We want to preserve what has made [Unnatural Products] successful while bringing the strengths of both teams together.” The Food and Drug Administration has already approved at least a handful of macrocyclic peptide therapies. In 2020, for example, Rhythm Pharmaceuticals’ Imcivree was cleared as a treatment for certain genetic forms of obesity. The following year, Aurinia Pharmaceuticals’ Lupkynis became the first-ever oral medicine for adults with active lupus nephritis. In 2023, the FDA greenlit a UCB medicine called Zilbrysq for “generalized myasthenia gravis,” a rare autoimmune condition that’s become somewhat of a battleground for several developers. Argenx’s own flagship product, Vyvgart, targets this disease and brought in $4.5 billion in net product sales from January through the end of September. Thomas Smith, a Leerink Partners analyst who covers Argenx, wrote in a note to clients that the new acquisition “represents potential for longer-term strategic value.” He explained there’s a desire — both in big pharma and in the broader immunology and inflammation research space — to make oral, long-acting therapeutics that are able to be more effective and convenient than conventional biologics. The Unnatural Products deal, which comes on the heels of Argenx’s potentially $2.2 billion purchase of Forte Biosciences, also “signals further focus on pipeline growth and diversification,” Smith wrote. Shares of Argenx were up nearly 3% by late Monday morning, to hover around $953 apiece. Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Deals",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "42cf099f8a840eec",
+    "published": "2026-11-10T00:00:00+00:00",
+    "age_days": 1.9,
+    "score": 3.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [],
+    "cluster_key": "vaccine-bioconjugation",
+    "confidence": 0.9,
+    "deal_key": "astrazeneca|omniose|bioconjugation-vaccine-platform",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "MNC收购临床前生物偶联平台，金额未披露，价值取决于平台成熟度及整合路径",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实收购对价、股权或资产范围及交割条件",
+      "确认相关疫苗项目是否均处于临床前阶段",
+      "核查Omniose与阿斯利康是否存在既有股权或共同股东关系"
+    ],
+    "title": "AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine Pipeline",
+    "url": "https://www.pharmexec.com/view/astrazeneca-acquires-omniose-bioconjugation-platform",
+    "sources": [
+      "pharmexec_partnership",
+      "pharmexec_irlp"
+    ],
+    "content": "Advertisement News|Articles|November 10, 2026 AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine Pipeline Author(s)Nicholas Jacobus Key Takeaways Omniose will be absorbed into AstraZeneca’s Infectious Disease Unit, bringing in-platform bioconjugation capabilities to augment AstraZeneca’s preclinical vaccine pipeline; deal terms were not disclosed. Traditional chemical conjugation can yield heterogeneous products, challenging characterization and release testing, while risking epitope modification; bioconjugation enables intracellular antigen–carrier linkage for improved control. Glycoconjugate vaccines have reduced morbidity and mortality from Hib, pneumococcus, meningococcus, and typhoid, with secondary antimicrobial-resistance benefits via lowered antibiotic utilization. External validation includes GSK’s Shigella (Phase IIb) and Klebsiella pneumoniae (Phase I) programs and Janssen/J&J’s ExPEC nine-serotype vaccine advanced to Phase III. Strategic emphasis centers on leveraging differentiated conjugate engineering to advance vaccines against serious bacterial infections increasingly complicated by antimicrobial resistance.SHOW MORE AstraZeneca acquires Omniose, to bolster it's preclinical infectious disease programs. Advertisement AstraZeneca has entered a deal to acquire Omniose, following a three-year exclusive research collaboration between the two organizations that both sides described as productive.Christian Harding, CSO and co-founder of Omniose, frames the acquisition as the culmination of years of partnership. “This milestone reflects the work of exceptional and complementary teams,” Harding says. “AstraZeneca has been a trusted partner for several years, and this acquisition gives our platform the best chance to reach the patients it was built to serve.”¹Under the terms of the agreement, Omniose is set to become a wholly owned subsidiary of AstraZeneca and will join the company’s Infectious Disease Unit.¹ The deal brings Omniose’s proprietary bioconjugation platform and expertise into AstraZeneca, complementing the larger company’s existing capabilities and supporting its preclinical vaccine programs.¹ Financial details of the deal have yet to be disclosed.What problem does bioconjugation solve?Conventional conjugate vaccine manufacturing requires chemical cross-linking of bacterial polysaccharide antigens to immunogenic carrier proteins, a process that is complex and makes the resulting vaccines difficult to produce reproducibly and to characterize, requiring extensive release testing before use.2 The non-specific nature of that cross-linking, and the conditions chemical conjugation requires, can also lead to undesired modifications of epitopes that may affect the quality of the immune response generated against the polysaccharide antigen.2 Bioconjugation offers what is described as an elegantly simple alternative to chemical conjugation, producing and linking the antigen and carrier protein within a single cell.2 (()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})(); Related Articles argenx Acquires Unnatural Products Inc. to Expand Immunology Capabilities ANI Pharmaceuticals to Acquire Egetis Therapeutics, Egetis Sells Priority Review Voucher for $190 MillionLonza to Acquire Five U.S. CDMO Sites From Merck KGaAWhy does this technology matter for public health?Polysaccharide conjugate, or glycoconjugate, vaccines have already proven enormously successful at reducing disease and death from infections caused by bacterial pathogens including Haemophilus influenzae type B, Streptococcus pneumoniae, Neisseria meningitidis, and Salmonella typhi.2 These vaccines carry an added public health benefit by preventing the infections they target, while also helping to fight antimicrobial resistance by reducing the overall use of antibiotics.2The underlying bioconjugation science has already moved through clinical development in other hands. Omniose co-founder Mario Feldman provided the work leading to the industrialization of bioconjugate vaccine technologies by GSK, following that company’s acquisition of GlycoVaxyn/Limmatech’s bioconjugate platform technology, for vaccine candidates against Shigella, which is now in Phase IIB development, and Klebsiella pneumoniae, now in Phase I development.2Janssen, now known as Johnson & Johnson Innovative Medicine, separately licensed the same underlying platform to develop a bioconjugate vaccine against extraintestinal pathogenic Escherichia coli targeting nine serotypes, advancing that candidate into Phase III development.2Benjamin Moutier, senior vice president, infectious disease, AstraZeneca, points to the scientific differentiation Omniose’s platform offers. “Omniose’s bioconjugation platform represents a differentiated approach to engineering conjugate vaccines and strengthens our ability to develop novel vaccines against serious bacterial infections,” Moutier says. “Building on the strong scientific collaboration between our teams, we look forward to advancing these programs and realizing the potential of this technology for patients.”What comes next for the combined vaccine programs?With the acquisition complete, Omniose’s bioconjugation platform now sits inside AstraZeneca’s Infectious Disease Unit, where it is positioned to support the unit’s existing preclinical vaccine programs targeting serious bacterial infections.1Timothy Cooke, CEO of Omniose, describes the acquisition as a shared win built around a common mission. “The acquisition by AstraZeneca is a great outcome for both organizations,” Cooke says. “We share a vision for bringing the best science and talent together to address serious bacterial infections, which are increasingly complicated by antimicrobial resistance.”SourcesOmniose Announces Its Acquisition by AstraZeneca Omniose November 10, 2026 https://www.businesswire.com/news/home/20261110984674/en/Omniose-Announces-Its-Acquisition-by-AstraZenecaOmniose Technology Section Omniose Date Accessed November 10, 2026 https://omniose.com/technology/ Newsletter Lead with insight with the Pharmaceutical Executive newsletter, featuring strategic analysis, leadership trends, and market intelligence for biopharma decision-makers. Subscribe Advertisement Partnerships|Operations|Sustainability|Technology|R&D/Clinical Trials Related to this articleView moreNovember 9th, 2026argenx Acquires Unnatural Products Inc. to Expand Immunology Capabilities argenx acquires Unnatural Products, adding a macrocyclic peptide discovery platform to complement its antibody engineering. Read moreNovember 6th, 2026Novo Terminates Research Collaboration With Korro Bio The termination ends a cardiometabolic RNA-editing partnership that was paused for 12 months, closing out a deal under which Korro earned no milestone payments.Read moreNovember 4th, 2026Pharmaceutical Executive Daily: Nxera Licenses EP4 Agonist to AbbVieHow microgravity is opening new possibilities for drug R&D and manufacturing, a pharma funding roundup covers Boehringer Ingelheim’s up-to-$7 billion oncology licensing deal with Sino Biopharmaceutical and Nxera Pharma’s EP4 agonist deal with AbbVie, and CytoDyn’s Dr. Jay Lalezari on why Leronlimab isn’t just another repurposed drug.Read moreNovember 11th, 2026When Patient Input Should Be Collected in the Clinical Research ProcessAI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.Read moreNovember 10th, 2026Where AI Can Strengthen Clinical Research, and Where Patient Input is More ImportantAI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.Read moreNovember 4th, 2026Why Leronlimab Isn’t Just Another Repurposed Drug: Q&A with Dr. Jay LalezariDr. Jay Lalezari, CEO and CMO of CytoDyn, discusses how Leronlimab’s unique CCR5-blocking mechanism has carried it from HIV, to Covid-19, to a promising, one-of-a-kind proof of concept in colorectal cancer.Read moreNovember 10th, 2026FDA Requests Updated Safety Label Warning Across All GLP-1 Receptor Agonist for Potential Risk of NAION FDA is requiring manufacturers of all GLP-1 receptor agonists to add a warning for a potential increased risk of NAION. Read moreNovember 10th, 2026Adjusting for Tumor Mutations: Q&A with Dr. Brian CorgiatIgnite Proteomics’ senior clinical research scientist discusses how flaws in testing tumors may lead to some patients not receiving the correct treatment.Read morePrevious slideNext slide Advertisement Advertisement Trending on PharmExec1Building Connected AI Ecosystems, Not Standalone Tools2Where AI Is Having the Most Impact and Where Gaps Remain3AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine Pipeline4Pharmaceutical Executive Daily: FDA Requires Safety Label Update on GLP-1 Receptor Agonist5When Patient Input Should Be Collected in the Clinical Research Process",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "fbde54e75ce934be",
+    "published": "2026-11-09T18:54:19+00:00",
+    "age_days": 2.1,
+    "score": 3.7,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.6
+    },
+    "flags": [
+      "low_material"
+    ],
+    "cluster_key": "ai-biologics-platform",
+    "confidence": 0.44,
+    "deal_key": "funnel-biosciences|third-rock-ventures|ai-biologics-platform",
+    "upfront_usd": 0,
+    "total_usd": 2160000000,
+    "reasoning": "潜在总额21.6亿美元但首付未披露，AI biologics平台合作或影响药物发现模式",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题及简短摘要，需核实合作结构及项目范围",
+      "确认21.6亿美元是里程碑上限还是包含首付款的总上限",
+      "补充明确首付款、临床阶段及平台首创性证据"
+    ],
+    "title": "Third Rock enters $2B partnership with AI-focused Chinese biotech",
+    "url": "https://endpoints.news/third-rock-enters-2b-partnership-with-ai-focused-chinese-biotech/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Third Rock Ventures is betting up to $2.16 billion on a little-known Chinese biotech’s AI platform. Funnel Biosciences describes itself as an AI-driven biologics company. Under a research collaboration announced Friday ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "dd5041960e65dcd6",
+    "published": "2026-11-11T00:00:00+00:00",
+    "age_days": 0.9,
+    "score": 3.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.2
+    },
+    "flags": [
+      "roundup"
+    ],
+    "cluster_key": "vaccine-bioconjugation",
+    "confidence": 0.76,
+    "deal_key": "astrazeneca|omniose|bioconjugation-vaccine-platform",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "平台型收购可补强疫苗技术，但金额未披露且信息来自综合新闻短讯",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认标题所称疫苗初创公司是否为Omniose",
+      "核实收购对价、付款结构及交割条件",
+      "补查项目所处临床阶段和全球竞争地位"
+    ],
+    "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
+    "url": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "An article from News roundup AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning The deal gives AstraZeneca a simpler way to make conjugate vaccines. Elsewhere, a psychedelic depression drug was submitted to the FDA and an autoimmune disease-focused biotech’s shares collapsed. Published Nov. 11, 2026 By BioPharma Dive staff Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Getty Images Today, a brief rundown of news involving AstraZeneca and the Food and Drug Administration, as well as updates from Compass Pathways, Zura Bio and Abeona Therapeutics that you may have missed. AstraZeneca has acquired vaccine startup and development partner Omniose. The two companies didn't disclose deal terms in their announcement Tuesday. But the transaction hands AstraZeneca \"bioconjugation\" technology, a more efficient way to make the conjugate vaccines that strap a protein to an immune system-provoking antigen. Omniose claimed the technology could yield \"higher-quality\" conjugate vaccines. AstraZeneca intends to use the approach to make shots for serious bacterial infections. The two companies first formed a vaccine-focused alliance in January 2024. — Ben Fidler if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); The Food and Drug Administration has called for the prescribing information for widely popular GLP-1 therapies to be updated to include the possible risk of contracting a rare condition that causes vision loss. The FDA began investigating the issue following case reports of GLP-1 recipients developing \"non-arteritic anterior ischemic optic neuropathy,\" or \"NAION.\" A review of animal data failed to uncover why GLP-1 drugs might be associated with NAION, but a meta-analysis of many trials found a higher rate of cases in treatment recipients. NAION's been seen with every marketed GLP-1 drug, too, the FDA said. The agency, as a result, believes there is a “potential increased risk of rare NAION events,” it said Monday. — Ben Fidler Compass Pathways said Monday it has completed an approval application in the U.S. for a synthetic psilocybin drug it calls “COMP360” and that it’s developed for treatment-resistant depression. In clinical testing, six weeks of treatment with COMP360 was associated with, on average, a 3.8-point reduction on a 60-point scale measuring the severity of depression symptoms. The drug is part of a wave of research into psychedelic medicines and could receive a particularly speedy review following the company’s receipt of a special Food and Drug Administration voucher. — Jonathan Gardner Shares of Zura Bio plunged by more than two-thirds on Monday following the company’s announcement that its lead product missed the main goal of a Phase 2 trial in people with the autoimmune skin condition hidradenitis suppurativa. Neither of two tested doses of the dual-pronged antibody drug tibulizumab significantly reduced the number of abscesses and inflammatory nodules in enrollees after 16 weeks, nor were secondary trial goals met. Zura will halt development in hidradenitis suppurativa, but continue studying tibulizumab in other immune diseases. The stock plunge dropped Zura’s market valuation to $93 million, below the $188 million in cash and cash equivalents it held on Sept. 30. — Jonathan Gardner if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Abeona Therapeutics has acquired a Phase 3-ready treatment for eosinophilic esophagitis from Ellodi Pharmaceuticals, a six-year-old startup TPG Capital formed after selling off most of Adare Pharmaceuticals. Per deal terms, Abeona issued Ellodi $20 million worth of shares, and promised to pay Ellodi another $60 million should its drug win FDA approval and hit certain sales milestones. Abeona raised $30 million in a private share sale alongside the deal. Previously called APT-1011 and now ABO-801, the drug is an oral form of the steroid fluticasone that dissolves in the mouth and is delivered directly to the esophagus. — Jonathan Gardner Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "69da27ce3cbb6ac1",
+    "published": "2026-11-11T11:57:06+00:00",
+    "age_days": 0.4,
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.8,
+      "impact": 0.2
+    },
+    "flags": [
+      "not_bd",
+      "regulatory_update"
+    ],
+    "cluster_key": "",
+    "confidence": 0.78,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：监管批准是既有授权的后续事件，未出现新的交易对手关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认是否同时披露了新的许可修订、付款或商业化安排",
+      "如需交易背景，另行核查原授权协议时间及交易条款"
+    ],
+    "title": "Merck KGaA lands FDA nod for joint tumor drug it licensed from Abbisko",
+    "url": "https://endpoints.news/merck-kgaa-lands-fda-nod-for-joint-tumor-drug-it-licensed-from-abbisko/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 11, 2026 06:57 AM EST PharmaFDA+ Mer­ck KGaA lands FDA nod for joint tu­mor drug it li­censed from Ab­bisko Reynald Castaneda Deputy Editor Mer­ck KGaA said Tues­day that the drug it li­censed from a Chi­na-based biotech has se­cured FDA ap­proval for rare non­cancer­ous tu­mors … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Merck KGaA said Tuesday that the drug it licensed from a China-based biotech has secured FDA approval for rare noncancerous tumors that impact the joints. The German conglomerate got the",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "11969d9e39d90571",
+    "published": "2026-11-11T20:20:26+00:00",
+    "age_days": 0.1,
+    "score": 2.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.8
+    },
+    "flags": [
+      "low_material"
+    ],
+    "cluster_key": "branded-glp-1-distribution",
+    "confidence": 0.42,
+    "deal_key": "eli-lilly|hims-her|branded-glp-1",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "品牌GLP-1商业合作可观察渠道格局，但交易时间、金额与权利范围均未披露",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题及简短摘要，需核实该合作是否为近期新交易",
+      "补充首付款、总对价、期限及商业化权利范围",
+      "确认文章重点是合作事件还是Hims经营战略转型"
+    ],
+    "title": "How Hims plans to revive its business after pivoting to branded GLP-1s",
+    "url": "https://endpoints.news/how-hims-plans-to-revive-its-business-after-pivoting-to-branded-glp-1s/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Hims & Hers, once obsessed with delivering \"personalized care\" through compounded drug products, is now banking on brand-name treatments and the pharmaceutical giants it previously tried to undercut. Hims struck a deal with Eli Lilly ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "published": "2026-11-03T00:00:00+00:00",
+    "age_days": 8.9,
+    "score": 2.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "stale",
+      "no_material",
+      "thin_material"
+    ],
+    "cluster_key": "braintransporter",
+    "confidence": 0.34,
+    "deal_key": "bioarctic|novartis|braintransporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "合作退出反映项目价值重估，但已非近日且仅有标题，缺少交易与条款素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题、无正文素材，成稿前需补充一手材料",
+      "确认退出的正式时间、原因及双方披露口径",
+      "核实原授权条款、项目阶段、付款安排及项目处置方式"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-11T22:18:15Z"
+  }
+]
