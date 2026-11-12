@@ -1,0 +1,440 @@
+[
+  {
+    "id": "68c1fd694764dc8a",
+    "score": 7.8,
+    "dims": {
+      "amount": 2.5,
+      "stage": 0.5,
+      "first_mover": 1.6,
+      "tier": 1.2,
+      "impact": 2.0
+    },
+    "flags": [],
+    "cluster_key": "macrocyclic-peptide",
+    "confidence": 0.94,
+    "deal_key": "argenx|unnatural-products|macrocyclic-peptide-platform",
+    "upfront_usd": 550000000,
+    "total_usd": 0,
+    "reasoning": "5.5亿美元首付收购口服大环肽平台，金额突出，并可能重塑免疫药口服递送竞争格局。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实潜在总对价及里程碑付款上限",
+      "核实平台候选物数量和临床前验证情况",
+      "核实收购交割条件及研发方向"
+    ],
+    "title": "Argenx to buy peptide platform in potentially billion-dollar deal",
+    "url": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from Dive Brief Argenx to buy peptide platform in potentially billion-dollar deal For $550 million up front, Argenx will take control of Unnatural Products’ “macrocyclic peptide” technology and direct it to develop oral, durable medicines for serious immune-mediated diseases. Published Nov. 9, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Argenx agreed to acquire Unnatural Products, a maker of \"macrocyclic peptides,\" on Nov. 9, 2026. deliormanli via Getty Images Dive Brief: Argenx, a Netherlands-based biotechnology company focused on antibody drugs, on Monday said it has agreed to acquire a protein specialist in a potentially billion-dollar-plus deal. Unnatural Products has a platform that pairs machine learning, screening and other techniques to engineer “macrocyclic peptides.” These peptides are larger and more complex than typical small molecules, which allows them to more effectively bind to tricky proteins and address some challenging diseases. Yet, they’re still tiny enough that they can be swallowed. Argenx plans to use the platform to develop oral, durable medicines for serious immune-mediated diseases. The acquisition carries a $550 million upfront cash payment. Unnatural Products could receive up to $595 million more if specific milestones are hit. The companies expect their deal to close before the end of the year. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Dive Insight: Unnatural Products claims macrocyclic peptides hold the potential to unlock targets once thought to be “undruggable.” That premise, along with the California company’s technology platform, proved enticing to both venture capitalists and big-name pharmaceutical firms like Merck & Co. and Novartis. Argenx was drawn in as well, having already taken a minority stake in Unnatural Products before pursuing a full buyout. In a statement, Argenx CEO Karen Massey said these macrocyclic peptide capabilities are “highly complementary” to her own company’s antibody engineering. “After working together for more than two years, we also know there is a strong fit in how we work: science first, entrepreneurial and focused on patients,” Massey added. “We want to preserve what has made [Unnatural Products] successful while bringing the strengths of both teams together.” The Food and Drug Administration has already approved at least a handful of macrocyclic peptide therapies. In 2020, for example, Rhythm Pharmaceuticals’ Imcivree was cleared as a treatment for certain genetic forms of obesity. The following year, Aurinia Pharmaceuticals’ Lupkynis became the first-ever oral medicine for adults with active lupus nephritis. In 2023, the FDA greenlit a UCB medicine called Zilbrysq for “generalized myasthenia gravis,” a rare autoimmune condition that’s become somewhat of a battleground for several developers. Argenx’s own flagship product, Vyvgart, targets this disease and brought in $4.5 billion in net product sales from January through the end of September. Thomas Smith, a Leerink Partners analyst who covers Argenx, wrote in a note to clients that the new acquisition “represents potential for longer-term strategic value.” He explained there’s a desire — both in big pharma and in the broader immunology and inflammation research space — to make oral, long-acting therapeutics that are able to be more effective and convenient than conventional biologics. The Unnatural Products deal, which comes on the heels of Argenx’s potentially $2.2 billion purchase of Forte Biosciences, also “signals further focus on pipeline growth and diversification,” Smith wrote. Shares of Argenx were up nearly 3% by late Monday morning, to hover around $953 apiece. Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Deals",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "7b59726570912cef",
+    "score": 6.0,
+    "dims": {
+      "amount": 1.2,
+      "stage": 0.5,
+      "first_mover": 1.2,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [
+      "chinese_first_report"
+    ],
+    "cluster_key": "ai-lnp",
+    "confidence": 0.88,
+    "deal_key": "jitai-biotech|lilly|ai-lnp",
+    "upfront_usd": 10000000,
+    "total_usd": 1100000000,
+    "reasoning": "逾1000万美元首付、约11亿美元里程碑上限；AI驱动肝外LNP平台由礼来布局，赛道影响较高。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实首付精确金额及11亿美元里程碑涵盖项目数量",
+      "核实合作是否包含开发权、商业化权或仅为技术合作",
+      "核实国产首个及全球最高交易金额表述依据"
+    ],
+    "title": "11亿美元里程碑！AI制药的下一个战场是“递送”？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/gs_392384",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 公司动态 11亿美元里程碑！AI制药的下一个战场是“递送”？ 11亿美元里程碑！AI制药的下一个战场是“递送”？ 医药经济报 16小时前 查看原文 32 AI制药 人工智能（ AI ）可以帮助研究人员更快地寻找候选分子，但分子能否进入目标组织、被目标细胞有效摄取，并最终产生预期的治疗作用，也是决定药物研发成败的重要因素。 日前，剂泰科技与礼来达成新型脂质纳米颗粒（ LNP ）递送技术战略合作。 据公开披露，这是国内首个以生成式 AI 平台为核心驱动的 LNP 出海合作；按披露交易规模，也是目前公开信息中全球交易金额最高的 AI 驱动肝外 LNP 平台合作，涉及逾千万美元首付款，以及最高约 11 亿美元的开发、监管和商业里程碑付款，另有基于净销售额的个位数分级特许权使用费。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 相关资讯 综合 AI制药，开始卷实验室了 动脉网-最新 2026-11-12 Isomorphic Labs推出IsoDDE，开辟AI制药全新路径 智药邦 2026-11-12 杭州肽为生物完成数千万元天使轮融资，把AI制药的瓶颈搬进了合成车间 生物天使 2026-11-11 超20亿美元！国内AI制药新锐达成出海合作 CPHI制药在线 2026-11-09 上海国投出手！交大系AI制药，融资数亿元 智药局 2026-11-09 量子AIDD前沿速报｜AI制药临床数据亮眼 因果数据成破局关键 QureGenAI医图生科Plus 2026-11-08 一款药也没有，谷歌的AI制药公司又要融50亿美元 DeepTech深科技 2026-11-08 中国AI制药，出海交易潮来了 同写意 2026-11-08 AI制药的南北分野：北京押机理、大湾区赌闭环 生物制品圈 2026-11-05 强生、拜耳之后，前谷歌大牛创办的AI制药，又一笔重磅合作 智药局 2026-11-05 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 康哲药业(0867.HK)：链接医药创新与商业化，新康哲新崛起 康哲药业(0867.HK)：链接医药创新与商业化，新康哲新崛起 向阳论医谈药 2024-10-16 公司动态丨博睿康携手华山医院完成上海首例脑机接口产品临床试验植入手术 公司动态丨博睿康携手华山医院完成上海首例脑机接口产品临床试验植入手术 凯风创投 2024-11-15 丽珠集团(000513)：老牌制药企业，开启多元化发展 丽珠集团(000513)：老牌制药企业，开启多元化发展 向阳论医谈药 2024-10-15 大揭秘！国际大药厂站队美国大选，各家真金白银的在支持谁？ 大揭秘！国际大药厂站队美国大选，各家真金白银的在支持谁？ Being科学 2024-11-05 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药经济报 共发布文章：1448篇 最新发布文章 三甲医院遴选处方流转合作药店，福建、广东如何探路？ 全国近75万定点医药机构支持医保钱包 九年“全勤”进博会，百年拜耳如何把中国创新嵌入全球价值链？ 1605亿美元、顺差232亿元：前三季医药外贸这份成绩单 吉林执行5类医用耗材集采中选产品、北京落地第十二批国采中选结果、宁夏公示10月中药配方颗粒拟挂网结果 一口气布局37个产品，生物类似药十年大单落地！国内军团竞逐全球 监管科学 | AEO制度对完善医疗器械分级监管的启示 《中药品种保护申请与技术审评沟通交流管理办法（征求意见稿）》公开征求意见 全球药物研发中心 全球研发数据与行业前沿情报 397,120个 全球在研药物数 1,108个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 国家药监局关于修订氨溴特罗制剂说明书的公告（2026年第107号） 2026-11-12 国家药监局关于27批次不符合规定药品的通告（2026年第39号） 2026-11-12 国家药监局关于注销氧等19个药品注册证书的公告（2026年第106号） 2026-11-12 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 3 中国DRG/DIP支付方式改革研究 摩熵咨询 33 60 2026年9月摩熵医药健康投融资&交易月报 摩熵咨询 20 3 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 关于进一步做好创新药安全合理配备使用工作的通知 颁布机构：国家卫健委（原国家卫计委） 2026-11-10 关于公开征求 意见的通知 颁布机构：国家药品审评中心（CDE） 2026-10-16 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径 先声药业1类新药SIM0725注射液获批临床！CD122单抗切入白癜风赛道，有望实现长期控制减少复发 2026年第45周11.02-11.08全球创新药研发概览 2026年第45周11.02-11.08国内医药大健康行业政策法规汇总 2026年第45周11.02-11.08国内仿制药/生物类似物申报/审批数据分析 2026年第45周11.02-11.08国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 倍特药业PRT-064040鼻喷雾新适应症获批临床，第三代CGRP拮抗剂拓展丛集性头痛治疗赛道 全球首款FXIa抑制剂获批！FDA官宣拜耳新药阿舒克森上市，缺血性卒中风险降低26% 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "7ce52ef319358b37",
+    "score": 4.9,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.0,
+      "first_mover": 1.6,
+      "tier": 1.2,
+      "impact": 1.6
+    },
+    "flags": [
+      "duplicate"
+    ],
+    "cluster_key": "glp-1",
+    "confidence": 0.9,
+    "deal_key": "blackstone|pfizer|berobenatide",
+    "upfront_usd": 0,
+    "total_usd": 1500000000,
+    "reasoning": "15亿美元为研发成本支付上限而非首付；首创月制剂定位与大型药企资本协同值得跟进。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实berobenatide当前临床阶段及首创性表述依据",
+      "核实资金支付节奏、里程碑条件与双方商业权利"
+    ],
+    "title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide",
+    "url": "https://www.pharmexec.com/view/pfizer-blackstone-sign-co-funding-deal-berobenatide",
+    "sources": [
+      "pharmexec_partnership",
+      "pharmexec_irlp"
+    ],
+    "content": "Advertisement News|Articles|November 12, 2026 Pfizer and Blackstone Sign Co-Funding Deal for berobenatide Author(s)Nicholas Jacobus Pfizer and Blackstone Life Sciences sign a co-funding deal in which Blackstone is set to provide up to $1.5 billion through 2028 to advance berobenatide. Advertisement Pfizer Inc. and Blackstone Life Sciences entered a strategic co-funding agreement under which funds managed by Blackstone will pay upwards of $1.5 billion in development costs through 2028 for berobenatide.The investigational, potential first-in-class monthly GLP-1 receptor agonist peptide is currently being studied for chronic weight management and obesity-related conditions. In exchange for the funding, Blackstone will be eligible to receive milestone-based payments, subject to U.S. regulatory approval of monthly dosing of injectable berobenatide monotherapy for chronic weight management and the achievement of certain commercial sales milestones.1Cecile Guegan, chief financial officer and executive vice president, Pfizer, frames the agreement as part of a broader financing strategy for the company’s pipeline. “Our aim is to bring important new medicines to patients while taking a disciplined approach that pairs internal research investments with targeted investment from capital partners,” Guegan says. “Today’s announcement helps us advance our comprehensive obesity program and maintain the financial capacity and flexibility to invest in our broader pipeline across all therapeutic areas.”What are the terms of the agreement?Blackstone-managed funds are set to cover up to $1.5 billion of berobenatide’s development costs through 2028.1 In return, Blackstone becomes eligible for milestone-based payments tied to two conditions: U.S. regulatory approval of monthly dosing of injectable berobenatide monotherapy for chronic weight management, and the achievement of certain commercial sales milestones once the product reaches the market.1 The structure is expected to keep Blackstone purely as a capital partner rather than a stakeholder in the asset itself, as it holds no rights or ownership in berobenatide, while Pfizer continues to run the program’s operations and make its development decisions.1 (()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})(); Related Articles FDA Requests Updated Safety Label Warning Across All GLP-1 Receptor Agonist for Potential Risk of NAION The US Drug-Pricing Reset: Competing on Net Value ESC 2026: GLP-1–Based Therapies Move Further into Mainstream Cardiovascular CareThe deal is expected to give Pfizer outside capital to fund one of the larger clinical programs in its pipeline without ceding control of the asset. Under terms of the agreement, Blackstone does not acquire any rights or ownership in berobenatide, while Pfizer retains full operational control and decision-making with respect to the berobenatide program.1 Any milestone payments, if earned, will be payable to Blackstone over a multi-year period, and funds managed by Blackstone’s perpetual private equity strategy, known as BXPE, will invest alongside funds managed by Blackstone Life Sciences as part of the transaction.1As Cheryl Reicin told Pharmaceutical Executive last year, with early-stage companies short on cash and big pharma short on new products, “options-to-buy have come back into vogue” as a way for large drugmakers to pursue multiple shots on goal in the GLP-1 class without loading R&D costs onto their own balance sheets.What is berobenatide and why does it matter for Pfizer’s pipeline?Berobenatide, is an investigational, potential first-in-class monthly GLP-1 receptor agonist peptide being studied for chronic weight management and obesity-related comorbidities, including knee osteoarthritis and obstructive sleep apnea.1,2 The drug is being studied across both weekly and monthly dosing intervals as part of the Vesper clinical program, which spans three trials.2 In Vesper-3, which tested a preplanned switch from weekly to monthly injections in adults without type 2 diabetes, berobenatide produced placebo-adjusted weight loss of up to 12.3% at 28 weeks, according to data presented by John B. Buse, MD, PhD, at the American Diabetes Association 2026 Scientific Sessions. Vesper-2 evaluated weekly dosing paired with glycemic improvement in adults who also had type 2 diabetes, while an open-label extension of Vesper-1 tested the drug at its highest weekly dose.2Pfizer is planning to advance more than 20 trials for obesity and related comorbidities in 2026, including 10 ongoing and planned Phase III trials for berobenatide.1Dr. Nicholas Galakatos, global head of Blackstone Life Sciences, points to the deal as a continuation of an existing relationship between the two organizations. “We are pleased to further expand our relationship with Pfizer and support the broad and rigorous development of berobenatide as the anchor of Pfizer’s cardiometabolic pipeline,” Galakatos says. “This collaboration is a good example of our leadership in providing capital solutions at scale to advance important medicines and technologies to patients.”SourcesPfizer and Blackstone Life Sciences Announce Strategic Funding Agreement for Obesity Program Pfizer November 11, 2026, https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-blackstone-life-sciences-announce-strategicBerobenatide weight loss benefit maintained in shift to monthly dosing, phase 2b data show Clevland Clinic Journal Of Medicine June 6, 2026, https://www.ccjm.org/page/ada-2026/berobenatide-monthly Newsletter Lead with insight with the Pharmaceutical Executive newsletter, featuring strategic analysis, leadership trends, and market intelligence for biopharma decision-makers. Subscribe Advertisement R&D/Clinical Trials|Partnerships|Operations Related to this articleView moreNovember 10th, 2026AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine PipelineAstraZeneca acquires Omniose, to bolster it's preclinical infectious disease programs. Read moreNovember 9th, 2026argenx Acquires Unnatural Products Inc. to Expand Immunology Capabilities argenx acquires Unnatural Products, adding a macrocyclic peptide discovery platform to complement its antibody engineering. Read moreNovember 4th, 2026Pharmaceutical Executive Daily: Nxera Licenses EP4 Agonist to AbbVieHow microgravity is opening new possibilities for drug R&D and manufacturing, a pharma funding roundup covers Boehringer Ingelheim’s up-to-$7 billion oncology licensing deal with Sino Biopharmaceutical and Nxera Pharma’s EP4 agonist deal with AbbVie, and CytoDyn’s Dr. Jay Lalezari on why Leronlimab isn’t just another repurposed drug.Read moreNovember 6th, 2026Novo Terminates Research Collaboration With Korro Bio The termination ends a cardiometabolic RNA-editing partnership that was paused for 12 months, closing out a deal under which Korro earned no milestone payments.Read moreNovember 4th, 2026Why Leronlimab Isn’t Just Another Repurposed Drug: Q&A with Dr. Jay LalezariDr. Jay Lalezari, CEO and CMO of CytoDyn, discusses how Leronlimab’s unique CCR5-blocking mechanism has carried it from HIV, to Covid-19, to a promising, one-of-a-kind proof of concept in colorectal cancer.Read moreNovember 12th, 2026Pharmaceutical Executive Daily: Moderna Outlines Growth Plan at 2026 Analyst DayModerna lays out an oncology-driven growth plan at its 2026 Analyst Day, Pfizer and Blackstone sign a co-funding deal worth up to $1.5 billion for berobenatide, and Parexel’s Stacy Hurt on how patients’ use of AI is reshaping sponsor communication.Read moreNovember 12th, 2026Moderna Lays Out Oncology-Driven Growth Plan at 2026 Analyst DayModerna used its 2026 Analyst Day to outline an oncology-driven growth strategy anchored by intismeran and other cancer antigen therapies.Read moreNovember 12th, 2026How Patients’ Use of AI Impact How Sponsors Communicate with ThemWith 60% of Americans using AI health tools, patient advocates are encouraging collaborative use of AI alongside healthcare teams for better outcomes.Read morePrevious slideNext slide Advertisement Advertisement Trending on PharmExec1Building Connected AI Ecosystems, Not Standalone Tools2Where AI Is Having the Most Impact and Where Gaps Remain3Pfizer and Blackstone Sign Co-Funding Deal for berobenatide4Moderna Lays Out Oncology-Driven Growth Plan at 2026 Analyst Day5Pharmaceutical Executive Daily: FDA Approves Pimjetmi",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "aad61def2b790b39",
+    "score": 4.3,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.0,
+      "first_mover": 1.6,
+      "tier": 1.2,
+      "impact": 1.0
+    },
+    "flags": [
+      "duplicate",
+      "rss_only"
+    ],
+    "cluster_key": "glp-1",
+    "confidence": 0.75,
+    "deal_key": "blackstone|pfizer|berobenatide",
+    "upfront_usd": 0,
+    "total_usd": 1500000000,
+    "reasoning": "15亿美元为研发资金支付上限而非首付；潜在首创月制剂GLP-1提供一定赛道价值。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实berobenatide当前临床阶段",
+      "核实资金分期、里程碑条件及是否存在未披露首付"
+    ],
+    "title": "Blackstone commits up to $1.5B for R&D of Pfizer's ex-Metsera GLP-1",
+    "url": "https://endpoints.news/blackstone-commits-up-to-1-5b-for-rd-of-pfizers-ex-metsera-glp-1/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Pfizer has secured up to $1.5 billion from the investment group Blackstone Life Sciences to help pay for the development of its obesity candidate berobenatide. The co-funding agreement will see that cash come from funds ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "13e8b4359996ff38",
+    "score": 3.8,
+    "dims": {
+      "amount": 2.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 1.2,
+      "impact": 0.6
+    },
+    "flags": [],
+    "cluster_key": "priority-review-voucher",
+    "confidence": 0.8,
+    "deal_key": "biontech|scholar-rock|priority-review-voucher",
+    "upfront_usd": 205000000,
+    "total_usd": 205000000,
+    "reasoning": "2.05亿美元收购优先审评券，金额明确；但属非研发管线资产交易，外溢有限。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实该优先审评券的具体适应症及转让完成状态"
+    ],
+    "title": "BioNTech pays $205M for Scholar Rock voucher; J&J pulls back in Norway",
+    "url": "https://endpoints.news/biontech-pays-205m-for-scholar-rock-voucher-jj-pulls-back-in-norway/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 12, 2026 11:03 AM EST News Briefing BioN­Tech pays $205M for Schol­ar Rock vouch­er; J&J pulls back in Nor­way ENDPOINTS Plus, news about Vor Bio, Re­meGen, Mer­ck KGaA, Aidea, Astel­las and Im­muneer­ing. BioN­Tech ac­quires PRV for $205 mil­lion: The Ger­man biotech Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Plus, news about Vor Bio, RemeGen, Merck KGaA, Aidea, Astellas and Immuneering. BioNTech acquires PRV for $205 million: The German biotech scooped up the FDA voucher from Scholar Rock, with plans ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "dd5041960e65dcd6",
+    "score": 3.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "roundup",
+      "counterparty_unidentified"
+    ],
+    "cluster_key": "conjugate-vaccine",
+    "confidence": 0.55,
+    "deal_key": "astrazeneca|undisclosed-vaccine-startup|conjugate-vaccine-technology",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "阿斯利康收购疫苗初创并获得偶联疫苗技术，具平台价值；但摘要未披露对价及标的名称。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实被收购公司名称、交易对价及资产范围",
+      "核实该技术是否进入临床开发及收购完成条件"
+    ],
+    "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
+    "url": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from News roundup AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning The deal gives AstraZeneca a simpler way to make conjugate vaccines. Elsewhere, a psychedelic depression drug was submitted to the FDA and an autoimmune disease-focused biotech’s shares collapsed. Published Nov. 11, 2026 By BioPharma Dive staff Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Getty Images Today, a brief rundown of news involving AstraZeneca and the Food and Drug Administration, as well as updates from Compass Pathways, Zura Bio and Abeona Therapeutics that you may have missed. AstraZeneca has acquired vaccine startup and development partner Omniose. The two companies didn't disclose deal terms in their announcement Tuesday. But the transaction hands AstraZeneca \"bioconjugation\" technology, a more efficient way to make the conjugate vaccines that strap a protein to an immune system-provoking antigen. Omniose claimed the technology could yield \"higher-quality\" conjugate vaccines. AstraZeneca intends to use the approach to make shots for serious bacterial infections. The two companies first formed a vaccine-focused alliance in January 2024. — Ben Fidler if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); The Food and Drug Administration has called for the prescribing information for widely popular GLP-1 therapies to be updated to include the possible risk of contracting a rare condition that causes vision loss. The FDA began investigating the issue following case reports of GLP-1 recipients developing \"non-arteritic anterior ischemic optic neuropathy,\" or \"NAION.\" A review of animal data failed to uncover why GLP-1 drugs might be associated with NAION, but a meta-analysis of many trials found a higher rate of cases in treatment recipients. NAION's been seen with every marketed GLP-1 drug, too, the FDA said. The agency, as a result, believes there is a “potential increased risk of rare NAION events,” it said Monday. — Ben Fidler Compass Pathways said Monday it has completed an approval application in the U.S. for a synthetic psilocybin drug it calls “COMP360” and that it’s developed for treatment-resistant depression. In clinical testing, six weeks of treatment with COMP360 was associated with, on average, a 3.8-point reduction on a 60-point scale measuring the severity of depression symptoms. The drug is part of a wave of research into psychedelic medicines and could receive a particularly speedy review following the company’s receipt of a special Food and Drug Administration voucher. — Jonathan Gardner Shares of Zura Bio plunged by more than two-thirds on Monday following the company’s announcement that its lead product missed the main goal of a Phase 2 trial in people with the autoimmune skin condition hidradenitis suppurativa. Neither of two tested doses of the dual-pronged antibody drug tibulizumab significantly reduced the number of abscesses and inflammatory nodules in enrollees after 16 weeks, nor were secondary trial goals met. Zura will halt development in hidradenitis suppurativa, but continue studying tibulizumab in other immune diseases. The stock plunge dropped Zura’s market valuation to $93 million, below the $188 million in cash and cash equivalents it held on Sept. 30. — Jonathan Gardner if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Abeona Therapeutics has acquired a Phase 3-ready treatment for eosinophilic esophagitis from Ellodi Pharmaceuticals, a six-year-old startup TPG Capital formed after selling off most of Adare Pharmaceuticals. Per deal terms, Abeona issued Ellodi $20 million worth of shares, and promised to pay Ellodi another $60 million should its drug win FDA approval and hit certain sales milestones. Abeona raised $30 million in a private share sale alongside the deal. Previously called APT-1011 and now ABO-801, the drug is an oral form of the steroid fluticasone that dissolves in the mouth and is delivered directly to the esophagus. — Jonathan Gardner Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "86b268dd3d90dfcd",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.7,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "il-23-oral-peptide",
+    "confidence": 0.82,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：核心为HSK47388进入III期及赛道梳理，素材未呈现明确交易对手与交易条款。",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "如制作BD综述，需补充文中相关授权交易的双方、条款及时间"
+    ],
+    "title": "从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径",
+    "url": "https://www.pharnexcloud.com/zixun/sdsl_391985",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 赛道梳理 从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径 从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径 周凯 · 产业与市场分析师 周 周凯 产业与市场分析师 审核：孙浩 · 特许金融分析师（CFA） 聚焦医药市场规模、产业链与竞争格局研究；长期跟踪院内销售数据、企业经营表现与重点赛道变化。累计发布市场分析报告 150+ 篇。 19小时前 1007 口服肽类药物 海思科医药集团股份有限公司 HSK47388片(I) IL-23 III期临床试验 口服环肽类药物研发持续升温，跨国药企加速布局，国内创新药项目也迎来新进展。11月11日，药物临床试验登记与信息公示平台显示，海思科自主研发的 HSK47388片(I) 针对中重度斑块状银屑病的III期临床试验启动，这是该药首次进入III期临床阶段。图源：药物临床试验登记与信息公示平台从海外药物获批到国内项目获得跨国药企青睐，口服肽类药物正成为全球创新药研发与BD交易的重要方向。一、MNC接连布局，口服肽类药物BD升温今年以来，全球口服肽类药物领域接连迎来重要进展。3月，强生的icotrokinra获FDA批准，成为全球首款获批上市的口服IL-23受体拮抗剂肽类药物，用于中重度斑块状银屑病治疗。图源：摩熵医药-全球药物研发数据库7月，默沙东的口服大环肽PCSK9抑制剂enlicitide获FDA批准，进一步拓展了口服肽类药物的应用领域。BD交易方面，国内相关项目也受到跨国药企关注。7月，翰森制药将口服IL-23受体拮抗剂HS-20118在大中华区以外地区的独家权益授权给Avere，交易总金额最高可达23亿美元，包括1.2亿美元首付款、最高21.8亿美元里程碑付款及销售提成。此前披露的早期临床数据显示，该药半衰期约100小时，具有潜在每周一次口服给药的可能性。图源：翰森制药企业公告10月，吉利德宣布以12.75亿美元现金首付款收购瀚辰星泰口服环状多肽IL-23R抑制剂HCXT-2001。该项目目前处于I期临床阶段，主要探索炎症性肠病等领域的应用潜力。此外，2026年以来，全球环肽领域BD交易总金额已达61.7亿美元，创历史新高。值得注意的是，该数据涵盖全球环肽交易，并非仅指口服环肽。二、HSK47388首次进入III期，早期数据已披露国内口服肽类药物研发也在持续推进。继HS-20118、HCXT-2001获得海外药企关注后，海思科的HSK47388迎来新的临床进展。HSK47388是海思科自主研发的口服、强效、高选择性IL-23抑制肽类药物，属于化学药品1类新药，研发方向包括银屑病和炎症性肠病。图源：摩熵医药-全球药物研发数据库此次启动的III期临床试验拟纳入390例中重度斑块状银屑病患者，采用多中心、随机、双盲设计。主要终点包括第16周PASI 90应答率，以及IGA评分达到0或1级且较基线改善至少2分的患者比例。2026年1月，海思科已公布HSK47388的I期健康受试者研究数据。截至数据披露时，研究未观察到严重不良事件，整体耐受性良好。图源：摩熵医药-全球药物研发数据库药代动力学方面，该药呈线性特征，半衰期约16—18小时，初步显示每日一次给药的潜力。多次给药剂量递增研究中，受试剂量均可抑制体外IFNγ分泌。此外，增效剂型50mg的药物暴露量与未使用增效剂型的200mg剂量相当，餐前30分钟服药的食物影响有限。需要注意的是，上述数据来自健康受试者早期研究，主要反映药物安全性、药代动力学及药效学特征，尚不能直接证明其在银屑病患者中的临床疗效。此外，据摩熵医药数据库显示，海思科目前已有超过40款1类新药处于临床及后续研发阶段，研发领域涵盖呼吸系统疾病等，剂型包括片剂、吸入混悬液和吸入粉雾剂。 海思科医药集团股份有限公司全球新药研发阶段分布 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-中国药品审评数据库随着HSK47388进入III期，海思科该项目的研发进程进一步推进，后续临床研究结果将为评估其疗效与安全性提供更多依据。参考来源：[1] CDE官网[2] 摩熵医药（原药融云）数据库[3] 企业公告/官方披露扩展阅读：1. 吉利德收购瀚辰星泰口服IL-23R抑制剂HCXT-2001，I期国产大环肽创新药实现重磅出海2. 翰森制药HS-10374的III期临床研究成功！国产TYK2变构抑制剂冲刺银屑病上市3. 全球首款口服IL-23R拮抗剂在华获批！强生伊可白滞素拿下银屑病大适应症，峰值有望冲50亿美金 IL-23相关推荐 相关适应症： 实体瘤 2 型糖尿病 肺癌 黑色素瘤 哮喘 胶质母细胞瘤 非小细胞肺癌 滤泡性淋巴瘤 胰腺导管腺癌 自身免疫疾病 相关药品： 伊可白滞素 利生奇珠单抗 匹康奇拜单抗 乌司奴单抗 米吉珠单抗 依若奇单抗 相关企业： 天津大学 江苏恒瑞医药股份有限公司 中山康方生物医药有限公司 Moderna Inc 百奥泰生物制药股份有限公司 信达生物制药（苏州）有限公司 安进 Johnson & Johnson 北京诺诚健华医药科技有限公司 石药集团有限公司 HSK47388*点击下方数字查看更多药品相关数据 全球药物研发信息 1条 中国药品审评信息 10条 中国药品批文 - 药品招投标 - 全球临床试验 4条 中国临床试验 7条 一致性评价 - 美国FDA批准药品 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 MNC争相布局！国产口服肽新药首启III期 摩熵医药 2026-11-11 口服IL-23、TYK2竞争升级：益方、诺诚健华的机会，信达、康方的考验 Biotech前瞻 2026-11-08 “泼天富贵”轮到口服环肽了 同写意 2026-11-06 博安生物创新双抗BA2201（TL1A/IL-23）在中国获批开展临床，拟用于治疗炎症性肠病 博安生物 2026-11-06 IL-23抑制剂获FDA批准新增适应症；细胞疗法公司拟IPO募资超1.4亿美元……｜产业新闻 药明康德 2026-10-31 Nuvectis公布NXP200治疗BRAF V600突变胶质瘤的Ib期研究积极数据【AI生成】 Biospace 2026-10-26 近13亿美元首付，吉利德在抢什么 同写意 2026-10-23 信达生物：研发TL1A/IL-23双抗 医药笔记 2026-10-09 2026 EADV｜恒瑞医药IL-23p19/IL-36R双抗、IL-4Rα单抗两项研究入选口头报告 恒瑞医药 2026-10-03 阿斯利康30亿大品种，告别独家 微信公众号 2026-09-23 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 2025年首仿之王！科伦药业强势领跑，齐鲁制药紧随其后，两匹黑马逆袭上榜 摩熵医药 2026-01-05 6家药企折戟后科伦制药强势入局二甲硅油乳剂，或将改写10亿市场“小品种”赛道格局 摩熵医药 2025-12-31 流感高发催生百亿赛道！康缘药业领跑，5款经典名方获批，金振口服液等流感“明星”药表现亮眼 摩熵医药 2026-01-07 避孕药市场风云变幻：从毓婷独大到全球首创微球长效避孕新药「注射用左炔诺孕酮微球」获批临床 药通社 2025-12-30 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,883亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 因操纵市场倍轻松实控人马学军被“双禁”五年：1184万元罚单落地同日辞任，公司扣非净利已连亏四年 2026-11-11 创新药进商保，药企需要怎样的市场准入地图？ 2026-11-11 2026前三季度手术导航系统：天智航、华科精准、美敦力、捷迈邦美、元化、睿米、博医来列市场中标前五 2026-11-11 2026年肝素药物市场表现洞察报告 摩熵咨询 35 92 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 74 FDA新药审评图谱——CDER批准趋势与中国创新药出海启示 摩熵咨询 34 49 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局法规司负责人就 答记者问 颁布机构：国家市场监督管理总局 2026-11-04 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径 先声药业1类新药SIM0725注射液获批临床！CD122单抗切入白癜风赛道，有望实现长期控制减少复发 2026年第45周11.02-11.08全球创新药研发概览 2026年第45周11.02-11.08国内医药大健康行业政策法规汇总 2026年第45周11.02-11.08国内仿制药/生物类似物申报/审批数据分析 2026年第45周11.02-11.08国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 倍特药业PRT-064040鼻喷雾新适应症获批临床，第三代CGRP拮抗剂拓展丛集性头痛治疗赛道 全球首款FXIa抑制剂获批！FDA官宣拜耳新药阿舒克森上市，缺血性卒中风险降低26% 全球新药治疗领域统计 更多 数据来源： 更新时间： let color = linearColor1 getBarChartData(1, undefined, color) 全球新药靶点统计 更多 数据来源： 更新时间： getBarChartData(3) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "69da27ce3cbb6ac1",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "abbisko-joint-tumor-license",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：当前事件为已授权药物获FDA批准，未显示新的授权、收购或合作条款。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "如需作为BD项目，需回溯原始授权协议及历史交易条款"
+    ],
+    "title": "Merck KGaA lands FDA nod for joint tumor drug it licensed from Abbisko",
+    "url": "https://endpoints.news/merck-kgaa-lands-fda-nod-for-joint-tumor-drug-it-licensed-from-abbisko/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Merck KGaA said Tuesday that the drug it licensed from a China-based biotech has secured FDA approval for rare noncancerous tumors that impact the joints. The German conglomerate got the",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.4
+    },
+    "flags": [
+      "stale",
+      "material_insufficient",
+      "thin_material"
+    ],
+    "cluster_key": "braintransporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|braintransporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "诺华退出脑转运体合作具有交易终止信号，但发布已逾9天且仅有标题，非近日。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，需补充一手公告",
+      "核实终止原因、已支付款项及双方权利回收情况",
+      "确认交易终止的准确生效日期"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "8bcf7dd244094fc3",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.3
+    },
+    "flags": [
+      "rss_only",
+      "material_limited"
+    ],
+    "cluster_key": "glp-1",
+    "confidence": 0.55,
+    "deal_key": "eli-lilly|hims|branded-glp-1",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Hims与礼来的品牌GLP-1合作涉及商业化渠道，但摘要未披露金额、期限及具体产品范围。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实协议签署日期、覆盖产品、期限和收入分成",
+      "核实是否存在首付、最低采购承诺或销售分成"
+    ],
+    "title": "How Hims plans to reinvigorate its business",
+    "url": "https://endpoints.news/how-hims-plans-to-revive-its-business-after-pivoting-to-branded-glp-1s/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Hims & Hers, once obsessed with delivering \"personalized care\" through compounded drug products, is now banking on brand-name treatments and the pharmaceutical giants it previously tried to undercut. Hims struck a deal with Eli Lilly ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "24c7fc3d42f1402d",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 1.2,
+      "impact": 0.6
+    },
+    "flags": [
+      "roundup",
+      "duplicate"
+    ],
+    "cluster_key": "glp-1",
+    "confidence": 0.65,
+    "deal_key": "blackstone|pfizer|berobenatide",
+    "upfront_usd": 0,
+    "total_usd": 1500000000,
+    "reasoning": "该条仅为新闻通讯中的附带提及，15亿美元是研发资金上限，未披露首付。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认本条是否应改用独立交易稿来源",
+      "核实该合作的首付、里程碑安排和临床阶段"
+    ],
+    "title": "STAT Plus: Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more Blackstone will provide $1.5 billion to Pfizer to help develop an experimental obesity treatment Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 12, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Top of the morning to you. Gray skies are hovering over the Pharmalot campus right now, but our spirits remain sunny, nonetheless. Why? We will trot out a bit of insight from the Morning Mayor, who would say “Every new day should be unwrapped like a precious gift.” To celebrate the notion, we are brewing a fresh cuppa stimulation and invite you to join us. Remember, a prescription is not required. Our choice today is ginger peach. Meanwhile, here are a few items of interest. Hope you have a smashing day and, of course, do stay in touch. … The U.S. Food and Drug Administration has shelved the fast-track drug review initiative launched during the Trump administration by former Commissioner Marty Makary, Reuters reports. Launched in June 2025, the Commissioner’s National Priority Voucher program aimed to slash drug review timelines to just one to two months ​for therapies addressing national priorities, such as urgent unmet health needs. But critics pointed to possible preferential treatment for companies meeting demands of President Trump, such as offering ‌drugs at lower prices. No new drugs have gotten a voucher since Makary’s departure, and a key component of the program — an executive council of political appointees that oversaw drug reviews ​and had a central role in speeding approvals — has gone dormant.Advertisement The U.S. Senate health committee has scheduled a pivotal vote for next week on the nomination of Heidi Overton to serve as FDA commissioner, despite lingering doubts from Republicans on the panel, STAT writes. The vote is set for Nov. 18 and, if it passes, her nomination would then go to the full Senate, where Republicans are racing to confirm nominees before Democrats take power in January. But even as he scheduled the vote, committee Chair Bill Cassidy (R-La.) remained undecided on Overton, he wrote in a post on X. It would take just one Republican on the committee to sink her nomination, assuming all Democrats vote against her. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 11, 2026 STAT Plus: Pharmalittle: We’re reading about Dems eyeing Trump MFN deals, fewer drug launches in Europe, and more By Ed Silverman Pharmalot Pharmalot November 10, 2026 STAT Plus: Former Eli Lilly rep claims she was fired for complaining about marketing of Mounjaro diabetes drug By Ed Silverman Advertisement Pharmalot Pharmalot November 10, 2026 STAT Plus: Pharmalittle: We’re reading about an approval for novel drug for strokes, a warning for GLP-1 drugs, and more By Ed Silverman Pharmalot Pharmalot November 10, 2026 STAT Plus: Dutch antitrust regulators probe Biogen over test for its MS drug By Ed Silverman Pharmalot Pharmalot November 10, 2026 STAT Plus: Pharma is a ‘mixed bag’ when providing drug access to low- and middle-income countries, analysis finds By Ed Silverman Subscriber Picks STAT Plus: Failure of Novartis Lp(a) drug raises questions about cardiovascular strategy By Elizabeth Cooney and Matthew Herper STAT Plus: Why the latest heart drug failures should make us all more skeptical of AI hype By Matthew Herper STAT Plus: Novartis cites cases of previously unknown tumors possibly tied to its SMA gene therapy By Ed Silverman and Jason Mast STAT Plus: The biotech startups skipping AI for drug discovery By Brittany Trang STAT Plus: CVS’ split doesn’t fix its fundamental problem By A.J. Loiacono Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  },
+  {
+    "id": "7f92931b9f05f0ec",
+    "score": 1.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "roundup"
+    ],
+    "cluster_key": "cdmo",
+    "confidence": 0.65,
+    "deal_key": "lantheus|pharmalogic|cdmo-business",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "PharmaLogic收购Lantheus的CDMO业务，但素材未披露交易对价，且与减值旧闻混排。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实收购标的范围、首付及总交易对价",
+      "区分Lonza历史交易减值金额与本次收购对价"
+    ],
+    "title": "Merck KGaA's writedown over Lonza deal; PharmaLogic buys Lantheus' CDMO business",
+    "url": "https://endpoints.news/merck-kgaas-writedown-over-lonza-deal-pharmalogic-buys-lantheus-cdmo-business/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 12, 2026 10:06 AM EST Manufacturing Mer­ck KGaA's write­down over Lon­za deal; Phar­ma­Log­ic buys Lan­theus' CD­MO busi­ness Anna Brown News Reporter Mer­ck KGaA’s im­pair­ment hit from CD­MO sale: The Ger­man con­glom­er­ate re­port­ed a €366 mil­lion ($405.8 mil­lion) im­pair­ment loss on its busi­ness sale to Lon­za, ac­cord­ing … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Merck KGaA’s impairment hit from CDMO sale: The German conglomerate reported a €366 million ($405.8 million) impairment loss on its business sale to Lonza, according to its third-quarter earnings report Thursday. Last week, the company ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-12T22:17:26Z"
+  }
+]

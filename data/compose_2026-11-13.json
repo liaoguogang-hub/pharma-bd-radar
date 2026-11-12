@@ -1,0 +1,53 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-event_report-7b597265.html",
+    "stats": {
+      "body_chars": 2628,
+      "sections": 6,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "problems": [
+      "HOOK 里没有交易时间。读者第一眼就要知道这是什么时候的事——请在开头写明具体年月日（如「2026年9月24日」或「Oct. 8, 2026」）。查不到就写「未找到公开数据」，但不要略过不提。",
+      "AI味句式 2 处（不是…而是）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 7400,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "11亿美元里程碑！AI制药的下一个战场是“递送”？",
+    "score": 6.0,
+    "type": "event_report"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-event_report-7ce52ef3.html",
+    "stats": {
+      "body_chars": 2996,
+      "sections": 6,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 0,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "problems": [
+      "缺少 FN 来源脚注",
+      "AI味句式 2 处（不是…而是, 换句话说）——必须改掉，不是换词而是拆句重写",
+      "表格列数不一致：表头 4 列，有一行 1 列"
+    ],
+    "html_len": 10357,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide",
+    "score": 4.9,
+    "type": "event_report"
+  }
+]

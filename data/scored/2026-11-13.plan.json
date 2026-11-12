@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-13",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "ai-lnp",
+      "lead_id": "7b59726570912cef",
+      "title": "11亿美元里程碑！AI制药的下一个战场是“递送”？",
+      "score": 6.0,
+      "member_ids": [
+        "7b59726570912cef"
+      ],
+      "deal_keys": [
+        "jitai-biotech|lilly|ai-lnp"
+      ],
+      "members": [
+        {
+          "title": "11亿美元里程碑！AI制药的下一个战场是“递送”？",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/gs_392384",
+          "score": 6.0,
+          "reasoning": "逾1000万美元首付、约11亿美元里程碑上限；AI驱动肝外LNP平台由礼来布局，赛道影响较高。"
+        }
+      ],
+      "reasoning": "逾1000万美元首付、约11亿美元里程碑上限；AI驱动肝外LNP平台由礼来布局，赛道影响较高。",
+      "verify_todo": [
+        "核实首付精确金额及11亿美元里程碑涵盖项目数量",
+        "核实合作是否包含开发权、商业化权或仅为技术合作",
+        "核实国产首个及全球最高交易金额表述依据"
+      ],
+      "flags": [
+        "chinese_first_report"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "glp-1",
+      "lead_id": "7ce52ef319358b37",
+      "title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide",
+      "score": 4.9,
+      "member_ids": [
+        "7ce52ef319358b37"
+      ],
+      "deal_keys": [
+        "blackstone|pfizer|berobenatide"
+      ],
+      "members": [
+        {
+          "title": "Pfizer and Blackstone Sign Co-Funding Deal for berobenatide",
+          "url": "https://www.pharmexec.com/view/pfizer-blackstone-sign-co-funding-deal-berobenatide",
+          "score": 4.9,
+          "reasoning": "15亿美元为研发成本支付上限而非首付；首创月制剂定位与大型药企资本协同值得跟进。"
+        }
+      ],
+      "reasoning": "15亿美元为研发成本支付上限而非首付；首创月制剂定位与大型药企资本协同值得跟进。",
+      "verify_todo": [
+        "核实berobenatide当前临床阶段及首创性表述依据",
+        "核实资金支付节奏、里程碑条件与双方商业权利"
+      ],
+      "flags": [
+        "duplicate"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
