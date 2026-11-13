@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-14",
+  "count": 2,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": null,
+      "lead_id": "dd5041960e65dcd6",
+      "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
+      "score": 4.0,
+      "member_ids": [
+        "dd5041960e65dcd6"
+      ],
+      "deal_keys": [],
+      "members": [
+        {
+          "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
+          "url": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
+          "score": 4.0,
+          "reasoning": "新闻合集：阿斯利康收购一家疫苗初创公司（获更简便的偶联疫苗工艺），金额与标的未在摘要披露；同条另含FDA GLP-1安全警告等"
+        }
+      ],
+      "reasoning": "新闻合集：阿斯利康收购一家疫苗初创公司（获更简便的偶联疫苗工艺），金额与标的未在摘要披露；同条另含FDA GLP-1安全警告等",
+      "verify_todo": [
+        "需确认被收购疫苗公司名称、首付与里程碑金额",
+        "需确认收购是否含技术平台整体并入"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": "cdmo-divestiture",
+      "lead_id": "7f92931b9f05f0ec",
+      "title": "Merck KGaA's writedown over Lonza deal; PharmaLogic buys Lantheus' CDMO business",
+      "score": 2.5,
+      "member_ids": [
+        "7f92931b9f05f0ec"
+      ],
+      "deal_keys": [
+        "lantheus|pharmalogic|cdmo"
+      ],
+      "members": [
+        {
+          "title": "Merck KGaA's writedown over Lonza deal; PharmaLogic buys Lantheus' CDMO business",
+          "url": "https://endpoints.news/merck-kgaas-writedown-over-lonza-deal-pharmalogic-buys-lantheus-cdmo-business/",
+          "score": 2.5,
+          "reasoning": "多条简讯合集：PharmaLogic收购Lantheus的CDMO业务（金额未披露），另含Merck KGaA对Lonza交易的减值，属常规资产处置"
+        }
+      ],
+      "reasoning": "多条简讯合集：PharmaLogic收购Lantheus的CDMO业务（金额未披露），另含Merck KGaA对Lonza交易的减值，属常规资产处置",
+      "verify_todo": [
+        "仅有摘要，需补PharmaLogic-Lantheus交易金额与资产范围",
+        "Merck KGaA对Lonza出售的3.66亿欧元减值为会计处理，非新交易"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
