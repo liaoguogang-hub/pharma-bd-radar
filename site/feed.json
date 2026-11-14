@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/11/14/02-landscape_review-7f92931b.html",
-      "date": "2026-11-14",
-      "title": "两笔CDMO消息背后，药企正在重新计算制造资产的价值",
-      "kicker": "Landscape Review｜CDMO资产重组 · 评分不达标",
-      "sub": "一边是制药影像资产易主，一边是3.66亿欧元减值，制造业务的价值判断已从规模转向用途与回报。",
-      "hook": "2026年11月12日，PharmaLogic收购Lantheus的CDMO业务，交易金额未披露；同日披露的另一则消息中，Merck KGaA对此前出售给Lonza的业务确认了3.66亿欧元减值。一个代表制造资产的重新配置，一个代表交易完成后的价值回撤，两件事合在一起看，CDMO市场正在进入更看重资产用途和回报率的阶段。",
-      "chars": 4162,
-      "site_rel": "posts/2026/11/14/02-landscape_review-7f92931b.html",
+      "rel": "2026/11/15/01-landscape_review-86b268dd.html",
+      "date": "2026-11-15",
+      "title": "首款口服IL-23环肽上市，国产项目推进至III期：银屑病口服赛道进入验证期",
+      "kicker": "Landscape Review｜口服IL-23 · 评分不达标",
+      "sub": "从强生的全球率先获批，到翰森、吉利德的跨境交易，再到海思科启动III期，口服环肽正在同时改写竞争格局和BD定价",
+      "hook": "2026年11月11日，海思科HSK47388启动中重度斑块状银屑病III期临床，390例患者入组。同一年，强生的口服IL-23受体肽已率先获批，翰森项目完成最高23亿美元授权，吉利德又用12.75亿美元现金首付款买下另一款国产口服环肽。一个靶点、三种路径、两种交易方式，口服IL-23赛道在一年内从“能不能做”走到“谁先拿出患者数据”。",
+      "chars": 4063,
+      "site_rel": "posts/2026/11/15/01-landscape_review-86b268dd.html",
       "needs_review": false,
       "problems": [],
       "below_threshold": true
     }
   ],
-  "all_count": 46
+  "all_count": 47
 }

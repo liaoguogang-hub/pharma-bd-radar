@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-15",
+  "count": 1,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "oral-il23-peptide",
+      "lead_id": "86b268dd3d90dfcd",
+      "title": "从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径",
+      "score": 5.8,
+      "member_ids": [
+        "86b268dd3d90dfcd"
+      ],
+      "deal_keys": [],
+      "members": [
+        {
+          "title": "从强生获批到海思科III期：口服IL-23环肽赛道持续升温，HSK47388锚定银屑病治疗新路径",
+          "url": "https://www.pharnexcloud.com/zixun/sdsl_391985",
+          "score": 5.8,
+          "reasoning": "口服IL-23环肽同时出现全球率先上市与国产III期推进，适合赛道综述"
+        }
+      ],
+      "reasoning": "口服IL-23环肽同时出现全球率先上市与国产III期推进，适合赛道综述",
+      "verify_todo": [
+        "素材包含明确首付提示，但当前文本未提供交易双方及具体金额，需回查正文定位交易",
+        "核对文中涉及的商业化交易、授权协议及各自首付、里程碑和总额",
+        "确认HSK47388进入III期的登记日期和具体适应症",
+        "若无法提取一笔明确交易，应将成稿定位为赛道分析而非单笔交易"
+      ],
+      "flags": [
+        "landscape_review",
+        "transaction_terms_unclear"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
