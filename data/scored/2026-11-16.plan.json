@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-16",
+  "count": 0,
+  "plan": [],
+  "diagnosis": {
+    "keep_threshold": 6.5,
+    "candidates": 7,
+    "empty_material": 5,
+    "empty_material_pct": 71.42857142857143,
+    "top_score": 5.4,
+    "reason": "no_fallback_candidate"
+  }
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "id": "13e8b4359996ff38",
+    "score": 5.4,
+    "dims": {
+      "amount": 2.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 1.3
+    },
+    "flags": [
+      "asset_purchase"
+    ],
+    "cluster_key": "priority-review-voucher",
+    "confidence": 0.78,
+    "deal_key": "biontech|scholar-rock|priority-review-voucher",
+    "upfront_usd": 205000000,
+    "total_usd": 205000000,
+    "reasoning": "2.05亿美元首付款收购FDA优先审评券，具有资产购买及资本配置观察价值",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实2.05亿美元是否全部为无条件首付款及资产交割条件",
+      "确认该优先审评券对应品种和适应症",
+      "核验BioNTech使用该券的潜在商业意图"
+    ],
+    "title": "BioNTech pays $205M for Scholar Rock voucher; J&J pulls back in Norway",
+    "url": "https://endpoints.news/biontech-pays-205m-for-scholar-rock-voucher-jj-pulls-back-in-norway/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 12, 2026 11:03 AM EST News Briefing BioN­Tech pays $205M for Schol­ar Rock vouch­er; J&J pulls back in Nor­way ENDPOINTS Plus, news about Vor Bio, Re­meGen, Mer­ck KGaA, Aidea, Astel­las and Im­muneer­ing. BioN­Tech ac­quires PRV for $205 mil­lion: The Ger­man biotech Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Plus, news about Vor Bio, RemeGen, Merck KGaA, Aidea, Astellas and Immuneering. BioNTech acquires PRV for $205 million: The German biotech scooped up the FDA voucher from Scholar Rock, with plans ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "c1ea2d1dbc0b1443",
+    "score": 3.4,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.3
+    },
+    "flags": [
+      "limited_material"
+    ],
+    "cluster_key": "argenx-immunology-mna",
+    "confidence": 0.48,
+    "deal_key": "argenx|multiple-acquisitions|immunology",
+    "upfront_usd": 0,
+    "total_usd": 3400000000,
+    "reasoning": "两笔收购潜在总额约34亿美元，未披露首付；适合观察argenx免疫学扩张",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有摘要素材，需补充两笔收购的交易对手、标的及具体支付结构",
+      "核实各自首付、里程碑与开发阶段",
+      "确认两笔交易是否为近期独立事件"
+    ],
+    "title": "Argenx is spending billions to push beyond Vyvgart",
+    "url": "https://endpoints.news/argenx-is-spending-billions-to-push-beyond-vyvgart/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Six months into her term as CEO of rare disease drugmaker argenx, Karen Massey has overseen two acquisitions worth a combined potential of about $3.4 billion as the company seeks to build a broader immunology ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "8bcf7dd244094fc3",
+    "score": 2.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.6
+    },
+    "flags": [
+      "limited_material"
+    ],
+    "cluster_key": "branded-glp1-commercial",
+    "confidence": 0.48,
+    "deal_key": "hims|lilly|branded-glp-1",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "涉及品牌GLP-1商业合作，但未披露金额及权利范围，现阶段报道价值有限",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有摘要素材，需补充协议对手方、产品范围、期限及经济条款",
+      "核实是否为独家分销、采购或转售安排",
+      "确认交易首次公布时间及双方后续履约情况"
+    ],
+    "title": "How Hims plans to reinvigorate its business",
+    "url": "https://endpoints.news/how-hims-plans-to-revive-its-business-after-pivoting-to-branded-glp-1s/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Hims & Hers, once obsessed with delivering \"personalized care\" through compounded drug products, is now banking on brand-name treatments and the pharmaceutical giants it previously tried to undercut. Hims struck a deal with Eli Lilly ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.8
+    },
+    "flags": [
+      "limited_material",
+      "stale",
+      "thin_material"
+    ],
+    "cluster_key": "brain-transporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|brain-transporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "授权终止属交易事件，但距今12.9天且无正文，具体原因及条款待核",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "核实终止生效时间、原因及双方是否仍有付款义务",
+      "核实项目临床阶段、原始许可条款及终止后的权利归属",
+      "发布日期距今12.9天，需确认是否仍具时效性"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "94232668fc1deb13",
+    "score": 2.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.0,
+      "tier": 1.2,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "moderna-merck-cancer-vaccine",
+    "confidence": 0.45,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：聚焦产能准备与FDA申报，未显示新的授权、收购或合作安排",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有摘要素材，需核验是否伴随新的交易对手或权利安排",
+      "核实相关候选药物的临床阶段及申报时间表"
+    ],
+    "title": "Moderna readies commercial cancer vaccine production ahead of FDA filing",
+    "url": "https://endpoints.news/moderna-readies-commercial-cancer-vaccine-production-ahead-of-fda-filing/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "MARLBOROUGH, MA — Moderna is “on track and ready” to make thousands of doses of its Merck-partnered cancer vaccine as it prepares to file a marketing application by the end of this year with the FDA ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "aad61def2b790b39",
+    "score": 0.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing"
+    ],
+    "cluster_key": "pfizer-blackstone-glp1",
+    "confidence": 0.48,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 1500000000,
+    "reasoning": "纯研发资金安排，未见许可、股权收购或权益转移，不属于BD交易",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需确认是否存在知识产权许可、区域权益或资产转移条款",
+      "核实15亿美元是最高承诺额而非首付款，并补充资金拨付条件"
+    ],
+    "title": "Blackstone commits up to $1.5B for R&D of Pfizer's ex-Metsera GLP-1",
+    "url": "https://endpoints.news/blackstone-commits-up-to-1-5b-for-rd-of-pfizers-ex-metsera-glp-1/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Pfizer has secured up to $1.5 billion from the investment group Blackstone Life Sciences to help pay for the development of its obesity candidate berobenatide. The co-funding agreement will see that cash come from funds ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  },
+  {
+    "id": "24c7fc3d42f1402d",
+    "score": 0.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "newsletter_roundup"
+    ],
+    "cluster_key": "pfizer-blackstone-glp1",
+    "confidence": 0.9,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 1500000000,
+    "reasoning": "栏目摘要涉及最高15亿美元研发资金承诺，但未显示许可、收购或权益转移",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认Blackstone安排是否附带知识产权、开发或商业化权益",
+      "与Blackstone及Pfizer相关一手材料交叉核验支付结构"
+    ],
+    "title": "STAT Plus: Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more Blackstone will provide $1.5 billion to Pfizer to help develop an experimental obesity treatment Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 12, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Top of the morning to you. Gray skies are hovering over the Pharmalot campus right now, but our spirits remain sunny, nonetheless. Why? We will trot out a bit of insight from the Morning Mayor, who would say “Every new day should be unwrapped like a precious gift.” To celebrate the notion, we are brewing a fresh cuppa stimulation and invite you to join us. Remember, a prescription is not required. Our choice today is ginger peach. Meanwhile, here are a few items of interest. Hope you have a smashing day and, of course, do stay in touch. … The U.S. Food and Drug Administration has shelved the fast-track drug review initiative launched during the Trump administration by former Commissioner Marty Makary, Reuters reports. Launched in June 2025, the Commissioner’s National Priority Voucher program aimed to slash drug review timelines to just one to two months ​for therapies addressing national priorities, such as urgent unmet health needs. But critics pointed to possible preferential treatment for companies meeting demands of President Trump, such as offering ‌drugs at lower prices. No new drugs have gotten a voucher since Makary’s departure, and a key component of the program — an executive council of political appointees that oversaw drug reviews ​and had a central role in speeding approvals — has gone dormant.Advertisement The U.S. Senate health committee has scheduled a pivotal vote for next week on the nomination of Heidi Overton to serve as FDA commissioner, despite lingering doubts from Republicans on the panel, STAT writes. The vote is set for Nov. 18 and, if it passes, her nomination would then go to the full Senate, where Republicans are racing to confirm nominees before Democrats take power in January. But even as he scheduled the vote, committee Chair Bill Cassidy (R-La.) remained undecided on Overton, he wrote in a post on X. It would take just one Republican on the committee to sink her nomination, assuming all Democrats vote against her. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 13, 2026 STAT Plus: Up and down the ladder: The latest comings and goings By Ed Silverman Pharmalot Pharmalot November 13, 2026 STAT Plus: Pharmalittle: We’re reading about Lilly conflict questions, a DEA OK for a narcolepsy pill, and more By Ed Silverman Advertisement Pharmalot Pharmalot November 11, 2026 STAT Plus: Pharmalittle: We’re reading about Dems eyeing Trump MFN deals, fewer drug launches in Europe, and more By Ed Silverman Pharmalot Pharmalot November 10, 2026 STAT Plus: Former Eli Lilly rep claims she was fired for complaining about marketing of Mounjaro diabetes drug By Ed Silverman Pharmalot Pharmalot November 10, 2026 STAT Plus: Pharmalittle: We’re reading about an approval for novel drug for strokes, a warning for GLP-1 drugs, and more By Ed Silverman Subscriber Picks STAT Plus: Why the latest heart drug failures should make us all more skeptical of AI hype By Matthew Herper STAT Plus: Failure of Novartis Lp(a) drug raises questions about cardiovascular strategy By Elizabeth Cooney and Matthew Herper STAT Plus: CVS’ split doesn’t fix its fundamental problem By A.J. Loiacono A new tactic in the war over out-of-network bills: Health care providers are suing employers By Bob Herman STAT Plus: Former Eli Lilly rep claims she was fired for complaining about marketing of Mounjaro diabetes drug By Ed Silverman Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-15T22:17:03Z"
+  }
+]
