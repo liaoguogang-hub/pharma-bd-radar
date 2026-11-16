@@ -1,0 +1,348 @@
+[
+  {
+    "id": "0c18590759504101",
+    "score": 6.9,
+    "dims": {
+      "amount": 2.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 2.0
+    },
+    "flags": [
+      "rumor",
+      "conflicting_reports",
+      "asset_provenance_chain"
+    ],
+    "cluster_key": "ollin-acquisition",
+    "confidence": 0.68,
+    "deal_key": "johnson-johnson|ollin-biosciences|ophthalmology",
+    "upfront_usd": 2200000000,
+    "total_usd": 3400000000,
+    "reasoning": "拟以22亿美元首付收购眼科biotech，且资产源自中国授权，跨境交易链条值得关注",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实交易是否已正式宣布及双方公告口径",
+      "核对英文报道33亿美元与中文报道34亿美元总额差异",
+      "确认22亿美元预付现金及12亿美元里程碑的构成",
+      "核查信达相关授权协议、权利范围和资产阶段"
+    ],
+    "title": "强生拟最高34亿美元收购Ollin，核心资产来自信达授权",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_394133",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 交易并购 强生拟最高34亿美元收购Ollin，核心资产来自信达授权 强生拟最高34亿美元收购Ollin，核心资产来自信达授权 药研网 16小时前 查看原文 60 Ollin 11月15日，《 金融时报》引述知情人士报道，强生正与眼科生物技术公司Ollin Biosciences深入谈判，拟以最高34亿美元收购后者 ，其中22亿美元为预付现金，最高12亿美元为里程碑付款。 截至发稿，双方均未公告。 Ollin总部位于得克萨斯州奥斯汀，2023年成立，2025年下半年公开亮相，首轮融资1亿美元。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 通过比较4款出海PD-(L)1/VEGF双抗分析BioNTech/普米斯及默沙东/礼新交易背后的逻辑 通过比较4款出海PD-(L)1/VEGF双抗分析BioNTech/普米斯及默沙东/礼新交易背后的逻辑 小药说药 2024-11-18 2024年8月中国医药BD交易盘点 2024年8月中国医药BD交易盘点 美柏资本 2024-09-05 KKR是如何登顶并购基金王座的？（下） KKR是如何登顶并购基金王座的？（下） 晨哨并购 2024-09-07 市值31亿光智科技收购百亿独角兽先导电科 能否终结两年半的亏损？ 市值31亿光智科技收购百亿独角兽先导电科 能否终结两年半的亏损？ 晨哨并购 2024-10-09 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 药研网 共发布文章：968篇 最新发布文章 同比下降55%！2026年生物医药裁员降温 阿斯利康收购一家细菌疫苗公司 诺和诺德下一代减重药国内递交上市申请 CDMO 开始卖资产：蓬勃生物又卖了一条抗体 药明康德公告：被移除出1260H名单 信达 PCSK9 单抗 III 期达标：一线单药，12 周降 LDL-C 超 60% 荃信生物，又一款双抗出海 诺华确认：Zolgensma治疗患者中出现9例肿瘤报告 全球药物研发中心 全球研发数据与行业前沿情报 397,365个 全球在研药物数 2,526个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 药监局局务会重磅落地：原料药登记主体可变更，CGT 审评全链条优化 2026-11-16 各地药监在行动｜地方药品安全及促进高质量发展 “十五五” 规划印发（二） 2026-11-16 运用WorkBuddy落地药品QC实验数据管理 2026-11-16 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 3 中国DRG/DIP支付方式改革研究 摩熵咨询 33 65 2026年9月摩熵医药健康投融资&交易月报 摩熵咨询 20 3 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 关于进一步做好创新药安全合理配备使用工作的通知 颁布机构：国家卫健委（原国家卫计委） 2026-11-10 关于公开征求 意见的通知 颁布机构：国家药品审评中心（CDE） 2026-10-16 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 2026 ESMO 肿瘤药物研发盘点：生存证据与临床定位如何支撑管线决策 2026 ESMO年会9项肿瘤III期研究解读：ADC、KRAS、MET最新临床数据 2026 ESMO会议重点研究盘点——重塑肿瘤药物研发的临床证据 摩熵 BCPM Data 国际版：为全球医药决策者打造的一站式情报工作台 2026医保目录正式落地：107个药新增纳入，51款创新药创历史新高，12个进商保创新药目录（附名单） 国产糖尿病创新管线全面升级，GLP-1成增长核心引擎！华东医药、甘李药业、通化东宝等药企密集布局 以岭药业两款中药新药同步获批：芪秦通痹片剑指类风湿关节炎，半夏白术天麻汤颗粒激活经典名方 南京正大天晴拿下抗肿瘤药物西达本胺国内首仿，全球首个HDAC抑制剂原研独占格局终结 资本透视 更多 数据来源： 更新时间： getStackedLineChartData(2) 最新投融资事件 更多 getCardData('newFinance').then(() => { new Swiper(\"#newFinance-card .swiper\", { loop: true, slidesPerView: 5, loopFillGroupWithBlank: true, loopAdditionalSlides: 5, direction: 'vertical', // 设置轮播方向 grabCursor: true, freeMode: false, speed: 3000, autoplay: { delay: 0, disableOnInteraction: false } }) }) 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "604bf71d1afea3fe",
+    "score": 5.2,
+    "dims": {
+      "amount": 1.2,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "multi_deal_roundup"
+    ],
+    "cluster_key": "multi-deal-roundup-2026w47",
+    "confidence": 0.45,
+    "deal_key": "biogen|novartis|multi-deal-roundup",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "汇总诺华、Biogen、恒瑞等多笔动态，适合拆条或领域综述但单笔信息不足",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "逐笔确认Novartis、Biogen、Hengrui与AstraZeneca交易的对手方和资产",
+      "分别核实首付、里程碑及临床阶段",
+      "确认Amylyx相关交易的具体条款"
+    ],
+    "title": "China's $40k CAR-T; Novartis and Biogen strike deals",
+    "url": "https://endpoints.news/car-t-costs-falling-in-china-novartis-and-biogen-strike-deals-obesityweek-readouts/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 16, 2026 11:19 AM ESTUpdated 12:25 PM News Briefing Chi­na of­fers CAR-T for $40,000; No­var­tis and Bio­gen both strike deals ENDPOINTS Plus, news about Amy­lyx, Jiang­su Hen­grui and As­traZeneca. Chi­na dras­ti­cal­ly cuts price of a CAR-T: Chi­na is adding a CAR-T ther­a­py … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Plus, news about Amylyx, Jiangsu Hengrui and AstraZeneca. China drastically cuts price of a CAR-T: China is adding a CAR-T therapy to its basic medical insurance drug list, or the NRDL ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "e3335d8078c4da0a",
+    "score": 4.9,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 2.0
+    },
+    "flags": [
+      "upfront_not_disclosed"
+    ],
+    "cluster_key": "eli-lilly-2026-mna",
+    "confidence": 0.6,
+    "deal_key": "eli-lilly|stipple-bio|cancer",
+    "upfront_usd": 0,
+    "total_usd": 5900000000,
+    "reasoning": "礼来59亿美元肿瘤合作规模大，但首付未披露，靶点、阶段与首创性待核实",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实首付款金额及近期里程碑支付",
+      "确认具体靶点、分子、适应症和临床阶段",
+      "核查双方是否公布正式协议条款"
+    ],
+    "title": "Lilly strikes up to $5.9B cancer deal with Stipple Bio",
+    "url": "https://endpoints.news/lilly-strikes-up-to-5-9b-cancer-deal-with-stipple-bio/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "Stipple Bio CEO Jeff Landau at this year's Endpoints 11 awards (Adam Parshall for Endpoints News) November 16, 2026 04:01 PM EST Deals Lil­ly strikes up to $5.9B can­cer deal with Stip­ple Bio Lei Lei Wu News Reporter Eli Lil­ly con­tin­ues to be phar­ma’s biggest shopa­holic. Lil­ly has en­list­ed Cam­bridge, MA-based start­up Stip­ple Bio for a multi­bil­lion-dol­lar deal to de­vel­op new can­cer treat­ments … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Eli Lilly continues to be pharma’s biggest shopaholic. Lilly has enlisted Cambridge, MA-based startup Stipple Bio for a multibillion-dollar deal to develop new cancer treatments, marking what appears to be the Indianapolis drug giant’s second-largest ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "c1ea2d1dbc0b1443",
+    "score": 4.7,
+    "dims": {
+      "amount": 0.5,
+      "stage": 1.0,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 1.6
+    },
+    "flags": [
+      "retrospective",
+      "multi_deal_roundup",
+      "upfront_not_disclosed"
+    ],
+    "cluster_key": "argenx-mna-2026",
+    "confidence": 0.55,
+    "deal_key": "argenx|multiple|immunology-mna",
+    "upfront_usd": 0,
+    "total_usd": 3400000000,
+    "reasoning": "argenx两笔收购合计潜在34亿美元，可反映其免疫学扩张路径，但属于复盘而非新增交易",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "确认两笔收购的标的、金额与时间",
+      "分别核实首付款和里程碑结构",
+      "查明相关资产阶段及收购对argenx产品组合的作用"
+    ],
+    "title": "Argenx is spending billions to push beyond Vyvgart",
+    "url": "https://endpoints.news/argenx-is-spending-billions-to-push-beyond-vyvgart/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Six months into her term as CEO of rare disease drugmaker argenx, Karen Massey has overseen two acquisitions worth a combined potential of about $3.4 billion as the company seeks to build a broader immunology ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "977511ab87fee2a1",
+    "score": 4.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [
+      "upfront_not_disclosed",
+      "conflicting_reports",
+      "thin_material"
+    ],
+    "cluster_key": "ollin-acquisition",
+    "confidence": 0.4,
+    "deal_key": "johnson-johnson|ollin-biosciences|ophthalmology",
+    "upfront_usd": 0,
+    "total_usd": 3300000000,
+    "reasoning": "强生33亿美元眼科收购体量可观，但当前素材未拆分首付且与中文报道数字冲突",
+    "article_type": "event_report",
+    "verify_todo": [
+      "以双方公告核实33亿美元对价的支付结构",
+      "核查首付款、近期里程碑与或有对价金额",
+      "核对与中文媒体所报22亿美元首付、34亿美元总额是否属同一版本"
+    ],
+    "title": "J&J to buy eye disease biotech Ollin Biosciences for up to $3.3B",
+    "url": "https://endpoints.news/jj-to-buy-eye-disease-biotech-ollin-biosciences-for-up-to-3-3b/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Johnson & Johnson said Monday it will snap up Ollin Biosciences in a deal worth up to $3.3 billion, just a little over a year after the ophthalmology biotech broke cover ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "94232668fc1deb13",
+    "score": 4.5,
+    "dims": {
+      "amount": 0.3,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "moderna-merck-cancer-vaccine",
+    "confidence": 0.72,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，仅涉及存量合作项目的生产准备与申报计划，没有新增交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认是否存在尚未披露的新协议或新增授权",
+      "如无新交易，应从BD交易榜剔除"
+    ],
+    "title": "Moderna readies commercial cancer vaccine production ahead of FDA filing",
+    "url": "https://endpoints.news/moderna-readies-commercial-cancer-vaccine-production-ahead-of-fda-filing/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "MARLBOROUGH, MA — Moderna is “on track and ready” to make thousands of doses of its Merck-partnered cancer vaccine as it prepares to file a marketing application by the end of this year with the FDA ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "942b842b570f14ca",
+    "score": 4.3,
+    "dims": {
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [
+      "target_not_named",
+      "upfront_not_disclosed"
+    ],
+    "cluster_key": "eli-lilly-2026-mna",
+    "confidence": 0.4,
+    "deal_key": "eli-lilly|unknown-target|blood-cancer",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "礼来年内第14笔收购体现并购节奏，但标的名称、金额和资产阶段均缺失",
+    "article_type": "event_report",
+    "verify_todo": [
+      "确认被收购企业名称",
+      "核实收购对价、支付结构和是否附带里程碑",
+      "查明核心资产、适应症及临床开发阶段"
+    ],
+    "title": "Lilly's 14th acquisition of the year is a little-known blood cancer biotech",
+    "url": "https://endpoints.news/lillys-14th-acquisition-of-the-year-is-a-little-known-blood-cancer-biotech/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 16, 2026 09:37 AM EST StartupsDeals Lil­ly's 14th ac­qui­si­tion of the year is a lit­tle-known blood can­cer biotech Kyle LaHucik Biotech Correspondent Eli Lil­ly has been on a shop­ping spree this year thanks to its GLP-1-dri­ven rev­enue, and its 14th ac­qui­si­tion of 2026 is … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Eli Lilly has been on a shopping spree this year thanks to its GLP-1-driven revenue, and its 14th acquisition of 2026 is in cancer, the domain of expertise for the pharma's head ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 4.0,
+    "dims": {
+      "amount": 0.3,
+      "stage": 1.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.8
+    },
+    "flags": [
+      "insufficient_material",
+      "deal_termination",
+      "non_recent",
+      "thin_material"
+    ],
+    "cluster_key": "braintransporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|braintransporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "签约14个月后终止具有存量协议退出信号，但发布已近14天且仅有标题",
+    "article_type": "event_report",
+    "verify_todo": [
+      "补充正文并核实原始授权协议条款",
+      "确认终止原因及已支付首付款",
+      "核实相关资产开发阶段和双方权利处置",
+      "确认发布日期及终止发生时间"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-16T22:17:22Z"
+  },
+  {
+    "id": "36e3cb4aee9d9529",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.3,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "insufficient_material",
+      "terms_not_disclosed",
+      "thin_material"
+    ],
+    "cluster_key": "china-small-nucleic-acid",
+    "confidence": 0.3,
+    "deal_key": "hisun-pharma|xuanjing-bio|small-nucleic-acid",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "海正与炫景布局小核酸赛道具备潜在跟踪价值，但仅有标题、金额和条款完全缺失",
+    "article_type": "event_report",
+    "verify_todo": [
+      "补充正文或一手协议材料",
+      "确认合作与授权关系、资产归属及商业化权利",
+      "核实首付、里程碑、开发责任和临床阶段"
+    ],
+    "title": "海正药业牵手炫景生物布局小核酸药物赛道，也许是一笔被低估的交易",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/gs_394107",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-16T22:17:22Z"
+  }
+]

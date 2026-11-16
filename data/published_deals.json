@@ -192,6 +192,18 @@
       "deal_key": "lantheus|pharmalogic|cdmo",
       "lead_id": "7f92931b9f05f0ec",
       "title": "Merck KGaA's writedown over Lonza deal; PharmaLogic buys Lantheus' CDMO business"
+    },
+    {
+      "date": "2026-11-17",
+      "deal_key": "johnson-johnson|ollin-biosciences|ophthalmology",
+      "lead_id": "0c18590759504101",
+      "title": "强生拟最高34亿美元收购Ollin，核心资产来自信达授权"
+    },
+    {
+      "date": "2026-11-17",
+      "deal_key": "eli-lilly|stipple-bio|cancer",
+      "lead_id": "e3335d8078c4da0a",
+      "title": "Lilly strikes up to $5.9B cancer deal with Stipple Bio"
     }
   ]
 }

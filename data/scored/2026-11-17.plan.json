@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-17",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "0c18590759504101",
+      "title": "强生拟最高34亿美元收购Ollin，核心资产来自信达授权",
+      "score": 6.9,
+      "member_ids": [
+        "0c18590759504101"
+      ],
+      "deal_keys": [
+        "johnson-johnson|ollin-biosciences|ophthalmology"
+      ],
+      "members": [
+        {
+          "title": "强生拟最高34亿美元收购Ollin，核心资产来自信达授权",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_394133",
+          "score": 6.9,
+          "reasoning": "拟以22亿美元首付收购眼科biotech，且资产源自中国授权，跨境交易链条值得关注"
+        }
+      ],
+      "reasoning": "拟以22亿美元首付收购眼科biotech，且资产源自中国授权，跨境交易链条值得关注",
+      "verify_todo": [
+        "核实交易是否已正式宣布及双方公告口径",
+        "核对英文报道33亿美元与中文报道34亿美元总额差异",
+        "确认22亿美元预付现金及12亿美元里程碑的构成",
+        "核查信达相关授权协议、权利范围和资产阶段"
+      ],
+      "flags": [
+        "rumor",
+        "conflicting_reports",
+        "asset_provenance_chain"
+      ]
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "e3335d8078c4da0a",
+      "title": "Lilly strikes up to $5.9B cancer deal with Stipple Bio",
+      "score": 4.9,
+      "member_ids": [
+        "e3335d8078c4da0a"
+      ],
+      "deal_keys": [
+        "eli-lilly|stipple-bio|cancer"
+      ],
+      "members": [
+        {
+          "title": "Lilly strikes up to $5.9B cancer deal with Stipple Bio",
+          "url": "https://endpoints.news/lilly-strikes-up-to-5-9b-cancer-deal-with-stipple-bio/",
+          "score": 4.9,
+          "reasoning": "礼来59亿美元肿瘤合作规模大，但首付未披露，靶点、阶段与首创性待核实"
+        }
+      ],
+      "reasoning": "礼来59亿美元肿瘤合作规模大，但首付未披露，靶点、阶段与首创性待核实",
+      "verify_todo": [
+        "核实首付款金额及近期里程碑支付",
+        "确认具体靶点、分子、适应症和临床阶段",
+        "核查双方是否公布正式协议条款"
+      ],
+      "flags": [
+        "upfront_not_disclosed"
+      ]
+    }
+  ]
+}
