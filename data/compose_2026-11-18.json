@@ -1,0 +1,26 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-event_report-d9e02473.html",
+    "stats": {
+      "body_chars": 3140,
+      "sections": 8,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（这意味着）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 9393,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "强生拟以最高33.25亿美元收购Ollin，押注眼科VEGF/Ang2双抗",
+    "score": 7.5,
+    "type": "event_report"
+  }
+]

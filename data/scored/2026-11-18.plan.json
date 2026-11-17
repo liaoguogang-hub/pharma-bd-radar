@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-18",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "d9e02473a1aedf15",
+      "title": "强生拟以最高33.25亿美元收购Ollin，押注眼科VEGF/Ang2双抗",
+      "score": 7.5,
+      "member_ids": [
+        "d9e02473a1aedf15"
+      ],
+      "deal_keys": [
+        "jnj|ollin-biosciences|oln324"
+      ],
+      "members": [
+        {
+          "title": "强生拟以最高33.25亿美元收购Ollin，押注眼科VEGF/Ang2双抗",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_394606",
+          "score": 7.5,
+          "reasoning": "22亿美元首付加11.25亿美元里程碑，MNC收购眼科双抗资产，兼具金额与赛道意义。"
+        }
+      ],
+      "reasoning": "22亿美元首付加11.25亿美元里程碑，MNC收购眼科双抗资产，兼具金额与赛道意义。",
+      "verify_todo": [
+        "核实22亿美元首付加11.25亿美元或有对价的公司公告口径",
+        "核实OLN324临床阶段、关键数据及申报时间表",
+        "确认交易尚待哪些监管批准及预计交割条件"
+      ],
+      "flags": []
+    }
+  ]
+}
