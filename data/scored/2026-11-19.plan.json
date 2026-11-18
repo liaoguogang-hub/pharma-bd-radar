@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "d345d1ed75f5b264",
+      "title": "Pfizer gets into in vivo CAR-T through licensing deal with Starna Therapeutics",
+      "score": 5.7,
+      "member_ids": [
+        "d345d1ed75f5b264"
+      ],
+      "deal_keys": [
+        "pfizer|starna|in-vivo-car-t"
+      ],
+      "members": [
+        {
+          "title": "Pfizer gets into in vivo CAR-T through licensing deal with Starna Therapeutics",
+          "url": "https://endpoints.news/pfizer-gets-into-in-vivo-car-t-through-licensing-deal-with-starna-therapeutics/",
+          "score": 5.7,
+          "reasoning": "3.3亿美元首付换取三项体内CAR-T资产权益；金额可观且体现MNC加码，但并非全球首创。"
+        }
+      ],
+      "reasoning": "3.3亿美元首付换取三项体内CAR-T资产权益；金额可观且体现MNC加码，但并非全球首创。",
+      "verify_todo": [
+        "需查双方公告确认首付之外是否包含近期里程碑及潜在总额",
+        "需确认三项资产名称、具体靶点及各项临床阶段"
+      ],
+      "flags": []
+    }
+  ]
+}

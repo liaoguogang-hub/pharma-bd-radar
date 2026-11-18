@@ -1,0 +1,26 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-event_report-d345d1ed.html",
+    "stats": {
+      "body_chars": 2950,
+      "sections": 7,
+      "tables": 2,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 4 处（不是…而是, 换句话说）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 8584,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Pfizer gets into in vivo CAR-T through licensing deal with Starna Therapeutics",
+    "score": 5.7,
+    "type": "event_report"
+  }
+]

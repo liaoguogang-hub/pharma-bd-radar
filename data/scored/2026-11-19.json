@@ -1,0 +1,395 @@
+[
+  {
+    "id": "d345d1ed75f5b264",
+    "score": 5.7,
+    "dims": {
+      "amount": 2.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [],
+    "cluster_key": "in-vivo-car-t",
+    "confidence": 0.93,
+    "deal_key": "pfizer|starna|in-vivo-car-t",
+    "upfront_usd": 330000000,
+    "total_usd": 0,
+    "reasoning": "3.3亿美元首付换取三项体内CAR-T资产权益；金额可观且体现MNC加码，但并非全球首创。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需查双方公告确认首付之外是否包含近期里程碑及潜在总额",
+      "需确认三项资产名称、具体靶点及各项临床阶段"
+    ],
+    "title": "Pfizer gets into in vivo CAR-T through licensing deal with Starna Therapeutics",
+    "url": "https://endpoints.news/pfizer-gets-into-in-vivo-car-t-through-licensing-deal-with-starna-therapeutics/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "Rongkuan (Frank) Hu, Starna Therapeutics CEO November 18, 2026 07:23 AM ESTUpdated 11:21 AM DealsChinaCell/Gene Tx Up­dat­ed: Pfiz­er gets in­to in vi­vo CAR-T with up to $2.6B Chi­nese biotech li­cens­ing deal Reynald Castaneda Deputy Editor Lei Lei Wu News Reporter Pfiz­er is en­ter­ing the in vi­vo CAR-T race, pay­ing $330 mil­lion up­front to Star­na Ther­a­peu­tics. The deal gives Pfiz­er ex­clu­sive rights out­side of Greater Chi­na … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Pfizer is entering the in vivo CAR-T race, paying $330 million upfront to Starna Therapeutics. The deal gives Pfizer exclusive rights outside of Greater China to three pre-IND assets in autoimmune disease. The pharma will ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "c0b95137bcd3108f",
+    "score": 4.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 1.2,
+      "tier": 1.5,
+      "impact": 1.2
+    },
+    "flags": [
+      "duplicate_cluster",
+      "undisclosed_terms"
+    ],
+    "cluster_key": "in-vivo-car-t",
+    "confidence": 0.82,
+    "deal_key": "pfizer|verismo|in-vivo-kir-car",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Verismo平台及I期资产体现体内CAR-T差异化；与Starna条目同簇，具体授权条款仍需核对。",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需核实辉瑞与Verismo交易的首付、里程碑上限及总潜在金额",
+      "需确认授权区域、权利范围及Synkir-110、Synkir-310的阶段",
+      "需确认文章是否同时纳入辉瑞与Starna的交易条款"
+    ],
+    "title": "Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo",
+    "url": "https://www.pharmexec.com/view/pfizer-verismo-licensing-deals-car-t-manufacturing-in-vivo",
+    "sources": [
+      "pharmexec_partnership",
+      "pharmexec_irlp"
+    ],
+    "content": "Advertisement News|Articles|November 18, 2026 Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo Author(s)Nicholas Jacobus Listen0:00 / 0:00 Key Takeaways Verismo’s Pack-IT license supports in vivo engineering of KIR-CAR T cells, positioning the platform for off-the-shelf delivery with potential reductions in time-to-treatment, cost, and access barriers. Multi-chain KIR-CAR design aims to overcome single-chain CAR constraints, seeking durable antitumor activity with minimized off-target toxicity while Synkir-110 and Synkir-310 progress through Phase I. Pfizer secured ex-Greater China rights to three pre-IND in vivo CAR-T autoimmune programs from Starna, plus technology rights spanning inflammation/immunology and oncology, with options for additional compounds. Financial terms include $330 million upfront and up to $2.3 billion milestones plus royalties, while Pfizer controls ex-China clinical development, U.S. initial manufacturing, and commercialization. The transaction exemplifies large-pharma licensing of China-origin innovation after sustained national investment shifting from low-cost supply to advanced biopharma R&D.SHOW MORE Verismo Therapeutics licenses in vivo CAR T engineering technology from Stanford Medicine, while Pfizer licenses in vivo CAR-T programs from Starna Therapeutics. Advertisement A pair of licensing agreements this week pushed CAR T cell therapy into new territory, with two companies moving to engineer T cells directly inside the body rather than relying on today’s weeks-long manufacturing process.Verismo Therapeutics licenses in vivo CAR T technologyVerismo Therapeutics entered an agreement to license the Pack-it technology enabling in vivo engineering of KIR-CAR T cells from Stanford Medicine. The agreement provides Verismo with technology from the lab of Crystal Mackall, MD, Ernest and Amelia Gallo Family professor, professor of pediatrics and medicine at Stanford Medicine, and founding director of the Stanford Center for Cancer Cell Therapy.1The deal will allow Verismo to extend its multi-chain KIR-CAR platform into next-generation in vivo delivery of KIR-CAR T cell therapies, with the potential to reduce time-to-treatment and cost and broaden patient access over time.1 Verismo’s platform is designed to take CAR T therapy beyond the single-chain limitations of current approaches, with the potential to deliver durable anti-tumor responses while minimizing off-target toxicity. The platform is currently advancing in two Phase I clinical trials: Synkir-110 in solid tumors and Synkir-310 in B-cell malignancies.1 Both trials have generated early positive signals presented at the American Association for Cancer Research 2026 Annual Meeting. (()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})(); Related Articles Gilead Signs Royalty-Free Licensing Deals to Broaden Access to ObeldesivirM&A Roundup: Johnson & Johnson Acquires Ollin Biosciences, Eli Lilly Acquires Calytrix Bio, AmyriAD Therpaeutics Acquires AD04 Alzheimers Program, Sanofi Enters Collaboration with Seawolf TherapeuticsRoundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 BillionBryan Kim, chief executive officer and co-founder of Verismo Therapeutics, says the KIR-CAR platform is at the center of everything Verismo is building, \"Our KIR-CAR platform is at the center of everything Verismo is building, designed to take CAR T beyond its current limitations by delivering a durable anti-tumor response while minimizing off-target toxicity.\" Kim continued, saying, \"Today, KIR-CAR is advancing along the established CAR T pathway in two Phase 1 clinical trials, and adding the Pack-IT technology is intended to extend the platform into next-generation, off-the-shelf in vivo delivery, realizing the full potential of KIR-CAR to reach more patients, faster, and at lower cost.\"Pfizer licenses in vivo CAR-T programsPfizer entered into an exclusive licensing agreement with Starna Therapeutics under which Starna is set to receive an upfront payment of $330 million and is eligible for up to $2.3 billion in milestone payments tied to development and commercial milestones, plus royalties on net sales of approved products.2Under the agreement, Pfizer obtains exclusive rights outside Greater China to develop, manufacture and commercialize three pre-IND in vivo chimeric antigen receptor T-cell programs focused on treating autoimmune diseases.2 Pfizer also receives rights to use Starna’s proprietary in vivo CAR-T technology in inflammation and immunology and in oncology, along with options to exclusively license compounds created under a separate research collaboration and an option to expand the territory to include exclusive rights to develop and commercialize each exclusively licensed compound and product in Greater China.2 Pfizer is expected to lead clinical development outside Greater China and plans to manufacture the finished drug product for the initial clinical trials using its facilities in the United States, with sole and exclusive control over commercialization outside Greater China for all products.The Pfizer-Starna deal also fits a broader pattern of large pharma licensing innovative technology out of China, as John Stanford, executive director at Incubate, told Pharmaceutical Executive, “the surge of interest in Chinese licensing is the product of two decades of deliberate investment. China had a very stated objective — not just to be a cheap supplier, but to edge into innovative industries. That investment is now paying off.”Michael Vincent, chief inflammation and immunology officer, Pfizer, says “In vivo CAR-T is an emerging and promising approach for treating autoimmune diseases, and the patients who might benefit most are those for whom today’s options fall short. Pfizer has significant experience in developing and manufacturing RNA-based medicines globally, and Starna’s in vivo CAR-T programs and technology give us a powerful way to pursue these approaches.”SourcesVerismo Therapeutics Licenses In Vivo CAR T Engineering Technology to Extend Its Novel Multi-Chain KIR-CAR Platform verismo Therapeutics November 18, 2026, https://www.prnewswire.com/news-releases/verismo-therapeutics-licenses-in-vivo-car-t-engineering-technology-to-extend-its-novel-multi-chain-kir-car-platform-302943157.htmlPfizer Enters into Exclusive Licensing Agreement with Starna Therapeutics for Autoimmune Diseases Pfizer November 18, 2026, https://www.pfizer.com/news/press-release/press-release-detail/pfizer-enters-exclusive-licensing-agreement-starna Newsletter Lead with insight with the Pharmaceutical Executive newsletter, featuring strategic analysis, leadership trends, and market intelligence for biopharma decision-makers. Subscribe Advertisement R&D/Clinical Trials|IR Licensing and Partnerships|Technology Related to this articleView moreNovember 13th, 2026When Small Protocol Decisions Become Enrollment or Retention BarriersEvery protocol decision affects patients, and only those with lived disease experience can identify true burden — from invasive biopsies to daily trial demands.Read moreNovember 12th, 2026How Patients’ Use of AI Impact How Sponsors Communicate with ThemWith 60% of Americans using AI health tools, patient advocates are encouraging collaborative use of AI alongside healthcare teams for better outcomes.Read moreNovember 11th, 2026When Patient Input Should Be Collected in the Clinical Research ProcessAI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.Read moreNovember 10th, 2026AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine PipelineAstraZeneca acquires Omniose, to bolster it's preclinical infectious disease programs. Read moreNovember 10th, 2026Where AI Can Strengthen Clinical Research, and Where Patient Input is More ImportantAI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.Read moreNovember 18th, 2026Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing BuildoutThe month's biggest moves — from Pfizer and Blackstone's obesity co-funding agreement to Lilly's $3.5B Pennsylvania groundbreaking — answered in plain language.Read moreNovember 18th, 2026The Workload Balance in Pharma Between Humans and Agentic ModelsThe future is agent-first but human when it matters — AI handles repetitive tasks while humans manage exceptions, complexity, and regulatory needs.Read moreNovember 17th, 2026Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir Gilead signs royalty-free licensing agreements with three generic manufacturers to expand future access to its investigational antiviral obeldesivir. Read morePrevious slideNext slide Advertisement Advertisement Trending on PharmExec1Keeping Human Expertise at the Center of AI2Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo3Build, Buy, or Rent: Moving AI Beyond the Pilot Stage4Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir 5Pharmaceutical Executive Daily: FDA Approves Cosentyx and Wilserdly",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "485db512a733fe4d",
+    "score": 4.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.3,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "undisclosed_terms"
+    ],
+    "cluster_key": "obeldesivir",
+    "confidence": 0.88,
+    "deal_key": "gilead|manufacturing-partners|obeldesivir",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "免特许权许可覆盖127国并引入制造方，旨在扩大可及性与产能；金额未披露，值得核查分工。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需确认三家制造伙伴名称、各自区域及具体供应义务",
+      "需查协议披露的首付、里程碑或其他费用条款",
+      "需核实obeldesivir当前临床及监管阶段"
+    ],
+    "title": "Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir",
+    "url": "https://www.pharmexec.com/view/gilead-signs-royalty-free-licensing-deals-broaden-access-obeldesivir",
+    "sources": [
+      "pharmexec_partnership",
+      "pharmexec_irlp"
+    ],
+    "content": "Advertisement News|Articles|November 17, 2026 Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir Author(s)Nicholas Jacobus Listen0:00 / 0:00 Key Takeaways Royalty-free licenses authorize contingent manufacturing and distribution of obeldesivir within 127 countries, aligned with prior remdesivir COVID-19 licensing geographies and intended to compress timelines post-approval. Technology transfer planning has begun with three named manufacturers, and additional partners are being pursued to expand capacity before confirmatory clinical and regulatory milestones. The Ebo-pep Phase III randomized, placebo-controlled field trial is evaluating post-exposure prophylaxis efficacy in high-risk contacts during active outbreaks, coordinated by ALIMA and collaborators. Remdesivir has been donated for investigational/compassionate use in multiple countries, while separate WHO-sponsored Partners trial data may inform potential remdesivir labeling for Ebola BVD.SHOW MORE Gilead signs royalty-free licensing agreements with three generic manufacturers to expand future access to its investigational antiviral obeldesivir. Advertisement Gilead Sciences signed royalty-free voluntary licensing agreements with three generic manufacturers to support potential future access to its investigational antiviral obeldesivir as post-exposure prophylaxis for Ebola Bundibugyo virus disease.The agreements will cover 127 primarily low- and lower-middle-income countries, including all African countries that have reported cases during the current Ebola BVD outbreak.1 The move signals Gilead’s effort to get ahead of a currently ongoing outbreak by lining up manufacturing and supply capacity before clinical results are even in.The geographic scope of the new agreements mirrors Gilead’s existing voluntary licensing arrangements for remdesivir in Covid-19, with the agreements being designed to support manufacturing readiness, technology transfer, and supply planning, while a field trial evaluating obeldesivir continues.1What do the agreements cover?The royalty-free licenses allow Dr. Reddy’s Laboratories, Eva Pharma, and Ferozsons Laboratories to manufacture and supply obeldesivir in the licensed territory, contingent on clinical data and applicable regulatory authorizations.1 Technology transfer discussions are already underway with these three manufacturers, with Gilead saying agreements with additional manufacturers are under discussion. (()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})(); What trial is evaluating obeldesivir?Obeldesivir is currently being evaluated in the Ebo-pep trial, a partner-led Phase III randomized, placebo-controlled field trial coordinated by ALIMA and partners.2 The trial is evaluating the efficacy of obeldesivir as post-exposure prophylaxis for individuals at high risk of developing Ebola BVD.2 Obeldesivir has previously been evaluated in clinical trials for Covid-19 and respiratory syncytial virus, in addition to its preclinical filovirus activity.Related ArticlesM&A Roundup: Johnson & Johnson Acquires Ollin Biosciences, Eli Lilly Acquires Calytrix Bio, AmyriAD Therpaeutics Acquires AD04 Alzheimers Program, Sanofi Enters Collaboration with Seawolf Therapeutics Roundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 BillionRoundup: Astellas Licenses IL-12 Fusion Protein From Audax in Deal Worth Up to $1.34 Billion, EVERSANA Acquires Health Economics Firm Estima ScientificThe drug is currently not approved for post-exposure prophylaxis of filovirus disease, or for any indication, in any country.1Jaime McCoy, vice president, Gilead Patient Solutions, Gilead Sciences, says responding to emerging infectious diseases, including Ebola virus disease, requires not only scientific innovation, but also early planning and collaboration to help ensure that effective medicines can reach the people who need them as quickly as possible. He continues to say, “These agreements reflect our commitment to preparing for future access while clinical research is ongoing, so that we are better positioned to respond if these investigational medicines demonstrate benefit and gain regulatory approval.”How has Gilead already responded to the outbreak?Beyond the new licensing agreements, Gilead has made direct product donations tied to the current outbreak. The company has donated more than 2,000 vials of remdesivir to Kenya for investigational use as treatment and post-exposure prophylaxis for people with confirmed Ebola BVD or individuals with a close contact exposure.1 More broadly, as part of its response to the current outbreak, Gilead has provided compassionate use donations of remdesivir to the Democratic Republic of the Congo, Uganda, and Kenya totaling more than 38,000 vials.These efforts sit within what Gilead describes as a broader approach to outbreak preparedness that includes clinical research, manufacturing and supply planning, technology transfer, and collaboration with governments, public health agencies and global health partners.The licensing announcement is one piece of a broader outbreak response. Gilead is also updating its existing voluntary licensing agreements for remdesivir to include filovirus disease, which would support potential future access should results from the ongoing World Health Organization-sponsored Partners trial support remdesivir’s use as a treatment for Ebola BVD, pending potential regulatory approvals.1 The clinical efficacy of remdesivir for the treatment of Ebola BVD has not been established, and remdesivir is not currently approved in any country for the treatment or prevention of the disease.SourcesGilead Expands Access to Investigational Obeldesivir for Ebola Bundibugyo Virus Disease Through Voluntary Licensing Gilead Sciences November 16, 2026, https://www.gilead.com/news/news-details/2026/gilead-expands-access-to-investigational-obeldesivir-for-ebola-bundibugyo-virus-disease-through-voluntary-licensingFilovirus Post-Exposure Prophylaxis, preparedness and efficacy evaluation during outbreak in Central and West-Africa Global Health EDCTP3 August 1, 2026, https://www.global-health-edctp3.europa.eu/projects/ebo-pep-2026_en Newsletter Lead with insight with the Pharmaceutical Executive newsletter, featuring strategic analysis, leadership trends, and market intelligence for biopharma decision-makers. Subscribe Advertisement Patient Access|Market Access|Patient Advocacy|Global|IR Licensing and Partnerships Related to this articleView moreNovember 6th, 2026Hims & Hers Partners with Eli Lilly to Sell Obesity Medicines The agreement provides access for prescribed patients to Lilly's obesity medicines self-pay pricing starting at $149 per month without leaving the platform.Read moreNovember 17th, 2026FDA Approves Cosentyx for Polymyalgia Rheumatica, Wilserdly for ER-Positive ESR1-Mutated Advanced Breast Cancer FDA submitted approvals for Novartis’s Cosentyx and Roche’s Wilserdly. Read moreNovember 11th, 2026FDA Approves Pimjetmi for Patients With Tenosynovial Giant Cell TumorFDA has approved Merck KGaA’s Pimjetmi, an oral CSF-1R inhibitor, for adults with symptomatic tenosynovial giant cell tumors. Read moreNovember 10th, 2026FDA Approves asundexian for Secondary Stroke Risk Reduction FDA approves Bayer’s asundexian (Sunharbo), the first Factor XIa inhibitor, for secondary stroke prevention. Read moreNovember 18th, 2026Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing BuildoutThe month's biggest moves — from Pfizer and Blackstone's obesity co-funding agreement to Lilly's $3.5B Pennsylvania groundbreaking — answered in plain language.Read moreNovember 18th, 2026Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In VivoVerismo Therapeutics licenses in vivo CAR T engineering technology from Stanford Medicine, while Pfizer licenses in vivo CAR-T programs from Starna Therapeutics. Read moreNovember 16th, 2026M&A Roundup: Johnson & Johnson Acquires Ollin Biosciences, Eli Lilly Acquires Calytrix Bio, AmyriAD Therpaeutics Acquires AD04 Alzheimers Program, Sanofi Enters Collaboration with Seawolf Therapeutics New deals this week span across ophthalmology to Alzheimer’s, with three new acquisitions and one research collaboration. Read moreNovember 16th, 2026FDA Approves Klygefa for gMG, Gazyva for Primary Membranous Nephropathy, Igalmi for Agitation Associated with Schizophrenia FDA approves Genentech’s Gazyva, Alexion’s Klygefa, and Teva’s Igalm. Read morePrevious slideNext slide Advertisement Advertisement Trending on PharmExec1Keeping Human Expertise at the Center of AI2Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo3Build, Buy, or Rent: Moving AI Beyond the Pilot Stage4Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir 5Pharmaceutical Executive Daily: FDA Approves Cosentyx and Wilserdly",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "6e44e045f9a46052",
+    "score": 3.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd",
+      "historical_deal"
+    ],
+    "cluster_key": "btk-inhibitor",
+    "confidence": 0.87,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 2700000000,
+    "reasoning": "非交易条目：报道当前研发终止，27亿美元收购发生于2019年，不能视作近期新交易。",
+    "article_type": "historical_compare",
+    "verify_todo": [],
+    "title": "Merck ends the sorry saga of BTK inhibitor it got from ArQule",
+    "url": "https://endpoints.news/merck-ends-the-sorry-saga-of-btk-inhibitor-it-got-from-arqule/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Merck has ended development of a BTK inhibitor that was the main reason it bought ArQule for $2.7 billion in 2019. Nemtabrutinib, or MK-1026, was being investigated in a slew of trials in blood cancers ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "e9e3b48735fc7273",
+    "score": 3.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd",
+      "historical_deal",
+      "duplicate_event"
+    ],
+    "cluster_key": "btk-inhibitor",
+    "confidence": 0.9,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 2700000000,
+    "reasoning": "非交易条目：27亿美元是2019年历史收购价；当前事件为临床终止，且英文媒体已有报道。",
+    "article_type": "historical_compare",
+    "verify_todo": [],
+    "title": "27亿美元收购打水漂！默沙东终止BTK抑制剂III期临床",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_395121",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 交易并购 27亿美元收购打水漂！默沙东终止BTK抑制剂III期临床 27亿美元收购打水漂！默沙东终止BTK抑制剂III期临床 摩熵医药 16小时前 查看原文 104 BTK III期 默沙东血液瘤研发遭遇挫折。 2026年11月17日，默沙东宣布，终止在研非共价BTK抑制剂 Nemtabrutinib 的BELLWAVE临床开发项目，包括BELLWAVE-011、BELLWAVE-008和BELLWAVE-010等多项III期临床试验。 27亿美元收购引入，三项III期研究全部终止。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 相关资讯 综合 刚刚！默沙东宣布终止非共价BTK全部临床！ 精准药物 2026-11-18 默沙东：BTK抑制剂终止三期临床 医药笔记 2026-11-18 诺诚健华奥布替尼纳入首版《商业健康保险药品保障推荐清单》 诺诚健华INNOCARE 2026-11-17 “癌中之王”胰腺癌迎来后线新选项/OS阳性III期！百济神州自Revolution Medicines引进的Daraxonrasib拟纳入优先审评 新康界 2026-11-16 【4300】2026 ESMO | 重磅LBA，同步登顶NEJM！陆舜教授首发SAFFRON全球III期研究：双靶方案重塑奥希替尼耐药新格局 良医汇肿瘤资讯 2026-11-15 【2498】BTK抑制剂经治后，索托克拉单药能否带来持久缓解？ 良医汇血液肿瘤资讯 2026-11-15 亚盛医药利生妥®成功纳入2026年国家医保药品目录，耐立克®续约 亚盛医药 2026-11-14 信达生物宣布信尔美®、信美悦®等七款创新产品（含新适应症及续约）成功纳入2026版国家医保药品目录 信达生物 2026-11-14 首个全球III期Trofuse-005告捷，芦康沙妥珠单抗定义晚期经治子宫内膜癌标准治疗 科伦博泰生物 2026-11-12 Tides 速递 | 勃林格GLP-1R/GCGR激动剂心血管III期研究成功 多肽圈 2026-11-12 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 78亿！诺华买了成都一款小分子药 动脉新医药 2024-10-17 2024年8月中国医药BD交易盘点 2024年8月中国医药BD交易盘点 美柏资本 2024-09-05 一家AAV基因治疗公司被收购 一家AAV基因治疗公司被收购 细胞与基因治疗领域 2024-11-22 33亿美元重磅交易！默沙东获得礼新医药PD-1/VEGF双抗新药全球权益 | 盈科Family 33亿美元重磅交易！默沙东获得礼新医药PD-1/VEGF双抗新药全球权益 | 盈科Family 盈科资本 2024-11-15 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 摩熵医药 共发布文章：1261篇 最新发布文章 癌症疫苗“上岸”了？默沙东/Moderna III期数据：黑色素瘤复发风险降42% 2026国谈结果出炉！107个进医保、12个进商保创新药目录（附详细名单） 全球215款药物已上市，927条管线竞逐！糖尿病赛道迎来大变局 ADC拓展多瘤种治疗，精准靶向再现新进展！ESMO 2026九项III期研究释放新信号 以岭药业再发力！又有2款中药新药获批上市 6亿抗肿瘤药物，南京正大天晴拿下首仿！ 17家药企被点名！NMPA通报27批次不合格药品 全球首款！齐鲁制药ADC新药杀入III期 全球药物研发中心 全球研发数据与行业前沿情报 398,153个 全球在研药物数 2,822个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 第17 批生物医学新技术临床研究备案完成项目公布 2026-11-18 GMP新规首批飞检已到!广东药监发布全新飞检风向及重点(信息量大) 2026-11-18 “零容忍+负面清单”规范定点医药机构行为 2026-11-18 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 10 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 4 中国DRG/DIP支付方式改革研究 摩熵咨询 33 66 国家医保局 人力资源社会保障部关于印发 以及 (2026年)的通知 颁布机构：国家医保局 2026-11-14 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 关于进一步做好创新药安全合理配备使用工作的通知 颁布机构：国家卫健委（原国家卫计委） 2026-11-10 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 齐鲁制药双线突破：1类新药QLS2416获批临床布局自免赛道，3款产品新进2026国家医保目录 摩熵DATA+AI解决方案亮相PharmaX未来医药峰会，解码药企数智化落地路径 先声药业SIM0712获批临床，国内首款STAT6 PROTAC小分子降解剂可治疗特应性皮炎等多个2型炎症 康方生物依沃西单抗遭FDA拒批，错失美国EGFR-TKI耐药NSCLC赛道窗口，单日市值蒸发超800亿港元 罗氏CD20单抗奥妥珠单抗新适应症获FDA批准，拿下原发性膜性肾病首个疗法 2026 ESMO 肿瘤药物研发盘点：生存证据与临床定位如何支撑管线决策 2026 ESMO年会9项肿瘤III期研究解读：ADC、KRAS、MET最新临床数据 2026 ESMO会议重点研究盘点——重塑肿瘤药物研发的临床证据 资本透视 更多 数据来源： 更新时间： getStackedLineChartData(2) 最新投融资事件 更多 getCardData('newFinance').then(() => { new Swiper(\"#newFinance-card .swiper\", { loop: true, slidesPerView: 5, loopFillGroupWithBlank: true, loopAdditionalSlides: 5, direction: 'vertical', // 设置轮播方向 grabCursor: true, freeMode: false, speed: 3000, autoplay: { delay: 0, disableOnInteraction: false } }) }) 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "92045a773db6b470",
+    "score": 3.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd",
+      "historical_deal",
+      "duplicate_event"
+    ],
+    "cluster_key": "nuvalent-nelkarmi",
+    "confidence": 0.94,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 10600000000,
+    "reasoning": "非交易条目：当前事件为FDA批准；106亿美元收购为此前交易，不能按新BD交易计分。",
+    "article_type": "historical_compare",
+    "verify_todo": [],
+    "title": "GSK’s Nuvalent buyout delivers again as FDA clears Nelkarmi for lung cancer",
+    "url": "https://endpoints.news/gsks-nuvalent-buyout-delivers-again-as-fda-clears-nelkarmi-for-lung-cancer/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 17, 2026 02:50 PM ESTUpdated 03:05 PM Pharma GSK’s Nu­va­lent buy­out de­liv­ers again as FDA clears Nelka­r­mi for lung can­cer Ayisha Sharma News Reporter GSK has se­cured a US ac­cel­er­at­ed ap­proval for its oral lung can­cer drug neladalk­ib, one of two as­sets at the heart of its Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "GSK has secured a US accelerated approval for its oral lung cancer drug neladalkib, one of two assets at the heart of its $10.6 billion purchase of oncology drugmaker Nuvalent earlier this ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "623c23a2cc187e05",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "nuvalent-nelkarmi",
+    "confidence": 0.95,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：监管决定及行业动态汇总，未形成新的授权、收购或合作交易。",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: FDA discloses reasons for rejecting Summit drug",
+    "url": "https://www.statnews.com/2026/11/18/biotech-news-fda-discloses-reasons-for-rejecting-summit-drug/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterThe Readout FDA discloses reasons for rejecting Summit drug The FDA approves a GSK drug from Nuvalent deal, more data support efficacy of Biogen’s tau drug, and more biotech news Manage alerts for this article Save this story for later Share this article Wikimedia Commons By Elaine Chen and Adam FeuersteinNov. 18, 2026 Elaine Chen[email protected]Elaine’s stories explore the boom in new obesity treatments, new drug payment models, the ways companies are affected by FDA changes, and the emerging psychedelics drug sector. She co-writes The Readout newsletter, and co-hosts STAT’s weekly biotech podcast, The Readout Loud. You can reach Elaine on Signal at elaineywchen.70.Adam Feuerstein[email protected]Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. Want to stay on top of the science and politics driving biotech today? Sign up to get our biotech newsletter in your inbox. Good morning. We got big news on the FDA last night — let’s get straight into it.Advertisement White House pulls nomination of Overton to lead FDA The Trump administration is pulling its nomination of Heidi Overton to be FDA commissioner, my colleagues report. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotech, biotechnology, drug development, Drug prices, Pharmaceuticals, research, White House Submit a correction requestReprints Elaine Chen National Biotech Reporter Elaine’s stories explore the boom in new obesity treatments, new drug payment models, the ways companies are affected by FDA changes, and the emerging psychedelics drug sector. She co-writes The Readout newsletter, and co-hosts STAT’s weekly biotech podcast, The Readout Loud. You can reach Elaine on Signal at elaineywchen.70. Adam Feuerstein Senior Writer, Biotech Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended The Readout The Readout November 17, 2026 STAT Plus: Flagship opens biotech-creation outpost in the U.K. By Elaine Chen Adam's Take Adam's Take November 17, 2026 STAT Plus: Sellas’ experimental blood cancer immunotherapy reduced risk of death in clinical trial By Adam Feuerstein Advertisement Biotech Biotech November 17, 2026 STAT Plus: With $173 million, new startup takes aim at sickle cell By Jason Mast Biotech Biotech November 17, 2026 STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Pharma Pharma November 16, 2026 STAT Plus: In a win for MAHA, FDA creates new regulatory category for the supplement NAC By Margaret Manto Subscriber Picks STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein A new tactic in the war over out-of-network bills: Health care providers are suing employers By Bob Herman STAT Plus: As Epic’s dominance grows, its iron grip is choking innovation in health technology By Casey Ross and Brittany Trang STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast STAT Plus: Sellas' experimental blood cancer immunotherapy reduced risk of death in clinical trial By Adam Feuerstein Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "133f27f45a80d737",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "btk-inhibitor",
+    "confidence": 0.95,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：主要为监管、人事及研发进展简报，缺少新的交易关系与商业条款。",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/18/heidi-overton-fda-nomination-yanked-merck-cancer-drug-setback/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more GSK lung cancer drug wins FDA approval, further validating its acquisition of Nuvalent Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 18, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Good morning, everyone, and welcome to the middle of the week. Congratulations on making it this far, and remember there are only a few more days until the weekend arrives. So keep plugging away. After all, what are the alternatives? While you ponder the possibilities, we invite you to join us for a needed cuppa stimulation. Our choice today is ginger peach turmeric. Meanwhile, here is the latest menu of tidbits to help you on your way. We hope you conquer the world and have a wonderful day. And as always, please do stay in touch. We appreciate feedback, tips, and criticism. … The Trump administration is pulling the nomination of Heidi Overton to lead the U.S. Food and Drug Administration over concerns that she lacked support to get confirmed by the Senate, STAT notes. The Senate’s health panel had been expected to vote on her nomination Wednesday, and the panel’s leader, Sen. Bill Cassidy (R-La.), said on Tuesday that Overton had enough support to clear his committee and win confirmation. But some GOP lawmakers had reservations about Overton, a preventive care doctor who served in the Trump White House, due to her support for scaling back vaccine recommendations, her role in loosening restrictions on vapes, and her stance on abortion policy.Advertisement Merck plans to stop development of its experimental blood cancer drug, nemtabrutinib, after a ​review found the benefits may not outweigh the ‌risks, Reuters says. An independent monitoring committee reached that conclusion after reviewing results from a late-stage study and Merck said its review of the full ​data confirmed the finding. The decision ends a broader development program ​for treating chronic lymphocytic leukemia and small lymphocytic lymphoma, ​including two other late-stage trials. Nemtabrutinib is an oral drug designed to block BTK, a ​protein that helps ​cancerous B ⁠cells grow. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 17, 2026 STAT Plus: Pharmalittle: We’re reading about a Roche breast cancer pill, obesity drugs in children, and more By Ed Silverman Pharmalot Pharmalot November 16, 2026 STAT Plus: Newer GLP-1 drugs to combat obesity may be the next global battleground over access to medicines, expert warns By Ed Silverman Advertisement Pharmalot Pharmalot November 16, 2026 STAT Plus: Pharmalittle: We’re reading about GLP-1 use, Covid-19 vaccine investment returns, and more By Ed Silverman Pharmalot Pharmalot November 13, 2026 STAT Plus: Up and down the ladder: The latest comings and goings By Ed Silverman Pharmalot Pharmalot November 13, 2026 STAT Plus: Pharmalittle: We’re reading about Lilly conflict questions, a DEA OK for a narcolepsy pill, and more By Ed Silverman Subscriber Picks STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein A new tactic in the war over out-of-network bills: Health care providers are suing employers By Bob Herman STAT Plus: As Epic’s dominance grows, its iron grip is choking innovation in health technology By Casey Ross and Brittany Trang STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast STAT Plus: Sellas' experimental blood cancer immunotherapy reduced risk of death in clinical trial By Adam Feuerstein Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.1
+    },
+    "flags": [
+      "stale",
+      "insufficient_material",
+      "undisclosed_terms",
+      "thin_material"
+    ],
+    "cluster_key": "brain-transporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|brain-transporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "交易在签署14个月后终止，但已超14天且仅有标题；需确认终止原因、费用及权利回收。",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "需确认终止原因、协议费用及是否存在退款安排",
+      "需核实相关资产阶段及最初交易的首付与潜在总额"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "3c01d1e527fb9c18",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.94,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目：核心为临床项目提前终止及裁员，缺少交易对手方。",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "nChroma Bio stops its only clinical study early, lays off 50%",
+    "url": "https://endpoints.news/nchroma-bio-stops-its-only-clinical-study-early-lays-off-50/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 18, 2026 04:19 PM EST PeopleR&D nChro­ma halts its on­ly clin­i­cal tri­al, lays off half its staff in lat­est ge­net­ic med­i­cine set­back Andrew Dunn Senior Biopharma Correspondent A cou­ple of years ago, two Boston-area biotech CEOs de­cid­ed to merge their star­tups, hop­ing to sur­vive a down mar­ket for ge­net­ic med­i­cine com­pa­nies. Jeff … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "A couple of years ago, two Boston-area biotech CEOs decided to merge their startups, hoping to survive a down market for genetic medicine companies. Jeff Walsh, the CEO of that combined company, nChroma Bio,",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  },
+  {
+    "id": "c80132be7dba4688",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.3
+    },
+    "flags": [
+      "insufficient_material",
+      "undisclosed_terms",
+      "thin_material"
+    ],
+    "cluster_key": "glp-1-deals",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "标题涉及GLP-1交易与制造议题，但无正文素材，无法确认对手方、金额及临床阶段。",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "需确认文中涉及的GLP-1交易对手、资产、金额及阶段"
+    ],
+    "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
+    "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-18T22:18:24Z"
+  }
+]
