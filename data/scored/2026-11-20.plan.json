@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-20",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "abbvie-disco-and-gated-bispecifics",
+      "lead_id": "179d292b49e68e7d",
+      "title": "DISCO, AbbVie Sign AND-Gated Bispecific Deal Worth Up to $2.5B",
+      "score": 5.9,
+      "member_ids": [
+        "179d292b49e68e7d"
+      ],
+      "deal_keys": [
+        "abbvie|disco|and-gated-bispecifics"
+      ],
+      "members": [
+        {
+          "title": "DISCO, AbbVie Sign AND-Gated Bispecific Deal Worth Up to $2.5B",
+          "url": "https://www.pharmexec.com/view/disco-abbvie-sign-gated-bispecific-deal",
+          "score": 5.9,
+          "reasoning": "首付4000万美元、潜在总额25.4亿美元；MNC与临床前双抗平台达成平台型合作"
+        }
+      ],
+      "reasoning": "首付4000万美元、潜在总额25.4亿美元；MNC与临床前双抗平台达成平台型合作",
+      "verify_todo": [
+        "核对DISCO公告确认首付及里程碑上限",
+        "确认合作项目数量、靶点披露程度和选项行权条件",
+        "查证AND门控机制及首创性表述是否有公司依据"
+      ],
+      "flags": [
+        "cluster_duplicate"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "merck-isomorphic-ai-oncology",
+      "lead_id": "8c2b23b2e1cc0034",
+      "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+      "score": 4.8,
+      "member_ids": [
+        "8c2b23b2e1cc0034"
+      ],
+      "deal_keys": [
+        "isomorphic-labs|merck|ai-oncology"
+      ],
+      "members": [
+        {
+          "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+          "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
+          "score": 4.8,
+          "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，研发阶段与财务条款待补"
+        }
+      ],
+      "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，研发阶段与财务条款待补",
+      "verify_todo": [
+        "确认合作是否包含首付款、里程碑及研发投入",
+        "核实双方权利地域、靶点范围和商业化安排",
+        "确认项目所处阶段及Isomorphic Labs是否承担独立开发义务"
+      ],
+      "flags": [
+        "financial_terms_undisclosed"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
