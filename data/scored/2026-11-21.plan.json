@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-21",
+  "count": 1,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "sanofi-insmed-acquisition",
+      "lead_id": "a4d7223d9d900efd",
+      "title": "Sanofi Eyes Insmed in Potential $43B Deal as Dupixent Patent Clock Ticks",
+      "score": 5.8,
+      "member_ids": [
+        "a4d7223d9d900efd",
+        "51428cacd7da2222"
+      ],
+      "deal_keys": [
+        "insmed|sanofi|insmed-biopharma",
+        "insmed|sanofi|insmed-biopharma"
+      ],
+      "members": [
+        {
+          "title": "Sanofi Eyes Insmed in Potential $43B Deal as Dupixent Patent Clock Ticks",
+          "url": "https://www.pharmexec.com/view/sanofi-eyes-insmed-potential-43b-deal-dupixent-patent-clock-ticks",
+          "score": 5.8,
+          "reasoning": "潜在收购Insmed，传闻总对价最高430亿美元，若成行将属超大型并购；金额为传闻口径。"
+        },
+        {
+          "title": "Sanofi considering a deal to acquire Insmed, according to report",
+          "url": "https://endpoints.news/sanofi-considering-a-deal-to-acquire-insmed-according-to-report/",
+          "score": 5.7,
+          "reasoning": "收购Insmed若推进，传闻总对价最高430亿美元，规模或改写大型制药并购格局；目前仅为报道。"
+        }
+      ],
+      "reasoning": "潜在收购Insmed，传闻总对价最高430亿美元，若成行将属超大型并购；金额为传闻口径。"
+    }
+  ]
+}

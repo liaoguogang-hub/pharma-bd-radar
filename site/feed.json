@@ -1,20 +1,22 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "count": 1,
   "posts": [
     {
-      "rel": "2026/11/20/01-event_report-179d292b.html",
-      "date": "2026-11-20",
-      "title": "4000万美元首付，AbbVie为何押注DISCO的AND门控双抗平台",
-      "kicker": "Event Report｜创新药授权 · 评分不达标",
-      "sub": "潜在里程碑最高25亿美元，但真正决定交易价值的仍是靶点发现、选项行权与临床验证",
-      "hook": "2026年11月19日，DISCO Pharmaceuticals拿到艾伯维4000万美元首付款，潜在里程碑最高25亿美元。前者只相当于后者的约1.6%，剩余金额却要等研究项目成熟、AbbVie行权并推动开发后逐段兑现。这是一笔平台型合作，也是一场典型的低首付、高不确定性交易。",
-      "chars": 3853,
-      "site_rel": "posts/2026/11/20/01-event_report-179d292b.html",
-      "needs_review": false,
-      "problems": [],
-      "below_threshold": true
+      "rel": "2026/11/21/01-landscape_review-a4d7223d.html",
+      "date": "2026-11-21",
+      "title": "430亿美元只是传闻，赛诺菲真正想买的是一片肺",
+      "kicker": "Landscape Review｜大型并购",
+      "sub": "从Brinsupri的商业化速度到TPIP的远期价值，一笔潜在超大型并购已经进入定价博弈",
+      "hook": "2026年11月19日，据彭博报道，赛诺菲正研究以350亿至430亿美元收购Insmed；两家公司均未确认，谈判状态、报价方式与融资方案也没有公开披露。传闻推动Insmed股价单日上涨约18%，也把赛诺菲拖进一场对标辉瑞Seagen交易的豪赌。眼下真正的时间压力来自Dupixent：2026年第三季度收入57亿欧元，约占赛诺菲集团销售的40%，而该药将在2030年代初面临专利到期。",
+      "chars": 3778,
+      "site_rel": "posts/2026/11/21/01-landscape_review-a4d7223d.html",
+      "needs_review": true,
+      "problems": [
+        "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
+      ],
+      "below_threshold": false
     }
   ],
-  "all_count": 52
+  "all_count": 53
 }

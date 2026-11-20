@@ -1,0 +1,26 @@
+[
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "01-landscape_review-a4d7223d.html",
+    "stats": {
+      "body_chars": 2878,
+      "sections": 7,
+      "tables": 6,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 10645,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "Sanofi Eyes Insmed in Potential $43B Deal as Dupixent Patent Clock Ticks",
+    "score": 5.8,
+    "type": "landscape_review"
+  }
+]
