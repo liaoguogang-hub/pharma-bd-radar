@@ -1,0 +1,476 @@
+[
+  {
+    "id": "8ee5a5240c21e08a",
+    "score": 5.7,
+    "dims": {
+      "amount": 2.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 1.3
+    },
+    "flags": [
+      "currency_discrepancy"
+    ],
+    "cluster_key": "carotid-intervention",
+    "confidence": 0.94,
+    "deal_key": "contego-medical|medtronic|carotid-intervention-platform",
+    "upfront_usd": 380000000,
+    "total_usd": 380000000,
+    "reasoning": "收购对价3.8亿美元，另有额外付款，可能强化颈动脉介入竞争",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核对标题人民币25亿元与正文3.8亿美元口径",
+      "确认额外对价的触发条件及上限",
+      "核查交割条件和监管审批要求"
+    ],
+    "title": "美敦力斥资25亿收购Contego，颈动脉介入赛道迎来巨头对决",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_396873",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 交易并购 美敦力斥资25亿收购Contego，颈动脉介入赛道迎来巨头对决 美敦力斥资25亿收购Contego，颈动脉介入赛道迎来巨头对决 电生理electrophysiologist 18小时前 查看原文 124 巨头 颈动脉介入赛道 11月16日，美敦力宣布拟以3.8亿美元收购美国颈动脉介入企业Contego Medical，交易完成后还可能支付额外款项，预计于2027财年第三季度完成。 这笔交易看似是一次产品线扩张，实际上也反映出美敦力对颈动脉血运重建市场的长期布局。 美敦力与Contego的合作并非始于近期。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 相关资讯 综合 特朗普表态：希望黄仁勋重返英伟达 华尔街见闻 2026-11-21 赛诺菲拟收购Insmed 交易或超300亿美元 蒲公英资讯 2026-11-20 跨国巨头，中国核心业务裁员 张通社 2026-11-20 Anthropic敲钟上市，史上最大IPO却让硅谷吵翻了 36氪 2026-11-20 担心毁灭人类的AI巨头，上市先圈了一千亿美金 经济观察报 2026-11-20 掌舵1年半后，840亿黄金巨头董事长提前卸任，副董事长再度代行职务 红星资本局 2026-11-19 仿制药巨头CMO出走，4100人团队谁接棒？ 医药之梯 2026-11-19 Anthropic今晚冲刺市值1.5万亿美元！AI泡沫也是IPO营销的一部分… 量子位 2026-11-19 史上最大AI制药融资诞生！ 生物技术小编 2026-11-19 百亿美元收购传闻升温！礼来被曝加入，Rhythm凭什么吸引巨头？ CPHI制药在线 2026-11-18 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 10亿美元！医药领域迎来世界首例，这次必将改写历史！ 10亿美元！医药领域迎来世界首例，这次必将改写历史！ Medaverse 2024-11-27 官宣了！两家跨国药企，转让原研药业务 官宣了！两家跨国药企，转让原研药业务 医药代表 2025-12-23 KKR是如何登顶并购基金王座的？（下） KKR是如何登顶并购基金王座的？（下） 晨哨并购 2024-09-07 行业｜近期医药行业BD交易：License-out成重要趋势，ADC是热点 行业｜近期医药行业BD交易：License-out成重要趋势，ADC是热点 财经大健康 2024-09-04 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 电生理electrophysiologist 共发布文章：20篇 最新发布文章 爱德华Physio Flex获批，二尖瓣修复市场再添新选择 迈微医疗ICE获批：国产电生理竞争，开始从单品走向系统 纳秒PFA为何更少引发肌肉收缩？商阳医疗最新研究揭示技术新方向 两款新产品接连获批，TCAR市场迎来新一轮竞争 商阳医疗四款产品获CE MDR认证：微秒与纳秒双平台，国产PFA出海再进一步 惠泰医疗前三季度净利增长31%：迈瑞入主后，真正的变化才刚刚开始 微创电生理加速布局欧洲：Magbot临床数据亮相，国产磁导航技术迎来新进展 电生理行业进入新阶段：PFA加速落地，国产厂商开始争夺真正的市场话语权 全球药物研发中心 全球研发数据与行业前沿情报 399,151个 全球在研药物数 4,055个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 美两党议员提出《加快临床试验法案》，推动临床开发多环节改革 2026-11-21 双荧光标记复合支架｜非侵入式实时追踪软骨组织工程材料降解与基质再生 2026-11-21 重塑全球AI产业：BIS远程访问新规详解 2026-11-20 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 17 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 4 中国DRG/DIP支付方式改革研究 摩熵咨询 33 66 国家基本医疗保险、生育保险和工伤保险药品目录》以及《商业健康保险创新药品目录》（2026年） 颁布机构：国家医保局、人力资源社会保障部 2026-11-16 国家医保局 人力资源社会保障部关于印发 以及 (2026年)的通知 颁布机构：国家医保局 2026-11-14 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 摩熵医药数据库年终采购指南来了：套餐立省3万、新客低至5折！ 国产首个Syk抑制剂正式获批！和黄医药醋酸索乐匹尼布片拿下ITP、wAIHA双适应症 贝达药业肺癌靶向药盐酸恩沙替尼胶囊获欧盟EC批准，成为首个中美欧三地上市的国产ALK抑制剂 WT1靶向癌症疫苗III期成功，galinpepimut-S将急性髓系白血病患者中位OS拉至24个月 2026年第46周11.09-11.15全球创新药研发概览 2026年第46周11.09-11.15国内医药大健康行业政策法规汇总 2026年第46周11.09-11.15国内仿制药/生物类似物申报/审批数据分析 2026年第46周11.09-11.15国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 资本透视 更多 数据来源： 更新时间： getStackedLineChartData(2) 最新投融资事件 更多 getCardData('newFinance').then(() => { new Swiper(\"#newFinance-card .swiper\", { loop: true, slidesPerView: 5, loopFillGroupWithBlank: true, loopAdditionalSlides: 5, direction: 'vertical', // 设置轮播方向 grabCursor: true, freeMode: false, speed: 3000, autoplay: { delay: 0, disableOnInteraction: false } }) }) 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "baea8c015158f69c",
+    "score": 5.2,
+    "dims": {
+      "amount": 1.2,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [],
+    "cluster_key": "adc-tce-oncology",
+    "confidence": 0.96,
+    "deal_key": "abbvie|disco-pharmaceuticals|adc-tce-oncology",
+    "upfront_usd": 40000000,
+    "total_usd": 2540000000,
+    "reasoning": "首付4000万美元、总额25.4亿美元，属中等量级临床前肿瘤合作",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查25亿美元里程碑上限所对应的研发及销售目标",
+      "确认合作靶点数量、地域权益和开发责任"
+    ],
+    "title": "AbbVie and Disco strike deal worth up to $2.54B for solid tumor targets",
+    "url": "https://endpoints.news/abbvvie-and-disco-strike-deal-worth-more-than-2-5b-for-solid-tumor-targets/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "Mark Manfredi, Disco Pharmaceuticals CEO November 19, 2026 02:00 AM ESTUpdated 03:53 PM Deals Ab­b­Vie and Dis­co strike deal worth up to $2.54B for sol­id tu­mor tar­gets Anna Brown News Reporter Ab­b­Vie is part­ner­ing with pre­clin­i­cal can­cer biotech Dis­co Phar­ma­ceu­ti­cals to build out its an­ti­body-drug con­ju­gate and T cell en­gager pro­grams. The Cologne, Ger­many-based biotech will … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "AbbVie is partnering with preclinical cancer biotech Disco Pharmaceuticals to build out its antibody-drug conjugate and T cell engager programs. The Cologne, Germany-based biotech will receive $40 million upfront and up to $2.5 billion in ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "51428cacd7da2222",
+    "score": 4.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.8
+    },
+    "flags": [
+      "reported_rumor"
+    ],
+    "cluster_key": "insmed-ma",
+    "confidence": 0.82,
+    "deal_key": "insmed|sanofi|whole-company",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "赛诺菲考虑收购Insmed，潜在规模可观，但报价与首付尚未确认",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查收购传闻是否仍有效及双方是否已正式谈判",
+      "确认每股报价、整体交易估值和溢价",
+      "区分传闻总额、已披露报价和实际收购对价"
+    ],
+    "title": "Sanofi considering a deal to acquire Insmed, according to report",
+    "url": "https://endpoints.news/sanofi-considering-a-deal-to-acquire-insmed-according-to-report/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "EX-99.1 2 ef20084500_ex99-1.htm EXHIBIT 99.1 Exhibit 99.1 Insmed Reports Third-Quarter 2026 Financial Results and Provides Business Update —Total Company Revenues of $524.4 Million for the Third Quarter of 2026— —BRINSUPRI® (brensocatib) Revenues of $400.1 Million for the Third Quarter of 2026, Reflecting 29% Growth Over the Second Quarter of 2026— —ARIKAYCE® (amikacin liposome inhalation suspension) Revenues of $124.4 Million for the Third Quarter of 2026, Reflecting 9% Growth Over the Third Quarter of 2025— —Company Raises 2026 BRINSUPRI Revenue Guidance to $1.35 Billion to $1.4 Billion— —Company Raises 2026 ARIKAYCE Revenue Guidance to $460 Million to $470 Million— — Insmed Launches BRINSUPRI Tablets 25 mg (brensocatib hydrate) for the Treatment of Non-Cystic Fibrosis Bronchiectasis in Japan— BRIDGEWATER, N.J., October 29, 2026 — Insmed Incorporated (Nasdaq: INSM), a people-first global biopharmaceutical company striving to deliver first- and best-in-class therapies to transform the lives of patients facing serious diseases, today reported financial results for the third quarter ended September 30, 2026, and provided a business update. “The third quarter marked another period of meaningful progress, defined by commercial momentum, regulatory achievements, and advancement across our diversified pipeline,” said Will Lewis, Chair and Chief Executive Officer of Insmed. “BRINSUPRI’s U.S. launch continues to exceed expectations and ARIKAYCE continues to grow while in its ninth year on the market. This performance supports our decision to raise the low end of our full-year 2026 revenue guidance for both products. We were also pleased to receive regulatory approval and launch BRINSUPRI in Japan, a profound milestone for patients living with bronchiectasis. In addition, the FDA’s acceptance of the sNDA for ARIKAYCE in MAC lung disease represents an important step toward expanding access to this therapy for eligible patients, including those that are newly diagnosed or facing recurrent infections. As we advance our Phase 3 TPIP programs across four large indications and progress our early-stage pipeline, we remain focused on delivering meaningful innovation and improving the lives of patients with serious diseases.” Progress and Anticipated Milestones by Therapeutic Area: Respiratory BRINSUPRI • BRINSUPRI global revenue grew 29% in the third quarter of 2026 compared to the second quarter of 2026, driven by strong growth in the U.S. market. • In August 2026, Japan's Ministry of Health, Labour and Welfare (MHLW) approved BRINSUPRI Tablets 25 mg (brensocatib hydrate) for the treatment of non-cystic fibrosis bronchiectasis (NCFB) in adults and pediatric patients 12 years and older. • In October 2026, Insmed launched BRINSUPRI Tablets 25 mg, the first and only MHLW-approved treatment for NCFB, in Japan. 1 ARIKAYCE • ARIKAYCE global revenue grew 9% in the third quarter of 2026 compared to the third quarter of 2025, primarily driven by strong growth in international markets. • In September 2026, the U.S. Food and Drug Administration (FDA) accepted Insmed’s Supplemental New Drug Application (sNDA) for review of ARIKAYCE for the treatment of Mycobacterium avium complex (MAC) lung disease as part of a combination antibacterial drug regimen. The FDA granted Priority Review to the sNDA and set a target action date of January 28, 2027, under the Prescription Drug User Fee Act (PDUFA). • Insmed plans to submit data from the Phase 3 ENCORE study to Japan’s Pharmaceuticals and Medical Devices Agency (PMDA) in the fourth quarter of 2026 to support potential ARIKAYCE label expansion to all patients with MAC lung disease. TPIP • Insmed has now enrolled more than 35% of patients in the Phase 3 PALM-ILD study of treprostinil palmitil inhalation powder (TPIP) in patients with pulmonary hypertension associated with interstitial lung disease (PH-ILD) and expects to complete enrollment in the first half of 2028. • In July 2026, Insmed enrolled its first patient in the Phase 3 PALM-PAH study of TPIP in patients with pulmonary arterial hypertension (PAH). • In September 2026, Insmed initiated the Phase 3 PALM-PPF study of TPIP in patients with progressive pulmonary fibrosis (PPF). • Insmed continues to anticipate initiating a Phase 3 study of TPIP in patients with idiopathic pulmonary fibrosis (IPF) in the first half of 2027. INS1148 • Insmed continues to advance a Phase 2 development program for INS1148, initially targeting IPF, with plans to evaluate PPF and other diseases where inhibition of the pro-inflammatory and pro-fibrotic responses mediated by stem cell factor 248 (SCF248) may be beneficial. Immunology & Inflammation INS1033 • In September 2026, the Phase 1 study of INS1033, a dipeptidyl peptidase 1 (DPP1) inhibitor cleared by the FDA for patients with rheumatoid arthritis (RA), began active enrollment of healthy volunteers. Neuro & Other Rare INS1201 • Insmed completed enrollment of the Phase 1 ASCEND clinical study of INS1201, an intrathecally delivered gene therapy for patients with Duchenne muscular dystrophy (DMD). INS1202 • Insmed continues to enroll patients in the Phase 1 ARMOR study of INS1202, an intrathecally delivered gene therapy for patients with amyotrophic lateral sclerosis (ALS). 2 Corporate Updates • In September 2026, Insmed presented five abstracts from across its Respiratory therapeutic area at the European Respiratory Society (ERS) Congress 2026. • In October 2026, Insmed presented data across its respiratory portfolio at the American College of Chest Physicians (CHEST) 2026 Annual Meeting and IDWeek 2026. • In October 2026, Insmed announced the appointment of Paul Hudson, former Chief Executive Officer of Sanofi and Novartis Pharmaceuticals, and Utpal Koppikar, current Chief Financial Officer of Verily Health, to its Board of Directors. Third-Quarter 2026 Financial Results The following table summarizes third-quarter and year-to-date 2026 and 2025 revenues and revenue growth for BRINSUPRI and ARIKAYCE across our commercial regions: INSMED INCORPORATED Revenue by Region (in millions) Three Months Ended September 30, Nine Months Ended September 30, (in millions) 2026 2025 Growth 2026 2025 Growth ARIKAYCE U.S. $ 75.5 $ 74.0 2% $ 208.6 $ 206.9 1% International 48.9 40.3 21% 130.2 107.6 21% Total $ 124.4 $ 114.3 9% $ 338.8 $ 314.5 8% BRINSUPRI U.S. $ 398.1 $ 28.1 NM $ 913.8 $ 28.1 NM International 2.0 - N/A 3.3 - N/A Total $ 400.1 $ 28.1 NM $ 917.1 $ 28.1 NM Total Revenues U.S. $ 473.6 $ 102.0 364% $ 1,122.4 $ 235.0 378% International 50.8 40.3 26% 133.5 107.6 24% Total $ 524.4 $ 142.3 268% $ 1,255.9 $ 342.6 267% • Cost of product revenues (excluding amortization of intangibles) were $78.2 million for the third quarter of 2026, compared to $29.4 million for the third quarter of 2025. The increase in cost of product revenues in the third quarter of 2026 primarily reflects the increase in total product revenues for ARIKAYCE and BRINSUPRI. Cost of product revenues as a percentage of revenues decreased in the third quarter of 2026 due to sales of BRINSUPRI, which has lower manufacturing costs than ARIKAYCE. • Research and development (R&D) expenses were $270.0 million for the third quarter of 2026, compared to $186.4 million for the third quarter of 2025. The increase in R&D expenses for the third quarter of 2026 was related to an increase in manufacturing costs, an increase in clinical development and research costs, both primarily related to TPIP, and an increase in compensation and benefit-related expenses and stock-based compensation costs due primarily to an increase in headcount. • Selling, general and administrative (SG&A) expenses for the third quarter of 2026 were $253.0 million, compared to $186.4 million for the third quarter of 2025. The increase in SG&A expenses for the third quarter of 2026 was primarily related to increases in professional fees and other external expenses, and an increase in compensation and benefit-related expenses due to an increase in headcount, both driven by commercial activities for BRINSUPRI. • For the third quarter of 2026, Insmed reported a net loss of $100.3 million, or $0.46 per share, compared to a net loss of $370.0 million, or $1.75 per share, for the third quarter of 2025. 3 Balance Sheet, Financial Guidance, and Planned Investments • As of September 30, 2026, Insmed had cash, cash equivalents, and marketable securities totaling approximately $1.1 billion. • The Company raised its full-year 2026 revenue guidance for BRINSUPRI to a range of $1.35 billion to $1.4 billion from the previous guidance of $1.25 billion to $1.4 billion. • The Company raised its full-year 2026 revenue guidance for ARIKAYCE to a range of $460 million to $470 million from the previous guidance of $450 million to $470 million. • The Company continues to anticipate peak revenues for BRINSUPRI to be more than $7 billion, TPIP to be more than $6 billion, and ARIKAYCE to be more than $1 billion. • The Company continues to an",
+    "summary": "Sanofi is looking at a deal to buy the US drugmaker Insmed, Bloomberg News reported Thursday, in what would be one of the biggest biopharma takeovers of the last several years. The Bloomberg report made ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "c0b95137bcd3108f",
+    "score": 4.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [
+      "financial_terms_undisclosed"
+    ],
+    "cluster_key": "in-vivo-car-t",
+    "confidence": 0.82,
+    "deal_key": "pfizer|verismo|in-vivo-car-t-manufacturing",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "辉瑞引进Verismo体内CAR-T制造许可，候选药处I期但条款未披露",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查首付、里程碑、销售提成和许可资产范围",
+      "确认Pack-IT许可与Synkir候选物的具体权利边界",
+      "核实地域、制造及商业化责任如何分配"
+    ],
+    "title": "Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo",
+    "url": "https://www.pharmexec.com/view/pfizer-verismo-licensing-deals-car-t-manufacturing-in-vivo",
+    "sources": [
+      "pharmexec_partnership",
+      "pharmexec_irlp"
+    ],
+    "content": "Advertisement News|Articles|November 18, 2026 Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo Author(s)Nicholas Jacobus Listen0:00 / 0:00 Key Takeaways Verismo’s Pack-IT license supports in vivo engineering of KIR-CAR T cells, positioning the platform for off-the-shelf delivery with potential reductions in time-to-treatment, cost, and access barriers. Multi-chain KIR-CAR design aims to overcome single-chain CAR constraints, seeking durable antitumor activity with minimized off-target toxicity while Synkir-110 and Synkir-310 progress through Phase I. Pfizer secured ex-Greater China rights to three pre-IND in vivo CAR-T autoimmune programs from Starna, plus technology rights spanning inflammation/immunology and oncology, with options for additional compounds. Financial terms include $330 million upfront and up to $2.3 billion milestones plus royalties, while Pfizer controls ex-China clinical development, U.S. initial manufacturing, and commercialization. The transaction exemplifies large-pharma licensing of China-origin innovation after sustained national investment shifting from low-cost supply to advanced biopharma R&D.SHOW MORE Verismo Therapeutics licenses in vivo CAR T engineering technology from Stanford Medicine, while Pfizer licenses in vivo CAR-T programs from Starna Therapeutics. Advertisement A pair of licensing agreements this week pushed CAR T cell therapy into new territory, with two companies moving to engineer T cells directly inside the body rather than relying on today’s weeks-long manufacturing process.Verismo Therapeutics licenses in vivo CAR T technologyVerismo Therapeutics entered an agreement to license the Pack-it technology enabling in vivo engineering of KIR-CAR T cells from Stanford Medicine. The agreement provides Verismo with technology from the lab of Crystal Mackall, MD, Ernest and Amelia Gallo Family professor, professor of pediatrics and medicine at Stanford Medicine, and founding director of the Stanford Center for Cancer Cell Therapy.1The deal will allow Verismo to extend its multi-chain KIR-CAR platform into next-generation in vivo delivery of KIR-CAR T cell therapies, with the potential to reduce time-to-treatment and cost and broaden patient access over time.1 Verismo’s platform is designed to take CAR T therapy beyond the single-chain limitations of current approaches, with the potential to deliver durable anti-tumor responses while minimizing off-target toxicity. The platform is currently advancing in two Phase I clinical trials: Synkir-110 in solid tumors and Synkir-310 in B-cell malignancies.1 Both trials have generated early positive signals presented at the American Association for Cancer Research 2026 Annual Meeting. (()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value==\"object\"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};\"requestIdleCallback\"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event(\"astro:idle\"));})(); Related Articles Gilead Signs Royalty-Free Licensing Deals to Broaden Access to ObeldesivirM&A Roundup: Johnson & Johnson Acquires Ollin Biosciences, Eli Lilly Acquires Calytrix Bio, AmyriAD Therpaeutics Acquires AD04 Alzheimers Program, Sanofi Enters Collaboration with Seawolf TherapeuticsRoundup: BioMarin Licenses Long-Acting Fabry Enzyme Therapy for $70 Million Upfront, Ferring to Acquire Fertility Biotech Gameto in Deal Worth Up to $1.38 BillionBryan Kim, chief executive officer and co-founder of Verismo Therapeutics, says the KIR-CAR platform is at the center of everything Verismo is building, \"Our KIR-CAR platform is at the center of everything Verismo is building, designed to take CAR T beyond its current limitations by delivering a durable anti-tumor response while minimizing off-target toxicity.\" Kim continued, saying, \"Today, KIR-CAR is advancing along the established CAR T pathway in two Phase 1 clinical trials, and adding the Pack-IT technology is intended to extend the platform into next-generation, off-the-shelf in vivo delivery, realizing the full potential of KIR-CAR to reach more patients, faster, and at lower cost.\"Pfizer licenses in vivo CAR-T programsPfizer entered into an exclusive licensing agreement with Starna Therapeutics under which Starna is set to receive an upfront payment of $330 million and is eligible for up to $2.3 billion in milestone payments tied to development and commercial milestones, plus royalties on net sales of approved products.2Under the agreement, Pfizer obtains exclusive rights outside Greater China to develop, manufacture and commercialize three pre-IND in vivo chimeric antigen receptor T-cell programs focused on treating autoimmune diseases.2 Pfizer also receives rights to use Starna’s proprietary in vivo CAR-T technology in inflammation and immunology and in oncology, along with options to exclusively license compounds created under a separate research collaboration and an option to expand the territory to include exclusive rights to develop and commercialize each exclusively licensed compound and product in Greater China.2 Pfizer is expected to lead clinical development outside Greater China and plans to manufacture the finished drug product for the initial clinical trials using its facilities in the United States, with sole and exclusive control over commercialization outside Greater China for all products.The Pfizer-Starna deal also fits a broader pattern of large pharma licensing innovative technology out of China, as John Stanford, executive director at Incubate, told Pharmaceutical Executive, “the surge of interest in Chinese licensing is the product of two decades of deliberate investment. China had a very stated objective — not just to be a cheap supplier, but to edge into innovative industries. That investment is now paying off.”Michael Vincent, chief inflammation and immunology officer, Pfizer, says “In vivo CAR-T is an emerging and promising approach for treating autoimmune diseases, and the patients who might benefit most are those for whom today’s options fall short. Pfizer has significant experience in developing and manufacturing RNA-based medicines globally, and Starna’s in vivo CAR-T programs and technology give us a powerful way to pursue these approaches.”SourcesVerismo Therapeutics Licenses In Vivo CAR T Engineering Technology to Extend Its Novel Multi-Chain KIR-CAR Platform verismo Therapeutics November 18, 2026, https://www.prnewswire.com/news-releases/verismo-therapeutics-licenses-in-vivo-car-t-engineering-technology-to-extend-its-novel-multi-chain-kir-car-platform-302943157.htmlPfizer Enters into Exclusive Licensing Agreement with Starna Therapeutics for Autoimmune Diseases Pfizer November 18, 2026, https://www.pfizer.com/news/press-release/press-release-detail/pfizer-enters-exclusive-licensing-agreement-starna Newsletter Lead with insight with the Pharmaceutical Executive newsletter, featuring strategic analysis, leadership trends, and market intelligence for biopharma decision-makers. Subscribe Advertisement R&D/Clinical Trials|IR Licensing and Partnerships|Technology Related to this articleView moreNovember 19th, 2026How AI Is Rescuing Failed Clinical Trials: Q&A With Dr. Joe Geraci Dr. Joe Geraci of NetraMark explains how AI analysis of clinical trial data can uncover hidden responder subgroups, separate true drug responders from placebo responders, and potentially rescue drug assets that appeared to fail in Phase II.Read moreNovember 19th, 2026Keeping Patients in the Loop as AI Enters Clinical Research: Q&A with Stacy HurtParexel’s Stacy Hurt explains why AI can speed up clinical research but can’t replace the lived experience of patients.Read moreNovember 13th, 2026When Small Protocol Decisions Become Enrollment or Retention BarriersEvery protocol decision affects patients, and only those with lived disease experience can identify true burden — from invasive biopsies to daily trial demands.Read moreNovember 12th, 2026How Patients’ Use of AI Impact How Sponsors Communicate with ThemWith 60% of Americans using AI health tools, patient advocates are encouraging collaborative use of AI alongside healthcare teams for better outcomes.Read moreNovember 11th, 2026When Patient Input Should Be Collected in the Clinical Research ProcessAI can make clinical trials smarter and faster, but lived patient experience remains irreplaceable in guiding research toward optimal results.Read moreNovember 10th, 2026AstraZeneca Acquires Omniose, Adding Bioconjugation Platform to Vaccine PipelineAstraZeneca acquires Omniose, to bolster it's preclinical infectious disease programs. Read moreNovember 20th, 2026Sanofi Eyes Insmed in Potential $43B Deal as Dupixent Patent Clock TicksSanofi is exploring a $35B–$43B takeover of Insmed and its blockbuster lung drug Brinsupri as the French pharma giant braces for Dupixent’s looming patent expiration.Read moreNovember 20th, 2026Innogen Licenses GLP-1 Therapy Efsubaglutide Alfa to ArceraInnogen grants Arcera exclusive rights to its long-acting GLP-1 receptor agonist across Africa, Eastern Europe, Latin America and the Middle East.Read morePrevious slideNext slide Advertisement Advertisement Trending on PharmExec1Sanofi Eyes Insmed in Potential $43B Deal as Dupixent Patent Clock Ticks2Innogen Licenses GLP-1 Therapy Efsubaglutide Alfa to Arcera3Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo4DISCO, AbbVie Sign AND-Gated Bispecific Deal Worth Up to $2.5B5FDA Approves Livsayis, Regeneron's First siRNA Therapy for Myasthenia Gravis",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "8c2b23b2e1cc0034",
+    "score": 4.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.8
+    },
+    "flags": [
+      "financial_terms_undisclosed"
+    ],
+    "cluster_key": "ai-oncology",
+    "confidence": 0.88,
+    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "默沙东与Isomorphic合作开发AI设计肿瘤小分子，平台型交易值得关注",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查首付款、里程碑及共同研发投入",
+      "确认候选物数量、靶点披露范围和权益归属",
+      "核实双方在候选物选择及商业化阶段的分工"
+    ],
+    "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+    "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "STAT PlusExclusive Merck, Isomorphic Labs partner to develop oncology drug candidates Collaboration will focus on small molecules aimed at undisclosed oncology target Manage alerts for this article Save this story for later Share this article Adobe By Katherine MacPhailNov. 19, 2026 Reporter, Live Journalism Katherine MacPhail[email protected]Katherine MacPhail is a reporter and editorial events programmer for STAT. Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel winning technology that can model how molecules will bind to proteins, said Thursday that they are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance.” The partnership — only the latest such deal between a pharma giant and Isomorphic — will bring together the latter’s proprietary drug design engine and existing wet lab data from Merck, officials from both companies said. Merck will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement “It is a target of high interest to us, a target where we have deployed internal efforts, and we think the pairing of those datasets with the Isomorphic drug discovery engine technology could be a very powerful pairing,” said George Addona, global head of discovery, preclinical development, and translational medicine at Merck. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In Artificial intelligence, biotechnology, Pharmaceuticals, STAT+ Submit a correction requestReprints Katherine MacPhail Reporter, Live Journalism Katherine MacPhail is a reporter and editorial events programmer for STAT. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein The Readout The Readout November 20, 2026 STAT Plus: Early results for Alterome’s KRAS drug for pancreas, lung and colon cancer arrive By Meghana Keshavan and Adam Feuerstein Advertisement The Readout The Readout November 19, 2026 STAT Plus: Lawmakers want U.S. biotech to outcompete China By Meghana Keshavan Health Health November 19, 2026 STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer Adam's Biotech Scorecard Adam's Biotech Scorecard November 19, 2026 STAT Plus: In cancer drug development, the spotlight shifts onto Erasca’s KRAS-targeted treatment By Adam Feuerstein Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: As Epic’s dominance grows, its iron grip is choking innovation in health technology By Casey Ross and Brittany Trang STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "485db512a733fe4d",
+    "score": 3.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "insufficient_material",
+      "thin_material"
+    ],
+    "cluster_key": "obeldesivir-licensing",
+    "confidence": 0.4,
+    "deal_key": "gilead|undisclosed-licensees|obeldesivir",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Gilead扩展obeldesivir可及性的免版税许可值得关注，但仅见标题",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题且无正文素材，成稿前需补充一手材料",
+      "核查各许可交易对手、地区及覆盖适应症",
+      "确认是否存在首付款、里程碑、版税或供货条件"
+    ],
+    "title": "Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir",
+    "url": "https://www.pharmexec.com/view/gilead-signs-royalty-free-licensing-deals-broaden-access-obeldesivir",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "ff1503ce8201de40",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.6
+    },
+    "flags": [
+      "duplicate_newsletter"
+    ],
+    "cluster_key": "ai-oncology",
+    "confidence": 0.95,
+    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "与Merck-Isomorphic交易报道高度重复，且为新闻汇总，独立成稿增量有限",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查是否包含Merck-Isomorphic之外的独立新交易",
+      "避免与STAT Plus独家交易稿重复计分"
+    ],
+    "title": "STAT Plus: Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more FDA approves a Sanofi drug for a ‌genetic condition affecting the brain and nervous system Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 19, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Rise and shine, everyone, another busy day is on the way. And it is getting off to a pleasant start here on the Pharmalot campus, where clear blue skies and comfy breezes are greeting us. As for the official mascots, they have finished keeping passersby at bay and are now happily snoozing in their respective corners. As for us, we are firing up the trusty kettle for another cup of stimulation. Our choice today is peppermint, an old standby from our pantry. Of course, you are invited to join us. Meanwhile, here is the latest menu of tidbits. As always, do keep in touch. And best of luck today. … Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel-winning technology that can model how molecules will bind to proteins, are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance,” STAT reports. The partnership — only the latest such deal between a pharma giant and Isomorphic — will join Isomorphic’s proprietary drug design engine and existing wet lab data from Merck, which will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement The U.S. Food and Drug Administration approved a Sanofi drug, making ​it the first treatment for a ‌type of rare genetic condition that affects the brain and nervous system, Reuters writes. The drug, ​branded as Infilbray, was approved for ​adults and children weighing at least ⁠15 kilograms, or about 33 pounds, ​with type 3 Gaucher disease, a ​rare inherited disorder that causes fatty substances to build up in the body and brain. The ​approval was based on a late-stage ​study of 43 patients aged 12 years and ‌older ⁠whose symptoms outside the brain and nervous system had been stabilized with enzyme replacement therapy. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 19, 2026 STAT Plus: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: NIH to move last group of its research chimps to a sanctuary By Ed Silverman Advertisement Pharmalot Pharmalot November 18, 2026 STAT Plus: Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more By Ed Silverman Pharmalot Pharmalot November 17, 2026 STAT Plus: Pharmalittle: We’re reading about a Roche breast cancer pill, obesity drugs in children, and more By Ed Silverman Pharmalot Pharmalot November 16, 2026 STAT Plus: Newer GLP-1 drugs to combat obesity may be the next global battleground over access to medicines, expert warns By Ed Silverman Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: As Epic’s dominance grows, its iron grip is choking innovation in health technology By Casey Ross and Brittany Trang STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast STAT Plus: Sellas' experimental blood cancer immunotherapy reduced risk of death in clinical trial By Adam Feuerstein Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "adb8972c16206028",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.4,
+      "impact": 1.0
+    },
+    "flags": [
+      "undisclosed_consideration"
+    ],
+    "cluster_key": "brain-computer-interface",
+    "confidence": 0.88,
+    "deal_key": "cogitat|indivi|brain-computer-interface",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Indivi收购Cogitat切入脑机接口，金额未披露，产业外溢有限",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查交易金额、支付方式及是否包含业绩付款",
+      "核查Cogitat核心技术和商业化阶段"
+    ],
+    "title": "又一家脑机企业被收购！脑机接口如何赋能药企？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_396872",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 交易并购 又一家脑机企业被收购！脑机接口如何赋能药企？ 又一家脑机企业被收购！脑机接口如何赋能药企？ 脑机孵化器 18小时前 查看原文 125 2026 年 11 月 17 日，瑞士医疗科技公司 Indivi 宣布收购帝国理工学院孵化的脑机接口企业 Cogitat，交易金额未披露。 Cogitat 将作为 Indivi 旗下的业务单元继续运营。 Indivi 总部位于瑞士巴塞尔，主要为药企提供临床试验测量工具。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 通过比较4款出海PD-(L)1/VEGF双抗分析BioNTech/普米斯及默沙东/礼新交易背后的逻辑 通过比较4款出海PD-(L)1/VEGF双抗分析BioNTech/普米斯及默沙东/礼新交易背后的逻辑 小药说药 2024-11-18 10亿美元！医药领域迎来世界首例，这次必将改写历史！ 10亿美元！医药领域迎来世界首例，这次必将改写历史！ Medaverse 2024-11-27 高达29亿美元！诺华拿下亨廷顿病候选药物，来自PTC Therapeutics 高达29亿美元！诺华拿下亨廷顿病候选药物，来自PTC Therapeutics Being科学 2024-12-03 市值31亿光智科技收购百亿独角兽先导电科 能否终结两年半的亏损？ 市值31亿光智科技收购百亿独角兽先导电科 能否终结两年半的亏损？ 晨哨并购 2024-10-09 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 脑机孵化器 共发布文章：53篇 最新发布文章 脑脊接口赛道，这家苏州企业再获近亿元融资！ 睡眠脑机接口获数千万融资！ AI・BCI企业，拟被全资收购！ 大布局还是缺产品？慧创5连击 产品已进入500+医院！脑机康复企业获数千万B轮融资 视觉脑机接口企业，完成5亿元C+轮融资！ 聚焦手功能康复，这家脑机接口企业再获老股东加注 约7000万！奥托博克领投了家神经接口公司 全球药物研发中心 全球研发数据与行业前沿情报 399,151个 全球在研药物数 4,055个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 美两党议员提出《加快临床试验法案》，推动临床开发多环节改革 2026-11-21 双荧光标记复合支架｜非侵入式实时追踪软骨组织工程材料降解与基质再生 2026-11-21 重塑全球AI产业：BIS远程访问新规详解 2026-11-20 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 17 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 4 中国DRG/DIP支付方式改革研究 摩熵咨询 33 66 国家基本医疗保险、生育保险和工伤保险药品目录》以及《商业健康保险创新药品目录》（2026年） 颁布机构：国家医保局、人力资源社会保障部 2026-11-16 国家医保局 人力资源社会保障部关于印发 以及 (2026年)的通知 颁布机构：国家医保局 2026-11-14 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 摩熵医药数据库年终采购指南来了：套餐立省3万、新客低至5折！ 国产首个Syk抑制剂正式获批！和黄医药醋酸索乐匹尼布片拿下ITP、wAIHA双适应症 贝达药业肺癌靶向药盐酸恩沙替尼胶囊获欧盟EC批准，成为首个中美欧三地上市的国产ALK抑制剂 WT1靶向癌症疫苗III期成功，galinpepimut-S将急性髓系白血病患者中位OS拉至24个月 2026年第46周11.09-11.15全球创新药研发概览 2026年第46周11.09-11.15国内医药大健康行业政策法规汇总 2026年第46周11.09-11.15国内仿制药/生物类似物申报/审批数据分析 2026年第46周11.09-11.15国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 资本透视 更多 数据来源： 更新时间： getStackedLineChartData(2) 最新投融资事件 更多 getCardData('newFinance').then(() => { new Swiper(\"#newFinance-card .swiper\", { loop: true, slidesPerView: 5, loopFillGroupWithBlank: true, loopAdditionalSlides: 5, direction: 'vertical', // 设置轮播方向 grabCursor: true, freeMode: false, speed: 3000, autoplay: { delay: 0, disableOnInteraction: false } }) }) 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "5cec6e207c8d906c",
+    "score": 2.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.0
+    },
+    "flags": [
+      "summary_deal_mismatch"
+    ],
+    "cluster_key": "radiopharmaceutical-supply",
+    "confidence": 0.62,
+    "deal_key": "atomvie|itm|manufacturing-supply",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "摘要仅披露35亿美元工厂资本开支，ITM与AtomVie供应协议条款缺失",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查ITM与AtomVie供应协议的标的、地区和期限",
+      "区分35亿美元工厂投资与交易对价",
+      "确认协议是供货、许可还是代工安排"
+    ],
+    "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
+    "url": "https://endpoints.news/lilly-starts-work-on-pennsylvania-obesity-plant-itm-atomvie-strike-supply-deal/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 19, 2026 12:07 PM EST Manufacturing Lil­ly starts work on Penn­syl­va­nia obe­si­ty plant; ITM, Atom­Vie strike sup­ply deal Anna Brown News Reporter Lil­ly breaks ground in Penn­syl­va­nia: Eli Lil­ly has start­ed con­struc­tion on its $3.5 bil­lion fac­to­ry in Lehigh Val­ley, PA, which will … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Lilly breaks ground in Pennsylvania: Eli Lilly has started construction on its $3.5 billion factory in Lehigh Valley, PA, which will manufacture obesity drugs including Lilly’s retatrutide. The site is expected ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.2
+    },
+    "flags": [
+      "stale_news",
+      "insufficient_material",
+      "thin_material"
+    ],
+    "cluster_key": "brain-transporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|brain-transporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "诺华退出合作属终止事件，距今18.9天且无正文，非近日新增交易",
+    "article_type": "historical_compare",
+    "verify_todo": [
+      "仅有标题且无正文素材，成稿前需补充一手材料",
+      "核实签署与终止的具体日期，避免把历史交易当成新增事件",
+      "核查退出原因、费用安排及双方后续权利"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "33ece3d3cbaa8235",
+    "score": 1.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "insufficient_material",
+      "thin_material"
+    ],
+    "cluster_key": "digital-health-ma",
+    "confidence": 0.4,
+    "deal_key": "counsel-health|oura|digital-health-platform",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "Oura收购Counsel Health，但仅见短摘要，金额与业务边界未明",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有188字RSS摘要，需补充全文及一手公告",
+      "核查交易金额、支付结构和时间",
+      "确认Counsel Health业务及收购的战略边界"
+    ],
+    "title": "Why Oura is buying Counsel",
+    "url": "https://endpoints.news/why-oura-bought-counsel/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Every year at HLTH, there is usually one piece of news that everyone has an opinion about. This year, it was Oura buying Counsel Health. That’s for good reason. It’s been rare to see a ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "3c01d1e527fb9c18",
+    "score": 1.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.7,
+      "impact": 1.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.98,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "临床研究终止及裁员未出现授权、收购或合作对手方，非交易条目",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "nChroma Bio stops its only clinical study early, lays off 50%",
+    "url": "https://endpoints.news/nchroma-bio-stops-its-only-clinical-study-early-lays-off-50/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "A couple of years ago, two Boston-area biotech CEOs decided to merge their startups, hoping to survive a down market for genetic medicine companies. Jeff Walsh, the CEO of that combined company, nChroma Bio,",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-21T22:17:17Z"
+  },
+  {
+    "id": "3453fd8d345ddc45",
+    "score": 0.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.98,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "监管调查与股价波动不涉及医药交易对手，非BD交易条目",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "突发！英伟达被调查，已连续7个交易日下跌，股价接近腰斩，单周市值缩水近9000亿美元",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/gs_396858",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 公司动态 突发！英伟达被调查，已连续7个交易日下跌，股价接近腰斩，单周市值缩水近9000亿美元 突发！英伟达被调查，已连续7个交易日下跌，股价接近腰斩，单周市值缩水近9000亿美元 上观新闻 15小时前 查看原文 45 英伟达 据央视财经援引外媒11月20日报道， 美国证券交易委员会（SEC）正在对英伟达潜在会计问题展开调查。 同时，美国司法部也在就英伟达收购开源平台Hugging Face一事开展审查。 需要提醒的是， 监管调查本身不等于认定存在违规，不少调查最终不会采取执法行动。 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 相关资讯 综合 英伟达被查！股价连跌接近腰斩，市值跌掉1个亚马逊 经济日报 2026-11-21 特朗普表态：希望黄仁勋重返英伟达 华尔街见闻 2026-11-21 英伟达股价暴跌14%：市值蒸发近5000亿美元 AI泡沫破灭 后黄仁勋时代进入“至暗时刻” 雷递 2026-11-21 英伟达暴泻14%，Anthropic跌8.5%，纳指抹去年内涨幅，标普七连跌 支点财经 2026-11-21 英伟达跌超14%，Anthropic盘中逼近发行价 中国证券报 2026-11-21 突发利空，英伟达跌超14% 上海证券报 2026-11-21 英伟达暴跌14%，Anthropic IPO次日险破发，AI交易雪崩，纳指跌超5%！发生了什么？ 华尔街见闻 2026-11-21 刚刚，英伟达市值被谷歌超越 ，降至美股第四 科创板日报 2026-11-20 33亿！英伟达拟收购一家“异端”大模型创企 智东西 2026-11-20 英伟达换帅，中东的AI雄心还会持续吗？ 经济观察报 2026-11-20 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 晶泰科技亮相CPIC 2026：深度解码AI自主科学发现，以技术闭环重构药物研发范式 晶泰科技亮相CPIC 2026：深度解码AI自主科学发现，以技术闭环重构药物研发范式 晶泰科技 2026-07-21 康哲药业(0867.HK)：链接医药创新与商业化，新康哲新崛起 康哲药业(0867.HK)：链接医药创新与商业化，新康哲新崛起 向阳论医谈药 2024-10-16 金赛药业加速布局女性健康领域 子公司金妍迪科达成多项商业合作 金赛药业加速布局女性健康领域 子公司金妍迪科达成多项商业合作 金赛药业 2024-08-21 2024智慧医疗企业排行榜出炉，医渡科技位列榜首 2024智慧医疗企业排行榜出炉，医渡科技位列榜首 开心生活科技 2024-10-24 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 上观新闻 共发布文章：21篇 最新发布文章 100万一针“天价抗癌药”首次纳入基本医保！定价有望大幅下降至30万元内，患者激动表示：从遥不可及到踮踮脚够得着，重燃了生的希望 国家医保局、人社部：2026年基本医保药品目录新增107种药品，其中51个为一类新药，再创历史新高；商业健康保险创新药品目录新增12种药品 进博舞台见证“零出血”获益！罗氏携手多方助力血友病A患者“自由成长 人生自在”新篇章 国家医保局披露：今年前9个月，生育津贴支出781.61亿元，全面实现直发个人 哈药股份公告：总裁芦传有被立案、留置 “对于蔡康永不当行为强烈震惊、坚决反对！”又一品牌“切割”，发布中英双语声明：下架相关全部合作内容 华为宣布与高通达成重要协议：内容包括双方在5G、计算、人工智能和网络等多个领域的专利组合交叉许可，以及高通将收购华为部分美国专利 已证实：微塑料或增加发病风险！上海三甲医院专家提出，阿尔茨海默病的病程非常长，甚至长达20-30年，应像面对高血压、糖尿病一样面对它 全球药物研发中心 全球研发数据与行业前沿情报 399,151个 全球在研药物数 4,055个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 美两党议员提出《加快临床试验法案》，推动临床开发多环节改革 2026-11-21 双荧光标记复合支架｜非侵入式实时追踪软骨组织工程材料降解与基质再生 2026-11-21 重塑全球AI产业：BIS远程访问新规详解 2026-11-20 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 17 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 4 中国DRG/DIP支付方式改革研究 摩熵咨询 33 66 国家基本医疗保险、生育保险和工伤保险药品目录》以及《商业健康保险创新药品目录》（2026年） 颁布机构：国家医保局、人力资源社会保障部 2026-11-16 国家医保局 人力资源社会保障部关于印发 以及 (2026年)的通知 颁布机构：国家医保局 2026-11-14 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 摩熵医药数据库年终采购指南来了：套餐立省3万、新客低至5折！ 国产首个Syk抑制剂正式获批！和黄医药醋酸索乐匹尼布片拿下ITP、wAIHA双适应症 贝达药业肺癌靶向药盐酸恩沙替尼胶囊获欧盟EC批准，成为首个中美欧三地上市的国产ALK抑制剂 WT1靶向癌症疫苗III期成功，galinpepimut-S将急性髓系白血病患者中位OS拉至24个月 2026年第46周11.09-11.15全球创新药研发概览 2026年第46周11.09-11.15国内医药大健康行业政策法规汇总 2026年第46周11.09-11.15国内仿制药/生物类似物申报/审批数据分析 2026年第46周11.09-11.15国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-21T22:17:17Z"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-22",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "8ee5a5240c21e08a",
+      "title": "美敦力斥资25亿收购Contego，颈动脉介入赛道迎来巨头对决",
+      "score": 5.7,
+      "member_ids": [
+        "8ee5a5240c21e08a"
+      ],
+      "deal_keys": [
+        "contego-medical|medtronic|carotid-intervention-platform"
+      ],
+      "members": [
+        {
+          "title": "美敦力斥资25亿收购Contego，颈动脉介入赛道迎来巨头对决",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_396873",
+          "score": 5.7,
+          "reasoning": "收购对价3.8亿美元，另有额外付款，可能强化颈动脉介入竞争"
+        }
+      ],
+      "reasoning": "收购对价3.8亿美元，另有额外付款，可能强化颈动脉介入竞争",
+      "verify_todo": [
+        "核对标题人民币25亿元与正文3.8亿美元口径",
+        "确认额外对价的触发条件及上限",
+        "核查交割条件和监管审批要求"
+      ],
+      "flags": [
+        "currency_discrepancy"
+      ]
+    }
+  ]
+}
