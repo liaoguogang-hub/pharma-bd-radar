@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-23",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "adc-tce-oncology",
+      "lead_id": "baea8c015158f69c",
+      "title": "AbbVie and Disco strike deal worth up to $2.54B for solid tumor targets",
+      "score": 5.2,
+      "member_ids": [
+        "baea8c015158f69c"
+      ],
+      "deal_keys": [
+        "abbvie|disco|adc-tce-oncology"
+      ],
+      "members": [
+        {
+          "title": "AbbVie and Disco strike deal worth up to $2.54B for solid tumor targets",
+          "url": "https://endpoints.news/abbvvie-and-disco-strike-deal-worth-more-than-2-5b-for-solid-tumor-targets/",
+          "score": 5.2,
+          "reasoning": "首付4000万美元、总额上限25.4亿美元，属临床前肿瘤抗体偶联及T细胞衔接器合作。"
+        }
+      ],
+      "reasoning": "首付4000万美元、总额上限25.4亿美元，属临床前肿瘤抗体偶联及T细胞衔接器合作。",
+      "verify_todo": [
+        "需核对25.4亿美元总额上限的完整构成及是否包含行权费",
+        "需核实合作涉及的资产数量、权益区域和开发责任"
+      ],
+      "flags": [],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "large-pharma-ma",
+      "lead_id": "51428cacd7da2222",
+      "title": "Sanofi considering a deal to acquire Insmed, according to report",
+      "score": 4.7,
+      "member_ids": [
+        "51428cacd7da2222"
+      ],
+      "deal_keys": [
+        "insmed|sanofi|company-acquisition"
+      ],
+      "members": [
+        {
+          "title": "Sanofi considering a deal to acquire Insmed, according to report",
+          "url": "https://endpoints.news/sanofi-considering-a-deal-to-acquire-insmed-according-to-report/",
+          "score": 4.7,
+          "reasoning": "据报赛诺菲考虑收购Insmed，若推进将属大型药企并购，但价格及交易条款尚未披露。"
+        }
+      ],
+      "reasoning": "据报赛诺菲考虑收购Insmed，若推进将属大型药企并购，但价格及交易条款尚未披露。",
+      "verify_todo": [
+        "需确认原始报道是否给出收购估值、每股报价或潜在交易总额",
+        "需核实双方是否已接洽、谈判或正式提交报价",
+        "需核实Insmed核心资产的临床及商业化阶段"
+      ],
+      "flags": [
+        "rumor",
+        "terms_undisclosed"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
