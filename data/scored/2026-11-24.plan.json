@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-24",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "huntingtons-disease-platform",
+      "lead_id": "e964be3b661663a4",
+      "title": "Lilly buys Huntington's startup LoQus23 for up to $725M",
+      "score": 4.2,
+      "member_ids": [
+        "e964be3b661663a4"
+      ],
+      "deal_keys": [
+        "eli-lilly|loqus23|huntingtons-disease-platform"
+      ],
+      "members": [
+        {
+          "title": "Lilly buys Huntington's startup LoQus23 for up to $725M",
+          "url": "https://endpoints.news/lilly-buys-huntingtons-startup-loqus23-for-up-to-725m/",
+          "score": 4.2,
+          "reasoning": "潜在总额7.25亿美元但首付未披露；收购标的拟进入临床早期，需核查交易结构"
+        }
+      ],
+      "reasoning": "潜在总额7.25亿美元但首付未披露；收购标的拟进入临床早期，需核查交易结构",
+      "verify_todo": [
+        "需查公司公告或监管文件确认首付款、里程碑及或有对价构成",
+        "需确认具体靶点、资产数量和IND申报时间",
+        "需核实LoQus23主要股东及交易双方是否存在关联关系"
+      ],
+      "flags": [
+        "deal_signal_false",
+        "no_upfront_disclosed"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    },
+    {
+      "type": "event_report",
+      "cluster_key": "ai-oncology-discovery",
+      "lead_id": "8c2b23b2e1cc0034",
+      "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+      "score": 3.7,
+      "member_ids": [
+        "8c2b23b2e1cc0034"
+      ],
+      "deal_keys": [
+        "isomorphic-labs|merck|ai-oncology-small-molecules"
+      ],
+      "members": [
+        {
+          "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+          "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
+          "score": 3.7,
+          "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，金额及候选物数量待核"
+        }
+      ],
+      "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，金额及候选物数量待核",
+      "verify_todo": [
+        "需确认首付款、研发资助、里程碑及潜在总金额",
+        "需核实合作项目数量、候选物靶点及各自临床阶段",
+        "需确认双方排他性、区域权利和成果商业化安排"
+      ],
+      "flags": [
+        "no_upfront_disclosed"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}

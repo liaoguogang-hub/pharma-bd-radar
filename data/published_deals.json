@@ -246,6 +246,18 @@
       "deal_key": "insmed|sanofi|company-acquisition",
       "lead_id": "51428cacd7da2222",
       "title": "Sanofi considering a deal to acquire Insmed, according to report"
+    },
+    {
+      "date": "2026-11-24",
+      "deal_key": "eli-lilly|loqus23|huntingtons-disease-platform",
+      "lead_id": "e964be3b661663a4",
+      "title": "Lilly buys Huntington's startup LoQus23 for up to $725M"
+    },
+    {
+      "date": "2026-11-24",
+      "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+      "lead_id": "8c2b23b2e1cc0034",
+      "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates"
     }
   ]
 }

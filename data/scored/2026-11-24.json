@@ -1,0 +1,318 @@
+[
+  {
+    "id": "e964be3b661663a4",
+    "score": 4.2,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "deal_signal_false",
+      "no_upfront_disclosed"
+    ],
+    "cluster_key": "huntingtons-disease-platform",
+    "confidence": 0.78,
+    "deal_key": "eli-lilly|loqus23|huntingtons-disease-platform",
+    "upfront_usd": 0,
+    "total_usd": 725000000,
+    "reasoning": "潜在总额7.25亿美元但首付未披露；收购标的拟进入临床早期，需核查交易结构",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需查公司公告或监管文件确认首付款、里程碑及或有对价构成",
+      "需确认具体靶点、资产数量和IND申报时间",
+      "需核实LoQus23主要股东及交易双方是否存在关联关系"
+    ],
+    "title": "Lilly buys Huntington's startup LoQus23 for up to $725M",
+    "url": "https://endpoints.news/lilly-buys-huntingtons-startup-loqus23-for-up-to-725m/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "David Reynolds, LoQus23 Therapeutics CEO November 23, 2026 04:37 AM EST StartupsDeals Lil­ly buys Hunt­ing­ton's start­up Lo­Qus23 for up to $725M Kyle LaHucik Biotech Correspondent Eli Lil­ly is head­ed in­to Thanks­giv­ing week with an ex­ten­sion to its 2026 shop­ping bo­nan­za, this time by snap­ping up a UK-based Hunt­ing­ton’s dis­ease biotech … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Eli Lilly is headed into Thanksgiving week with an extension to its 2026 shopping bonanza, this time by snapping up a UK-based Huntington's disease biotech set to enter the clinic in the coming months. The ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "8c2b23b2e1cc0034",
+    "score": 3.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "no_upfront_disclosed"
+    ],
+    "cluster_key": "ai-oncology-discovery",
+    "confidence": 0.88,
+    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，金额及候选物数量待核",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需确认首付款、研发资助、里程碑及潜在总金额",
+      "需核实合作项目数量、候选物靶点及各自临床阶段",
+      "需确认双方排他性、区域权利和成果商业化安排"
+    ],
+    "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
+    "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "STAT PlusExclusive Merck, Isomorphic Labs partner to develop oncology drug candidates Collaboration will focus on small molecules aimed at undisclosed oncology target Manage alerts for this article Save this story for later Share this article Adobe By Katherine MacPhailNov. 19, 2026 Reporter, Live Journalism Katherine MacPhail[email protected]Katherine MacPhail is a reporter and editorial events programmer for STAT. Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel winning technology that can model how molecules will bind to proteins, said Thursday that they are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance.” The partnership — only the latest such deal between a pharma giant and Isomorphic — will bring together the latter’s proprietary drug design engine and existing wet lab data from Merck, officials from both companies said. Merck will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement “It is a target of high interest to us, a target where we have deployed internal efforts, and we think the pairing of those datasets with the Isomorphic drug discovery engine technology could be a very powerful pairing,” said George Addona, global head of discovery, preclinical development, and translational medicine at Merck. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In Artificial intelligence, biotechnology, Pharmaceuticals, STAT+ Submit a correction requestReprints Katherine MacPhail Reporter, Live Journalism Katherine MacPhail is a reporter and editorial events programmer for STAT. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Biotech Biotech November 23, 2026 STAT Plus: A string of wins with cancer drugs sets Genmab up for its next chapter By Andrew Joseph Biotech Biotech November 23, 2026 STAT Plus: New biotech aims to develop next generation CAR-T for multiple myeloma By Angus Chen Advertisement Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein The Readout The Readout November 20, 2026 STAT Plus: Early results for Alterome’s KRAS drug for pancreas, lung and colon cancer arrive By Meghana Keshavan and Adam Feuerstein The Readout The Readout November 19, 2026 STAT Plus: Lawmakers want U.S. biotech to outcompete China By Meghana Keshavan Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "c0b95137bcd3108f",
+    "score": 3.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.3
+    },
+    "flags": [
+      "title_only",
+      "multiple_deals",
+      "no_upfront_disclosed",
+      "thin_material"
+    ],
+    "cluster_key": "in-vivo-car-t",
+    "confidence": 0.4,
+    "deal_key": "pfizer|verismo|in-vivo-car-t",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "多笔授权聚焦体内制造CAR-T，方向具平台潜力；仅有标题，需补齐条款与阶段",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "需核实每笔授权的受让方、权益区域、资产范围和商业化安排",
+      "需确认首付款、里程碑、潜在总额及项目临床阶段",
+      "需核实体内CAR-T制造技术是否已有第三方授权或临床验证"
+    ],
+    "title": "Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo",
+    "url": "https://www.pharmexec.com/view/pfizer-verismo-licensing-deals-car-t-manufacturing-in-vivo",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "ff1503ce8201de40",
+    "score": 2.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.3
+    },
+    "flags": [
+      "duplicate_roundup",
+      "no_upfront_disclosed"
+    ],
+    "cluster_key": "ai-oncology-discovery",
+    "confidence": 0.82,
+    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "与已报道的Merck—Isomorphic交易重复，金额未披露且属新闻综述，增量有限",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需回查Merck与Isomorphic Labs原始公告及独家报道中的交易条款",
+      "需确认本文是否包含该合作之外的实质性新增信息"
+    ],
+    "title": "STAT Plus: Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more FDA approves a Sanofi drug for a ‌genetic condition affecting the brain and nervous system Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 19, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Rise and shine, everyone, another busy day is on the way. And it is getting off to a pleasant start here on the Pharmalot campus, where clear blue skies and comfy breezes are greeting us. As for the official mascots, they have finished keeping passersby at bay and are now happily snoozing in their respective corners. As for us, we are firing up the trusty kettle for another cup of stimulation. Our choice today is peppermint, an old standby from our pantry. Of course, you are invited to join us. Meanwhile, here is the latest menu of tidbits. As always, do keep in touch. And best of luck today. … Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel-winning technology that can model how molecules will bind to proteins, are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance,” STAT reports. The partnership — only the latest such deal between a pharma giant and Isomorphic — will join Isomorphic’s proprietary drug design engine and existing wet lab data from Merck, which will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement The U.S. Food and Drug Administration approved a Sanofi drug, making ​it the first treatment for a ‌type of rare genetic condition that affects the brain and nervous system, Reuters writes. The drug, ​branded as Infilbray, was approved for ​adults and children weighing at least ⁠15 kilograms, or about 33 pounds, ​with type 3 Gaucher disease, a ​rare inherited disorder that causes fatty substances to build up in the body and brain. The ​approval was based on a late-stage ​study of 43 patients aged 12 years and ‌older ⁠whose symptoms outside the brain and nervous system had been stabilized with enzyme replacement therapy. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 20, 2026 STAT Plus: Up and down the ladder: The latest comings and goings By Ed Silverman Pharmalot Pharmalot November 20, 2026 STAT Plus: Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more By Ed Silverman Advertisement Pharmalot Pharmalot November 19, 2026 STAT Plus: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: NIH to move last group of its research chimps to a sanctuary By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more By Ed Silverman Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "485db512a733fe4d",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 0.6
+    },
+    "flags": [
+      "title_only",
+      "multiple_deals",
+      "no_upfront_disclosed",
+      "thin_material"
+    ],
+    "cluster_key": "obeldesivir-access",
+    "confidence": 0.35,
+    "deal_key": "gilead|multiple-licensees|obeldesivir",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "免特许权使用费授权有差异化，但仅有标题且对手方、地区和商业条款未披露",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "需核实各授权对手方、授权地区及是否包含制造或商业化权利",
+      "需确认是否存在首付款、里程碑、供应义务或成本分担安排",
+      "需核实Obeldesivir当前监管阶段及交易涉及的市场"
+    ],
+    "title": "Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir",
+    "url": "https://www.pharmexec.com/view/gilead-signs-royalty-free-licensing-deals-broaden-access-obeldesivir",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "187275e200b63309",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.3
+    },
+    "flags": [
+      "title_only",
+      "date_unknown",
+      "no_upfront_disclosed",
+      "thin_material"
+    ],
+    "cluster_key": "glp-1",
+    "confidence": 0.35,
+    "deal_key": "arcera|yinuo-pharmaceutical|isupaglutide-alpha",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "依苏帕格鲁肽α出海授权具备区域拓展价值，但发布日期、阶段和金额均待核",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，且发布日期未知，成稿前需补一手材料",
+      "需核实银诺医药的官方英文名称及交易对手方完整主体",
+      "需确认首付款、里程碑、潜在总额及授权区域",
+      "需核实依苏帕格鲁肽α的临床阶段、差异化依据和双方权利义务",
+      "需检查双方是否存在股权关系或共同主要股东"
+    ],
+    "title": "银诺医药与Arcera达成依苏帕格鲁肽α出海授权合作，加速拓展国际市场",
+    "url": "https://www.phirda.com/artilce_44277.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.2
+    },
+    "flags": [
+      "title_only",
+      "deal_termination",
+      "stale",
+      "thin_material"
+    ],
+    "cluster_key": "brain-transporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|brain-transporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "合作短期终止具有BD警示价值；发布已超14天且无正文，需回溯原公告",
+    "article_type": "historical_compare",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "需核实Novartis退出协议的签署、终止日期及合同约定的触发条件",
+      "需确认双方是否存在关联交易或共同主要股东",
+      "需核实终止后知识产权、项目人员及在研资产处置安排"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  },
+  {
+    "id": "5cec6e207c8d906c",
+    "score": 1.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "multi_topic",
+      "no_upfront_disclosed"
+    ],
+    "cluster_key": "pharmaceutical-supply",
+    "confidence": 0.55,
+    "deal_key": "atomvie|itm|pharmaceutical-supply",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "供应合作条款未披露，正文重心偏向工厂投资；BD信息增量有限，需拆分报道",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需核实ITM与AtomVie签署供应协议的具体产品、地区和期限",
+      "需确认是否存在预付款、最低采购量或排他安排",
+      "需将 Lilly 工厂投资与本次供应交易分开核实"
+    ],
+    "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
+    "url": "https://endpoints.news/lilly-starts-work-on-pennsylvania-obesity-plant-itm-atomvie-strike-supply-deal/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 19, 2026 12:07 PM EST Manufacturing Lil­ly starts work on Penn­syl­va­nia obe­si­ty plant; ITM, Atom­Vie strike sup­ply deal Anna Brown News Reporter Lil­ly breaks ground in Penn­syl­va­nia: Eli Lil­ly has start­ed con­struc­tion on its $3.5 bil­lion fac­to­ry in Lehigh Val­ley, PA, which will … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Lilly breaks ground in Pennsylvania: Eli Lilly has started construction on its $3.5 billion factory in Lehigh Valley, PA, which will manufacture obesity drugs including Lilly’s retatrutide. The site is expected ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-23T22:16:53Z"
+  }
+]
