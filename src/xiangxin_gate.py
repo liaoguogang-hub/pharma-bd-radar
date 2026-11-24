@@ -78,6 +78,27 @@ def _has_key() -> bool:
     return bool(os.getenv("XIANGXIN_API_KEY"))
 
 
+def _has_text(item: Any) -> bool:
+    """条目是否至少有标题或摘要可判。
+
+    ⚠️ 这条不能省（2026-11-25 补）。实测踩过的坑：
+    历史 scored 数据里存在 title / summary / content 【全空】的条目
+    ——正文抓取失败时只剩 id。这类条目送进象信时 state 是空的，
+    象信只能凭两个空字符串猜，结果一律猜成「非交易」，
+    于是一条条真实交易被误杀。
+
+    实测：本雷达 2295 条历史数据里空 state 有 6 条；
+    当时没造成漏杀（空 state 的条目 score 都低），
+    但这是运气不是设计——换一天数据就可能中招。
+    同期临床雷达回归实测已出现 10 条 score>=6.0 的真实读出被误杀。
+
+    规则：**没有文本就不判**。空条目直接放行给 LLM，
+    绝不因为"没内容"就当成非交易拦掉。
+    """
+    st = _state(item)
+    return bool((st["标题"] or "").strip() or (st["摘要"] or "").strip())
+
+
 def filter_items(items: list[Any]) -> tuple[list[Any], dict[str, Any]]:
     """
     象信前置闸门。
@@ -126,6 +147,12 @@ def filter_items(items: list[Any]) -> tuple[list[Any], dict[str, Any]]:
             passed = []
             for it in items:
                 iid = _item_id(it)
+                # 空 state 不判：象信只能凭空字符串猜，一定猜成「非交易」，
+                # 会把真实交易误杀。详见 _has_text 的注释。
+                if not _has_text(it):
+                    stats["no_text"] = stats.get("no_text", 0) + 1
+                    passed.append(it)
+                    continue
                 try:
                     resp = client.system_one(
                         state=_state(it),

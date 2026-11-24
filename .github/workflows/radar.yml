@@ -142,7 +142,7 @@ jobs:
         run: pip install -r requirements.txt
 
       # 2026-11-10：象信 AI 前置闸门的可选依赖。
-      # ⚠️ 故意【不】写进 requirements.txt：闸门当前 llm.xiangxin_gate.enabled=false，
+      # ⚠️ 故意【不】写进 requirements.txt：闸门是可选增强，
       #    若把它当必需依赖，一旦 PyPI 抖动/装不上就会连带整条评分链路失败。
       #    这里单独装并 continue-on-error：装不上就退回旁路，雷达照常跑。
       #    确认要长期启用闸门后，可以把这行并进 requirements.txt。
@@ -174,8 +174,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           # 2026-11-10：象信 AI 前置闸门。用于在 LLM 打分前拦掉明确不是
           # BD 交易的条目（实测拦掉 ~80%，漏杀 0 条）。
-          # ⚠️ 当前配置 llm.xiangxin_gate.enabled = false，闸门处于关闭状态，
-          #    行为与接入前完全一致。先配好密钥、观察产出基线后再开启。
+          # ⚠️ 当前配置 llm.xiangxin_gate.enabled = true，闸门已开启。
           #    没配这个 secret 时闸门会自动旁路，不影响评分。
           XIANGXIN_API_KEY: ${{ secrets.XIANGXIN_API_KEY }}
         run: python score.py ${{ inputs.date }}
