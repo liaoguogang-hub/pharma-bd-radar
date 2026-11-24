@@ -1,67 +1,13 @@
 {
   "date": "2026-11-24",
-  "count": 2,
-  "plan": [
-    {
-      "type": "event_report",
-      "cluster_key": "msh3-huntingtons",
-      "lead_id": "ff046671e7afb5ae",
-      "title": "Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal",
-      "score": 5.7,
-      "member_ids": [
-        "ff046671e7afb5ae"
-      ],
-      "deal_keys": [
-        "eli-lilly|loqus23|msh3"
-      ],
-      "members": [
-        {
-          "title": "Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal",
-          "url": "https://www.biopharmadive.com/news/lilly-loqus-huntingtons-drug-acquisition-deal/875448/",
-          "score": 5.7,
-          "reasoning": "MNC收购潜在总额7.25亿美元，首付未明确，MSH3项目具潜在首创性"
-        }
-      ],
-      "reasoning": "MNC收购潜在总额7.25亿美元，首付未明确，MSH3项目具潜在首创性",
-      "verify_todo": [
-        "核实交易首付款、里程碑及或有对价结构",
-        "确认候选产品临床阶段及交易完成条件"
-      ],
-      "flags": [],
-      "below_threshold": true,
-      "keep_threshold": 6.5
-    },
-    {
-      "type": "landscape_review",
-      "cluster_key": "multi-deal-roundup",
-      "lead_id": "a510dbf14cd4c442",
-      "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
-      "score": 4.2,
-      "member_ids": [
-        "a510dbf14cd4c442"
-      ],
-      "deal_keys": [
-        "gsk|nuvalent|acquisition"
-      ],
-      "members": [
-        {
-          "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
-          "url": "https://www.biopharmadive.com/news/summit-crl-sellas-data-nelkarmi-lilly-astrazeneca-biogen/874825/",
-          "score": 4.2,
-          "reasoning": "汇总GSK收购及Lilly、AstraZeneca和Biogen研发合作，具备拆分比较价值"
-        }
-      ],
-      "reasoning": "汇总GSK收购及Lilly、AstraZeneca和Biogen研发合作，具备拆分比较价值",
-      "verify_todo": [
-        "需分别核实GSK/Nuvalent收购对价及是否为近期事件",
-        "需核实Lilly/AstraZeneca、Biogen/Lilly合作的首付、总额与开发阶段",
-        "检查各交易双方是否存在股权或共同股东关系"
-      ],
-      "flags": [],
-      "below_threshold": true,
-      "keep_threshold": 6.5
-    }
-  ],
-  "below_threshold": true,
-  "keep_threshold": 6.5
+  "count": 0,
+  "plan": [],
+  "diagnosis": {
+    "keep_threshold": 6.5,
+    "candidates": 89,
+    "empty_material": 62,
+    "empty_material_pct": 69.66292134831461,
+    "top_score": 5.7,
+    "reason": "no_fallback_candidate"
+  }
 }
