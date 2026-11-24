@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-25",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "iqvia-quotient-sciences",
+      "lead_id": "921026f1ec1c2f35",
+      "title": "73亿元，临床CRO被收购",
+      "score": 5.2,
+      "member_ids": [
+        "921026f1ec1c2f35"
+      ],
+      "deal_keys": [
+        "iqvia|quotient-sciences|quotient-sciences"
+      ],
+      "members": [
+        {
+          "title": "73亿元，临床CRO被收购",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_397845",
+          "score": 5.2,
+          "reasoning": "IQVIA收购Quotient Sciences，正式对价未披露，传闻估值约11亿美元"
+        }
+      ],
+      "reasoning": "IQVIA收购Quotient Sciences，正式对价未披露，传闻估值约11亿美元",
+      "verify_todo": [
+        "需查IQVIA及Quotient Sciences公告确认正式交易对价，11亿美元仅为传闻估值"
+      ],
+      "flags": [
+        "rumored_valuation"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
