@@ -1,29 +1,94 @@
 [
   {
-    "id": "e964be3b661663a4",
-    "score": 4.2,
+    "id": "68c1fd694764dc8a",
+    "score": 6.0,
+    "dims": {
+      "amount": 2.5,
+      "stage": 0.5,
+      "first_mover": 0.8,
+      "tier": 1.2,
+      "impact": 1.0
+    },
+    "flags": [],
+    "cluster_key": "macrocyclic-peptide-platform",
+    "confidence": 0.9,
+    "deal_key": "argenx|unnatural-products|macrocyclic-peptide",
+    "upfront_usd": 550000000,
+    "total_usd": 0,
+    "reasoning": "5.5亿美元首付收购宏环肽平台；但已发布15天，时效性明显下降",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实收购总对价及或有对价的具体上限，避免将“潜在十亿美元级”直接填入总额",
+      "核实标的资产阶段及口服免疫疾病项目的开发规划"
+    ],
+    "title": "Argenx to buy peptide platform in potentially billion-dollar deal",
+    "url": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+    "sources": [
+      "biopharmadive_deals"
+    ],
+    "content": "An article from Dive Brief Argenx to buy peptide platform in potentially billion-dollar deal For $550 million up front, Argenx will take control of Unnatural Products’ “macrocyclic peptide” technology and direct it to develop oral, durable medicines for serious immune-mediated diseases. Published Nov. 9, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Argenx agreed to acquire Unnatural Products, a maker of \"macrocyclic peptides,\" on Nov. 9, 2026. deliormanli via Getty Images Dive Brief: Argenx, a Netherlands-based biotechnology company focused on antibody drugs, on Monday said it has agreed to acquire a protein specialist in a potentially billion-dollar-plus deal. Unnatural Products has a platform that pairs machine learning, screening and other techniques to engineer “macrocyclic peptides.” These peptides are larger and more complex than typical small molecules, which allows them to more effectively bind to tricky proteins and address some challenging diseases. Yet, they’re still tiny enough that they can be swallowed. Argenx plans to use the platform to develop oral, durable medicines for serious immune-mediated diseases. The acquisition carries a $550 million upfront cash payment. Unnatural Products could receive up to $595 million more if specific milestones are hit. The companies expect their deal to close before the end of the year. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Dive Insight: Unnatural Products claims macrocyclic peptides hold the potential to unlock targets once thought to be “undruggable.” That premise, along with the California company’s technology platform, proved enticing to both venture capitalists and big-name pharmaceutical firms like Merck & Co. and Novartis. Argenx was drawn in as well, having already taken a minority stake in Unnatural Products before pursuing a full buyout. In a statement, Argenx CEO Karen Massey said these macrocyclic peptide capabilities are “highly complementary” to her own company’s antibody engineering. “After working together for more than two years, we also know there is a strong fit in how we work: science first, entrepreneurial and focused on patients,” Massey added. “We want to preserve what has made [Unnatural Products] successful while bringing the strengths of both teams together.” The Food and Drug Administration has already approved at least a handful of macrocyclic peptide therapies. In 2020, for example, Rhythm Pharmaceuticals’ Imcivree was cleared as a treatment for certain genetic forms of obesity. The following year, Aurinia Pharmaceuticals’ Lupkynis became the first-ever oral medicine for adults with active lupus nephritis. In 2023, the FDA greenlit a UCB medicine called Zilbrysq for “generalized myasthenia gravis,” a rare autoimmune condition that’s become somewhat of a battleground for several developers. Argenx’s own flagship product, Vyvgart, targets this disease and brought in $4.5 billion in net product sales from January through the end of September. Thomas Smith, a Leerink Partners analyst who covers Argenx, wrote in a note to clients that the new acquisition “represents potential for longer-term strategic value.” He explained there’s a desire — both in big pharma and in the broader immunology and inflammation research space — to make oral, long-acting therapeutics that are able to be more effective and convenient than conventional biologics. The Unnatural Products deal, which comes on the heels of Argenx’s potentially $2.2 billion purchase of Forte Biosciences, also “signals further focus on pipeline growth and diversification,” Smith wrote. Shares of Argenx were up nearly 3% by late Monday morning, to hover around $953 apiece. Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Deals",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "ff046671e7afb5ae",
+    "score": 5.7,
     "dims": {
       "amount": 0.5,
-      "stage": 0.5,
-      "first_mover": 0.4,
+      "stage": 0.8,
+      "first_mover": 1.6,
       "tier": 1.5,
       "impact": 1.3
     },
-    "flags": [
-      "deal_signal_false",
-      "no_upfront_disclosed"
-    ],
-    "cluster_key": "huntingtons-disease-platform",
-    "confidence": 0.78,
-    "deal_key": "eli-lilly|loqus23|huntingtons-disease-platform",
+    "flags": [],
+    "cluster_key": "msh3-huntingtons",
+    "confidence": 0.86,
+    "deal_key": "eli-lilly|loqus23|msh3",
     "upfront_usd": 0,
     "total_usd": 725000000,
-    "reasoning": "潜在总额7.25亿美元但首付未披露；收购标的拟进入临床早期，需核查交易结构",
+    "reasoning": "MNC收购潜在总额7.25亿美元，首付未明确，MSH3项目具潜在首创性",
     "article_type": "event_report",
     "verify_todo": [
-      "需查公司公告或监管文件确认首付款、里程碑及或有对价构成",
-      "需确认具体靶点、资产数量和IND申报时间",
-      "需核实LoQus23主要股东及交易双方是否存在关联关系"
+      "核实交易首付款、里程碑及或有对价结构",
+      "确认候选产品临床阶段及交易完成条件"
+    ],
+    "title": "Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal",
+    "url": "https://www.biopharmadive.com/news/lilly-loqus-huntingtons-drug-acquisition-deal/875448/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal The acquisition hands Lilly what could become a first-of-its-kind treatment designed to inhibit a protein, “MSH3,” that can exacerbate the genetic abnormalities underlying diseases like Huntington’s. Published Nov. 23, 2026 Jacob Bell Lead Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google An image from an MRI scan of the brain. Getty Images Continuing a recent tear of acquisitions, Eli Lilly has agreed to buy a startup developing a possibly first-of-its-kind treatment for Huntington’s disease. Lilly could pay up to $725 million in cash for Cambridge, England-based LoQus23 Therapeutics — a sum that includes an undisclosed upfront payment as well as future earnouts for hitting specific development and regulatory milestones. LoQus was co-founded in 2019 by industry veterans David Reynolds, Ruth McKernan and neuroscientist Caroline Benn while the three were entrepreneurs-in-residence at SV Health Investors' Dementia Discovery Fund. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); The startup’s most advanced program is an oral drug designed to inhibit a protein known as MSH3. While this protein is normally helpful, playing a role in DNA repair and stabilization, the way it works can inadvertently worsen the genetic “repeats” associated with some neurodegenerative disorders. In Huntington’s, for example, a three-letter DNA sequence repeats an unusually large number of times. Those extra copies lead the cell to produce an abnormal version of the “huntingtin” protein, which then damages the nerves. LoQus23’s drug — codenamed LQT-23 — isn’t yet in human testing. But the company said it expects to “in the near future” submit an application to begin a clinical trial. The LoQus23 team “has been motivated by the ambition to create a disease-modifying treatment for Huntington’s disease,” said Reynolds, who serves as the company’s CEO, in a statement. “This transaction brings that ambition one step closer, as Lilly has the neuroscience track record, scale, and expertise to accelerate LQT-23 into and through the clinic.” Flush with cash from its popular obesity medications, Lilly has inked more than a dozen acquisitions this year. Just last week, the pharmaceutical giant announced its purchase of blood cancer specialist Calytrix Bio in a deal that could be worth up to $1.5 billion. At least four of Lilly’s buyouts have carried upfront payments of $50 million or more, according to data compiled by BioPharma Dive. Two of those larger transactions focused on neuroscience. Lilly paid $6.3 billion for Centessa Pharmaceuticals, a major bet on an emerging class of sleep medicines that Wall Street analysts believe will drive billions of dollars in sales. Lilly also broke into the burgeoning psychedelics space by buying AtaiBeckley through a deal valued at $2.8 billion. Recommended Reading Lilly beefs up neuroscience pipeline with $6.3B Centessa buyout By Jonathan Gardner • March 31, 2026 Biotech M&A is accelerating. Track the deals that are happening here. By Ned Pagliarulo, Jacob Bell, Julia Himmel • Updated Nov. 16, 2026 Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Deals",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "e964be3b661663a4",
+    "score": 5.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.8,
+      "first_mover": 1.6,
+      "tier": 1.5,
+      "impact": 1.1
+    },
+    "flags": [],
+    "cluster_key": "msh3-huntingtons",
+    "confidence": 0.68,
+    "deal_key": "eli-lilly|loqus23|msh3",
+    "upfront_usd": 0,
+    "total_usd": 725000000,
+    "reasoning": "MNC收购潜在总额7.25亿美元，首付未见于素材，MSH3资产具差异化",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实交易首付款、里程碑及或有对价结构",
+      "确认候选产品临床阶段与交易完成条件"
     ],
     "title": "Lilly buys Huntington's startup LoQus23 for up to $725M",
     "url": "https://endpoints.news/lilly-buys-huntingtons-startup-loqus23-for-up-to-725m/",
@@ -35,32 +100,100 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
   },
   {
-    "id": "8c2b23b2e1cc0034",
-    "score": 3.7,
+    "id": "03a20fc462fe3d4e",
+    "score": 4.5,
+    "dims": {
+      "amount": 0.5,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [],
+    "cluster_key": "in-vivo-car-t",
+    "confidence": 0.88,
+    "deal_key": "pfizer|starna|in-vivo-car-t",
+    "upfront_usd": 0,
+    "total_usd": 2600000000,
+    "reasoning": "潜在总额26亿美元的在体CAR-T合作值得跟踪，但首付未披露且项目处早期",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实明确首付、近期里程碑和潜在总额，当前26亿美元为潜在总额",
+      "核实候选项目数量、临床前阶段、适应症及地域权利",
+      "确认Pfizer与Starna是否存在股权或共同股东关系"
+    ],
+    "title": "Pfizer leaps into ‘in vivo’ CAR-T with latest China deal",
+    "url": "https://www.biopharmadive.com/news/pfizer-starna-in-vivo-cell-therapy-autoimmune-disease-deal/875018/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "An article from Dive Brief Pfizer leaps into ‘in vivo’ CAR-T with latest China deal The potentially $2.6 billion collaboration puts Pfizer into a competitive race to treat autoimmune conditions by reprogramming cells inside the body. Published Nov. 18, 2026 By Kristin Jensen Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Pfizer will work with Starna Therapeutics to develop \"in vivo\" cell therapies for autoimmune disease. Jeenah Moon via Getty Images Dive Brief: Pfizer is undertaking yet another deal in China to get into a budding area of research, using “in vivo” cell therapy for autoimmune diseases. Under the terms of the agreement with Starna Therapeutics, Pfizer will obtain exclusive rights outside Greater China to three preclinical programs focused on autoimmune diseases. It will also get the rights to use Starna’s technology in inflammation, immunology and oncology as well as options to license other projects and expand its territory to include Greater China. Pfizer will pay Starna $330 million up front and offer as much as $2.3 billion more in payments for reaching certain development and commercial milestones. Starna is eligible for royalties on sales of approved products as well, Pfizer said Wednesday. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Dive Insight: The agreement opens up a new avenue for Pfizer to expand its pipeline. Though this would be its first venture into this particular area of research, the company on Wednesday emphasized its experience with RNA-based medicines after the success of the COVID-19 vaccine Comirnaty. Pfizer said it would manufacture the products for clinical trials in the U.S. Starna is developing RNA medicines that are designed to reprogram cells inside the body — or “in vivo” — while also branching into fields beyond oncology. Marketed CAR-T cell cancer therapies such as Johnson & Johnson’s Carvykti use an “ex vivo” process that involves harvesting a patient’s cells, modifying them and infusing them back into the body. Drugmakers like Starna are hoping that they can eliminate much of the complicated and lengthy process involved in making an ex vivo CAR-T therapy as well as avoid the chemotherapy “conditioning” that typically accompanies it. The in vivo work is still in early stages, but it’s drawn a lot of attention. Just in the last two years, AstraZeneca, AbbVie, Gilead Sciences and Bristol Myers Squibb have all undertaken acquisitions centered on the technology. Eli Lilly, meanwhile, has announced two buyouts this year alone. Many drugmakers are now pursuing a similar strategy to Pfizer and Starna’s, hoping that the therapies can treat conditions such as lupus and multiple sclerosis in addition to cancer. Research released a few years ago suggested that CAR-T treatments can “reset” the immune system, and ex vivo therapies are getting closer to market for that use. But there are also questions; Novartis and Bristol Myers both recently paused trials of CAR-T therapies in autoimmune conditions because of safety concerns. For Pfizer, the Starna deal marks at least the fifth major alliance with a Chinese company since the start of 2025, and the company is far from alone in pursuing drug candidates in the country. The trend has become so pronounced that the industry trade group BIO recently unveiled a five-year plan to help prop up the U.S. biotechnology industry in the face of Chinese competition. Recommended Reading ‘In vivo’ cell therapy: expanding beyond CAR-T By Ben Fidler • Oct. 18, 2022 Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Gene Therapy",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "a510dbf14cd4c442",
+    "score": 4.2,
     "dims": {
       "amount": 0.0,
       "stage": 0.5,
       "first_mover": 0.4,
       "tier": 1.5,
-      "impact": 1.3
+      "impact": 1.8
     },
-    "flags": [
-      "no_upfront_disclosed"
-    ],
-    "cluster_key": "ai-oncology-discovery",
-    "confidence": 0.88,
-    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
+    "flags": [],
+    "cluster_key": "multi-deal-roundup",
+    "confidence": 0.68,
+    "deal_key": "gsk|nuvalent|acquisition",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "MNC与AI药物设计平台合作开发肿瘤小分子，金额及候选物数量待核",
+    "reasoning": "汇总GSK收购及Lilly、AstraZeneca和Biogen研发合作，具备拆分比较价值",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需分别核实GSK/Nuvalent收购对价及是否为近期事件",
+      "需核实Lilly/AstraZeneca、Biogen/Lilly合作的首付、总额与开发阶段",
+      "检查各交易双方是否存在股权或共同股东关系"
+    ],
+    "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
+    "url": "https://www.biopharmadive.com/news/summit-crl-sellas-data-nelkarmi-lilly-astrazeneca-biogen/874825/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "An article from News roundup FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK The FDA had several issues with ivonescimab, according to the letter. Elsewhere, Sellas shares rocketed on results for a leukemia vaccine and Biogen and Lilly struck up new R&D pacts. Published Nov. 18, 2026 By BioPharma Dive staff Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Getty Images Today, a brief rundown of news involving Summit Therapeutics and Sellas Life Sciences, as well as updates from GSK, AstraZeneca, Eli Lilly and Biogen that you may have missed. The Food and Drug Administration on Tuesday released a complete response letter detailing why it rejected Summit Therapeutics and Akeso’s ivonescimab for lung cancer. Summit said Sunday that the FDA’s decision was driven by the lack of clear survival benefit. The agency, though, also expressed concerns with the magnitude of the drug’s impact on tumor progression and how relevant the findings were to U.S. patients, according to the letter. Ivonescimab’s “modest” benefits don’t outweigh its additive safety risks, the regulator said, adding that Summit should run a new trial to win a clearance. A new application on its own is “unlikely to change the approval outcome,” wrote Leerink Partners analyst Daina Graybosch. — Ben Fidler if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Shares in Sellas Life Sciences rocketed more than 160% Tuesday after the company posted data showing that its cancer vaccine “galinpepimut-S” extended the lives of acute myeloid leukemia patients in a Phase 3 trial. Sellas’ shot reduced the risk of death by 41% compared to standard therapy. Treatment recipients lived a median of 24 months versus 14.7 months for those on typical care. Dubbed “REGAL,” the trial studied the vaccine in leukemia patients who had already undergone at least two treatment lines and weren’t eligible for a stem cell transplant. Sellas said it would meet with the FDA in the near future to discuss a path forward, and could submit an approval application for as early as next year. — Gwendolyn Wu The FDA has cleared another medicine GSK inherited in a June buyout of cancer drugmaker Nuvalent. The agency on Tuesday approved Nelkarmi, formerly known as neladalkib, for adults with previously treated, ALK-positive non-small cell lung cancer. That drug is the second newly approved medicine to come from GSK's $10.6 billion purchase of Nuvalent, following the July approval of another lung cancer treatment called Jideytro. Nelkarmi will initially compete with Pfizer's Lorbrena in the second-line setting. But the \"larger opportunity\" is in newly diagnosed patients, where a head-to-head trial against Roche's Alecensa is currently underway, wrote RBC Capital Markets analyst Trung Huynh. — Ben Fidler The FDA on Monday also approved AstraZeneca’s gefurulimab for use in patients with generalized myasthenia gravis. Gefurulimab, which will be sold under the name “Klygefa,” is part of a class of drugs known as C5 inhibitors. AstraZeneca picked up the antibody in its acquisition of Alexion Pharmaceuticals, and it’s been billed as a more convenient, self-administered alternative to the infusible medicines — Soliris and Ultomiris — that Alexion brought to market for the autoimmune condition. — Gwendolyn Wu if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Eli Lilly has struck a deal with biotechnology startup Stipple Bio in a cancer drug alliance that could be worth as much as $5.9 billion. The companies didn’t disclose Tuesday how much guaranteed cash is involved in the alliance, only noting that Lilly will make an upfront payment and an equity investment in Stipple. But the two will work together to find new targeted cancer medicines by harnessing a technology Stipple uses to identify molecules that precisely bind to “epitopes,” or regions exclusively found on tumor cells. — Gwendolyn Wu Biogen is handing over $32 million up front to Trimtech Therapeutics in a bid to develop targeted protein degraders for neurodegenerative diseases. Trimtech’s drugs are small molecules capable of getting into the central nervous system and precisely degrading toxic protein buildups. Biogen has an option to exclusively license any therapies that emerge from the deal, and would cover development and commercialization costs afterward. Trimtech could receive up to $411 million in additional payouts, as well as royalties, if various milestones are met. — Gwendolyn Wu Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "8c2b23b2e1cc0034",
+    "score": 4.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.5,
+      "impact": 1.6
+    },
+    "flags": [],
+    "cluster_key": "ai-oncology",
+    "confidence": 0.9,
+    "deal_key": "isomorphiclabs|merck|ai-oncology",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "大型药企与AI药物发现公司开展肿瘤合作，但首付、总额、靶点及阶段均未披露",
     "article_type": "event_report",
     "verify_todo": [
-      "需确认首付款、研发资助、里程碑及潜在总金额",
-      "需核实合作项目数量、候选物靶点及各自临床阶段",
-      "需确认双方排他性、区域权利和成果商业化安排"
+      "核实合作的首付、里程碑上限及潜在总额",
+      "核实候选物数量、具体靶点、临床前阶段和权利归属",
+      "确认双方是否存在股权或共同股东关系"
     ],
     "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
     "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
@@ -73,22 +206,19 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
   },
   {
     "id": "c0b95137bcd3108f",
-    "score": 3.7,
+    "score": 4.0,
     "dims": {
       "amount": 0.0,
       "stage": 0.5,
       "first_mover": 0.4,
       "tier": 1.5,
-      "impact": 1.3
+      "impact": 1.6
     },
     "flags": [
-      "title_only",
-      "multiple_deals",
-      "no_upfront_disclosed",
       "thin_material"
     ],
     "cluster_key": "in-vivo-car-t",
@@ -96,13 +226,12 @@
     "deal_key": "pfizer|verismo|in-vivo-car-t",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "多笔授权聚焦体内制造CAR-T，方向具平台潜力；仅有标题，需补齐条款与阶段",
+    "reasoning": "在体CAR-T许可交易具备赛道意义，但标题素材未披露首付、总额及开发阶段",
     "article_type": "event_report",
     "verify_todo": [
-      "仅有标题，无正文素材，成稿前需补一手材料",
-      "需核实每笔授权的受让方、权益区域、资产范围和商业化安排",
-      "需确认首付款、里程碑、潜在总额及项目临床阶段",
-      "需核实体内CAR-T制造技术是否已有第三方授权或临床验证"
+      "仅有标题，无正文素材，成稿前需补一手材料并核实具体许可内容",
+      "核实首付、里程碑上限、潜在总额、项目阶段及地域权利",
+      "确认Verismo公司名称及双方是否存在关联关系"
     ],
     "title": "Pfizer, Verismo Strike Licensing Deals to Push CAR T Manufacturing In Vivo",
     "url": "https://www.pharmexec.com/view/pfizer-verismo-licensing-deals-car-t-manufacturing-in-vivo",
@@ -114,73 +243,32 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
-  },
-  {
-    "id": "ff1503ce8201de40",
-    "score": 2.7,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.5,
-      "first_mover": 0.4,
-      "tier": 1.5,
-      "impact": 0.3
-    },
-    "flags": [
-      "duplicate_roundup",
-      "no_upfront_disclosed"
-    ],
-    "cluster_key": "ai-oncology-discovery",
-    "confidence": 0.82,
-    "deal_key": "isomorphic-labs|merck|ai-oncology-small-molecules",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "与已报道的Merck—Isomorphic交易重复，金额未披露且属新闻综述，增量有限",
-    "article_type": "event_report",
-    "verify_todo": [
-      "需回查Merck与Isomorphic Labs原始公告及独家报道中的交易条款",
-      "需确认本文是否包含该合作之外的实质性新增信息"
-    ],
-    "title": "STAT Plus: Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
-    "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
-    "sources": [
-      "stat_pharma"
-    ],
-    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more FDA approves a Sanofi drug for a ‌genetic condition affecting the brain and nervous system Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 19, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Rise and shine, everyone, another busy day is on the way. And it is getting off to a pleasant start here on the Pharmalot campus, where clear blue skies and comfy breezes are greeting us. As for the official mascots, they have finished keeping passersby at bay and are now happily snoozing in their respective corners. As for us, we are firing up the trusty kettle for another cup of stimulation. Our choice today is peppermint, an old standby from our pantry. Of course, you are invited to join us. Meanwhile, here is the latest menu of tidbits. As always, do keep in touch. And best of luck today. … Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel-winning technology that can model how molecules will bind to proteins, are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance,” STAT reports. The partnership — only the latest such deal between a pharma giant and Isomorphic — will join Isomorphic’s proprietary drug design engine and existing wet lab data from Merck, which will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement The U.S. Food and Drug Administration approved a Sanofi drug, making ​it the first treatment for a ‌type of rare genetic condition that affects the brain and nervous system, Reuters writes. The drug, ​branded as Infilbray, was approved for ​adults and children weighing at least ⁠15 kilograms, or about 33 pounds, ​with type 3 Gaucher disease, a ​rare inherited disorder that causes fatty substances to build up in the body and brain. The ​approval was based on a late-stage ​study of 43 patients aged 12 years and ‌older ⁠whose symptoms outside the brain and nervous system had been stabilized with enzyme replacement therapy. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 20, 2026 STAT Plus: Up and down the ladder: The latest comings and goings By Ed Silverman Pharmalot Pharmalot November 20, 2026 STAT Plus: Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more By Ed Silverman Advertisement Pharmalot Pharmalot November 19, 2026 STAT Plus: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: NIH to move last group of its research chimps to a sanctuary By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more By Ed Silverman Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
-    "summary": "",
-    "access": "full",
-    "entity_tags": [],
-    "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
   },
   {
     "id": "485db512a733fe4d",
-    "score": 2.5,
+    "score": 3.9,
     "dims": {
       "amount": 0.0,
-      "stage": 0.0,
+      "stage": 1.0,
       "first_mover": 0.4,
       "tier": 1.5,
-      "impact": 0.6
+      "impact": 1.0
     },
     "flags": [
-      "title_only",
-      "multiple_deals",
-      "no_upfront_disclosed",
       "thin_material"
     ],
-    "cluster_key": "obeldesivir-access",
-    "confidence": 0.35,
-    "deal_key": "gilead|multiple-licensees|obeldesivir",
+    "cluster_key": "obeldesivir",
+    "confidence": 0.4,
+    "deal_key": "gilead|unannounced-licensees|obeldesivir",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "免特许权使用费授权有差异化，但仅有标题且对手方、地区和商业条款未披露",
+    "reasoning": "多地免特许权使用费授权有扩围价值，但交易对手、地区和首付款均未披露",
     "article_type": "event_report",
     "verify_todo": [
       "仅有标题，无正文素材，成稿前需补一手材料",
-      "需核实各授权对手方、授权地区及是否包含制造或商业化权利",
-      "需确认是否存在首付款、里程碑、供应义务或成本分担安排",
-      "需核实Obeldesivir当前监管阶段及交易涉及的市场"
+      "核实各授权方、覆盖地区及许可条款",
+      "确认是否披露首付、里程碑或其他经济对价"
     ],
     "title": "Gilead Signs Royalty-Free Licensing Deals to Broaden Access to Obeldesivir",
     "url": "https://www.pharmexec.com/view/gilead-signs-royalty-free-licensing-deals-broaden-access-obeldesivir",
@@ -192,81 +280,211 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
   },
   {
-    "id": "187275e200b63309",
-    "score": 2.4,
-    "dims": {
-      "amount": 0.0,
-      "stage": 0.0,
-      "first_mover": 0.4,
-      "tier": 0.7,
-      "impact": 1.3
-    },
-    "flags": [
-      "title_only",
-      "date_unknown",
-      "no_upfront_disclosed",
-      "thin_material"
-    ],
-    "cluster_key": "glp-1",
-    "confidence": 0.35,
-    "deal_key": "arcera|yinuo-pharmaceutical|isupaglutide-alpha",
-    "upfront_usd": 0,
-    "total_usd": 0,
-    "reasoning": "依苏帕格鲁肽α出海授权具备区域拓展价值，但发布日期、阶段和金额均待核",
-    "article_type": "event_report",
-    "verify_todo": [
-      "仅有标题，无正文素材，且发布日期未知，成稿前需补一手材料",
-      "需核实银诺医药的官方英文名称及交易对手方完整主体",
-      "需确认首付款、里程碑、潜在总额及授权区域",
-      "需核实依苏帕格鲁肽α的临床阶段、差异化依据和双方权利义务",
-      "需检查双方是否存在股权关系或共同主要股东"
-    ],
-    "title": "银诺医药与Arcera达成依苏帕格鲁肽α出海授权合作，加速拓展国际市场",
-    "url": "https://www.phirda.com/artilce_44277.html?module=trackingCodeGenerator",
-    "sources": [
-      "phirda_industry"
-    ],
-    "content": "",
-    "summary": "",
-    "access": "headline",
-    "entity_tags": [],
-    "lang": "cn",
-    "scored_at": "2026-11-23T22:16:53Z"
-  },
-  {
-    "id": "c13ca2e32782eccc",
-    "score": 2.3,
+    "id": "ff1503ce8201de40",
+    "score": 3.7,
     "dims": {
       "amount": 0.0,
       "stage": 0.5,
       "first_mover": 0.4,
-      "tier": 1.2,
-      "impact": 0.2
+      "tier": 1.5,
+      "impact": 1.3
     },
-    "flags": [
-      "title_only",
-      "deal_termination",
-      "stale",
-      "thin_material"
-    ],
-    "cluster_key": "brain-transporter",
-    "confidence": 0.4,
-    "deal_key": "bioarctic|novartis|brain-transporter",
+    "flags": [],
+    "cluster_key": "ai-oncology",
+    "confidence": 0.8,
+    "deal_key": "isomorphiclabs|merck|ai-oncology",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "合作短期终止具有BD警示价值；发布已超14天且无正文，需回溯原公告",
-    "article_type": "historical_compare",
+    "reasoning": "周报再次覆盖该AI肿瘤合作，具赛道观察价值但交易条款信息有限",
+    "article_type": "landscape_review",
     "verify_todo": [
-      "仅有标题，无正文素材，成稿前需补一手材料",
-      "需核实Novartis退出协议的签署、终止日期及合同约定的触发条件",
-      "需确认双方是否存在关联交易或共同主要股东",
-      "需核实终止后知识产权、项目人员及在研资产处置安排"
+      "需从合作方公告核实首付、总额、项目数量和开发阶段",
+      "确认周报未提供超出原始报道的新增交易信息"
     ],
-    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
-    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "title": "STAT Plus: Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusNewsletterPharmalot Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more FDA approves a Sanofi drug for a ‌genetic condition affecting the brain and nervous system Manage alerts for this article Save this story for later Share this article Alex Hogan/STAT By Ed SilvermanNov. 19, 2026 Pharmalot Columnist, Senior Writer Ed Silverman[email protected]Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Rise and shine, everyone, another busy day is on the way. And it is getting off to a pleasant start here on the Pharmalot campus, where clear blue skies and comfy breezes are greeting us. As for the official mascots, they have finished keeping passersby at bay and are now happily snoozing in their respective corners. As for us, we are firing up the trusty kettle for another cup of stimulation. Our choice today is peppermint, an old standby from our pantry. Of course, you are invited to join us. Meanwhile, here is the latest menu of tidbits. As always, do keep in touch. And best of luck today. … Merck and Isomorphic Labs, the artificial intelligence drug designer built on a Nobel-winning technology that can model how molecules will bind to proteins, are entering into a research collaboration to discover small molecule candidates for an undisclosed oncology target of “strategic importance,” STAT reports. The partnership — only the latest such deal between a pharma giant and Isomorphic — will join Isomorphic’s proprietary drug design engine and existing wet lab data from Merck, which will handle the preclinical and clinical development, manufacturing, and commercializing of any products. Advertisement The U.S. Food and Drug Administration approved a Sanofi drug, making ​it the first treatment for a ‌type of rare genetic condition that affects the brain and nervous system, Reuters writes. The drug, ​branded as Infilbray, was approved for ​adults and children weighing at least ⁠15 kilograms, or about 33 pounds, ​with type 3 Gaucher disease, a ​rare inherited disorder that causes fatty substances to build up in the body and brain. The ​approval was based on a late-stage ​study of 43 patients aged 12 years and ‌older ⁠whose symptoms outside the brain and nervous system had been stabilized with enzyme replacement therapy. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In pharmalittle, STAT+ Submit a correction requestReprints Ed Silverman Pharmalot Columnist, Senior Writer Ed’s stories explore prescription drug pricing, affordability and access, as well issues surrounding patents, litigation, and legislation. He is also the author of the morning Pharmalittle newsletter and the afternoon Pharmalot newsletter. Newsletter Understand how science, health policy, and medicine shape the world every day Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Pharmalot Pharmalot November 23, 2026 STAT Plus: Pharmalittle: We’re reading about Capricor’s Duchenne drug, Lilly’s 15th acquisition of 2026, and more By Jason Mast Pharmalot Pharmalot November 20, 2026 STAT Plus: Up and down the ladder: The latest comings and goings By Ed Silverman Advertisement Pharmalot Pharmalot November 20, 2026 STAT Plus: Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more By Ed Silverman Pharmalot Pharmalot November 19, 2026 STAT Plus: Big drugmakers tell House committee they will halt clinical trials at some hospitals in China By Ed Silverman Pharmalot Pharmalot November 18, 2026 STAT Plus: NIH to move last group of its research chimps to a sanctuary By Ed Silverman Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "4b154b0239128546",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "lgmd-bbp-418",
+    "confidence": 0.94,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为监管获批事件，素材未显示交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查BridgeBio此前是否存在相关授权或资产交易"
+    ],
+    "title": "FDA approves BridgeBio rare disease drug for muscular dystrophy",
+    "url": "https://endpoints.news/fda-approves-bridgebio-rare-disease-drug-for-muscular-dystrophy/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "The FDA approved a new rare disease drug from BridgeBio Pharma, the first of an expected three on tap for the company. Regulators on Monday waved through BBP-418 to treat patients with limb-girdle muscular dystrophy ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "ae7c79e3bb2ef5c4",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "lgmd-bbp-418",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为罕见病药物获批报道，素材未显示交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核查BridgeBio此前相关授权、收购及合作交易背景"
+    ],
+    "title": "STAT Plus: Limb-girdle muscular dystrophy gets its first FDA-approved drug, from BridgeBio",
+    "url": "https://www.statnews.com/2026/11/23/fda-approves-bridgebio-lgmd-drug-welgemda/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "STAT PlusHealth Limb-girdle muscular dystrophy gets its first FDA-approved drug, from BridgeBio Welgemda, whose development was pushed by families, showed ‘surprisingly robust effects’ Manage alerts for this article Save this story for later Share this article Adobe By Jason MastNov. 23, 2026 General Assignment Reporter Jason Mast[email protected]Jason is a general assignment reporter, with particular focus on genetic medicine and rare disease. Confidential tips can be sent on Signal at JasonMast.77. The Food and Drug Administration on Monday approved the first drug to treat limb-girdle muscular dystrophy, a broad collection of progressive muscle conditions that has long received scant attention from physicians and drug developers. The drug, developed by BridgeBio under the name ribitol and marketed as Welgemda, is specifically approved for patients with LGMD 2i/R9, a subtype the company estimates affects 2,000 to 3,000 patients in the U.S. and another 4,000 to 5,000 in Europe. Advertisement BridgeBio said Monday it will charge insurers $75,446.58 for a 28-day supply of medicine — meaning the price will be just a hair under $1 million per year. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotechnology, drug development, FDA, Pharmaceuticals, rare diseases, STAT+ Submit a correction requestReprints Jason Mast General Assignment Reporter Jason is a general assignment reporter, with particular focus on genetic medicine and rare disease. Confidential tips can be sent on Signal at JasonMast.77. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Politics Politics November 23, 2026 STAT Plus: Medicare estimates $9.2 billion in savings from third round of negotiated drug prices By John Wilkerson The Readout The Readout November 23, 2026 STAT Plus: A big win for a potential competitor for Dupixent eczema treatment By Meghana Keshavan Advertisement Biotech Biotech November 23, 2026 STAT Plus: Invivyd reports positive results in Sisyphean Covid antibody quest By Matthew Herper Biotech Biotech November 23, 2026 STAT Plus: Kymera Therapeutics reports mid-stage eczema trial success for would-be Dupixent rival By Jonathan Wosen Biotech Biotech November 23, 2026 STAT Plus: A string of wins with cancer drugs sets Genmab up for its next chapter By Andrew Joseph Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: I’m a cardiologist. I’m a little puzzled about the blockbuster new study on deprescribing statins By Vishal Khetpal STAT Plus: The biotech startups skipping AI for drug discovery By Brittany Trang Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "f32841ad8eee6d75",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.7,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.2
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "cns-deal-search",
+    "confidence": 0.65,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "交易线索以会议交流和寻找交易为主，尚不足以认定存在已签署交易",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需确认Acadia及其他公司是否签署正式授权、收购或合作协议",
+      "需补全各潜在交易的首付、总额与开发阶段"
+    ],
+    "title": "CNS dispatches from Jefferies: Acadia’s search for deals, Alto’s psychiatry question and ProMIS’ Alzheimer’s ambitions",
+    "url": "https://endpoints.news/cns-dispatches-from-jefferies-acadias-search-for-deals-altos-psychiatry-question-and-promis-alzheimers-ambitions/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "Jefferies Global Healthcare Conference in London (Robert Postings for Endpoints News) November 20, 2026 07:11 AM EST R&DPharma CNS dis­patch­es from Jef­feries: Aca­dia’s search for deals, Al­to’s psy­chi­a­try ques­tion and ProMIS’ Alzheimer’s am­bi­tions Ayisha Sharma News Reporter The chaot­ic en­vi­rons of this year’s Jef­feries Health­care con­fer­ence, held ear­li­er this week in Lon­don, at­tract­ed a num­ber of drug­mak­ers ac­tive in … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "The chaotic environs of this year’s Jefferies Healthcare conference, held earlier this week in London, attracted a number of drugmakers active in the central nervous system (CNS) and psychiatry space. Endpoints News ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "28396e0eb05caa62",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.7,
+      "first_mover": 0.4,
+      "tier": 0.4,
+      "impact": 1.5
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "china-biotech-deal-flow",
+    "confidence": 0.78,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "政策与交易流向综述可作背景，但未聚焦一笔具备完整条款的具体交易",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需提取文章列举的具体中国生物科技授权交易及其首付和总额",
+      "确认报道涉及的交易是否仍在近期发生"
+    ],
+    "title": "Congressional biotech commission warns of China deal flow",
+    "url": "https://endpoints.news/congressional-biotech-commission-warns-of-china-deal-flow/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "November 19, 2026 02:40 PM ESTUpdated 03:13 PM R&DPharmaFDA+ Con­gres­sion­al biotech pan­el clos­es with Chi­na warn­ing, but hopes 'we’re wrong' Max Bayer Senior Reporter A bi­par­ti­san con­gres­sion­al pan­el that has steered much of the dis­course on US biotech com­pet­i­tive­ness is us­ing its fi­nal weeks to high­light, and warn about … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "A bipartisan congressional panel that has steered much of the discourse on US biotech competitiveness is using its final weeks to highlight, and warn about, licensing deals with Chinese peers. The National Security Commission on ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "c80132be7dba4688",
+    "score": 3.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.7,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.2
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "glp1-deals",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；问答涵盖交易、获批和产能，但素材未给出任何具体交易条款",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并确认所指具体交易"
+    ],
+    "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
+    "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
     "sources": [
       "pharmexec_irlp"
     ],
@@ -275,33 +493,238 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
   },
   {
-    "id": "5cec6e207c8d906c",
-    "score": 1.7,
+    "id": "bfb57501148659df",
+    "score": 2.9,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.9
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "tyk2-psoriasis",
+    "confidence": 0.98,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为上市申请受理与临床进展，无交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_397143",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 注册审批 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 11:51 1177 TYK2 翰森制药集团有限公司 银屑病 HS-10374 片 CMS-D001片 11月20日，CDE官网显示，翰森制药自主研发的1类新药 氘索昔替尼（HS-10374）上市申请获受理，拟用于治疗成人中重度斑块状银屑病。这也是国产首个申报上市的TYK2变构抑制剂。图源：CDE官网HS-10374是一款口服高选择性TYK2变构抑制剂，可抑制白细胞介素-12（IL-12）、IL-23及I型干扰素（IFN）通路的信号传导，在多种自身免疫性疾病领域具有潜在治疗价值。一、Ⅲ期临床达到主要终点，近1/3患者实现PASI 100今年9月，翰森制药宣布，HS-10374治疗成人中重度斑块状银屑病的Ⅲ期临床研究达到共同主要终点及多项次要终点。研究结果显示，治疗第16周，HS-10374组达到银屑病面积和严重程度指数较基线改善至少75%（PASI 75）的患者比例，以及达到静态医师整体评估评分0或1、且较基线至少改善2分（sPGA 0/1）的患者比例，均显著高于安慰剂组。图源：摩熵医药-全球药物研发数据库更值得关注的是，在第16周，HS-10374组超过半数患者达到PASI 90应答，近1/3患者达到PASI 100应答，展现出较好的皮损改善效果。安全性方面，HS-10374表现出良好的安全性和耐受性，其安全性特征与同类TYK2抑制剂类似，未观察到新的安全性信号。二、国产TYK2赛道升温，多款新药进入后期临床TYK2是JAK激酶家族的重要成员，参与IL-12、IL-23及I型干扰素等多种细胞因子的信号传导。通过选择性抑制TYK2相关信号通路，有望在调节异常免疫反应的同时，为银屑病等自身免疫性疾病提供新的口服治疗选择。从全球研发格局来看，目前已获批上市的选择性TYK2抑制剂仅有一款，即百时美施贵宝（BMS）的氘可来昔替尼（Deucravacitinib）。此外，武田的zasocitinib已于今年9月在美国申报上市。图源：摩熵医药-全球药物研发数据库国内企业也在加快TYK2抑制剂的研发推进。除翰森制药的HS-10374外，益方生物的nomelcitinib（D-2570）已完成Ⅲ期临床研究，尚未递交上市申请；北京诺诚健华的fadeucravacitinib也已顺利完成Ⅲ期临床研究；海思科的envudeucitinib（ESK-001）已授权Alumis，Ⅲ期临床研究取得积极进展。此外，据摩熵医药数据库显示，国内还有多款TYK2抑制剂进入Ⅱ期临床阶段，包括康哲药业的CMS-D001、微芯生物的CS-32582、祐森健恒的UA-021、上海致根医药的ZG-002及安锐生物的ARTS-011等。图源：摩熵医药-全球药物研发数据库三、结语随着HS-10374率先递交上市申请，国产TYK2变构抑制剂开始向商业化阶段迈进。未来，随着更多候选药物陆续完成临床开发并推进上市，TYK2抑制剂在银屑病等自身免疫性疾病领域的竞争有望进一步加剧。 【TYK2】2025年指数排名 当前排名 第69名 22.59分 摩熵指数 0个 新获批上市药物 0个 新申报上市药物 1个 新进入三期临床 摩熵指数靶点榜单TOP5 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 查看摩熵指数完整榜单 参考来源：[1] CDE官网[2] 摩熵医药（原药融云）数据库扩展阅读：1. 益方生物TYK2抑制剂Nomelcitinib银屑病III期成功，多自身免疫适应症同步推进2. 翰森制药HS-10374的III期临床研究成功！国产TYK2变构抑制剂冲刺银屑病上市3. 银屑病口服TYK2赛道变天！武田zasocitinib三期头对头碾压BMS氘可来昔替尼，60亿美元押注终兑现 IL-12相关推荐 相关适应症： 白血病 弥漫性大 B 细胞淋巴瘤 膀胱癌 皮肤癌 胰腺癌 乳腺癌 胃癌 类风湿关节炎 鳞状细胞癌 自身免疫疾病 相关药品： IMNN-001 相关企业： 江苏恒瑞医药股份有限公司 中山康方生物医药有限公司 北京诺诚健华医药科技有限公司 中国医学科学院肿瘤医院 Chugai Pharmaceutical Co Ltd 远大医药（中国）有限公司 Moderna Inc 百奥赛图（北京）医药科技股份有限公司 National Institutes of Health 中国科学技术大学 翰森制药*点击下方数字查看更多企业相关数据 全球药物研发信息 17条 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 - 中国临床试验 365条 一致性评价 - 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 重磅来袭，又一国产生物1类新药申报上市 北京药研汇 2026-11-23 全球首款！华东医药1类新药获批临床 摩熵医药 2026-11-21 恒瑞医药1类新药获批新适应症，预防化疗恶心呕吐丨产业新闻 医药观澜 2026-11-20 填补国产空白！和黄医药1类新药获批上市 摩熵医药 2026-11-19 刚刚！上海药企1类新药获批上市 米内网 2026-11-19 3款产品进医保！齐鲁制药14款1类新药首获临床 摩熵医药 2026-11-17 海思科两款1类新药成功续约国家医保目录 海思科医药集团 2026-11-17 国内首个！北京盛迪1类新药芮弗西拜单抗获批上市 北京亦庄 2026-11-15 海思科1类新药发威，抢攻360亿市场 米内网 2026-11-13 5亿国产1类新药，南京正大天晴拿下首仿 米内网 2026-11-13 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 乐普生物重磅突破！国内首个EGFR靶向ADC药物维贝柯妥塔单抗获批上市，开启鼻咽癌治疗新篇 摩熵医药 2025-10-31 齐鲁制药QLC5508突破性疗法双认定！B7-H3 ADC赛道国内领跑，难治食管癌与前列腺癌迎希望 摩熵医药 2026-02-10 华润三九火力全开！热门仿制药阿达帕林凝胶获批上市并过评，经典名方桃核承气汤颗粒国内首获批 摩熵医药 2026-03-04 首仿之争打响！远大医药、科伦制药角逐重磅抗心衰药“盐酸伊伐布雷定口服溶液”市场 摩熵医药 2026-01-15 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,878亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 2026-11-24 7大单抗集采正式启动！超三百亿市场，谁将承压？ 2026-11-23 三项新政发布，稳市场“组合拳”来了 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年肝素药物市场表现洞察报告 摩熵咨询 35 94 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 81 市场监管总局办公厅关于41批次食品抽检不合格情况的通报 颁布机构：国家市场监督管理总局 2026-11-16 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 TYK2 当前排名 第69名 22.59分 摩熵指数 0个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "132e48cf2ba9f459",
+    "score": 2.9,
     "dims": {
       "amount": 0.0,
       "stage": 0.0,
-      "first_mover": 0.4,
-      "tier": 0.7,
-      "impact": 0.6
+      "first_mover": 1.5,
+      "tier": 1.2,
+      "impact": 0.2
     },
     "flags": [
-      "multi_topic",
-      "no_upfront_disclosed"
+      "not_bd"
     ],
-    "cluster_key": "pharmaceutical-supply",
-    "confidence": 0.55,
-    "deal_key": "atomvie|itm|pharmaceutical-supply",
+    "cluster_key": "roche-breast-cancer",
+    "confidence": 0.82,
+    "deal_key": "",
     "upfront_usd": 0,
     "total_usd": 0,
-    "reasoning": "供应合作条款未披露，正文重心偏向工厂投资；BD信息增量有限，需拆分报道",
+    "reasoning": "非交易条目；乳腺癌药物获批未披露授权或收购关系，且已超过7天",
     "article_type": "event_report",
     "verify_todo": [
-      "需核实ITM与AtomVie签署供应协议的具体产品、地区和期限",
-      "需确认是否存在预付款、最低采购量或排他安排",
-      "需将 Lilly 工厂投资与本次供应交易分开核实"
+      "核实是否存在此前相关授权交易，避免将既有交易重复计入"
+    ],
+    "title": "STAT Plus: FDA approves new breast cancer drug, providing new option for some patients, boost for Roche",
+    "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusPharma FDA approves new breast cancer drug, providing new option for some patients, boost for Roche Company believes therapy could become its top-selling product, though estimates vary Manage alerts for this article Save this story for later Share this article Xavier GALIANA/AFP via Getty Images By Andrew JosephNov. 16, 2026 Europe Correspondent Andrew Joseph[email protected]Andrew covers the biopharma industry, scientific research, and public health across the continent. You can reach Andrew confidentially on Signal at drewqjoseph.71. The Food and Drug Administration on Monday approved a new breast cancer drug from Roche, teeing up the launch of a medicine that the Swiss company has said could become its top-selling product ever. The approval of Wilserdly, also known as giredestrant, was one of the most important regulatory decisions Roche had been awaiting. It also gives the company another foothold in breast cancer treatments, a field in which it has a storied history with the drug Herceptin through its subsidiary Genentech, though in recent years it’s fallen behind rival pharma companies in oncology. Advertisement The approval is specifically for patients with HR-positive, HER2-negative advanced breast cancer that has picked up a mutation in the ESR1 gene, a sign that the tumor is developing resistance to standard treatments. The evERA trial showed that the drug, an oral treatment known as a selective estrogen receptor degrader, or SERD, extended the time period before patients’ tumors progressed. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus daily coverage and analysis of the pharma industry — by subscribing to STAT+. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotechnology, Pharmaceuticals, STAT+ Submit a correction requestReprints Andrew Joseph Europe Correspondent Andrew covers the biopharma industry, scientific research, and public health across the continent. You can reach Andrew confidentially on Signal at drewqjoseph.71. STAT+ Newsletter Senior writer Adam Feuerstein's unfiltered, uncompromising analysis on the biotech world Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Letters to the editor Letters to the editor November 21, 2026 When should medical school start? By Torie Bosch First Opinion First Opinion November 21, 2026 How Kennedy and MAHA could help stop measles By Brinda Adhikari Advertisement Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein In the Lab In the Lab November 20, 2026 ICE detention of Princeton scientist rattles academia By Anil Oza Politics Politics November 20, 2026 STAT Plus: Is MAHA’s think tank in the tank? Tax filings show low reserves By Isabella Cueto Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "060086e368a17e2e",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "giredestrant-breast-cancer",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为产品获批及适应症扩展，无授权或收购对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Roche wins second FDA approval for breast cancer pill, opening up bigger market",
+    "url": "https://endpoints.news/roche-wins-second-fda-approval-for-breast-cancer-pill-opening-up-bigger-market/",
+    "sources": [
+      "endpoints_rss",
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "summary": "Roche's breast cancer pill giredestrant won its second FDA approval on Monday, opening up a much larger potential market for the Swiss drugmaker in early-stage disease. The FDA approved the drug ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "d579d948a24070f3",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "sac-tmt",
+    "confidence": 0.65,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；III期结果具备竞争力意义，但素材未体现任何BD关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验项目授权来源及近期是否存在新增交易"
+    ],
+    "title": "Merck gets another Phase 3 win for sac-TMT, this time in gastric cancer",
+    "url": "https://endpoints.news/merck-gets-another-phase-3-win-for-sac-tmt-this-time-in-gastric-cancer/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "An experimental antibody-drug conjugate from Merck has succeeded in another Phase 3 cancer study, potentially helping offset Keytruda's looming patent cliff. Merck said Friday morning that a pivotal trial testing sacituzumab ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "02da1a00d3193df5",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "soquelitinib",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管获批虽具首创性意义，但素材未显示授权或收购关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实是否存在相关授权交易"
+    ],
+    "title": "国产首个Syk抑制剂正式获批！和黄医药醋酸索乐匹尼布片拿下ITP、wAIHA双适应症",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_395758",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "49cb0c1ae732fa40",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "venglustat-approval",
+    "confidence": 0.65,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；首创获批具有行业意义，但摘要未呈现任何交易对手或条款",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验该产品的授权来源及近期是否存在新增交易"
+    ],
+    "title": "Sanofi's Infilbray wins first approval for neurological symptoms of Gaucher",
+    "url": "https://endpoints.news/sanofis-infilbray-wins-first-approval-for-neurological-symptoms-of-gaucher/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Sanofi won FDA approval Wednesday for Infilbray, the first drug in the US to treat the neurological symptoms of a rare genetic disorder called Gaucher disease. Infilbray, also known as venglustat, crosses the blood-brain barrier ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "5cec6e207c8d906c",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.0,
+      "tier": 0.7,
+      "impact": 1.6
+    },
+    "flags": [],
+    "cluster_key": "radiopharmaceutical-supply",
+    "confidence": 0.65,
+    "deal_key": "atomvie|itm|supply-agreement",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "供应合作构成交易，但对价、期限及研发关联未披露，深度报道价值有限",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需核实供应协议双方、具体产品或平台、合同期限及对价",
+      "确认该协议是否涉及独家供应或研发商业化权利"
     ],
     "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
     "url": "https://endpoints.news/lilly-starts-work-on-pennsylvania-obesity-plant-itm-atomvie-strike-supply-deal/",
@@ -313,6 +736,2274 @@
     "access": "full",
     "entity_tags": [],
     "lang": "en",
-    "scored_at": "2026-11-23T22:16:53Z"
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "a3fd359358d56e65",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "cemdisiran-approval",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管获批本身无买方或卖方，标题亦未显示新增BD事件",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实授权关系及交易条款"
+    ],
+    "title": "With FDA nod, Regeneron brings an RNAi drug to autoimmune disease",
+    "url": "https://www.biopharmadive.com/news/regeneron-fda-approve-cemdisiran-livsayis-myasthenia-gravis-alnylam/875160/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "f33095f9ac5b7deb",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "venglustat-approval",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；内容为监管获批，未见授权、收购或合作对手",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实是否涉及交易"
+    ],
+    "title": "Sanofi gains FDA clearance for Gaucher disease pill",
+    "url": "https://www.biopharmadive.com/news/sanofi-fda-infilbray-venglustat-approve-gaucher/875167/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "cb6bc558d704ea7a",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 1.2,
+      "tier": 0.7,
+      "impact": 0.1
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "qls2416",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；临床获批与医保进展缺乏交易对手方，仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "齐鲁制药双线突破：1类新药QLS2416获批临床布局自免赛道，3款产品新进2026国家医保目录",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_394657",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "076e9c9c402b1ae7",
+    "score": 2.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 1.2,
+      "tier": 0.7,
+      "impact": 0.1
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "stat6-protac",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；国内首创PROTAC临床进展缺少授权或收购关系，仅有标题无正文",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补充临床与交易背景材料"
+    ],
+    "title": "先声药业SIM0712获批临床，国内首款STAT6 PROTAC小分子降解剂可治疗特应性皮炎等多个2型炎症",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_394655",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "c140ff1297534625",
+    "score": 2.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "kras-competition",
+    "confidence": 0.6,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；聚焦KRAS竞争格局和临床数据，未披露交易对手",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需补全正文并确认相关项目是否源于未披露交易"
+    ],
+    "title": "KRAS at Triple Meeting: Erasca wants to one-up RevMed, while Alterome tries a different approach",
+    "url": "https://endpoints.news/kras-at-triple-meeting-erasca-wants-to-one-up-revmed-while-alterome-tries-a-different-approach/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Revolution Medicines posted strong data on its targeted pancreatic cancer drug Thursday evening, but competition is building at every turn in the KRAS field. RevMed’s game-changing pan-RAS drug Rasonque (daraxonrasib) alongside ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "3861036fd8f6be0c",
+    "score": 2.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.3,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "cd73-inhibitor",
+    "confidence": 0.95,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为III期研究终止及产品更新，无新增交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Arcus stops Phase 3 study of CD73 inhibitor; Novartis' Leqvio eases heart event risk",
+    "url": "https://endpoints.news/arcus-stops-phase-3-study-of-cd73-inhibitor-novartis-leqvio-eases-heart-event-risk/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Plus, news about IQVIA, Quotient Sciences, CARsgen, Arnatar Therapeutics and Invivyd. Arcus Biosciences cans a Phase 3: The California drug developer ended PRISM-1, a late-stage trial of its CD73 inhibitor quemliclustat ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "020055e1f6aa1e39",
+    "score": 2.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 2.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，仅有标题，为适应症获批消息，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "核查相关产品是否存在交易对手方"
+    ],
+    "title": "恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_397139",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "5bc7c0f89abf8c8e",
+    "score": 2.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 1.6,
+      "tier": 1.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "obinutuzumab-pmn",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；新适应症获批没有买卖双方，仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "罗氏CD20单抗奥妥珠单抗新适应症获FDA批准，拿下原发性膜性肾病首个疗法",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_394154",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "6caf6ca3b365322f",
+    "score": 2.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 1.6,
+      "tier": 1.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "bayer-stroke-drug",
+    "confidence": 0.88,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；卒中药物获批没有交易对手方，且已发布15天",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实是否存在此前相关授权交易，避免重复计入"
+    ],
+    "title": "STAT Plus: FDA approves novel Bayer drug to reduce recurrence of stroke",
+    "url": "https://www.statnews.com/2026/11/09/cardiovascular-stroke-recurrence-bayer-drug-fda-approval/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "STAT PlusPharma FDA approves novel Bayer drug to reduce recurrence of stroke The drug is first to gain approval in what could be big drug category Manage alerts for this article Save this story for later Share this article Hermann J. Knippertz/AP By Elaine Chen and Elizabeth CooneyNov. 9, 2026 Elaine Chen[email protected]Elaine’s stories explore the boom in new obesity treatments, new drug payment models, the ways companies are affected by FDA changes, and the emerging psychedelics drug sector. She co-writes The Readout newsletter, and co-hosts STAT’s weekly biotech podcast, The Readout Loud. You can reach Elaine on Signal at elaineywchen.70.Elizabeth Cooney[email protected]Liz covers cardiovascular and metabolic disease, asking why we’re not doing better or even losing ground against the world’s leading killer. Send tips on Signal at LizC.22. The Food and Drug Administration on Monday approved Bayer’s drug to reduce recurrence of stroke, making available the first in a novel class of medications that hold the promise of preventing blood clots more safely. Many blood thinners aren’t used in this setting due to the increased risk of bleeding. But Bayer’s drug, which will be sold under the brand name Sunharbo, inhibits a protein called XIa, utilizing a mechanism that’s thought to stop the formation of bad clots without increasing the risk of bleeding.Advertisement Related Story Lowering blood pressure after stroke or with diabetes poses challenges, in research and practice In a Phase 3 trial that enrolled people who had already had a stroke and were taking common stroke treatments, 8.4% of participants who took placebo experienced a secondary stroke, while 6.2% of patients who took Sunharbo experienced one, translating into a 26% risk reduction. Another way to look at the data is that in one year, 53 patients need to be treated for one recurrent stroke to be prevented. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus daily coverage and analysis of the pharma industry — by subscribing to STAT+. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In cardiovascular disease, drug development, FDA, Pharmaceuticals, STAT+ Submit a correction requestReprints Elaine Chen National Biotech Reporter Elaine’s stories explore the boom in new obesity treatments, new drug payment models, the ways companies are affected by FDA changes, and the emerging psychedelics drug sector. She co-writes The Readout newsletter, and co-hosts STAT’s weekly biotech podcast, The Readout Loud. You can reach Elaine on Signal at elaineywchen.70. Elizabeth Cooney Cardiovascular Disease Reporter Liz covers cardiovascular and metabolic disease, asking why we’re not doing better or even losing ground against the world’s leading killer. Send tips on Signal at LizC.22. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein The Readout The Readout November 20, 2026 STAT Plus: Early results for Alterome’s KRAS drug for pancreas, lung and colon cancer arrive By Meghana Keshavan and Adam Feuerstein Advertisement The Readout The Readout November 19, 2026 STAT Plus: Lawmakers want U.S. biotech to outcompete China By Meghana Keshavan Health Health November 19, 2026 STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer Exclusive Exclusive November 19, 2026 STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates By Katherine MacPhail Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "187275e200b63309",
+    "score": 2.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.5
+    },
+    "flags": [
+      "thin_material"
+    ],
+    "cluster_key": "glp-1-out-licensing",
+    "confidence": 0.4,
+    "deal_key": "arcera|sciwind|isupaglutide-alpha",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "GLP-1产品出海授权具备交易价值，但日期、首付和许可范围均未知",
+    "article_type": "event_report",
+    "verify_todo": [
+      "发布日期未知",
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "核实授权区域、权利类型、临床阶段、首付及里程碑金额",
+      "核实银诺医药对应英文公司名及候选物标准英文名称"
+    ],
+    "title": "银诺医药与Arcera达成依苏帕格鲁肽α出海授权合作，加速拓展国际市场",
+    "url": "https://www.phirda.com/artilce_44277.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "d0d0fd806163e821",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 2.0
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "tce-preclinical",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "交易热度分析型标题，素材不足以识别具体交易对手和条款",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "补充正文涉及的具体TCE交易、双方与金额结构",
+      "确认是否构成多笔交易综述"
+    ],
+    "title": "还没进临床就能让头部药企一掷千金，这波TCE热度应该如何跟进？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/gs_397370",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "acb4393dbb0a2eab",
+    "score": 2.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "deramiocel-fda-review",
+    "confidence": 0.9,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；涉及监管拒绝与数据完整性问题，但没有授权或收购关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验项目是否由第三方授权或与收购相关"
+    ],
+    "title": "FDA again turns back Capricor Duchenne cell therapy",
+    "url": "https://www.biopharmadive.com/news/capricor-fda-duchenne-cell-therapy-deramiocel/875384/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from FDA again turns back Capricor Duchenne cell therapy In an unusual statement, the FDA accused Capricor of “serious data integrity violations” that compromised its study findings and led to deramiocel’s second rejection since 2025. Published Nov. 21, 2026 Gwendolyn Wu Senior Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Duchenne muscular dystrophy leads to progressive muscle weakness due to missing dystrophin protein. Getty Images The Food and Drug Administration has again spurned a cell therapy from Capricor Therapeutics, concluding that even a revised application didn’t clearly prove the treatment can help people with Duchenne muscular dystrophy. In a statement Friday, Capricor revealed that the agency had issued a rejection letter for deramiocel, a cellular medicine it’s been developing for the progressive neuromuscular disorder. The regulator found certain “clinical deficiencies” in the submission and concluded that the data the company accumulated wasn’t “sufficient to establish substantial evidence of effectiveness,” Capricor said. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); The agency, in a separate statement, accused Capricor of “serious data integrity violations” in the key study underlying its submission. Those issues — which included violations of study blinding protocols and after-the-fact changes to the statistical analysis plan — compromised Capricor’s findings, the FDA said. “This was not a decision made lightly. Upholding rigorous evidentiary standards is precisely how the FDA protects patients, particularly those living with rare diseases, from interventions whose benefits have not been sufficiently established,” the regulator added. “We stand behind the rigor of our clinical program and the integrity of our data, and we believe the data support approval,” countered CEO Linda Marbán, in Capricor’s statement. “We are reviewing the letter carefully and will share next steps once we have completed our evaluation.” Deramiocel is made from donor-derived heart cells able to preserve certain cardiac and muscle function. Capricor had initially developed the therapy for a fatal, heart-related complication of Duchenne, and early testing showed deramiocel's potential to help the heart pump blood. Capricor aimed for an approval based on results from a small trial and data from a historical study of heart function. Yet in July 2025, FDA officials rejected deramiocel, saying the company hadn't proven the therapy’s effectiveness and needed additional data. Capricor claimed to have been blindsided by the ruling. “We are surprised by this decision by the FDA,” Marbán said in a statement at the time. Marbán added that the company had followed the agency's guidance and that the review had previously advanced with “no major issues.” if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Capricor soon after announced that the FDA would reconsider the rejection based on new data from a late-stage study of deramiocel called “HOPE-3.” Last December, it revealed the treatment hit both of its main objectives in that study, helping preserve upper limb as well as heart function. Those claims were intensely debated when the FDA convened a panel of experts to review Capricor's application in July. In briefing documents ahead of the meeting, FDA scientists argued deramiocel had actually failed the trial and tinkered with statistical analyses to produce a more compelling story. Capricor countered and said that agency staff relied on an outdated analysis. The same day, HOPE-3 study results were published in The Lancet and conflicted with claims Capricor had previously made, forcing the company to issue a clarification in a regulatory filing. The advisory committee ultimately sided with the FDA's assessment, with a majority of panelists concluding testing hadn't shown clear evidence of deramiocel's effectiveness. Panelists instead expressed more support for its potential impact on upper limb function. The FDA, which originally sought to respond to Capricor by late August, extended its review of deramiocel to Nov. 22 after Capricor said it would instead seek clearance in a “refined” indication “focused on upper limb function.” More than two dozen trial investigators and physicians also penned a letter of support for approval to regulators in recent weeks. Deramiocel’s review is “clearly a case where regulatory flexibility can be applied,” that group wrote. Rejection “would signal complete inflexibility on the part of the agency, contradicting the core values articulated” by its stance on rare disease drug reviews. Under previous FDA leadership, a handful of drugmakers claimed to have been stunned by a sudden shift in regulatory guidance. Yet since the resignations of ex-commissioner Marty Makary and top deputy Vinay Prasad, U.S. regulators have changed their stance on a number of these decisions. They've also taken steps to show the agency will be more flexible in evaluating rare disease treatments. “[The] FDA approaches rare disease applications with every intention of finding a path forward,” it said Friday, upon rejecting Capricor’s application. “[H]owever, flexibility in regulatory approach cannot come at the cost of the foundational requirement that the data underlying an approval decision be reliable.” Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: FDA, Gene Therapy",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "b6f7a5b767cd992e",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "sellas-blood-cancer-immunotherapy",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；血液瘤免疫治疗试验结果没有交易对手方，仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "STAT Plus: Sellas’ experimental blood cancer immunotherapy reduced risk of death in clinical trial",
+    "url": "https://www.statnews.com/2026/11/17/sellas-blood-cancer-immunotherapy-succeeds-clinical-trial/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "712bfa59ed28f917",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "capsida-gene-therapy",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；基因治疗试验事件不含授权或收购关系，仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "STAT Plus: After death in gene therapy trial for a brain disease, progress is reported",
+    "url": "https://www.statnews.com/2026/11/17/capsida-gene-therapy-trial-death-follow-up-investigation/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "bac7c64ae3fd505f",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.5
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "cg-oncology-bladder-cancer",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；膀胱癌试验数据没有交易对手方，仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "CG Oncology drug delivers ‘exceptional’ results in key bladder cancer trial",
+    "url": "https://www.biopharmadive.com/news/cg-oncology-cretostimogene-adjuvant-bladder-cancer-results-pivot/874740/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "c13ca2e32782eccc",
+    "score": 2.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 1.2,
+      "impact": 0.3
+    },
+    "flags": [
+      "thin_material"
+    ],
+    "cluster_key": "braintransporter",
+    "confidence": 0.4,
+    "deal_key": "bioarctic|novartis|braintransporter",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "MNC退出早期合作具有终止案例价值，但发布已21天且经济条款缺失",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料",
+      "核实原许可协议签署及终止时间、原因和已支付款项",
+      "核实终止后资产权利归属及双方后续安排"
+    ],
+    "title": "Novartis Exits BrainTransporter Deal with BioArctic 14 Months After Signing",
+    "url": "https://www.pharmexec.com/view/novartis-exits-braintransporter-deal-bioarctic-14-months-signing",
+    "sources": [
+      "pharmexec_irlp"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "76fb41c5af48b0c9",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "stat6-atopic-dermatitis",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为II期临床数据与后续开发计划",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Kymera’s STAT6 degrader clears mid-stage test in atopic dermatitis",
+    "url": "https://endpoints.news/kymeras-stat6-degrader-clears-mid-stage-test-in-atopic-dermatitis/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Kymera Therapeutics is planning to test its oral eczema drug in a Phase 3 trial next year after the drug breezed past Wall Street’s bar for success in a mid-stage study. In the primary endpoint ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "981e9fdea55c4be7",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "stat6-atopic-dermatitis",
+    "confidence": 0.98,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为II期临床结果与市场竞争分析",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Kymera eczema pill meets goals in mid-stage trial",
+    "url": "https://www.biopharmadive.com/news/kymera-eczema-pill-phase2-data-protein-degrader-dupixent-ebglyss/875462/",
+    "sources": [
+      "biopharmadive_deals",
+      "biopharmadive_home"
+    ],
+    "content": "An article from Dive Brief Kymera eczema pill meets goals in mid-stage trial The protein degrader drug showed “biologic-like efficacy,” according to Wall Street analysts who argued it could challenge Sanofi and Regeneron’s market leader Dupixent. Published Nov. 23, 2026 Jonathan Gardner Senior Reporter Share Copy link Email LinkedIn X/Twitter Facebook Print License Add us on Google Getty Images Dive Brief: A protein degrading eczema drug developed by Kymera Therapeutics met the main goals of a Phase 2 clinical trial, significantly reducing disease severity in enrollees who got it compared with those given a placebo, the company said Monday. Codenamed KT-621, the drug demonstrated efficacy comparable to injectable biologics like Sanofi and Regeneron Pharmaceuticals’ Dupixent, according to Wall Street analysts. One of the tested doses achieved an average 72% reduction on an eczema severity scale after 16 weeks, 45 percentage points greater than in enrollees who got a placebo. Kymera said it plans to initiate a Phase 3 trial in eczema — also called atopic dermatitis — by mid-2027, while a Phase 2 trial in asthma is expected to read out by late next year. Company shares had risen 34% by late Monday morning, adding more than $3 billion in market valuation. if (window.dfp_visibility === 'mobile' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'mobile' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid1-mobile')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid1'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-mobile'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid1-mobile'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); if (window.dfp_visibility === 'desktop' ) { googletag.cmd.push(function() { googletag.defineSlot( '/3618/biopharmadive/biopharmadivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop' ).addService(googletag.pubads()); }); } waitToLoadAds.push(function() { googletag.cmd.push(function() { if (window.dfp_visibility === 'desktop' ) { window.onDvtagReady?.(() => googletag.display('dfp-hybrid2-desktop')); googletag.pubads().addEventListener('slotRenderEnded', function (event) { var adUnitPath = '/3618/biopharmadive/biopharmadivehybrid2'; var onProformative = false; if (onProformative && event.slot.getAdUnitPath() === adUnitPath && !event.isEmpty ) { var adUnitPathWithVisibility = adUnitPath + '-desktop'; var selector = '.pf-comments__ad-wrapper #dfp-hybrid2-desktop'; if (!$(selector).closest('.pf-comments__ad-wrapper').hasClass('borders')) { $(selector).closest('.pf-comments__ad-wrapper').addClass('borders') } } }); } }); }); Dive Insight: Eczema is a big business, with Dupixent alone recording 15 billion euros, or around $17.4 billion, through the first nine months of 2026. Dupixent is in its 10th year on the market and is due to lose patent-protected exclusivity in the U.S. in 2032. KT-621, therefore, must compete not just with Dupixent and other biologics like Eli Lilly’s Ebglyss, but also any biosimilars that can be expected to soon enter the market after key patents expire. With KT-621, Kymera is seeking to tamp down the same inflammatory processes as Dupixent and Ebglyss. But instead of blocking signaling proteins related to allergic conditions, it degrades a transcription factor on the same pathway by triggering cellular trash disposal systems. The trial Kymera reported today, titled BROADEN2, enrolled 244 people and randomized them into four roughly equal-sized groups to take one of three doses of KT-621 or a placebo. The primary goal was the score on a scale called the Eczema Area and Severity Index, or EASI. The best score of 72% reduction came from the people who got the mid-dose, with the low-dose group seeing their EASI scores drop 64% and the high dose 61%. As a secondary goal, the trial also measured the proportion of patients who had a 75% reduction in their EASI scores. In the mid-dose group, 62% achieved this mark, compared with 22% of the placebo group. The drug also appeared safe, with most side effects proving mild or moderate. Higher rates of conjunctivitis, a known side effect, were detected in the people receiving the study drug, but none of the people who got it quit taking the drug. Four other serious adverse events were reported, though none were judged to be related to the drug. Wall Street analysts said the data show KT-621 has “biologic-like efficacy,” putting it in a position to challenge Dupixent and related medicines. “Overall, we believe the balance of topline data is strongly supportive of an effective oral treatment option with clean safety/tolerability — a uniquely competitive profile across the [eczema] field, capable of both taking share and expanding the addressable market,” wrote Leerink Research analyst Thomas Smith in a client note. Add us on Google Share Copy link Email LinkedIn X/Twitter Facebook Print License Filed Under: Biotech, Clinical Trials",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "cf0f7294b60a64ec",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "stat6-atopic-dermatitis",
+    "confidence": 0.98,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为II期临床数据报道，无授权或收购关系",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: Kymera Therapeutics reports mid-stage eczema trial success for would-be Dupixent rival",
+    "url": "https://www.statnews.com/2026/11/23/kymera-therapeutics-eczema-trial-success-potential-dupixent-rival/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "STAT PlusBiotech Kymera Therapeutics reports mid-stage eczema trial success for would-be Dupixent rival Study was seen as one of this year’s most impactful immunology drug readouts Manage alerts for this article Save this story for later Share this article Eczema is defined by patches of itchy, dry, and bumpy skin that flare due to immune inflammation.Adobe By Jonathan WosenNov. 23, 2026 West Coast Biotech & Life Sciences Reporter Jonathan Wosen[email protected]Jonathan Wosen is STAT’s West Coast biotech & life sciences reporter. You can reach Jonathan on Signal at jwosen.27. In a closely watched trial seen as one of this year’s most impactful immunology drug readouts, Kymera Therapeutics announced on Monday that its experimental therapy effectively and safely treated eczema patients’ itchy, inflamed skin. In the Phase 2 trial, moderate-to-severe eczema patients randomly assigned to receive the biotech’s pill, KT-621, showed a statistically significant reduction in disease severity compared with those given a placebo. This was true across all three doses tested after 16 weeks of treatment, with a peak placebo-adjusted improvement of 45% among those given a moderate dose. Patients on this dose were also more likely to see an improvement of 75% or more in disease severity, with 62% of treated participants clearing that bar compared with 22% of the placebo group.Advertisement The BROADEN2 trial succeeded across all primary and secondary endpoints, including itch reduction and the fraction of patients who achieved clear or almost-clear skin. KT-621 was also generally safe and well tolerated. The only side effect that was more common among patients on the drug was conjunctivitis (i.e. pink eye), which appeared in 20%, 13%, and 11% of patients on a low, middle, and high dose, respectively. All of these cases were mild to moderate, and none caused participants to stop treatment. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus daily coverage and analysis of the biotech sector — by subscribing to STAT+. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotechnology, chronic diseases, Pharmaceuticals, STAT+ Submit a correction requestReprints Jonathan Wosen West Coast Biotech & Life Sciences Reporter Jonathan Wosen is STAT’s West Coast biotech & life sciences reporter. You can reach Jonathan on Signal at jwosen.27. STAT+ Newsletter Senior writer Adam Feuerstein's unfiltered, uncompromising analysis on the biotech world Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended The Readout The Readout November 23, 2026 STAT Plus: A big win for a potential competitor for Dupixent eczema treatment By Meghana Keshavan Biotech Biotech November 23, 2026 STAT Plus: Invivyd reports positive results in Sisyphean Covid antibody quest By Matthew Herper Advertisement Biotech Biotech November 23, 2026 STAT Plus: A string of wins with cancer drugs sets Genmab up for its next chapter By Andrew Joseph Biotech Biotech November 23, 2026 STAT Plus: New biotech aims to develop next generation CAR-T for multiple myeloma By Angus Chen Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: The biotech startups skipping AI for drug discovery By Brittany Trang STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "fc7a9e6282c9dab1",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "deramiocel-fda-review",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管拒绝对单一项目影响较大，但无交易对手或BD条款",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验完整正文是否提及该项目此前存在授权或并购安排"
+    ],
+    "title": "Capricor's Duchenne therapy is rejected again, as FDA cites significant issues with trial",
+    "url": "https://endpoints.news/capricors-duchenne-therapy-is-rejected-again-as-fda-cites-significant-issues-with-trial/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Capricor Therapeutics’ deramiocel cell therapy was rejected for a second time by the FDA on Friday, despite the company's pivot to a narrower indication within Duchenne muscular dystrophy. In a",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "4e9a7a1c66c9ac4f",
+    "score": 2.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "deramiocel-fda-review",
+    "confidence": 0.8,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管意见属于临床监管事件，未出现买方或授权方",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验项目是否由第三方授权以及是否存在相关交易调整"
+    ],
+    "title": "STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming",
+    "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "STAT PlusOpinionAdam’s Take FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming A public pressure campaign couldn’t alter the hard reality: The drug didn’t work Manage alerts for this article Save this story for later Share this article Sarah Silbiger/Getty Images By Adam FeuersteinNov. 20, 2026 Adam Feuerstein, a senior writer and biotech columnist, is the author of Adam’s Biotech Scorecard, a subscriber-only newsletter about the crossroads of drug development, business, Wall Street, and biotechnology. Adam Feuerstein[email protected]Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. The Food and Drug Administration said Friday that it had rejected a cell therapy intended for patients with Duchenne muscular dystrophy developed by Capricor Therapeutics. The decision to block the treatment, called deramiocel, from reaching the market should have been an easy one for regulators to make. The targeted patient population — teenagers and young men with Duchenne who had already lost the ability to walk — have few treatment options today. Deramiocel didn’t help them either. Capricor conducted two randomized clinical trials. Both failed to show deramiocel could stave off heart failure or preserve muscle function in their arms. Advertisement But nothing is straightforward when it comes to regulating drugs for Duchenne, a progressive, muscle-wasting disease. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus in-depth analysis, newsletters, premium events, and news alerts. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotechnology, Pharmaceuticals, rare diseases, STAT+ Submit a correction requestReprints Adam Feuerstein Senior Writer, Biotech Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. STAT+ Newsletter Senior writer Adam Feuerstein's unfiltered, uncompromising analysis on the biotech world Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Adam's Biotech Scorecard Adam's Biotech Scorecard November 19, 2026 STAT Plus: In cancer drug development, the spotlight shifts onto Erasca’s KRAS-targeted treatment By Adam Feuerstein Adam's Take Adam's Take November 17, 2026 STAT Plus: Sellas’ experimental blood cancer immunotherapy reduced risk of death in clinical trial By Adam Feuerstein Advertisement Adam's Biotech Scorecard Adam's Biotech Scorecard November 12, 2026 STAT Plus: What to know about Biogen’s big lupus study readout By Adam Feuerstein Adam's Biotech Scorecard Adam's Biotech Scorecard November 12, 2026 STAT Plus: Alnylam, once in the hunt to be a $100 billion biotech, needs to solve its heart drug problem By Adam Feuerstein Adam's Biotech Scorecard Adam's Biotech Scorecard November 5, 2026 STAT Plus: A closer look at ProMis Neurosciences and its Alzheimer’s drug By Adam Feuerstein Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "90d3373c8eb310bb",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.0,
+      "impact": 1.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "china-biotech-investment-policy",
+    "confidence": 0.7,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；政策环境可能影响跨境BD，但文章未呈现具体交易",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需补充被议员提及的具体交易案例及其条款"
+    ],
+    "title": "More lawmakers stake out stances on China biotech investment",
+    "url": "https://endpoints.news/more-lawmakers-stake-out-stances-on-china-biotech-investment/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Ahead of a Democrat-led Congress next year, more lawmakers in both parties and chambers are taking fresh positions on whether the US should restrict investments in China’s booming biotech sector. As shown in multiple draft ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "69040775adb37add",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.7
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "barzolvolimab-eczema",
+    "confidence": 0.6,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；II期失败影响单一项目价值，但无授权或收购关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核验该项目此前是否存在对外授权或合作开发"
+    ],
+    "title": "Celldex culls eczema study after Phase 2 failure",
+    "url": "https://endpoints.news/celldex-culls-eczema-drug-after-phase-2-failure/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Celldex Therapeutics is dropping its monoclonal antibody as a therapy for eczema after the drug flunked a mid-stage study. The drug, called barzolvolimab, failed to reduce itching in patients with eczema compared with placebo after ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "eebaec4d339237fa",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "esmo-oncology-2026",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；ESMO研发盘点属于临床综述，不含交易对手，仅有标题",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "2026 ESMO 肿瘤药物研发盘点：生存证据与临床定位如何支撑管线决策",
+    "url": "https://www.pharnexcloud.com/zixun/sd_393817",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "c5cabd380fd0a79f",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "esmo-oncology-2026",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；ESMO III期研究解读属于临床综述，仅有标题无正文素材",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "2026 ESMO年会9项肿瘤III期研究解读：ADC、KRAS、MET最新临床数据",
+    "url": "https://www.pharnexcloud.com/zixun/sd_393818",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "9d8572b4a4fbbe43",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "esmo-oncology-2026",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；ESMO研究盘点聚焦临床证据，不含BD交易，仅有标题无正文",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "2026 ESMO会议重点研究盘点——重塑肿瘤药物研发的临床证据",
+    "url": "https://www.pharnexcloud.com/zixun/sd_393819",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "49c742e88ae741e2",
+    "score": 2.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.5,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "her2-data-ai",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；HER2开发工具介绍未披露授权方、受让方或交易关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "DATA+AI赋能HER2靶点药物全生命周期开发，从病理判读到管线追踪，打通低表达乳腺癌精准诊疗全链条",
+    "url": "https://www.pharnexcloud.com/zixun/sd_390003",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "623c23a2cc187e05",
+    "score": 2.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 1.5,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "summit-fda-review",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管拒绝事件没有买方、卖方或授权关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实是否涉及新增交易"
+    ],
+    "title": "STAT Plus: FDA discloses reasons for rejecting Summit drug",
+    "url": "https://www.statnews.com/2026/11/18/biotech-news-fda-discloses-reasons-for-rejecting-summit-drug/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "efdd341b6909ee88",
+    "score": 2.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 1.0
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "summit-ivonescimab",
+    "confidence": 0.88,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管否决属于公司事件，未出现交易对手方，且已超过7天",
+    "article_type": "event_report",
+    "verify_todo": [
+      "核实此前相关授权安排是否受事件影响，但不作为新交易重复计入"
+    ],
+    "title": "STAT Plus: FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics",
+    "url": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/",
+    "sources": [
+      "stat_biotech"
+    ],
+    "content": "STAT PlusBiotech FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics It’s a regulatory setback for Summit, though one that was not entirely unforeseen Manage alerts for this article Save this story for later Share this article PASCAL POCHARD-CASABIANCA/AFP via Getty Images By Adam FeuersteinNov. 15, 2026 Adam Feuerstein, a senior writer and biotech columnist, is the author of Adam’s Biotech Scorecard, a subscriber-only newsletter about the crossroads of drug development, business, Wall Street, and biotechnology. Adam Feuerstein[email protected]Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. The Food and Drug Administration rejected a treatment for a type of lung cancer developed by the U.S.-based biotech Summit Therapeutics and the Chinese drugmaker Akeso, Summit said on Sunday. In a letter sent to the companies, FDA regulators said the drug, called ivonescimab, could not be approved because it didn’t help patients live longer. While the drug was found to slow lung cancer worsening in patients, the absence of a survival benefit “does not support the positive benefit-risk profile in support of approval,” FDA reviewers concluded. Advertisement Related Story STAT Plus: Summit shows mixed results from key study of lung cancer drug The FDA’s rejection of ivonescimab is a regulatory setback for Summit, which oversees development of the drug outside of China, although one that was not entirely unforeseen. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus daily coverage and analysis of the biotech sector — by subscribing to STAT+. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In biotechnology, Cancer, Clinical trials, Pharmaceuticals, STAT+ Submit a correction requestReprints Adam Feuerstein Senior Writer, Biotech Adam Feuerstein is a senior writer and biotech columnist, reporting on the crossroads of drug development, business, Wall Street, and biotechnology. He is also a co-host of the weekly biotech podcast The Readout Loud and author of the newsletter Adam’s Biotech Scorecard. You can reach Adam on Signal at stataf.54. Newsletter Your morning rundown of the science, politics, and money driving biotech today Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein The Readout The Readout November 20, 2026 STAT Plus: Early results for Alterome’s KRAS drug for pancreas, lung and colon cancer arrive By Meghana Keshavan and Adam Feuerstein Advertisement The Readout The Readout November 19, 2026 STAT Plus: Lawmakers want U.S. biotech to outcompete China By Meghana Keshavan Health Health November 19, 2026 STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer Exclusive Exclusive November 19, 2026 STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates By Katherine MacPhail Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "2cc2cdcef5af9831",
+    "score": 1.9,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "hut-sonilepib",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；索乐匹尼布获批未出现交易对手方，发布日期未知",
+    "article_type": "event_report",
+    "verify_todo": [
+      "发布日期未知",
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "和黄医药「索乐匹尼布」获批上市",
+    "url": "https://www.phirda.com/artilce_44266.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "a1fb2de2bd221a27",
+    "score": 1.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.7
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "pharma-ai-cases",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；医药AI案例盘点未披露买卖双方，仅有标题无正文素材",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "临床稽查与AI虚拟陪练：盘点4个跑通业务闭环的“医药+AI”真实案例",
+    "url": "https://www.pharnexcloud.com/zixun/sd_389436",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "92da697b862b4c47",
+    "score": 1.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "cfb-masp2-bispecific",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为候选产品获批临床，未出现授权或收购关系",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_397142",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 注册审批 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 昨天 11:18 1346 CFB HER2 MASP2 华东医药股份有限公司 非小细胞肺癌 国产IgA肾病创新药研发再迎新进展！11月17日，CDE官网显示，华东医药旗下1类创新生物药HDM4002注射液获批临床，拟用于治疗具有疾病进展风险的原发性免疫球蛋白A（IgA）肾病成人患者，以减少肾功能损失。图源：华东医药企业公告与此同时，华东医药旗下多款产品及合作产品被纳入2026年新版国家医保药品目录及商业健康保险创新药品目录，研发与商业化两端均有新进展。一、全球首款CFB/MASP-2双抗，瞄准IgA肾病HDM4002由杭州中美华东制药有限公司研发并拥有全球知识产权，是一款1类生物新药。IgA肾病的发生发展与免疫异常及补体系统过度激活密切相关。其中，补体旁路途径（AP）和凝集素途径（LP）是重要的疾病相关通路，CFB和MASP-2分别参与这两条通路的激活，也是当前补体靶向治疗的重要研究靶点。图源：摩熵医药-全球药物研发数据库目前，针对CFB或MASP-2的单靶点药物已在IgA肾病领域展开临床探索。与之不同，HDM4002采用单分子双靶点设计，可同时靶向CFB和MASP-2，干预补体旁路途径与凝集素途径，旨在从两条补体激活通路入手，实现双重阻断，为IgA肾病治疗提供新的研发思路。从企业研发管线来看，华东医药今年以来也有多款创新药取得进展。据摩熵医药数据库显示，截至目前，华东医药已有4款1类新药进入获批临床及以上研发阶段。其中，HDM4002注射液、注射用HDM-2024均为今年首次获批临床的1类新药，目前HDM-2024已进入晚期实体瘤Ⅰ期临床研究阶段。 华东医药股份有限公司全球新药研发阶段分布 可直接点击跳转到数据库免费查看最新数据详细信息 图源：摩熵医药-中国药品审评数据库在临床前研究方面，公司披露的结果显示，HDM4002具有良好的成药性、安全性和有效性。不过，这些结果仍需通过临床研究进一步验证。根据本次临床试验通知书，该药针对IgA肾病将开展随机、双盲、安慰剂对照的Ⅰ期临床研究，其人体安全性及后续疗效表现仍有待观察。作为全球首款获批临床的CFB/MASP-2双靶点药物，HDM4002能否凭借双通路干预策略，在IgA肾病治疗中展现差异化优势，值得持续关注。二、多款产品新增纳入医保及商保目录除了创新药研发持续推进，华东医药现有产品的医保准入也迎来新进展，多款产品及合作产品被纳入2026年版医保及商保目录。11月14日，国家医保局、人力资源社会保障部发布2026年版国家基本医疗保险、生育保险和工伤保险药品目录，以及商业健康保险创新药品目录。华东医药部分产品及合作产品实现首次纳入、医保续约或目录调整。具体来看：马来酸美凡厄替尼片：首次纳入国家医保目录，用于具有EGFR外显子21（L858R）置换突变的局部晚期或转移性非小细胞肺癌成人患者的一线治疗。脯氨酸加格列净片：完成医保续约，支付标准与支付范围不变。他克莫司颗粒：调整至国家医保常规目录管理，支付范围保持不变。泽沃基奥仑赛注射液：继续纳入新版商业健康保险创新药品目录。新版药品目录将于2027年1月1日起正式执行。从创新药研发到产品医保准入，华东医药在研发创新与商业化布局方面均有新进展。一方面，HDM4002作为同时靶向CFB和MASP-2的双靶点创新药，为IgA肾病补体靶向治疗提供了新的研发方向；另一方面，多款产品及合作产品进入新版医保和商保目录，也为相关产品后续市场推广创造了条件。作为全球首款获批临床的CFB/MASP-2双靶点药物，HDM4002后续能否通过临床研究验证其双通路阻断策略，并在IgA肾病治疗中展现差异化优势，值得持续关注。 【华东医药股份有限公司】2025年指数排名 当前排名 第10名 92.25分 摩熵指数 10个 新获批上市药物 16个 新申报上市药物 6个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 国产糖尿病创新管线全面升级，GLP-1成增长核心引擎！华东医药、甘李药业、通化东宝等药企密集布局2. 华东医药EGFR/HER3双抗ADC新药HDM2024获FDA临床批准，全球化战略加速3. 华东医药1类新药马来酸美凡厄替尼获批，EGFR/HER2抑制剂助力非小细胞肺癌治疗 CFB相关推荐 相关适应症： 哮喘 慢性阻塞性肺疾病 心血管疾病 狼疮肾炎 帕金森病 系统性红斑狼疮 炎症性肠病 动脉粥样硬化 肥胖 神经系统疾病 相关企业： 信达生物制药（苏州）有限公司 上海舶望制药有限公司 杭州中美华东制药有限公司 苏州瑞博生物技术股份有限公司 江苏恒瑞医药股份有限公司 齐鲁制药有限公司 圣诺生物医药技术（苏州）有限公司 Insilico Medicine Inc 江苏豪森药业集团有限公司 珠海联邦制药股份有限公司 HDM4002*点击下方数字查看更多药品相关数据 全球药物研发信息 1条 中国药品审评信息 1条 中国药品批文 - 药品招投标 - 全球临床试验 - 中国临床试验 - 一致性评价 - 美国FDA批准药品 - 查看更多 华东医药*点击下方数字查看更多企业相关数据 全球药物研发信息 53条 中国药品审评信息 727条 中国药品批文 63条 药品招投标 3702条 全球临床试验 1条 中国临床试验 126条 一致性评价 21条 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 摩熵医药 2026-11-23 全球首款！华东医药1类新药获批临床 摩熵医药 2026-11-21 国产首个Syk抑制剂正式获批！和黄医药醋酸索乐匹尼布片拿下ITP、wAIHA双适应症 摩熵医药 2026-11-20 重磅综述！肾脏替代疗法新时代整合路线图 华源再生医学 2026-11-18 华东医药阿帕他胺片获批上市及美凡厄替尼片纳入2026版国家医保目录【AI生成】 米内网 2026-11-18 齐鲁制药双线突破：1类新药QLS2416获批临床布局自免赛道，3款产品新进2026国家医保目录 摩熵医药 2026-11-18 先声药业SIM0712获批临床，国内首款STAT6 PROTAC小分子降解剂可治疗特应性皮炎等多个2型炎症 摩熵医药 2026-11-18 云顶新耀GD-IgA1检测试剂盒获广东省药品监督管理局批准，进一步完善IgA肾病诊疗一体化布局 云顶新耀 2026-11-18 荣昌生物三款创新药的三项适应症被纳入新版国家医保目录 荣昌生物 2026-11-14 最新！CAR-T等51款1类创新药进入2026版医保目录 医药经济报 2026-11-14 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 阿达帕林过氧苯甲酰凝胶：三大厂家竞逐首仿，痤疮治疗新格局将启 摩熵医药 2025-05-27 扬子江药业3类仿制药琥珀酸地文拉法辛缓释片获批！国产抗抑郁药“潜力股”再添强将 摩熵医药 2026-02-04 年销15亿抗痛风药市场变局：天地恒一抢滩多替诺雷首仿，URAT1领域竞争白热化 摩熵医药 2026-01-04 福森药业：临床“硬通货”复合磷酸氢钾注射液获批上市！药物市场持续扩容，竞争与机遇并存 摩熵医药 2025-12-30 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,878亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 2026-11-24 7大单抗集采正式启动！超三百亿市场，谁将承压？ 2026-11-23 三项新政发布，稳市场“组合拳”来了 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年肝素药物市场表现洞察报告 摩熵咨询 35 94 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 81 市场监管总局办公厅关于41批次食品抽检不合格情况的通报 颁布机构：国家市场监督管理总局 2026-11-16 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 CFB 当前排名 第47名 28.11分 摩熵指数 0个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 中国药品审评 更多 数据来源： 更新时间： getStackedLineChartData(1) 美国FDA批准药品 更多 数据来源： 更新时间： getStackedBarChartData(1) 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "ec123d75ce10fe4c",
+    "score": 1.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "aav-optogenetics-rp",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为IND许可与光遗传学疗法进展，无交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "因诺惟康IVB105注射液提前获得FDA临床试验(IND)许可",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/lcyj_397277",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵视野 临床研究 因诺惟康IVB105注射液提前获得FDA临床试验(IND)许可 因诺惟康IVB105注射液提前获得FDA临床试验(IND)许可 INNOVEC 23小时前 查看原文 97 视锥细胞营养不良 北京因诺惟康医药科技有限公司 2026年11月20日，因诺惟康IVB105注射液收到美国食品药品监督管理局(FDA)的新药临床试验（IND）许可，可正式进入临床试验阶段。IVB105注射液是基于因诺惟康自主研发的新型AAV衣壳平台开发的一款光遗传学基因治疗药物，靶向视网膜双极细胞，递送并表达覆盖广谱波长的光敏蛋白，拟用于治疗晚期视网膜色素变性（RP）。IVB105注射液也是目前国内唯一一款靶向视网膜双极细胞的光遗传学疗法。该药物作用机制不依赖于特定致病基因，不受患者基因型限制，通过绕过已经退化的光感受器，为不同基因型的晚期RP患者提供潜在治疗选择。项目顺利并提前获得FDA的IND许可，标志着因诺惟康在光遗传学基因治疗领域取得重要进展。关于因诺惟康北京因诺惟康医药科技有限公司（InnoVec Biotherapeutics Inc.）是一家以载体创新为驱动的临床阶段基因治疗公司。公司致力于开发适用于人体的基因治疗递送工具，解决递送工具开发中从动物到人转化困难的问题，目标找到所有组织和器官的基因递送工具，使基因治疗能够广泛应用到罕见疾病和常见疾病当中。因诺惟康拥有高效的技术开发，管线研发，工艺优化和临床运营团队，建立了领先技术开发平台，覆盖眼科，神经和肌肉等多个疾病领域，多个创新产品已经进入IIT和IND阶段。 北京因诺惟康医药科技有限公司相关推荐 相关靶点： VEGFA SOD1 ABCA4 RS1 相关适应症： 湿性年龄相关性黄斑变性 肌萎缩侧索硬化 眼部疾病 *版权声明：本网站所转载的文章，均来自互联网，旨在传递更多信息。鉴于互联网的开放性和文章创作的复杂性，我们无法保证所转载的所有文章均已获得原作者的明确授权。如果您是原作者或拥有相关权益，请与我们联系，我们将立即删除未经授权的文章。本网站转载文章仅为方便读者查阅和了解相关信息，并不代表我们认同其观点和内容。读者应自行判断和鉴别转载文章的真实性、合法性和有效性。 相关资讯 综合 FDA征求意见，希望解决RWD使用协议带来的审评障碍 识林 2026-11-23 达拉索拉西布联合化疗一线治疗胰腺癌：61 例入组缓解率 60.7%，获 FDA 突破性认定 NextSeq亦镁诺 2026-11-22 Capricor大跌78%：FDA拒绝批准其DMD外泌体疗法 Armstrong生物药资讯 2026-11-21 有了欧美患者，依沃西为何仍未获FDA批准？ 同写意 2026-11-21 FDA更新其对人用药品设施的评估和检查方式 GMP行业药文 2026-11-20 二线及后线PFS未达标，阿斯利康CLDN18.2 ADC仍获FDA优先审评 Biotech前瞻 2026-11-20 再生元Livsayis获FDA批准，成为gMG首个且唯一siRNA疗法 GBIHealth 2026-11-19 FDA 加速批准！新一代 ALK 抑制剂 Neladalkib（Nelkarmi）上市，攻克 ALK 耐药、直击脑转移 MIMS医药资讯 2026-11-19 Tides 速递 | 全球首个 gMG siRNA 疗法！再生元 Livsayis 获 FDA 批准，一年仅需皮下注射四次 多肽圈 2026-11-19 康方生物依沃西单抗BLA收FDA完整回复函：OS未达统计学显著性、93%PFS事件来自中国患者 摩熵医药 2026-11-19 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 人血白蛋白的临床使用：专家共识解读 人血白蛋白的临床使用：专家共识解读 中国血液制品 2024-10-17 聚焦出血管理新进展——2025年PCC临床使用建议 聚焦出血管理新进展——2025年PCC临床使用建议 中国血液制品 2025-07-17 乙肝根源性清除无复发，实现真正功能性治愈，星汉德生物TCR-T细胞疗法SCG101一期临床数据公布 乙肝根源性清除无复发，实现真正功能性治愈，星汉德生物TCR-T细胞疗法SCG101一期临床数据公布 细胞与基因治疗领域 2024-11-25 Dravet综合征治疗新希望！广医二院癫痫中心开展世界领先的RNA编辑药物临床研究 Dravet综合征治疗新希望！广医二院癫痫中心开展世界领先的RNA编辑药物临床研究 广州医科大学附属第二医院 2026-04-12 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 INNOVEC 共发布文章：11篇 最新发布文章 因诺惟康IVB105注射液提前获得FDA临床试验(IND)许可 因诺惟康协助研发的RLBP1相关遗传性视网膜营养不良基因药物首例给药完成 因诺惟康完成A+轮融资，深耕基因递送技术推进药物临床试验 IVB102注射液临床前开发数据发表 年度回顾┃2024实现跨越 迈进临床 IVB102注射液获国内首个X连锁的视网膜劈裂症（XLRS）临床试验批件 因诺惟康IVB103注射液获得CDE临床许可 因诺惟康IVB105获得FDA罕见病药物资格认定 全球药物研发中心 全球研发数据与行业前沿情报 399,161个 全球在研药物数 4,055个 本月临床试验数 全球批准的新药 更多 全球首批 各国首批 数据来源：摩熵医药 更新时间： 研发动态 相关报告 政策法规 家校同心聚力，推动HPV疫苗纳入免疫规划政策落地见效 2026-11-23 生物制药的制剂考量 2026-11-23 组织透明化中抗体渗透性不足的解决策略 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年10月摩熵医药健康投融资&交易月报 摩熵咨询 20 4 中国DRG/DIP支付方式改革研究 摩熵咨询 33 68 国家基本医疗保险、生育保险和工伤保险药品目录》以及《商业健康保险创新药品目录》（2026年） 颁布机构：国家医保局、人力资源社会保障部 2026-11-16 国家医保局 人力资源社会保障部关于印发 以及 (2026年)的通知 颁布机构：国家医保局 2026-11-14 进一步做好创新药安全合理配备使用工作 颁布机构：国家卫生健康委办公厅、 2026-11-10 更多信息，请进入全球药物研发中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { const _cardNewDrugChart = echarts.init(document.getElementById('yfzx-card-newDrug-chart')) // 柱状图(全球批准的新药数据) const _card_bar_chart = JSON.parse(JSON.stringify(stackedBarOption)) _card_bar_chart.legend.show = true _card_bar_chart.legend.bottom = 0 _card_bar_chart.legend.itemWidth = 8 _card_bar_chart.legend.itemHeight = 8 _card_bar_chart.legend.itemGap = 24 _card_bar_chart.legend.icon = 'circle' _card_bar_chart.grid = { top: '10%', left: '1%', right: '10%', bottom: '10%', containLabel: true } $('.center-card.yfzx-chart .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.yfzx-chart .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.yfzx-chart .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) $('.center-card.yfzx-chart .chart-box .tabs .tab-item').click(function () { $('.center-card.yfzx-chart .chart-box .tabs .active').removeClass('active') $(this).addClass('active') getNewDrugChartData(this.dataset.source) }) // 获取全球批准的新药数据 // newDrug: 全球批准的新药 1：全球首批；2：各国首批 function getNewDrugChartData (newDrug) { project.getNewDataChartData({ inspection: true }).then(res => { const data = res let bar_chart_data = { country: [], series: [] } bar_chart_data.country = data.x; ['中国', '美国', '欧盟', '日本'].forEach((item, idx) => { bar_chart_data.series.push({ type: 'bar', name: item, barWidth: 10, itemStyle: { borderRadius: [2, 2, 0, 0], color: barsColor1[idx] }, data: data[['all', 'other'][newDrug - 1]].map(item => item[idx].count) }) }) _card_bar_chart.xAxis.data = bar_chart_data.country _card_bar_chart.series = bar_chart_data.series _cardNewDrugChart.setOption(_card_bar_chart, true) $('.center-card.yfzx-chart').find('.date').html(data.data_updated_at || getCurrentTime()) }) } getNewDrugChartData(1) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "076424d1e8692a4c",
+    "score": 1.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.4,
+      "tier": 0.7,
+      "impact": 0.4
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "yiling-tcm-approvals",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；两款中药新药获批不含授权或收购关系，仅有标题无正文",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "以岭药业两款中药新药同步获批：芪秦通痹片剑指类风湿关节炎，半夏白术天麻汤颗粒激活经典名方",
+    "url": "https://www.pharnexcloud.com/zixun/zcsp_393813",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "be7bef265077afdf",
+    "score": 1.4,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.8,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "cd19-cd20-in-vivo-cart",
+    "confidence": 0.96,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，仅披露体内CAR-T早期临床数据，无交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3%",
+    "url": "https://www.pharnexcloud.com/zixun/sx_397429",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 时讯 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 张鹏 · 新药研发分析师 张 张鹏 新药研发分析师 审核：王正晴 · 药学博士 关注全球创新药研发管线、临床试验进展与注册审批动态；重点分析热门靶点、临床价值与管线竞争格局。累计发布研发分析 102+ 篇。 3小时前 444 科济药业 CT1182 临床数据 CD19/CD20 CAR-T 体内CAR-T赛道再迎重要进展。11月22日，科济药业公布了自主研发的靶向CD19/CD20体内CAR-T候选产品 CT1182（KJ-C2529）的首次临床数据。该产品基于CARvivo™平台开发，用于治疗复发/难治性B细胞非霍奇金淋巴瘤（R/R B-NHL）。图源：科济药业企业公告截至2026年10月31日，中位随访约3.2个月，6例可评估患者中已有5例达到缓解，包括3例完全缓解（CR）和2例部分缓解（PR），初步客观缓解率（ORR）为83.3%。所有缓解均在持续中，最长缓解时间接近5个月。值得关注的是，CT1182在起始剂量下即观察到CR。在患者均为Ann Arbor IV期侵袭性淋巴瘤、中位既往治疗3线的情况下，这组早期数据展现出一定的临床潜力。一、6例患者5例缓解，起始剂量即观察到CR体内CAR-T无需采集患者T细胞进行体外改造，而是通过载体将CAR基因直接递送至体内T细胞，使其在患者体内生成CAR-T细胞，有望简化传统CAR-T的制备流程，并降低治疗成本。此次KJ-C2529公布的早期数据，首先展现了其在R/R B-NHL中的初步疗效。图源：摩熵医药-全球药物研发数据库截至2026年10月31日，KJ-C2529剂量探索范围为1.2×10⁸ TU至7.2×10⁸ TU，共纳入6例患者，包括5例弥漫大B细胞淋巴瘤（DLBCL）和1例母细胞型套细胞淋巴瘤（MCL）。从患者基线来看，6例患者均为侵袭性淋巴瘤亚型，全部处于Ann Arbor IV期，中位既往治疗3线，中位总肿瘤负荷（SPD）为1,927.5 mm²。其中，2例患者既往接受过T细胞特异性双抗治疗。在这样的患者人群中，KJ-C2529取得了3例CR、2例PR的初步疗效。尤其是起始剂量1.2×10⁸ TU即观察到CR，最长缓解持续时间已接近5个月，且所有缓解在数据截止时仍在持续。随着后续剂量探索和随访时间延长，其疗效表现仍有待进一步观察。双抗经治患者的表现也提供了值得关注的线索：2例患者中，1例获得CR；另一例则因T细胞耗竭及CD20抗原丢失，未观察到有效的CAR-T扩增。这一差异提示，体内CAR-T的治疗效果不仅与载体递送效率有关，也可能受到患者自身T细胞功能状态及肿瘤靶抗原表达的影响。二、0例IRR、0例DLT，完全B细胞清除拓展应用想象空间除了疗效，KJ-C2529的初步安全性表现同样值得关注。在6例患者中，未观察到治疗相关严重不良事件（SAE）、剂量限制性毒性（DLT）及输注相关反应（IRR），也未出现免疫效应细胞相关神经毒性综合征（ICANS）、免疫效应细胞相关噬血细胞性淋巴组织细胞增多症样综合征（IEC-HS）及与输注相关的细胞因子双相增高，仅出现1级细胞因子释放综合征（CRS）。血液学毒性总体较轻。除1例无法完全排除与疾病相关的3级白细胞减少外，未发生其他与治疗相关的3级及以上血液学毒性。其中，未观察到IRR及严重免疫相关毒性，为KJ-C2529后续探索更便捷的给药和治疗管理模式提供了积极信号。不过，目前样本量仅为6例，其安全性仍需更大规模临床研究验证。另一项值得关注的结果是，所有达到缓解的患者均观察到完全B细胞清除。这一现象也让KJ-C2529未来的应用探索不再局限于血液肿瘤。近年来，CAR-T在自身免疫性疾病领域的研究持续推进，深度清除异常B细胞是相关治疗策略的重要方向。KJ-C2529此次观察到的B细胞清除结果，为其未来向自身免疫性疾病等B细胞相关疾病拓展提供了初步依据，但具体疗效仍有待临床研究验证。下一步，KJ-C2529将进一步扩大剂量探索范围，明确潜在的推荐II期剂量（RP2D）及剂量－反应关系，预计于2027年上半年申报注册临床试验。从首次披露的人体数据来看，KJ-C2529已初步展现出体内CAR-T的临床应用潜力。随着后续研究推进，其疗效持续性、安全性及适应症拓展空间值得持续关注。参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 科济药业2025中期营收暴增704%，CAR-T产品商业化加速2. 科济药业全球首款实体瘤CAR-T疗法CT041在华提交上市申请3. 科济药业CAR-T疗法突破：舒瑞基奥仑赛注射液II期临床试验成功达终点，胃癌治疗迎新曙光 CT1182*点击下方数字查看更多药品相关数据 全球药物研发信息 - 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 1条 中国临床试验 - 一致性评价 - 美国FDA批准药品 - 查看更多 科济药业*点击下方数字查看更多企业相关数据 全球药物研发信息 45条 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 - 中国临床试验 5条 一致性评价 - 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 按公司 综合 5款新药同日获批：4款全球首创！双抗ADC、实体瘤CAR-T、口服SERD、多肽抗菌五大赛道全面爆发 摩熵医药 2026-06-23 2026年第1周2025.12.29-2026.01.04全球创新药研发概览 摩熵医药 2026-01-08 科济药业2025中期营收暴增704%，CAR-T产品商业化加速 细胞基因治疗前沿 2025-08-18 科济药业全球首款实体瘤CAR-T疗法CT041在华提交上市申请 细胞基因治疗前沿 2025-06-26 科济药业CAR-T疗法satri-cel登顶《柳叶刀》，胃癌患者生存期延长40%！ 细胞基因治疗前沿 2025-06-04 科济药业引入投资加速CAR-T产品中国内地进程，股价飙涨23.7%！ 细胞基因治疗前沿 2025-03-03 2024年度盘点：17款CGT疗法获批上市，其中4款为中国企业研发 细胞基因治疗前沿 2025-01-08 科济药业CAR-T疗法突破：舒瑞基奥仑赛注射液II期临床试验成功达终点，胃癌治疗迎新曙光 摩熵医药 2024-12-31 科济药业2024中期业绩公布：净亏损收窄，CAR-T细胞疗法研发持续领跑 细胞基因治疗前沿 2024-09-11 科济药业：全球同类首创Claudin18.2 CAR-T II期临床试验完成入组 细胞基因治疗前沿 2024-08-20 11月23日CAR启新生｜淋巴瘤CAR-T免疫治疗 国际肿瘤医讯 2026-11-22 复星医药（600196.SH）事件点评：AR1001三期数据引关注，近期多个临床数据读出 医耀科技创新骑手 2026-11-22 CAR-T后严重腹泻为何反复？最新Nature Medicine揭秘！ BioMed科技 2026-11-21 体内CAR-T新锐！完成数千万元天使轮融资 佰傲谷BioValley 2026-11-21 CAR-T冲向实体瘤，类器官正在成为新的“试金石” 星华生物 2026-11-20 科弈药业KQ-2003双靶向CAR-T临床研究成果发表于《Journal of Hematology & Oncology》 科弈一Novatim 2026-11-20 恒瑞医药布局γδCE：CD19/CD20/TRGV9三抗专利公开 医药笔记 2026-11-20 前沿进展--进展型多发性硬化CAR-T细胞治疗的早期探索 神经科的那些事 2026-11-20 Moderna 的in vivo CAR-T，为什么要测淋巴结里的 B 细胞？ RNAScript 2026-11-19 首款百万CAR-T进医保：降幅或近80%，哪些患者能用？ 募海棠 2026-11-19 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 1.1类国产乙肝治疗新药贺普拉肽顺利进入II/III期临床 小药丸 2019-07-31 小而美CXO : 澎立生物IPO，拟募资超6亿！ 药融圈 2023-04-14 一项CAR-T细胞疗法临床项目被停止，股价下跌近 40%！ 细胞基因治疗前沿 2022-12-23 第七批耗材国采提上日程！锚点价、多轮复活，集采重塑行业新格局 摩熵医械 2026-02-13 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,878亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 2026-11-24 7大单抗集采正式启动！超三百亿市场，谁将承压？ 2026-11-23 三项新政发布，稳市场“组合拳”来了 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年肝素药物市场表现洞察报告 摩熵咨询 35 94 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 81 市场监管总局办公厅关于41批次食品抽检不合格情况的通报 颁布机构：国家市场监督管理总局 2026-11-16 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "f99bfd38c5354262",
+    "score": 1.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "nac-regulation",
+    "confidence": 0.9,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；NAC监管分类调整属于政策事件，不涉及BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "STAT Plus: In a win for MAHA, FDA creates new regulatory category for the supplement NAC",
+    "url": "https://www.statnews.com/2026/11/16/fda-proposes-new-category-supplement-nac/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "STAT PlusPharma In a win for MAHA, FDA creates new regulatory category for the supplement NAC NAC has been sold as a dietary supplement for years Manage alerts for this article Save this story for later Share this article Adobe By Margaret MantoNov. 16, 2026 Washington Correspondent Margaret Manto[email protected]Margaret is a Washington correspondent covering the Food and Drug Administration and other federal health agencies. Reach her on Signal at margaretmanto.61. WASHINGTON — The Food and Drug Administration is proposing a new classification for a product that’s existed in a legal gray area for years, a win for proponents of dietary supplements, including members of the MAHA movement. The proposed rule would classify N-acetyl-L-cysteine, known as NAC and already widely sold over the counter, as the agency’s first “Dietary Ingredient Not Excluded from the Dietary Supplement Definition” — in essence, not not a supplement. Advertisement The need for the legal backbending stems from the fact that the FDA previously approved NAC as a drug, and FDA regulations prohibit the agency from including approved drugs in the dietary supplement category. In 1963, the agency approved NAC to break up mucus in certain lung conditions, and in 1985 to treat acetaminophen overdose. STAT+ Exclusive Story Already have an account? Log in This article is exclusive to STAT+ subscribers Unlock this article — plus daily coverage and analysis of the pharma industry — by subscribing to STAT+. Already have an account? Log in Individual plans Group plans Monthly $39 Totals $468 per year $39/month Get Started Totals $468 per year Starter $30 for 3 months, then $399/year $30 for 3 months Get Started Then $399/year Annual $399 Save 15% $399/year Get Started Save 15% 11+ Users Custom Savings start at 25%! Request A Quote Request A Quote Savings start at 25%! 2-10 Users $300 Annually per user $300/year Get Started $300 Annually per user View All Plans To read the rest of this story subscribe to STAT+. Subscribe Log In drug development, FDA, Pharmaceuticals, Policy, public health, STAT+ Submit a correction requestReprints Margaret Manto Washington Correspondent Margaret is a Washington correspondent covering the Food and Drug Administration and other federal health agencies. Reach her on Signal at margaretmanto.61. Newsletter The latest updates in federal health agencies, research institutes, and U.S. policy Please enter a valid email address. Sign Up Your data will be processed in accordance with our Privacy Policy and Terms of Service. You may opt out of receiving STAT communications at any time. Recommended Adam's Take Adam's Take November 20, 2026 STAT Plus: FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming By Adam Feuerstein The Readout The Readout November 20, 2026 STAT Plus: Early results for Alterome’s KRAS drug for pancreas, lung and colon cancer arrive By Meghana Keshavan and Adam Feuerstein Advertisement The Readout The Readout November 19, 2026 STAT Plus: Lawmakers want U.S. biotech to outcompete China By Meghana Keshavan Health Health November 19, 2026 STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer Exclusive Exclusive November 19, 2026 STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates By Katherine MacPhail Subscriber Picks STAT Plus: Epic Systems defends competitive practices, promises to let AI access its records By Casey Ross and Matthew Herper STAT Plus: FDA rejects Capricor Therapeutics' Duchenne therapy, a decision that was a long time coming By Adam Feuerstein STAT Plus: Peptide market poised to explode with new Hims and Noom launches By Sarah Todd and Katie Palmer STAT Plus: What to know about Biogen's big lupus study readout By Adam Feuerstein STAT Plus: After death in gene therapy trial for a brain disease, progress is reported By Jason Mast Share options X Bluesky LinkedIn Facebook Email Doximity Copy link Reprints",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "57a8651893dbe5e3",
+    "score": 1.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "pediatric-drug-list",
+    "confidence": 0.72,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；儿童药品鼓励清单属于政策信息，不涉及BD交易，日期未知",
+    "article_type": "event_report",
+    "verify_todo": [
+      "发布日期未知",
+      "核实政策原文发布日期"
+    ],
+    "title": "18个品种纳入《第六批鼓励研发申报儿童药品清单》 ，符合条件可纳入基药、医保目录 （附名单）",
+    "url": "https://bydrug.pharmcube.com/news/detail/c8ab33b34864bca319a7b439ddffe007",
+    "sources": [
+      "pharmcube"
+    ],
+    "content": "11月23日，国家卫健委等四部门发布第六批鼓励研发申报儿童药品清单， 共计18个品种、27个规格、8种剂型，覆盖抗肿瘤、心血管、血液等领域，重点面向1‑5岁低龄儿童，侧重儿童适宜剂型规格，也鼓励已上市品种补充儿童用法用量信息。 前五批清单共纳入 144种药品，其中已有54款产品获批上市 ， 前五批清单54种已上市药品涉及160余条批文和108家制药企业，国产企业占比超70% 。 另有17个品种处于上市申请或临床申请阶段，企业开发积极性稳步提升。",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "7a1dd1e7405b87e0",
+    "score": 1.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 1.2
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "cro-business-models",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；CRO商业模式研究属于行业分析，且已发布19天",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "2026年创新药CRO与医疗器械CRO商业模式差异深度分析：全链条、盈利结构、壁垒与企业筛选全对比",
+    "url": "https://www.pharnexcloud.com/zixun/sd_388964",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "37c4adeb6e5768c4",
+    "score": 1.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.3,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.55,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；内容为一周行业新闻汇总，缺少明确交易双方与条款",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需补全周报正文，确认是否包含可单独报道的授权、收购或合作"
+    ],
+    "title": "It’s Over-ton; Thoughts on Isomorphic’s latest haul; and more",
+    "url": "https://endpoints.news/its-over-ton-thoughts-on-isomorphics-latest-haul-and-more/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Welcome back to another edition of Endpoints Weekly! All the tech outages this week can’t stop us from bringing you the latest in biopharma news. The biggest news this week came from Washington, where President ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "95cd664320317cb7",
+    "score": 1.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.3,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.55,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；主要涉及裁员和临床终点，仅有摘要无法识别交易要素",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "需补全正文，确认是否包含任何授权、收购或合作关系"
+    ],
+    "title": "Pharma layoffs continue in New Jersey; Bausch + Lomb drug misses endpoint",
+    "url": "https://endpoints.news/pharma-layoffs-continue-in-new-jersey-bausch-lomb-drug-misses-endpoint/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Plus news about GSK, BioVersys, United Therapeutics and Savara. New Jersey pharma layoffs continue: Novo will lay off 215 workers in Plainsboro, taking effect in February 2027, according to a November",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "bcbaf58b992c1240",
+    "score": 1.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.3,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；核心为研发负责人变动和公司经营动态，无交易条款",
+    "article_type": "event_report",
+    "verify_todo": [
+      "需补全正文，确认是否提及资产交易或合作安排"
+    ],
+    "title": "Teva on the hunt for new R&D head; Summit's rejection came after commercial chief's exit",
+    "url": "https://endpoints.news/teva-on-the-hunt-for-new-r-summits-rejection-came-after-commercial-chiefs-exit/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "→ Teva’s global R&D leader and CMO Eric Hughes has stepped down and David Gardiner is replacing him on an interim basis. Hughes came to Teva in 2022 from Vertex, where he was SVP of ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "47b0cecc4c57867c",
+    "score": 1.1,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.3,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；全球研发周度概览未聚焦具体授权或收购",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实是否存在具体交易"
+    ],
+    "title": "2026年第46周11.09-11.15全球创新药研发概览",
+    "url": "https://www.pharnexcloud.com/zixun/bg_395245",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "8553393c2231cb49",
+    "score": 0.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "us-china-biotech-policy",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，属于中美生物技术竞争政策报告",
+    "article_type": "landscape_review",
+    "verify_todo": [],
+    "title": "House committee issues final report on US-China biotech race",
+    "url": "https://endpoints.news/house-committee-issues-final-report-on-us-china-biotech-race/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "A House panel focused on economic competition with China warns that the country's growing prowess in the biotech sector, paired with multiple inefficiencies in the US, is shifting global medicine development overseas. The Select Committee ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "dc4aa12bd4c67f44",
+    "score": 0.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；仅有标题、无正文素材，需确认是否包含具体授权或合作",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并核实是否存在具体交易"
+    ],
+    "title": "AI+旧研发体系，真能撬动新药创新？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/qy_397193",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "8b81b964fdcb4936",
+    "score": 0.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；聚焦FDA治理与人事，不涉及具体BD关系",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料确认无相关交易"
+    ],
+    "title": "STAT Plus: 7 burning questions about the FDA’s post-Overton future",
+    "url": "https://www.statnews.com/2026/11/18/fda-after-heidi-overton-burning-questions-agency-future/",
+    "sources": [
+      "stat_biotech",
+      "stat_pharma"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "d7730b8bde312c46",
+    "score": 0.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "fda-leadership",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；FDA人事议题与BD交易无关，且仅有标题无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "STAT Plus: Will Heidi Overton get to run the FDA?",
+    "url": "https://www.statnews.com/2026/11/12/will-heidi-overton-be-confirmed-fda-commissioner-dc-diagnosis/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "e2bd2b97e78a372f",
+    "score": 0.8,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.8
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "pharma-ai-roadshow",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；创新项目路演未披露授权或收购关系，发布日期未知",
+    "article_type": "event_report",
+    "verify_todo": [
+      "发布日期未知",
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "AI赋能医药研发路演专场成功举办 七个创新项目集中亮相",
+    "url": "https://www.phirda.com/artilce_44085.html?module=trackingCodeGenerator",
+    "sources": [
+      "phirda_industry"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "051c33e575cbe988",
+    "score": 0.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.7
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；临床申请与获批数据统计不属于BD交易",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料；若纳入综述需核验其中是否含具体交易"
+    ],
+    "title": "2026年第46周11.09-11.15国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析",
+    "url": "https://www.pharnexcloud.com/zixun/bg_395242",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "133f27f45a80d737",
+    "score": 0.7,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.7
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；新闻简报聚焦监管与临床事件，未呈现具体BD条款",
+    "article_type": "landscape_review",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料并确认是否包含交易"
+    ],
+    "title": "STAT Plus: Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more",
+    "url": "https://www.statnews.com/pharmalot/2026/11/18/heidi-overton-fda-nomination-yanked-merck-cancer-drug-setback/",
+    "sources": [
+      "stat_pharma"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "headline",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "35583a6a7c9885ac",
+    "score": 0.6,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.6
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "us-medicare-drug-pricing",
+    "confidence": 0.95,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，内容为医保定价政策，不涉及授权或收购对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "CMS reveals Medicare's negotiated drug prices for 2028",
+    "url": "https://endpoints.news/cms-reveals-medicares-negotiated-drug-prices-for-2028/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "CMS chief Mehmet Oz and President Donald Trump at a Sept. 18 event. (AP Photo/Jacquelyn Martin) November 23, 2026 07:48 PM EST PharmaMarketing CMS touts $9.2B in drug cost sav­ings from third round of Medicare ne­go­ti­a­tions Nicole DeFeudis Senior Reporter The US gov­ern­ment an­nounced fi­nal prices for 13 drugs se­lect­ed for the third round of Medicare ne­go­ti­a­tions, in­clud­ing Eli Lil­ly’s GLP-1 … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "The US government announced final prices for 13 drugs selected for the third round of Medicare negotiations, including Eli Lilly’s GLP-1 Trulicity and Gilead’s HIV drug Biktarvy. The Centers for Medicare ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "a232e76a215ff561",
+    "score": 0.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.5
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.96,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为企业申诉FDA拒绝决定，不涉及授权或收购",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Capricor says it will challenge FDA's rejection of Duchenne therapy",
+    "url": "https://endpoints.news/capricor-says-it-will-challenge-fdas-rejection-of-duchenne-therapy/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "Capricor CEO Linda Marbán November 23, 2026 02:50 PM EST FDA+ Capri­cor says it will chal­lenge FDA's re­jec­tion of Duchenne ther­a­py Nicole DeFeudis Senior Reporter Capri­cor Ther­a­peu­tics will ap­peal the FDA’s Fri­day re­jec­tion of its cell ther­a­py for Duchenne mus­cu­lar dy­s­tro­phy, CEO Lin­da Mar­bán said Mon­day. Dur­ing an in­ter­view with … Sign up to read this article for free. Get free access to a limited number of articles, plus choose newsletters to get straight to your inbox. SIGN UP LOG IN BECOME A PREMIUM SUBSCRIBER",
+    "summary": "Capricor Therapeutics will appeal the FDA’s Friday rejection of its cell therapy for Duchenne muscular dystrophy, CEO Linda Marbán said Monday. During an interview with Endpoints News, Marbán disputed data integrity concerns raised by the ...",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "c184220b9409ba88",
+    "score": 0.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.5
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "edoxaban-stroke",
+    "confidence": 0.96,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为医保准入和剂型商业进展，无新增交易对手方",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖",
+    "url": "https://www.pharnexcloud.com/zixun/sx_397140",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 时讯 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 杨慧 · 药政与准入研究员 杨 杨慧 药政与准入研究员 审核：郑海涛 · 药事管理硕士 长期跟踪药品监管、医保支付、集采与市场准入政策；擅长解读政策变化对研发、注册与商业化的实际影响。累计发布政策解读80+ 篇。 昨天 10:39 1299 BCMA CD3 GPRC5D 江苏先声医药科技有限公司 白癜风 近日，先声药业宣布，旗下独家创新药先必新®舌下片（依达拉奉右莰醇舌下片）通过2026年国家医保谈判，首次纳入国家医保目录；与此同时，先必新®注射液顺利完成第三次医保续约。图源：先声药业企业公告这意味着，先必新系列实现注射液与舌下片双剂型医保覆盖。新版国家医保目录将于2027年1月1日起正式实施，先必新系列的市场覆盖范围有望进一步扩大。一、首次纳入医保，舌下片拓展给药选择先必新舌下片于2024年11月获批上市，是先声药业在原有注射剂基础上开发的剂型改良新药，由先声药业与宁丹新药合作研发，主要用于改善急性缺血性脑卒中导致的神经症状、日常生活活动能力和功能障碍。图源：摩熵医药-全球药物研发数据库与传统注射剂相比，舌下片采用舌下给药方式，可通过舌下静脉丛吸收入血，避免胃肠道吸收及肝脏首过效应，具有给药便捷等特点，也为患者出院后的序贯治疗提供了新的选择。值得关注的是，先必新舌下片此前还获得美国FDA突破性疗法认定（BTD），是全球脑卒中治疗领域首个获得该认定的创新药。此次首次纳入国家医保目录，将进一步改善该产品的支付可及性，也为其后续临床推广创造有利条件。二、注射液第三次续约，先必新系列完善产品布局作为先声药业脑卒中领域的核心产品，先必新注射液于2020年7月获批上市，是一款1类创新药，也是2015年以来全球卒中领域获批的首个创新药。该药由依达拉奉和右莰醇两种活性成分组成，按照5:1的比例配伍，通过抗氧化、清除自由基及抑制炎症等多重机制发挥脑神经保护作用，主要用于急性缺血性脑卒中治疗。图源：摩熵医药-全球药物研发数据库上市后，先必新注射液迅速放量，据摩熵医药数据库显示，注射液在医院端销售额在上市第2年近15亿元，第三年突破25亿元，成为先声药业重要的商业化产品之一。2025年销售额超25亿元，同比增长达9.49%，2026年前三季度销售额超30亿元，同比增长达64.40%。 图源：摩熵医药-医疗机构销售放大(2015至今)从临床需求来看，急性缺血性脑卒中约占全部卒中病例的85%以上。溶栓、取栓等再灌注治疗是急性期救治的重要手段，但部分患者即使恢复脑部血流，仍可能遗留不同程度的神经功能障碍，脑保护治疗仍具有临床需求。此次先必新注射液完成第三次医保续约，与舌下片首次纳入医保形成协同：注射液继续覆盖院内治疗场景，舌下片则凭借不同的给药方式，为患者提供新的治疗选择。结语从注射液到舌下片，先必新系列逐步形成双剂型产品布局。随着新版医保目录于2027年正式实施，双剂型医保覆盖有望进一步拓展产品的临床应用范围，也为先声药业脑卒中业务带来新的增长空间。 【江苏先声药业有限公司】2025年指数排名 当前排名 第26名 88.26分 摩熵指数 3个 新获批上市药物 5个 新申报上市药物 0个 新进入三期临床 摩熵指数企业榜单TOP5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 参考来源：[1] 企业公告/官方披露[2] 摩熵医药（原药融云）数据库扩展阅读：1. 先声药业SIM0712获批临床，国内首款STAT6 PROTAC小分子降解剂可治疗特应性皮炎等多个2型炎症2. 先声药业1类新药SIM0725注射液获批临床！CD122单抗切入白癜风赛道，有望实现长期控制减少复发3. 先声药业CD3/BCMA/GPRC5D三抗SIM0500临床数据亮相ASH 2026，安全性与疗效双优 BCMA相关推荐 相关适应症： 套细胞淋巴瘤 淋巴瘤 肥胖 弥漫性大 B 细胞淋巴瘤 血液肿瘤 实体瘤 滤泡性淋巴瘤 系统性红斑狼疮 肿瘤 免疫系统疾病 相关药品： 泽沃基奥仑赛 西达基奥仑赛 伊基奥仑赛 埃纳妥单抗 特立妥单抗 玛贝妥单抗 BCMA CAR-T KLN-1010 linvoseltamab ESO-T01 相关企业： 鲁南制药集团股份有限公司 华东医药股份有限公司 北京大学第一医院 山东新时代药业有限公司 中国医学科学院血液病医院（中国医学科学院血液学研究所） 上海药明巨诺生物科技有限公司 沈阳三生制药有限责任公司 和铂医药（上海）有限责任公司 江苏恒瑞医药股份有限公司 中国药科大学 先必新*点击下方数字查看更多药品相关数据 全球药物研发信息 - 中国药品审评信息 - 中国药品批文 - 药品招投标 - 全球临床试验 - 中国临床试验 4条 一致性评价 - 美国FDA批准药品 - 查看更多 先声药业*点击下方数字查看更多企业相关数据 全球药物研发信息 115条 中国药品审评信息 533条 中国药品批文 130条 药品招投标 7395条 全球临床试验 84条 中国临床试验 122条 一致性评价 32条 美国FDA批准药品 - 医药投融资 - 药物集中采购 - 境内外生产药品备案信息 - 查看更多 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 先声药业太猛了！3款创新药高歌猛进 米内网 2026-11-20 先声药业SIM0712获批临床，国内首款STAT6 PROTAC小分子降解剂可治疗特应性皮炎等多个2型炎症 摩熵医药 2026-11-18 先声药业1类新药SIM0725注射液获批临床！CD122单抗切入白癜风赛道，有望实现长期控制减少复发 摩熵医药 2026-11-12 脐带间充质干细胞治疗急性缺血性脑卒中Ⅰ期临床取得积极初步结果 TopCel拓弘生科 2026-11-04 先声药业拿下凌科药业泽普昔替尼皮肤科独家商业化权益，国产JAK1抑制剂特应性皮炎NDA获受理 摩熵医药 2026-11-03 国家医保目录七年重构：谈判药扩容、平均降幅超60%、续约调出与商保承接 摩熵医药 2026-09-16 21亿级脑卒中重磅新药「依达拉奉右莰醇注射用浓溶液」首仿争夺白热化，江苏联环药业等多家药企入局 摩熵医药 2026-01-06 2025医保商保目录落地加速：多地开展挂网申报，大批药品取消支付限制（附名单） 赛柏蓝 2025-12-17 支持真创新！西达本胺纳入《国家医保目录》常规乙类管理 深圳微芯生物科技股份有限公司 2025-12-07 罗氏3款创新药首次纳入国家医保目录，7款创新药新增适应症及成功续约 罗氏制药 2025-12-07 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 1.1类国产乙肝治疗新药贺普拉肽顺利进入II/III期临床 小药丸 2019-07-31 索马鲁肽价格多少？中国市场快速进入医保，降价幅度超53%！ 药融圈 2021-12-20 礼来重磅GLP-1受体激动剂新药——Tirzepatide，价格来了！用于2 型糖尿病 药融资 2022-05-23 第七批耗材国采提上日程！锚点价、多轮复活，集采重塑行业新格局 摩熵医械 2026-02-13 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,878亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 2026-11-24 7大单抗集采正式启动！超三百亿市场，谁将承压？ 2026-11-23 三项新政发布，稳市场“组合拳”来了 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年肝素药物市场表现洞察报告 摩熵咨询 35 94 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 81 市场监管总局办公厅关于41批次食品抽检不合格情况的通报 颁布机构：国家市场监督管理总局 2026-11-16 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 BCMA 当前排名 第8名 68.2分 摩熵指数 2个 新获批上市药物 摩熵指数榜单TOP5 靶点 企业 CD19 100 CD3 91.57 KRAS 87.52 EGFR 77.53 PSMA 76.5 江苏恒瑞医药股份有限公司 99.5 华润医药集团有限公司 98.17 正大天晴药业集团股份有限公司 97.28 上海复星医药（集团）股份有限公司 96.32 石药控股集团有限公司 95.68 查看摩熵指数完整榜单 setTimeout(() => { $('.rankIndex-card-tagSystem .tabs .tab-item').click(function () { $('.rankIndex-card-tagSystem .rank-list.active-list').removeClass('active-list') $(`.rankIndex-card-tagSystem .rank-list.${this.dataset.id}`).addClass('active-list') $('.rankIndex-card-tagSystem .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "eb59fd3a89c7f0bf",
+    "score": 0.5,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.5
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目；监管人事事件与BD交易无关",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料确认无相关交易"
+    ],
+    "title": "White House pulls nomination for FDA nominee Overton",
+    "url": "https://www.biopharmadive.com/news/white-house-withdraw-heidi-overton-fda-commissioner-nomination/874961/",
+    "sources": [
+      "biopharmadive_home"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "ab1f7a2f1682d463",
+    "score": 0.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，属于药房渠道与AI应用趋势讨论",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Optum Rx CEO bets people are ready to shop for their prescriptions",
+    "url": "https://endpoints.news/optum-rx-ceo-bets-people-are-ready-to-shop-for-their-prescriptions/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "UnitedHealth Group’s Optum Rx is getting ready for a world in which more consumers shop around for their healthcare. That might include using personal AI agents to help them find the best prices. “I believe ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "f465acc19a6f446c",
+    "score": 0.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为研发方法科普；仅有标题，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "研发进展丨多肽药物的成药性开发怎么做？",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/qy_397177",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "f20bcbcc796acd84",
+    "score": 0.3,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.3
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "fda-cell-gene-guidance",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为监管指南解读；仅有标题，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "细胞与基因疗法的效价——FDA 指南草案",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/qy_397191",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "45530d1b9b1c3c61",
+    "score": 0.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.2
+    },
+    "flags": [
+      "not_bd"
+    ],
+    "cluster_key": "",
+    "confidence": 0.97,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，属于数据库产品更新与促销，不构成BD事件",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放",
+    "url": "https://www.pharnexcloud.com/zixun/kp_397430",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "首页 资讯 摩熵原创 科普 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 刘芳 · 医药知识编辑 刘 刘芳 医药知识编辑 负责医药基础知识、行业工具与数据查询方法的整理呈现；擅长把专业概念讲得通俗易懂。累计产出科普与教程内容 100+ 篇。 3小时前 507 摩熵医药数据库 销售数据 2026年Q3 数据更新 摩熵医药销售数据板块已打通药品销售与使用数据链路，构建起从全国到科室的全层级下钻分析体系，可支撑从宏观市场研判到终端业务落地的全维度决策。为持续保障数据时效性、夯实分析能力，我们已完成2026年第三季度销售数据迭代与产品功能优化。本次更新覆盖医疗机构销售、实体药店销售两大板块的季度数据增补，同步完成网上药店销售产品功能升级；所有数据与功能调整均已正式上线，欢迎咨询试用。 👆 点击视频 · 了解详情 👆「摩熵医药2026年终大促・产品上新季」活动正在火热开展，本次更新涉及的全部销售数据库均已纳入活动优惠范围。活动期内办理采购或续费，可享专属折扣与增值服务权益。扫描/长按识别二维码，限量名额抢先锁定一、医疗机构销售数据：6大数据库同步更新2026Q3数据本次医疗机构销售板块共完成6个核心数据库的季度数据迭代，全面覆盖放大数据与样本数据两大体系，适配不同维度的市场分析需求：放大数据系列：医疗机构销售放大（2015至今）、医疗机构销售放大（分等级）、医疗机构销售放大（分省份）三大数据库同步更新，延续2015年至今的长周期数据覆盖，支持回溯历史走势；分等级、分省份版本可分层拆解不同医院层级、不同区域的市场结构，满足全国整体市场规模测算与趋势研判需求。样本数据系列：医疗机构销售样本、医疗机构销售样本（分省份）、重点城市医院销售三大数据库同步完成数据增补，可实现样本端动态精准追踪、区域市场横向对标、重点城市深度拆解等精细化分析。目前，药品销售数据产品矩阵已形成覆盖全国大盘、省市、区县到样本医院的多层级分析能力，可适配不同层级的业务需求：向上支撑总部研判全国市场走势、制定战略规划；向下适配各省市场布局、统筹团队资源调配，助力区域业务落地；终端层面可细化到单家样本医院，查看品种销售结构与表现，为终端运营提供数据依据。在此基础上，摩熵咨询进一步提供深度定制服务：严格遵循合规要求完成数据采集、脱敏清洗与规范治理，输出真实世界洞察，还原院内用药结构、处方流转轨迹与品种替代规律，锁定高价值终端；结合专家访谈与行业积累输出定制报告，为品种定位、院内推广与资源配置提供决策支撑。二、实体药店销售数据：完成2026Q3数据更新实体药店销售（2019至今）数据库已正式上线2026年第三季度最新数据，保持2019年至今的连续数据周期，可全面支撑线下零售终端的市场规模统计、品类动销分析、渠道格局研究等业务需求。三、网上药店销售产品：新增销售量维度，丰富分析颗粒度网上药店销售（2021至今）数据库完成产品功能升级，新增“销售量”统计指标，进一步补全线上零售渠道的量化分析维度，助力您更全面地拆解线上市场的销量表现、增长结构与品类趋势。四、2026年终大促火热进行中，多重权益限时可享本次年终大促已于2026年11月3日正式启动，活动将持续至12月31日，覆盖套餐立省、单品折扣、买年赠月、限量爆款四大核心权益，本次上新的全系列销售数据产品均可对应参与。具体权益如下：1. 新客专享限量爆款，低至5折针对首次签约的企业客户，开放两款核心销售数据库5折特惠：医疗机构销售放大（分等级）、医疗机构销售样本，每款各限20家企业，每家企业限购1款，名额按签约并到账的先后顺序锁定，同样附赠研发数据库基础权限。2. 组合套餐采购，最高年省3万元推出两大高性价比组合套餐，相比单品分开采购成本更优：医疗机构分省版（放大分省+样本分省）年采购最高可省30000元，适配区域精细化运营需求；药店销售套餐（实体+网上）年采购最高可省3000元，覆盖线下零售与线上B2C双终端。两类套餐均附赠研发数据库基础权限，且可叠加买年赠月权益。3. 单品数据库限时折扣，低至7.5折8款单品数据库同步开放优惠，所有常规单品均可叠加买年赠月权益，但单品优惠不与套餐叠加：医疗机构销售放大（分省）、医疗机构销售样本（分省）：7.5折；实体药店销售、网上药店销售：9折；重点城市医院销售、医疗机构销售放大：9折；研发标准权限：8.8折；研发基础权限：9折。4. 买年赠月升级，最长享51个月服务期采购常规套餐与单品均可享受赠月福利：采购1年合计可用14个月，采购2年合计可用33个月，采购3年合计可用51个月，长期采购性价比更高。赠月权益可与套餐、单品折扣叠加，不与限量爆款同享。活动期间，购买任一销售数据库均同步赠送研发数据库基础权限，赠送期限与所购产品完整服务期一致。扫描/长按识别二维码，获取专属报价若您有数据咨询、产品采购或续费需求，可随时联系您的专属对接顾问，获取定制化采购方案。感谢您的信赖与支持，我们将持续优化数据产品与服务，为您的业务发展提供坚实的数据支撑。扩展阅读：1. 摩熵医药数据库年终采购指南来了：套餐立省3万、新客低至5折！2. 摩熵医药数据库全链路升级：研发-临床-准入-销售一体化情报能力全面进阶3. 摩熵医药年终大促限时开启｜新客5折、买1年用14个月、套餐立省3万 *声明：本文由入驻摩熵医药的相关人员撰写或转载，观点仅代表作者本人，不代表摩熵医药的立场。 相关资讯 综合 摩熵医药数据库年终采购指南来了：套餐立省3万、新客低至5折！ 摩熵医药 2026-11-20 摩熵医药数据库全链路升级：研发-临床-准入-销售一体化情报能力全面进阶 摩熵医药 2026-11-19 摩熵医药年终大促限时开启｜新客5折、买1年用14个月、套餐立省3万 摩熵医药 2026-11-05 恒瑞医药三季报炸场：归母净利暴增88.92%，创新药持续增长，ADC瑞康曲妥珠单抗第5项适应症获受理 摩熵医药 2026-10-29 诺诚健华Q3营收大增150.60%：BD里程碑收入推高业绩，奥布替尼独挑商业化大梁 摩熵医药 2026-10-29 全国大盘至省市/区县/样本机构全维度药品销售数据全新上线｜开放免费试用 摩熵医药 2026-10-12 医药代表新规落地，Q2院内药品销售环比骤降14%，行业大洗牌开始了 摩熵医药 2026-08-14 药品销售查询 | 摩熵医药数据库更新：2026基药目录与医院销售六大库同步更新！ 摩熵医药 2026-07-27 摩熵医药数据库四月更新：全终端医院销售、实体/网上药店销售等五大销售数据库数据全面更新！ 摩熵医药 2026-04-24 2025年Q1中国司美格鲁肽销售洞察：直辖市与重点省份市场表现解析 摩熵医药 2026-04-03 收藏 分享 复制链接 微博 微信扫一扫 发表评论 登录后参与评论 评论区（0） 暂无评论 推荐资讯 2020《中国药典》电子版官网在线查询入口|中国药典检索🔍 药小白 2026-06-11 浅析BCS分类 摩熵医药（原药融云） 2020-06-15 3分钟带你了解药品一致性评价,很全很详细！ 医药弼马温 2024-11-06 2024-2025中国排名前100的医药公司有哪些？ 药小白 2025-05-14 摩熵医药企业版 50亿+条医药数据随时查 7天免费试用 体验产品 医药专题 更多 医药市场研究分析 全球创新药研发概览 全球医药大健康行业投融资数据 国内医药大健康行业政策法规汇总 国内仿制药/生物类似物申报/审批数据分析 国内创新药/改良型新药申请临床/获批临床/申请上市/获批上市数据分析 AI 赋能生物医药：应用教程与实践 医药行业AI前沿资讯 医药市场洞察中心 医药市场销售数据分析 · 智能洞察 · 竞争格局监测 2,878亿元 2026年Q3总销售额 6.14%(2026Q3) TOP5企业市场份额 药品销售排行榜 查看完整数据 2025Q4医院化学药销售增速 *按市场份额排序 1 甲氨蝶呤注射液 6.41% 2 克霉唑阴道乳膏 2.39% 3 氯化钠注射液 1.55% 核心能力 医药市场销售数据分析 · 医院、实体药店、网上药店 市场竞争格局分析(靶点、药品类型、ATC大类) 市场动态 市场报告 政策法规 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 2026-11-24 7大单抗集采正式启动！超三百亿市场，谁将承压？ 2026-11-23 三项新政发布，稳市场“组合拳”来了 2026-11-23 失眠药物研发全景及市场竞争格局报告 摩熵咨询 29 21 2026年肝素药物市场表现洞察报告 摩熵咨询 35 94 2026年自免药物（IL抑制剂篇）市场研究专题报告 摩熵咨询 28 81 市场监管总局办公厅关于41批次食品抽检不合格情况的通报 颁布机构：国家市场监督管理总局 2026-11-16 市场监管总局 国家卫生健康委关于将酚丁(酚汀)类、比沙可啶类物质纳入食品中可能添加的非食用物质名录的公告 颁布机构：国家市场监督管理总局 2026-11-07 市场监管总局关于发布 等2项食品补充检验方法的公告 颁布机构：国家市场监督管理总局 2026-11-07 更多信息，请进入医药市场洞察中心查看 // 添加异步 避免页面中new Vue影响js执行 setTimeout(() => { $('.center-card.scdczx-long .list-box.has-tab .tabs .tab-item').click(function () { $('.center-card.scdczx-long .list-box.has-tab .list.actice-list').removeClass('actice-list') $(`.center-card.scdczx-long .list-box.has-tab .list.${this.dataset.id}`).addClass('actice-list') $('.center-card.scdczx-long .list-box.has-tab .tabs .active').removeClass('active') $(this).addClass('active') }) }, 1000); 最新资讯 更多 全国单抗联盟集采正式启动：贝伐珠单抗等7大品种覆盖超380亿市场！罗氏、艾伯维原研陷两难 摩熵医药2026年Q3全渠道药品销售数据正式上线，打通院内院外数据链路，年终专属权益同步开放 科济药业公布体内CAR-T首次临床数据！CT1182针对R/R B-NHL初步ORR达83.3% 国产首个！翰森制药氘索昔替尼上市申请获受理，1类新药TYK2变构抑制剂直指成人中重度斑块状银屑病 全球首款CFB/MASP-2双抗获批临床！华东医药HDM4002双通路阻断，剑指IgA肾病肾功能损失 从100到600公斤/天，药明康德如何做大规模，做到极致？ 先声药业独家创新药先必新®舌下片首次进医保，注射液完成第三次续约，双剂型实现医保全覆盖 恒瑞医药瑞坦宁®新适应症获批！覆盖中度致吐性化疗止吐，今年第6款创新药相关进展落地 添加收藏 新建收藏夹 新建收藏夹 取消 确认 下载完整报告 您即将下载以下报告，点击确认后即可下载，如需查看更多报告点击前往摩熵咨询报告大厅 页 PDF 确认下载 更多报告 对不起，您今日剩余下载额度不足，请明日再来！ 返回 对不起！您还未登录！请登录后查看 立即登录",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "326a3188b8acb022",
+    "score": 0.2,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.2
+    },
+    "flags": [
+      "not_bd",
+      "thin_material"
+    ],
+    "cluster_key": "",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "非交易条目，为医疗AI支出统计，不含具体交易关系",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Healthcare spending on AI surpasses other sectors, report says",
+    "url": "https://endpoints.news/healthcare-spending-on-ai-surpasses-other-sectors-report-says/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Spending on AI in healthcare hit $3.7 billion in 2026, up from $1.5 billion in 2025. According to a report from Menlo Ventures, healthcare is spending more than other industries on ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "321a1655fe050ddf",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "thin_material"
+    ],
+    "cluster_key": "egfrxher3-bispecific",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "纯融资及上市条目，不是BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "Avenzo begins public life, seeks to rival Bristol Myers' EGFRxHER3 bispecific",
+    "url": "https://endpoints.news/avenzo-begins-public-life-seeks-to-rival-bristol-myers-egfrxher3-bispecific/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Avenzo Therapeutics, one of the first US biotechs to go all in on the China in-licensing model four years ago, began trading on the Nasdaq on Monday after completing its reverse ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "096b181c0462958a",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "thin_material"
+    ],
+    "cluster_key": "ritzey-therapeutics",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "新 biotech 获得启动资金，属于融资，不是BD交易",
+    "article_type": "event_report",
+    "verify_todo": [],
+    "title": "After $14B Intra-Cellular success, Sharon Mates returns with new biotech Ritzey Therapeutics",
+    "url": "https://endpoints.news/after-14b-intra-cellular-success-sharon-mates-returns-with-new-biotech-ritzey-therapeutics/",
+    "sources": [
+      "endpoints_rss"
+    ],
+    "content": "",
+    "summary": "Sharon Mates is back with a new neuro and metabolic drug development startup and $112.5 million to see if she can replicate the success of her previous biotech. After landing one of ...",
+    "access": "rss",
+    "entity_tags": [],
+    "lang": "en",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "1ab7c213d474793d",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "thin_material"
+    ],
+    "cluster_key": "msc-funding",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "纯融资条目，不是BD交易；仅有标题，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "「最新融资」三有利康：完成数千万元Pre-A轮融资，加速精准亚型MSC药物临床推进",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/yytrz_397304",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "fa9da6cadbc4e817",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "thin_material"
+    ],
+    "cluster_key": "oligonucleotide-funding",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "纯融资条目，不是BD交易；仅有标题，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "「最新融资」昂拓生物：完成5500万美元B轮融资，加速寡核苷酸疗法全球临床开发",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/yytrz_397303",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "2f78afa8aa1351bd",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "thin_material"
+    ],
+    "cluster_key": "ai-materials-funding",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "纯融资条目，不是BD交易；仅有标题，无正文素材",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "AI+材料研发｜清析智研完成近亿元天使轮融资",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/yytrz_397308",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
+  },
+  {
+    "id": "d93d18c305e26772",
+    "score": 0.0,
+    "dims": {
+      "amount": 0.0,
+      "stage": 0.0,
+      "first_mover": 0.0,
+      "tier": 0.0,
+      "impact": 0.0
+    },
+    "flags": [
+      "not_bd",
+      "pure_financing",
+      "duplicate_report",
+      "thin_material"
+    ],
+    "cluster_key": "oligonucleotide-funding",
+    "confidence": 0.4,
+    "deal_key": "",
+    "upfront_usd": 0,
+    "total_usd": 0,
+    "reasoning": "纯融资且与同公司另一条重复，不构成BD交易",
+    "article_type": "event_report",
+    "verify_todo": [
+      "仅有标题，无正文素材，成稿前需补一手材料"
+    ],
+    "title": "5500万美元！昂拓生物完成B轮融资，推进小核酸管线全球临床开发",
+    "url": "https://www.pharnexcloud.com/zixun/shiye/yytrz_397309",
+    "sources": [
+      "pharnexcloud"
+    ],
+    "content": "",
+    "summary": "",
+    "access": "full",
+    "entity_tags": [],
+    "lang": "cn",
+    "scored_at": "2026-11-24T05:52:59Z"
   }
 ]

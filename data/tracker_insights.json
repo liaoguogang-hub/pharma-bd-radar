@@ -32,5 +32,21 @@
       "  Mean overall deal value (millions): 2025=1,805.14, 2026=2,972.87",
       "  Median overall deal value (millions): 2025=1,088.00, 2026=1,515.00"
     ]
+  },
+  "biopharmadive_china_deals": {
+    "jefferies": "Fully one-third of the industry’s licensing spending in 2025 involved drugs sourced from China, per the investment bank Jefferies.",
+    "chart_findings": [
+      "Complex antibodies and small molecules are a popular target",
+      "Cancer, immune disease drugs are drawing the most interest",
+      "Deals typically involve early-stage drug candidates",
+      "Licensing deals are getting bigger in size and scope",
+      "Licensing deals involving China-developed drugs"
+    ],
+    "published": "Aug. 25, 2025",
+    "updated": "Nov. 19, 2026"
+  },
+  "biopharmadive_ma_tracker": {
+    "published": "",
+    "updated": "Nov. 16, 2026"
   }
 }

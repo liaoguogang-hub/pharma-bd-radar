@@ -3,34 +3,10 @@
     "ok": true,
     "needs_review": true,
     "claim_block": false,
-    "file": "01-event_report-e964be3b.html",
+    "file": "01-event_report-ff046671.html",
     "stats": {
-      "body_chars": 2957,
-      "sections": 6,
-      "tables": 3,
-      "boxes": 0,
-      "footnotes": 6,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "problems": [
-      "[P1] 公式化递进 1 处（上限 0）：「首先/其次/最后」是报幕式递进。让内容的递进关系自己呈现。"
-    ],
-    "html_len": 9748,
-    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
-    "title": "Lilly buys Huntington's startup LoQus23 for up to $725M",
-    "score": 4.2,
-    "type": "event_report"
-  },
-  {
-    "ok": true,
-    "needs_review": true,
-    "claim_block": false,
-    "file": "02-event_report-8c2b23b2.html",
-    "stats": {
-      "body_chars": 2923,
-      "sections": 7,
+      "body_chars": 3163,
+      "sections": 8,
       "tables": 2,
       "boxes": 0,
       "footnotes": 4,
@@ -39,12 +15,36 @@
       "has_title": true
     },
     "problems": [
-      "AI味句式 3 处（换句话说, 真正的, 这意味着）——必须改掉，不是换词而是拆句重写"
+      "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
     ],
-    "html_len": 9020,
+    "html_len": 9379,
     "note": "未通过全部质检，已按最优版本落盘，需人工核查",
-    "title": "STAT Plus: Merck, Isomorphic Labs partner to develop oncology drug candidates",
-    "score": 3.7,
+    "title": "Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal",
+    "score": 5.7,
     "type": "event_report"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-landscape_review-a510dbf1.html",
+    "stats": {
+      "body_chars": 3180,
+      "sections": 8,
+      "tables": 3,
+      "boxes": 0,
+      "footnotes": 4,
+      "has_hook": true,
+      "has_end": true,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 10655,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
+    "score": 4.2,
+    "type": "landscape_review"
   }
 ]
