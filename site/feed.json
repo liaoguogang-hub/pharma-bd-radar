@@ -6,16 +6,16 @@
       "rel": "2026/11/24/02-landscape_review-a510dbf1.html",
       "date": "2026-11-24",
       "title": "从106亿美元并购到3200万美元首付：2026年研发交易走向两极",
-      "kicker": "Landscape Review｜全球创新药BD · 评分不达标",
-      "sub": "大额收购开始兑现产品回报，早期授权仍在用期权费购买平台不确定性",
-      "hook": "2026年11月18日披露的一组消息里，GSK以106亿美元收购Nuvalent后已有两款肺癌药获批；另一边，Biogen为Trimtech的神经退行性疾病项目只先付3200万美元。一笔交易已跨过审批和商业化，另一笔仍在购买早期技术，二者不能用同一套逻辑估值。",
-      "chars": 3818,
+      "kicker": "Landscape Review｜全球创新药BD",
+      "sub": "大额收购开始兑现产品回报，早期授权仍在用首付款获取技术或选择权",
+      "hook": "2026年11月18日披露的一组消息里，GSK以106亿美元收购Nuvalent后已有两款肺癌药获批；另一边，Biogen为Trimtech的神经退行性疾病项目只先付3200万美元。一笔交易已跨过审批节点，另一笔仍在早期开发阶段，二者不能用同一套逻辑估值。",
+      "chars": 3462,
       "site_rel": "posts/2026/11/24/02-landscape_review-a510dbf1.html",
       "needs_review": true,
       "problems": [
         "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写"
       ],
-      "below_threshold": true
+      "below_threshold": false
     },
     {
       "rel": "2026/11/24/02-event_report-8c2b23b2.html",
@@ -36,16 +36,16 @@
       "rel": "2026/11/24/01-event_report-ff046671.html",
       "date": "2026-11-24",
       "title": "礼来7.25亿美元押注尚未进临床的MSH3项目",
-      "kicker": "Event Report｜神经科学并购 · 评分不达标",
-      "sub": "收购LoQus23补上 Huntington’s 疾病修饰疗法空白，首付款与关键条款仍未披露",
+      "kicker": "Event Report｜神经科学并购",
+      "sub": "收购LoQus23引入临床前MSH3口服抑制剂，首付款金额与后续条款未拆分",
       "hook": "2026年11月23日，礼来同意收购英国神经科学初创公司LoQus23，潜在总对价最高达7.25亿美元。其中包含一笔金额未披露的首付款，以及开发、监管里程碑对应的后续付款。最受关注的候选药物LQT-23尚未进入人体试验，潜在总额却已接近8亿美元，风险与回报都压在很靠前的位置。",
-      "chars": 3734,
+      "chars": 3419,
       "site_rel": "posts/2026/11/24/01-event_report-ff046671.html",
       "needs_review": true,
       "problems": [
         "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
       ],
-      "below_threshold": true
+      "below_threshold": false
     },
     {
       "rel": "2026/11/24/01-event_report-e964be3b.html",

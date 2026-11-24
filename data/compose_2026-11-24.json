@@ -1,50 +1,18 @@
 [
   {
     "ok": true,
-    "needs_review": true,
-    "claim_block": false,
-    "file": "01-event_report-ff046671.html",
-    "stats": {
-      "body_chars": 3163,
-      "sections": 8,
-      "tables": 2,
-      "boxes": 0,
-      "footnotes": 4,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "problems": [
-      "AI味句式 1 处（真正的）——必须改掉，不是换词而是拆句重写"
-    ],
-    "html_len": 9379,
-    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "skipped": true,
     "title": "Lilly buys Huntington’s drug developer LoQus23 in potentially $725M deal",
     "score": 5.7,
-    "type": "event_report"
+    "type": "event_report",
+    "stats": {}
   },
   {
     "ok": true,
-    "needs_review": true,
-    "claim_block": false,
-    "file": "02-landscape_review-a510dbf1.html",
-    "stats": {
-      "body_chars": 3180,
-      "sections": 8,
-      "tables": 3,
-      "boxes": 0,
-      "footnotes": 4,
-      "has_hook": true,
-      "has_end": true,
-      "has_title": true
-    },
-    "problems": [
-      "AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写"
-    ],
-    "html_len": 10655,
-    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "skipped": true,
     "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
     "score": 4.2,
-    "type": "landscape_review"
+    "type": "landscape_review",
+    "stats": {}
   }
 ]
