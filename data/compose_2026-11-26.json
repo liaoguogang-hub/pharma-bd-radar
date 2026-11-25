@@ -1,0 +1,43 @@
+[
+  {
+    "ok": false,
+    "error": "- 小节太少（1 个，至少 3 个）\n- 缺少 FN 来源脚注\n- 正文字数 185 超出范围（目标 2250-3900）\n- AI味句式 1 处（不是…而是）——必须改掉，不是换词而是拆句重写\n- 表格列数不一致：表头 3 列，有一行 1 列\n\n# ⚠️ AI 味句式（逐句改写，位置已标出）\n- 删掉「不是…而是」这个句式模板：…ed 2025年约6.06亿美元营收的约68倍。这不是一笔按当前收入支付的价格，而是一笔同时押注Brinsupri放量、TPIP临床成…\n  改法：把解释层整个删掉，只留事实。「不是 A，而是 B」→ 直接写 B；「这意味着/也就是说」→ 直接给下一句事实。",
+    "stats": {
+      "body_chars": 185,
+      "sections": 1,
+      "tables": 1,
+      "boxes": 0,
+      "footnotes": 0,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "title": "赛诺菲‌410亿美元‌收购Insmed：拿下Brinsupri等三款呼吸系统资产，交易预计2027年上半年完成",
+    "score": 9.6,
+    "type": "landscape_review"
+  },
+  {
+    "ok": true,
+    "needs_review": true,
+    "claim_block": false,
+    "file": "02-landscape_review-7795449a.html",
+    "stats": {
+      "body_chars": 3720,
+      "sections": 8,
+      "tables": 5,
+      "boxes": 0,
+      "footnotes": 5,
+      "has_hook": true,
+      "has_end": false,
+      "has_title": true
+    },
+    "problems": [
+      "AI味句式 3 处（不是…而是, 这意味着）——必须改掉，不是换词而是拆句重写"
+    ],
+    "html_len": 10686,
+    "note": "未通过全部质检，已按最优版本落盘，需人工核查",
+    "title": "5.68亿美元！波科收购新光维，拟收购霆升科技",
+    "score": 4.6,
+    "type": "landscape_review"
+  }
+]

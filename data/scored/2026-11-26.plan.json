@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-26",
+  "count": 2,
+  "plan": [
+    {
+      "type": "landscape_review",
+      "cluster_key": "sanofi-insmed",
+      "lead_id": "6c95d9629a9e3eda",
+      "title": "赛诺菲‌410亿美元‌收购Insmed：拿下Brinsupri等三款呼吸系统资产，交易预计2027年上半年完成",
+      "score": 9.6,
+      "member_ids": [
+        "6c95d9629a9e3eda",
+        "33e2eb670bc42aad",
+        "b065214d15551071"
+      ],
+      "deal_keys": [
+        "insmed|sanofi|respiratory-portfolio",
+        "insmed|sanofi|respiratory-portfolio",
+        "insmed|sanofi|respiratory-portfolio"
+      ],
+      "members": [
+        {
+          "title": "赛诺菲‌410亿美元‌收购Insmed：拿下Brinsupri等三款呼吸系统资产，交易预计2027年上半年完成",
+          "url": "https://www.pharnexcloud.com/zixun/trz_397896",
+          "score": 9.6,
+          "reasoning": "410亿美元现金收购含已上市呼吸资产及III期候选，MNC主导且影响格局"
+        },
+        {
+          "title": "Sanofi to buy Insmed for $41B in industry's largest acquisition in years",
+          "url": "https://endpoints.news/sanofi-to-buy-insmed-for-41b-in-industrys-largest-acquisition-in-years/",
+          "score": 9.4,
+          "reasoning": "410亿美元现金收购为多年罕见医药并购，具赛道格局影响"
+        },
+        {
+          "title": "Sanofi Announces $41 Billion Deal to Purchase Insmed",
+          "url": "https://www.pharmexec.com/view/sanofi-eyes-insmed-potential-43b-deal-dupixent-patent-clock-ticks",
+          "score": 9.3,
+          "reasoning": "410亿美元全现金交易体量突出，并含商业化及III期资产"
+        }
+      ],
+      "reasoning": "410亿美元现金收购含已上市呼吸资产及III期候选，MNC主导且影响格局"
+    },
+    {
+      "type": "landscape_review",
+      "cluster_key": null,
+      "lead_id": "7795449ae5658d5f",
+      "title": "5.68亿美元！波科收购新光维，拟收购霆升科技",
+      "score": 4.6,
+      "member_ids": [
+        "7795449ae5658d5f"
+      ],
+      "deal_keys": [
+        "boston-scientific|scivita-medical-and-tingsn|medical-imaging"
+      ],
+      "members": [
+        {
+          "title": "5.68亿美元！波科收购新光维，拟收购霆升科技",
+          "url": "https://bydrug.pharmcube.com/news/detail/2d81cd05ba5d4c3e840ac3ab090b7c63",
+          "score": 4.6,
+          "reasoning": "两笔中国医械收购合计首付4.63亿美元，但交易发生于8—9月"
+        }
+      ],
+      "reasoning": "两笔中国医械收购合计首付4.63亿美元，但交易发生于8—9月",
+      "verify_todo": [
+        "发布日期未知，且交易发生于8月至9月，需确认文章首发时间",
+        "需以波士顿科学10-Q及两份最终协议核实对价和交割状态",
+        "两笔为独立交易，成稿及去重时应分别拆分deal_key"
+      ],
+      "flags": [
+        "published_date_unknown",
+        "historical_transaction"
+      ]
+    }
+  ]
+}
