@@ -188,6 +188,28 @@ async def build_material_async(date: str, plan_item: dict) -> str:
     return base
 
 
+def _material_is_attachment_only(ids: set, s_by: dict, r_by: dict) -> bool:
+    """素材是否属于「通告壳 + PDF 附件」型（2026-11-25，自 policy 雷达移植）。
+
+    判据：正文里出现「见附件」/「相关附件」/「.pdf」——网页只给了通告壳，
+    真正的全文在 PDF 附件里。这样的素材撑不起 2200+ 字的稿子。
+    """
+    import re as _re
+    pat = _re.compile(r"见附件|相关附件|\.pdf", _re.I)
+    for i in ids:
+        s = s_by.get(i, {}) or {}
+        r = r_by.get(i, {}) or {}
+        blob = " ".join([
+            s.get("content") or "",
+            s.get("summary") or "",
+            r.get("content") or "",
+            r.get("summary") or "",
+            r.get("body") or "",
+        ])
+        if blob and pat.search(blob):
+            return True
+    return False
+
 def material_too_thin(date: str, plan_item: dict,
                       min_chars: int = 200) -> tuple[bool, str]:
     """
@@ -225,6 +247,18 @@ def material_too_thin(date: str, plan_item: dict,
         summ = s.get("summary") or r.get("summary") or ""
         # 与 build_material 的取值口径一致：正文够长才用正文，否则用摘要
         usable += len((content if len(content) > 200 else summ).strip())
+    # 附件型素材：正文只给标题，全文在 PDF 附件里（2026-11-25，自 policy 雷达移植）
+    #
+    # 背景：policy 雷达 2026-11-25 两条选题素材正文带「（见附件）」——
+    # 通告正文只有两三句，指导原则全文在 PDF 里。旧门槛只看字数（200），
+    # 229/329 字刚好越过，于是成稿 2400 字 → 核验报 31~54 条无依据 → 改 3 轮不放行。
+    #
+    # 判据用「见附件」而不是字数：带 = 网页只有通告壳，全文在附件 → 跳过；
+    # 不带 = 网页正文完整 → 照常成稿。字数比例会误杀（468 字的完整解读也能过核验）。
+    if _material_is_attachment_only(ids, s_by, r_by):
+        return True, ('material is an attachment-only notice (see attached file); '
+                      'the guideline text lives in the PDF, so the web body is '
+                      'too thin to write a 2200+ char article. Skip this pick.')
     if usable < min_chars:
         return True, (f"模型可用素材仅 {usable} 字（< {min_chars}），"
                       f"相当于只有标题")
