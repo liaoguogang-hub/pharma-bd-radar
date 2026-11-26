@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-27",
+  "count": 2,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "6c95d9629a9e3eda",
+      "title": "赛诺菲‌410亿美元‌收购Insmed：拿下Brinsupri等三款呼吸系统资产，交易预计2027年上半年完成",
+      "score": 8.4,
+      "member_ids": [
+        "6c95d9629a9e3eda"
+      ],
+      "deal_keys": [
+        "insmed|sanofi|respiratory-assets"
+      ],
+      "members": [
+        {
+          "title": "赛诺菲‌410亿美元‌收购Insmed：拿下Brinsupri等三款呼吸系统资产，交易预计2027年上半年完成",
+          "url": "https://www.pharnexcloud.com/zixun/trz_397896",
+          "score": 8.4,
+          "reasoning": "赛诺菲以410亿美元现金收购Insmed，含商业化及III期呼吸资产"
+        }
+      ],
+      "reasoning": "赛诺菲以410亿美元现金收购Insmed，含商业化及III期呼吸资产",
+      "verify_todo": [
+        "需核对收购公告中的每股价格、总对价及预计交割时间",
+        "需核实三项核心资产的阶段和收入结构"
+      ],
+      "flags": []
+    },
+    {
+      "type": "event_report",
+      "cluster_key": null,
+      "lead_id": "2e2f40536a1ffa74",
+      "title": "重磅！波科40亿收购霆升科技与新光维",
+      "score": 7.5,
+      "member_ids": [
+        "2e2f40536a1ffa74"
+      ],
+      "deal_keys": [
+        "bostonscientific|newlightmedical-tingsheng|endoscopy-and-icu-ultrasound"
+      ],
+      "members": [
+        {
+          "title": "重磅！波科40亿收购霆升科技与新光维",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/jybg_398826",
+          "score": 7.5,
+          "reasoning": "两笔中国医疗器械并购合计首付4.63亿美元，涉及商业化产品线"
+        }
+      ],
+      "reasoning": "两笔中国医疗器械并购合计首付4.63亿美元，涉及商业化产品线",
+      "verify_todo": [
+        "需以波科文件核对每笔交易的交割状态与付款结构",
+        "需确认标题所称40亿元对应币种及具体交易范围"
+      ],
+      "flags": []
+    }
+  ]
+}
