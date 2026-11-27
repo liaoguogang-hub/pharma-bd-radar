@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-28",
+  "count": 1,
+  "plan": [
+    {
+      "type": "event_report",
+      "cluster_key": "pharma-academic-collaboration",
+      "lead_id": "e1da1ddac81462d4",
+      "title": "扬子江药业集团与首都医科大学达成战略合作",
+      "score": 2.2,
+      "member_ids": [
+        "e1da1ddac81462d4"
+      ],
+      "deal_keys": [
+        "capital-medical-university|yangtze-river-pharmaceutical-group|research-collaboration"
+      ],
+      "members": [
+        {
+          "title": "扬子江药业集团与首都医科大学达成战略合作",
+          "url": "https://www.pharnexcloud.com/zixun/shiye/gs_399264",
+          "score": 2.2,
+          "reasoning": "校企战略合作但未见具体资产授权、里程碑或付款安排，BD价值有限"
+        }
+      ],
+      "reasoning": "校企战略合作但未见具体资产授权、里程碑或付款安排，BD价值有限",
+      "verify_todo": [
+        "核实是否存在具体药物授权、共同研发项目、里程碑及付款条款"
+      ],
+      "flags": [
+        "non_asset_collaboration"
+      ],
+      "below_threshold": true,
+      "keep_threshold": 6.5
+    }
+  ],
+  "below_threshold": true,
+  "keep_threshold": 6.5
+}
